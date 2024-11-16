@@ -22,9 +22,8 @@ public class Torneo implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tipo")
-    private TipoTorneo tipoTorneo;
+    @Column(name = "tipo")
+    private Integer tipoTorneo;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pais")
@@ -60,11 +59,11 @@ public class Torneo implements Serializable {
         this.name = name;
     }
 
-    public TipoTorneo getTipoTorneo() {
+    public Integer getTipoTorneo() {
         return tipoTorneo;
     }
 
-    public void setTipoTorneo(TipoTorneo tipoTorneo) {
+    public void setTipoTorneo(Integer tipoTorneo) {
         this.tipoTorneo = tipoTorneo;
     }
 

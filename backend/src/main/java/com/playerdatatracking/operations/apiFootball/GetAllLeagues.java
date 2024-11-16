@@ -15,6 +15,7 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
 import com.playerdatatracking.entities.indexaldata.Pais;
+import com.playerdatatracking.entities.indexaldata.TipoTorneo;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
@@ -113,8 +114,8 @@ public class GetAllLeagues {
 	                torneo.setStudied(false);
 	                torneo.setFbrefid(null);
 	                torneo.setFbrefdata(false);
-	                int tipoTorneo = Methods.getTournamentType(name, countryName, type);
-	                torneo.setTipoTorneo(Integer.toString(tipoTorneo));
+	                int idTipo = Methods.getTournamentType(name, countryName, type);
+	                torneo.setTipoTorneo(idTipo);
 	                torneo.setName(countryName);
 	                
 	                

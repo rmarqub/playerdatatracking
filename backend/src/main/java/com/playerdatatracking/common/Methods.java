@@ -166,7 +166,7 @@ public class Methods {
 			case Constants.OFC_U19:
 				return Constants.INTERNATIONAL_ID;
 			default:
-				return Constants.COPA_INT;
+				return Constants.COPA_INT_ID;
 			}
 		default:
 			switch(type) {
