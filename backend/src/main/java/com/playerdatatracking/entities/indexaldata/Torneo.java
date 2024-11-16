@@ -25,9 +25,8 @@ public class Torneo implements Serializable {
     @Column(name = "tipo")
     private Integer tipoTorneo;
 
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pais")
-    private Pais pais;
+    private Integer pais;
 
     @Column(name = "studied")
     private Boolean studied;
@@ -67,11 +66,11 @@ public class Torneo implements Serializable {
         this.tipoTorneo = tipoTorneo;
     }
 
-    public Pais getPais() {
+    public Integer getPais() {
         return pais;
     }
 
-    public void setPais(Pais pais) {
+    public void setPais(Integer pais) {
         this.pais = pais;
     }
 

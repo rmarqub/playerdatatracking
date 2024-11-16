@@ -37,11 +37,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 	
-//	---------ENVIRONMENT
+//	---------ENVIRONMENT---------
 	@Autowired
 	private Environment env;
 	@Autowired
 	private ResourceLoader resourceLoader;
+	
+	
 //	---------CLIENTS---------
 	@Autowired
 	private PlayerDataClient pdClient;
@@ -50,6 +52,8 @@ public class MainController {
 //	---------RFEPOSITORIES---------
 	@Autowired
 	private MANUAL_TRACKED_PLAYERRepository repository;
+	
+	
 //  ---------OPERATIONS---------
 	private AddPlayer operationAddPlayer = new AddPlayer();
 	private GetAllPlayers operationGetAllPlayers = new GetAllPlayers();

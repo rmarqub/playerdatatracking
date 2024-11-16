@@ -51,6 +51,7 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
 	@Transactional
 	public MANUAL_TRACKED_PLAYER getPlayerbyName(String name) throws PlayerDataDBException {
 		try {
@@ -59,6 +60,7 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
 	@Transactional
 	public List<MANUAL_TRACKED_PLAYER> getAllPlayers() {
 		return mpRepository.findAll();
@@ -89,6 +91,7 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
 	@Transactional
 	public Keys getKeyByKey (String key) throws PlayerDataDBException{
 		try {
@@ -122,7 +125,18 @@ public class PlayerDataClient {
 		}
 	}
 	
-	
+	@Transactional
+	public Pais findCountry(String name) throws PlayerDataDBException{
+		try {
+			Pais country = ctRepository.findByName(name);
+			if (country!=null)
+				return country;
+			return null;
+		}
+		catch(Exception e){
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	
 	@Transactional
 	public boolean deleteKey (Keys key) throws PlayerDataDBException{
@@ -190,6 +204,8 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
+	
 	@Transactional
 	public void deleteAllCountries() throws PlayerDataDBException{
 		try {

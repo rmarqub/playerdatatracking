@@ -22,6 +22,7 @@ import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
 import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
+import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
@@ -89,10 +90,10 @@ public class GetAllLeagues {
 		}
 	}
 	
-	public void updateLeagues() throws PlayerDataDBException {
+	public void updateLeagues() throws PlayerDataDBException, PlayerInputException {
 	    ObjectMapper objectMapper = new ObjectMapper();
 	    try {
-	    	pdClient.deleteAllCountries();
+	    	pdClient.deleteAllTorneos();
 	        File jsonFile = new File(filePath);
 	        JsonNode root = objectMapper.readTree(jsonFile);
 	        JsonNode responseNode = root.path("response");
@@ -105,7 +106,7 @@ public class GetAllLeagues {
 	                String type = league.path("type").asText();
 	                
 	                JsonNode country = node.path("country");
-	                String countryName = country.path("path").asText();
+	                String countryName = country.path("name").asText();
 	                
 	                Torneo torneo = new Torneo();
 	                torneo.setId(Long.parseLong(id));
@@ -116,9 +117,15 @@ public class GetAllLeagues {
 	                torneo.setFbrefdata(false);
 	                int idTipo = Methods.getTournamentType(name, countryName, type);
 	                torneo.setTipoTorneo(idTipo);
-	                torneo.setName(countryName);
-	                
-	                
+	                try {
+	                	Pais pais = pdClient.findCountry(countryName);
+	                	torneo.setPais(pais.getId());
+	                	pdClient.saveTorneo(torneo);
+	                } catch (NullPointerException e) {
+	                	throw new PlayerInputException("no country has been found when looking for: " + countryName + " in DB");
+	                } catch (Exception e) {
+	                	throw e;
+	                }
 	            }
 	        }
 
