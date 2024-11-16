@@ -1,12 +1,11 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Ligas en BBDD y script de actualizacion de ligas
+- script de actualizacion de ligas
 - Actualizar scripts de creacion de tablas
 - Update Player recibiendo información de un formulario
 - Jugadores por scoutear en BBDD, operaciones relacionadas de avanzado de la operación, y recibirlos desde un csv en una pagina nueva
 - Estandarizar todas las direcciones de tal forma que sean validas para ejecución en desarrollo y ejecución en local a través de jar
-- Trata de error del nullPointer exception
 - Validacion de parametros en las requests
-- Tabla de guardado de operaciones realizadas a modo de logs
+- Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
 - Diseño de datos para informacion de equipos y jugadores
 - Esquemas de flujos y diseño de arquitectura y clases
 - Json de operaciones de postman
