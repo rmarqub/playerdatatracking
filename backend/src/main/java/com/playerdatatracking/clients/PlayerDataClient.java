@@ -10,12 +10,14 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.entities.indexaldata.ConfigParams;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.PLAYER_QUALITIES;
 import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
+import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
 import com.playerdatatracking.repositories.indexaldata.PaisRepository;
@@ -40,10 +42,12 @@ public class PlayerDataClient {
 	@Autowired
 	private TorneoRepository trRepository;
 	@Autowired
+	private ConfigParamsRepository cpRepository;
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
 	@Transactional
-	public boolean savePlayer(MANUAL_TRACKED_PLAYER player) throws PlayerDataDBException {
+	public boolean savePlayer(ManualTrackedPlayer player) throws PlayerDataDBException {
 		try {
 			mpRepository.save(player);
 			return true;
@@ -53,7 +57,7 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
-	public MANUAL_TRACKED_PLAYER getPlayerbyName(String name) throws PlayerDataDBException {
+	public ManualTrackedPlayer getPlayerbyName(String name) throws PlayerDataDBException {
 		try {
 			return mpRepository.findByNombre(name);
 		} catch (Exception e) {
@@ -62,7 +66,7 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
-	public List<MANUAL_TRACKED_PLAYER> getAllPlayers() {
+	public List<ManualTrackedPlayer> getAllPlayers() {
 		return mpRepository.findAll();
 	}
 	
@@ -154,7 +158,7 @@ public class PlayerDataClient {
 	@Transactional
 	public boolean deletePlayer(String name) throws PlayerDataDBException{
 		try {
-			MANUAL_TRACKED_PLAYER player = mpRepository.findByNombre(name);
+			ManualTrackedPlayer player = mpRepository.findByNombre(name);
 			if (player==null)
 				throw new PlayerDataDBException("no player was found with name " + name);
 			mpRepository.delete(player);
@@ -186,9 +190,9 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
-	public MANUAL_TRACKED_PLAYER getPlayer(Long id) throws PlayerDataDBException{
+	public ManualTrackedPlayer getPlayer(Long id) throws PlayerDataDBException{
 		try {
-			Optional<MANUAL_TRACKED_PLAYER> player = mpRepository.findById(id);
+			Optional<ManualTrackedPlayer> player = mpRepository.findById(id);
 			return player.isPresent() ? player.get() : null;
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
@@ -228,6 +232,15 @@ public class PlayerDataClient {
 	public void deleteAllTorneos() throws PlayerDataDBException{
 		try {
 			trRepository.deleteAll();
+		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	@Transactional
+	public ConfigParams getParam(String key) throws PlayerDataDBException{
+		try {
+			ConfigParams param = cpRepository.findByKey(key);
+			return param;
 		} catch(Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}

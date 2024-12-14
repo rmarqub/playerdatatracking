@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.operations.MalformedRequestException;
 import com.playerdatatracking.requests.GenericRequest;
 
@@ -59,10 +59,10 @@ public class Methods {
 
 
 
-	public static MANUAL_TRACKED_PLAYER bindRequestAsPlayer(GenericRequest request) throws ParseException, MalformedRequestException {
+	public static ManualTrackedPlayer bindRequestAsPlayer(GenericRequest request) throws ParseException, MalformedRequestException {
 		ArrayList<String> errors = playerWrongValues(request);
 		if (errors.size()==0) {
-			MANUAL_TRACKED_PLAYER player = new MANUAL_TRACKED_PLAYER();
+			ManualTrackedPlayer player = new ManualTrackedPlayer();
 			player.setNombre(request.getNombre());
 			player.setNota(request.getNota());
 			if (request.getAge()==null || request.getAge().equals(""))

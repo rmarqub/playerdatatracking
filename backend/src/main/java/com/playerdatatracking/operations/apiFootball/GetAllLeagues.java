@@ -13,7 +13,7 @@ import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.indexaldata.TipoTorneo;
 import com.playerdatatracking.entities.indexaldata.Torneo;

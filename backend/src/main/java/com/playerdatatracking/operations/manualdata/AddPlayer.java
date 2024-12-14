@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.MalformedRequestException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
@@ -30,10 +30,10 @@ public class AddPlayer{
 
 
 	
-	public GenericResponse ejecutar (MANUAL_TRACKED_PLAYER player) throws MalformedRequestException, PlayerDataDBException, PlayerInputException {
+	public GenericResponse ejecutar (ManualTrackedPlayer player) throws MalformedRequestException, PlayerDataDBException, PlayerInputException {
 		
 		response = new GenericResponse();
-		MANUAL_TRACKED_PLAYER dummy = pdClient.getPlayerbyName(player.getNombre());
+		ManualTrackedPlayer dummy = pdClient.getPlayerbyName(player.getNombre());
 		if (dummy!=null) {
 			throw new PlayerInputException("Player already registered in MANUAL_TRACKED_PLAYER");
 		}

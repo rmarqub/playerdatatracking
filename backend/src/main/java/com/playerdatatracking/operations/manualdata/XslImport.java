@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.responses.GenericResponse;
 
@@ -65,9 +65,9 @@ private GenericResponse response = new GenericResponse();
             while (iterator.hasNext()) {
                 Row row = iterator.next();
                 String name = row.getCell(0).getStringCellValue();
-                MANUAL_TRACKED_PLAYER isAlreadyInDB = pdClient.getPlayerbyName(name);
+                ManualTrackedPlayer isAlreadyInDB = pdClient.getPlayerbyName(name);
                 if (isAlreadyInDB==null) {
-                	MANUAL_TRACKED_PLAYER player = new MANUAL_TRACKED_PLAYER();
+                	ManualTrackedPlayer player = new ManualTrackedPlayer();
                 	player.setNombre(name);
                 	try {
                 		player.setNota((float) row.getCell(1).getNumericCellValue());

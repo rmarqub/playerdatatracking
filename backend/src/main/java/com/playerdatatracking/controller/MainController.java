@@ -9,10 +9,10 @@ import org.springframework.core.io.ResourceLoader;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
-import com.playerdatatracking.entities.indexaldata.MANUAL_TRACKED_PLAYER;
+import com.playerdatatracking.common.crypto.AESCrypto;
+import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
-import com.playerdatatracking.operations.Crypto.AESCrypto;
 import com.playerdatatracking.operations.apiFootball.GetAllCountries;
 import com.playerdatatracking.operations.apiFootball.GetAllLeagues;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
@@ -219,7 +219,7 @@ public class MainController {
     	response = new GenericResponse();
     	operationAddPlayer.setPdClient(pdClient);
         try {
-        	MANUAL_TRACKED_PLAYER player = Methods.bindRequestAsPlayer(request);
+        	ManualTrackedPlayer player = Methods.bindRequestAsPlayer(request);
         	response = operationAddPlayer.ejecutar(player);
         } catch (Exception e) {
         	response.setCODE(Methods.exceptionCodeManagement(e));
@@ -241,7 +241,7 @@ public class MainController {
         return response;
     }
     @GetMapping("/player/{id}")
-    public GenericResponse<MANUAL_TRACKED_PLAYER> getPlayer(@PathVariable("id") Long id) {
+    public GenericResponse<ManualTrackedPlayer> getPlayer(@PathVariable("id") Long id) {
     	response = new GenericResponse();
         oeprationGetPlayer.setPdClient(pdClient);
         try {

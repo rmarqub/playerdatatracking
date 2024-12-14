@@ -1,4 +1,4 @@
-package com.playerdatatracking.operations.Crypto;
+package com.playerdatatracking.common.crypto;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

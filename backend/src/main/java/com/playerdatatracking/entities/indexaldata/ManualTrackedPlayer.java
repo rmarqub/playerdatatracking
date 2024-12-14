@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "MANUAL_TRACKED_PLAYER", uniqueConstraints = @UniqueConstraint(columnNames = "nombre"))
-public class MANUAL_TRACKED_PLAYER {
+public class ManualTrackedPlayer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

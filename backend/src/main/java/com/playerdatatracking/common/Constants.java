@@ -47,6 +47,8 @@ public class Constants {
 	public static final String AMERICA = "America";
 	public static final String AFRICA = "Africa";
 	
+	
+	//TOURNAMENTS
 	public static final String EURO = "Euro Championship";
 	public static final String CONFEDERATIONS = "Confederations Cup";
 	public static final String MUNDIAL = "World Cup";
@@ -122,5 +124,8 @@ public class Constants {
 	public static final String WAFF_U23 = "WAFF Championship U23";
 	public static final String OLYMPICS_QF = "Olympics - Intercontinental Play-offs";
 	public static final String OFC_U19 = "OFC U19 Championship";
+	
+	//CONFIG_PARAMS
+	public static final String ACTUAL_APF_SEASON = "ACTUAL_SEASON";
 	
 }

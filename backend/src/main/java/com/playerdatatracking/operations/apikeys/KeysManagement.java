@@ -9,10 +9,10 @@ import org.springframework.core.env.Environment;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.crypto.AESCrypto;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
-import com.playerdatatracking.operations.Crypto.AESCrypto;
 import com.playerdatatracking.responses.GenericResponse;
 
 public class KeysManagement {
