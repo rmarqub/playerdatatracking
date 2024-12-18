@@ -10,9 +10,11 @@ import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.common.crypto.AESCrypto;
+import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
+import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
 import com.playerdatatracking.operations.apiFootball.GetAllCountries;
 import com.playerdatatracking.operations.apiFootball.GetAllLeagues;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
@@ -64,6 +66,7 @@ public class MainController {
 	private DeletePlayer operationDeletePlayer = new DeletePlayer();
 	private GetPlayer oeprationGetPlayer = new GetPlayer();
 	private GetAllCountries operationGetCountries = new GetAllCountries();
+	private UpdateClubsData operationUpdateClubsData = new UpdateClubsData();
 	
 	
 // 	---------RESPONSES---------	
@@ -253,6 +256,20 @@ public class MainController {
         return response;
     }
 
+    
+    @PostMapping("/updateClubsInfo")
+    public GenericResponse<Club> updateClubsData(@RequestBody GenericRequest request){
+    	response = new GenericResponse();
+    	operationUpdateClubsData.setEnv(env);
+    	operationUpdateClubsData.setPdClient(pdClient);
+    	try {
+    		response = operationUpdateClubsData.ejecutar();
+    	} catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
     
     
     

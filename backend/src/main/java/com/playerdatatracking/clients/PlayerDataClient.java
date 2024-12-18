@@ -251,4 +251,14 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
+	@Transactional
+	public boolean deleteAllClubs() throws PlayerDataDBException{
+		try {
+			clubRepository.deleteAll();
+			return true;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 }
