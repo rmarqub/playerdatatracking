@@ -28,24 +28,54 @@ public class ApiFootballClient {
 		 headers.put("x-rapidapi-key", apikey);
 		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
 		 
-		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/leagues", apikey, headers, "src/main/resources/json/apiFotball/leagues/leagues.json", "src/main/resources/json/apiFotball/leagues");
+		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/leagues", apikey, headers, null, "src/main/resources/json/apiFotball/leagues/leagues.json", "src/main/resources/json/apiFotball/leagues");
 		 
 	 }
 
-
+	 public void getClubs(HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception{
+		 HashMap<String, String> headers = new HashMap<>();
+		 headers.put("x-rapidapi-key", apikey);
+		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
+		 
+		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/leagues/" + leagueName +".json", "src/main/resources/json/apiFotball/leagues");
+		 
+	 }
+	 
+	 public void getClubsPaged(HashMap<String, String> queryParams, String apikey, String leagueName, String page) throws Exception{
+		 HashMap<String, String> headers = new HashMap<>();
+		 headers.put("x-rapidapi-key", apikey);
+		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
+		 queryParams.put("page", page);
+		 
+		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/leagues/" + leagueName +".json", "src/main/resources/json/apiFotball/leagues");
+		 
+	 }
 	 public void getCountriesInfo(String apikey) throws Exception {
 		 	 
 		 HashMap<String, String> headers = new HashMap<>();
 		 headers.put("x-rapidapi-key", apikey);
 		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
 		 
-		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/countries", apikey, headers, "src/main/resources/json/apiFotball/countries/countries.json", "src/main/resources/json/apiFotball/countries");
+		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/countries", apikey, headers, null, "src/main/resources/json/apiFotball/countries/countries.json", "src/main/resources/json/apiFotball/countries");
 	
 	 }
 	 
 	 
-	 private void apiFootballClientCall(String method, String url, String apikey, HashMap<String, String> headers, String filePath, String sJsonDir) throws Exception {
-		 AsyncHttpClient client = new DefaultAsyncHttpClient();
+	 private void apiFootballClientCall(String method, String url, String apikey, HashMap<String, String> headers, HashMap<String, String> queryParams, String filePath, String sJsonDir) throws Exception {
+		 	AsyncHttpClient client = new DefaultAsyncHttpClient();
+		 	
+		 	if (queryParams != null && !queryParams.isEmpty()) {
+		        StringBuilder urlBuilder = new StringBuilder(url);
+		        urlBuilder.append("?");
+		        queryParams.forEach((key, value) -> {
+		            if (value != null && !value.isEmpty()) {
+		                urlBuilder.append(key).append("=").append(value).append("&");
+		            }
+		        });
+		        // Eliminar el último '&' si existe
+		        url = urlBuilder.substring(0, urlBuilder.length() - 1);
+		    }
+		 	
 	        var requestBuilder = client.prepare(method, url);
 	        headers.forEach((key, value) -> requestBuilder.setHeader(key, value));
 	        CompletableFuture<Response> futureResponse = requestBuilder.execute().toCompletableFuture();

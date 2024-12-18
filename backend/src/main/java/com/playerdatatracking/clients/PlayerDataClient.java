@@ -261,4 +261,13 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	@Transactional
+	public List<Torneo> getStudiedLeagues() throws PlayerDataDBException{
+		try {
+			List<Torneo> response = trRepository.findByStudied(true);
+			return response;
+		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 }
