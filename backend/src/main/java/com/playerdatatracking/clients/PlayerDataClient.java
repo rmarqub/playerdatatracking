@@ -17,6 +17,8 @@ import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
+import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
+import com.playerdatatracking.repositories.indexaldata.ClubRepository;
 import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
@@ -43,6 +45,10 @@ public class PlayerDataClient {
 	private TorneoRepository trRepository;
 	@Autowired
 	private ConfigParamsRepository cpRepository;
+	@Autowired
+	private ClubRepository clubRepository;
+	@Autowired
+	private ClubInLeagueRepository cilRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
