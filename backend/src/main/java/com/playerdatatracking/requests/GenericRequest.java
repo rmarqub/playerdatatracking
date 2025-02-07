@@ -26,7 +26,18 @@ public class GenericRequest {
     private String plan;
     private String apiKey;
     private String update;
-    private int idService; 
+    private String restUpdate;
+    private int idService;
+    
+    public String getRestUpdate() {
+		return restUpdate;
+	}
+
+	public void setRestUpdate(String restUpdate) {
+		this.restUpdate = restUpdate;
+	}
+
+	
     
     
     // Getters y setters

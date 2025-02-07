@@ -1,5 +1,4 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- script de actualizacion de ligas
 - Actualizar scripts de creacion de tablas
 - Update Player recibiendo información de un formulario
 - Jugadores por scoutear en BBDD, operaciones relacionadas de avanzado de la operación, y recibirlos desde un csv en una pagina nueva
@@ -12,3 +11,4 @@
 - Revisar si la clave de encriptacion (secret_key) puede almacenarse en un certificado o de alguna forma mas segura
 - Considerar usar lombok
 - Separar controlador en varias clases
+- Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs

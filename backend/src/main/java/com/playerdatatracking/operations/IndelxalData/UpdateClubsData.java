@@ -14,6 +14,7 @@ import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
+import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
 public class UpdateClubsData {
@@ -33,54 +34,59 @@ public class UpdateClubsData {
 		this.env = env;
 	}
 	
-	public GenericResponse<Club> ejecutar() throws Exception {
+	public GenericResponse<Club> ejecutar(GenericRequest request) throws Exception {
 		
 		restClient = new ApiFootballClient();
 		keyMethods.setEnv(env);
 		keyMethods.setPdClient(pdClient);
 		try {
-			if(pdClient.deleteAllClubs()) {
-				String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
-				List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
-				if (studiedLeagues==null)
-					throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
-				if (studiedLeagues.size()==0) {
-					response.setCODE(Constants.CODE_OK);
-					response.setDescription("OK");
-					return response;
-				} else {
-					Keys apiKey = keyMethods.nextKey();
-					apiKey = keyMethods.uncryptKey(apiKey);
-					if (apiKey==null)
-						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
-					for (Torneo league : studiedLeagues) {
-						HashMap<String, String> queryParams = new HashMap<>();
-						queryParams.put("season", actualSeason);
-						queryParams.put("league", league.getId().toString());
-						if (keyMethods.checkReadiness(apiKey)) {
-							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-							keyMethods.useKey(apiKey);
-						}
-						else {
-							keyMethods.storeUsedKey(apiKey);
-							apiKey = keyMethods.nextKey();
+			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {
+				if(pdClient.deleteAllClubs()) {
+					String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+					List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
+					if (studiedLeagues==null)
+						throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
+					if (studiedLeagues.size()==0) {
+						response.setCODE(Constants.CODE_OK);
+						response.setDescription("OK");
+						return response;
+					} else {
+						Keys apiKey = keyMethods.nextKey();
+						apiKey = keyMethods.uncryptKey(apiKey);
+						if (apiKey==null)
+							throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
+						for (Torneo league : studiedLeagues) {
+							HashMap<String, String> queryParams = new HashMap<>();
+							queryParams.put("season", actualSeason);
+							queryParams.put("league", league.getId().toString());
 							if (keyMethods.checkReadiness(apiKey)) {
 								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
-							else
-								throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+							else {
+								keyMethods.storeUsedKey(apiKey);
+								apiKey = keyMethods.nextKey();
+								if (keyMethods.checkReadiness(apiKey)) {
+									restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+									keyMethods.useKey(apiKey);
+								}
+								else
+									throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+							}
 						}
+						keyMethods.storeUsedKey(apiKey);
 					}
-					keyMethods.storeUsedKey(apiKey);
-					response.setCODE(Constants.CODE_OK);
-					response.setDescription("OK");
-					return response;
+				}
+				else {
+					throw new PlayerDataDBException("Error al intentar borrar la informacion de los clubes previo a la actualizacion");
 				}
 			}
-			else {
-				throw new PlayerDataDBException("Error al intentar borrar la informacion de los clubes previo a la actualizacion");
+			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
+				
 			}
+			response.setCODE(Constants.CODE_OK);
+			response.setDescription("OK");
+			return response;
 		} catch(Exception e) {
 			throw e;
 		}

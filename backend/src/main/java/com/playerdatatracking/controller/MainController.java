@@ -263,7 +263,7 @@ public class MainController {
     	operationUpdateClubsData.setEnv(env);
     	operationUpdateClubsData.setPdClient(pdClient);
     	try {
-    		response = operationUpdateClubsData.ejecutar();
+    		response = operationUpdateClubsData.ejecutar(request);
     	} catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
