@@ -50,7 +50,7 @@ public class UpdateClubsData {
 					return response;
 				} else {
 					Keys apiKey = keyMethods.nextKey();
-					Keys unctyptedKey = keyMethods.uncryptKey(apiKey);
+					apiKey = keyMethods.uncryptKey(apiKey);
 					if (apiKey==null)
 						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
 					for (Torneo league : studiedLeagues) {
@@ -58,13 +58,21 @@ public class UpdateClubsData {
 						queryParams.put("season", actualSeason);
 						queryParams.put("league", league.getId().toString());
 						if (keyMethods.checkReadiness(apiKey)) {
-							restClient.getClubs(queryParams, unctyptedKey.getValor(), league.getName());
+							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
 						}
 						else {
-							throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+							keyMethods.storeUsedKey(apiKey);
+							apiKey = keyMethods.nextKey();
+							if (keyMethods.checkReadiness(apiKey)) {
+								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+								keyMethods.useKey(apiKey);
+							}
+							else
+								throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 						}
 					}
+					keyMethods.storeUsedKey(apiKey);
 					response.setCODE(Constants.CODE_OK);
 					response.setDescription("OK");
 					return response;

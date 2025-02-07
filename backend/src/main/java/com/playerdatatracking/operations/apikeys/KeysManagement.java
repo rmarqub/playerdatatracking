@@ -35,7 +35,6 @@ public class KeysManagement {
 	
 	public void useKey(Keys actualKey) throws Exception {
 		try {
-			pdClient.deleteKey(actualKey);
 			String actualDate = formatter.format(new Date());
 			actualKey.setLastUsed(actualDate);
 			actualKey.setTodayUses(actualKey.getTodayUses()+1);
@@ -43,9 +42,6 @@ public class KeysManagement {
 				actualKey.setValid(false);
 			else
 				actualKey.setValid(true);
-			crypt.setEnv(env);
-			String encryptedKey = crypt.encrypt(actualKey.getValor());
-			actualKey.setValor(encryptedKey);
 			pdClient.saveApiKey(actualKey);
 		} catch (Exception e) {
 			throw e;
@@ -59,7 +55,15 @@ public class KeysManagement {
 		}
 		
 	}
-	
+	public void storeUsedKey(Keys key) throws Exception {
+		try {
+			crypt.setEnv(env);
+			key.setValor(crypt.encrypt(key.getValor()));
+			pdClient.saveApiKey(key);
+		} catch (Exception e) {
+			throw e;
+		}
+	}
 	public Keys setNewPlan(String key, String newPlan) throws Exception {
 		try {
 			Keys storedKey = getKeyByKey(key).getEntity();
@@ -238,6 +242,7 @@ public class KeysManagement {
 		key.setValor(keyValue);
 		return key;
 	}
+	
 	
 		
 }

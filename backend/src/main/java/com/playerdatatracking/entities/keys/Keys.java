@@ -65,6 +65,8 @@ public class Keys {
 	}
 
 	public void setLastUsed(String lastUsed) {
+		if (this.lastUsed==null || !this.lastUsed.equals(lastUsed))
+			this.setTodayUses(0);
 		this.lastUsed = lastUsed;
 	}
 
