@@ -71,12 +71,12 @@ public class GetAllLeagues {
 	            throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
 
 	        FileReader fileReader = new FileReader(file);
-	            int ch;
-	            if ((ch = fileReader.read()) == -1) {
-	            	fileReader.close();
-	            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
-	            }
-	            fileReader.close();
+            int ch;
+            if ((ch = fileReader.read()) == -1) {
+            	fileReader.close();
+            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+            }
+            fileReader.close();
 	            
 	        if (request.getUpdate().equalsIgnoreCase("true"))
 	        	updateLeagues();
@@ -131,6 +131,8 @@ public class GetAllLeagues {
 
 	    } catch (IOException e) {
 	        throw new PlayerDataDBException("Error while reading or processing the JSON file", e);
+	    } catch (Exception e) {
+	    	throw e;
 	    }
 	}
 }

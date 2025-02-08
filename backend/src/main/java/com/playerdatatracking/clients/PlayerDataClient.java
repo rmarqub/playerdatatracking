@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import com.playerdatatracking.entities.indexaldata.Club;
+import com.playerdatatracking.entities.indexaldata.ClubInLeague;
 import com.playerdatatracking.entities.indexaldata.ConfigParams;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.PLAYER_QUALITIES;
@@ -267,6 +269,34 @@ public class PlayerDataClient {
 			List<Torneo> response = trRepository.findByStudied(true);
 			return response;
 		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public Club saveClub(Club club) throws PlayerDataDBException {
+		try {
+			Club savedClub = clubRepository.save(club);
+			return savedClub;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public void clubPlaysInLeague(ClubInLeague cil) throws PlayerDataDBException{
+		try {
+			cilRepository.save(cil);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void deleteAllCILs() throws PlayerDataDBException{
+		try {
+			cilRepository.deleteAll();
+		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}

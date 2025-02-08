@@ -24,4 +24,22 @@ public class ClubInLeague {
     
     @Column(name = "torneo")
     private Long torneoId;
+
+	public Long getClubId() {
+		return clubId;
+	}
+
+	public void setClubId(Long clubId) {
+		this.clubId = clubId;
+	}
+
+	public Long getTorneoId() {
+		return torneoId;
+	}
+
+	public void setTorneoId(Long torneoId) {
+		this.torneoId = torneoId;
+	}
+    
+    
 }
