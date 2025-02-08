@@ -300,4 +300,24 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
+	@Transactional
+	public Club findClub(Long id) throws PlayerDataDBException{
+		try {
+			Optional<Club> club = clubRepository.findById(id);
+			return club.isPresent() ? club.get() : null;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public ClubInLeague findCIL(Long club, Long torneo) throws PlayerDataDBException{
+		try {
+			Optional<ClubInLeague> resultado = cilRepository.findByClubIdAndTorneoId(club, torneo);
+			return resultado.orElse(null);
+		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 }

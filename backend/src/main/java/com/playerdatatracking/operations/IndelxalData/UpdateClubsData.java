@@ -55,44 +55,39 @@ public class UpdateClubsData {
 		keyMethods.setPdClient(pdClient);
 		try {
 			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {
-				if(pdClient.deleteAllClubs()) {
-					String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
-					List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
-					if (studiedLeagues==null)
-						throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
-					if (studiedLeagues.size()==0) {
-						response.setCODE(Constants.CODE_OK);
-						response.setDescription("OK");
-						return response;
-					} else {
-						Keys apiKey = keyMethods.nextKey();
-						apiKey = keyMethods.uncryptKey(apiKey);
-						if (apiKey==null)
-							throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
-						for (Torneo league : studiedLeagues) {
-							HashMap<String, String> queryParams = new HashMap<>();
-							queryParams.put("season", actualSeason);
-							queryParams.put("league", league.getId().toString());
+				String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+				List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
+				if (studiedLeagues==null)
+					throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
+				if (studiedLeagues.size()==0) {
+					response.setCODE(Constants.CODE_OK);
+					response.setDescription("OK");
+					return response;
+				} else {
+					Keys apiKey = keyMethods.nextKey();
+					apiKey = keyMethods.uncryptKey(apiKey);
+					if (apiKey==null)
+						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
+					for (Torneo league : studiedLeagues) {
+						HashMap<String, String> queryParams = new HashMap<>();
+						queryParams.put("season", actualSeason);
+						queryParams.put("league", league.getId().toString());
+						if (keyMethods.checkReadiness(apiKey)) {
+							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+							keyMethods.useKey(apiKey);
+						}
+						else {
+							keyMethods.storeUsedKey(apiKey);
+							apiKey = keyMethods.nextKey();
 							if (keyMethods.checkReadiness(apiKey)) {
 								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
-							else {
-								keyMethods.storeUsedKey(apiKey);
-								apiKey = keyMethods.nextKey();
-								if (keyMethods.checkReadiness(apiKey)) {
-									restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-									keyMethods.useKey(apiKey);
-								}
-								else
-									throw new ApiKeyManagementException("error al intentar usar una key no disponible");
-							}
+							else
+								throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 						}
-						keyMethods.storeUsedKey(apiKey);
 					}
-				}
-				else {
-					throw new PlayerDataDBException("Error al intentar borrar la informacion de los clubes previo a la actualizacion");
+					keyMethods.storeUsedKey(apiKey);
 				}
 			}
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
@@ -134,7 +129,7 @@ public class UpdateClubsData {
 				        JsonNode root = objectMapper.readTree(file);
 				        JsonNode parametersNode = root.path("parameters");
 				        JsonNode leagueNode = parametersNode.path("league");
-				        String leagueID = leagueNode.textValue();
+				        Long leagueID = Long.parseLong(leagueNode.textValue());
 				        JsonNode responseNode = root.path("response");
 				        for (JsonNode node : responseNode) {
 					        JsonNode teamNode = node.path("team");
@@ -149,15 +144,19 @@ public class UpdateClubsData {
 					        newClub.setNombre(nombre);
 					        newClub.setCodeaf(codeaf);
 					        newClub.setIdPais(pais.getId());
+					        Club savedClub = new Club();
 					        
-					        
-					        Club savedClub = pdClient.saveClub(newClub);
+					        if (pdClient.findClub(newClub.getId())!=null) {
+					        	 savedClub = pdClient.saveClub(newClub);
+					        }
 					        
 					        ClubInLeague cil = new ClubInLeague();
 					        cil.setClubId(savedClub.getId());
-					        cil.setTorneoId(Long.parseLong(leagueID));
+					        cil.setTorneoId(leagueID);
 					        
-					        pdClient.clubPlaysInLeague(cil);
+					        if(pdClient.findCIL(newClub.getId(), leagueID)!=null) {
+					        	pdClient.clubPlaysInLeague(cil);
+					        }
 				        }
 		    	    } catch (Exception e) {
 		    	    	throw e;
