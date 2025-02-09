@@ -32,13 +32,13 @@ public class ApiFootballClient {
 		 
 	 }
 
-	 public void getClubs(HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception{
+	 public String getClubs(HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception{
 		 HashMap<String, String> headers = new HashMap<>();
 		 headers.put("x-rapidapi-key", apikey);
 		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
-		 
+		 String jsonFilePath = "src/main/resources/json/apiFotball/leagues/" + leagueName +".json";
 		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/leagues/" + leagueName +".json", "src/main/resources/json/apiFotball/leagues");
-		 
+		 return jsonFilePath;
 	 }
 	 
 	 public void getClubsPaged(HashMap<String, String> queryParams, String apikey, String leagueName, String page) throws Exception{

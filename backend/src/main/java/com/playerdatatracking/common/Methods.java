@@ -178,4 +178,18 @@ public class Methods {
 				
 		}
 	}
+	
+	public static void sleep(long tiempoTotalMs) {
+		int partes = 5;
+		long intervalo = tiempoTotalMs / partes;
+		
+		try {
+		    for (int j = 1; j <= partes; j++) {
+		        Thread.sleep(intervalo);
+		System.out.println("Han pasado " + (j * (tiempoTotalMs / 1000 / partes)) + " segundos...");
+		    }
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
+    }
 }

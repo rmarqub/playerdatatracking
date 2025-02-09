@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ClubInLeague;
 import com.playerdatatracking.entities.indexaldata.Pais;
@@ -72,8 +73,10 @@ public class UpdateClubsData {
 						HashMap<String, String> queryParams = new HashMap<>();
 						queryParams.put("season", actualSeason);
 						queryParams.put("league", league.getId().toString());
+						String responsePath = "";
 						if (keyMethods.checkReadiness(apiKey)) {
 							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+							checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
 						}
 						else {
@@ -81,6 +84,7 @@ public class UpdateClubsData {
 							apiKey = keyMethods.nextKey();
 							if (keyMethods.checkReadiness(apiKey)) {
 								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+								checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
 							else
@@ -169,5 +173,25 @@ public class UpdateClubsData {
 		} catch(Exception e) {
 			throw e;
 		}
+	}
+	
+	public void checkGoodCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception {
+        try {
+            String content = new String(Files.readAllBytes(Paths.get(jsonResponsePath)));
+
+            
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(content);
+            JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
+            if (!errorsNode.isMissingNode() && Constants.RATE_LIMIT_ERROR_MESSAGE.equals(errorsNode.asText())) {
+                System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
+                Methods.sleep(60000);
+                restClient.getClubs(queryParams, apikey, leagueName);
+            }
+
+        } catch (Exception e) {
+            throw e;
+        }
+        
 	}
 }
