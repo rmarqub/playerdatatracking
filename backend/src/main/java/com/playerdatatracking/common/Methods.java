@@ -1,16 +1,25 @@
 package com.playerdatatracking.common;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.operations.MalformedRequestException;
 import com.playerdatatracking.requests.GenericRequest;
 
 public class Methods {
+	
+
+	private ApiFootballClient restClient;
 
 	public static ArrayList<String> playerWrongValues(GenericRequest player) {
 		ArrayList<String> errors = new ArrayList<String>();
@@ -192,4 +201,24 @@ public class Methods {
 		    e.printStackTrace();
 		}
     }
+	
+	public void checkGoodCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception {
+        try {
+            String content = new String(Files.readAllBytes(Paths.get(jsonResponsePath)));
+            this.restClient = new ApiFootballClient();
+            
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(content);
+            JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
+            if (!errorsNode.isMissingNode() && Constants.RATE_LIMIT_ERROR_MESSAGE.equals(errorsNode.asText())) {
+                System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
+                Methods.sleep(60000);
+                restClient.getClubs(queryParams, apikey, leagueName);
+            }
+
+        } catch (Exception e) {
+            throw e;
+        }
+        
+	}
 }

@@ -40,6 +40,7 @@ public class UpdateClubsData {
 	String directoryPath = "src/main/resources/json/apiFotball/leagues/";
     String excludedFile = "leagues.json";
 	private GenericResponse<Club> response = new GenericResponse();
+	private Methods methods;
 	
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -54,6 +55,7 @@ public class UpdateClubsData {
 		restClient = new ApiFootballClient();
 		keyMethods.setEnv(env);
 		keyMethods.setPdClient(pdClient);
+		methods = new Methods();
 		try {
 			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {
 				String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
@@ -76,7 +78,7 @@ public class UpdateClubsData {
 						String responsePath = "";
 						if (keyMethods.checkReadiness(apiKey)) {
 							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-							checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
+							methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
 						}
 						else {
@@ -84,7 +86,7 @@ public class UpdateClubsData {
 							apiKey = keyMethods.nextKey();
 							if (keyMethods.checkReadiness(apiKey)) {
 								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-								checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
+								methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
 							else
@@ -173,25 +175,5 @@ public class UpdateClubsData {
 		} catch(Exception e) {
 			throw e;
 		}
-	}
-	
-	public void checkGoodCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception {
-        try {
-            String content = new String(Files.readAllBytes(Paths.get(jsonResponsePath)));
-
-            
-            ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode jsonNode = objectMapper.readTree(content);
-            JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
-            if (!errorsNode.isMissingNode() && Constants.RATE_LIMIT_ERROR_MESSAGE.equals(errorsNode.asText())) {
-                System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
-                Methods.sleep(60000);
-                restClient.getClubs(queryParams, apikey, leagueName);
-            }
-
-        } catch (Exception e) {
-            throw e;
-        }
-        
 	}
 }

@@ -12,6 +12,4 @@
 - Considerar usar lombok
 - Separar controlador en varias clases
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs
-
-
-- Too Many Request Exception Handler
+- Too Many Request Exception Handler en todas las operaciones que manden external calls
