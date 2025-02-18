@@ -140,6 +140,7 @@ public class UpdateClubsData {
 					        String nombre = teamNode.path("name").asText();
 					        String codeaf = teamNode.path("code").asText();
 					        String paisName = teamNode.path("country").asText();
+					        System.out.println(paisName);
 					        
 					        Pais pais = pdClient.findCountry(paisName);
 					        Club newClub = new Club();
@@ -149,15 +150,18 @@ public class UpdateClubsData {
 					        newClub.setIdPais(pais.getId());
 					        Club savedClub = new Club();
 					        
-					        if (pdClient.findClub(newClub.getId())!=null) {
+					        if (pdClient.findClub(newClub.getId())==null) {
 					        	 savedClub = pdClient.saveClub(newClub);
 					        }
 					        
 					        ClubInLeague cil = new ClubInLeague();
-					        cil.setClubId(savedClub.getId());
+					        if (savedClub.getId()!=null)
+					        	cil.setClubId(savedClub.getId());
+					        else
+					        	cil.setClubId(newClub.getId());
 					        cil.setTorneoId(leagueID);
 					        
-					        if(pdClient.findCIL(newClub.getId(), leagueID)!=null) {
+					        if(pdClient.findCIL(newClub.getId(), leagueID)==null) {
 					        	pdClient.clubPlaysInLeague(cil);
 					        }
 				        }
