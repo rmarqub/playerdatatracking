@@ -50,6 +50,7 @@ public class UpdateClubsData {
 		this.env = env;
 	}
 	
+	
 	public GenericResponse<Club> ejecutar(GenericRequest request) throws Exception {
 		
 		restClient = new ApiFootballClient();
@@ -62,11 +63,7 @@ public class UpdateClubsData {
 				List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
 				if (studiedLeagues==null)
 					throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
-				if (studiedLeagues.size()==0) {
-					response.setCODE(Constants.CODE_OK);
-					response.setDescription("OK");
-					return response;
-				} else {
+				if (studiedLeagues.size()!=0) {
 					Keys apiKey = keyMethods.nextKey();
 					apiKey = keyMethods.uncryptKey(apiKey);
 					if (apiKey==null)
@@ -77,7 +74,7 @@ public class UpdateClubsData {
 						queryParams.put("league", league.getId().toString());
 						String responsePath = "";
 						if (keyMethods.checkReadiness(apiKey)) {
-							restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+							responsePath = restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 							methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
 						}
@@ -85,7 +82,7 @@ public class UpdateClubsData {
 							keyMethods.storeUsedKey(apiKey);
 							apiKey = keyMethods.nextKey();
 							if (keyMethods.checkReadiness(apiKey)) {
-								restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
+								responsePath =restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 								methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
