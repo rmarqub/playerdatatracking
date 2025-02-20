@@ -9,8 +9,6 @@
 - Esquemas de flujos y diseño de arquitectura y clases
 - Json de operaciones de postman
 - Revisar si la clave de encriptacion (secret_key) puede almacenarse en un certificado o de alguna forma mas segura
-- Considerar usar lombok
 - Separar controlador en varias clases
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs
 - Too Many Request Exception Handler en todas las operaciones que manden external calls
-- Estandarizacion de CheckGoodCalls
