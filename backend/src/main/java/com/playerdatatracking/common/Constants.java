@@ -46,7 +46,7 @@ public class Constants {
 	public static final String OCEANIA = "Oceania";
 	public static final String AMERICA = "America";
 	public static final String AFRICA = "Africa";
-	public static final String RATE_LIMIT_ERROR_MESSAGE = "Too many requests. Your rate limit is 10 requests per minute.";
+	public static final String RATE_LIMIT_ERROR_MESSAGE = "Too many requests. Your rate limit is 300 requests per minute.";
 	
 	
 	//TOURNAMENTS
