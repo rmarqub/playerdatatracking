@@ -51,6 +51,7 @@ public class UpdatePlayersData {
 		keyMethods.setEnv(env);
 		keyMethods.setPdClient(pdClient);
 		methods = new Methods();
+		List<Club> updatedClubs = new ArrayList<Club>();
 		try {
 			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {
 				String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
@@ -65,7 +66,8 @@ public class UpdatePlayersData {
 						if (cilList!=null && cilList.size()>0) {
 							for(ClubInLeague cil: cilList) {
 								Torneo auxLeague = pdClient.getTorneoById(cil.getTorneoId());
-								if(auxLeague != null && studiedLeagues.contains(auxLeague)) {
+								if(auxLeague != null && studiedLeagues.contains(auxLeague) && !updatedClubs.contains(club)) {
+									updatedClubs.add(club);
 									HashMap<String, String> queryParams = new HashMap<>();
 									queryParams.put("season", actualSeason);
 									queryParams.put("page", "1");
@@ -81,12 +83,12 @@ public class UpdatePlayersData {
 									else
 										throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 									int totalofPages = methods.getTotalOfPagesResponse(responsePath);
-									while(actualPage<=totalofPages) {
+									while(actualPage<totalofPages) {
 										actualPage++;
 										queryParams.put("page", Integer.toString(actualPage));
 										if (keyMethods.checkReadiness(apiKey)) {
-											responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
-											methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
+											responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),Integer.toString(actualPage));
+											methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),Integer.toString(actualPage));
 											System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage + "/" + totalofPages + " stored");
 											keyMethods.useKey(apiKey);
 										}
