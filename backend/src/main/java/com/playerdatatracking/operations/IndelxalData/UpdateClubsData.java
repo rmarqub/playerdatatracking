@@ -75,7 +75,7 @@ public class UpdateClubsData {
 						String responsePath = "";
 						if (keyMethods.checkReadiness(apiKey)) {
 							responsePath = restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-							methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
+							methods.checkGoodClubsCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
 						}
 						else {
@@ -83,7 +83,7 @@ public class UpdateClubsData {
 							apiKey = keyMethods.nextKey();
 							if (keyMethods.checkReadiness(apiKey)) {
 								responsePath =restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-								methods.checkGoodCall(responsePath, queryParams, apiKey.getValor(), league.getName());
+								methods.checkGoodClubsCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 								keyMethods.useKey(apiKey);
 							}
 							else
@@ -103,7 +103,7 @@ public class UpdateClubsData {
 		                    .filter(path -> !path.getFileName().toString().equals(excludedFile))
 		                    .forEach(path -> jsonFiles.add(path.toString()));
 		        } catch (IOException e) {
-		        	e.printStackTrace();
+		        	throw e;
 		        }
 		        try {
 	            	pdClient.deleteAllCILs();

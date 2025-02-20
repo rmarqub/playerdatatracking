@@ -1,0 +1,133 @@
+package com.playerdatatracking.operations.IndelxalData;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.springframework.core.env.Environment;
+
+import com.playerdatatracking.clients.ApiFootballClient;
+import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.entities.indexaldata.Club;
+import com.playerdatatracking.entities.indexaldata.ClubInLeague;
+import com.playerdatatracking.entities.indexaldata.Player;
+import com.playerdatatracking.entities.indexaldata.Torneo;
+import com.playerdatatracking.entities.keys.Keys;
+import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
+import com.playerdatatracking.exceptions.db.PlayerDataDBException;
+import com.playerdatatracking.operations.apikeys.KeysManagement;
+import com.playerdatatracking.requests.GenericRequest;
+import com.playerdatatracking.responses.GenericResponse;
+
+public class UpdatePlayersData {
+
+	
+	private PlayerDataClient pdClient;
+	private ApiFootballClient restClient;
+	private KeysManagement keyMethods = new KeysManagement();
+	private Environment env;
+	String directoryPath = "src/main/resources/json/apiFotball/players/";
+	String leaguesPath = "src/main/resources/json/apiFotball/leagues/";
+	String excludedLeague = "leagues.json";
+	private GenericResponse<Player> response = new GenericResponse();
+	private Methods methods;
+	
+	public void setPdClient(PlayerDataClient pdClient) {
+		this.pdClient = pdClient;
+	}
+	
+	public void setEnv(Environment env) {
+		this.env = env;
+	}
+	
+	
+	public GenericResponse<Player> ejecutar(GenericRequest request) throws Exception {
+		restClient = new ApiFootballClient();
+		keyMethods.setEnv(env);
+		keyMethods.setPdClient(pdClient);
+		methods = new Methods();
+		try {
+			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {
+				String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+				List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
+				List<Club> clubList = pdClient.getAllClubs();
+				if(clubList.size()>0) {
+					Keys apiKey = keyMethods.nextKey();
+					apiKey = keyMethods.uncryptKey(apiKey);
+					if (apiKey==null)
+						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
+					for (Club club : clubList) {
+						List<ClubInLeague> cilList = pdClient.findCILsByClub(club.getId());
+						if (cilList!=null && cilList.size()>0) {
+							for(ClubInLeague cil: cilList) {
+								Torneo auxLeague = pdClient.getTorneoById(cil.getTorneoId());
+								if(auxLeague != null && studiedLeagues.contains(auxLeague)) {
+									HashMap<String, String> queryParams = new HashMap<>();
+									queryParams.put("season", actualSeason);
+									queryParams.put("page", "1");
+									int actualPage = 1;
+									queryParams.put("team", club.getId().toString());
+									String responsePath = "";
+									if (keyMethods.checkReadiness(apiKey)) {
+										responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
+										methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
+										System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage);
+										keyMethods.useKey(apiKey);
+									}
+									else {
+										keyMethods.storeUsedKey(apiKey);
+										apiKey = keyMethods.nextKey();
+										if (keyMethods.checkReadiness(apiKey)) {
+											responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
+											methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
+											System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage);
+											keyMethods.useKey(apiKey);
+										}
+										else
+											throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+									}
+									int totalofPages = methods.getTotalOfPagesResponse(responsePath);
+									while(actualPage<=totalofPages) {
+										actualPage++;
+										queryParams.put("page", Integer.toString(actualPage));
+										if (keyMethods.checkReadiness(apiKey)) {
+											responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
+											methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
+											System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage + "/" + totalofPages + " stored");
+											keyMethods.useKey(apiKey);
+										}
+										else {
+											keyMethods.storeUsedKey(apiKey);
+											apiKey = keyMethods.nextKey();
+											if (keyMethods.checkReadiness(apiKey)) {
+												responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
+												methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
+												System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage + "/" + totalofPages + " stored");
+												keyMethods.useKey(apiKey);
+											}
+											else
+												throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			} 
+			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
+				
+			}
+			response.setCODE(Constants.CODE_OK);
+			response.setDescription("OK");
+			return response;
+		} catch(Exception e) {
+			throw e;
+		}
+	}
+}

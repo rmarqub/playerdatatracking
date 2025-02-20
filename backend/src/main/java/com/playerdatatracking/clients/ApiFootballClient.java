@@ -41,6 +41,16 @@ public class ApiFootballClient {
 		 return jsonFilePath;
 	 }
 	 
+	 public String getPlayersPaged(HashMap<String, String> queryParams, String apikey, String teamName, String page) throws Exception{
+		 //suponemos que queryParams, de inicio, trae consigo el valor de la página 1 como
+		 HashMap<String, String> headers = new HashMap<>();
+		 headers.put("x-rapidapi-key", apikey);
+		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
+		 
+		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/players/" + teamName + "/" + teamName + "_" + page + ".json", "src/main/resources/json/apiFotball/players");
+		 return "src/main/resources/json/apiFotball/players/" + teamName + "/" + teamName + "_" + page + ".json";
+	 } 
+	 
 	 public void getClubsPaged(HashMap<String, String> queryParams, String apikey, String leagueName, String page) throws Exception{
 		 HashMap<String, String> headers = new HashMap<>();
 		 headers.put("x-rapidapi-key", apikey);
@@ -50,6 +60,7 @@ public class ApiFootballClient {
 		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/leagues/" + leagueName +".json", "src/main/resources/json/apiFotball/leagues");
 		 
 	 }
+	 
 	 public void getCountriesInfo(String apikey) throws Exception {
 		 	 
 		 HashMap<String, String> headers = new HashMap<>();
@@ -59,7 +70,6 @@ public class ApiFootballClient {
 		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/countries", apikey, headers, null, "src/main/resources/json/apiFotball/countries/countries.json", "src/main/resources/json/apiFotball/countries");
 	
 	 }
-	 
 	 
 	 private void apiFootballClientCall(String method, String url, String apikey, HashMap<String, String> headers, HashMap<String, String> queryParams, String filePath, String sJsonDir) throws Exception {
 		 	AsyncHttpClient client = new DefaultAsyncHttpClient();
@@ -123,4 +133,6 @@ public class ApiFootballClient {
             throw e;
         }
     }
+    
+    
 }

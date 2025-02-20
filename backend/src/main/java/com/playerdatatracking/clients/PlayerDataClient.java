@@ -25,6 +25,7 @@ import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
 import com.playerdatatracking.repositories.indexaldata.PaisRepository;
+import com.playerdatatracking.repositories.indexaldata.PlayerRepository;
 import com.playerdatatracking.repositories.indexaldata.TorneoRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
 
@@ -51,6 +52,8 @@ public class PlayerDataClient {
 	private ClubRepository clubRepository;
 	@Autowired
 	private ClubInLeagueRepository cilRepository;
+	@Autowired
+	private PlayerRepository pRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -274,6 +277,16 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
+	public Torneo getTorneoById(Long id) throws PlayerDataDBException{
+		try {
+			Optional<Torneo> opTorneo = trRepository.findById(id);
+			return opTorneo.isPresent() ? opTorneo.get() : null;
+		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
 	public Club saveClub(Club club) throws PlayerDataDBException {
 		try {
 			Club savedClub = clubRepository.save(club);
@@ -317,6 +330,34 @@ public class PlayerDataClient {
 			Optional<ClubInLeague> resultado = cilRepository.findByClubIdAndTorneoId(club, torneo);
 			return resultado.orElse(null);
 		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public void deleteAllPlayers() throws PlayerDataDBException{
+		try {
+			pRepository.deleteAll();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public List<Club> getAllClubs() throws PlayerDataDBException{
+		try {
+			List<Club> response = clubRepository.findAll();
+			return response;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public List<ClubInLeague> findCILsByClub(Long idClub)throws PlayerDataDBException{
+		try {
+			return cilRepository.findByClub(idClub);
+		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}

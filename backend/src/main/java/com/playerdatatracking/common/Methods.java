@@ -1,5 +1,8 @@
 package com.playerdatatracking.common;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.ParseException;
@@ -13,6 +16,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
+import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
+import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
 import com.playerdatatracking.exceptions.operations.MalformedRequestException;
 import com.playerdatatracking.requests.GenericRequest;
 
@@ -202,7 +207,7 @@ public class Methods {
 		}
     }
 	
-	public void checkGoodCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception {
+	public void checkGoodClubsCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String leagueName) throws Exception {
         try {
             String content = new String(Files.readAllBytes(Paths.get(jsonResponsePath)));
             this.restClient = new ApiFootballClient();
@@ -221,5 +226,55 @@ public class Methods {
             throw e;
         }
         
+	}
+	
+	public void checkGoodPlayersCall(String jsonResponsePath, HashMap<String, String> queryParams, String apikey, String clubName, String page) throws Exception {
+        try {
+            String content = new String(Files.readAllBytes(Paths.get(jsonResponsePath)));
+            this.restClient = new ApiFootballClient();
+            
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(content);
+            JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
+            if (!errorsNode.isMissingNode() && Constants.RATE_LIMIT_ERROR_MESSAGE.equals(errorsNode.asText())) {
+                System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
+                Methods.sleep(60000);
+                System.out.println("Reiniciando operacion...");
+                restClient.getPlayersPaged(queryParams, apikey, clubName, page);
+            }
+
+        } catch (Exception e) {
+            throw e;
+        }
+        
+	}
+	
+	public int getTotalOfPagesResponse(String jsonResponsePath) throws NotCreatedJsonFileResponse, NotFilledJsonFileResponse, IOException {
+		int response = 0;
+		try {
+			File file = new File(jsonResponsePath);
+	        if (!file.exists())
+	            throw new NotCreatedJsonFileResponse("error al crear un json de respuesta, el archivo no ha sido creado o no se ha guardado correctamente");
+	        
+	        if (file.length() == 0) 
+	            throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+	        FileReader fileReader = new FileReader(file);
+	        int ch;
+	        if ((ch = fileReader.read()) == -1) {
+	        	fileReader.close();
+	        	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+	        }
+	        fileReader.close();
+	        
+	        ObjectMapper objectMapper = new ObjectMapper();
+	        JsonNode root = objectMapper.readTree(file);
+	        JsonNode pagingNode = root.path("paging");
+	        JsonNode totalPagesNode = pagingNode.path("total");
+	        response = Integer.parseInt(totalPagesNode.textValue());
+	        return response;
+		} catch (Exception e) {
+			throw e;
+		}
+		
 	}
 }
