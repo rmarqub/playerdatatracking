@@ -58,7 +58,6 @@ public class UpdatePlayersData {
 				List<Club> clubList = pdClient.getAllClubs();
 				if(clubList.size()>0) {
 					Keys apiKey = keyMethods.nextKey();
-					apiKey = keyMethods.uncryptKey(apiKey);
 					if (apiKey==null)
 						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
 					for (Club club : clubList) {
@@ -79,18 +78,8 @@ public class UpdatePlayersData {
 										System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage);
 										keyMethods.useKey(apiKey);
 									}
-									else {
-										keyMethods.storeUsedKey(apiKey);
-										apiKey = keyMethods.nextKey();
-										if (keyMethods.checkReadiness(apiKey)) {
-											responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
-											methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
-											System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage);
-											keyMethods.useKey(apiKey);
-										}
-										else
-											throw new ApiKeyManagementException("error al intentar usar una key no disponible");
-									}
+									else
+										throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 									int totalofPages = methods.getTotalOfPagesResponse(responsePath);
 									while(actualPage<=totalofPages) {
 										actualPage++;
@@ -102,16 +91,7 @@ public class UpdatePlayersData {
 											keyMethods.useKey(apiKey);
 										}
 										else {
-											keyMethods.storeUsedKey(apiKey);
-											apiKey = keyMethods.nextKey();
-											if (keyMethods.checkReadiness(apiKey)) {
-												responsePath = restClient.getPlayersPaged(queryParams,apiKey.getValor(),club.getNombre(),"1");
-												methods.checkGoodPlayersCall(responsePath, queryParams,apiKey.getValor(),club.getNombre(),"1");
-												System.out.println("Club: " + club.getNombre() + ", Page: " + actualPage + "/" + totalofPages + " stored");
-												keyMethods.useKey(apiKey);
-											}
-											else
-												throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+											throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 										}
 									}
 								}

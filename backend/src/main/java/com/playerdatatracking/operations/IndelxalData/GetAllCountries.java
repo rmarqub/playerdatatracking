@@ -1,5 +1,4 @@
-package com.playerdatatracking.operations.apiFootball;
-
+package com.playerdatatracking.operations.IndelxalData;
 
 import java.io.File;
 import java.io.FileReader;
@@ -12,27 +11,21 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
-import com.playerdatatracking.common.Methods;
-import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.Pais;
-import com.playerdatatracking.entities.indexaldata.TipoTorneo;
-import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
 import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
-import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
-public class GetAllLeagues {
+public class GetAllCountries {
 
-	
 	private ApiFootballClient restClient;
 	private GenericResponse response;
-	String filePath = "src/main/resources/json/apiFotball/leagues/leagues.json";
+	String filePath = "src/main/resources/json/apiFotball/countries/countries.json";
 	private PlayerDataClient pdClient;
 	private KeysManagement keyMethods = new KeysManagement();
 	private Environment env;
@@ -55,8 +48,7 @@ public class GetAllLeagues {
 			if (apiKey==null)
 				throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
 			if (keyMethods.checkReadiness(apiKey)) {
-				Keys unctyptedKey = keyMethods.uncryptKey(apiKey);
-				restClient.getLeaguesInfo(unctyptedKey.getValor());
+				restClient.getCountriesInfo(apiKey.getValor());
 				keyMethods.useKey(apiKey);
 			}
 			else {
@@ -71,15 +63,15 @@ public class GetAllLeagues {
 	            throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
 
 	        FileReader fileReader = new FileReader(file);
-            int ch;
-            if ((ch = fileReader.read()) == -1) {
-            	fileReader.close();
-            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
-            }
-            fileReader.close();
+	            int ch;
+	            if ((ch = fileReader.read()) == -1) {
+	            	fileReader.close();
+	            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+	            }
+	            fileReader.close();
 	            
 	        if (request.getUpdate().equalsIgnoreCase("true"))
-	        	updateLeagues();
+	        	updateCountries();
 	        		
 	        response.setCODE(Constants.CODE_OK);
 	        response.setDescription("OK");
@@ -90,49 +82,29 @@ public class GetAllLeagues {
 		}
 	}
 	
-	public void updateLeagues() throws PlayerDataDBException, PlayerInputException {
+	public void updateCountries() throws PlayerDataDBException {
 	    ObjectMapper objectMapper = new ObjectMapper();
 	    try {
-	    	pdClient.deleteAllTorneos();
+	    	pdClient.deleteAllCountries();
 	        File jsonFile = new File(filePath);
 	        JsonNode root = objectMapper.readTree(jsonFile);
 	        JsonNode responseNode = root.path("response");
 
 	        if (responseNode.isArray()) {
 	            for (JsonNode node : responseNode) {
-	            	JsonNode league = node.path("league");
-	                String id = league.path("id").asText();
-	                String name = league.path("name").asText();
-	                String type = league.path("type").asText();
-	                
-	                JsonNode country = node.path("country");
-	                String countryName = country.path("name").asText();
-	                
-	                Torneo torneo = new Torneo();
-	                torneo.setId(Long.parseLong(id));
-	                torneo.setName(name);
-	                torneo.setLastupdate(null);
-	                torneo.setStudied(false);
-	                torneo.setFbrefid(null);
-	                torneo.setFbrefdata(false);
-	                int idTipo = Methods.getTournamentType(name, countryName, type);
-	                torneo.setTipoTorneo(idTipo);
-	                try {
-	                	Pais pais = pdClient.findCountry(countryName);
-	                	torneo.setPais(pais.getId());
-	                	pdClient.saveTorneo(torneo);
-	                } catch (NullPointerException e) {
-	                	throw new PlayerInputException("no country has been found when looking for: " + countryName + " in DB");
-	                } catch (Exception e) {
-	                	throw e;
-	                }
+	                String name = node.path("name").asText();
+	                String code = node.path("code").asText();
+
+	                Pais pais = new Pais();
+	                pais.setName(name);
+	                pais.setCode(code);
+	                pdClient.saveCountry(pais);
 	            }
 	        }
 
 	    } catch (IOException e) {
 	        throw new PlayerDataDBException("Error while reading or processing the JSON file", e);
-	    } catch (Exception e) {
-	    	throw e;
 	    }
 	}
+	
 }

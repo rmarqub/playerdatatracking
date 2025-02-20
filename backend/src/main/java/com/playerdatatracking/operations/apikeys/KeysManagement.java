@@ -38,8 +38,10 @@ public class KeysManagement {
 			String actualDate = formatter.format(new Date());
 			actualKey.setLastUsed(actualDate);
 			actualKey.setTodayUses(actualKey.getTodayUses()+1);
-			if (actualKey.getTodayUses()>= actualKey.getTotalUses())
+			if (actualKey.getTodayUses()>= actualKey.getTotalUses()) {
 				actualKey.setValid(false);
+				throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
+			}
 			else
 				actualKey.setValid(true);
 			pdClient.saveApiKey(actualKey);

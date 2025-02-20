@@ -65,7 +65,6 @@ public class UpdateClubsData {
 					throw new PlayerDataDBException("Error al buscar ligas para actualizar los datos de clubes");
 				if (studiedLeagues.size()!=0) {
 					Keys apiKey = keyMethods.nextKey();
-					apiKey = keyMethods.uncryptKey(apiKey);
 					if (apiKey==null)
 						throw new ApiKeyManagementException("no hay almacenada ninguna key valida");
 					for (Torneo league : studiedLeagues) {
@@ -79,15 +78,7 @@ public class UpdateClubsData {
 							keyMethods.useKey(apiKey);
 						}
 						else {
-							keyMethods.storeUsedKey(apiKey);
-							apiKey = keyMethods.nextKey();
-							if (keyMethods.checkReadiness(apiKey)) {
-								responsePath =restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
-								methods.checkGoodClubsCall(responsePath, queryParams, apiKey.getValor(), league.getName());
-								keyMethods.useKey(apiKey);
-							}
-							else
-								throw new ApiKeyManagementException("error al intentar usar una key no disponible");
+							throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 						}
 					}
 					keyMethods.storeUsedKey(apiKey);
