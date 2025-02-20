@@ -270,7 +270,7 @@ public class Methods {
 	        JsonNode root = objectMapper.readTree(file);
 	        JsonNode pagingNode = root.path("paging");
 	        JsonNode totalPagesNode = pagingNode.path("total");
-	        response = Integer.parseInt(totalPagesNode.textValue());
+	        response = totalPagesNode.intValue();
 	        return response;
 		} catch (Exception e) {
 			throw e;

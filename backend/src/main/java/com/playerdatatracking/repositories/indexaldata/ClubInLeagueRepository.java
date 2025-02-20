@@ -9,5 +9,5 @@ import com.playerdatatracking.entities.indexaldata.ClubInLeague;
 
 public interface ClubInLeagueRepository extends JpaRepository<ClubInLeague, Long>  {
 	Optional<ClubInLeague> findByClubIdAndTorneoId(Long club, Long torneo);
-	List<ClubInLeague> findByClub(Long club);
+	List<ClubInLeague> findByClubId(Long club);
 }

@@ -356,7 +356,7 @@ public class PlayerDataClient {
 	@Transactional
 	public List<ClubInLeague> findCILsByClub(Long idClub)throws PlayerDataDBException{
 		try {
-			return cilRepository.findByClub(idClub);
+			return cilRepository.findByClubId(idClub);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
