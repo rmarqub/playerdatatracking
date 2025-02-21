@@ -1,14 +1,21 @@
 package com.playerdatatracking.operations.IndelxalData;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.springframework.core.env.Environment;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -20,6 +27,8 @@ import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
+import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
+import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
@@ -103,6 +112,41 @@ public class UpdatePlayersData {
 				}
 			} 
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
+				try {
+					List<Path> directories = Files.list(Paths.get(directoryPath)).filter(Files::isDirectory).collect(Collectors.toList());
+					if (directories==null || !(directories.size()>0))
+						throw new NotCreatedJsonFileResponse("No hay archivos de jugadores disponibles para realizar la carga de datos");
+		            for (Path directory : directories) {
+		            	try (Stream<Path> files = Files.list(directory)) {
+		                    List<Path> fileList = files.filter(Files::isRegularFile).collect(Collectors.toList());
+		                    for (Path path : fileList) {
+		                    	String filePath = path.toString();
+		                        System.out.println("  Archivo: " + filePath);
+					            File file = new File(filePath);
+						        if (!file.exists())
+						            throw new NotCreatedJsonFileResponse("error al crear un json de respuesta, el archivo no ha sido creado o no se ha guardado correctamente");
+						        
+						        if (file.length() == 0) 
+						            throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+						        FileReader fileReader = new FileReader(file);
+						        int ch;
+					            if ((ch = fileReader.read()) == -1) {
+					            	fileReader.close();
+					            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+					            }
+					            fileReader.close();
+						        
+						        ObjectMapper objectMapper = new ObjectMapper();
+						        JsonNode root = objectMapper.readTree(file);
+						        
+		                    }
+		                }
+		            }
+
+
+		        } catch (Exception e) {
+		            throw e;
+		        }
 				
 			}
 			response.setCODE(Constants.CODE_OK);
@@ -111,5 +155,10 @@ public class UpdatePlayersData {
 		} catch(Exception e) {
 			throw e;
 		}
+	}
+	
+	public boolean jsonResponseHasErrors(JsonNode root) {
+		JsonNode errorsNode = root.path("errors");
+		if (!errorsNode.isMissingNode())
 	}
 }
