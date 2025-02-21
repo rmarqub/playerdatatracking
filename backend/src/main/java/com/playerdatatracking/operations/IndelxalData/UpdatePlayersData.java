@@ -2,15 +2,17 @@ package com.playerdatatracking.operations.IndelxalData;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.sql.Timestamp;
 
 import org.springframework.core.env.Environment;
 
@@ -22,11 +24,11 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ClubInLeague;
+import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
-import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
 import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
@@ -45,6 +47,7 @@ public class UpdatePlayersData {
 	String excludedLeague = "leagues.json";
 	private GenericResponse<Player> response = new GenericResponse();
 	private Methods methods;
+	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 	
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -116,6 +119,7 @@ public class UpdatePlayersData {
 					List<Path> directories = Files.list(Paths.get(directoryPath)).filter(Files::isDirectory).collect(Collectors.toList());
 					if (directories==null || !(directories.size()>0))
 						throw new NotCreatedJsonFileResponse("No hay archivos de jugadores disponibles para realizar la carga de datos");
+					pdClient.deleteAllPlayers();
 		            for (Path directory : directories) {
 		            	try (Stream<Path> files = Files.list(directory)) {
 		                    List<Path> fileList = files.filter(Files::isRegularFile).collect(Collectors.toList());
@@ -138,6 +142,37 @@ public class UpdatePlayersData {
 						        
 						        ObjectMapper objectMapper = new ObjectMapper();
 						        JsonNode root = objectMapper.readTree(file);
+						        if(!jsonResponseHasErrors(root, file.getPath())) {
+						        	JsonNode responseParameters = root.path("parameters");
+						        	String steamId = responseParameters.path("team").asText();
+						        	JsonNode responseNode = root.path("response");
+							        for (JsonNode node : responseNode) {
+							        	Player newPlayer = new Player();
+							        	JsonNode playerNode = node.path("player");
+							        	newPlayer.setIndexId(playerNode.path("id").asLong());
+							        	newPlayer.setTeam(Integer.toUnsignedLong(Integer.parseInt(steamId)));
+							        	newPlayer.setFirstname(playerNode.path("firstname").asText());
+							        	newPlayer.setLastname(playerNode.path("lastname").asText());
+							        	newPlayer.setFullname(playerNode.path("name").asText());
+							        	newPlayer.setAge(playerNode.path("age").asInt());
+							        	newPlayer.setInjured(playerNode.path("injured").asBoolean());
+							        	String height = playerNode.path("height").asText();
+							        	height = height.substring(0, height.length() - 4);
+							        	newPlayer.setHeight(Integer.parseInt(height));
+							        	String weight = playerNode.path("weight").asText();
+							        	height = height.substring(0, height.length() - 4);
+							        	newPlayer.setHeight(Integer.parseInt(weight));
+							        	JsonNode birthNode = playerNode.path("birth");
+							        	Date date = formatter.parse(birthNode.path("date").asText());
+							        	newPlayer.setBirth(date);
+							        	Pais p = pdClient.findCountry(playerNode.path("nationality").asText());
+							        	if (p!=null)
+							        		newPlayer.setNacionalidad(p.getId());
+							        	Timestamp ts = new Timestamp(System.currentTimeMillis());
+							        	newPlayer.setLastUpdated(ts);
+							        	pdClient.saveIndexedPlayer(newPlayer);
+							        }
+						        }
 						        
 		                    }
 		                }
@@ -157,8 +192,12 @@ public class UpdatePlayersData {
 		}
 	}
 	
-	public boolean jsonResponseHasErrors(JsonNode root) {
+	public boolean jsonResponseHasErrors(JsonNode root, String path) {
 		JsonNode errorsNode = root.path("errors");
-		if (!errorsNode.isMissingNode())
+		if (!errorsNode.isMissingNode()) {
+			System.out.println("no se ha podido almacenar correctamente en BBDD los datos de " + path);
+			return true;
+		}
+		return false;
 	}
 }

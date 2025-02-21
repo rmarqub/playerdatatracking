@@ -16,6 +16,7 @@ import com.playerdatatracking.entities.indexaldata.ConfigParams;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.PLAYER_QUALITIES;
 import com.playerdatatracking.entities.indexaldata.Pais;
+import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
@@ -357,6 +358,15 @@ public class PlayerDataClient {
 	public List<ClubInLeague> findCILsByClub(Long idClub)throws PlayerDataDBException{
 		try {
 			return cilRepository.findByClubId(idClub);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public Player saveIndexedPlayer(Player p) throws PlayerDataDBException{
+		try {
+			return pRepository.save(p);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
