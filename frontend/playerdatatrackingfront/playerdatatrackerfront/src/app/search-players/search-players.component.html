@@ -1,0 +1,50 @@
+<div class="search-container">
+  <div class="search-filters">
+    <input type="text" class="search-input" placeholder="Buscar por nombre de jugador" [(ngModel)]="playerName">
+    <button class="search-button" (click)="searchByPlayerName()">Buscar</button>
+
+    <input type="text" class="search-input" placeholder="Buscar por club" [(ngModel)]="teamName">
+    <button class="search-button" (click)="searchByTeam()">Buscar</button>
+  </div>
+
+  <div class="results-container">
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Nombre Completo</th>
+          <th>Nacionalidad</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Edad</th>
+          <th>Altura</th>
+          <th>Peso</th>
+          <th>Lesionado</th>
+          <th>Equipo</th>
+          <th>Última actualización</th>
+          <th>Index ID</th>
+          <th>FBRef ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of players">
+          <td>{{ player.id }}</td>
+          <td>{{ player.firstname }}</td>
+          <td>{{ player.lastname }}</td>
+          <td>{{ player.fullname }}</td>
+          <td>{{ player.nacionalidad }}</td>
+          <td>{{ player.birth }}</td>
+          <td>{{ player.age }}</td>
+          <td>{{ player.height }}</td>
+          <td>{{ player.weight }}</td>
+          <td>{{ player.injured ? 'Sí' : 'No' }}</td>
+          <td>{{ player.team }}</td>
+          <td>{{ player.lastUpdated }}</td>
+          <td>{{ player.indexId }}</td>
+          <td>{{ player.fbrefId }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

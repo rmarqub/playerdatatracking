@@ -13,6 +13,10 @@ import { AddPlayerComponent } from './add-player/add-player.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { TrackedDataComponent } from './tracked-data/tracked-data.component';
+import { SearchPlayersComponent } from './search-players/search-players.component';
+import { ManageIndexalDbComponent } from './manage-indexal-db/manage-indexal-db.component';
+import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
     FooterComponent,
     HeaderComponent,
     AddPlayerComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    TrackedDataComponent,
+    SearchPlayersComponent,
+    ManageIndexalDbComponent,
+    ManageApikeysComponent
   ],
   imports: [
     BrowserAnimationsModule,

@@ -1,0 +1,41 @@
+.tracked-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 1%;
+  background-color: #f0f0f0; /* Fondo gris claro que contrasta con el blanco y los botones */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border: 1px solid #ccc; /* Borde gris claro */
+
+}
+.operation-button{
+  display:flex;
+  margin-top:1%;
+  margin-bottom:1%;
+
+  background-color: #A9A9A9;
+  color: white; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño de la fuente */
+  padding: 15px 30px; /* Tamaño del botón */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+  transition: all 0.3s ease; /* Transición suave para los efectos */
+}
+
+.operation-button:hover {
+background-color: #8f8f8f; /* Color de fondo al pasar el ratón */
+box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+}
+.operation-button:active {
+background-color: #7f7f7f; /* Color de fondo al hacer clic */
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más cercana */
+transform: translateY(2px); /* Simulación de movimiento hacia abajo */
+}
