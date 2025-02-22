@@ -3,6 +3,7 @@ package com.playerdatatracking.entities.indexaldata;
 import jakarta.persistence.*;
 import java.util.Date;
 import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "player")
@@ -25,7 +26,7 @@ public class Player {
     private Integer nacionalidad;
     
     @Column(name="birth")
-    private Date birth;
+    private LocalDate birth;
     
     @Column(name="age")
     private Integer age;
@@ -91,11 +92,11 @@ public class Player {
 		this.nacionalidad = nacionalidad;
 	}
 
-	public Date getBirth() {
+	public LocalDate getBirth() {
 		return birth;
 	}
 
-	public void setBirth(Date birth) {
+	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
 

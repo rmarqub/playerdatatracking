@@ -7,6 +7,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -47,7 +49,7 @@ public class UpdatePlayersData {
 	String excludedLeague = "leagues.json";
 	private GenericResponse<Player> response = new GenericResponse();
 	private Methods methods;
-	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 	
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -157,20 +159,28 @@ public class UpdatePlayersData {
 							        	newPlayer.setAge(playerNode.path("age").asInt());
 							        	newPlayer.setInjured(playerNode.path("injured").asBoolean());
 							        	String height = playerNode.path("height").asText();
-							        	height = height.substring(0, height.length() - 4);
-							        	newPlayer.setHeight(Integer.parseInt(height));
+							        	if(height!=null && !height.equals("null")){
+							        		height = height.substring(0, height.length() - 3);
+							        		newPlayer.setHeight(Integer.parseInt(height));
+							        	}
 							        	String weight = playerNode.path("weight").asText();
-							        	height = height.substring(0, height.length() - 4);
-							        	newPlayer.setHeight(Integer.parseInt(weight));
+							        	if(weight!=null && !weight.equals("null")) {
+							        		weight = weight.substring(0, weight.length() - 3);
+							        		newPlayer.setWeight(Integer.parseInt(weight));
+							        	}
 							        	JsonNode birthNode = playerNode.path("birth");
-							        	Date date = formatter.parse(birthNode.path("date").asText());
-							        	newPlayer.setBirth(date);
+							        	String birthString = birthNode.path("date").asText();
+							        	if(birthString!=null && !birthString.equals("null")) {
+							        		LocalDate date = LocalDate.parse(birthString, formatter);
+							        		newPlayer.setBirth(date);
+							        	}
 							        	Pais p = pdClient.findCountry(playerNode.path("nationality").asText());
 							        	if (p!=null)
 							        		newPlayer.setNacionalidad(p.getId());
 							        	Timestamp ts = new Timestamp(System.currentTimeMillis());
 							        	newPlayer.setLastUpdated(ts);
-							        	pdClient.saveIndexedPlayer(newPlayer);
+							        	Player savedPlayer = pdClient.saveIndexedPlayer(newPlayer);
+							        	System.out.println("Player: " + savedPlayer.getId() + ", " + savedPlayer.getFullname() + " saved.");
 							        }
 						        }
 						        
@@ -194,7 +204,7 @@ public class UpdatePlayersData {
 	
 	public boolean jsonResponseHasErrors(JsonNode root, String path) {
 		JsonNode errorsNode = root.path("errors");
-		if (!errorsNode.isMissingNode()) {
+		if (!errorsNode.isMissingNode() && errorsNode.isArray() && errorsNode.size()>0) {
 			System.out.println("no se ha podido almacenar correctamente en BBDD los datos de " + path);
 			return true;
 		}
