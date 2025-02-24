@@ -6,7 +6,7 @@
     <input type="text" class="search-input" placeholder="Buscar por club" [(ngModel)]="teamName">
     <button class="search-button" (click)="searchByTeam()">Buscar</button>
   </div>
-
+  <div class="separator"></div>
   <div class="results-container">
     <table class="results-table">
       <thead>
@@ -23,8 +23,6 @@
           <th>Lesionado</th>
           <th>Equipo</th>
           <th>Última actualización</th>
-          <th>Index ID</th>
-          <th>FBRef ID</th>
         </tr>
       </thead>
       <tbody>
@@ -41,8 +39,6 @@
           <td>{{ player.injured ? 'Sí' : 'No' }}</td>
           <td>{{ player.team }}</td>
           <td>{{ player.lastUpdated }}</td>
-          <td>{{ player.indexId }}</td>
-          <td>{{ player.fbrefId }}</td>
         </tr>
       </tbody>
     </table>
