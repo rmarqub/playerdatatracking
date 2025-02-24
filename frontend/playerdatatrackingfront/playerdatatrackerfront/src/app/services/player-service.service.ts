@@ -1,3 +1,4 @@
+import { Player } from './../entitites/player';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -30,5 +31,13 @@ export class PlayerService {
           return of(null);  // Devuelve un observable con valor null en caso de error
         })
       );
+  }
+
+  searchPlayers(playerName?: string, teamName?: string): Observable<Player[]> {
+    let params: any = {};
+    if (playerName) params.playerName = playerName;
+    if (teamName) params.teamName = teamName;
+
+    return this.http.get<Player[]>(this.apiUrl, { params });
   }
 }

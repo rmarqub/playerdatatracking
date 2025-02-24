@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Player } from '../entitites/player';
+import { PlayerService } from '../services/player-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-search-players',
@@ -11,11 +13,24 @@ export class SearchPlayersComponent {
   teamName: string = '';
   players: Player[] = [];
 
-  searchByPlayerName() {
-    console.log('Buscar jugador:', this.playerName);
+    constructor(
+      private route: ActivatedRoute,
+      private playerService: PlayerService
+    ) {}
+
+  searchByPlayerName(): void {
+    if (this.playerName.trim()) {
+      this.playerService.searchPlayers(this.playerName).subscribe(players => {
+        this.players = players;
+      });
+    }
   }
 
-  searchByTeam() {
-    console.log('Buscar equipo:', this.teamName);
+  searchByTeam(): void {
+    if (this.teamName.trim()) {
+      this.playerService.searchPlayers(undefined, this.teamName).subscribe(players => {
+        this.players = players;
+      });
+    }
   }
 }

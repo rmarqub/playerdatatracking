@@ -25,8 +25,10 @@ import com.playerdatatracking.operations.manualdata.DeletePlayer;
 import com.playerdatatracking.operations.manualdata.GetAllPlayers;
 import com.playerdatatracking.operations.manualdata.GetPlayer;
 import com.playerdatatracking.operations.manualdata.XslImport;
+import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.requests.GenericRequest;
+import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -34,6 +36,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -70,6 +73,7 @@ public class MainController {
 	private GetAllCountries operationGetCountries = new GetAllCountries();
 	private UpdateClubsData operationUpdateClubsData = new UpdateClubsData();
 	private UpdatePlayersData operationUpdatePlayersData = new UpdatePlayersData();
+	private SearchIndexatedPlayers operationSearchIndexatedPlayers = new SearchIndexatedPlayers();
 	
 	
 // 	---------RESPONSES---------	
@@ -288,6 +292,19 @@ public class MainController {
         return response;
     }
     
-    
+    @GetMapping("/search")
+    public GenericResponse<Player> searchPlayers( @RequestParam(required = false) String player,
+            								      @RequestParam(required = false) String team) {
+        operationSearchIndexatedPlayers.setEnv(env);
+        operationSearchIndexatedPlayers.setPdClient(pdClient);
+        try {
+        	SearchPlayersRequest request = new SearchPlayersRequest(player, team);
+        	response = operationSearchIndexatedPlayers.ejecutar(request);
+    	} catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
     
 }

@@ -371,4 +371,13 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	
+	public List<Player> searchPlayers(String playerName, String teamName) {
+        if (playerName != null && !playerName.isEmpty()) {
+            return pRepository.findByPlayerName(playerName);
+        } else if (teamName != null && !teamName.isEmpty()) {
+            return pRepository.findByTeamName(teamName);
+        }
+        return new ArrayList<>();
+    }
 }

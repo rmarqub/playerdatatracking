@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
-import { PlayerService } from 'src/app/services/player-service.service';
 
 
 @Component({
