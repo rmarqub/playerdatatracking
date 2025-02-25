@@ -11,6 +11,7 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.common.crypto.AESCrypto;
 import com.playerdatatracking.entities.indexaldata.Club;
+import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
@@ -293,8 +294,7 @@ public class MainController {
     }
     
     @GetMapping("/search")
-    public GenericResponse<Player> searchPlayers( @RequestParam(required = false) String player,
-            								      @RequestParam(required = false) String team) {
+    public GenericResponse<ConvertedPlayer> searchPlayers( @RequestParam(required = false) String player, @RequestParam(required = false) String team) {
         operationSearchIndexatedPlayers.setEnv(env);
         operationSearchIndexatedPlayers.setPdClient(pdClient);
         try {

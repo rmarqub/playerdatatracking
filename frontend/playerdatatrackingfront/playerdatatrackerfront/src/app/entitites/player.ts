@@ -3,13 +3,13 @@ export interface Player {
   firstname: string;
   lastname: string;
   fullname: string;
-  nacionalidad: number;
+  nacionalidad: string;
   birth: string;
   age: number;
   height: number;
   weight: number;
   injured: boolean;
-  team: number;
+  team: string;
   lastUpdated: string;
   indexId: number;
   fbrefId?: number;

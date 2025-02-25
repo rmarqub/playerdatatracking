@@ -155,6 +155,19 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
+	public Pais findCountry(Long id) throws PlayerDataDBException{
+		try {
+			Optional<Pais> country = ctRepository.findById(id);
+			if (country!=null && country.isPresent())
+				return country.get();
+			return null;
+		}
+		catch(Exception e){
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
 	public boolean deleteKey (Keys key) throws PlayerDataDBException{
 		if (key==null)
 			throw new PlayerDataDBException("no se puede borrar una apikey que sea nula");
