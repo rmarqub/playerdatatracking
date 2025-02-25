@@ -7,40 +7,46 @@
     <button class="search-button" (click)="searchByTeam()">Buscar</button>
   </div>
   <div class="separator"></div>
-  <div class="results-container">
+  <div class="results-container" *ngIf="paginatedPlayers.length > 0">
+
     <table class="results-table">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Nombre Completo</th>
-          <th>Nacionalidad</th>
-          <th>Fecha de Nacimiento</th>
-          <th>Edad</th>
-          <th>Altura</th>
-          <th>Peso</th>
-          <th>Lesionado</th>
-          <th>Equipo</th>
-          <th>Última actualización</th>
+          <th class="player-info">ID</th>
+          <th class="player-info">Nombre</th>
+          <th class="player-info">Apellido</th>
+          <th class="player-info">Nombre Completo</th>
+          <th class="player-info">Nacionalidad</th>
+          <th class="player-info">Fecha de Nacimiento</th>
+          <th class="player-info">Edad</th>
+          <th class="player-info">Altura</th>
+          <th class="player-info">Peso</th>
+          <th class="player-info">Lesionado</th>
+          <th class="player-info">Equipo</th>
+          <th class="player-info">Última actualización</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let player of players">
-          <td>{{ player.id }}</td>
-          <td>{{ player.firstname }}</td>
-          <td>{{ player.lastname }}</td>
-          <td>{{ player.fullname }}</td>
-          <td>{{ player.nacionalidad }}</td>
-          <td>{{ player.birth }}</td>
-          <td>{{ player.age }}</td>
-          <td>{{ player.height }}</td>
-          <td>{{ player.weight }}</td>
-          <td>{{ player.injured ? 'Sí' : 'No' }}</td>
-          <td>{{ player.team }}</td>
-          <td>{{ player.lastUpdated }}</td>
+        <tr class="player-found-row" *ngFor="let player of paginatedPlayers">
+          <td class="player-found-row-value">{{ player.id }}</td>
+          <td class="player-found-row-value">{{ player.firstname }}</td>
+          <td class="player-found-row-value">{{ player.lastname }}</td>
+          <td class="player-found-row-value">{{ player.fullname }}</td>
+          <td class="player-found-row-value">{{ player.nacionalidad }}</td>
+          <td class="player-found-row-value">{{ player.birth }}</td>
+          <td class="player-found-row-value">{{ player.age }}</td>
+          <td class="player-found-row-value">{{ player.height }}</td>
+          <td class="player-found-row-value">{{ player.weight }}</td>
+          <td class="player-found-row-value">{{ player.injured ? 'Sí' : 'No' }}</td>
+          <td class="player-found-row-value">{{ player.team }}</td>
+          <td class="player-found-row-value">{{ formatDate(player.lastUpdated) }}</td>
         </tr>
       </tbody>
     </table>
+    <div class="pagination-controls" *ngIf="paginatedPlayers.length > 1">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Anterior</button>
+      <span>Página {{ currentPage }} de {{ totalPages }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage * pageSize >= players.length">Siguiente</button>
+    </div>
   </div>
 </div>

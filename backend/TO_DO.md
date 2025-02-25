@@ -1,14 +1,23 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Actualizar scripts de creacion de tablas
-- Update Player recibiendo información de un formulario
-- Jugadores por scoutear en BBDD, operaciones relacionadas de avanzado de la operación, y recibirlos desde un csv en una pagina nueva
-- Estandarizar todas las direcciones de tal forma que sean validas para ejecución en desarrollo y ejecución en local a través de jar
-- Validacion de parametros en las requests
+- Ordenación de la tabla de búsqueda de jugadores al igual que se hace en manual data.
+- Diseño de relación entre jugadores y datos manuales.
+- Too Many Request Exception Handler en todas las operaciones que manden external calls.
+- Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
+- Pagina de información básica del jugador.
+- Carpeta de Jsons con datos, como paises, para poder añadir filtros en el frontal.
+- Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
+- Navegación a la página anterior.
+- Añadir columna de fotos y método para detectar paises que no se estén guardando en su columna.
+- Actualizar todos los jugadores guardados y revisar studiedLeagues.
+- Filtros de búsqueda de jugadores.
+- Añadir lista con jugadores que quieres revisar posteriormente, unica por usuario.
+- Actualizar scripts de creacion de tablas.
+- YAML de operaciones de postman
+- Actualización del git para mostrar que la fase 2 ha sido terminada.
+- Esquemas de flujos y diseño de arquitectura y clases.
+- Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
+- Diseño de spinner de espera para la carga de datos.
+- Añadir búsqueda de un jugador indexado en el formulario al añadir un jugador manual para poder hacer la relación en bbdd.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
-- Diseño de datos para informacion de equipos y jugadores
-- Esquemas de flujos y diseño de arquitectura y clases
-- Json de operaciones de postman
-- Revisar si la clave de encriptacion (secret_key) puede almacenarse en un certificado o de alguna forma mas segura
-- Separar controlador en varias clases
-- Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs
-- Too Many Request Exception Handler en todas las operaciones que manden external calls
+- Separar controlador en varias clases.
+- Validacion de parametros en las requests.
