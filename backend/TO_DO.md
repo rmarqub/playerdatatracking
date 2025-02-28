@@ -4,7 +4,6 @@
 - Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
 - Carpeta de Jsons con datos, como paises, para poder añadir filtros en el frontal.
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
-- Navegación a la página anterior.
 - Añadir columna de fotos y método para detectar paises que no se estén guardando en su columna.
 - Actualizar todos los jugadores guardados y revisar studiedLeagues y nacionalidades perdidas.
 - Filtros de búsqueda de jugadores.
