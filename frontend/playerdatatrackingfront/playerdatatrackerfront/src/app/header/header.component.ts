@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private router: Router, private route: ActivatedRoute){}
+  constructor(private router: Router, private route: ActivatedRoute, private location: Location){}
 
   isHomePage: boolean = false;
 
@@ -21,7 +22,9 @@ export class HeaderComponent {
   navigateToHome() {
     this.router.navigate(['/']);
   }
-
+  goBack(): void {
+    this.location.back(); // Vuelve a la página anterior
+  }
 
 
 }

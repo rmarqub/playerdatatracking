@@ -2,7 +2,6 @@
 - Diseño de relación entre jugadores y datos manuales.
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
-- Pagina de información básica del jugador.
 - Carpeta de Jsons con datos, como paises, para poder añadir filtros en el frontal.
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
 - Navegación a la página anterior.
