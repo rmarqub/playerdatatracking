@@ -12,18 +12,18 @@
     <table class="results-table">
       <thead>
         <tr>
-          <th class="player-info">ID</th>
-          <th class="player-info">Nombre</th>
-          <th class="player-info">Apellido</th>
-          <th class="player-info">Nombre Completo</th>
-          <th class="player-info">Nacionalidad</th>
-          <th class="player-info">Fecha de Nacimiento</th>
-          <th class="player-info">Edad</th>
-          <th class="player-info">Altura</th>
-          <th class="player-info">Peso</th>
-          <th class="player-info">Lesionado</th>
-          <th class="player-info">Equipo</th>
-          <th class="player-info">Última actualización</th>
+          <th class="player-info" (click)="sortData('id')">ID <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('id')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('id')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('firstname')">Nombre <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('firstname')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('firstname')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('lastname')">Apellido <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('lastname')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('lastname')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('fullname')">Nombre Completo <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('fullname')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('fullname')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('nacionalidad')">Nacionalidad <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('nacionalidad')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('nacionalidad')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('birth')">Fecha de Nacimiento <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('birth')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('birth')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('age')">Edad <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('age')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('age')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('height')">Altura <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('height')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('height')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('weight')">Peso <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('weight')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('weight')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('injured')">Lesionado <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('injured')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('injured')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('team')">Equipo <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('team')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('team')}">&#9660;</span></th>
+          <th class="player-info" (click)="sortData('lastUpdated')">Última actualización <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('lastUpdated')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('lastUpdated')}">&#9660;</span></th>
         </tr>
       </thead>
       <tbody>

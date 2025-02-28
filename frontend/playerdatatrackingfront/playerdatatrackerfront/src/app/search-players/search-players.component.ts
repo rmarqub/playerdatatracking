@@ -11,6 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class SearchPlayersComponent {
   playerName: string = '';
   teamName: string = '';
+  sortOrder: { [key: string]: 'asc' | 'desc' } = {};
+  sortedColumn: string | null = null;
   players: Player[] = [];
   currentPage: number = 1;
   pageSize: number = 40;
@@ -77,5 +79,33 @@ export class SearchPlayersComponent {
 
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
   }
+
+    sortData(property: keyof Player) {
+      const currentOrder = this.sortOrder[property] || 'asc';
+      const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+      this.sortOrder[property] = newOrder;
+      this.sortedColumn = property;
+
+      this.players.sort((a, b) => {
+        let comparison = 0;
+
+        if (typeof a[property] === 'string') {
+          comparison = (a[property] as string).localeCompare(b[property] as string);
+        } else if (typeof a[property] === 'number') {
+          comparison = (a[property] as number) - (b[property] as number);
+        }
+
+        return newOrder === 'asc' ? comparison : -comparison;
+      });
+      this.updatePagination();
+    }
+
+      isSortedAsc(property: keyof Player): boolean {
+        return this.sortedColumn === property && this.sortOrder[property] === 'asc';
+      }
+
+      isSortedDesc(property: keyof Player): boolean {
+        return this.sortedColumn === property && this.sortOrder[property] === 'desc';
+      }
 }
 

@@ -52,7 +52,6 @@
 
 .results-table th {
   background-color: #CD853F;
-  color: black;
 }
 
 .separator {
@@ -102,4 +101,21 @@
   border-right: 1px solid #878787;
   border-top: 1px solid #878787;
   border-bottom: 3px solid #878787;
+}
+.player-info:hover{
+    cursor: pointer;
+    color: #ffee00;
+}
+
+.sort-icon {
+  width: 12px;
+  font-size: 12px;
+  display: none;
+}
+.sort-icon.active {
+  display: inline;
+  color: #ffee00
+}
+.sorted-column {
+  color: #ffee00;
 }
