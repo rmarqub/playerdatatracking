@@ -18,6 +18,7 @@ interface GenericResponse<T> {
 export class PlayerService {
   private apiUrlManualP = 'http://localhost:8080/player';
   private apiUrlIndexalP = 'http://localhost:8080/search';
+  private apiUrlIndxPlayer = 'http://localhost:8080/searchPlayer';
 
   constructor(private http: HttpClient) { }
 
@@ -28,6 +29,25 @@ export class PlayerService {
       map(response => {
         if (response.code === 0) {
           return response.entity as ManualTrackedPlayer;
+        } else {
+          console.error(response.description);
+          return null;
+        }
+      }),
+      catchError(error => {
+        console.error('Error en la llamada GET:', error);
+        return of(null);
+      })
+    );
+  }
+
+  getIndxPlayer(id: number): Observable<Player | null> {
+    const url = `${this.apiUrlIndxPlayer}/${id}`;
+
+    return this.http.get<GenericResponse<Player>>(url).pipe(
+      map(response => {
+        if (response.code === 0) {
+          return response.entity as Player;
         } else {
           console.error(response.description);
           return null;

@@ -18,6 +18,7 @@ import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.operations.IndelxalData.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.GetAllLeagues;
+import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersData;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
@@ -75,6 +76,7 @@ public class MainController {
 	private UpdateClubsData operationUpdateClubsData = new UpdateClubsData();
 	private UpdatePlayersData operationUpdatePlayersData = new UpdatePlayersData();
 	private SearchIndexatedPlayers operationSearchIndexatedPlayers = new SearchIndexatedPlayers();
+	private GetIndexedPlayer operationGetIxPlayer = new GetIndexedPlayer();
 	
 	
 // 	---------RESPONSES---------	
@@ -306,5 +308,17 @@ public class MainController {
         }
         return response;
     }
-    
+    @GetMapping("/searchPlayer/{id}")
+    public GenericResponse<ConvertedPlayer> getConvertedPlayer(@PathVariable("id") Long id) {
+    	response = new GenericResponse();
+    	operationGetIxPlayer.setPdClient(pdClient);
+    	operationGetIxPlayer.setEnv(env);
+        try {
+            response = operationGetIxPlayer.ejecutar(id);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
 }

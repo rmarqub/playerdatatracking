@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Player } from '../entitites/player';
 import { PlayerService } from '../services/player-service.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-players',
@@ -19,6 +20,7 @@ export class SearchPlayersComponent {
   paginatedPlayers: Player[] = [];
     constructor(
       private route: ActivatedRoute,
+      private router: Router,
       private playerService: PlayerService
     ) {}
 
@@ -106,6 +108,10 @@ export class SearchPlayersComponent {
 
       isSortedDesc(property: keyof Player): boolean {
         return this.sortedColumn === property && this.sortOrder[property] === 'desc';
+      }
+
+      viewPlayer(playerId: number): void {
+        this.router.navigate(['/player', playerId]);
       }
 }
 

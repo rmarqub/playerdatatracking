@@ -15,6 +15,7 @@ public class Constants {
 	public static final int CODE_ERR_NOT_CREATED_JSON_RESPONSE = 7;
 	public static final int CODE_ERR_GENERATED_KEY = 8;
 	public static final int CODE_ERR_KEY_MNGMT = 9;
+	public static final int CODE_ERR_NO_PLAYER_FOUND = 10;
 	
 	//API PLANS
 	public static final String APISPORTS_FREE = "FREE";

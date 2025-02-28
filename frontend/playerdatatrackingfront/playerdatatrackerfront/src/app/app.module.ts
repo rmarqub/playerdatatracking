@@ -17,6 +17,7 @@ import { TrackedDataComponent } from './tracked-data/tracked-data.component';
 import { SearchPlayersComponent } from './search-players/search-players.component';
 import { ManageIndexalDbComponent } from './manage-indexal-db/manage-indexal-db.component';
 import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.component';
+import { IndexPlayerComponent } from './index-player/index-player.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.componen
     TrackedDataComponent,
     SearchPlayersComponent,
     ManageIndexalDbComponent,
-    ManageApikeysComponent
+    ManageApikeysComponent,
+    IndexPlayerComponent
   ],
   imports: [
     BrowserAnimationsModule,

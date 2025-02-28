@@ -65,6 +65,8 @@ public class Methods {
 				return Constants.CODE_ERR_GENERATED_KEY;
 			case "ApiKeyManagementException":
 				return Constants.CODE_ERR_KEY_MNGMT;
+			case "NoPlayerFoundException":
+				return Constants.CODE_ERR_NO_PLAYER_FOUND;
 			default:
 				return -1;
 				

@@ -27,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="player-found-row" *ngFor="let player of paginatedPlayers">
+        <tr class="player-found-row" *ngFor="let player of paginatedPlayers" (click)="viewPlayer(player.id)">
           <td class="player-found-row-value">{{ player.id }}</td>
           <td class="player-found-row-value">{{ player.firstname }}</td>
           <td class="player-found-row-value">{{ player.lastname }}</td>

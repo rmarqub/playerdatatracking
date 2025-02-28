@@ -1,5 +1,4 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Ordenación de la tabla de búsqueda de jugadores al igual que se hace en manual data.
 - Diseño de relación entre jugadores y datos manuales.
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
@@ -8,7 +7,7 @@
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
 - Navegación a la página anterior.
 - Añadir columna de fotos y método para detectar paises que no se estén guardando en su columna.
-- Actualizar todos los jugadores guardados y revisar studiedLeagues.
+- Actualizar todos los jugadores guardados y revisar studiedLeagues y nacionalidades perdidas.
 - Filtros de búsqueda de jugadores.
 - Añadir lista con jugadores que quieres revisar posteriormente, unica por usuario.
 - Actualizar scripts de creacion de tablas.

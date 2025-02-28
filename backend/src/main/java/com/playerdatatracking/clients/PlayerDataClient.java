@@ -393,4 +393,14 @@ public class PlayerDataClient {
         }
         return new ArrayList<>();
     }
+	
+	public Player searchPlayer(Long id) throws PlayerDataDBException {
+		try {
+			Optional<Player> response = pRepository.findById(id);
+			return response.isPresent() ? response.get() : null;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+
+    }
 }
