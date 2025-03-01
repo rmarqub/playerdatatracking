@@ -1,5 +1,7 @@
 package com.playerdatatracking.entities.indexaldata;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -13,6 +15,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "club_in_league")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ClubInLeague {
 
 	@Id

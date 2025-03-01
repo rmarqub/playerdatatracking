@@ -6,6 +6,8 @@ export interface ManualTrackedPlayer {
   mostLikeDestination:string;
   likeable:string;
   date: string;
+  indexID: number;
+  fbrefID: number;
   posicion: string;
   birth: string;
   age: number;

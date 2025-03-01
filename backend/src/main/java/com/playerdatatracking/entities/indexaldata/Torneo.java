@@ -11,8 +11,11 @@ import jakarta.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 @Entity
 @Table(name = "torneo", schema = "public")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Torneo implements Serializable {
 
     @Id

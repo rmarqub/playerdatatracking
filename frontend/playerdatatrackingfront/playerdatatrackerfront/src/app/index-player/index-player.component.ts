@@ -10,6 +10,7 @@ import { PlayerService } from '../services/player-service.service';
 })
 export class IndexPlayerComponent implements OnInit {
   player: Player | null = null;
+  isFavorite: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,7 +23,7 @@ export class IndexPlayerComponent implements OnInit {
       this.playerService.getIndxPlayer(playerId).subscribe(
         data => {
           if (data) {
-            this.player = data
+            this.player = data;
           } else {
             console.error('No se pudo obtener la información del jugador.');
           }
@@ -31,5 +32,8 @@ export class IndexPlayerComponent implements OnInit {
       );
     }
   }
-}
 
+  toggleFavorite(): void {
+    this.isFavorite = !this.isFavorite;
+  }
+}

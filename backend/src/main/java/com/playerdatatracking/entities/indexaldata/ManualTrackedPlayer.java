@@ -8,8 +8,11 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 @Entity
 @Table(name = "MANUAL_TRACKED_PLAYER", uniqueConstraints = @UniqueConstraint(columnNames = "nombre"))
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ManualTrackedPlayer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,6 +44,9 @@ public class ManualTrackedPlayer {
     @Temporal(TemporalType.DATE)
     @Column(nullable = false)
     private Date birth;
+    
+    private Long fbrefID;
+    private Long indexID;
 
     // Getters y setters
     public Long getId() {
@@ -130,4 +136,22 @@ public class ManualTrackedPlayer {
     public void setDate(Date date) {
         this.date = date;
     }
+
+	public void setFbrefID(long fbrefID) {
+		this.fbrefID = fbrefID;
+	}
+
+	public void setIndexID(long indexID) {
+		this.indexID = indexID;
+	}
+	
+	public Long getFbrefID() {
+	    return fbrefID != null ? fbrefID : 0L;
+	}
+
+	public Long getIndexID() {
+	    return indexID != null ? indexID : 0L;
+	}
+    
+    
 }

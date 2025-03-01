@@ -1,20 +1,19 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Diseño de relación entre jugadores y datos manuales.
+- Añadir funcionalidad de lista de jugadores a revisar en un futuro. Al seleccionar uno, debe llevar a la página existente de guardar manual data player. Debe existir una tabla de ID de lista y jugador en la propia lista, para en un futuro poder jugar con la lógica de usuarios.
+- Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
+- Arreglar funcionalidad de búsqueda de por club.
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
 - Carpeta de Jsons con datos, como paises, para poder añadir filtros en el frontal.
-- Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
 - Añadir columna de fotos y método para detectar paises que no se estén guardando en su columna.
 - Actualizar todos los jugadores guardados y revisar studiedLeagues y nacionalidades perdidas.
 - Filtros de búsqueda de jugadores.
-- Añadir lista con jugadores que quieres revisar posteriormente, unica por usuario.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
 - Diseño de spinner de espera para la carga de datos.
-- Añadir búsqueda de un jugador indexado en el formulario al añadir un jugador manual para poder hacer la relación en bbdd.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
 - Separar controlador en varias clases.
 - Validacion de parametros en las requests.

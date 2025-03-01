@@ -3,6 +3,7 @@ package com.playerdatatracking.entities.indexaldata;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 
@@ -11,6 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ConvertedPlayer {
 
     private Long id;

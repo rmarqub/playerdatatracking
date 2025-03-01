@@ -2,6 +2,9 @@ package com.playerdatatracking.entities.indexaldata;
 
 import jakarta.persistence.*;
 import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.sql.Timestamp;
 import java.time.LocalDate;
 
