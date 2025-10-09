@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "46"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 454,
-      "name" : "Y. Akgün",
-      "firstname" : "Yunus",
-      "lastname" : "Akgün",
+      "id" : 6386,
+      "name" : "J. Carranza",
+      "firstname" : "Julián Simón",
+      "lastname" : "Carranza",
       "age" : 25,
       "birth" : {
-        "date" : "2000-07-07",
-        "place" : "İstanbul",
-        "country" : "Türkiye"
+        "date" : "2000-05-22",
+        "place" : "Oncativo",
+        "country" : "Argentina"
       },
-      "nationality" : "Türkiye",
-      "height" : "173 cm",
-      "weight" : "65 kg",
+      "nationality" : "Argentina",
+      "height" : "176",
+      "weight" : "66",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454.png"
+      "photo" : "https://media.api-sports.io/football/players/6386.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,39 +36,39 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 21,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 4,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +78,100 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 15870,
+      "name" : "M. Hermansen",
+      "firstname" : "Mads",
+      "lastname" : "Hermansen",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-07-11",
+        "place" : "Odense",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "187",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/15870.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 11,
+        "assists" : 0,
+        "saves" : 9
+      },
+      "passes" : {
+        "total" : 138,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -91,35 +183,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 1098,
-      "name" : "P. Daka",
-      "firstname" : "Patson",
-      "lastname" : "Daka",
-      "age" : 27,
+      "id" : 18779,
+      "name" : "H. Choudhury",
+      "firstname" : "Hamza",
+      "lastname" : "Dewan Choudhury",
+      "age" : 28,
       "birth" : {
-        "date" : "1998-10-09",
-        "place" : "Chingola",
-        "country" : "Zambia"
+        "date" : "1997-10-01",
+        "place" : "Loughborough",
+        "country" : "England"
       },
-      "nationality" : "Zambia",
-      "height" : "183 cm",
-      "weight" : "71 kg",
+      "nationality" : "England",
+      "height" : "178",
+      "weight" : "64",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1098.png"
+      "photo" : "https://media.api-sports.io/football/players/18779.png"
     },
     "statistics" : [ {
       "team" : {
@@ -128,62 +220,62 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 1,
-        "minutes" : 301,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.553846",
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 358,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.88",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 0,
-        "bench" : 13
+        "in" : 2,
+        "out" : 3,
+        "bench" : 5
       },
       "shots" : {
-        "total" : 4,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 58,
-        "key" : null,
+        "total" : 263,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 3,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 55,
-        "won" : 24
+        "total" : 31,
+        "won" : 19
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 4
+        "drawn" : 4,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -206,45 +298,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 83,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 68,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 63
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -252,80 +344,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 111,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
+        "drawn" : 1,
         "committed" : 1
       },
       "cards" : {
@@ -335,7 +354,7 @@
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
+        "commited" : 1,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
@@ -343,21 +362,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 1135,
-      "name" : "O. Édouard",
-      "firstname" : "Odsonne",
-      "lastname" : "Édouard",
-      "age" : 27,
+      "id" : 18858,
+      "name" : "A. Begović",
+      "firstname" : "Asmir",
+      "lastname" : "Begović",
+      "age" : 38,
       "birth" : {
-        "date" : "1998-01-16",
-        "place" : "Kourou",
-        "country" : "French Guiana"
+        "date" : "1987-06-20",
+        "place" : "Trebinje",
+        "country" : "Bosnia and Herzegovina"
       },
-      "nationality" : "France",
-      "height" : "187 cm",
-      "weight" : "83 kg",
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : "199",
+      "weight" : "101",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1135.png"
+      "photo" : "https://media.api-sports.io/football/players/18858.png"
     },
     "statistics" : [ {
       "team" : {
@@ -366,30 +385,30 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 25,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
+        "in" : 0,
         "out" : 0,
-        "bench" : 7
+        "bench" : 9
       },
       "shots" : {
-        "total" : 3,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -398,27 +417,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 27,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 14,
-        "won" : 2
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 4
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -444,20 +463,20 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 87,
-        "number" : null,
-        "position" : "Attacker",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
+        "in" : 0,
+        "out" : 0,
         "bench" : 1
       },
       "shots" : {
@@ -467,7 +486,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -505,346 +524,89 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 18943,
+      "name" : "J. Vestergaard",
+      "firstname" : "Jannik",
+      "lastname" : "Vestergaard",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-08-03",
+        "place" : "København",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "199",
+      "weight" : "94",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18943.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 46,
         "name" : "Leicester",
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "7.533333",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2778,
-      "name" : "K. Ịheanachọ",
-      "firstname" : "Kelechi Promise",
-      "lastname" : "Ịheanachọ",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-10-03",
-        "place" : "Owerri",
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "185 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2778.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2925,
-      "name" : "D. Praet",
-      "firstname" : "Dennis Pierre Jacques Albert",
-      "lastname" : "Praet",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-05-14",
-        "place" : "Leuven",
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "181 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2925.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 18146,
-      "name" : "D. Ward",
-      "firstname" : "Daniel",
-      "lastname" : "Ward",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-06-22",
-        "place" : "Wrexham",
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "191 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18146.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 134,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 6,
-        "assists" : 0,
-        "saves" : 4
-      },
-      "passes" : {
-        "total" : 44,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
         "total" : 1,
-        "won" : null
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 346,
+        "key" : 1,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 5,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 40,
+        "won" : 29
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -852,7 +614,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
       }
     }, {
       "team" : {
@@ -866,58 +628,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
+        "appearences" : 20,
+        "lineups" : 17,
+        "minutes" : 1395,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.033333",
+        "position" : "Defender",
+        "rating" : "6.744444",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 5,
+        "total" : null,
+        "conceded" : 0,
         "assists" : 0,
-        "saves" : 5
+        "saves" : null
       },
       "passes" : {
-        "total" : 72,
-        "key" : null,
-        "accuracy" : null
+        "total" : 954,
+        "key" : 3,
+        "accuracy" : 48
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 22,
+        "blocks" : 14,
+        "interceptions" : 16
       },
       "duels" : {
-        "total" : 1,
-        "won" : null
+        "total" : 93,
+        "won" : 56
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 12
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 5,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -925,171 +687,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 18777,
-      "name" : "M. Albrighton",
-      "firstname" : "Marc Kevin",
-      "lastname" : "Albrighton",
-      "age" : 35,
-      "birth" : {
-        "date" : "1989-11-18",
-        "place" : "Tamworth",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18777.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1106,8 +703,8 @@
         "country" : "England"
       },
       "nationality" : "Jamaica",
-      "height" : "170 cm",
-      "weight" : "68 kg",
+      "height" : "170",
+      "weight" : "68",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19004.png"
     },
@@ -1118,59 +715,389 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 5,
-        "minutes" : 520,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 1,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.556250",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 5,
-        "bench" : 18
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 141,
-        "key" : 6,
+        "total" : 1,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 56,
-        "won" : 19
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 5,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 1,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19760,
+      "name" : "J. Justin",
+      "firstname" : "James Michael",
+      "lastname" : "Justin",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-02-23",
+        "place" : "Luton",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19760.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 155,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 73,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 155,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 73,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 22233,
+      "name" : "B. Soumaré",
+      "firstname" : "Boubakary",
+      "lastname" : "Soumaré",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-02-27",
+        "place" : "Noisy-le-Sec",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "188",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/22233.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 597,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.76",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 323,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 3,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 28
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -1196,24 +1123,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 152,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.600000",
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 1
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1223,18 +1150,110 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 72,
+        "total" : 64,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 55
       },
       "tackles" : {
         "total" : 1,
-        "blocks" : null,
-        "interceptions" : 2
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 11,
-        "won" : 5
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 152969,
+      "name" : "L. Thomas",
+      "firstname" : "Luke Jonathan",
+      "lastname" : "Thomas",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-06-10",
+        "place" : "Syston",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "181",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/152969.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 714,
+        "number" : 33,
+        "position" : "Defender",
+        "rating" : "6.77",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 354,
+        "key" : 10,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 5,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 63,
+        "won" : 23
       },
       "dribbles" : {
         "attempts" : 3,
@@ -1242,7 +1261,521 @@
         "past" : null
       },
       "fouls" : {
+        "drawn" : 5,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 33,
+        "position" : "Defender",
+        "rating" : "7.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 63,
+        "key" : 3,
+        "accuracy" : 57
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
         "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 152970,
+      "name" : "J. Stolarczyk",
+      "firstname" : "Jakub",
+      "lastname" : "Stolarczyk",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-12-19",
+        "place" : "Kielce",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "194",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/152970.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 810,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.31",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 25
+      },
+      "passes" : {
+        "total" : 269,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "8.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 158710,
+      "name" : "V. Kristiansen",
+      "firstname" : "Victor",
+      "lastname" : "Bernth Kristiansen",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-12-16",
+        "place" : "København",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "181",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/158710.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 62,
+        "number" : 16,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 278079,
+      "name" : "A. Ramsey",
+      "firstname" : "Aaron James",
+      "lastname" : "Ramsey",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-01-21",
+        "place" : "Birmingham",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "181",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/278079.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 24,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "4.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 278118,
+      "name" : "B. Nelson",
+      "firstname" : "Benjamin Harvey",
+      "lastname" : "Nelson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-03-18",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "193",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/278118.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -1264,50 +1797,50 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 82,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.750000",
+        "minutes" : 90,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 28,
+        "total" : 93,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 84
       },
       "tackles" : {
         "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 6,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : 1,
@@ -1333,21 +1866,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 138929,
-      "name" : "L. Brunt",
-      "firstname" : "Lewis",
-      "lastname" : "Brunt",
-      "age" : 25,
+      "id" : 283290,
+      "name" : "K. McAteer",
+      "firstname" : "Kasey",
+      "lastname" : "McAteer",
+      "age" : 24,
       "birth" : {
-        "date" : "2000-11-06",
-        "place" : null,
+        "date" : "2001-11-22",
+        "place" : "Northampton",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : null,
+      "height" : "177",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/138929.png"
+      "photo" : "https://media.api-sports.io/football/players/283290.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1356,210 +1889,26 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 148099,
-      "name" : "K. Dewsbury-Hall",
-      "firstname" : "Kiernan Frank",
-      "lastname" : "Dewsbury-Hall",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-06",
-        "place" : "Shepshed",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/148099.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 278115,
-      "name" : "Harvey George Godsmark-Ford",
-      "firstname" : "Harvey George",
-      "lastname" : "Godsmark-Ford",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-09-25",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278115.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 24,
+        "number" : 35,
+        "position" : "Midfielder",
+        "rating" : "6.65",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -1567,26 +1916,26 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 14,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -1602,8 +1951,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1613,20 +1962,20 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 35,
+        "position" : "Midfielder",
+        "rating" : "4.9",
         "captain" : false
       },
       "substitutes" : {
@@ -1635,37 +1984,37 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
+        "total" : 3,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 32,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -1675,284 +2024,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 278116,
-      "name" : "Tawanda Jethro Maswanhise",
-      "firstname" : "Tawanda Jethro",
-      "lastname" : "Maswanhise",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-11-20",
-        "place" : "Harare",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278116.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 283289,
-      "name" : "A. Raikhy",
-      "firstname" : "Arjan",
-      "lastname" : "Singh Raikhy",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-10-20",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/283289.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284372,
-      "name" : "C. Doyle",
-      "firstname" : "Callum Craig",
-      "lastname" : "Doyle",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-03",
-        "place" : "Manchester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284372.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1981,90 +2054,439 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 39,
+        "position" : "Attacker",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
         "minutes" : null,
-        "number" : null,
+        "number" : 39,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 284487,
+      "name" : "Wanya Marçal",
+      "firstname" : "Wanya",
+      "lastname" : "Marçal-Madivadua",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-10-19",
+        "place" : "Leicester",
+        "country" : "England"
+      },
+      "nationality" : "Portugal",
+      "height" : "181",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/284487.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 27,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 303467,
+      "name" : "A. Fatawu",
+      "firstname" : "Issahaku Abdul",
+      "lastname" : "Fatawu",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-03-08",
+        "place" : "Tamale",
+        "country" : "Ghana"
+      },
+      "nationality" : "Ghana",
+      "height" : "177",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/303467.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 768,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "7.16",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 6,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 15,
+        "on" : 8
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 215,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 151,
+        "won" : 77
+      },
+      "dribbles" : {
+        "attempts" : 73,
+        "success" : 33,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 22,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 328074,
+      "name" : "J. James",
+      "firstname" : "Jordan Anthony",
+      "lastname" : "James",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-07-02",
+        "place" : "Hereford",
+        "country" : "Wales"
+      },
+      "nationality" : "Wales",
+      "height" : "182",
+      "weight" : "68",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/328074.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 81,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 32,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 284530,
-      "name" : "Brandon Ashley Cover",
-      "firstname" : "Brandon Ashley",
-      "lastname" : "Cover",
-      "age" : 22,
+      "id" : 330986,
+      "name" : "M. Golding",
+      "firstname" : "Michael Heinz",
+      "lastname" : "Golding",
+      "age" : 19,
       "birth" : {
-        "date" : "2003-09-25",
-        "place" : null,
+        "date" : "2006-05-23",
+        "place" : "Kingston",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
-      "weight" : null,
+      "height" : "178",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284530.png"
+      "photo" : "https://media.api-sports.io/football/players/330986.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2073,349 +2495,19 @@
         "logo" : "https://media.api-sports.io/football/teams/46.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 289624,
-      "name" : "S. Braybrooke",
-      "firstname" : "Samuel Charles",
-      "lastname" : "Braybrooke",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-03-12",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/289624.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 304322,
-      "name" : "C. Popov",
-      "firstname" : "Christopher",
-      "lastname" : "Popov",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-10-26",
-        "place" : null,
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/304322.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
@@ -2481,15 +2573,180 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 1,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 437569,
+      "name" : "L. Page",
+      "firstname" : "Louis",
+      "lastname" : "Page",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-10-24",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/437569.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 115,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 29,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 46,
+        "name" : "Leicester",
+        "logo" : "https://media.api-sports.io/football/teams/46.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 17,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "minutes" : 45,
+        "number" : 25,
+        "position" : "Midfielder",
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
@@ -2498,8 +2755,8 @@
         "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -2508,7 +2765,7 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
+        "total" : 10,
         "key" : null,
         "accuracy" : null
       },
@@ -2522,7 +2779,7 @@
         "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -2540,263 +2797,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 350626,
-      "name" : "L. Briggs",
-      "firstname" : "Logan",
-      "lastname" : "Briggs",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-02-07",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/350626.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 400745,
-      "name" : "S. Bausor",
-      "firstname" : "Stevie Ethan",
-      "lastname" : "Bausor",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-11",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/400745.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 46,
-        "name" : "Leicester",
-        "logo" : "https://media.api-sports.io/football/teams/46.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

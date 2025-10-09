@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "497"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 2,
-    "total" : 4
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 533,
-      "name" : "R. Kristensen",
-      "firstname" : "Rasmus",
-      "lastname" : "Nissen Kristensen",
+      "id" : 227,
+      "name" : "Angeliño",
+      "firstname" : "José Ángel",
+      "lastname" : "Esmoris Tasende",
       "age" : 28,
       "birth" : {
-        "date" : "1997-07-11",
-        "place" : "Brande",
-        "country" : "Denmark"
+        "date" : "1997-01-04",
+        "place" : "Coristanco",
+        "country" : "Spain"
       },
-      "nationality" : "Denmark",
-      "height" : "187 cm",
-      "weight" : "70 kg",
+      "nationality" : "Spain",
+      "height" : "175",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/533.png"
+      "photo" : "https://media.api-sports.io/football/players/227.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,18 +36,18 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 3,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -55,7 +55,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -63,8 +63,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -98,8 +98,411 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 391,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 5,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 191,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 778,
+      "name" : "B. Cristante",
+      "firstname" : "Bryan",
+      "lastname" : "Cristante",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-03-03",
+        "place" : "San Vito al Tagliamento",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "186",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/778.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 4,
+        "position" : "Midfielder",
+        "rating" : "6.65",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 54,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 511,
+        "number" : 4,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 327,
+        "key" : 1,
+        "accuracy" : 43
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 50,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 782,
+      "name" : "L. Pellegrini",
+      "firstname" : "Lorenzo",
+      "lastname" : "Pellegrini",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-06-19",
+        "place" : "Roma",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "186",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/782.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 100,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 199,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 80,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -116,8 +519,8 @@
         "country" : "Italy"
       },
       "nationality" : "Italy",
-      "height" : "178 cm",
-      "weight" : "72 kg",
+      "height" : "178",
+      "weight" : "72",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/791.png"
     },
@@ -128,176 +531,30 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 11,
-        "minutes" : 894,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.926315",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 8,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 338,
-        "key" : 12,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : null,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 81,
-        "won" : 41
-      },
-      "dribbles" : {
-        "attempts" : 26,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 10,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
         "id" : 3,
         "name" : "UEFA Europa League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 2,
-        "minutes" : 250,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 80,
+        "number" : 92,
         "position" : "Attacker",
-        "rating" : "6.850000",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 6
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 7,
-        "on" : 3
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -306,27 +563,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 125,
-        "key" : 1,
+        "total" : 40,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 5
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 21,
-        "won" : 9
+        "total" : 12,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
+        "attempts" : 4,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 5
+        "drawn" : 3,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -347,59 +604,59 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 124,
+        "number" : 92,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.53",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 2,
+        "out" : 2,
+        "bench" : 4
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 57,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 18,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -409,120 +666,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 862,
-      "name" : "L. Spinazzola",
-      "firstname" : "Leonardo",
-      "lastname" : "Spinazzola",
-      "age" : 32,
+      "id" : 983,
+      "name" : "L. Bailey",
+      "firstname" : "Leon Patrick",
+      "lastname" : "Bailey Butler",
+      "age" : 28,
       "birth" : {
-        "date" : "1993-03-25",
-        "place" : "Foligno",
-        "country" : "Italy"
+        "date" : "1997-08-09",
+        "place" : "Kingston",
+        "country" : "Jamaica"
       },
-      "nationality" : "Italy",
-      "height" : "186 cm",
-      "weight" : "75 kg",
+      "nationality" : "Jamaica",
+      "height" : "178",
+      "weight" : "77",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/862.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 875,
-      "name" : "P. Dybala",
-      "firstname" : "Paulo Exequiel",
-      "lastname" : "Dybala",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-11-15",
-        "place" : "Laguna Larga",
-        "country" : "Argentina"
-      },
-      "nationality" : "Argentina",
-      "height" : "177 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/875.png"
+      "photo" : "https://media.api-sports.io/football/players/983.png"
     },
     "statistics" : [ {
       "team" : {
@@ -536,102 +701,29 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 21,
-        "lineups" : 15,
-        "minutes" : 1291,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.455000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 11,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 35,
-        "on" : 18
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 603,
-        "key" : 36,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 157,
-        "won" : 86
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 52,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 3,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : null,
         "assists" : null,
         "saves" : null
       },
@@ -659,8 +751,81 @@
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 140,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.250000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -670,7 +835,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 1600,
+      "name" : "K. Tsimikas",
+      "firstname" : "Konstantinos",
+      "lastname" : "Tsimikas",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-05-12",
+        "place" : "Thessaloníki",
+        "country" : "Greece"
+      },
+      "nationality" : "Greece",
+      "height" : "179",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1600.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 497,
         "name" : "AS Roma",
@@ -682,25 +866,25 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 6,
-        "minutes" : 394,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 135,
+        "number" : 12,
+        "position" : "Defender",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 5,
-        "bench" : 3
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 13,
-        "on" : 5
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -709,27 +893,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 197,
-        "key" : 13,
+        "total" : 70,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 43,
-        "won" : 23
+        "total" : 11,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 5,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 13,
-        "committed" : 2
+        "drawn" : null,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -750,234 +934,50 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 907,
-      "name" : "R. Lukaku",
-      "firstname" : "Romelu Menama",
-      "lastname" : "Lukaku Bolingoli",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-05-13",
-        "place" : "Antwerpen",
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "191 cm",
-      "weight" : "93 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/907.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1417,
-      "name" : "A. Saelemaekers",
-      "firstname" : "Alexis Jesse",
-      "lastname" : "Saelemaekers",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-06-27",
-        "place" : "Berchem-Sainte-Agathe",
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "180 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1417.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
         "id" : 135,
         "name" : "Serie A",
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 10,
-        "minutes" : 785,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 9,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
+        "position" : "Defender",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 9,
-        "bench" : 4
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 60,
-        "key" : 2,
-        "accuracy" : 55
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 3
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -985,12 +985,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1007,40 +1007,40 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 142,
+        "lineups" : 1,
+        "minutes" : 9,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.700000",
+        "position" : "Defender",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 41,
-        "key" : 3,
+        "total" : 6,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -1049,21 +1049,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 6,
-        "won" : 5
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1073,7 +1073,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 1807,
+      "name" : "E. Ndicka",
+      "firstname" : "Obite Evan",
+      "lastname" : "Ndicka",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-08-20",
+        "place" : "Paris",
+        "country" : "France"
+      },
+      "nationality" : "Côte d'Ivoire",
+      "height" : "192",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1807.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 497,
         "name" : "AS Roma",
@@ -1085,58 +1104,204 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 218,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.960000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "7.05",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 119,
-        "key" : 7,
-        "accuracy" : null
+        "total" : 114,
+        "key" : null,
+        "accuracy" : 51
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : null,
-        "interceptions" : 2
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 30,
-        "won" : 16
+        "total" : 13,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 4,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 3,
+        "yellow" : 1,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 229,
+        "key" : 2,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 40,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 31,
+        "lineups" : 31,
+        "minutes" : 2693,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.780000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 14,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1805,
+        "key" : 3,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 25,
+        "blocks" : 19,
+        "interceptions" : 31
+      },
+      "duels" : {
+        "total" : 222,
+        "won" : 122
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 14,
+        "committed" : 31
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1160,8 +1325,8 @@
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "75 kg",
+      "height" : "184",
+      "weight" : "75",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/2669.png"
     },
@@ -1172,26 +1337,26 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 2,
-        "minutes" : 246,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 67,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : "6.450000",
+        "rating" : "6.45",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 0,
-        "bench" : 11
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1204,31 +1369,31 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 193,
+        "total" : 48,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 4
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 23,
-        "won" : 8
+        "total" : 6,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 1,
+        "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
@@ -1245,29 +1410,121 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 282,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : "7.200000",
+        "rating" : "6.78",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : 2,
+        "bench" : 2
       },
       "shots" : {
         "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 166,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 22147,
+      "name" : "M. Koné",
+      "firstname" : "Kouadio Emmanuel",
+      "lastname" : "Koné",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-05-17",
+        "place" : "Colombes",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "185",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/22147.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
         "on" : null
       },
       "goals" : {
@@ -1277,18 +1534,164 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 83,
+        "total" : 53,
         "key" : null,
-        "accuracy" : 80
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
+        "total" : 1,
         "blocks" : 1,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 12,
-        "won" : 9
+        "total" : 14,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 545,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 279,
+        "key" : 3,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 80,
+        "won" : 42
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 7,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 20,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -1296,7 +1699,99 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30418,
+      "name" : "P. Gollini",
+      "firstname" : "Pierluigi",
+      "lastname" : "Gollini",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-03-18",
+        "place" : "Bologna",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "194",
+      "weight" : "94",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30418.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 95,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -1318,50 +1813,234 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 81012,
+      "name" : "D. Vásquez",
+      "firstname" : "Devis Estiven",
+      "lastname" : "Vásquez Llach",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-05-12",
+        "place" : "Barranquilla",
+        "country" : "Colombia"
+      },
+      "nationality" : "Colombia",
+      "height" : "195",
+      "weight" : "93",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/81012.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129643,
+      "name" : "E. Ferguson",
+      "firstname" : "Evan Joe",
+      "lastname" : "Ferguson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-10-19",
+        "place" : "Bettystown",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "183",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129643.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
         "id" : 3,
         "name" : "UEFA Europa League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 286,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.350000",
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "5.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 4,
-        "on" : 3
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 288,
+        "total" : 18,
         "key" : null,
-        "accuracy" : 64
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 2,
-        "interceptions" : 5
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 36,
-        "won" : 17
+        "total" : 17,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
@@ -1384,26 +2063,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2674,
-      "name" : "Rui Patrício",
-      "firstname" : "Rui Pedro",
-      "lastname" : "dos Santos Patrício",
-      "age" : 37,
-      "birth" : {
-        "date" : "1988-02-15",
-        "place" : "Marrazes",
-        "country" : "Portugal"
-      },
-      "nationality" : "Portugal",
-      "height" : "190 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2674.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 497,
         "name" : "AS Roma",
@@ -1415,791 +2075,58 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 1,
-        "assists" : 0,
-        "saves" : 8
-      },
-      "passes" : {
-        "total" : 53,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 30924,
-      "name" : "M. Kumbulla",
-      "firstname" : "Marash",
-      "lastname" : "Kumbulla",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-08",
-        "place" : "Peschiera del Garda",
-        "country" : "Italy"
-      },
-      "nationality" : "Albania",
-      "height" : "191 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/30924.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 39271,
-      "name" : "O. Solbakken",
-      "firstname" : "Ola",
-      "lastname" : "Selvaag Solbakken",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-07",
-        "place" : "Oslo",
-        "country" : "Norway"
-      },
-      "nationality" : "Norway",
-      "height" : "189 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/39271.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 258,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.578571",
+        "rating" : "6.350000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
+        "total" : 7,
         "on" : 3
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 132,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 54,
-        "won" : 19
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 27,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47302,
-      "name" : "Diego Llorente",
-      "firstname" : "Diego Javier",
-      "lastname" : "Llorente Ríos",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-08-16",
-        "place" : "Madrid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47302.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 203474,
-      "name" : "N. Zalewski",
-      "firstname" : "Nicola",
-      "lastname" : "Zalewski",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-01-23",
-        "place" : "Tivoli",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "175 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/203474.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 4,
-        "minutes" : 531,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 4,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : 4,
+        "total" : 56,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 5,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 11,
-        "won" : 5
+        "total" : 39,
+        "won" : 15
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
         "drawn" : 3,
-        "committed" : 2
+        "committed" : 7
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2216,63 +2143,63 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 71,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 294,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "position" : "Attacker",
+        "rating" : "7.250000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 5,
+        "on" : 5
       },
       "goals" : {
-        "total" : 0,
+        "total" : 3,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
-        "key" : null,
+        "total" : 61,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 20,
+        "won" : 7
       },
       "dribbles" : {
         "attempts" : 1,
-        "success" : null,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2282,7 +2209,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 277003,
+      "name" : "N. El Aynaoui",
+      "firstname" : "Neil",
+      "lastname" : "El Aynaoui",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-07-02",
+        "place" : "Nancy",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "185",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/277003.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 497,
         "name" : "AS Roma",
@@ -2294,21 +2240,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
+        "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 216,
-        "number" : null,
+        "minutes" : 180,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : "7.175000",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 0,
         "out" : 0,
-        "bench" : 4
+        "bench" : 0
       },
       "shots" : {
         "total" : 2,
@@ -2317,31 +2263,196 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 89,
-        "key" : 3,
+        "total" : 109,
+        "key" : 4,
+        "accuracy" : 50
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 1,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 349001,
+      "name" : "Wesley",
+      "firstname" : "Wesley Vinícius",
+      "lastname" : "França Lima",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-06",
+        "place" : "Açailândia",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "173",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/349001.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 43,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 22,
-        "won" : 17
+        "total" : 13,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 4,
+        "attempts" : 3,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
+        "drawn" : 3,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -2362,26 +2473,118 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 410,
+        "number" : 43,
+        "position" : "Midfielder",
+        "rating" : "7.1",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 195,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 384543,
+      "name" : "J. Ziółkowski",
+      "firstname" : "Jan",
+      "lastname" : "Ziółkowski",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-06-05",
+        "place" : "Warszawa",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "194",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/384543.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 24,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2389,8 +2592,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2424,28 +2627,101 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 497,
+        "name" : "AS Roma",
+        "logo" : "https://media.api-sports.io/football/teams/497.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 33,
+        "number" : 24,
+        "position" : "Defender",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 10,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 286475,
-      "name" : "E. Bove",
-      "firstname" : "Edoardo",
-      "lastname" : "Bove",
-      "age" : 23,
+      "id" : 446067,
+      "name" : "Buba Sangaré",
+      "firstname" : "Aboubacar",
+      "lastname" : "Sangaré Traoré",
+      "age" : 18,
       "birth" : {
-        "date" : "2002-05-16",
-        "place" : null,
-        "country" : "Italy"
+        "date" : "2007-08-06",
+        "place" : "Elche",
+        "country" : "Spain"
       },
-      "nationality" : "Italy",
-      "height" : "179 cm",
-      "weight" : "77 kg",
+      "nationality" : "Spain",
+      "height" : "183",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/286475.png"
+      "photo" : "https://media.api-sports.io/football/players/446067.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2459,54 +2735,54 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.083333",
+        "minutes" : null,
+        "number" : 66,
+        "position" : "Defender",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 3
       },
       "shots" : {
-        "total" : 5,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 335,
-        "key" : 11,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 24,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 6
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 126,
-        "won" : 63
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 14,
-        "success" : 7,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 21,
-        "committed" : 16
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -2520,33 +2796,52 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 452423,
+      "name" : "R. Żelezny",
+      "firstname" : "Radosław Dominik",
+      "lastname" : "Żelezny",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-09-06",
+        "place" : "Wrocław",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "191",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/452423.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 497,
         "name" : "AS Roma",
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 91,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -2554,8 +2849,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2589,101 +2884,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 347314,
-      "name" : "Jan Oliveras",
-      "firstname" : "Jan",
-      "lastname" : "Oliveras Codina",
-      "age" : 21,
+      "id" : 483676,
+      "name" : "G. De Marzi",
+      "firstname" : "Giorgio",
+      "lastname" : "De Marzi",
+      "age" : 18,
       "birth" : {
-        "date" : "2004-07-07",
-        "place" : "Manresa",
-        "country" : "Spain"
+        "date" : "2007-04-18",
+        "place" : "Lancaster",
+        "country" : "USA"
       },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "USA",
+      "height" : "182 cm",
+      "weight" : "72 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/347314.png"
+      "photo" : "https://media.api-sports.io/football/players/483676.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2692,26 +2914,26 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 70,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2719,8 +2941,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2754,28 +2976,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 348468,
-      "name" : "Filippo Alessio",
-      "firstname" : "Filippo",
-      "lastname" : "Alessio",
-      "age" : 20,
+      "id" : 484027,
+      "name" : "A. Arena",
+      "firstname" : "Antonio",
+      "lastname" : "Arena",
+      "age" : 16,
       "birth" : {
-        "date" : "2004-12-24",
-        "place" : "Montebelluna",
-        "country" : "Italy"
+        "date" : "2009-02-10",
+        "place" : null,
+        "country" : "Australia"
       },
-      "nationality" : "Italy",
-      "height" : null,
+      "nationality" : "Australia",
+      "height" : "188",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/348468.png"
+      "photo" : "https://media.api-sports.io/football/players/484027.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2784,18 +3006,18 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 68,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
@@ -2803,7 +3025,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2811,8 +3033,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2846,204 +3068,20 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 361497,
-      "name" : "D. Huijsen",
-      "firstname" : "Dean Donny",
-      "lastname" : "Huijsen",
-      "age" : 20,
+      "id" : 495478,
+      "name" : "A. Marcaccini",
+      "firstname" : "Alessio",
+      "lastname" : "Marcaccini",
+      "age" : 17,
       "birth" : {
-        "date" : "2005-04-14",
-        "place" : "Amsterdam",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Netherlands",
-      "height" : "195 cm",
-      "weight" : "87 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/361497.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 367877,
-      "name" : "Lovro Golič",
-      "firstname" : "Lovro",
-      "lastname" : "Golič",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-03-05",
-        "place" : "Celje",
-        "country" : "Slovenia"
-      },
-      "nationality" : "Slovenia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/367877.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 458411,
-      "name" : "Jacopo Mirra",
-      "firstname" : "Jacopo",
-      "lastname" : "Mirra",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-07-10",
+        "date" : "2008-10-01",
         "place" : "Roma",
         "country" : "Italy"
       },
@@ -3051,7 +3089,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/458411.png"
+      "photo" : "https://media.api-sports.io/football/players/495478.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3060,26 +3098,26 @@
         "logo" : "https://media.api-sports.io/football/teams/497.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 73,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -3087,8 +3125,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3122,192 +3160,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 472080,
-      "name" : "Mattia Della Rocca",
-      "firstname" : "Mattia",
-      "lastname" : "Della Rocca",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-01-13",
-        "place" : "Roma",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/472080.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 472081,
-      "name" : "Marco Litti",
-      "firstname" : "Marco",
-      "lastname" : "Litti",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-10-12",
-        "place" : "Brindisi",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/472081.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 497,
-        "name" : "AS Roma",
-        "logo" : "https://media.api-sports.io/football/teams/497.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

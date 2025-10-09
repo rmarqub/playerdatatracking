@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "2646"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 11017,
-      "name" : "M. Cvetković",
-      "firstname" : "Miloš",
-      "lastname" : "Cvetković",
-      "age" : 35,
+      "id" : 357,
+      "name" : "B. Jovičić",
+      "firstname" : "Branko",
+      "lastname" : "Jovičić",
+      "age" : 32,
       "birth" : {
-        "date" : "1990-01-06",
-        "place" : "Beograd",
+        "date" : "1993-03-18",
+        "place" : "Raška",
         "country" : "Serbia"
       },
       "nationality" : "Serbia",
-      "height" : "175 cm",
-      "weight" : "70 kg",
+      "height" : "179 cm",
+      "weight" : "74 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/11017.png"
+      "photo" : "https://media.api-sports.io/football/players/357.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,45 +41,229 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 10,
+        "lineups" : 9,
+        "minutes" : 790,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.89",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 3
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 529,
+        "key" : 10,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 21,
+        "blocks" : 1,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 82,
+        "won" : 43
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 5,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7368,
+      "name" : "A. Todoroski",
+      "firstname" : "Andrej",
+      "lastname" : "Todoroski",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-19",
+        "place" : "Prilep",
+        "country" : "North Macedonia"
+      },
+      "nationality" : "North Macedonia",
+      "height" : "174 cm",
+      "weight" : "67 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7368.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 7,
+        "minutes" : 652,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.86",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 20,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 199,
+        "key" : 10,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 89,
+        "won" : 42
+      },
+      "dribbles" : {
+        "attempts" : 24,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 23,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 14281,
+      "name" : "L. Capan",
+      "firstname" : "Luka",
+      "lastname" : "Capan",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-04-06",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : "184 cm",
+      "weight" : "76 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14281.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 506,
+        "number" : 31,
+        "position" : "Defender",
+        "rating" : "7.02",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 368,
+        "key" : 1,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 4,
+        "interceptions" : 9
+      },
+      "duels" : {
+        "total" : 43,
+        "won" : 25
       },
       "dribbles" : {
         "attempts" : null,
@@ -87,39 +271,39 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 7
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 28479,
-      "name" : "B. Sós",
-      "firstname" : "Bence",
-      "lastname" : "Sós",
-      "age" : 31,
+      "id" : 27926,
+      "name" : "S. Mezei",
+      "firstname" : "Szabolcs",
+      "lastname" : "Mezei",
+      "age" : 25,
       "birth" : {
-        "date" : "1994-05-10",
-        "place" : "Hódmezővásárhely",
+        "date" : "2000-10-18",
+        "place" : null,
         "country" : "Hungary"
       },
       "nationality" : "Hungary",
-      "height" : "178 cm",
-      "weight" : "67 kg",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/28479.png"
+      "photo" : "https://media.api-sports.io/football/players/27926.png"
     },
     "statistics" : [ {
       "team" : {
@@ -133,54 +317,54 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
+        "appearences" : 6,
         "lineups" : 4,
-        "minutes" : 413,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.485714",
+        "minutes" : 642,
+        "number" : 26,
+        "position" : "Defender",
+        "rating" : "6.96",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 4,
-        "bench" : 19
+        "in" : 2,
+        "out" : 3,
+        "bench" : 3
       },
       "shots" : {
         "total" : 4,
-        "on" : 2
+        "on" : 3
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 85,
-        "key" : 2,
+        "total" : 330,
+        "key" : 11,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 5
+        "total" : 11,
+        "blocks" : 1,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 22,
-        "won" : 8
+        "total" : 54,
+        "won" : 27
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
-        "committed" : 6
+        "drawn" : 10,
+        "committed" : 11
       },
       "cards" : {
         "yellow" : 2,
@@ -194,408 +378,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 83,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 19,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 0,
-        "minutes" : 68,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.420000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 0,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 36,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 45377,
-      "name" : "N. Kuveljić",
-      "firstname" : "Nikola",
-      "lastname" : "Kuveljić",
-      "age" : 28,
+      "id" : 44523,
+      "name" : "S. Jovanović",
+      "firstname" : "Saša",
+      "lastname" : "Jovanović",
+      "age" : 34,
       "birth" : {
-        "date" : "1997-04-06",
-        "place" : "Belgrade",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "194 cm",
-      "weight" : "85 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45377.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45722,
-      "name" : "J. Vlalukin",
-      "firstname" : "Jovan",
-      "lastname" : "Vlalukin",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-05-21",
-        "place" : "Novi Sad",
+        "date" : "1991-12-15",
+        "place" : "Lazarevac",
         "country" : "Serbia"
       },
       "nationality" : "Serbia",
       "height" : "176 cm",
-      "weight" : null,
+      "weight" : "75 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45722.png"
+      "photo" : "https://media.api-sports.io/football/players/44523.png"
     },
     "statistics" : [ {
       "team" : {
@@ -609,57 +409,57 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 3,
-        "minutes" : 324,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.066666",
+        "appearences" : 10,
+        "lineups" : 7,
+        "minutes" : 628,
+        "number" : 8,
+        "position" : "Attacker",
+        "rating" : "6.73",
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
-        "out" : 1,
-        "bench" : 5
+        "out" : 4,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 7,
+        "on" : 4
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 87,
-        "key" : 2,
+        "total" : 108,
+        "key" : 15,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : 6
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 19,
-        "won" : 10
+        "total" : 66,
+        "won" : 21
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : 11,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 4
+        "drawn" : 15,
+        "committed" : 10
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -670,243 +470,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 57,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 165,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 45811,
-      "name" : "M. Rakonjac",
-      "firstname" : "Marko",
-      "lastname" : "Rakonjac",
-      "age" : 25,
+      "id" : 45339,
+      "name" : "N. Jorgić",
+      "firstname" : "Nemanja",
+      "lastname" : "Jorgić",
+      "age" : 37,
       "birth" : {
-        "date" : "2000-04-25",
-        "place" : null,
-        "country" : "Montenegro"
+        "date" : "1988-04-07",
+        "place" : "Virovitica",
+        "country" : "Serbia"
       },
-      "nationality" : "Montenegro",
+      "nationality" : "Serbia",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45811.png"
+      "photo" : "https://media.api-sports.io/football/players/45339.png"
     },
     "statistics" : [ {
       "team" : {
@@ -920,30 +501,30 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 0,
+        "lineups" : 0,
         "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
+        "number" : 23,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 10
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -970,16 +551,108 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45929,
+      "name" : "N. Simić",
+      "firstname" : "Nikola",
+      "lastname" : "Simić",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-12-21",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45929.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.96",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 7,
+        "assists" : 0,
+        "saves" : 19
+      },
+      "passes" : {
+        "total" : 177,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     } ]
   }, {
@@ -1012,314 +685,57 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 67,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 11,
+        "lineups" : 8,
+        "minutes" : 733,
+        "number" : 21,
+        "position" : "Midfielder",
+        "rating" : "6.69",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
+        "in" : 3,
+        "out" : 3,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 4
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 65410,
-      "name" : "G. Antonić",
-      "firstname" : "Goran",
-      "lastname" : "Antonić",
-      "age" : 35,
-      "birth" : {
-        "date" : "1990-11-03",
-        "place" : "Sremska Mitrovica",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "185 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/65410.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 78364,
-      "name" : "M. Bagnack",
-      "firstname" : "Macky Frank",
-      "lastname" : "Bagnack Mouegni",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-06-07",
-        "place" : "Tobagné",
-        "country" : "Cameroon"
-      },
-      "nationality" : "Cameroon",
-      "height" : "187 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/78364.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 4,
-        "minutes" : 374,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 84,
-        "key" : null,
+        "total" : 236,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 19,
-        "won" : 12
+        "total" : 62,
+        "won" : 23
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 15,
+        "success" : 6,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 11,
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1330,142 +746,88 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 46106,
+      "name" : "S. Jovanović",
+      "firstname" : "Stefan",
+      "lastname" : "Jovanović",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-07",
+        "place" : "Kraljevo",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "178 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46106.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 2646,
         "name" : "TSC Backa Topola",
         "logo" : "https://media.api-sports.io/football/teams/2646.png"
       },
       "league" : {
-        "id" : 732,
-        "name" : "Cup",
+        "id" : 286,
+        "name" : "Super Liga",
         "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 9,
+        "lineups" : 6,
+        "minutes" : 569,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.62",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : 3,
+        "out" : 3,
+        "bench" : 5
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
+        "total" : 3,
         "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 293,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 52,
+        "won" : 19
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 4,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 10
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 3,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1474,79 +836,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1563,8 +852,8 @@
         "country" : "Congo"
       },
       "nationality" : "Congo",
-      "height" : "170 cm",
-      "weight" : "70 kg",
+      "height" : "170",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/102687.png"
     },
@@ -1580,57 +869,57 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 9,
-        "minutes" : 822,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 413,
+        "number" : 29,
         "position" : "Attacker",
-        "rating" : "6.785714",
+        "rating" : "6.56",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 6,
-        "bench" : 8
+        "in" : 3,
+        "out" : 4,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 6,
-        "on" : 2
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
-        "total" : 4,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 81,
-        "key" : 5,
+        "total" : 125,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 4,
-        "blocks" : null,
-        "interceptions" : 3
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 45,
-        "won" : 22
+        "total" : 57,
+        "won" : 28
       },
       "dribbles" : {
-        "attempts" : 13,
-        "success" : 5,
+        "attempts" : 10,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 3
+        "drawn" : 13,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1641,139 +930,85 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 303008,
+      "name" : "V. KrstiÄ",
+      "firstname" : "Vukašin",
+      "lastname" : "Krstić",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-04-13",
+        "place" : "Novi Sad",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "184 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/303008.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 2646,
         "name" : "TSC Backa Topola",
         "logo" : "https://media.api-sports.io/football/teams/2646.png"
       },
       "league" : {
-        "id" : 732,
-        "name" : "Cup",
+        "id" : 286,
+        "name" : "Super Liga",
         "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 7,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 654,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "7.01",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : 1,
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 431,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 26,
+        "blocks" : 5,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 71,
+        "won" : 44
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 9
       },
       "cards" : {
         "yellow" : 1,
@@ -1783,70 +1018,89 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 322180,
+      "name" : "V. Ilić",
+      "firstname" : "Veljko",
+      "lastname" : "Ilić",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-07-21",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/322180.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 2646,
         "name" : "TSC Backa Topola",
         "logo" : "https://media.api-sports.io/football/teams/2646.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 229,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 544,
+        "number" : 12,
+        "position" : "Goalkeeper",
+        "rating" : "7.07",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
+        "in" : 0,
         "out" : 0,
-        "bench" : 4
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : 0,
+        "total" : 0,
+        "conceded" : 7,
         "assists" : 0,
-        "saves" : null
+        "saves" : 30
       },
       "passes" : {
-        "total" : 67,
-        "key" : 1,
+        "total" : 223,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 46,
-        "won" : 19
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 16,
-        "success" : 5,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1858,118 +1112,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 107955,
-      "name" : "M. Mirchevski",
-      "firstname" : "Martin",
-      "lastname" : "Mirchevski",
-      "age" : 28,
+      "id" : 323378,
+      "name" : "M. Đorđević",
+      "firstname" : "Mateja",
+      "lastname" : "Đorđević",
+      "age" : 22,
       "birth" : {
-        "date" : "1997-02-11",
+        "date" : "2003-01-17",
         "place" : null,
-        "country" : "North Macedonia"
-      },
-      "nationality" : "North Macedonia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/107955.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 133403,
-      "name" : "N. Stojić",
-      "firstname" : "Nemanja",
-      "lastname" : "Stojić",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-15",
-        "place" : "Beograd",
         "country" : "Serbia"
       },
       "nationality" : "Serbia",
-      "height" : "190 cm",
-      "weight" : "84 kg",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/133403.png"
+      "photo" : "https://media.api-sports.io/football/players/323378.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1983,897 +1145,18 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 0,
+        "lineups" : 0,
         "minutes" : null,
-        "number" : null,
+        "number" : 25,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 152786,
-      "name" : "A. Ćirković",
-      "firstname" : "Aleksandar",
-      "lastname" : "Ćirković",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-21",
-        "place" : "Smederevska Palanka",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "180 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/152786.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 12,
-        "minutes" : 1159,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 7,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 181,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 60,
-        "won" : 31
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 69,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 117,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 484,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.216666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 5,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 152,
-        "key" : 12,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 35,
-        "won" : 18
-      },
-      "dribbles" : {
-        "attempts" : 16,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162045,
-      "name" : "M. Lazetić",
-      "firstname" : "Marko",
-      "lastname" : "Lazetić",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-22",
-        "place" : "Belgrade",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "190 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162045.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 10,
-        "minutes" : 844,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.775000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 8,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 85,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 67,
-        "won" : 30
-      },
-      "dribbles" : {
-        "attempts" : 14,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 98,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.650000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 17,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 201691,
-      "name" : "U. Milovanović",
-      "firstname" : "Uroš",
-      "lastname" : "Milovanović",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-10-18",
-        "place" : "Duisburg",
-        "country" : "Germany"
-      },
-      "nationality" : "Serbia",
-      "height" : "187 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/201691.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 202117,
-      "name" : "I. Đakovac",
-      "firstname" : "Ifet",
-      "lastname" : "Đakovac",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-12-05",
-        "place" : "Sjenica",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "180 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/202117.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 14,
-        "minutes" : 1213,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.060000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 8,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 187,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 50,
-        "won" : 20
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 8,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
         "in" : 0,
         "out" : 0,
         "bench" : 1
@@ -2884,8 +1167,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2919,246 +1202,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 150,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 5,
-        "minutes" : 441,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.216666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 193,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 64,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
         "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 236756,
-      "name" : "N. Čolić",
-      "firstname" : "Nikola",
-      "lastname" : "Čolić",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-08-17",
-        "place" : "Beograd",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/236756.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3192,21 +1237,21 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 28,
+        "number" : 17,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
         "out" : 0,
-        "bench" : 0
+        "bench" : 7
       },
       "shots" : {
         "total" : null,
@@ -3214,12 +1259,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 15,
         "key" : null,
         "accuracy" : null
       },
@@ -3229,17 +1274,17 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -3249,20 +1294,20 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 362589,
-      "name" : "M. Svilar",
-      "firstname" : "MomÄilo",
-      "lastname" : "Svilar",
-      "age" : 19,
+      "id" : 340729,
+      "name" : "V. Radojević",
+      "firstname" : "Viktor",
+      "lastname" : "Radojević",
+      "age" : 21,
       "birth" : {
-        "date" : "2005-06-14",
+        "date" : "2004-07-14",
         "place" : null,
         "country" : "Serbia"
       },
@@ -3270,7 +1315,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/362589.png"
+      "photo" : "https://media.api-sports.io/football/players/340729.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3284,205 +1329,113 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 343,
+        "number" : 60,
+        "position" : "Defender",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 119,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 9
+      },
+      "duels" : {
+        "total" : 37,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 9,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 398187,
+      "name" : "A. PetroviÄ",
+      "firstname" : "Andrej",
+      "lastname" : "Petrović",
+      "age" : 17,
+      "birth" : {
+        "date" : "2006-04-24",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/398187.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
         "minutes" : null,
-        "number" : null,
+        "number" : 80,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 445724,
-      "name" : "A. Preradov",
-      "firstname" : "Aleksa",
-      "lastname" : "Preradov",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-07-15",
-        "place" : "Novi Sad",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "180 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/445724.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 495885,
-      "name" : "M. JoviÄiÄ",
-      "firstname" : "Miloš",
-      "lastname" : "Jovičić",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-01-23",
-        "place" : null,
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/495885.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 2646,
-        "name" : "TSC Backa Topola",
-        "logo" : "https://media.api-sports.io/football/teams/2646.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 6
       },
       "shots" : {
         "total" : null,
@@ -3529,25 +1482,320 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 445368,
+      "name" : "Bogdan Petrovic",
+      "firstname" : "Bogdan",
+      "lastname" : "Petrovic",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-12-07",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "182 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/445368.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 2646,
         "name" : "TSC Backa Topola",
         "logo" : "https://media.api-sports.io/football/teams/2646.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 543,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.88",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 106,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 59,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 18,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 445438,
+      "name" : "S. Mladenović",
+      "firstname" : "Stefan",
+      "lastname" : "Mladenović",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-09-12",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "180 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/445438.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 645,
+        "number" : 15,
+        "position" : "Midfielder",
+        "rating" : "6.82",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 3,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 226,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 23,
+        "blocks" : 6,
+        "interceptions" : 20
+      },
+      "duels" : {
+        "total" : 95,
+        "won" : 51
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 13,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 451986,
+      "name" : "Aleksandar Stančić",
+      "firstname" : "Aleksandar",
+      "lastname" : "Stančić",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-09-23",
+        "place" : "Zaječar",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/451986.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 4,
+        "minutes" : 644,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.52",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 3,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 279,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 81,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 22
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 495885,
+      "name" : "M. JoviÄiÄ",
+      "firstname" : "Miloš",
+      "lastname" : "Jovičić",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-01-23",
+        "place" : null,
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/495885.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 2646,
+        "name" : "TSC Backa Topola",
+        "logo" : "https://media.api-sports.io/football/teams/2646.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 24,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
@@ -3555,7 +1803,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 3
       },
       "shots" : {
         "total" : null,
@@ -3563,8 +1811,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3598,8 +1846,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

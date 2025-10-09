@@ -1,107 +1,17 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "7211"
   },
-  "errors" : [ ],
-  "results" : 1,
+  "errors" : {
+    "rateLimit" : "Too many requests. Your rate limit is 450 requests per minute."
+  },
+  "results" : 0,
   "paging" : {
     "current" : 1,
     "total" : 1
   },
-  "response" : [ {
-    "player" : {
-      "id" : 154220,
-      "name" : "E. Worrell",
-      "firstname" : "Eljay",
-      "lastname" : "Worrell",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/154220.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 7211,
-        "name" : "Basildon United",
-        "logo" : "https://media.api-sports.io/football/teams/7211.png"
-      },
-      "league" : {
-        "id" : 933,
-        "name" : "Non League Div One - Southern Central",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/933.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  } ]
+  "response" : [ ]
 }

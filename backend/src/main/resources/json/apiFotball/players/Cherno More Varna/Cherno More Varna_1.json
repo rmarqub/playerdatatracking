@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "851"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 1074,
-      "name" : "C. Keșerü",
-      "firstname" : "Claudiu Andrei",
-      "lastname" : "Keșerü",
-      "age" : 39,
+      "id" : 1055,
+      "name" : "P. Iliev",
+      "firstname" : "Plamen",
+      "lastname" : "Ivanov Iliev",
+      "age" : 34,
       "birth" : {
-        "date" : "1986-12-02",
-        "place" : "Oradea",
-        "country" : "Romania"
+        "date" : "1991-11-30",
+        "place" : "Botevgrad",
+        "country" : "Bulgaria"
       },
-      "nationality" : "Romania",
-      "height" : "178 cm",
-      "weight" : "71 kg",
+      "nationality" : "Bulgaria",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1074.png"
+      "photo" : "https://media.api-sports.io/football/players/1055.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,98 +36,25 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 3,
-        "minutes" : 527,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.633333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 3,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 0
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 0,
-        "blocks" : 0,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 174,
-        "name" : "Cup",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "number" : 33,
+        "position" : "Goalkeeper",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -136,12 +63,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 4,
+        "assists" : 0,
+        "saves" : 2
       },
       "passes" : {
-        "total" : null,
+        "total" : 21,
         "key" : null,
         "accuracy" : null
       },
@@ -151,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -171,28 +98,853 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 90,
+        "number" : 33,
+        "position" : "Goalkeeper",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 11106,
+      "name" : "T. Panov",
+      "firstname" : "Tsvetomir",
+      "lastname" : "Bozhidarov Panov",
+      "age" : 36,
+      "birth" : {
+        "date" : "1989-04-17",
+        "place" : "Pleven",
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : "172",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/11106.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 2,
+        "position" : "Midfielder",
+        "rating" : "6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 7,
+        "minutes" : 6,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 2,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 10631,
-      "name" : "A. Iliev",
-      "firstname" : "Atanas",
-      "lastname" : "Petrov Iliev",
+      "id" : 11113,
+      "name" : "V. Panayotov",
+      "firstname" : "Vasil",
+      "lastname" : "Kostadinov Panayotov",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-07-16",
+        "place" : null,
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : "177",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/11113.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 71,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 23,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 90,
+        "number" : 71,
+        "position" : "Midfielder",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 42,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 11306,
+      "name" : "A. Chandarov",
+      "firstname" : "Asen",
+      "lastname" : "Rumenov Chandarov",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-11-13",
+        "place" : null,
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/11306.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 8,
+        "minutes" : 74,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 7,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 13,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 31193,
+      "name" : "Z. Atanasov",
+      "firstname" : "Zhivko",
+      "lastname" : "Stanislavov Atanasov",
+      "age" : 34,
+      "birth" : {
+        "date" : "1991-02-03",
+        "place" : "Dobroplodno",
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : "187",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/31193.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "5.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 30,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 90,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "7.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 67,
+        "key" : null,
+        "accuracy" : 63
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 41644,
+      "name" : "David Teles",
+      "firstname" : "David Miguel",
+      "lastname" : "Delfino Teles",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-05-23",
+        "place" : "Elvas",
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "179",
+      "weight" : "63",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/41644.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 89,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 43091,
+      "name" : "A. Calcan",
+      "firstname" : "Andreias Cristian",
+      "lastname" : "Calcan",
       "age" : 31,
       "birth" : {
-        "date" : "1994-10-09",
-        "place" : "Dobrich",
-        "country" : "Bulgaria"
+        "date" : "1994-04-09",
+        "place" : "Slatina",
+        "country" : "Romania"
       },
-      "nationality" : "Bulgaria",
-      "height" : "189 cm",
-      "weight" : null,
+      "nationality" : "Romania",
+      "height" : "174",
+      "weight" : "72",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/10631.png"
+      "photo" : "https://media.api-sports.io/football/players/43091.png"
     },
     "statistics" : [ {
       "team" : {
@@ -201,24 +953,24 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 33,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 2,
         "out" : null,
         "bench" : null
       },
@@ -228,27 +980,27 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 9,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -256,35 +1008,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 11098,
-      "name" : "I. Dyulgerov",
-      "firstname" : "Ivan",
-      "lastname" : "Vasilev Dyulgerov",
-      "age" : 26,
+      "id" : 46690,
+      "name" : "Alberto Martín",
+      "firstname" : "Alberto Martín",
+      "lastname" : "Romo García Adámez",
+      "age" : 36,
       "birth" : {
-        "date" : "1999-07-15",
-        "place" : null,
-        "country" : "Bulgaria"
+        "date" : "1989-03-31",
+        "place" : "Badajoz",
+        "country" : "Spain"
       },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "Spain",
+      "height" : "179 cm",
+      "weight" : "73 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/11098.png"
+      "photo" : "https://media.api-sports.io/football/players/46690.png"
     },
     "statistics" : [ {
       "team" : {
@@ -293,50 +1045,50 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 45,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 16,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -344,41 +1096,22 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 71991,
-      "name" : "M. Dichev",
-      "firstname" : "Martin",
-      "lastname" : "Danailov Dichev",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-08-22",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/71991.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 851,
         "name" : "Cherno More Varna",
@@ -390,7 +1123,521 @@
         "country" : "Bulgaria",
         "logo" : "https://media.api-sports.io/football/leagues/172.png",
         "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 90,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 0
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 75940,
+      "name" : "V. Drobarov",
+      "firstname" : "Vlatko",
+      "lastname" : "Drobarov",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-11-02",
+        "place" : "Skopje",
+        "country" : "North Macedonia"
+      },
+      "nationality" : "North Macedonia",
+      "height" : "187",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/75940.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "5.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 90,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 62,
+        "key" : null,
+        "accuracy" : 55
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129960,
+      "name" : "D. Tonev",
+      "firstname" : "Dimitar",
+      "lastname" : "Dimitrov Tonev",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-10-15",
+        "place" : "Plovdiv",
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129960.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 1,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 49,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 3,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 135090,
+      "name" : "Weslen Júnior",
+      "firstname" : "Weslen Júnior",
+      "lastname" : "Faustino de Melo",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-11-12",
+        "place" : null,
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/135090.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : 99,
+        "position" : "Attacker",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 179277,
+      "name" : "Dani Martín",
+      "firstname" : "Daniel Jesús",
+      "lastname" : "Martín Gil",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-05-31",
+        "place" : "Las Palmas de Gran Canaria",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/179277.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -454,499 +1701,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 80749,
-      "name" : "I. Iliev",
-      "firstname" : "Ilian",
-      "lastname" : "Ilianov Iliev",
-      "age" : 26,
+      "id" : 197041,
+      "name" : "João Pedro",
+      "firstname" : "João Pedro",
+      "lastname" : "Costa Contreiras Martins",
+      "age" : 25,
       "birth" : {
-        "date" : "1999-08-20",
-        "place" : "Funchal",
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : "173 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/80749.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 125642,
-      "name" : "V. Vasilev",
-      "firstname" : "Velislav",
-      "lastname" : "Krasimirov Vasilev",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-05-08",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/125642.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 1,
-        "minutes" : 147,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 1,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 16,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 0,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 36,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 174,
-        "name" : "Cup",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 84,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 135090,
-      "name" : "Weslen Júnior",
-      "firstname" : "Weslen Júnior",
-      "lastname" : "Faustino de Melo",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-11-12",
-        "place" : null,
+        "date" : "2000-04-20",
+        "place" : "Rio de Janeiro",
         "country" : "Brazil"
       },
       "nationality" : "Brazil",
-      "height" : null,
-      "weight" : null,
+      "height" : "170",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/135090.png"
+      "photo" : "https://media.api-sports.io/football/players/197041.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 8,
-        "minutes" : 690,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 0,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 34,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 174,
-        "name" : "Cup",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 104,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 851,
         "name" : "Cherno More Varna",
@@ -958,116 +1729,24 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 137472,
-      "name" : "Renan Areias",
-      "firstname" : "Renan",
-      "lastname" : "Carvalho Areias",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-18",
-        "place" : "São Paulo",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "174 cm",
-      "weight" : "66 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/137472.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 6,
-        "minutes" : 483,
-        "number" : null,
+        "lineups" : 0,
+        "minutes" : 45,
+        "number" : 11,
         "position" : "Midfielder",
-        "rating" : "7.150000",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 4,
-        "bench" : 6
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 3,
+        "total" : 1,
         "on" : 1
       },
       "goals" : {
@@ -1077,30 +1756,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 55,
-        "key" : 1,
+        "total" : 7,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 4
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 27,
-        "won" : 11
+        "total" : 6,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 4
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1118,59 +1797,59 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 174,
-        "name" : "Cup",
+        "id" : 172,
+        "name" : "First League",
         "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
         "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 9,
-        "number" : null,
+        "appearences" : 10,
+        "lineups" : 9,
+        "minutes" : 34,
+        "number" : 11,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 1,
-        "bench" : 0
+        "out" : 9,
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
-        "on" : null
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 19,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 0,
+        "committed" : 0
       },
       "cards" : {
         "yellow" : 1,
@@ -1180,28 +1859,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 160892,
-      "name" : "Baiano",
-      "firstname" : "Michael",
-      "lastname" : "Santos Silva Alves",
-      "age" : 28,
+      "id" : 202371,
+      "name" : "K. Tomov",
+      "firstname" : "Kristian",
+      "lastname" : "Hristov Tomov",
+      "age" : 23,
       "birth" : {
-        "date" : "1996-02-16",
+        "date" : "2002-08-17",
         "place" : null,
-        "country" : "Brazil"
+        "country" : "Bulgaria"
       },
-      "nationality" : "Brazil",
+      "nationality" : "Bulgaria",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/160892.png"
+      "photo" : "https://media.api-sports.io/football/players/202371.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1210,208 +1889,24 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182623,
-      "name" : "Pablo Álvarez",
-      "firstname" : "Pablo",
-      "lastname" : "Álvarez García",
-      "age" : 27,
-      "birth" : {
-        "date" : "1997-04-23",
-        "place" : "Oviedo",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "187 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182623.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 186054,
-      "name" : "T. Barry",
-      "firstname" : "Thierno Issiaga",
-      "lastname" : "Barry Arévalo",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-01-12",
-        "place" : "Santa Cruz de Tenerife",
-        "country" : "Spain"
-      },
-      "nationality" : "Guinea",
-      "height" : "173 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/186054.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 32,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 81,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
@@ -1421,8 +1916,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1456,8 +1951,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1486,30 +1981,30 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 3,
-        "minutes" : 199,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 17,
         "position" : "Attacker",
-        "rating" : "6.300000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 3,
-        "bench" : 12
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1518,30 +2013,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 26,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 0,
-        "blocks" : 0,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 15,
-        "won" : 5
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1559,194 +2054,29 @@
         "logo" : "https://media.api-sports.io/football/teams/851.png"
       },
       "league" : {
-        "id" : 174,
-        "name" : "Cup",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 279449,
-      "name" : "Edgar Pacheco",
-      "firstname" : "Edgar Patrício",
-      "lastname" : "Franco Pacheco",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-06-23",
-        "place" : null,
-        "country" : "Portugal"
-      },
-      "nationality" : "Portugal",
-      "height" : "171 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/279449.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
         "id" : 172,
         "name" : "First League",
         "country" : "Bulgaria",
         "logo" : "https://media.api-sports.io/football/leagues/172.png",
         "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 14,
-        "lineups" : 4,
-        "minutes" : 484,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.250000",
+        "appearences" : 7,
+        "lineups" : 1,
+        "minutes" : 63,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 10,
-        "out" : 4,
-        "bench" : 12
+        "in" : 6,
+        "out" : 1,
+        "bench" : 10
       },
       "shots" : {
-        "total" : 1,
+        "total" : 2,
         "on" : 1
       },
       "goals" : {
@@ -1756,21 +2086,21 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 43,
+        "total" : 12,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 0,
         "blocks" : 0,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 31,
-        "won" : 10
+        "total" : 13,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : 9,
+        "attempts" : 4,
         "success" : 3,
         "past" : null
       },
@@ -1790,80 +2120,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
+    } ]
+  }, {
+    "player" : {
+      "id" : 266227,
+      "name" : "Danylo Chalykh",
+      "firstname" : "Danylo",
+      "lastname" : "Chalykh",
+      "age" : 20,
+      "birth" : {
+        "date" : "2001-03-11",
+        "place" : null,
+        "country" : "Ukraine"
       },
-      "league" : {
-        "id" : 174,
-        "name" : "Cup",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/174.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
+      "nationality" : "Ukraine",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/266227.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 851,
         "name" : "Cherno More Varna",
@@ -1875,21 +2151,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 70,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1897,8 +2173,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1932,100 +2208,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 339267,
-      "name" : "G. Grigorov",
-      "firstname" : "Galin",
-      "lastname" : "Veselinov Grigorov",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-31",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/339267.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2059,21 +2243,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 71,
-        "number" : null,
+        "minutes" : 12,
+        "number" : 39,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2081,6 +2265,171 @@
       },
       "goals" : {
         "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 172,
+        "name" : "First League",
+        "country" : "Bulgaria",
+        "logo" : "https://media.api-sports.io/football/leagues/172.png",
+        "flag" : "https://media.api-sports.io/flags/bg.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 7,
+        "minutes" : 47,
+        "number" : 39,
+        "position" : "Midfielder",
+        "rating" : "5.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 7,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 0,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 0
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 412103,
+      "name" : "B. Beyhan",
+      "firstname" : "Berk",
+      "lastname" : "Orhan Beyhan",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-10-29",
+        "place" : null,
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/412103.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2109,9 +2458,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2132,24 +2481,24 @@
         "country" : "Bulgaria",
         "logo" : "https://media.api-sports.io/football/leagues/172.png",
         "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "minutes" : 47,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 1,
-        "bench" : 4
+        "bench" : 2
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : 0
       },
       "goals" : {
@@ -2159,18 +2508,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 8,
+        "total" : 19,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 0,
+        "total" : 1,
         "blocks" : 0,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 5,
-        "won" : 2
+        "total" : 3,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : 0,
@@ -2178,8 +2527,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 0
+        "drawn" : 0,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2196,13 +2545,105 @@
     } ]
   }, {
     "player" : {
-      "id" : 405295,
-      "name" : "P. Ivanov",
+      "id" : 476292,
+      "name" : "N. Kostadinov",
+      "firstname" : "Nikolay",
+      "lastname" : "Petrov Kostadinov",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-07-28",
+        "place" : null,
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/476292.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 851,
+        "name" : "Cherno More Varna",
+        "logo" : "https://media.api-sports.io/football/teams/851.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 22,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 522146,
+      "name" : "P. Marinov",
       "firstname" : "Petar",
-      "lastname" : "Rosenov Ivanov",
-      "age" : 22,
+      "lastname" : "Hristov Marinov",
+      "age" : 19,
       "birth" : {
-        "date" : "2003-04-02",
+        "date" : "2006-05-20",
         "place" : null,
         "country" : "Bulgaria"
       },
@@ -2210,358 +2651,9 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/405295.png"
+      "photo" : "https://media.api-sports.io/football/players/522146.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 409200,
-      "name" : "N. Yankov",
-      "firstname" : "Nasko",
-      "lastname" : "Krasimirov Yankov",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-10",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/409200.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 458223,
-      "name" : "A. Veselinski",
-      "firstname" : "Aleksandar",
-      "lastname" : "Stefanov Veselinski",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-06-23",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/458223.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 476290,
-      "name" : "K. Grahlyov",
-      "firstname" : "Konstantin",
-      "lastname" : "Veselinov Grahlyov",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-10-12",
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/476290.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 851,
         "name" : "Cherno More Varna",
@@ -2573,178 +2665,13 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 476291,
-      "name" : "M. Banev",
-      "firstname" : "Martin",
-      "lastname" : "Milenov Banev",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "Bulgaria"
-      },
-      "nationality" : "Bulgaria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/476291.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 172,
-        "name" : "First League",
-        "country" : "Bulgaria",
-        "logo" : "https://media.api-sports.io/football/leagues/172.png",
-        "flag" : "https://media.api-sports.io/flags/bg.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
         "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 851,
-        "name" : "Cherno More Varna",
-        "logo" : "https://media.api-sports.io/football/teams/851.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "number" : 27,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2760,8 +2687,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2795,8 +2722,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

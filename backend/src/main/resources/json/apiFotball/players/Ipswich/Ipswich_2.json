@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "57"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 14,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 2752,
-      "name" : "M. Luongo",
-      "firstname" : "Massimo Corey",
-      "lastname" : "Luongo",
-      "age" : 33,
+      "id" : 894,
+      "name" : "A. Young",
+      "firstname" : "Ashley Simon",
+      "lastname" : "Young",
+      "age" : 40,
       "birth" : {
-        "date" : "1992-09-25",
-        "place" : "Sydney",
-        "country" : "Australia"
+        "date" : "1985-07-09",
+        "place" : "Stevenage",
+        "country" : "England"
       },
-      "nationality" : "Australia",
-      "height" : "176 cm",
-      "weight" : "66 kg",
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "65",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2752.png"
+      "photo" : "https://media.api-sports.io/football/players/894.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,53 +36,53 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 7,
-        "lineups" : 2,
-        "minutes" : 179,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 147,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.633333",
+        "position" : "Defender",
+        "rating" : "7.125000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 2,
-        "bench" : 12
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 51,
-        "key" : null,
+        "total" : 121,
+        "key" : 7,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
-        "blocks" : 2,
-        "interceptions" : 2
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 18,
-        "won" : 11
+        "total" : 11,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -92,7 +92,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -114,117 +114,44 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 147,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
+        "position" : "Defender",
+        "rating" : "7.125000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 24,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 112,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.850000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 105,
-        "key" : 1,
-        "accuracy" : 44
+        "total" : 121,
+        "key" : 7,
+        "accuracy" : null
       },
       "tackles" : {
         "total" : 5,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 15,
+        "total" : 11,
         "won" : 7
       },
       "dribbles" : {
@@ -233,12 +160,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 2,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -251,21 +178,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 15797,
-      "name" : "J. Cajuste",
-      "firstname" : "Jens-Lys Michel",
-      "lastname" : "Cajuste",
-      "age" : 26,
+      "id" : 2380,
+      "name" : "C. Akpom",
+      "firstname" : "Chuba Amechi",
+      "lastname" : "Akpom",
+      "age" : 30,
       "birth" : {
-        "date" : "1999-08-10",
-        "place" : "Gothenburg",
-        "country" : "Sweden"
+        "date" : "1995-10-09",
+        "place" : "London",
+        "country" : "England"
       },
-      "nationality" : "Sweden",
-      "height" : "188 cm",
-      "weight" : "77 kg",
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15797.png"
+      "photo" : "https://media.api-sports.io/football/players/2380.png"
     },
     "statistics" : [ {
       "team" : {
@@ -274,106 +201,33 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 15,
-        "minutes" : 1134,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 99,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.694117",
+        "position" : "Attacker",
+        "rating" : "6.566666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 15,
-        "bench" : 5
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 4,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 419,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 5,
-        "interceptions" : 17
-      },
-      "duels" : {
-        "total" : 109,
-        "won" : 56
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 13
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 66,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
@@ -384,13 +238,13 @@
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 12,
-        "won" : 6
+        "total" : 18,
+        "won" : 10
       },
       "dribbles" : {
         "attempts" : 2,
@@ -398,85 +252,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 13,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
+        "drawn" : 4,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -500,8 +281,8 @@
         "country" : "England"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "168 cm",
-      "weight" : "64 kg",
+      "height" : "168",
+      "weight" : "64",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/17579.png"
     },
@@ -512,63 +293,63 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 13,
-        "minutes" : 986,
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 284,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.664705",
+        "position" : "Attacker",
+        "rating" : "6.420000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 13,
-        "bench" : 6
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 20,
-        "on" : 12
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
-        "total" : 4,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 180,
-        "key" : 4,
+        "total" : 88,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 14,
-        "blocks" : 2,
-        "interceptions" : 6
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 91,
-        "won" : 32
+        "total" : 19,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 4,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 8,
-        "committed" : 9
+        "drawn" : 4,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -590,35 +371,35 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : 25,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "8.200000",
+        "position" : "Attacker",
+        "rating" : "7.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 27,
-        "key" : null,
+        "total" : 3,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -627,7 +408,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
+        "total" : 2,
         "won" : null
       },
       "dribbles" : {
@@ -641,80 +422,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 35,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 5,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -738,8 +446,8 @@
         "country" : "Republic of Ireland"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "189 cm",
-      "weight" : "75 kg",
+      "height" : "189",
+      "weight" : "75",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/17597.png"
     },
@@ -750,50 +458,123 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 22,
-        "minutes" : 1953,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.945454",
+        "rating" : "7.140000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 7,
-        "on" : 2
+        "total" : 4,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1012,
-        "key" : null,
-        "accuracy" : null
+        "total" : 291,
+        "key" : 4,
+        "accuracy" : 49
       },
       "tackles" : {
-        "total" : 33,
-        "blocks" : 30,
-        "interceptions" : 24
+        "total" : 1,
+        "blocks" : 3,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 196,
-        "won" : 122
+        "total" : 38,
+        "won" : 26
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 34,
+        "lineups" : 33,
+        "minutes" : 2894,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.863636",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 16,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 4,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1732,
+        "key" : 13,
+        "accuracy" : 41
+      },
+      "tackles" : {
+        "total" : 39,
+        "blocks" : 30,
+        "interceptions" : 35
+      },
+      "duels" : {
+        "total" : 302,
+        "won" : 182
       },
       "dribbles" : {
         "attempts" : 2,
@@ -801,397 +582,13 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 13,
-        "committed" : 10
+        "drawn" : 15,
+        "committed" : 36
       },
       "cards" : {
         "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 90,
-        "key" : 1,
-        "accuracy" : 79
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 17714,
-      "name" : "L. Woolfenden",
-      "firstname" : "Luke Matthew",
-      "lastname" : "Woolfenden",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-10-21",
-        "place" : "Ipswich",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "193 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/17714.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 8,
-        "minutes" : 781,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.770000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 363,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 10,
-        "interceptions" : 16
-      },
-      "duels" : {
-        "total" : 33,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 162,
-        "key" : null,
-        "accuracy" : 75
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -1214,8 +611,8 @@
         "country" : "England"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "185 cm",
-      "weight" : "70 kg",
+      "height" : "185",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/18397.png"
     },
@@ -1226,374 +623,63 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 19,
-        "lineups" : 1,
-        "minutes" : 403,
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 264,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.670588",
+        "rating" : "6.675000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 18,
-        "out" : 1,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 242,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 45,
-        "won" : 19
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 19,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 152,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 3,
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 73,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 13,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 18823,
-      "name" : "B. Johnson",
-      "firstname" : "Benjamin Anthony",
-      "lastname" : "Johnson",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-01-24",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18823.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 9,
-        "minutes" : 914,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.513333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 2,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 232,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 29,
-        "blocks" : 4,
-        "interceptions" : 11
-      },
-      "duels" : {
-        "total" : 117,
-        "won" : 54
-      },
-      "dribbles" : {
-        "attempts" : 16,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 55,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 21,
-        "key" : null,
+        "total" : 136,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 9,
-        "won" : 5
+        "total" : 30,
+        "won" : 16
       },
       "dribbles" : {
         "attempts" : 5,
-        "success" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 6,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1615,58 +701,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 45,
+        "lineups" : 45,
+        "minutes" : 3956,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
+        "position" : "Midfielder",
+        "rating" : "7.226666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 76,
+        "on" : 30
       },
       "goals" : {
-        "total" : 0,
+        "total" : 8,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 6,
         "saves" : null
       },
       "passes" : {
-        "total" : 86,
-        "key" : 2,
-        "accuracy" : 78
+        "total" : 2031,
+        "key" : 60,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 86,
+        "blocks" : 15,
+        "interceptions" : 52
       },
       "duels" : {
-        "total" : 13,
-        "won" : 6
+        "total" : 433,
+        "won" : 245
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
+        "attempts" : 54,
+        "success" : 36,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : 61,
+        "committed" : 47
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 11,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1679,21 +765,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 19073,
-      "name" : "B. Godfrey",
-      "firstname" : "Benjamin Matthew",
-      "lastname" : "Godfrey",
-      "age" : 27,
+      "id" : 19119,
+      "name" : "L. Davis",
+      "firstname" : "Leif",
+      "lastname" : "Davis",
+      "age" : 26,
       "birth" : {
-        "date" : "1998-01-15",
-        "place" : "York",
+        "date" : "1999-12-31",
+        "place" : "Newcastle",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "184 cm",
-      "weight" : "74 kg",
+      "height" : "182",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19073.png"
+      "photo" : "https://media.api-sports.io/football/players/19119.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1702,63 +788,63 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 64,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 446,
         "number" : null,
         "position" : "Defender",
-        "rating" : "5.700000",
+        "rating" : "7.220000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 4
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 40,
-        "key" : null,
+        "total" : 161,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 3,
-        "won" : 2
+        "total" : 31,
+        "won" : 25
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 9,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1775,63 +861,63 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 163,
+        "appearences" : 43,
+        "lineups" : 43,
+        "minutes" : 3445,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.850000",
+        "rating" : "7.352380",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 30,
+        "on" : 12
       },
       "goals" : {
-        "total" : 0,
+        "total" : 3,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 13,
         "saves" : null
       },
       "passes" : {
-        "total" : 106,
-        "key" : 2,
-        "accuracy" : 44
+        "total" : 1475,
+        "key" : 129,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : null
+        "total" : 55,
+        "blocks" : 6,
+        "interceptions" : 62
       },
       "duels" : {
-        "total" : 11,
-        "won" : 5
+        "total" : 328,
+        "won" : 179
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 27,
+        "success" : 11,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 32,
+        "committed" : 44
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1844,21 +930,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 19130,
-      "name" : "K. Phillips",
-      "firstname" : "Kalvin Mark",
-      "lastname" : "Phillips",
-      "age" : 30,
+      "id" : 19136,
+      "name" : "J. Clarke",
+      "firstname" : "Jack Raymond",
+      "lastname" : "Clarke",
+      "age" : 25,
       "birth" : {
-        "date" : "1995-12-02",
-        "place" : "Leeds",
+        "date" : "2000-11-23",
+        "place" : "York",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "72 kg",
+      "height" : "181",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19130.png"
+      "photo" : "https://media.api-sports.io/football/players/19136.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1867,69 +953,69 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 14,
-        "lineups" : 11,
-        "minutes" : 953,
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 257,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.685714",
+        "position" : "Attacker",
+        "rating" : "7.120000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 5,
-        "bench" : 8
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 4,
         "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 405,
-        "key" : 2,
+        "total" : 78,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 27,
-        "blocks" : 6,
-        "interceptions" : 17
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 126,
-        "won" : 54
+        "total" : 31,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
+        "attempts" : 9,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 17,
-        "committed" : 25
+        "drawn" : 6,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 1,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
+        "scored" : 1,
         "missed" : 0,
         "saved" : null
       }
@@ -1945,131 +1031,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 66,
+        "appearences" : 35,
+        "lineups" : 23,
+        "minutes" : 1186,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "position" : "Attacker",
+        "rating" : "6.731250",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 12,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
+        "total" : 9,
+        "on" : 2
+      },
+      "goals" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 4,
         "saves" : null
       },
       "passes" : {
-        "total" : 46,
-        "key" : null,
-        "accuracy" : 41
+        "total" : 370,
+        "key" : 28,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 32,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : 6,
-        "won" : 4
+        "total" : 175,
+        "won" : 87
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 43,
+        "success" : 25,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 23,
+        "committed" : 15
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 158,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 110,
-        "key" : 4,
-        "accuracy" : 47
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2093,8 +1106,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "62 kg",
+      "height" : "183",
+      "weight" : "62",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19152.png"
     },
@@ -2105,50 +1118,50 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 134,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.933333",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 24
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 40,
-        "key" : 3,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : 3,
-        "interceptions" : 3
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 14,
-        "won" : 9
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -2160,88 +1173,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 71,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     }, {
@@ -2256,45 +1196,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 32,
+        "lineups" : 17,
+        "minutes" : 342,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.900000",
+        "rating" : "7.000000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 15,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 89,
+        "total" : 94,
         "key" : 4,
-        "accuracy" : 76
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 6,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 9,
-        "won" : 7
+        "total" : 32,
+        "won" : 21
       },
       "dribbles" : {
         "attempts" : null,
@@ -2302,250 +1242,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 4,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19182,
-      "name" : "A. Tuanzebe",
-      "firstname" : "Axel",
-      "lastname" : "Tuanzebe",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-11-14",
-        "place" : "Bunia",
-        "country" : "Congo DR"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19182.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 12,
-        "minutes" : 1020,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.561538",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 4,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 398,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 24,
-        "blocks" : 4,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 72,
-        "won" : 45
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2569,8 +1271,8 @@
         "country" : "Nigeria"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "181 cm",
-      "weight" : "78 kg",
+      "height" : "181",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19365.png"
     },
@@ -2581,123 +1283,50 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 240,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 88,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.520000",
+        "rating" : "6.600000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 4
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 39,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 31,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 18,
+        "total" : 21,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : null
+        "total" : 5,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : 1,
@@ -2705,250 +1334,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19558,
-      "name" : "Sam Morsy",
-      "firstname" : "Samy Sayed",
-      "lastname" : "Morsy",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-09-10",
-        "place" : "Wolverhampton",
-        "country" : "England"
-      },
-      "nationality" : "Egypt",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19558.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 21,
-        "minutes" : 1903,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.772727",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1033,
-        "key" : 14,
-        "accuracy" : 41
-      },
-      "tackles" : {
-        "total" : 49,
-        "blocks" : 8,
-        "interceptions" : 21
-      },
-      "duels" : {
-        "total" : 186,
-        "won" : 88
-      },
-      "dribbles" : {
-        "attempts" : 16,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 37
-      },
-      "cards" : {
-        "yellow" : 7,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2970,150 +1361,150 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20007,
-      "name" : "C. Chaplin",
-      "firstname" : "Conor Mark",
-      "lastname" : "Chaplin",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-02-16",
-        "place" : "Worthing",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "168 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20007.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 7,
-        "minutes" : 611,
+        "appearences" : 30,
+        "lineups" : 25,
+        "minutes" : 1993,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.735714",
+        "rating" : "7.036666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 6,
-        "bench" : 12
+        "in" : 5,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 9,
-        "on" : 4
+        "total" : 18,
+        "on" : 14
       },
       "goals" : {
-        "total" : 1,
+        "total" : 4,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 219,
-        "key" : 6,
+        "total" : 629,
+        "key" : 27,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 11,
-        "blocks" : 1,
-        "interceptions" : 3
+        "total" : 17,
+        "blocks" : 3,
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : 50,
-        "won" : 20
+        "total" : 260,
+        "won" : 156
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 3,
+        "attempts" : 105,
+        "success" : 61,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 10
+        "drawn" : 50,
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19546,
+      "name" : "C. Kipré",
+      "firstname" : "Cédric",
+      "lastname" : "Kipré",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-12-09",
+        "place" : "Paris",
+        "country" : "France"
+      },
+      "nationality" : "Côte d'Ivoire",
+      "height" : "193",
+      "weight" : "90",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19546.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3135,138 +1526,65 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 34,
+        "lineups" : 30,
+        "minutes" : 2409,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "8.000000",
+        "position" : "Defender",
+        "rating" : "6.990000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 4,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
+        "total" : 8,
         "on" : 2
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 45,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 1380,
+        "key" : 10,
+        "accuracy" : 40
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 46,
+        "blocks" : 28,
+        "interceptions" : 36
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 183,
+        "won" : 115
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 13,
+        "success" : 10,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : null
+        "drawn" : 13,
+        "committed" : 24
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : 5,
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -3283,8 +1601,8 @@
         "country" : "Wales"
       },
       "nationality" : "Wales",
-      "height" : "173 cm",
-      "weight" : "68 kg",
+      "height" : "173",
+      "weight" : "68",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/20089.png"
     },
@@ -3295,106 +1613,33 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 12,
-        "minutes" : 932,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.676470",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 12,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 199,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 2,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 98,
-        "won" : 41
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -3423,9 +1668,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -3441,301 +1686,63 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 25,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20457,
-      "name" : "C. Burgess",
-      "firstname" : "Cameron Robert",
-      "lastname" : "Burgess",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-10-21",
-        "place" : "Aberdeen",
-        "country" : "Scotland"
-      },
-      "nationality" : "Australia",
-      "height" : "194 cm",
-      "weight" : "93 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20457.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 10,
-        "minutes" : 900,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.960000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 492,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 11,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 58,
-        "won" : 42
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 42,
+        "lineups" : 41,
+        "minutes" : 3279,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.900000",
+        "position" : "Attacker",
+        "rating" : "6.980487",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 39,
+        "on" : 23
       },
       "goals" : {
-        "total" : 0,
+        "total" : 7,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 11,
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
-        "key" : 1,
-        "accuracy" : 81
+        "total" : 941,
+        "key" : 63,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 142,
-        "key" : 1,
-        "accuracy" : 59
-      },
-      "tackles" : {
-        "total" : 1,
+        "total" : 31,
         "blocks" : 2,
-        "interceptions" : 4
+        "interceptions" : 23
       },
       "duels" : {
-        "total" : 14,
-        "won" : 11
+        "total" : 379,
+        "won" : 165
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 84,
+        "success" : 31,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 46,
+        "committed" : 49
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 8,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3748,21 +1755,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 70747,
-      "name" : "J. Enciso",
-      "firstname" : "Julio César",
-      "lastname" : "Enciso Espínola",
-      "age" : 21,
+      "id" : 138931,
+      "name" : "J. Philogene",
+      "firstname" : "Jaden",
+      "lastname" : "Philogene-Bidace",
+      "age" : 23,
       "birth" : {
-        "date" : "2004-01-23",
-        "place" : "Caaguazú",
-        "country" : "Paraguay"
+        "date" : "2002-02-08",
+        "place" : "London",
+        "country" : "England"
       },
-      "nationality" : "Paraguay",
-      "height" : "173 cm",
-      "weight" : "64 kg",
+      "nationality" : "England",
+      "height" : "181",
+      "weight" : "66",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/70747.png"
+      "photo" : "https://media.api-sports.io/football/players/138931.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3771,54 +1778,54 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 117,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 298,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.827272",
+        "position" : "Attacker",
+        "rating" : "7.575000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 17,
-        "on" : 11
+        "total" : 9,
+        "on" : 5
       },
       "goals" : {
-        "total" : 0,
+        "total" : 3,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 130,
+        "total" : 90,
         "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 50,
-        "won" : 23
+        "total" : 36,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 18,
-        "success" : 10,
+        "attempts" : 10,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
@@ -3826,8 +1833,81 @@
         "committed" : 3
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 298,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.575000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 9,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 90,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3840,21 +1920,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 127579,
-      "name" : "J. Greaves",
-      "firstname" : "Jacob",
-      "lastname" : "Greaves",
-      "age" : 25,
+      "id" : 158702,
+      "name" : "C. Slicker",
+      "firstname" : "Cieran Peter",
+      "lastname" : "Slicker",
+      "age" : 23,
       "birth" : {
-        "date" : "2000-09-12",
-        "place" : "Cottingham",
+        "date" : "2002-09-15",
+        "place" : "Oldham",
         "country" : "England"
       },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "70 kg",
+      "nationality" : "Scotland",
+      "height" : "191",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/127579.png"
+      "photo" : "https://media.api-sports.io/football/players/158702.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3863,364 +1943,291 @@
         "logo" : "https://media.api-sports.io/football/teams/57.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 15,
-        "minutes" : 1350,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.893333",
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.066666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
+        "conceded" : 6,
+        "assists" : 0,
+        "saves" : 9
+      },
+      "passes" : {
+        "total" : 242,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 283290,
+      "name" : "K. McAteer",
+      "firstname" : "Kasey",
+      "lastname" : "McAteer",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-11-22",
+        "place" : "Northampton",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "177",
+      "weight" : "69",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/283290.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 164,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.166666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 674,
-        "key" : 3,
+        "total" : 33,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 23,
-        "blocks" : 14,
-        "interceptions" : 16
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 124,
-        "won" : 80
+        "total" : 23,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 57,
+        "name" : "Ipswich",
+        "logo" : "https://media.api-sports.io/football/teams/57.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "4.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 5
       },
       "dribbles" : {
         "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 161948,
-      "name" : "L. Delap",
-      "firstname" : "Liam Rory",
-      "lastname" : "Delap",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-08",
-        "place" : "Winchester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/161948.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 23,
-        "minutes" : 1863,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 21,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 34,
-        "on" : 22
-      },
-      "goals" : {
-        "total" : 10,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 218,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 294,
-        "won" : 110
-      },
-      "dribbles" : {
-        "attempts" : 54,
-        "success" : 28,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 36,
-        "committed" : 52
-      },
-      "cards" : {
-        "yellow" : 8,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 3,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
         "success" : null,
         "past" : null
       },
@@ -4230,7 +2237,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4238,317 +2245,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 12,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 2,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284428,
-      "name" : "O. Hutchinson",
-      "firstname" : "Omari Elijah",
-      "lastname" : "Giraud-Hutchinson",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-29",
-        "place" : "Redhill",
-        "country" : "England"
-      },
-      "nationality" : "Jamaica",
-      "height" : "174 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284428.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 23,
-        "minutes" : 1965,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.595652",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 11,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 20,
-        "on" : 14
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 564,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 1,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 274,
-        "won" : 105
-      },
-      "dribbles" : {
-        "attempts" : 90,
-        "success" : 42,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 30,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 12,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 8,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 57,
-        "name" : "Ipswich",
-        "logo" : "https://media.api-sports.io/football/teams/57.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

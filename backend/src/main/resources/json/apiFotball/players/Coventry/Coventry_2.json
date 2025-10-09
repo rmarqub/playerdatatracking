@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "1346"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 10,
   "paging" : {
     "current" : 2,
     "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 18202,
-      "name" : "L. Kitching",
-      "firstname" : "Liam",
-      "lastname" : "Kitching",
-      "age" : 26,
+      "id" : 427,
+      "name" : "H. Wright",
+      "firstname" : "Haji Amir",
+      "lastname" : "Wright",
+      "age" : 27,
       "birth" : {
-        "date" : "1999-10-01",
-        "place" : "Harrogate",
-        "country" : "England"
+        "date" : "1998-03-27",
+        "place" : "Los Angeles",
+        "country" : "USA"
       },
-      "nationality" : "England",
-      "height" : "191 cm",
-      "weight" : "80 kg",
+      "nationality" : "USA",
+      "height" : "193",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18202.png"
+      "photo" : "https://media.api-sports.io/football/players/427.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,58 +41,223 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 14,
-        "minutes" : 1206,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 458,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.813333",
+        "position" : "Attacker",
+        "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 2,
-        "bench" : 18
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
-        "on" : 1
+        "total" : 16,
+        "on" : 7
       },
       "goals" : {
-        "total" : 0,
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 67,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 57,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1346,
+        "name" : "Coventry",
+        "logo" : "https://media.api-sports.io/football/teams/1346.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 89,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "7.15",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 653,
-        "key" : 9,
+        "total" : 17,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 19,
-        "blocks" : 14,
-        "interceptions" : 10
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 112,
-        "won" : 66
+        "total" : 11,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 16046,
+      "name" : "V. Torp",
+      "firstname" : "Victor",
+      "lastname" : "Torp Overgaard",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-07-30",
+        "place" : null,
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "178",
+      "weight" : "60",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/16046.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1346,
+        "name" : "Coventry",
+        "logo" : "https://media.api-sports.io/football/teams/1346.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 516,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.633333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 237,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 2,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 44,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 9,
         "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 10,
-        "committed" : 11
+        "drawn" : 7,
+        "committed" : 6
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -114,20 +279,20 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.250000",
+        "lineups" : 1,
+        "minutes" : 89,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
+        "in" : 1,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
@@ -141,333 +306,22 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 133,
+        "total" : 51,
         "key" : null,
-        "accuracy" : 58
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 13,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 66,
-        "key" : null,
-        "accuracy" : 54
-      },
-      "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 7,
-        "won" : 5
+        "total" : 10,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : null,
         "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19260,
-      "name" : "J. Dasilva",
-      "firstname" : "Jay Rhys",
-      "lastname" : "Dasilva",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-04-22",
-        "place" : "Luton",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "170 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19260.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 13,
-        "minutes" : 1220,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.780952",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 5,
-        "bench" : 20
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 603,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 35,
-        "blocks" : 3,
-        "interceptions" : 16
-      },
-      "duels" : {
-        "total" : 128,
-        "won" : 66
-      },
-      "dribbles" : {
-        "attempts" : 22,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 87,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 18,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 169,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 47,
-        "key" : 1,
-        "accuracy" : 41
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -500,8 +354,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "181 cm",
-      "weight" : "70 kg",
+      "height" : "181",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19328.png"
     },
@@ -517,223 +371,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 208,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 529,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.933333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 167,
-        "key" : 2,
-        "accuracy" : 48
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 13,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
+        "rating" : "7.266666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 3,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 53,
-        "key" : null,
-        "accuracy" : 49
+        "total" : 422,
+        "key" : 10,
+        "accuracy" : 62
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
+        "total" : 10,
+        "blocks" : 1,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : 8,
-        "won" : 3
+        "total" : 39,
+        "won" : 21
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19574,
-      "name" : "J. Bidwell",
-      "firstname" : "Jake Brian",
-      "lastname" : "Bidwell",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-03-21",
-        "place" : "Southport",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19574.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 17,
-        "minutes" : 1480,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.842857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 7,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 577,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 12,
-        "blocks" : 12,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 107,
-        "won" : 57
-      },
-      "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 14
+        "drawn" : 4,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -755,88 +444,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 41,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 123,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
@@ -845,201 +461,36 @@
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20016,
-      "name" : "B. Collins",
-      "firstname" : "Bradley",
-      "lastname" : "Collins",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-02-18",
-        "place" : "Southampton",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "184 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20016.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 720,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.375000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 15,
-        "assists" : 0,
-        "saves" : 12
-      },
-      "passes" : {
-        "total" : 235,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 114,
+        "key" : 3,
+        "accuracy" : 53
       },
       "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
@@ -1052,80 +503,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
+        "saved" : null
       }
     } ]
   }, {
@@ -1141,8 +519,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "72 kg",
+      "height" : "180",
+      "weight" : "72",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/20024.png"
     },
@@ -1158,58 +536,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 8,
-        "minutes" : 670,
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 39,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.691666",
+        "rating" : "6.400000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 3,
-        "bench" : 16
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 251,
-        "key" : 4,
+        "total" : 26,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 19,
-        "blocks" : 2,
-        "interceptions" : 7
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 72,
-        "won" : 33
+        "total" : 4,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 10
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1231,93 +609,20 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 191,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 69,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
+        "minutes" : 159,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : "6.300000",
+        "rating" : "6.55",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
@@ -1331,30 +636,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 30,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 91,
+        "key" : null,
+        "accuracy" : 41
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : 9,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1379,8 +684,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "77 kg",
+      "height" : "186",
+      "weight" : "77",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/20372.png"
     },
@@ -1396,58 +701,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 33,
-        "lineups" : 31,
-        "minutes" : 2718,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.151515",
+        "rating" : "7.533333",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 10,
-        "bench" : 2
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 39,
-        "on" : 19
+        "total" : 8,
+        "on" : 5
       },
       "goals" : {
-        "total" : 3,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 10,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 1176,
-        "key" : 61,
+        "total" : 226,
+        "key" : 7,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 39,
-        "blocks" : 5,
-        "interceptions" : 19
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 324,
-        "won" : 135
+        "total" : 74,
+        "won" : 34
       },
       "dribbles" : {
-        "attempts" : 72,
-        "success" : 26,
+        "attempts" : 23,
+        "success" : 11,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 28,
-        "committed" : 32
+        "drawn" : 10,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1469,24 +774,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 106,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 63,
+        "number" : 5,
         "position" : "Midfielder",
-        "rating" : "6.950000",
+        "rating" : "6.8",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
-        "out" : 1,
+        "out" : 0,
         "bench" : 2
       },
       "shots" : {
-        "total" : 3,
+        "total" : 2,
         "on" : 2
       },
       "goals" : {
@@ -1496,21 +801,21 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 35,
-        "key" : 2,
+        "total" : 33,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 13,
-        "won" : 5
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 1,
         "success" : 1,
         "past" : null
       },
@@ -1530,317 +835,6 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 182,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20484,
-      "name" : "B. Wilson",
-      "firstname" : "Ben",
-      "lastname" : "Wilson",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-08-09",
-        "place" : "Durham",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20484.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 5,
-        "assists" : 0,
-        "saves" : 11
-      },
-      "passes" : {
-        "total" : 84,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.433333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 2,
-        "assists" : 0,
-        "saves" : 8
-      },
-      "passes" : {
-        "total" : 93,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
     } ]
   }, {
     "player" : {
@@ -1855,8 +849,8 @@
         "country" : "Japan"
       },
       "nationality" : "Japan",
-      "height" : "170 cm",
-      "weight" : "63 kg",
+      "height" : "170",
+      "weight" : "63",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/33462.png"
     },
@@ -1872,356 +866,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 29,
-        "lineups" : 17,
-        "minutes" : 1536,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 235,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.844827",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 11,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 512,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : null,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 180,
-        "won" : 94
-      },
-      "dribbles" : {
-        "attempts" : 32,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 34,
-        "committed" : 17
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 114,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 28,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 54,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 16,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37961,
-      "name" : "M. van Ewijk",
-      "firstname" : "Milan Fabrizio",
-      "lastname" : "van Ewijk",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-09-08",
-        "place" : "Amsterdam",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Netherlands",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37961.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 33,
-        "lineups" : 33,
-        "minutes" : 2943,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.024242",
+        "rating" : "6.533333",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 16,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1319,
-        "key" : 30,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 67,
-        "blocks" : 6,
-        "interceptions" : 40
-      },
-      "duels" : {
-        "total" : 262,
-        "won" : 141
-      },
-      "dribbles" : {
-        "attempts" : 47,
-        "success" : 17,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 32,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 144,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.600000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
+        "total" : 3,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
         "total" : 60,
-        "key" : null,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 8,
-        "won" : 4
+        "total" : 18,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : 1,
@@ -2234,7 +917,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2251,24 +934,24 @@
         "logo" : "https://media.api-sports.io/football/teams/1346.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 120,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "lineups" : 0,
+        "minutes" : 28,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
         "bench" : 1
       },
@@ -2279,123 +962,31 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
         "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47899,
-      "name" : "O. Dovin",
-      "firstname" : "Oliver Lukas Dozae",
-      "lastname" : "Nnonyelu Dovin",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-11",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "Sweden",
-      "height" : "188 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47899.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 22,
-        "minutes" : 1980,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.072727",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 21,
-        "assists" : 0,
-        "saves" : 61
-      },
-      "passes" : {
-        "total" : 715,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2407,172 +998,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 4,
-        "assists" : 0,
-        "saves" : 2
-      },
-      "passes" : {
-        "total" : 28,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 145538,
-      "name" : "J. Latibeaudiere",
-      "firstname" : "Joel Owen",
-      "lastname" : "Latibeaudiere",
-      "age" : 25,
+      "id" : 82090,
+      "name" : "B. Thomas-Asante",
+      "firstname" : "Solomon Brandon Michael Clarke",
+      "lastname" : "Thomas-Asante",
+      "age" : 27,
       "birth" : {
-        "date" : "2000-01-06",
-        "place" : "Doncaster",
+        "date" : "1998-12-29",
+        "place" : "Milton Keynes",
         "country" : "England"
       },
-      "nationality" : "Jamaica",
-      "height" : "180 cm",
-      "weight" : "81 kg",
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "83",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/145538.png"
+      "photo" : "https://media.api-sports.io/football/players/82090.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2586,58 +1031,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 27,
-        "lineups" : 25,
-        "minutes" : 2202,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 438,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.955555",
+        "position" : "Attacker",
+        "rating" : "7.050000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 8
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 7,
-        "on" : 1
+        "total" : 8,
+        "on" : 4
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 2,
         "saves" : null
       },
       "passes" : {
-        "total" : 1436,
-        "key" : 4,
-        "accuracy" : 46
+        "total" : 56,
+        "key" : 7,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 41,
-        "blocks" : 18,
-        "interceptions" : 24
+        "total" : 4,
+        "blocks" : 2,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 195,
-        "won" : 125
+        "total" : 48,
+        "won" : 18
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : 7,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 29,
-        "committed" : 22
+        "drawn" : 5,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2659,24 +1104,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 153,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
+        "lineups" : 1,
+        "minutes" : 111,
+        "number" : 23,
+        "position" : "Attacker",
+        "rating" : "6.55",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
@@ -2686,22 +1131,22 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
+        "total" : 19,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 6
+        "total" : 19,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 2,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -2720,47 +1165,66 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 138786,
+      "name" : "E. Simms",
+      "firstname" : "Ellis Reco",
+      "lastname" : "Simms",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-05",
+        "place" : "Oldham",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "191",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/138786.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 1346,
         "name" : "Coventry",
         "logo" : "https://media.api-sports.io/football/teams/1346.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 40,
+        "name" : "Championship",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 88,
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 42,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.300000",
+        "position" : "Attacker",
+        "rating" : "6.275000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
+        "total" : 4,
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 38,
-        "key" : 1,
+        "total" : 6,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -2769,8 +1233,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : 1,
@@ -2783,99 +1247,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 154799,
-      "name" : "L. Binks",
-      "firstname" : "Luis Thomas",
-      "lastname" : "Binks",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-02",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "86 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/154799.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 19,
-        "minutes" : 1674,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.968421",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1279,
-        "key" : 4,
-        "accuracy" : 56
-      },
-      "tackles" : {
-        "total" : 22,
-        "blocks" : 13,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 142,
-        "won" : 88
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2897,58 +1269,150 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 159,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 27,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 153626,
+      "name" : "R. Borges Rodrigues",
+      "firstname" : "Raphael",
+      "lastname" : "Borges Rodrigues",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-11",
+        "place" : "Maastricht",
+        "country" : "Australia"
+      },
+      "nationality" : "Australia",
+      "height" : "173",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/153626.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1346,
+        "name" : "Coventry",
+        "logo" : "https://media.api-sports.io/football/teams/1346.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 36,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 24,
-        "key" : null,
+        "total" : 10,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 2,
-        "interceptions" : 2
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
         "total" : 7,
-        "won" : 4
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2965,29 +1429,29 @@
         "logo" : "https://media.api-sports.io/football/teams/1346.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 186,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.300000",
+        "minutes" : 135,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 2,
         "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -2997,17 +1461,109 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 44,
-        "key" : null,
+        "total" : 29,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 1,
         "blocks" : 1,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 5,
+        "total" : 15,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 330316,
+      "name" : "N. Bassette",
+      "firstname" : "Norman Jaquy",
+      "lastname" : "Bassette Van Acker",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-11-09",
+        "place" : "Arlon",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "186",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/330316.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1346,
+        "name" : "Coventry",
+        "logo" : "https://media.api-sports.io/football/teams/1346.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 115,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 20,
         "won" : 5
       },
       "dribbles" : {
@@ -3017,103 +1573,11 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 6
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 264437,
-      "name" : "B. Thomas",
-      "firstname" : "Bobby Craig",
-      "lastname" : "Thomas",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-30",
-        "place" : "Chester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "193 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/264437.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 29,
-        "lineups" : 28,
-        "minutes" : 2525,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.982758",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 19,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1794,
-        "key" : 3,
-        "accuracy" : 51
-      },
-      "tackles" : {
-        "total" : 28,
-        "blocks" : 19,
-        "interceptions" : 24
-      },
-      "duels" : {
-        "total" : 219,
-        "won" : 133
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 16,
-        "committed" : 20
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3135,131 +1599,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 243,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 163,
-        "key" : null,
-        "accuracy" : 45
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 210,
+        "minutes" : 115,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
+        "position" : "Attacker",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 64,
+        "total" : 9,
         "key" : 1,
-        "accuracy" : 53
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 9
+        "total" : 20,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 1
+        "drawn" : 1,
+        "committed" : 6
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3267,1069 +1658,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 393305,
-      "name" : "Greg Sandiford",
-      "firstname" : "Greg",
-      "lastname" : "Sandiford",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-07",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/393305.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 431121,
-      "name" : "Callum Perry",
-      "firstname" : "Callum",
-      "lastname" : "Perry",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-10-05",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/431121.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 431884,
-      "name" : "Kai Andrews",
-      "firstname" : "Kai",
-      "lastname" : "Andrews",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-08-06",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/431884.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 458681,
-      "name" : "Luke Bell",
-      "firstname" : "Luke",
-      "lastname" : "Bell",
-      "age" : 22,
-      "birth" : {
-        "date" : "2004-04-01",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/458681.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 459385,
-      "name" : "Daniel Rachel",
-      "firstname" : "Daniel",
-      "lastname" : "Rachel",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-07-15",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459385.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 490731,
-      "name" : "Harvey Broad",
-      "firstname" : "Harvey",
-      "lastname" : "Broad",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-09-15",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/490731.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1346,
-        "name" : "Coventry",
-        "logo" : "https://media.api-sports.io/football/teams/1346.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

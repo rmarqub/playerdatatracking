@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "36"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 104,
-      "name" : "Carlos Vinícius",
-      "firstname" : "Carlos Vinícius",
-      "lastname" : "Alves Morais",
-      "age" : 30,
+      "id" : 131,
+      "name" : "Jorge Cuenca",
+      "firstname" : "Jorge",
+      "lastname" : "Cuenca Barreno",
+      "age" : 26,
       "birth" : {
-        "date" : "1995-03-25",
-        "place" : "Rio de Janeiro",
-        "country" : "Brazil"
+        "date" : "1999-11-17",
+        "place" : "Madrid",
+        "country" : "Spain"
       },
-      "nationality" : "Brazil",
-      "height" : "190 cm",
-      "weight" : "86 kg",
+      "nationality" : "Spain",
+      "height" : "190",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/104.png"
+      "photo" : "https://media.api-sports.io/football/players/131.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,49 +41,49 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 3,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 96,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "position" : "Defender",
+        "rating" : "6.550000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 5
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
+        "total" : 58,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : 4,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -92,7 +92,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -114,21 +114,278 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 88,
+        "key" : null,
+        "accuracy" : 80
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 657,
+      "name" : "K. Tete",
+      "firstname" : "Kenny Joelle",
+      "lastname" : "Tete",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-10-09",
+        "place" : "Amsterdam",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "180",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/657.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.280000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 200,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 899,
+      "name" : "Andreas Pereira",
+      "firstname" : "Andreas Hugo",
+      "lastname" : "Hoelgebaum Pereira",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-01-01",
+        "place" : "Duffel",
+        "country" : "Belgium"
+      },
+      "nationality" : "Brazil",
+      "height" : "178",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/899.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 18,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -136,8 +393,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -171,8 +428,100 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 1161,
+      "name" : "E. Smith Rowe",
+      "firstname" : "Emile",
+      "lastname" : "Smith Rowe",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-07-28",
+        "place" : "Croydon",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "182",
+      "weight" : "79",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1161.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 97,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.780000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 60,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -182,20 +531,277 @@
         "logo" : "https://media.api-sports.io/football/teams/36.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 87,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 49,
+        "key" : 1,
+        "accuracy" : 47
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 1438,
+      "name" : "B. Leno",
+      "firstname" : "Bernd",
+      "lastname" : "Leno",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-03-04",
+        "place" : "Bietigheim-Bissingen",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "189",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1438.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.340000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 5,
+        "assists" : 0,
+        "saves" : 15
+      },
+      "passes" : {
+        "total" : 183,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Goalkeeper",
         "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 1696,
+      "name" : "S. Chukwueze",
+      "firstname" : "Samuel Chimerenka",
+      "lastname" : "Chukwueze",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-05-22",
+        "place" : "Umahaia",
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : "172",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1696.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 30,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
@@ -214,18 +820,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 3,
+        "total" : 8,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 1
+        "total" : 5,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : 1,
@@ -248,24 +854,97 @@
         "missed" : 0,
         "saved" : null
       }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 33,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 25,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
     } ]
   }, {
     "player" : {
-      "id" : 105,
-      "name" : "F. Ballo-Touré",
-      "firstname" : "Fodé",
-      "lastname" : "Ballo-Touré",
-      "age" : 28,
+      "id" : 1934,
+      "name" : "S. Berge",
+      "firstname" : "Sander Gard",
+      "lastname" : "Bolin Berge",
+      "age" : 27,
       "birth" : {
-        "date" : "1997-01-03",
-        "place" : "Conflans-Sainte-Honorine",
-        "country" : "France"
+        "date" : "1998-02-14",
+        "place" : "Bærum",
+        "country" : "Norway"
       },
-      "nationality" : "Senegal",
-      "height" : "182 cm",
-      "weight" : "70 kg",
+      "nationality" : "Norway",
+      "height" : "195",
+      "weight" : "96",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/105.png"
+      "photo" : "https://media.api-sports.io/football/players/1934.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,19 +958,92 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 420,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.680000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 199,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 4,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
         "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
@@ -301,7 +1053,7 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -329,35 +1081,200 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 727,
-      "name" : "R. Nelson",
-      "firstname" : "Reiss Luke",
-      "lastname" : "Nelson",
-      "age" : 26,
+      "id" : 2729,
+      "name" : "J. Andersen",
+      "firstname" : "Joachim Christian",
+      "lastname" : "Andersen",
+      "age" : 29,
       "birth" : {
-        "date" : "1999-12-10",
-        "place" : null,
-        "country" : "England"
+        "date" : "1996-05-31",
+        "place" : "Frederiksberg",
+        "country" : "Denmark"
       },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "71 kg",
+      "nationality" : "Denmark",
+      "height" : "192",
+      "weight" : "86",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/727.png"
+      "photo" : "https://media.api-sports.io/football/players/2729.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "7.19",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 439,
+        "key" : 2,
+        "accuracy" : 53
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : 2,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 50,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 2823,
+      "name" : "S. Lukić",
+      "firstname" : "Saša",
+      "lastname" : "Lukić",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-08-13",
+        "place" : "Šabac",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "183",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2823.png"
     },
     "statistics" : [ {
       "team" : {
@@ -371,58 +1288,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
+        "appearences" : 5,
         "lineups" : 5,
-        "minutes" : 486,
+        "minutes" : 446,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.580000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 5,
-        "bench" : 6
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 171,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 12,
+        "blocks" : 3,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 4,
-        "won" : 2
+        "total" : 60,
+        "won" : 26
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 9,
+        "committed" : 18
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -444,20 +1361,515 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 9,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 2920,
+      "name" : "T. Castagne",
+      "firstname" : "Timothy",
+      "lastname" : "Castagne",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-12-05",
+        "place" : "Arlon",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "185",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2920.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 136,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.166666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 39,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 86,
+        "minutes" : 70,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 57,
+        "key" : null,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18814,
+      "name" : "I. Diop",
+      "firstname" : "Issa Laye Lucas Jean",
+      "lastname" : "Diop",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-01-09",
+        "place" : "Toulouse",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "194",
+      "weight" : "92",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18814.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 85,
+        "key" : null,
+        "accuracy" : 81
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19032,
+      "name" : "R. Sessegnon",
+      "firstname" : "Kouassi Ryan",
+      "lastname" : "Sessegnon",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-18",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "178",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19032.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 64,
+        "number" : 30,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 24,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 479,
+        "number" : 30,
+        "position" : "Midfielder",
+        "rating" : "6.87",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
         "bench" : 0
       },
       "shots" : {
@@ -471,100 +1883,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 47,
-        "key" : null,
-        "accuracy" : 43
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 179,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 17,
+        "blocks" : 4,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 57,
+        "won" : 30
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 11
       },
       "cards" : {
         "yellow" : 0,
@@ -573,104 +1912,31 @@
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 946,
-      "name" : "K. Mbabu",
-      "firstname" : "Melingo Kevin",
-      "lastname" : "Mbabu",
+      "id" : 19480,
+      "name" : "H. Reed",
+      "firstname" : "Harrison James",
+      "lastname" : "Reed",
       "age" : 30,
       "birth" : {
-        "date" : "1995-04-19",
-        "place" : "Chêne-Bougeries",
-        "country" : "Switzerland"
+        "date" : "1995-01-27",
+        "place" : "Worthing",
+        "country" : "England"
       },
-      "nationality" : "Switzerland",
-      "height" : "184 cm",
-      "weight" : "83 kg",
+      "nationality" : "England",
+      "height" : "181",
+      "weight" : "72",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/946.png"
+      "photo" : "https://media.api-sports.io/football/players/19480.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 36,
         "name" : "Fulham",
@@ -682,219 +1948,54 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1455,
-      "name" : "A. Iwobi",
-      "firstname" : "Alexander Chuka",
-      "lastname" : "Iwobi",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-05-03",
-        "place" : "Lagos",
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "180 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1455.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2118,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.352000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 13,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 37,
-        "on" : 22
-      },
-      "goals" : {
-        "total" : 7,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 979,
-        "key" : 47,
-        "accuracy" : null
+        "total" : 150,
+        "key" : 4,
+        "accuracy" : 68
       },
       "tackles" : {
-        "total" : 29,
-        "blocks" : 1,
-        "interceptions" : 8
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 188,
-        "won" : 82
+        "total" : 7,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 65,
-        "success" : 35,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 15,
-        "committed" : 12
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -915,20 +2016,607 @@
         "logo" : "https://media.api-sports.io/football/teams/36.png"
       },
       "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19549,
+      "name" : "A. Robinson",
+      "firstname" : "Antonee",
+      "lastname" : "Robinson",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-08-08",
+        "place" : "Milton Keynes",
+        "country" : "England"
+      },
+      "nationality" : "USA",
+      "height" : "183",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19549.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 52,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.800000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 37,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 37,
+        "lineups" : 37,
+        "minutes" : 3270,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.991891",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 6,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1627,
+        "key" : 34,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 93,
+        "blocks" : 8,
+        "interceptions" : 80
+      },
+      "duels" : {
+        "total" : 361,
+        "won" : 192
+      },
+      "dribbles" : {
+        "attempts" : 72,
+        "success" : 37,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 20,
+        "committed" : 34
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 21566,
+      "name" : "B. Lecomte",
+      "firstname" : "Benjamin Pascal",
+      "lastname" : "Lecomte",
+      "age" : 34,
+      "birth" : {
+        "date" : "1991-04-26",
+        "place" : "Paris",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "186",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/21566.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 53,
+        "key" : null,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 152967,
+      "name" : "C. Bassey",
+      "firstname" : "Calvin",
+      "lastname" : "Bassey Ughelumba",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-12-31",
+        "place" : "Aosta",
+        "country" : "Italy"
+      },
+      "nationality" : "Nigeria",
+      "height" : "185",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/152967.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.760000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 299,
+        "key" : null,
+        "accuracy" : 54
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 43,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 195106,
+      "name" : "Rodrigo Muniz",
+      "firstname" : "Rodrigo",
+      "lastname" : "Muniz Carvalho",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-05-04",
+        "place" : "São Domingos do Prata",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "178",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/195106.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 25,
-        "number" : null,
+        "minutes" : 29,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : "6.950000",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
@@ -947,26 +2635,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 28,
-        "key" : null,
+        "total" : 4,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 4,
+        "total" : 10,
         "won" : 3
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -988,62 +2676,62 @@
         "logo" : "https://media.api-sports.io/football/teams/36.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 81,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 319,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : "7.000000",
+        "rating" : "6.52",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 1,
+        "out" : 4,
         "bench" : 1
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 7,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 64,
-        "key" : 1,
+        "total" : 36,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
-        "won" : 2
+        "total" : 71,
+        "won" : 30
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
+        "attempts" : 8,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 9
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1057,740 +2745,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 19004,
-      "name" : "B. De Cordova-Reid",
-      "firstname" : "Bobby Armani",
-      "lastname" : "De Cordova-Reid",
-      "age" : 32,
+      "id" : 237819,
+      "name" : "Kevin",
+      "firstname" : "Kevin",
+      "lastname" : "Santos Lopes de Macedo",
+      "age" : 22,
       "birth" : {
-        "date" : "1993-02-02",
-        "place" : "Bristol",
-        "country" : "England"
+        "date" : "2003-01-04",
+        "place" : "São Paulo",
+        "country" : "Brazil"
       },
-      "nationality" : "Jamaica",
-      "height" : "170 cm",
-      "weight" : "68 kg",
+      "nationality" : "Brazil",
+      "height" : "176",
+      "weight" : "71",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19004.png"
+      "photo" : "https://media.api-sports.io/football/players/237819.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19145,
-      "name" : "T. Adarabioyo",
-      "firstname" : "Abdul-Nasir Oluwatosin",
-      "lastname" : "Oluwadoyinsolami Adarabioyo",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-09-24",
-        "place" : "Manchester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "196 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19145.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19657,
-      "name" : "M. Rodák",
-      "firstname" : "Marek",
-      "lastname" : "Rodák",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-12-13",
-        "place" : "Košice",
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "194 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19657.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 126690,
-      "name" : "K. Bowie",
-      "firstname" : "Kieran",
-      "lastname" : "Bowie",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-09-21",
-        "place" : "Kirkcaldy",
-        "country" : "Scotland"
-      },
-      "nationality" : "Scotland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/126690.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 129705,
-      "name" : "L. Ashby-Hammond",
-      "firstname" : "Luca",
-      "lastname" : "Ashby-Hammond",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-03-25",
-        "place" : "Kingston upon Thames",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "191 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129705.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 138822,
-      "name" : "A. Broja",
-      "firstname" : "Armando",
-      "lastname" : "Broja",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-10",
-        "place" : "Slough",
-        "country" : "England"
-      },
-      "nationality" : "Albania",
-      "height" : "191 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/138822.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 153420,
-      "name" : "G. Wickens",
-      "firstname" : "George Alexander",
-      "lastname" : "Wickens",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-11-08",
-        "place" : "Petersfield",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "195 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/153420.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 191971,
-      "name" : "J. Stansfield",
-      "firstname" : "Jay",
-      "lastname" : "Stansfield",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-11-24",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/191971.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 36,
         "name" : "Fulham",
@@ -1802,15 +2773,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 78,
-        "number" : null,
+        "minutes" : 87,
+        "number" : 22,
         "position" : "Attacker",
-        "rating" : "7.200000",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
@@ -1823,32 +2794,32 @@
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 16,
-        "key" : null,
+        "total" : 45,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 10,
-        "won" : 6
+        "total" : 13,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : 2
       },
       "cards" : {
@@ -1870,320 +2841,63 @@
         "logo" : "https://media.api-sports.io/football/teams/36.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : 37,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.250000",
+        "rating" : "6.800000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284470,
-      "name" : "M. Dibley-Dias",
-      "firstname" : "Matthew Max",
-      "lastname" : "Dibley-Dias",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-29",
-        "place" : "Lower Hutt",
-        "country" : "New Zealand"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284470.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
+        "in" : 2,
         "out" : null,
         "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284475,
-      "name" : "L. Harris",
-      "firstname" : "Luke Bernard",
-      "lastname" : "Harris",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-04",
-        "place" : null,
-        "country" : "Jersey"
-      },
-      "nationality" : "Wales",
-      "height" : "177 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284475.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
       },
       "shots" : {
         "total" : 1,
         "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 27,
+        "total" : 9,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 2
+        "total" : 12,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 6,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 1
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2196,535 +2910,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 284559,
-      "name" : "Alexander Paul Borto",
-      "firstname" : "Alexander Paul",
-      "lastname" : "Borto",
-      "age" : 22,
+      "id" : 389315,
+      "name" : "Joshua King",
+      "firstname" : "Joshua",
+      "lastname" : "King",
+      "age" : 18,
       "birth" : {
-        "date" : "2003-11-06",
-        "place" : null,
-        "country" : "USA"
-      },
-      "nationality" : "USA",
-      "height" : "188 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284559.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 297635,
-      "name" : "Devan Austin Tanton Pedraza",
-      "firstname" : "Devan",
-      "lastname" : "Austin Tanton Pedraza",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-03",
-        "place" : null,
-        "country" : "USA"
-      },
-      "nationality" : "Colombia",
-      "height" : "176 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/297635.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 327738,
-      "name" : "L. De Fougerolles",
-      "firstname" : "Luc",
-      "lastname" : "Rollet De Fougerolles",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-10-12",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "Canada",
-      "height" : "178 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/327738.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 335116,
-      "name" : "K. Šekularac",
-      "firstname" : "Kristian",
-      "lastname" : "Šekularac",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-12-07",
-        "place" : null,
-        "country" : "Switzerland"
-      },
-      "nationality" : "Switzerland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/335116.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 359386,
-      "name" : "M. Godo",
-      "firstname" : "Becket Fabrice-Martial",
-      "lastname" : "Godo",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-03-14",
+        "date" : "2007-01-03",
         "place" : null,
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "169 cm",
-      "weight" : "61 kg",
+      "height" : "187",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/359386.png"
+      "photo" : "https://media.api-sports.io/football/players/389315.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2738,21 +2938,186 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 342,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.240000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 88,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 14,
+        "minutes" : 20,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "position" : "Midfielder",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 10,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 436443,
+      "name" : "J. Kusi-Asare",
+      "firstname" : "Jonah",
+      "lastname" : "Kusi-Asare",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-07-04",
+        "place" : "Solna",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "196",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/436443.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 36,
+        "name" : "Fulham",
+        "logo" : "https://media.api-sports.io/football/teams/36.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 18,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : 0,
-        "bench" : 6
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2765,21 +3130,21 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
+        "total" : null,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
@@ -2806,24 +3171,24 @@
         "logo" : "https://media.api-sports.io/football/teams/36.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
+        "minutes" : null,
+        "number" : 18,
         "position" : "Attacker",
-        "rating" : "6.700000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
@@ -2838,100 +3203,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 3,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 36,
-        "name" : "Fulham",
-        "logo" : "https://media.api-sports.io/football/teams/36.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 99,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.050000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 38,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,

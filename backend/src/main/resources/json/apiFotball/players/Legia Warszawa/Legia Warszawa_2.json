@@ -1,17 +1,182 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "339"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 19,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
+    "player" : {
+      "id" : 962,
+      "name" : "J. Nsame",
+      "firstname" : "Jean-Pierre Junior",
+      "lastname" : "Nsame",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-05-01",
+        "place" : "Douala",
+        "country" : "Cameroon"
+      },
+      "nationality" : "Cameroon",
+      "height" : "188",
+      "weight" : "89",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/962.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 168,
+        "number" : 18,
+        "position" : "Attacker",
+        "rating" : "6.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 18,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 189,
+        "number" : 18,
+        "position" : "Attacker",
+        "rating" : "6.83",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 2,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 45,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
     "player" : {
       "id" : 3002,
       "name" : "A. Jędrzejczyk",
@@ -24,8 +189,8 @@
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "189 cm",
-      "weight" : "86 kg",
+      "height" : "189",
+      "weight" : "86",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/3002.png"
     },
@@ -36,30 +201,30 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 5,
-        "minutes" : 415,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 269,
+        "number" : 55,
         "position" : "Defender",
-        "rating" : "6.885714",
+        "rating" : "6.97",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 4,
-        "bench" : 13
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
         "total" : 1,
-        "on" : null
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -68,18 +233,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 295,
-        "key" : null,
-        "accuracy" : null
+        "total" : 212,
+        "key" : 1,
+        "accuracy" : 63
       },
       "tackles" : {
-        "total" : 8,
+        "total" : 4,
         "blocks" : 1,
-        "interceptions" : 8
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 54,
-        "won" : 31
+        "total" : 24,
+        "won" : 16
       },
       "dribbles" : {
         "attempts" : null,
@@ -88,7 +253,7 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 8
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 2,
@@ -109,24 +274,116 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 108,
-        "name" : "Cup",
+        "id" : 106,
+        "name" : "Ekstraklasa",
         "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 312,
+        "number" : 55,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.4",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 170,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 19
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 3011,
+      "name" : "D. Szymański",
+      "firstname" : "Damian Dawid",
+      "lastname" : "Szymański",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-06-16",
+        "place" : "Kraśnik",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "185",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/3011.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 61,
+        "number" : 44,
+        "position" : "Midfielder",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
         "out" : 0,
         "bench" : 2
       },
@@ -136,12 +393,177 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 532,
+        "number" : 44,
+        "position" : "Midfielder",
+        "rating" : "7.38",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 360,
+        "key" : 2,
+        "accuracy" : 49
+      },
+      "tackles" : {
+        "total" : 17,
+        "blocks" : 1,
+        "interceptions" : 12
+      },
+      "duels" : {
+        "total" : 56,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 8067,
+      "name" : "I. Shkurin",
+      "firstname" : "Ilya",
+      "lastname" : "Shkurin",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-08-17",
+        "place" : "Vitebsk",
+        "country" : "Belarus"
+      },
+      "nationality" : "Belarus",
+      "height" : "188",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/8067.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 31,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
         "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
         "key" : null,
         "accuracy" : null
       },
@@ -151,11 +573,11 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -171,8 +593,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -182,50 +604,50 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 3,
-        "minutes" : 298,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.666666",
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.57",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
+        "in" : 2,
         "out" : 1,
-        "bench" : 8
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 38,
-        "key" : null,
+        "total" : 16,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 10
+        "total" : 6,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -234,10 +656,10 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 2
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -262,8 +684,8 @@
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "180 cm",
-      "weight" : "72 kg",
+      "height" : "180",
+      "weight" : "72",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/8782.png"
     },
@@ -279,101 +701,28 @@
         "country" : "Poland",
         "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1648,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.406666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 9,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 20,
-        "on" : 11
-      },
-      "goals" : {
-        "total" : 8,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 623,
-        "key" : 22,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 22,
-        "blocks" : 4,
-        "interceptions" : 15
-      },
-      "duels" : {
-        "total" : 124,
-        "won" : 63
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 16,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -402,9 +751,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 727,
+        "name" : "Super Cup",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/727.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -425,57 +847,222 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 11,
-        "minutes" : 867,
+        "appearences" : 27,
+        "lineups" : 25,
+        "minutes" : 1615,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.042857",
+        "rating" : "6.823076",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 25,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 833,
+        "key" : 18,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 38,
+        "blocks" : 2,
+        "interceptions" : 17
+      },
+      "duels" : {
+        "total" : 199,
+        "won" : 100
+      },
+      "dribbles" : {
+        "attempts" : 34,
+        "success" : 23,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 28,
+        "committed" : 24
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 27,
+        "lineups" : 25,
+        "minutes" : 1615,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.823076",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 25,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 833,
+        "key" : 18,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 38,
+        "blocks" : 2,
+        "interceptions" : 17
+      },
+      "duels" : {
+        "total" : 199,
+        "won" : 100
+      },
+      "dribbles" : {
+        "attempts" : 34,
+        "success" : 23,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 28,
+        "committed" : 24
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 14293,
+      "name" : "A. Čolak",
+      "firstname" : "Antonio-Mirko",
+      "lastname" : "Čolak",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-09-17",
+        "place" : "Ludwigsburg",
+        "country" : "Germany"
+      },
+      "nationality" : "Croatia",
+      "height" : "188",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14293.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 63,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 6,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : 4,
-        "on" : 1
+        "total" : 3,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 234,
-        "key" : 7,
+        "total" : 18,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 19,
-        "blocks" : 1,
-        "interceptions" : 8
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 84,
-        "won" : 48
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 13,
-        "success" : 9,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 15,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -484,6 +1071,317 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 36,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 2,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 16126,
+      "name" : "M. Rajović",
+      "firstname" : "Mileta",
+      "lastname" : "Rajović",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-07-17",
+        "place" : "Ballerup",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "192",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/16126.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     } ]
@@ -500,8 +1398,8 @@
         "country" : "Portugal"
       },
       "nationality" : "Portugal",
-      "height" : "174 cm",
-      "weight" : "71 kg",
+      "height" : "174",
+      "weight" : "71",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/18745.png"
     },
@@ -512,33 +1410,33 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 108,
-        "name" : "Cup",
+        "id" : 106,
+        "name" : "Ekstraklasa",
         "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 160,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -567,9 +1465,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 727,
+        "name" : "Super Cup",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/727.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -590,58 +1561,58 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 676,
+        "appearences" : 21,
+        "lineups" : 11,
+        "minutes" : 30,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.100000",
+        "rating" : "6.550000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 1
+        "in" : 10,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 196,
-        "key" : 8,
+        "total" : 18,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 9,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 54,
-        "won" : 30
+        "total" : 9,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 22,
-        "success" : 10,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 4
+        "drawn" : 3,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -658,63 +1629,63 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 16,
-        "minutes" : 1394,
+        "appearences" : 21,
+        "lineups" : 11,
+        "minutes" : 30,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.126666",
+        "rating" : "6.550000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 9,
-        "bench" : 3
+        "in" : 10,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 10,
-        "on" : 7
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 640,
-        "key" : 22,
+        "total" : 18,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 30,
-        "blocks" : 2,
-        "interceptions" : 10
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 164,
-        "won" : 93
+        "total" : 9,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 47,
-        "success" : 29,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 25,
-        "committed" : 17
+        "drawn" : 3,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -738,12 +1709,85 @@
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "186 cm",
-      "weight" : "77 kg",
+      "height" : "186",
+      "weight" : "77",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19591.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 169,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 46,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 339,
         "name" : "Legia Warszawa",
@@ -755,57 +1799,57 @@
         "country" : "Poland",
         "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 19,
-        "minutes" : 1685,
-        "number" : null,
+        "appearences" : 9,
+        "lineups" : 8,
+        "minutes" : 738,
+        "number" : 7,
         "position" : "Midfielder",
-        "rating" : "7.120000",
+        "rating" : "6.98",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "out" : 1,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 6,
-        "on" : 4
+        "total" : 4,
+        "on" : 3
       },
       "goals" : {
         "total" : 2,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 497,
-        "key" : 13,
+        "total" : 326,
+        "key" : 10,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 15,
-        "blocks" : null,
-        "interceptions" : 10
+        "total" : 5,
+        "blocks" : 2,
+        "interceptions" : 9
       },
       "duels" : {
-        "total" : 120,
-        "won" : 77
+        "total" : 77,
+        "won" : 41
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 8,
+        "attempts" : 7,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 14,
-        "committed" : 14
+        "drawn" : 10,
+        "committed" : 13
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -816,57 +1860,76 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 23301,
+      "name" : "M. Alfarela",
+      "firstname" : "Migouel",
+      "lastname" : "Alfarela",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-11-15",
+        "place" : "Montivilliers",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "173",
+      "weight" : "66",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/23301.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 339,
         "name" : "Legia Warszawa",
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 41,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 16,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -885,103 +1948,11 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 10,
-        "minutes" : 893,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.012500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 230,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 2,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 61,
-        "won" : 29
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20581,
-      "name" : "Claude Gonçalves",
-      "firstname" : "Joaquim Claude",
-      "lastname" : "Gonçalves Araújo",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-04-09",
-        "place" : "Propriano",
-        "country" : "France"
-      },
-      "nationality" : "Portugal",
-      "height" : "173 cm",
-      "weight" : "62 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20581.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 339,
         "name" : "Legia Warszawa",
@@ -993,368 +1964,57 @@
         "country" : "Poland",
         "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 8,
-        "minutes" : 600,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.770000",
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 276,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 5,
-        "bench" : 6
+        "in" : 0,
+        "out" : 3,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 240,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : 1,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 64,
-        "won" : 34
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 5,
-        "minutes" : 502,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.775000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 5,
+        "on" : 4
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 79,
+        "total" : 73,
         "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
-        "blocks" : 2,
-        "interceptions" : 3
+        "blocks" : null,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 24,
-        "won" : 12
+        "total" : 18,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 40257,
-      "name" : "R. Augustyniak",
-      "firstname" : "Rafał Sylwester",
-      "lastname" : "Augustyniak",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-10-14",
-        "place" : "Zduńska Wola",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "185 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/40257.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 13,
-        "minutes" : 1172,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.092857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 5,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 573,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 30,
-        "blocks" : 4,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 100,
-        "won" : 61
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 136,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 8,
-        "minutes" : 726,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.366666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 234,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : 5,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 49,
-        "won" : 33
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1379,8 +2039,8 @@
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "165 cm",
-      "weight" : "54 kg",
+      "height" : "165",
+      "weight" : "54",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/40612.png"
     },
@@ -1391,26 +2051,26 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 7,
-        "lineups" : 1,
-        "minutes" : 182,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 23,
         "position" : "Midfielder",
-        "rating" : "6.733333",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
+        "in" : 0,
         "out" : 0,
-        "bench" : 14
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1423,18 +2083,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 36,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 18,
-        "won" : 8
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -1443,10 +2103,10 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 7
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1464,24 +2124,538 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 108,
-        "name" : "Cup",
+        "id" : 106,
+        "name" : "Ekstraklasa",
         "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
+        "lineups" : 1,
+        "minutes" : 58,
+        "number" : 23,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45470,
+      "name" : "M. Čupić",
+      "firstname" : "Miloš",
+      "lastname" : "Čupić",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-24",
+        "place" : "Niš",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "184",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45470.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 12,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 84,
+        "key" : null,
+        "accuracy" : 69
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 129,
+        "number" : 12,
+        "position" : "Defender",
+        "rating" : "6.85",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 93,
+        "key" : 1,
+        "accuracy" : 41
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 119762,
+      "name" : "K. Piątkowski",
+      "firstname" : "Kamil",
+      "lastname" : "Piątkowski",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-06-21",
+        "place" : "Jasło",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "191",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/119762.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 327,
+        "number" : 91,
+        "position" : "Defender",
+        "rating" : "7.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 224,
+        "key" : null,
+        "accuracy" : 46
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 37,
+        "won" : 28
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 135964,
+      "name" : "M. Burch",
+      "firstname" : "Marco",
+      "lastname" : "Burch",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-10-19",
+        "place" : "Sarnen",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Switzerland",
+      "height" : "183",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/135964.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 44,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 368,
+        "number" : 4,
+        "position" : "Midfielder",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 215,
+        "key" : 1,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 52,
+        "won" : 25
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 148342,
+      "name" : "G. Kobylak",
+      "firstname" : "Gabriel",
+      "lastname" : "Kobylak",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-02-20",
+        "place" : "Brzozów",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "190",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/148342.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 27,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : 0,
         "bench" : 2
       },
@@ -1491,8 +2665,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1526,8 +2700,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1537,29 +2711,29 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 4,
-        "minutes" : 375,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.360000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 27,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 7
+        "in" : 0,
+        "out" : 0,
+        "bench" : 9
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1569,27 +2743,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 91,
-        "key" : 3,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 35,
-        "won" : 15
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1606,21 +2780,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 41017,
-      "name" : "K. Chodyna",
+      "id" : 182280,
+      "name" : "K. UrbaÅski",
       "firstname" : "Kacper",
-      "lastname" : "Chodyna",
-      "age" : 26,
+      "lastname" : "Urbański",
+      "age" : 21,
       "birth" : {
-        "date" : "1999-05-24",
-        "place" : "Drawsko Pomorskie",
+        "date" : "2004-09-07",
+        "place" : "Gdańsk",
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "176 cm",
-      "weight" : "68 kg",
+      "height" : "183",
+      "weight" : "66",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/41017.png"
+      "photo" : "https://media.api-sports.io/football/players/182280.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1629,62 +2803,62 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 12,
-        "minutes" : 1100,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 64,
+        "number" : 82,
         "position" : "Midfielder",
-        "rating" : "6.891666",
+        "rating" : "5.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 8,
-        "bench" : 8
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 15,
-        "on" : 8
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 314,
-        "key" : 15,
+        "total" : 40,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 10,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 73,
-        "won" : 22
+        "total" : 8,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 14,
-        "success" : 3,
+        "attempts" : 2,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
-        "committed" : 15
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1702,26 +2876,26 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 108,
-        "name" : "Cup",
+        "id" : 106,
+        "name" : "Ekstraklasa",
         "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
         "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 152,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 0,
+        "minutes" : 130,
+        "number" : 82,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.63",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : 4,
+        "out" : 0,
+        "bench" : 5
       },
       "shots" : {
         "total" : null,
@@ -1729,508 +2903,13 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 7,
-        "minutes" : 627,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 4,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 127,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 68,
-        "won" : 31
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45773,
-      "name" : "R. Pankov",
-      "firstname" : "Radovan",
-      "lastname" : "Pankov",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-08-05",
-        "place" : "Novi Sad",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "183 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45773.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 13,
-        "minutes" : 1146,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 5,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 610,
-        "key" : 6,
-        "accuracy" : 47
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 4,
-        "interceptions" : 19
-      },
-      "duels" : {
-        "total" : 89,
-        "won" : 55
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 9,
-        "minutes" : 716,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.942857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 4,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 280,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : 1,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 61232,
-      "name" : "V. Bichakhchyan",
-      "firstname" : "Vahan",
-      "lastname" : "Bichakhchyan",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-07-09",
-        "place" : "Gyumri",
-        "country" : "Armenia"
-      },
-      "nationality" : "Armenia",
-      "height" : "172 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/61232.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 215,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 23,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 122703,
-      "name" : "J. Elitim",
-      "firstname" : "Juergen Farid",
-      "lastname" : "Elitim Sepúlveda",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-07-13",
-        "place" : "Cartagena",
-        "country" : "Colombia"
-      },
-      "nationality" : "Colombia",
-      "height" : "173 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/122703.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 154,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 15,
-        "key" : null,
+        "total" : 42,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
@@ -2239,331 +2918,20 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : 14,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182857,
-      "name" : "Sergio Barcia",
-      "firstname" : "Sergio",
-      "lastname" : "Barcia Laranxeira",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-12-31",
-        "place" : "Vigo",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182857.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 5,
-        "minutes" : 402,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.850000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 242,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 30,
-        "won" : 18
-      },
-      "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 4,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 6,
-        "minutes" : 515,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.550000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 128,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 15
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2588,85 +2956,12 @@
         "country" : "Japan"
       },
       "nationality" : "Japan",
-      "height" : "170 cm",
-      "weight" : "65 kg",
+      "height" : "170",
+      "weight" : "65",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/199150.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 339,
         "name" : "Legia Warszawa",
@@ -2678,253 +2973,15 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 8,
-        "minutes" : 737,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.062500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 168,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 53,
-        "won" : 25
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 13,
-        "minutes" : 1181,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.781250",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 19,
-        "on" : 10
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 382,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : 1,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 94,
-        "won" : 39
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 303016,
-      "name" : "M. Oyedele",
-      "firstname" : "Maximillian",
-      "lastname" : "Oyedele",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-11-07",
-        "place" : "Manchester",
-        "country" : "England"
-      },
-      "nationality" : "Poland",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/303016.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 4,
-        "minutes" : 354,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.680000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 4,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 117,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
+        "minutes" : 19,
+        "number" : 25,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
@@ -2938,12 +2995,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 7,
         "key" : null,
         "accuracy" : null
       },
@@ -2953,16 +3010,16 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
@@ -2973,8 +3030,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -2984,59 +3041,59 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 83,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 222,
+        "number" : 25,
         "position" : "Midfielder",
-        "rating" : "6.900000",
+        "rating" : "6.85",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 20,
-        "key" : null,
+        "total" : 86,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
-        "blocks" : 1,
+        "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 8,
-        "won" : 4
+        "total" : 17,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 5,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 2,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -3053,21 +3110,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 443194,
-      "name" : "M. Szczepaniak",
-      "firstname" : "Mateusz",
-      "lastname" : "Szczepaniak",
-      "age" : 18,
+      "id" : 202844,
+      "name" : "N. Weißhaupt",
+      "firstname" : "Noah Raphael",
+      "lastname" : "Weißhaupt",
+      "age" : 24,
       "birth" : {
-        "date" : "2007-01-05",
-        "place" : null,
-        "country" : "Poland"
+        "date" : "2001-09-20",
+        "place" : "Rostock",
+        "country" : "Germany"
       },
-      "nationality" : "Poland",
-      "height" : "179 cm",
-      "weight" : "68 kg",
+      "nationality" : "Germany",
+      "height" : "181",
+      "weight" : "72",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/443194.png"
+      "photo" : "https://media.api-sports.io/football/players/202844.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3076,93 +3133,20 @@
         "logo" : "https://media.api-sports.io/football/teams/339.png"
       },
       "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 0,
-        "minutes" : 51,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 0,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 9,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 108,
-        "name" : "Cup",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/108.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
+        "minutes" : 26,
+        "number" : 99,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
@@ -3176,85 +3160,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 57,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 9,
+        "total" : 15,
         "key" : 1,
         "accuracy" : null
       },
@@ -3264,17 +3175,255 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 6,
+        "total" : 3,
         "won" : 2
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 271921,
+      "name" : "E. Krasniqi",
+      "firstname" : "Ermal",
+      "lastname" : "Krasniqi",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-07",
+        "place" : null,
+        "country" : "Kosovo"
+      },
+      "nationality" : "Kosovo",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/271921.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 77,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 339,
+        "name" : "Legia Warszawa",
+        "logo" : "https://media.api-sports.io/football/teams/339.png"
+      },
+      "league" : {
+        "id" : 106,
+        "name" : "Ekstraklasa",
+        "country" : "Poland",
+        "logo" : "https://media.api-sports.io/football/leagues/106.png",
+        "flag" : "https://media.api-sports.io/flags/pl.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 277,
+        "number" : 77,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 4,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 102,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 47,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 14,
+        "success" : 8,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 0,
@@ -3286,758 +3435,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 456652,
-      "name" : "J. Żewłakow",
-      "firstname" : "Jakub",
-      "lastname" : "Żewłakow",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-12-02",
-        "place" : "Athens",
-        "country" : "Greece"
-      },
-      "nationality" : "Poland",
-      "height" : "182 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/456652.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 16,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 462217,
-      "name" : "J. Leszczyński",
-      "firstname" : "Jan",
-      "lastname" : "Leszczyński",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-04-12",
-        "place" : "Warsaw",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "184 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/462217.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 483308,
-      "name" : "P. Mozie",
-      "firstname" : "Pascal",
-      "lastname" : "Mozie",
-      "age" : 17,
-      "birth" : {
-        "date" : "2008-05-06",
-        "place" : null,
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "188 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/483308.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 493935,
-      "name" : "O. Olewinski",
-      "firstname" : "Oliwier",
-      "lastname" : "Olewiński",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-02-15",
-        "place" : null,
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/493935.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 496806,
-      "name" : "M. Saletra",
-      "firstname" : "Maciej",
-      "lastname" : "Saletra",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-12-19",
-        "place" : "Pułtusk",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/496806.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 339,
-        "name" : "Legia Warszawa",
-        "logo" : "https://media.api-sports.io/football/teams/339.png"
-      },
-      "league" : {
-        "id" : 106,
-        "name" : "Ekstraklasa",
-        "country" : "Poland",
-        "logo" : "https://media.api-sports.io/football/leagues/106.png",
-        "flag" : "https://media.api-sports.io/flags/pl.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

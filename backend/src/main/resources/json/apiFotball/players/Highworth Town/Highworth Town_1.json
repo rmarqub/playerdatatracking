@@ -1,11 +1,13 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "7233"
   },
-  "errors" : [ ],
+  "errors" : {
+    "rateLimit" : "Too many requests. Your rate limit is 450 requests per minute."
+  },
   "results" : 0,
   "paging" : {
     "current" : 1,

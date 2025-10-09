@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "56"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 10,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 1743,
-      "name" : "R. McCrorie",
-      "firstname" : "Ross",
-      "lastname" : "McCrorie",
+      "id" : 15705,
+      "name" : "E. Riis",
+      "firstname" : "Emil",
+      "lastname" : "Riis Jakobsen",
       "age" : 27,
       "birth" : {
-        "date" : "1998-03-18",
-        "place" : "Dailly",
-        "country" : "Scotland"
+        "date" : "1998-06-24",
+        "place" : "Hobro",
+        "country" : "Denmark"
       },
-      "nationality" : "Scotland",
-      "height" : "191 cm",
-      "weight" : "70 kg",
+      "nationality" : "Denmark",
+      "height" : "190",
+      "weight" : "83",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1743.png"
+      "photo" : "https://media.api-sports.io/football/players/15705.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,58 +41,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 11,
-        "minutes" : 927,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 476,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.771428",
+        "position" : "Attacker",
+        "rating" : "6.833333",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 6
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
+        "total" : 10,
+        "on" : 4
+      },
+      "goals" : {
         "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 291,
-        "key" : 12,
+        "total" : 103,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 39,
-        "blocks" : 2,
-        "interceptions" : 15
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 226,
-        "won" : 113
+        "total" : 51,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : 31,
-        "success" : 10,
+        "attempts" : 6,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 10,
-        "committed" : 23
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 6,
-        "yellowred" : 1,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -114,570 +114,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 17805,
-      "name" : "C. Pring",
-      "firstname" : "Cameron Lewis",
-      "lastname" : "Moir-Pring",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-22",
-        "place" : "Cheltenham",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/17805.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 18,
-        "minutes" : 1497,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 5,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 682,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 35,
-        "blocks" : 7,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 218,
-        "won" : 120
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 30,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19211,
-      "name" : "M. Bird",
-      "firstname" : "Max Andrew",
-      "lastname" : "Bird",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-09-18",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19211.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 33,
-        "lineups" : 30,
-        "minutes" : 2539,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.239393",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 14,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 24,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 6,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1114,
-        "key" : 53,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 70,
-        "blocks" : 11,
-        "interceptions" : 29
-      },
-      "duels" : {
-        "total" : 214,
-        "won" : 114
-      },
-      "dribbles" : {
-        "attempts" : 22,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 25,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "minutes" : 45,
+        "number" : 18,
+        "position" : "Attacker",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 1
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -690,18 +141,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : null,
+        "total" : 8,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -709,7 +160,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -727,96 +178,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 19664,
-      "name" : "Z. Vyner",
-      "firstname" : "Zachary George",
-      "lastname" : "Onyego Vyner",
+      "id" : 17478,
+      "name" : "L. Thomas",
+      "firstname" : "Lewis Rhys",
+      "lastname" : "Thomas",
       "age" : 28,
       "birth" : {
-        "date" : "1997-05-14",
-        "place" : "Bath",
-        "country" : "England"
+        "date" : "1997-09-20",
+        "place" : "Swansea",
+        "country" : "Wales"
       },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "68 kg",
+      "nationality" : "Wales",
+      "height" : "190",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19664.png"
+      "photo" : "https://media.api-sports.io/football/players/17478.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 33,
-        "lineups" : 33,
-        "minutes" : 2970,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.860606",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1820,
-        "key" : 5,
-        "accuracy" : 42
-      },
-      "tackles" : {
-        "total" : 51,
-        "blocks" : 24,
-        "interceptions" : 36
-      },
-      "duels" : {
-        "total" : 212,
-        "won" : 115
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 30
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 56,
         "name" : "Bristol City",
@@ -828,94 +206,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.900000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 32,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 54,
-        "key" : null,
-        "accuracy" : 40
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -928,26 +233,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 84,
+        "total" : null,
         "key" : null,
-        "accuracy" : 73
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 6,
-        "won" : 3
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -961,6 +266,171 @@
         "scored" : 0,
         "missed" : 0,
         "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19573,
+      "name" : "J. Lumley",
+      "firstname" : "Joseph Patrick",
+      "lastname" : "Lumley",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-02-15",
+        "place" : "Harlow",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "191",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19573.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 56,
+        "name" : "Bristol City",
+        "logo" : "https://media.api-sports.io/football/teams/56.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 56,
+        "name" : "Bristol City",
+        "logo" : "https://media.api-sports.io/football/teams/56.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 3
+      },
+      "passes" : {
+        "total" : 27,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     } ]
   }, {
@@ -976,8 +446,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "80 kg",
+      "height" : "185",
+      "weight" : "80",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19712.png"
     },
@@ -993,190 +463,209 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 12,
-        "minutes" : 942,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.953333",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 56,
+        "name" : "Bristol City",
+        "logo" : "https://media.api-sports.io/football/teams/56.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19773,
+      "name" : "H. Cornick",
+      "firstname" : "Harry Charles Frederick",
+      "lastname" : "Cornick",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-04-09",
+        "place" : "Poole",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "180",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19773.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 56,
+        "name" : "Bristol City",
+        "logo" : "https://media.api-sports.io/football/teams/56.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 10,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
-        "out" : 3,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 580,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 23,
-        "blocks" : 7,
-        "interceptions" : 11
-      },
-      "duels" : {
-        "total" : 97,
-        "won" : 54
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 17
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
         "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 32,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
+        "total" : 1,
         "won" : 1
       },
       "dribbles" : {
@@ -1185,105 +674,13 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20103,
-      "name" : "R. Dickie",
-      "firstname" : "Robert Joseph Andrew",
-      "lastname" : "Dickie",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-03-03",
-        "place" : "Wokingham",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "195 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20103.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 22,
-        "minutes" : 1952,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.039130",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1147,
-        "key" : 2,
-        "accuracy" : 40
-      },
-      "tackles" : {
-        "total" : 25,
-        "blocks" : 18,
-        "interceptions" : 21
-      },
-      "duels" : {
-        "total" : 215,
-        "won" : 152
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -1304,14 +701,14 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 27,
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
@@ -1327,7 +724,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1352,793 +749,6 @@
       "fouls" : {
         "drawn" : null,
         "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20120,
-      "name" : "M. Sykes",
-      "firstname" : "Mark",
-      "lastname" : "Sykes",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-08-04",
-        "place" : "Belfast",
-        "country" : "Northern Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "182 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20120.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 14,
-        "minutes" : 1157,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.988888",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 12,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 387,
-        "key" : 13,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 7,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 139,
-        "won" : 71
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 13,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 17,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 68,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 21,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 68128,
-      "name" : "J. Knight",
-      "firstname" : "Jason Paul",
-      "lastname" : "Knight",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-02-13",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "173 cm",
-      "weight" : "63 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/68128.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 33,
-        "lineups" : 33,
-        "minutes" : 2970,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.203030",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 20,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 5,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1777,
-        "key" : 46,
-        "accuracy" : 43
-      },
-      "tackles" : {
-        "total" : 56,
-        "blocks" : 11,
-        "interceptions" : 36
-      },
-      "duels" : {
-        "total" : 324,
-        "won" : 197
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 18,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 66,
-        "committed" : 31
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 28,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 45,
-        "key" : null,
-        "accuracy" : 40
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 69403,
-      "name" : "S. Twine",
-      "firstname" : "Scott Edward",
-      "lastname" : "Twine",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-07-14",
-        "place" : "Swindon",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "174 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69403.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 20,
-        "minutes" : 1585,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.245833",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 16,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 31,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 495,
-        "key" : 45,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 29,
-        "blocks" : null,
-        "interceptions" : 14
-      },
-      "duels" : {
-        "total" : 154,
-        "won" : 78
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 34,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "8.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 46,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 14,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2166,7 +776,7 @@
         "country" : "Republic of Ireland"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "184 cm",
+      "height" : "184",
       "weight" : null,
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/69539.png"
@@ -2183,118 +793,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 26,
-        "lineups" : 26,
-        "minutes" : 2323,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.203846",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 23,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1123,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 43,
-        "blocks" : 21,
-        "interceptions" : 35
-      },
-      "duels" : {
-        "total" : 232,
-        "won" : 157
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 22
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 54,
+        "total" : null,
         "key" : null,
-        "accuracy" : 51
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -2306,272 +843,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 104942,
-      "name" : "M. McGuane",
-      "firstname" : "Marcus Samuel Michael",
-      "lastname" : "McGuane",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-02",
-        "place" : "Greenwich",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/104942.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 14,
-        "lineups" : 8,
-        "minutes" : 746,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 2,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 333,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 3,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 85,
-        "won" : 49
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 69,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 28,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 130861,
-      "name" : "G. Tanner",
-      "firstname" : "George",
-      "lastname" : "Tanner",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-11-16",
-        "place" : "Blackpool",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "181 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/130861.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 15,
-        "minutes" : 1348,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.780000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 3,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 631,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 42,
-        "blocks" : 6,
-        "interceptions" : 17
-      },
-      "duels" : {
-        "total" : 148,
-        "won" : 76
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 10,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     }, {
@@ -2586,45 +866,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.700000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 34,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 4
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -2632,92 +912,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 62,
-        "key" : null,
-        "accuracy" : 56
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     } ]
@@ -2734,8 +941,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "68 kg",
+      "height" : "175",
+      "weight" : "68",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/137300.png"
     },
@@ -2751,58 +958,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 10,
-        "minutes" : 1050,
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.652941",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 4,
-        "bench" : 18
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 366,
-        "key" : 11,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 12,
-        "blocks" : 3,
-        "interceptions" : 8
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 127,
-        "won" : 60
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 16,
-        "success" : 8,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 10,
-        "committed" : 13
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2824,58 +1031,150 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 90,
+        "minutes" : 16,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.200000",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 40,
+        "total" : 11,
         "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 199863,
+      "name" : "S. Armstrong",
+      "firstname" : "Sinclair Ntomuchukwu",
+      "lastname" : "Armstrong",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-06-22",
+        "place" : "Dublin",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "182",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/199863.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 56,
+        "name" : "Bristol City",
+        "logo" : "https://media.api-sports.io/football/teams/56.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 73,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.640000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 21,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 23,
+        "won" : 12
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : 6,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2892,29 +1191,29 @@
         "logo" : "https://media.api-sports.io/football/teams/56.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
+        "minutes" : 119,
+        "number" : 30,
+        "position" : "Attacker",
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
+        "total" : 3,
         "on" : null
       },
       "goals" : {
@@ -2924,26 +1223,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 44,
-        "key" : 1,
+        "total" : 22,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 11,
-        "won" : 7
+        "total" : 12,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : 1
       },
       "cards" : {
@@ -2961,21 +1260,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 286349,
-      "name" : "A. Mehmeti",
-      "firstname" : "Anis",
-      "lastname" : "Mehmeti",
-      "age" : 24,
+      "id" : 284361,
+      "name" : "R. Vítek",
+      "firstname" : "Radek",
+      "lastname" : "Vítek",
+      "age" : 22,
       "birth" : {
-        "date" : "2001-01-09",
-        "place" : "London",
-        "country" : "England"
+        "date" : "2003-10-24",
+        "place" : "Vsetín",
+        "country" : "Czechia"
       },
-      "nationality" : "Albania",
-      "height" : "180 cm",
-      "weight" : "63 kg",
+      "nationality" : "Czechia",
+      "height" : "198",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/286349.png"
+      "photo" : "https://media.api-sports.io/football/players/284361.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2989,107 +1288,34 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 31,
-        "lineups" : 24,
-        "minutes" : 2070,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.996774",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 18,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 46,
-        "on" : 29
-      },
-      "goals" : {
-        "total" : 11,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 496,
-        "key" : 34,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 31,
-        "blocks" : 2,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 279,
-        "won" : 102
-      },
-      "dribbles" : {
-        "attempts" : 89,
-        "success" : 32,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 28,
-        "committed" : 38
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 64,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
+        "position" : "Goalkeeper",
+        "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : 7,
         "assists" : 0,
-        "saves" : null
+        "saves" : 19
       },
       "passes" : {
-        "total" : 11,
+        "total" : 166,
         "key" : null,
         "accuracy" : null
       },
@@ -3100,80 +1326,7 @@
       },
       "duels" : {
         "total" : 9,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 11,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
+        "won" : 9
       },
       "dribbles" : {
         "attempts" : null,
@@ -3181,104 +1334,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 6,
         "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 291363,
-      "name" : "George Earthy",
-      "firstname" : "George",
-      "lastname" : "Earthy",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-09-05",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/291363.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 5,
-        "minutes" : 742,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 19,
-        "out" : 5,
-        "bench" : 24
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 291,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : 3,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 63,
-        "won" : 19
-      },
-      "dribbles" : {
-        "attempts" : 12,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 8
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3286,7 +1347,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     }, {
       "team" : {
@@ -3300,45 +1361,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 26,
+        "lineups" : 26,
+        "minutes" : 2340,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.096153",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : null,
+        "conceded" : 35,
+        "assists" : 0,
+        "saves" : 79
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 641,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 23,
+        "won" : 20
       },
       "dribbles" : {
         "attempts" : null,
@@ -3346,85 +1407,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 4,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 21,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 19,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3432,101 +1420,28 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 294904,
-      "name" : "S. Bell",
-      "firstname" : "Samuel John",
-      "lastname" : "Bell",
-      "age" : 23,
+      "id" : 339518,
+      "name" : "J. Stokes",
+      "firstname" : "Josh",
+      "lastname" : "Stokes",
+      "age" : 21,
       "birth" : {
-        "date" : "2002-05-23",
+        "date" : "2004-04-29",
         "place" : null,
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "178 cm",
+      "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/294904.png"
+      "photo" : "https://media.api-sports.io/football/players/339518.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 0,
-        "minutes" : 325,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.650000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 13,
-        "out" : 0,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 79,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 51,
-        "won" : 24
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 56,
         "name" : "Bristol City",
@@ -3538,665 +1453,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 11,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 344169,
-      "name" : "A. Benarous",
-      "firstname" : "Ayman Omar",
-      "lastname" : "Benarous",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-07-27",
-        "place" : "Bristol",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "173 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/344169.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 348800,
-      "name" : "Y. Hirakawa",
-      "firstname" : "Yu",
-      "lastname" : "Hirakawa",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-03",
-        "place" : "Kashima",
-        "country" : "Japan"
-      },
-      "nationality" : "Japan",
-      "height" : "171 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/348800.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 28,
-        "lineups" : 14,
-        "minutes" : 1313,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.803703",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 14,
-        "out" : 11,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 366,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : null,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 142,
-        "won" : 77
-      },
-      "dribbles" : {
-        "attempts" : 39,
-        "success" : 19,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 33,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 26,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 5,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 399607,
-      "name" : "E. Morrison",
-      "firstname" : "Elijah",
-      "lastname" : "Morrison",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-03-18",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/399607.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
+        "lineups" : 1,
+        "minutes" : 43,
+        "number" : 26,
         "position" : "Midfielder",
-        "rating" : "6.250000",
+        "rating" : "6.25",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 15
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
@@ -4206,90 +1480,17 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
+        "total" : 13,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
         "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
         "won" : null
       },
       "dribbles" : {
@@ -4299,99 +1500,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 400937,
-      "name" : "J. Campbell-Slowey",
-      "firstname" : "Josh",
-      "lastname" : "Campbell-Slowey",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-11-11",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "184 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/400937.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 56,
-        "name" : "Bristol City",
-        "logo" : "https://media.api-sports.io/football/teams/56.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,

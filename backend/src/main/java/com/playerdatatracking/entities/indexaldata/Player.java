@@ -54,6 +54,9 @@ public class Player {
     
     @Column(name="fbref_id")
     private Long fbrefId;
+    
+    @Column(name="isStudied")
+    private Boolean isStudied;
 
 	public Long getId() {
 		return id;
@@ -166,6 +169,19 @@ public class Player {
 	public void setFbrefId(Long fbrefId) {
 		this.fbrefId = fbrefId;
 	}
+
+	public Boolean isStudied() {
+		return isStudied;
+	}
+
+	public void setStudied(Boolean isStudied) {
+		if(isStudied!=null)
+			this.isStudied = isStudied;
+		else
+			this.isStudied = false;
+	}
+	
+	
     
     
 }

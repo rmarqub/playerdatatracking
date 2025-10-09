@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "720"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 2459,
-      "name" : "D. Machís",
-      "firstname" : "Darwin Daniel",
-      "lastname" : "Machís Marcano",
-      "age" : 32,
+      "id" : 14341,
+      "name" : "S. Jurić",
+      "firstname" : "Stanko",
+      "lastname" : "Jurić",
+      "age" : 29,
       "birth" : {
-        "date" : "1993-02-07",
-        "place" : "Tucupita",
-        "country" : "Venezuela"
+        "date" : "1996-08-16",
+        "place" : "Split",
+        "country" : "Croatia"
       },
-      "nationality" : "Venezuela",
-      "height" : "170 cm",
-      "weight" : "68 kg",
+      "nationality" : "Croatia",
+      "height" : "189 cm",
+      "weight" : "83 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2459.png"
+      "photo" : "https://media.api-sports.io/football/players/14341.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,30 +36,30 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 5,
-        "minutes" : 363,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.466666",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "7.03",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 12
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 5,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -68,30 +68,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 108,
-        "key" : 3,
+        "total" : 299,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 2
+        "total" : 22,
+        "blocks" : 1,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : 25,
-        "won" : 11
+        "total" : 91,
+        "won" : 53
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
+        "attempts" : 6,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
+        "drawn" : 7,
+        "committed" : 17
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 3,
         "yellowred" : 0,
         "red" : 0
       },
@@ -102,32 +102,51 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 46824,
+      "name" : "Iván Alejo",
+      "firstname" : "Iván",
+      "lastname" : "Alejo Peralta",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-02-10",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46824.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 720,
         "name" : "Valladolid",
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 56,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 629,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "7.38",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 7,
         "bench" : 0
       },
       "shots" : {
@@ -136,484 +155,43 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 8518,
-      "name" : "M. Sylla",
-      "firstname" : "Mamadou",
-      "lastname" : "Sylla Diallo",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-03-20",
-        "place" : "Kédougou",
-        "country" : "Senegal"
-      },
-      "nationality" : "Senegal",
-      "height" : "184 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/8518.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 11,
-        "minutes" : 942,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.717647",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 8,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 2,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 143,
-        "key" : 8,
+        "total" : 249,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
+        "total" : 30,
+        "blocks" : 3,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : 110,
-        "won" : 48
+        "total" : 107,
+        "won" : 65
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
+        "attempts" : 14,
+        "success" : 10,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 15,
-        "committed" : 12
+        "drawn" : 21,
+        "committed" : 19
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 4,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 2,
+        "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 9308,
-      "name" : "Lucas Oliveira",
-      "firstname" : "Lucas",
-      "lastname" : "da Cruz Oliveira",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-02-02",
-        "place" : "Rio de Janeiro",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "187 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/9308.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47474,
-      "name" : "Jordi Masip",
-      "firstname" : "Jordi",
-      "lastname" : "Masip López",
-      "age" : 35,
-      "birth" : {
-        "date" : "1989-01-03",
-        "place" : "Sabadell",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47474.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 50502,
-      "name" : "Álvaro Negredo",
-      "firstname" : "Álvaro",
-      "lastname" : "Negredo Sánchez",
-      "age" : 39,
-      "birth" : {
-        "date" : "1985-08-20",
-        "place" : "Madrid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/50502.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -642,268 +220,30 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 5,
-        "minutes" : 318,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.533333",
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 464,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "7.11",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 17
+        "in" : 0,
+        "out" : 6,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 5,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 77,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 244,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 122233,
-      "name" : "Marcos André",
-      "firstname" : "Marcos André",
-      "lastname" : "de Sousa Mendonça",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-10-20",
-        "place" : "Coroatá",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "184 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/122233.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 11,
-        "minutes" : 948,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.668750",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 9,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 169,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 171,
-        "won" : 92
-      },
-      "dribbles" : {
-        "attempts" : 26,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 28,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 114,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 8,
+        "on" : 6
       },
       "goals" : {
         "total" : 2,
@@ -912,27 +252,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 13,
-        "key" : null,
+        "total" : 129,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 12,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 5,
-        "won" : 2
+        "total" : 74,
+        "won" : 31
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 18,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 7,
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 0,
@@ -972,163 +312,90 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 5,
-        "minutes" : 621,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 592,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : "6.470588",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 2,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 121,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 134,
-        "won" : 69
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 17,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 182,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "rating" : "6.8",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 1,
+        "out" : 2,
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 24,
+        "on" : 11
       },
       "goals" : {
-        "total" : 3,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 10,
-        "key" : null,
+        "total" : 145,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 5,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 4,
-        "won" : 1
+        "total" : 117,
+        "won" : 65
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 19,
+        "committed" : 16
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
+        "scored" : 1,
         "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 185094,
-      "name" : "Alberto Quintana",
-      "firstname" : "Alberto Miguel",
-      "lastname" : "Quintana Moreno",
-      "age" : 24,
+      "id" : 181463,
+      "name" : "Víctor Meseguer",
+      "firstname" : "Víctor Andrés",
+      "lastname" : "Meseguer Cavas",
+      "age" : 26,
       "birth" : {
-        "date" : "2001-10-05",
-        "place" : "Villanueva del Trabuco",
+        "date" : "1999-06-09",
+        "place" : "Murcia",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "74 kg",
+      "height" : "184 cm",
+      "weight" : "78 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/185094.png"
+      "photo" : "https://media.api-sports.io/football/players/181463.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1137,70 +404,70 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 613,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.88",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 6,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 8,
+        "on" : 4
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 254,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 16,
+        "blocks" : 2,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 74,
+        "won" : 42
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 12
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 3,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1229,350 +496,20 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
+        "minutes" : 29,
+        "number" : 16,
         "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 15,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 264470,
-      "name" : "Raul Moro",
-      "firstname" : "Raul",
-      "lastname" : "Moro Prescoli",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-12-05",
-        "place" : "Abrera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "169 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/264470.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 14,
-        "minutes" : 1308,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.852631",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 7,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 315,
-        "key" : 27,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : null,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 136,
-        "won" : 66
-      },
-      "dribbles" : {
-        "attempts" : 73,
-        "success" : 35,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 13,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 279822,
-      "name" : "F. Boyomo",
-      "firstname" : "Flavien Enzo Thiedort",
-      "lastname" : "Boyomo",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-10-07",
-        "place" : "Toulouse",
-        "country" : "France"
-      },
-      "nationality" : "Cameroon",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/279822.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.890000",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
@@ -1581,37 +518,37 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 808,
-        "key" : 2,
+        "total" : 6,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 43,
-        "blocks" : 14,
-        "interceptions" : 21
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 139,
-        "won" : 74
+        "total" : 7,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 7,
-        "success" : 6,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 28
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -1628,21 +565,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 285506,
-      "name" : "Iván Cédric",
-      "firstname" : "Iván",
-      "lastname" : "Cédric Bikoue Embolo",
-      "age" : 24,
+      "id" : 285422,
+      "name" : "Pablo Tomeo",
+      "firstname" : "Pablo",
+      "lastname" : "Tomeo Félez",
+      "age" : 25,
       "birth" : {
-        "date" : "2001-12-22",
-        "place" : "Madrid",
+        "date" : "2000-01-23",
+        "place" : "Alloza",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "185 cm",
+      "height" : "186 cm",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/285506.png"
+      "photo" : "https://media.api-sports.io/football/players/285422.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1651,162 +588,70 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 726,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7.19",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 10,
+        "on" : 3
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 353,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 14,
+        "blocks" : 4,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 57,
+        "won" : 39
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 286961,
-      "name" : "Manu Pozo",
-      "firstname" : "Manuel",
-      "lastname" : "Pozo Guerrero",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-12-12",
-        "place" : "Casariche",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "168 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/286961.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1835,26 +680,210 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 659,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.94",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 5,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 11,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 176,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 19,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 97,
+        "won" : 51
+      },
+      "dribbles" : {
+        "attempts" : 29,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 295881,
+      "name" : "Trilli",
+      "firstname" : "Álvaro",
+      "lastname" : "Pérez Campo",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-19",
+        "place" : "Ortigueira",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/295881.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 116,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.71",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 7,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 51,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 298064,
+      "name" : "David Torres",
+      "firstname" : "David",
+      "lastname" : "Torres Ortiz",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-03-05",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "182 cm",
+      "weight" : "76 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/298064.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 726,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.89",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1863,7 +892,467 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 351,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 8,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 60,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 309917,
+      "name" : "Álvaro Aceves",
+      "firstname" : "Álvaro",
+      "lastname" : "Aceves Catalina",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-07-26",
+        "place" : "Chañe",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "190 cm",
+      "weight" : "85 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/309917.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 329663,
+      "name" : "Guilherme Fernandes",
+      "firstname" : "Guilherme Sousa",
+      "lastname" : "Carvalho Fernandes",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-03-28",
+        "place" : "Lisboa",
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "191 cm",
+      "weight" : "88 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/329663.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 726,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : "7.23",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 6,
+        "assists" : 0,
+        "saves" : 19
+      },
+      "passes" : {
+        "total" : 199,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 331004,
+      "name" : "Chuky San José",
+      "firstname" : "Iván",
+      "lastname" : "San José Cantalejo",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-04-29",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "172 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/331004.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 375,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "7.08",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 82,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 40,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 354142,
+      "name" : "Iván Garriel",
+      "firstname" : "Iván",
+      "lastname" : "Garriel Muñoz",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-04-03",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/354142.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 1,
+        "minutes" : 177,
+        "number" : 27,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 89,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 361386,
+      "name" : "Koke",
+      "firstname" : "Jorge",
+      "lastname" : "Iglesias González",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-03-16",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "185 cm",
+      "weight" : "78 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/361386.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 32,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1904,21 +1393,113 @@
     } ]
   }, {
     "player" : {
-      "id" : 333672,
-      "name" : "César Tárrega",
-      "firstname" : "César",
-      "lastname" : "Tárrega Requeni",
+      "id" : 387519,
+      "name" : "Xavier Moreno Hernández",
+      "firstname" : "Xavier",
+      "lastname" : "Moreno Hernández",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-11-05",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/387519.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 0,
+        "minutes" : 46,
+        "number" : 28,
+        "position" : "Attacker",
+        "rating" : "6.47",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 390438,
+      "name" : "M. Jaouab",
+      "firstname" : "Mohamed",
+      "lastname" : "Jaouab",
       "age" : 23,
       "birth" : {
-        "date" : "2002-02-26",
-        "place" : "Valencia",
-        "country" : "Spain"
+        "date" : "2002-05-14",
+        "place" : "Kasba Tadla",
+        "country" : "Morocco"
       },
-      "nationality" : "Spain",
-      "height" : "194 cm",
-      "weight" : "78 kg",
+      "nationality" : "Morocco",
+      "height" : "190 cm",
+      "weight" : "75 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/333672.png"
+      "photo" : "https://media.api-sports.io/football/players/390438.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1927,118 +1508,26 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 345967,
-      "name" : "Jesús",
-      "firstname" : "Jesús",
-      "lastname" : "Martínez Girón",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-02-08",
-        "place" : "Santander",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/345967.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 23,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -2046,8 +1535,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2081,192 +1570,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 354142,
-      "name" : "Iván Garriel",
-      "firstname" : "Iván",
-      "lastname" : "Garriel Muñoz",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-04-03",
-        "place" : "Valladolid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/354142.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 385414,
-      "name" : "E. Frimpong",
-      "firstname" : "Eugene Adjei",
-      "lastname" : "Frimpong",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-02-02",
-        "place" : "Kumasi",
-        "country" : "Ghana"
-      },
-      "nationality" : "Ghana",
-      "height" : "174 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/385414.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 720,
-        "name" : "Valladolid",
-        "logo" : "https://media.api-sports.io/football/teams/720.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2295,26 +1600,118 @@
         "logo" : "https://media.api-sports.io/football/teams/720.png"
       },
       "league" : {
-        "id" : 140,
-        "name" : "La Liga",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 2,
-        "number" : null,
+        "minutes" : 39,
+        "number" : 19,
         "position" : "Attacker",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 452738,
+      "name" : "Aranda",
+      "firstname" : "José Luis",
+      "lastname" : "Aranda Rojas",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-01-31",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/452738.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 34,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 7
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2337,8 +1734,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -2346,8 +1743,100 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 506254,
+      "name" : "I. Alani",
+      "firstname" : "Ibrahim Akitunde",
+      "lastname" : "Alani",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-07-29",
+        "place" : null,
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/506254.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 720,
+        "name" : "Valladolid",
+        "logo" : "https://media.api-sports.io/football/teams/720.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 0,
+        "minutes" : 127,
+        "number" : 12,
+        "position" : "Midfielder",
+        "rating" : "6.78",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 71,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,

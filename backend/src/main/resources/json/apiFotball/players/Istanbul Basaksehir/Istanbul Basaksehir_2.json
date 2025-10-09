@@ -1,271 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "564"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 15,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 1651,
-      "name" : "K. Piątek",
-      "firstname" : "Krzysztof",
-      "lastname" : "Piątek",
-      "age" : 30,
+      "id" : 412,
+      "name" : "A. Harit",
+      "firstname" : "Amine",
+      "lastname" : "Harit",
+      "age" : 28,
       "birth" : {
-        "date" : "1995-07-01",
-        "place" : "Dzierżoniów",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "183 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1651.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 19,
-        "minutes" : 1753,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.527272",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 7,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 67,
-        "on" : 36
-      },
-      "goals" : {
-        "total" : 18,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 352,
-        "key" : 21,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 245,
-        "won" : 110
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 34,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 3,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 110,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 10,
-        "minutes" : 906,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 5,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 20,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 9,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 95,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 3,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 71,
-        "won" : 30
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1921,
-      "name" : "Y. Sarı",
-      "firstname" : "Yusuf",
-      "lastname" : "Sarı",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-11-20",
-        "place" : "Martigues",
+        "date" : "1997-06-18",
+        "place" : "Pontoise",
         "country" : "France"
       },
-      "nationality" : "Türkiye",
-      "height" : "168 cm",
-      "weight" : "55 kg",
+      "nationality" : "Morocco",
+      "height" : "180",
+      "weight" : "67",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1921.png"
+      "photo" : "https://media.api-sports.io/football/players/412.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,273 +41,35 @@
         "country" : "Turkey",
         "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 117,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.823076",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 23,
-        "on" : 14
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 262,
-        "key" : 17,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 71,
-        "won" : 32
-      },
-      "dribbles" : {
-        "attempts" : 21,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 10,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 2,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 81,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 21270,
-      "name" : "P. Keny",
-      "firstname" : "Philippe Paulin",
-      "lastname" : "Keny",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-05-18",
-        "place" : "Tivaouane",
-        "country" : "Senegal"
-      },
-      "nationality" : "Senegal",
-      "height" : "190 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/21270.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 8,
-        "minutes" : 653,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.692857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 5,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 154,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 142,
-        "won" : 61
-      },
-      "dribbles" : {
-        "attempts" : 25,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 9,
+        "minutes" : 28,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 18,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
@@ -554,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -563,85 +87,104 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 3,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 22265,
+      "name" : "Nuno da Costa",
+      "firstname" : "Nuno Miguel",
+      "lastname" : "da Costa Jóia",
+      "age" : 34,
+      "birth" : {
+        "date" : "1991-02-10",
+        "place" : "Praia",
+        "country" : "Cape Verde"
+      },
+      "nationality" : "Cape Verde",
+      "height" : "184",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/22265.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 564,
         "name" : "Istanbul Basaksehir",
         "logo" : "https://media.api-sports.io/football/teams/564.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 2,
-        "minutes" : 239,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 116,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.725000",
+        "rating" : "6.533333",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 1,
-        "bench" : 9
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 2,
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 38,
-        "key" : 2,
+        "total" : 15,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 35,
-        "won" : 16
+        "total" : 19,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 4,
+        "attempts" : 3,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 1
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -658,39 +201,39 @@
         "logo" : "https://media.api-sports.io/football/teams/564.png"
       },
       "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : 25,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 5,
         "key" : null,
         "accuracy" : null
       },
@@ -700,28 +243,28 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 11,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 3,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -738,8 +281,8 @@
         "country" : "Germany"
       },
       "nationality" : "Türkiye",
-      "height" : "180 cm",
-      "weight" : "79 kg",
+      "height" : "180",
+      "weight" : "79",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/24885.png"
     },
@@ -755,369 +298,58 @@
         "country" : "Turkey",
         "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 6,
-        "minutes" : 572,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 319,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.600000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 4,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 162,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 46,
-        "won" : 24
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 10,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.260000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 6,
-        "minutes" : 595,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 4,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
         "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 56,
-        "key" : 1,
+        "total" : 114,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 40540,
-      "name" : "P. Szysz",
-      "firstname" : "Patryk",
-      "lastname" : "Szysz",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-04-01",
-        "place" : "Lublin",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "177 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/40540.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 71,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.566666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 23,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
+        "total" : 2,
+        "blocks" : 1,
         "interceptions" : 3
       },
       "duels" : {
-        "total" : 4,
-        "won" : 2
+        "total" : 27,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : 3,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1127,170 +359,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 41973,
-      "name" : "Miguel Crespo",
-      "firstname" : "Miguel",
-      "lastname" : "Crespo da Silva",
-      "age" : 29,
+      "id" : 25362,
+      "name" : "D. Selke",
+      "firstname" : "Davie",
+      "lastname" : "Selke",
+      "age" : 30,
       "birth" : {
-        "date" : "1996-09-11",
-        "place" : "Lyon",
-        "country" : "France"
+        "date" : "1995-01-20",
+        "place" : "Schorndorf",
+        "country" : "Germany"
       },
-      "nationality" : "Portugal",
-      "height" : "186 cm",
-      "weight" : "73 kg",
+      "nationality" : "Germany",
+      "height" : "195",
+      "weight" : "85",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/41973.png"
+      "photo" : "https://media.api-sports.io/football/players/25362.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1304,428 +390,466 @@
         "country" : "Turkey",
         "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 15,
-        "minutes" : 1269,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.044444",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 509,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 42,
-        "blocks" : 8,
-        "interceptions" : 23
-      },
-      "duels" : {
-        "total" : 197,
-        "won" : 103
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 35,
-        "committed" : 39
-      },
-      "cards" : {
-        "yellow" : 8,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 75,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 4,
-        "minutes" : 308,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.733333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 151,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 1,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 42,
-        "won" : 20
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 50018,
-      "name" : "Ö. Şahiner",
-      "firstname" : "Ömer Ali",
-      "lastname" : "Şahiner",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-01-02",
-        "place" : "Bursa",
-        "country" : "Türkiye"
-      },
-      "nationality" : "Türkiye",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/50018.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 8,
-        "minutes" : 682,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.645454",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 4,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 280,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 50,
-        "won" : 20
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 18,
+        "minutes" : 9,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 8,
-        "minutes" : 642,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
+        "position" : "Attacker",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 4,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 69,
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 66,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 26275,
+      "name" : "O. Bulut",
+      "firstname" : "Onur",
+      "lastname" : "Bulut",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-16",
+        "place" : "Werdohl",
+        "country" : "Germany"
+      },
+      "nationality" : "Türkiye",
+      "height" : "179",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/26275.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 118,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
         "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 49,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
         "blocks" : null,
         "interceptions" : 2
       },
       "duels" : {
-        "total" : 10,
+        "total" : 14,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 50104,
+      "name" : "D. Alemdar",
+      "firstname" : "Doğan",
+      "lastname" : "Alemdar",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-10-29",
+        "place" : "Kayseri",
+        "country" : "Türkiye"
+      },
+      "nationality" : "Türkiye",
+      "height" : "192",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/50104.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 80,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 68483,
+      "name" : "B. Yıldırım",
+      "firstname" : "Bertuğ Özgür",
+      "lastname" : "Yıldırım",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-07-12",
+        "place" : "İstanbul",
+        "country" : "Türkiye"
+      },
+      "nationality" : "Türkiye",
+      "height" : "191",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/68483.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 19,
+        "number" : 91,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
         "won" : 3
       },
       "dribbles" : {
@@ -1734,486 +858,10 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 50126,
-      "name" : "D. Türüç",
-      "firstname" : "Deniz",
-      "lastname" : "Türüç",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-01-29",
-        "place" : "Enschede",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Türkiye",
-      "height" : "177 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/50126.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 21,
-        "minutes" : 1745,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.227272",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 12,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 21,
-        "on" : 12
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 5,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 622,
-        "key" : 45,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : 1,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 151,
-        "won" : 66
-      },
-      "dribbles" : {
-        "attempts" : 30,
-        "success" : 19,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 21,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 97,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 10,
-        "minutes" : 867,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.016666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 6,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 155,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 2,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 43,
-        "won" : 20
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 50180,
-      "name" : "S. Gürler",
-      "firstname" : "Serdar",
-      "lastname" : "Gürler",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-09-14",
-        "place" : "Haguenau",
-        "country" : "France"
-      },
-      "nationality" : "Türkiye",
-      "height" : "175 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/50180.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 8,
-        "minutes" : 648,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.816666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 196,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 63,
-        "won" : 37
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 81,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 1,
-        "minutes" : 150,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 2,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
@@ -2223,1196 +871,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 61820,
-      "name" : "B. Özdemir",
-      "firstname" : "Berat Ayberk",
-      "lastname" : "Özdemir",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-05-23",
-        "place" : "Kayseri",
-        "country" : "Türkiye"
-      },
-      "nationality" : "Türkiye",
-      "height" : "187 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/61820.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 14,
-        "minutes" : 1277,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.052380",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 7,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 701,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 6,
-        "interceptions" : 28
-      },
-      "duels" : {
-        "total" : 95,
-        "won" : 68
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 151,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 3,
-        "minutes" : 303,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.680000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 137,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 2,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 27,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 62114,
-      "name" : "O. Ergün",
-      "firstname" : "Onur",
-      "lastname" : "Ergün",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-11-15",
-        "place" : "Bingöl",
-        "country" : "Türkiye"
-      },
-      "nationality" : "Türkiye",
-      "height" : "185 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/62114.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 11,
-        "minutes" : 963,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.931250",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 8,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 447,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 31,
-        "blocks" : 5,
-        "interceptions" : 20
-      },
-      "duels" : {
-        "total" : 79,
-        "won" : 56
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 11,
-        "minutes" : 953,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 217,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : 3,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 46,
-        "won" : 25
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 69942,
-      "name" : "João Figueiredo",
-      "firstname" : "João Vitor",
-      "lastname" : "Brandão Figueiredo",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-05-27",
-        "place" : "São Paulo",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "180 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69942.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 9,
-        "minutes" : 974,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.757142",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 8,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 23,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 220,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : 2,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 137,
-        "won" : 51
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 28
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 165,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 5,
-        "minutes" : 456,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.740000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 5,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 71,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 33,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 85205,
-      "name" : "O. Kemen",
-      "firstname" : "Olivier Michel",
-      "lastname" : "Kemen",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-07-20",
-        "place" : "Douala",
-        "country" : "Cameroon"
-      },
-      "nationality" : "Cameroon",
-      "height" : "177 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/85205.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 18,
-        "minutes" : 1661,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.985714",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 8,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 534,
-        "key" : 29,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 3,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 201,
-        "won" : 107
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 17,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 35,
-        "committed" : 28
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 7,
-        "minutes" : 720,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 171,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 54,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 106823,
-      "name" : "E. Kartsev",
-      "firstname" : "Eden",
-      "lastname" : "Kartsev",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-04-11",
-        "place" : "Afula",
-        "country" : "Israel"
-      },
-      "nationality" : "Israel",
-      "height" : "186 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/106823.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -3429,250 +887,12 @@
         "country" : "Germany"
       },
       "nationality" : "Türkiye",
-      "height" : "177 cm",
-      "weight" : "74 kg",
+      "height" : "177",
+      "weight" : "74",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/128968.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 87,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 129794,
-      "name" : "Matchoi Djaló",
-      "firstname" : "Matchoi Bobó",
-      "lastname" : "Djaló",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-04-10",
-        "place" : "Bissau",
-        "country" : "Guinea-Bissau"
-      },
-      "nationality" : "Portugal",
-      "height" : "175 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129794.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 0,
-        "minutes" : 60,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.575000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 0,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 30,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 20,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 206,
-        "name" : "Cup",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 564,
         "name" : "Istanbul Basaksehir",
@@ -3684,54 +904,54 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 29,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 95,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.62",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 2,
         "out" : 0,
-        "bench" : 1
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 31,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "blocks" : 2,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 11,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -3741,8 +961,81 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 137,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.53",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 61,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3759,8 +1052,8 @@
         "country" : "Republic of Ireland"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "180 cm",
-      "weight" : "75 kg",
+      "height" : "180",
+      "weight" : "75",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/161638.png"
     },
@@ -3776,34 +1069,107 @@
         "country" : "Turkey",
         "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 422,
         "number" : null,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.020000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 195,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 20,
+        "blocks" : 2,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 69,
+        "won" : 41
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 9,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
         "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
         "key" : null,
         "accuracy" : null
       },
@@ -3827,14 +1193,106 @@
       },
       "cards" : {
         "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 197784,
+      "name" : "J. Kałuziński",
+      "firstname" : "Jakub",
+      "lastname" : "Kałuziński",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-10-31",
+        "place" : "Gdańsk",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "184",
+      "weight" : "64",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/197784.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 130,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 93,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 19,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3851,8 +1309,8 @@
         "country" : "Türkiye"
       },
       "nationality" : "Türkiye",
-      "height" : "171 cm",
-      "weight" : "65 kg",
+      "height" : "171",
+      "weight" : "65",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/207236.png"
     },
@@ -3868,25 +1326,263 @@
         "country" : "Turkey",
         "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
+        "appearences" : 4,
         "lineups" : 2,
-        "minutes" : 148,
+        "minutes" : 31,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.487500",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 2,
-        "bench" : 14
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 13,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 65,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 1,
         "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 19,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 65,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 19,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 263676,
+      "name" : "A. Fayzullaev",
+      "firstname" : "Abbosbek",
+      "lastname" : "Fayzullaev",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-10-03",
+        "place" : "Sirdaryo",
+        "country" : "Uzbekistan"
+      },
+      "nationality" : "Uzbekistan",
+      "height" : "167",
+      "weight" : "57",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/263676.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 48,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -3895,26 +1591,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 68,
+        "total" : 15,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 26,
-        "won" : 14
+        "total" : 8,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : 1,
         "committed" : 2
       },
       "cards" : {
@@ -3936,238 +1632,92 @@
         "logo" : "https://media.api-sports.io/football/teams/564.png"
       },
       "league" : {
-        "id" : 206,
-        "name" : "Cup",
+        "id" : 203,
+        "name" : "Süper Lig",
         "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 5,
         "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
+        "minutes" : 166,
+        "number" : 11,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.48",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : 4,
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
-        "total" : null,
+        "total" : 4,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 59,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 21,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 432489,
-      "name" : "M. Fofana",
-      "firstname" : "Mohamed Cherif Al Hassan",
-      "lastname" : "Fofana",
+      "id" : 278162,
+      "name" : "D. Dilmen",
+      "firstname" : "Deniz",
+      "lastname" : "Dilmen",
       "age" : 20,
       "birth" : {
-        "date" : "2005-05-06",
-        "place" : null,
-        "country" : "Côte d'Ivoire"
+        "date" : "2005-06-05",
+        "place" : "İstanbul",
+        "country" : "Türkiye"
       },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "187 cm",
-      "weight" : "80 kg",
+      "nationality" : "Türkiye",
+      "height" : "200",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/432489.png"
+      "photo" : "https://media.api-sports.io/football/players/278162.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 564,
         "name" : "Istanbul Basaksehir",
@@ -4179,14 +1729,14 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 98,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
@@ -4194,98 +1744,6 @@
         "in" : 0,
         "out" : 0,
         "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 508266,
-      "name" : "Abdoulaye Yoro",
-      "firstname" : "Abdoulaye Serge",
-      "lastname" : "Marc Dylan Yoro",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-12-12",
-        "place" : null,
-        "country" : "Côte d'Ivoire"
-      },
-      "nationality" : "Côte d'Ivoire",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/508266.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 564,
-        "name" : "Istanbul Basaksehir",
-        "logo" : "https://media.api-sports.io/football/teams/564.png"
-      },
-      "league" : {
-        "id" : 203,
-        "name" : "Süper Lig",
-        "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/203.png",
-        "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -4294,7 +1752,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -4339,19 +1797,111 @@
         "logo" : "https://media.api-sports.io/football/teams/564.png"
       },
       "league" : {
-        "id" : 206,
-        "name" : "Cup",
+        "id" : 203,
+        "name" : "Süper Lig",
         "country" : "Turkey",
-        "logo" : "https://media.api-sports.io/football/leagues/206.png",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
         "flag" : "https://media.api-sports.io/flags/tr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : 90,
+        "number" : 98,
+        "position" : "Goalkeeper",
+        "rating" : "7.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 1
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 442158,
+      "name" : "Lucas Stancic",
+      "firstname" : "Lucas",
+      "lastname" : "Stancic",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-01-20",
+        "place" : "München",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "189",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/442158.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 78,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
@@ -4366,8 +1916,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -4401,8 +1951,173 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 443739,
+      "name" : "Hamza Güreler",
+      "firstname" : "Hamza",
+      "lastname" : "Güreler",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-04-10",
+        "place" : "İstanbul",
+        "country" : "Turkey"
+      },
+      "nationality" : "Turkey",
+      "height" : "192",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/443739.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 9,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 564,
+        "name" : "Istanbul Basaksehir",
+        "logo" : "https://media.api-sports.io/football/teams/564.png"
+      },
+      "league" : {
+        "id" : 203,
+        "name" : "Süper Lig",
+        "country" : "Turkey",
+        "logo" : "https://media.api-sports.io/football/leagues/203.png",
+        "flag" : "https://media.api-sports.io/flags/tr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 63,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

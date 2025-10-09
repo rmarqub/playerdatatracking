@@ -81,7 +81,7 @@ public class UpdateClubsData {
 							throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 						}
 					}
-					keyMethods.storeUsedKey(apiKey);
+					//keyMethods.storeUsedKey(apiKey);
 				}
 			}
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {

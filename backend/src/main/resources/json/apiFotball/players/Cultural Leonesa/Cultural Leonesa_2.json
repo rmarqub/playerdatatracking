@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "725"
   },
   "errors" : [ ],
-  "results" : 9,
+  "results" : 11,
   "paging" : {
     "current" : 2,
     "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 41542,
-      "name" : "V. García",
-      "firstname" : "Víctor Hugo",
-      "lastname" : "García Hernández",
-      "age" : 31,
+      "id" : 122,
+      "name" : "Jordi Mboula",
+      "firstname" : "Jordi",
+      "lastname" : "Mboula Queralt",
+      "age" : 26,
       "birth" : {
-        "date" : "1994-06-11",
-        "place" : "Cúa",
-        "country" : "Venezuela"
+        "date" : "1999-03-16",
+        "place" : "Granollers",
+        "country" : "Spain"
       },
-      "nationality" : "Venezuela",
-      "height" : "178 cm",
-      "weight" : "71 kg",
+      "nationality" : "Spain",
+      "height" : "183 cm",
+      "weight" : "74 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/41542.png"
+      "photo" : "https://media.api-sports.io/football/players/122.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,26 +36,26 @@
         "logo" : "https://media.api-sports.io/football/teams/725.png"
       },
       "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 13,
-        "minutes" : 1123,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 4,
+        "lineups" : 0,
+        "minutes" : 77,
+        "number" : 2,
+        "position" : "Attacker",
+        "rating" : "6.55",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
+        "in" : 4,
+        "out" : 0,
+        "bench" : 4
       },
       "shots" : {
         "total" : null,
@@ -63,12 +63,196 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 27,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 937,
+      "name" : "Rubén Sobrino",
+      "firstname" : "Rubén",
+      "lastname" : "Sobrino Pozuelo",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-06-01",
+        "place" : "Daimiel",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "185 cm",
+      "weight" : "73 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/937.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 339,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.82",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 63,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 53,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20893,
+      "name" : "Lucas Ribeiro Costa",
+      "firstname" : "Lucas",
+      "lastname" : "Ribeiro Costa",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-10-09",
+        "place" : "Santa Helena",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "181 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20893.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 14,
+        "number" : 15,
+        "position" : "Attacker",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +262,192 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 93988,
+      "name" : "Iván Calero",
+      "firstname" : "Iván",
+      "lastname" : "Calero Ruiz",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-04-21",
+        "place" : "Parla",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "174 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/93988.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 269,
+        "number" : 17,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 123,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 2,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 146048,
+      "name" : "Tomás Ribeiro",
+      "firstname" : "Tomás Aresta",
+      "lastname" : "Branco Machado Ribeiro",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-30",
+        "place" : "Lisbon",
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "185 cm",
+      "weight" : "82 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/146048.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 167,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 74,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : null,
@@ -88,46 +456,157 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 333049,
+      "name" : "Yayo",
+      "firstname" : "Pelayo",
+      "lastname" : "González Rey",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-07-30",
+        "place" : "Oviedo",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/333049.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 725,
         "name" : "Cultural Leonesa",
         "logo" : "https://media.api-sports.io/football/teams/725.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 4,
         "lineups" : 0,
-        "minutes" : 34,
-        "number" : null,
+        "minutes" : 66,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.63",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 25,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 436785,
+      "name" : "Matia Barzic Gutiérrez",
+      "firstname" : "Matia",
+      "lastname" : "Barzic Gutiérrez",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-05-31",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/436785.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 441,
+        "number" : 36,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.08",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
+        "out" : 2,
         "bench" : 1
       },
       "shots" : {
@@ -136,8 +615,100 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 245,
+        "key" : null,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : 4,
+        "interceptions" : 9
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 441836,
+      "name" : "Juan Sánchez",
+      "firstname" : "Juan",
+      "lastname" : "Sánchez Collantes",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-25",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/441836.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 34,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -171,28 +742,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 108559,
-      "name" : "Víctor Ruiz",
-      "firstname" : "Víctor José",
-      "lastname" : "Ruiz Ramos",
-      "age" : 30,
+      "id" : 450716,
+      "name" : "Roger Hinojo",
+      "firstname" : "Roger",
+      "lastname" : "Hinojo Estrada",
+      "age" : 20,
       "birth" : {
-        "date" : "1995-04-12",
-        "place" : "Málaga",
+        "date" : "2005-02-21",
+        "place" : "Cabrianes",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "73 kg",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/108559.png"
+      "photo" : "https://media.api-sports.io/football/players/450716.png"
     },
     "statistics" : [ {
       "team" : {
@@ -201,26 +772,118 @@
         "logo" : "https://media.api-sports.io/football/teams/725.png"
       },
       "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 6,
-        "lineups" : 3,
-        "minutes" : 283,
-        "number" : null,
+        "lineups" : 6,
+        "minutes" : 513,
+        "number" : 21,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 15
+        "in" : 0,
+        "out" : 4,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 238,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 3,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 463279,
+      "name" : "Paco Cortés",
+      "firstname" : "Francisco",
+      "lastname" : "Cortés Gracia",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-08-11",
+        "place" : "Granada",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/463279.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 725,
+        "name" : "Cultural Leonesa",
+        "logo" : "https://media.api-sports.io/football/teams/725.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 43,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 4
       },
       "shots" : {
         "total" : null,
@@ -228,13 +891,13 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 13,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
@@ -243,12 +906,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 5,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -256,135 +919,62 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 478376,
+      "name" : "Álvaro Choco",
+      "firstname" : "Álvaro",
+      "lastname" : "Díez Ruiz",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-05-01",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/478376.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 725,
         "name" : "Cultural Leonesa",
         "logo" : "https://media.api-sports.io/football/teams/725.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 189,
-        "number" : null,
-        "position" : "Defender",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 29,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 128142,
-      "name" : "Quique Fornos",
-      "firstname" : "Enrique",
-      "lastname" : "Fornos Domínguez",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-01-01",
-        "place" : "As Pontes",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "181 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/128142.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 15,
-        "minutes" : 1269,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 5,
+        "out" : 0,
         "bench" : 3
       },
       "shots" : {
@@ -392,82 +982,9 @@
         "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -501,925 +1018,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 167701,
-      "name" : "Miguel Bañuz",
-      "firstname" : "Miguel",
-      "lastname" : "Bañuz Antón",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-06-26",
-        "place" : "Elche",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/167701.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 19,
-        "minutes" : 1710,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182715,
-      "name" : "Amigo",
-      "firstname" : "Alejandro",
-      "lastname" : "Fernández Sainz Pardo",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-17",
-        "place" : "Santander",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182715.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 308281,
-      "name" : "Santi Prado",
-      "firstname" : "Santiago",
-      "lastname" : "Prado Rodríguez",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-04-30",
-        "place" : "Ourense",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/308281.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 311759,
-      "name" : "Álvaro Martínez",
-      "firstname" : "Álvaro",
-      "lastname" : "Martínez Navarro",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-04",
-        "place" : "La Vall d'Uixó",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "181 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/311759.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 18,
-        "minutes" : 1593,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 51,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 366394,
-      "name" : "Guzmán",
-      "firstname" : "Guzmán",
-      "lastname" : "Ortega San Juan",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-12",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/366394.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 5,
-        "minutes" : 501,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 176,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 381663,
-      "name" : "Joel Ruiz",
-      "firstname" : "Joel",
-      "lastname" : "Ruiz Doblado",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-17",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/381663.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 435,
-        "name" : "Primera División RFEF - Group 1",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/435.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 725,
-        "name" : "Cultural Leonesa",
-        "logo" : "https://media.api-sports.io/football/teams/725.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

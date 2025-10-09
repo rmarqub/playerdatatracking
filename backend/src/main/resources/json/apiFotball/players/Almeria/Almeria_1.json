@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "723"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 12667,
-      "name" : "Jonathan Viera",
-      "firstname" : "Jonathan",
-      "lastname" : "Viera Ramos",
-      "age" : 35,
+      "id" : 129,
+      "name" : "Chumi",
+      "firstname" : "Juan",
+      "lastname" : "Brandáriz Movilla",
+      "age" : 26,
       "birth" : {
-        "date" : "1989-10-21",
-        "place" : "Las Palmas de Gran Canaria",
+        "date" : "1999-03-02",
+        "place" : "A Laracha",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "171 cm",
-      "weight" : "66 kg",
+      "height" : "186 cm",
+      "weight" : "78 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/12667.png"
+      "photo" : "https://media.api-sports.io/football/players/129.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,45 +41,45 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 270,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.37",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 164,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 50
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 20,
+        "won" : 10
       },
       "dribbles" : {
         "attempts" : null,
@@ -88,99 +88,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 13062,
-      "name" : "Léo Baptistão",
-      "firstname" : "Leonardo Micali",
-      "lastname" : "Carrilho Baptistão",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-08-26",
-        "place" : "Santos",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "185 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/13062.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 20,
-        "minutes" : 1508,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.134782",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 17,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 45,
-        "on" : 19
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 454,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : null,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 147,
-        "won" : 76
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 25,
-        "committed" : 20
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 1,
@@ -194,65 +102,84 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 914,
+      "name" : "Álex Centelles",
+      "firstname" : "Alejandro",
+      "lastname" : "Centelles Plaza",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-08-30",
+        "place" : "Odivelas",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "185 cm",
+      "weight" : "73 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/914.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 723,
         "name" : "Almeria",
         "logo" : "https://media.api-sports.io/football/teams/723.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 126,
+        "number" : 20,
+        "position" : "Defender",
+        "rating" : "6.45",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 4,
         "out" : 0,
-        "bench" : 2
+        "bench" : 7
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
-        "key" : null,
+        "total" : 64,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 3,
-        "won" : null
+        "total" : 17,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 3,
         "committed" : 1
       },
       "cards" : {
@@ -270,21 +197,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 20627,
-      "name" : "Houboulang Mendes",
-      "firstname" : "Houboulang",
-      "lastname" : "Mendes",
-      "age" : 27,
+      "id" : 1565,
+      "name" : "Edgar González",
+      "firstname" : "Edgar",
+      "lastname" : "González Estrada",
+      "age" : 28,
       "birth" : {
-        "date" : "1998-05-04",
-        "place" : "Évry",
-        "country" : "France"
+        "date" : "1997-04-01",
+        "place" : "Sant Joan Despí",
+        "country" : "Spain"
       },
-      "nationality" : "Guinea-Bissau",
-      "height" : "184 cm",
-      "weight" : "77 kg",
+      "nationality" : "Spain",
+      "height" : "193",
+      "weight" : "78",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20627.png"
+      "photo" : "https://media.api-sports.io/football/players/1565.png"
     },
     "statistics" : [ {
       "team" : {
@@ -298,7 +225,7 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -362,21 +289,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 46870,
-      "name" : "Diego Mariño",
-      "firstname" : "Diego",
-      "lastname" : "Mariño Villar",
-      "age" : 35,
+      "id" : 1684,
+      "name" : "Andrés Fernández",
+      "firstname" : "Andrés Eduardo",
+      "lastname" : "Fernández Moreno",
+      "age" : 39,
       "birth" : {
-        "date" : "1990-05-09",
-        "place" : "Vigo",
+        "date" : "1986-12-17",
+        "place" : "Murcia",
         "country" : "Spain"
       },
       "nationality" : "Spain",
       "height" : "187 cm",
-      "weight" : "75 kg",
+      "weight" : "82 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46870.png"
+      "photo" : "https://media.api-sports.io/football/players/1684.png"
     },
     "statistics" : [ {
       "team" : {
@@ -390,15 +317,15 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 1,
         "position" : "Goalkeeper",
-        "rating" : "7.020000",
+        "rating" : "6.88",
         "captain" : false
       },
       "substitutes" : {
@@ -412,12 +339,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 13,
+        "conceded" : 14,
         "assists" : 0,
-        "saves" : 28
+        "saves" : 27
       },
       "passes" : {
-        "total" : 367,
+        "total" : 228,
         "key" : null,
         "accuracy" : null
       },
@@ -427,8 +354,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
-        "won" : 4
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -454,21 +381,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 47525,
-      "name" : "A. Lozano",
-      "firstname" : "Anthony Rubén",
-      "lastname" : "Lozano Colón",
-      "age" : 32,
+      "id" : 13062,
+      "name" : "Léo Baptistão",
+      "firstname" : "Leonardo Micali",
+      "lastname" : "Carrilho Baptistão",
+      "age" : 33,
       "birth" : {
-        "date" : "1993-04-25",
-        "place" : "Yoro",
-        "country" : "Honduras"
+        "date" : "1992-08-26",
+        "place" : "Santos",
+        "country" : "Brazil"
       },
-      "nationality" : "Honduras",
+      "nationality" : "Brazil",
       "height" : "185 cm",
-      "weight" : "74 kg",
+      "weight" : "72 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47525.png"
+      "photo" : "https://media.api-sports.io/football/players/13062.png"
     },
     "statistics" : [ {
       "team" : {
@@ -482,45 +409,137 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 6,
+        "minutes" : 437,
+        "number" : 12,
+        "position" : "Midfielder",
+        "rating" : "6.65",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 2,
+        "out" : 5,
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 17,
+        "on" : 6
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 142,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 6,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 69,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30583,
+      "name" : "F. Bonini",
+      "firstname" : "Federico",
+      "lastname" : "Bonini",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-08-06",
+        "place" : "Massa",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "185 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30583.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : 18,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 376,
+        "key" : 4,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 24
       },
       "dribbles" : {
         "attempts" : null,
@@ -528,19 +547,203 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 36302,
+      "name" : "P. Soko",
+      "firstname" : "Serge Patrick",
+      "lastname" : "Njoh Soko",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-10-31",
+        "place" : "Litoral",
+        "country" : "Cameroon"
+      },
+      "nationality" : "Cameroon",
+      "height" : "176 cm",
+      "weight" : "72 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/36302.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 209,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.44",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 47,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47052,
+      "name" : "Álex Muñoz",
+      "firstname" : "Alejandro José",
+      "lastname" : "Muñoz Miguel",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-07-30",
+        "place" : "Sant Joan d'Alacant",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "187 cm",
+      "weight" : "80 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47052.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 718,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 379,
+        "key" : 12,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 4,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 71,
+        "won" : 41
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 18
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -574,85 +777,250 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 7,
+        "lineups" : 6,
+        "minutes" : 472,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "7.11",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : 4,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 16,
+        "on" : 8
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 160,
+        "key" : 11,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 15,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 77,
+        "won" : 35
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 17,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 13,
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
+        "yellowred" : 1,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 1,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 51036,
+      "name" : "André Horta",
+      "firstname" : "André Filipe",
+      "lastname" : "Luz Horta",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-11-07",
+        "place" : "Almada",
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "174",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/51036.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 115,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 117,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 182,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.84",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 1,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 160,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 138776,
-      "name" : "L. Ramazani",
-      "firstname" : "Largie",
-      "lastname" : "Ramazani",
+      "id" : 128581,
+      "name" : "Nico Melamed",
+      "firstname" : "Nicolás",
+      "lastname" : "Melamed Ribaudo",
       "age" : 24,
       "birth" : {
-        "date" : "2001-02-27",
-        "place" : null,
-        "country" : "Belgium"
+        "date" : "2001-04-11",
+        "place" : "Barcelona",
+        "country" : "Spain"
       },
-      "nationality" : "Belgium",
-      "height" : "167 cm",
-      "weight" : "55 kg",
+      "nationality" : "Spain",
+      "height" : "173 cm",
+      "weight" : "65 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/138776.png"
+      "photo" : "https://media.api-sports.io/football/players/128581.png"
     },
     "statistics" : [ {
       "team" : {
@@ -666,24 +1034,373 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 8,
+        "lineups" : 6,
+        "minutes" : 475,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.01",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 5,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 16,
+        "on" : 8
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 166,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 138809,
+      "name" : "Arnau Puigmal",
+      "firstname" : "Arnau",
+      "lastname" : "Puigmal Martínez",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-10",
+        "place" : "Barcelona",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "173 cm",
+      "weight" : "69 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/138809.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 2,
+        "minutes" : 293,
+        "number" : 2,
+        "position" : "Midfielder",
+        "rating" : "6.71",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 2,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 139,
+        "key" : 12,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 35,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 15,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162033,
+      "name" : "Sergio Arribas",
+      "firstname" : "Sergio",
+      "lastname" : "Arribas Calvo",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-09-30",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "173 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162033.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 621,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "7.43",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 16,
+        "on" : 8
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 371,
+        "key" : 23,
+        "accuracy" : 40
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 56,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 17,
+        "success" : 12,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 2,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 203468,
+      "name" : "D. Lopy",
+      "firstname" : "Dion",
+      "lastname" : "Lopy",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-02-02",
+        "place" : "Bambilor",
+        "country" : "Senegal"
+      },
+      "nationality" : "Senegal",
+      "height" : "186",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/203468.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 130,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
+        "position" : "Midfielder",
+        "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 79,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 309,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.92",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
         "bench" : 0
       },
       "shots" : {
-        "total" : 4,
+        "total" : 3,
         "on" : 2
       },
       "goals" : {
@@ -693,26 +1410,118 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
+        "total" : 180,
         "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 19
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 237103,
+      "name" : "Lázaro",
+      "firstname" : "Lázaro Vinícius",
+      "lastname" : "Marques",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-03-12",
+        "place" : "Belo Horizonte",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "180",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/237103.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 233,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.33",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 44,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 17,
-        "won" : 6
+        "total" : 33,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 3,
         "committed" : 2
       },
       "cards" : {
@@ -730,21 +1539,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 161931,
-      "name" : "Arnau Solà",
-      "firstname" : "Arnau",
-      "lastname" : "Solà Mateu",
+      "id" : 295793,
+      "name" : "Marc Pubill",
+      "firstname" : "Marc",
+      "lastname" : "Pubill Pagès",
       "age" : 22,
       "birth" : {
-        "date" : "2003-04-04",
-        "place" : "Amposta",
+        "date" : "2003-06-20",
+        "place" : "Terrassa",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "179 cm",
-      "weight" : "73 kg",
+      "height" : "190",
+      "weight" : "86",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/161931.png"
+      "photo" : "https://media.api-sports.io/football/players/295793.png"
     },
     "statistics" : [ {
       "team" : {
@@ -753,208 +1562,24 @@
         "logo" : "https://media.api-sports.io/football/teams/723.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 13,
         "number" : null,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162603,
-      "name" : "Carlos Rojas",
-      "firstname" : "Carlos Humberto",
-      "lastname" : "Rojas Mosquera",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-04-18",
-        "place" : "Cuenca",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162603.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 194597,
-      "name" : "Miguel Peñalver",
-      "firstname" : "Miguel",
-      "lastname" : "Peñalver Martínez",
-      "age" : 23,
-      "birth" : {
-        "date" : "2001-03-08",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "179 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/194597.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
         "out" : null,
         "bench" : null
       },
@@ -964,536 +1589,22 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 263812,
-      "name" : "L. Romero",
-      "firstname" : "Luka",
-      "lastname" : "Romero Bezzana",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-11-18",
-        "place" : "Durango",
-        "country" : "Mexico"
-      },
-      "nationality" : "Argentina",
-      "height" : "165 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/263812.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 282131,
-      "name" : "M. Šviderský",
-      "firstname" : "Martin",
-      "lastname" : "Šviderský",
-      "age" : 22,
-      "birth" : {
-        "date" : "2002-10-04",
-        "place" : null,
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "184 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/282131.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 312650,
-      "name" : "M. Milovanović",
-      "firstname" : "Marko",
-      "lastname" : "Milovanović",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-08-04",
-        "place" : "Smederevo",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "195 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/312650.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 0,
-        "minutes" : 99,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.475000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 11,
-        "out" : 0,
-        "bench" : 24
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 33,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 217,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "8.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 12,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 333439,
-      "name" : "Rubén Quintanilla",
-      "firstname" : "Rubén",
-      "lastname" : "Quintanilla Rodríguez",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-04-03",
-        "place" : "Barcelona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/333439.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 94,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.650000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 38,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 93,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 5,
+        "total" : 4,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
-        "blocks" : 1,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
+        "total" : 3,
         "won" : 1
       },
       "dribbles" : {
@@ -1506,8 +1617,8 @@
         "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1520,21 +1631,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 344745,
-      "name" : "Rachad Fettal Dhimi",
-      "firstname" : "Rachad",
-      "lastname" : "Fettal Dhimi",
-      "age" : 20,
+      "id" : 310609,
+      "name" : "Gui",
+      "firstname" : "Guilherme",
+      "lastname" : "Borges Guedes",
+      "age" : 23,
       "birth" : {
-        "date" : "2005-01-16",
-        "place" : null,
-        "country" : "Morocco"
+        "date" : "2002-04-17",
+        "place" : "Santa Marta de Penaguião",
+        "country" : "Portugal"
       },
-      "nationality" : "Morocco",
-      "height" : "184 cm",
-      "weight" : "78 kg",
+      "nationality" : "Portugal",
+      "height" : "185 cm",
+      "weight" : "77 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/344745.png"
+      "photo" : "https://media.api-sports.io/football/players/310609.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1548,733 +1659,403 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 1,
-        "minutes" : 181,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 357,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.67",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 1,
-        "bench" : 19
+        "in" : 2,
+        "out" : 3,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 4,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 56,
-        "key" : 6,
+        "total" : 199,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 8,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 339863,
+      "name" : "M. Perović",
+      "firstname" : "Marko",
+      "lastname" : "Perović",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-03-05",
+        "place" : "Podgorica",
+        "country" : "Montenegro"
+      },
+      "nationality" : "Montenegro",
+      "height" : "179",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/339863.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 1,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 33,
-        "won" : 12
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 11,
+        "number" : 36,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 380261,
+      "name" : "Marcos Luna",
+      "firstname" : "Marcos",
+      "lastname" : "Luna Ruiz",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-04-05",
+        "place" : "Zaragoza",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "183 cm",
+      "weight" : "80 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/380261.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 723,
+        "name" : "Almeria",
+        "logo" : "https://media.api-sports.io/football/teams/723.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 338,
+        "number" : 16,
+        "position" : "Defender",
+        "rating" : "6.38",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 203,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 41,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
         "committed" : 7
       },
       "cards" : {
         "yellow" : 1,
         "yellowred" : 0,
-        "red" : 1
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
+        "commited" : 1,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 402281,
+      "name" : "Silvi",
+      "firstname" : "Silvi",
+      "lastname" : "Clua Oya",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-01-29",
+        "place" : "Pinell de Brai",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "189 cm",
+      "weight" : "79 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/402281.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 723,
         "name" : "Almeria",
         "logo" : "https://media.api-sports.io/football/teams/723.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
+        "appearences" : 5,
         "lineups" : 2,
-        "minutes" : 156,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 6,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 352905,
-      "name" : "Marciano Tchami",
-      "firstname" : "Marciano",
-      "lastname" : "Sanca Tchami",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-03-03",
-        "place" : "Bissau",
-        "country" : "Guinea-Bissau"
-      },
-      "nationality" : "Guinea-Bissau",
-      "height" : "185 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/352905.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 384229,
-      "name" : "Lorenzo Sánchez",
-      "firstname" : "Lorenzo",
-      "lastname" : "Sánchez Martínez",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-14",
-        "place" : "Madrid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "187 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/384229.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 2,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 16,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 387530,
-      "name" : "Carlos Ballestero García",
-      "firstname" : "Carlos",
-      "lastname" : "Ballestero García",
-      "age" : 20,
-      "birth" : {
-        "date" : "2004-04-24",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/387530.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 413412,
-      "name" : "Valen Gómez",
-      "firstname" : "Valentín",
-      "lastname" : "Gómez Mirón",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-15",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "170 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/413412.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 3,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 418944,
-      "name" : "Marcos Peña",
-      "firstname" : "Marcos",
-      "lastname" : "Peña Ocaña",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-22",
-        "place" : "Almería",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "154 cm",
-      "weight" : "42 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/418944.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 723,
-        "name" : "Almeria",
-        "logo" : "https://media.api-sports.io/football/teams/723.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 211,
+        "number" : 5,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.58",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "in" : 3,
+        "out" : 2,
+        "bench" : 6
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 3,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 104,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 27,
+        "won" : 14
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 6,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 0,

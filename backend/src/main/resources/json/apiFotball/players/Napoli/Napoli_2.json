@@ -1,15 +1,15 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "492"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 18,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
@@ -24,8 +24,8 @@
         "country" : "Italy"
       },
       "nationality" : "Italy",
-      "height" : "190 cm",
-      "weight" : "82 kg",
+      "height" : "190",
+      "weight" : "82",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/312.png"
     },
@@ -36,99 +36,26 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 22,
-        "minutes" : 1926,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
         "position" : "Goalkeeper",
-        "rating" : "6.972727",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 18,
-        "assists" : 0,
-        "saves" : 44
-      },
-      "passes" : {
-        "total" : 630,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.900000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -138,10 +65,10 @@
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : 2
+        "saves" : null
       },
       "passes" : {
-        "total" : 18,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -173,28 +100,9 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 552,
-      "name" : "David Neres",
-      "firstname" : "David",
-      "lastname" : "Neres Campos",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-03-03",
-        "place" : "São Paulo",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "176 cm",
-      "weight" : "66 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/552.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 492,
         "name" : "Napoli",
@@ -206,57 +114,149 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 10,
-        "minutes" : 978,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.000000",
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 9,
-        "bench" : 13
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 18,
-        "on" : 5
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 4,
+        "assists" : 0,
+        "saves" : 8
       },
       "passes" : {
-        "total" : 356,
-        "key" : 18,
+        "total" : 97,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 12,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 6
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 115,
-        "won" : 48
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 58,
-        "success" : 29,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 9
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 544,
+      "name" : "N. Lang",
+      "firstname" : "Noa Noëll",
+      "lastname" : "Lang",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-06-17",
+        "place" : "Capelle aan den IJssel",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "173",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/544.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 25,
+        "number" : 70,
+        "position" : "Attacker",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -274,63 +274,393 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 166,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 31,
+        "number" : 70,
         "position" : "Attacker",
-        "rating" : "7.800000",
+        "rating" : "6.63",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 3,
+        "out" : 0,
+        "bench" : 6
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 69,
-        "key" : 4,
+        "total" : 23,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 552,
+      "name" : "David Neres",
+      "firstname" : "David",
+      "lastname" : "Neres Campos",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-03-03",
+        "place" : "São Paulo",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "176",
+      "weight" : "66",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/552.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 43,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 23,
-        "won" : 11
+        "total" : 9,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
+        "attempts" : 3,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 135,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 61,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 1,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 629,
+      "name" : "K. De Bruyne",
+      "firstname" : "Kevin",
+      "lastname" : "De Bruyne",
+      "age" : 34,
+      "birth" : {
+        "date" : "1991-06-28",
+        "place" : "Drongen",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "181",
+      "weight" : "68",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/629.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 240,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.633333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 145,
+        "key" : 6,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 26,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -354,8 +684,8 @@
         "country" : "Brazil"
       },
       "nationality" : "Brazil",
-      "height" : "185 cm",
-      "weight" : "83 kg",
+      "height" : "185",
+      "weight" : "83",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/774.png"
     },
@@ -366,123 +696,50 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 10,
-        "minutes" : 889,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.920000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 756,
-        "key" : 1,
-        "accuracy" : 69
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : 1,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 70,
-        "won" : 42
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
+        "lineups" : 1,
+        "minutes" : 129,
+        "number" : 5,
         "position" : "Defender",
-        "rating" : "6.950000",
+        "rating" : "6.45",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
         "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 140,
+        "total" : 81,
         "key" : null,
-        "accuracy" : 62
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : 2,
+        "total" : 2,
+        "blocks" : 1,
         "interceptions" : 2
       },
       "duels" : {
-        "total" : 13,
-        "won" : 6
+        "total" : 7,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -490,103 +747,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 862,
-      "name" : "L. Spinazzola",
-      "firstname" : "Leonardo",
-      "lastname" : "Spinazzola",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-03-25",
-        "place" : "Foligno",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "186 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/862.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 7,
-        "minutes" : 633,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.773333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 5,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 324,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 55,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -604,26 +769,26 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 253,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 347,
+        "number" : 5,
         "position" : "Defender",
-        "rating" : "7.166666",
+        "rating" : "6.78",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 1,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -636,30 +801,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 157,
-        "key" : 7,
-        "accuracy" : 46
+        "total" : 343,
+        "key" : 1,
+        "accuracy" : 63
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 8,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 11,
-        "won" : 5
+        "total" : 32,
+        "won" : 15
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 3
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -684,8 +849,8 @@
         "country" : "England"
       },
       "nationality" : "Scotland",
-      "height" : "193 cm",
-      "weight" : "88 kg",
+      "height" : "193",
+      "weight" : "88",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/903.png"
     },
@@ -701,98 +866,25 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 21,
-        "minutes" : 1885,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 269,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.995454",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 30,
-        "on" : 14
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 604,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 28,
-        "blocks" : 3,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 254,
-        "won" : 121
-      },
-      "dribbles" : {
-        "attempts" : 53,
-        "success" : 24,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 35,
-        "committed" : 33
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 31,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
+        "total" : 8,
+        "on" : 5
       },
       "goals" : {
         "total" : 1,
@@ -801,123 +893,31 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 10,
-        "key" : null,
+        "total" : 85,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 3,
-        "won" : 1
+        "total" : 40,
+        "won" : 20
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 7,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 2
+        "drawn" : 13,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1314,
-      "name" : "Amir Rrahmani",
-      "firstname" : "Amir",
-      "lastname" : "Rrahmani",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-02-24",
-        "place" : "Prishtinë",
-        "country" : "Kosovo"
-      },
-      "nationality" : "Kosovo",
-      "height" : "192 cm",
-      "weight" : "87 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1314.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2250,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.220000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 17,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1774,
-        "key" : 6,
-        "accuracy" : 65
-      },
-      "tackles" : {
-        "total" : 25,
-        "blocks" : 14,
-        "interceptions" : 14
-      },
-      "duels" : {
-        "total" : 192,
-        "won" : 111
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 30
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -934,63 +934,63 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
+        "position" : "Midfielder",
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 47,
+        "total" : 21,
         "key" : null,
-        "accuracy" : 45
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 8,
-        "won" : 7
+        "total" : 10,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1003,21 +1003,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 2734,
-      "name" : "P. Billing",
-      "firstname" : "Philip",
-      "lastname" : "Anyanwu Billing",
-      "age" : 29,
+      "id" : 907,
+      "name" : "R. Lukaku",
+      "firstname" : "Romelu Menama",
+      "lastname" : "Lukaku Bolingoli",
+      "age" : 32,
       "birth" : {
-        "date" : "1996-06-11",
-        "place" : "Lagos",
-        "country" : "Denmark"
+        "date" : "1993-05-13",
+        "place" : "Antwerpen",
+        "country" : "Belgium"
       },
-      "nationality" : "Denmark",
-      "height" : "193 cm",
-      "weight" : "83 kg",
+      "nationality" : "Belgium",
+      "height" : "191",
+      "weight" : "93",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2734.png"
+      "photo" : "https://media.api-sports.io/football/players/907.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1031,29 +1031,29 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 5
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : null,
         "assists" : null,
         "saves" : null
       },
@@ -1081,35 +1081,108 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 26,
+        "lineups" : 22,
+        "minutes" : 1663,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.116000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 43,
+        "on" : 22
+      },
+      "goals" : {
+        "total" : 10,
+        "conceded" : 0,
+        "assists" : 6,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 378,
+        "key" : 33,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 156,
+        "won" : 64
+      },
+      "dribbles" : {
+        "attempts" : 29,
+        "success" : 16,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 16
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
+        "scored" : 2,
         "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 3406,
-      "name" : "A. Zambo Anguissa",
-      "firstname" : "André-Frank",
-      "lastname" : "Zambo Anguissa",
-      "age" : 30,
+      "id" : 1314,
+      "name" : "Amir Rrahmani",
+      "firstname" : "Amir",
+      "lastname" : "Rrahmani",
+      "age" : 31,
       "birth" : {
-        "date" : "1995-11-16",
-        "place" : "Yaoundé",
-        "country" : "Cameroon"
+        "date" : "1994-02-24",
+        "place" : "Prishtinë",
+        "country" : "Kosovo"
       },
-      "nationality" : "Cameroon",
-      "height" : "184 cm",
-      "weight" : "78 kg",
+      "nationality" : "Kosovo",
+      "height" : "192",
+      "weight" : "87",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3406.png"
+      "photo" : "https://media.api-sports.io/football/players/1314.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1123,94 +1196,21 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2204,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.136000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 13,
+        "position" : "Defender",
+        "rating" : "7.65",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 5,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 21,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1131,
-        "key" : 23,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 36,
-        "blocks" : 4,
-        "interceptions" : 27
-      },
-      "duels" : {
-        "total" : 251,
-        "won" : 130
-      },
-      "dribbles" : {
-        "attempts" : 35,
-        "success" : 20,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 24,
-        "committed" : 27
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 123,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : 1,
@@ -1223,192 +1223,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 121,
-        "key" : 4,
-        "accuracy" : 55
+        "total" : 207,
+        "key" : 2,
+        "accuracy" : 95
       },
       "tackles" : {
         "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 9,
-        "won" : 5
+        "total" : 26,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 31042,
-      "name" : "G. Di Lorenzo",
-      "firstname" : "Giovanni",
-      "lastname" : "Di Lorenzo",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-08-04",
-        "place" : "Castelnuovo Garfagnana",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "183 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/31042.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2250,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.160000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1279,
-        "key" : 30,
-        "accuracy" : 43
-      },
-      "tackles" : {
-        "total" : 46,
-        "blocks" : 5,
-        "interceptions" : 21
-      },
-      "duels" : {
-        "total" : 217,
-        "won" : 115
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 31,
-        "committed" : 34
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 108,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 108,
-        "key" : 1,
-        "accuracy" : 49
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -1425,21 +1260,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 31226,
-      "name" : "A. Buongiorno",
-      "firstname" : "Alessandro",
-      "lastname" : "Buongiorno",
+      "id" : 1358,
+      "name" : "E. Elmas",
+      "firstname" : "Eljif",
+      "lastname" : "Elmas",
       "age" : 26,
       "birth" : {
-        "date" : "1999-06-06",
-        "place" : "Turin",
-        "country" : "Italy"
+        "date" : "1999-09-24",
+        "place" : "Skopje",
+        "country" : "North Macedonia"
       },
-      "nationality" : "Italy",
-      "height" : "190 cm",
-      "weight" : "86 kg",
+      "nationality" : "North Macedonia",
+      "height" : "184",
+      "weight" : "78",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/31226.png"
+      "photo" : "https://media.api-sports.io/football/players/1358.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1448,97 +1283,24 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 16,
-        "minutes" : 1412,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 956,
-        "key" : 4,
-        "accuracy" : 54
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 13,
-        "interceptions" : 27
-      },
-      "duels" : {
-        "total" : 104,
-        "won" : 68
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
+        "lineups" : 0,
+        "minutes" : 19,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
         "bench" : 2
       },
@@ -1553,9 +1315,9 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 63,
+        "total" : 6,
         "key" : null,
-        "accuracy" : 57
+        "accuracy" : null
       },
       "tackles" : {
         "total" : null,
@@ -1563,11 +1325,11 @@
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 1,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -1587,26 +1349,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 31390,
-      "name" : "P. Mazzocchi",
-      "firstname" : "Pasquale",
-      "lastname" : "Mazzocchi",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-07-27",
-        "place" : "Naples",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "183 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/31390.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 492,
         "name" : "Napoli",
@@ -1618,21 +1361,21 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 6,
-        "minutes" : 605,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.487500",
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.67",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 10,
-        "out" : 3,
-        "bench" : 16
+        "in" : 2,
+        "out" : 1,
+        "bench" : 3
       },
       "shots" : {
         "total" : 1,
@@ -1645,94 +1388,21 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 189,
-        "key" : 5,
+        "total" : 39,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 11,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 58,
-        "won" : 24
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 163,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 91,
-        "key" : 2,
-        "accuracy" : 44
-      },
-      "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 14,
-        "won" : 5
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : 1,
         "success" : 1,
         "past" : null
       },
@@ -1766,8 +1436,8 @@
         "country" : "Ukraine"
       },
       "nationality" : "Italy",
-      "height" : "190 cm",
-      "weight" : "82 kg",
+      "height" : "190",
+      "weight" : "82",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/32172.png"
     },
@@ -1783,13 +1453,13 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 14,
         "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
@@ -1797,248 +1467,10 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 22
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47254,
-      "name" : "M. Olivera",
-      "firstname" : "Mathías",
-      "lastname" : "Olivera Miramontes",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-10-31",
-        "place" : "Montevideo",
-        "country" : "Uruguay"
-      },
-      "nationality" : "Uruguay",
-      "height" : "185 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47254.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 17,
-        "minutes" : 1563,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.120000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 7,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 840,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 48,
-        "blocks" : 7,
-        "interceptions" : 23
-      },
-      "duels" : {
-        "total" : 160,
-        "won" : 91
-      },
-      "dribbles" : {
-        "attempts" : 12,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 17,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
         "on" : null
       },
       "goals" : {
@@ -2048,8 +1480,8 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
-        "key" : 2,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -2085,21 +1517,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 47439,
-      "name" : "S. Lobotka",
-      "firstname" : "Stanislav",
-      "lastname" : "Lobotka",
-      "age" : 31,
+      "id" : 130423,
+      "name" : "B. Gilmour",
+      "firstname" : "Billy Clifford",
+      "lastname" : "Gilmour",
+      "age" : 24,
       "birth" : {
-        "date" : "1994-11-25",
-        "place" : "Trencin",
-        "country" : "Slovakia"
+        "date" : "2001-06-11",
+        "place" : "Irvine",
+        "country" : "Scotland"
       },
-      "nationality" : "Slovakia",
-      "height" : "168 cm",
-      "weight" : "68 kg",
+      "nationality" : "Scotland",
+      "height" : "170",
+      "weight" : "60",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47439.png"
+      "photo" : "https://media.api-sports.io/football/players/130423.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2113,58 +1545,58 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 21,
-        "lineups" : 20,
-        "minutes" : 1791,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 10,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.090476",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 9,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1183,
-        "key" : 11,
-        "accuracy" : 51
+        "total" : 18,
+        "key" : null,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 37,
-        "blocks" : 5,
-        "interceptions" : 18
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 111,
-        "won" : 73
+        "total" : 2,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 7,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 24,
-        "committed" : 16
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2181,54 +1613,146 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 152,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 18,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.450000",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 176,
-        "key" : 5,
-        "accuracy" : 54
+        "total" : 16,
+        "key" : null,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 5
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162032,
+      "name" : "Miguel Gutiérrez",
+      "firstname" : "Miguel",
+      "lastname" : "Gutiérrez Ortega",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-07-27",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "180",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162032.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 81,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : 2,
-        "success" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -2247,190 +1771,6 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 50054,
-      "name" : "S. Scuffet",
-      "firstname" : "Simone",
-      "lastname" : "Scuffet",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-05-31",
-        "place" : "Udine",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "193 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/50054.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.730769",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 23,
-        "assists" : 0,
-        "saves" : 33
-      },
-      "passes" : {
-        "total" : 352,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 130423,
-      "name" : "B. Gilmour",
-      "firstname" : "Billy Clifford",
-      "lastname" : "Gilmour",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-06-11",
-        "place" : "Irvine",
-        "country" : "Scotland"
-      },
-      "nationality" : "Scotland",
-      "height" : "170 cm",
-      "weight" : "60 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/130423.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 14,
-        "lineups" : 5,
-        "minutes" : 412,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.837500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 4,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 313,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 46,
-        "won" : 24
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     }, {
       "team" : {
         "id" : 492,
@@ -2438,26 +1778,26 @@
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.100000",
+        "lineups" : 1,
+        "minutes" : 98,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
-        "bench" : 0
+        "bench" : 3
       },
       "shots" : {
         "total" : 2,
@@ -2470,9 +1810,9 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 146,
-        "key" : 2,
-        "accuracy" : 68
+        "total" : 60,
+        "key" : 4,
+        "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
@@ -2480,8 +1820,8 @@
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 8,
-        "won" : 4
+        "total" : 7,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : 1,
@@ -2490,7 +1830,7 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2507,21 +1847,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 237066,
-      "name" : "Rafa Marín",
-      "firstname" : "Rafael",
-      "lastname" : "Marín Zamora",
-      "age" : 23,
+      "id" : 162907,
+      "name" : "A. Zanoli",
+      "firstname" : "Alessandro",
+      "lastname" : "Zanoli",
+      "age" : 25,
       "birth" : {
-        "date" : "2002-05-19",
-        "place" : "Guadajoz",
-        "country" : "Spain"
+        "date" : "2000-10-03",
+        "place" : "Carpi",
+        "country" : "Italy"
       },
-      "nationality" : "Spain",
-      "height" : "191 cm",
-      "weight" : "83 kg",
+      "nationality" : "Italy",
+      "height" : "188",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/237066.png"
+      "photo" : "https://media.api-sports.io/football/players/162907.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2535,88 +1875,15 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
+        "minutes" : null,
+        "number" : 59,
         "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 25
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 3,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.800000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
@@ -2635,98 +1902,6 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 168,
-        "key" : null,
-        "accuracy" : 78
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 11,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 335102,
-      "name" : "L. Hasa",
-      "firstname" : "Luis",
-      "lastname" : "Hasa",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-06",
-        "place" : "Sora",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "172 cm",
-      "weight" : "60 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/335102.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 492,
-        "name" : "Napoli",
-        "logo" : "https://media.api-sports.io/football/teams/492.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
         "total" : null,
         "key" : null,
         "accuracy" : null
@@ -2764,21 +1939,186 @@
     } ]
   }, {
     "player" : {
-      "id" : 341913,
-      "name" : "F. Gioielli",
-      "firstname" : "Francesco",
-      "lastname" : "Gioielli",
-      "age" : 21,
+      "id" : 199089,
+      "name" : "L. Lucca",
+      "firstname" : "Lorenzo",
+      "lastname" : "Lucca",
+      "age" : 25,
       "birth" : {
-        "date" : "2004-02-26",
-        "place" : null,
+        "date" : "2000-09-10",
+        "place" : "Moncalieri",
         "country" : "Italy"
       },
       "nationality" : "Italy",
-      "height" : "176 cm",
-      "weight" : "70 kg",
+      "height" : "201",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/341913.png"
+      "photo" : "https://media.api-sports.io/football/players/199089.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 4,
+        "number" : 27,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 2,
+        "minutes" : 211,
+        "number" : 27,
+        "position" : "Attacker",
+        "rating" : "6.67",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 35,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 288006,
+      "name" : "R. Højlund",
+      "firstname" : "Rasmus",
+      "lastname" : "Winther Højlund",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-02-04",
+        "place" : "København",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "191",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/288006.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2792,13 +2132,343 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 73,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "8.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 72,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 341912,
+      "name" : "G. Ambrosino",
+      "firstname" : "Giuseppe",
+      "lastname" : "Ambrosino Di Bruttopilo",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-10",
+        "place" : "Procida",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "187",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/341912.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 69,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 15,
+        "number" : 69,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 347395,
+      "name" : "A. Vergara",
+      "firstname" : "Antonio",
+      "lastname" : "Vergara",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-01-16",
+        "place" : "Frattaminore",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "182",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/347395.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 26,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2815,7 +2485,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2853,26 +2523,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386858,
-      "name" : "C. Turi",
-      "firstname" : "Claudio",
-      "lastname" : "Turi",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-06",
-        "place" : "Bari",
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "188 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386858.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 492,
         "name" : "Napoli",
@@ -2884,19 +2535,19 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
+        "minutes" : 1,
+        "number" : 26,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
         "bench" : 6
       },
@@ -2907,11 +2558,11 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 2,
         "key" : null,
         "accuracy" : null
       },
@@ -2943,27 +2594,46 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 355007,
+      "name" : "A. Yazıcı",
+      "firstname" : "Arda",
+      "lastname" : "Yazıcı",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-12-11",
+        "place" : "Bolu",
+        "country" : "Türkiye"
+      },
+      "nationality" : "Türkiye",
+      "height" : "193 cm",
+      "weight" : "84 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/355007.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 492,
         "name" : "Napoli",
         "logo" : "https://media.api-sports.io/football/teams/492.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 25,
         "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
@@ -2971,7 +2641,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -2980,7 +2650,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3016,7 +2686,80 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 492,
+        "name" : "Napoli",
+        "logo" : "https://media.api-sports.io/football/teams/492.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 25,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
       }
     } ]
   } ]

@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "718"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 14,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 755,
-      "name" : "Jaime Seoane",
-      "firstname" : "Jaime",
-      "lastname" : "Seoane Valenciano",
-      "age" : 28,
+      "id" : 885,
+      "name" : "E. Bailly",
+      "firstname" : "Eric Bertrand",
+      "lastname" : "Bailly",
+      "age" : 31,
       "birth" : {
-        "date" : "1997-01-22",
-        "place" : "Madrid",
-        "country" : "Spain"
+        "date" : "1994-04-12",
+        "place" : "Bingerville",
+        "country" : "Côte d'Ivoire"
       },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : "73 kg",
+      "nationality" : "Côte d'Ivoire",
+      "height" : "187",
+      "weight" : "77",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/755.png"
+      "photo" : "https://media.api-sports.io/football/players/885.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,62 +36,62 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 14,
-        "lineups" : 9,
-        "minutes" : 728,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.753846",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 7,
-        "bench" : 6
+        "in" : 0,
+        "out" : 0,
+        "bench" : 5
       },
       "shots" : {
-        "total" : 7,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 293,
-        "key" : 9,
+        "total" : 80,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 15,
-        "blocks" : 1,
+        "total" : 1,
+        "blocks" : 7,
         "interceptions" : 4
       },
       "duels" : {
-        "total" : 74,
-        "won" : 37
+        "total" : 13,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 9,
-        "success" : 5,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 10
+        "drawn" : 1,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -100,79 +100,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -189,8 +116,8 @@
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "168 cm",
-      "weight" : "65 kg",
+      "height" : "168",
+      "weight" : "65",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1695.png"
     },
@@ -201,163 +128,90 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 16,
-        "minutes" : 1268,
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 106,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.236842",
+        "rating" : "6.800000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 14,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 678,
-        "key" : 39,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 23,
-        "blocks" : null,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 104,
-        "won" : 57
-      },
-      "dribbles" : {
-        "attempts" : 26,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 16,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 79,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 3608,
-      "name" : "K. Sibo",
-      "firstname" : "Kwasi",
-      "lastname" : "Sibo",
-      "age" : 27,
+      "id" : 2461,
+      "name" : "S. Rondón",
+      "firstname" : "José Salomón",
+      "lastname" : "Rondón Giménez",
+      "age" : 36,
       "birth" : {
-        "date" : "1998-06-24",
-        "place" : null,
-        "country" : "Ghana"
+        "date" : "1989-09-16",
+        "place" : "Caracas",
+        "country" : "Venezuela"
       },
-      "nationality" : "Ghana",
-      "height" : "182 cm",
-      "weight" : "72 kg",
+      "nationality" : "Venezuela",
+      "height" : "186",
+      "weight" : "86",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3608.png"
+      "photo" : "https://media.api-sports.io/football/players/2461.png"
     },
     "statistics" : [ {
       "team" : {
@@ -366,63 +220,247 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 13,
-        "minutes" : 1262,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 254,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.750000",
+        "position" : "Attacker",
+        "rating" : "6.375000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 8,
-        "bench" : 13
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 6,
+        "total" : 7,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 61,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 22
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 1,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 2762,
+      "name" : "J. Brekalo",
+      "firstname" : "Josip",
+      "lastname" : "Brekalo",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-06-23",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : "175",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2762.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 718,
+        "name" : "Oviedo",
+        "logo" : "https://media.api-sports.io/football/teams/718.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 145,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.375000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 2922,
+      "name" : "L. Dendoncker",
+      "firstname" : "Leander",
+      "lastname" : "Dendoncker",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-04-15",
+        "place" : "Passendale",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "188",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2922.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 718,
+        "name" : "Oviedo",
+        "logo" : "https://media.api-sports.io/football/teams/718.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.175000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
         "on" : 2
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 473,
-        "key" : 8,
+        "total" : 146,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 22,
-        "blocks" : 6,
-        "interceptions" : 16
+        "total" : 10,
+        "blocks" : 4,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 111,
-        "won" : 51
+        "total" : 30,
+        "won" : 17
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 5,
+        "attempts" : 3,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 29
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -432,97 +470,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 76,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 20844,
-      "name" : "H. Hassan",
-      "firstname" : "Haissem",
-      "lastname" : "Hassan",
-      "age" : 23,
+      "id" : 19613,
+      "name" : "O. Ejaria",
+      "firstname" : "Oviemuno Dominic",
+      "lastname" : "Ejaria",
+      "age" : 28,
       "birth" : {
-        "date" : "2002-02-08",
-        "place" : "Bagnolet",
-        "country" : "France"
+        "date" : "1997-11-18",
+        "place" : "London",
+        "country" : "England"
       },
-      "nationality" : "France",
-      "height" : "178 cm",
-      "weight" : "71 kg",
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20844.png"
+      "photo" : "https://media.api-sports.io/football/players/19613.png"
     },
     "statistics" : [ {
       "team" : {
@@ -531,63 +496,63 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 24,
-        "lineups" : 14,
-        "minutes" : 1319,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 80,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.865217",
+        "position" : "Midfielder",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 10,
-        "out" : 10,
-        "bench" : 11
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 20,
-        "on" : 13
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 291,
-        "key" : 28,
+        "total" : 28,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 22,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 4
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 143,
-        "won" : 70
+        "total" : 15,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 61,
-        "success" : 28,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 20,
-        "committed" : 11
+        "drawn" : 3,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -595,79 +560,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 58,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -684,8 +576,8 @@
         "country" : "Argentina"
       },
       "nationality" : "Argentina",
-      "height" : "180 cm",
-      "weight" : "71 kg",
+      "height" : "180",
+      "weight" : "71",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/30927.png"
     },
@@ -696,123 +588,50 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 24,
-        "lineups" : 23,
-        "minutes" : 2025,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 197,
+        "number" : 11,
         "position" : "Midfielder",
-        "rating" : "7.082608",
+        "rating" : "6.93",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
+        "in" : 2,
+        "out" : 1,
+        "bench" : 5
       },
       "shots" : {
-        "total" : 18,
-        "on" : 5
-      },
-      "goals" : {
         "total" : 2,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 876,
-        "key" : 31,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 22,
-        "blocks" : 6,
-        "interceptions" : 17
-      },
-      "duels" : {
-        "total" : 163,
-        "won" : 87
-      },
-      "dribbles" : {
-        "attempts" : 14,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 42,
-        "committed" : 29
-      },
-      "cards" : {
-        "yellow" : 7,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 62,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 115,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
+        "total" : 6,
+        "blocks" : 1,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 22,
+        "won" : 15
       },
       "dribbles" : {
         "attempts" : null,
@@ -820,39 +639,39 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 42754,
-      "name" : "D. Paraschiv",
-      "firstname" : "Daniel George",
-      "lastname" : "Paraschiv",
+      "id" : 41970,
+      "name" : "David Carmo",
+      "firstname" : "David",
+      "lastname" : "Mota Veiga Teixeira Carmo",
       "age" : 26,
       "birth" : {
-        "date" : "1999-04-24",
-        "place" : "Brașov",
-        "country" : "Romania"
+        "date" : "1999-07-19",
+        "place" : "Aveiro",
+        "country" : "Portugal"
       },
-      "nationality" : "Romania",
-      "height" : "185 cm",
-      "weight" : null,
+      "nationality" : "Portugal",
+      "height" : "196",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/42754.png"
+      "photo" : "https://media.api-sports.io/football/players/41970.png"
     },
     "statistics" : [ {
       "team" : {
@@ -861,59 +680,243 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 1,
-        "minutes" : 407,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 102,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.657894",
+        "position" : "Defender",
+        "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 19,
-        "out" : 1,
-        "bench" : 26
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 14,
-        "on" : 6
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 93,
-        "key" : 5,
+        "total" : 51,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
-        "blocks" : 1,
+        "blocks" : 3,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 77,
-        "won" : 32
+        "total" : 11,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 7,
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47429,
+      "name" : "David Costas",
+      "firstname" : "David",
+      "lastname" : "Costas Cordal",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-03-26",
+        "place" : "Redondela",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47429.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 718,
+        "name" : "Oviedo",
+        "logo" : "https://media.api-sports.io/football/teams/718.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 271,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 119,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 5,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 2,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 131548,
+      "name" : "Lucas Ahijado",
+      "firstname" : "Lucas",
+      "lastname" : "Ahijado Quintana",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-01-30",
+        "place" : "Oviedo",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "173",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/131548.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 718,
+        "name" : "Oviedo",
+        "logo" : "https://media.api-sports.io/football/teams/718.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 369,
+        "number" : 24,
+        "position" : "Defender",
+        "rating" : "6.88",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 145,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 20,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 1,
@@ -927,97 +930,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 94,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 46919,
-      "name" : "César de la Hoz",
-      "firstname" : "César",
-      "lastname" : "de la Hoz López",
-      "age" : 33,
+      "id" : 182636,
+      "name" : "Javi López",
+      "firstname" : "Javier",
+      "lastname" : "López Carballo",
+      "age" : 23,
       "birth" : {
-        "date" : "1992-03-30",
-        "place" : "Orejo",
+        "date" : "2002-03-25",
+        "place" : "La Orotava",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "179 cm",
-      "weight" : "74 kg",
+      "height" : "184",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46919.png"
+      "photo" : "https://media.api-sports.io/football/players/182636.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1026,29 +956,29 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 345,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.860000",
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 65,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "5.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1058,18 +988,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 161,
+        "total" : 20,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 11,
-        "blocks" : 1,
-        "interceptions" : 5
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 32,
-        "won" : 20
+        "total" : 6,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -1077,7 +1007,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : 4
       },
       "cards" : {
@@ -1095,865 +1025,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 47262,
-      "name" : "Portillo",
-      "firstname" : "Francisco",
-      "lastname" : "Portillo Soler",
-      "age" : 35,
-      "birth" : {
-        "date" : "1990-06-13",
-        "place" : "Málaga",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "169 cm",
-      "weight" : "60 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47262.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 6,
-        "minutes" : 651,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.833333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 6,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 273,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 65,
-        "won" : 29
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47369,
-      "name" : "Paulino",
-      "firstname" : "Paulino",
-      "lastname" : "de la Fuente Gómez",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-06-27",
-        "place" : "Santander",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "181 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47369.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 3,
-        "minutes" : 417,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.786666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 13,
-        "out" : 3,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 158,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 97,
-        "won" : 48
-      },
-      "dribbles" : {
-        "attempts" : 22,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47491,
-      "name" : "Luismi",
-      "firstname" : "Luis Miguel",
-      "lastname" : "Sánchez Benítez",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-05-05",
-        "place" : "Jérez de la Frontera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47491.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.952631",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 794,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 39,
-        "blocks" : 8,
-        "interceptions" : 25
-      },
-      "duels" : {
-        "total" : 169,
-        "won" : 91
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 23,
-        "committed" : 25
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 51530,
-      "name" : "F. Viñas",
-      "firstname" : "Federico Sebastián",
-      "lastname" : "Viñas Barboza",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-06-30",
-        "place" : "Montevideo",
-        "country" : "Uruguay"
-      },
-      "nationality" : "Uruguay",
-      "height" : "180 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/51530.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 196,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.620000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 34,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 91745,
-      "name" : "Alemão",
-      "firstname" : "Alexandre",
-      "lastname" : "Zurawski",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-04-01",
-        "place" : "Anchieta",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "182 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/91745.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 26,
-        "lineups" : 26,
-        "minutes" : 2089,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.104000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 13,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 50,
-        "on" : 28
-      },
-      "goals" : {
-        "total" : 12,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 355,
-        "key" : 28,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : 3,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 314,
-        "won" : 132
-      },
-      "dribbles" : {
-        "attempts" : 51,
-        "success" : 19,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 36,
-        "committed" : 40
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 104894,
-      "name" : "Sebas Moyano",
-      "firstname" : "Francisco Sebastián",
-      "lastname" : "Moyano Jiménez",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-03-23",
-        "place" : "Villanueva del Duque",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "173 cm",
-      "weight" : "66 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/104894.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 26,
-        "lineups" : 11,
-        "minutes" : 999,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.787500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 15,
-        "out" : 11,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : 17,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 283,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 2,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 148,
-        "won" : 78
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 18,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 32,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 120,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162034,
-      "name" : "Carlos Dotor",
-      "firstname" : "Carlos",
-      "lastname" : "Dotor González",
+      "id" : 184194,
+      "name" : "Álex Forés",
+      "firstname" : "Álex",
+      "lastname" : "Forés Mendoza",
       "age" : 24,
       "birth" : {
-        "date" : "2001-03-15",
-        "place" : "Madrid",
+        "date" : "2001-04-12",
+        "place" : "Real",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "68 kg",
+      "height" : "179",
+      "weight" : "67",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162034.png"
+      "photo" : "https://media.api-sports.io/football/players/184194.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1962,30 +1048,30 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 2,
-        "minutes" : 189,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.720000",
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 103,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.48",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 14
+        "in" : 3,
+        "out" : 1,
+        "bench" : 6
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
@@ -1994,195 +1080,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 94,
+        "total" : 20,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
         "total" : 6,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 27,
-        "won" : 14
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 181474,
-      "name" : "Alberto del Moral",
-      "firstname" : "Alberto",
-      "lastname" : "del Moral Saelices",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-07-20",
-        "place" : "Villacañas",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/181474.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 7,
-        "minutes" : 539,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 5,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 17,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2191,244 +1112,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 266202,
-      "name" : "I. Chaira",
-      "firstname" : "Ilyas",
-      "lastname" : "Chaira",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-02-02",
-        "place" : "Ripoll",
-        "country" : "Spain"
-      },
-      "nationality" : "Morocco",
-      "height" : "179 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/266202.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 22,
-        "minutes" : 1762,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.043478",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 18,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 40,
-        "on" : 18
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 463,
-        "key" : 26,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 37,
-        "blocks" : 7,
-        "interceptions" : 11
-      },
-      "duels" : {
-        "total" : 265,
-        "won" : 115
-      },
-      "dribbles" : {
-        "attempts" : 78,
-        "success" : 29,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 37,
-        "committed" : 36
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 62,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -2445,8 +1128,8 @@
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : "68 kg",
+      "height" : "175",
+      "weight" : "68",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/286564.png"
     },
@@ -2457,183 +1140,18 @@
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 2,
-        "minutes" : 307,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.718181",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 2,
-        "bench" : 25
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 138,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 56,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 120,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 298065,
-      "name" : "Diego Tejón",
-      "firstname" : "Diego",
-      "lastname" : "Tejón Naves",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-01-01",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "172 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/298065.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 27,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2646,263 +1164,6 @@
       "shots" : {
         "total" : null,
         "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 308282,
-      "name" : "Santi Miguélez",
-      "firstname" : "Santiago",
-      "lastname" : "Miguélez Sánchez",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-04-05",
-        "place" : "Oviedo",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "182 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/308282.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 26,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 385396,
-      "name" : "Mascarenhas",
-      "firstname" : "Francisco",
-      "lastname" : "Fumaça Mascarenhas Costa Pesso",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-05-15",
-        "place" : "Cascais",
-        "country" : "Portugal"
-      },
-      "nationality" : "Portugal",
-      "height" : "182 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/385396.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 718,
-        "name" : "Oviedo",
-        "logo" : "https://media.api-sports.io/football/teams/718.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 0,
-        "minutes" : 87,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.840000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 0,
-        "bench" : 18
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 5
       },
       "goals" : {
         "total" : 0,
@@ -2911,27 +1172,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 35,
-        "key" : 2,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 56,
-        "won" : 23
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 6
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -2941,37 +1202,56 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 1,
+        "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 438123,
+      "name" : "Lamine Gueye",
+      "firstname" : "Mouhamed Lamine",
+      "lastname" : "Gueye",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-09-15",
+        "place" : null,
+        "country" : "Senegal"
+      },
+      "nationality" : "Senegal",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/438123.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 718,
         "name" : "Oviedo",
         "logo" : "https://media.api-sports.io/football/teams/718.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 58,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 28,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
         "total" : null,
@@ -2979,8 +1259,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3014,8 +1294,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

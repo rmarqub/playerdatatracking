@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "1347"
   },
@@ -9,9 +9,101 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
+    "player" : {
+      "id" : 17513,
+      "name" : "J. Smith",
+      "firstname" : "Jonathan Gary",
+      "lastname" : "Smith",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-07-27",
+        "place" : "Liverpool",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "178",
+      "weight" : "64",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/17513.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 69,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 10,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
     "player" : {
       "id" : 17884,
       "name" : "G. Morris",
@@ -24,8 +116,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "70 kg",
+      "height" : "183",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/17884.png"
     },
@@ -41,161 +133,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 21,
-        "lineups" : 20,
-        "minutes" : 1826,
-        "number" : null,
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 990,
+        "number" : 1,
         "position" : "Goalkeeper",
-        "rating" : "6.904761",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 24,
-        "assists" : 0,
-        "saves" : 52
-      },
-      "passes" : {
-        "total" : 682,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 15
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "rating" : "6.96",
         "captain" : false
       },
       "substitutes" : {
@@ -209,809 +155,22 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 10,
+        "assists" : 1,
+        "saves" : 25
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 3,
-        "assists" : 0,
-        "saves" : 6
-      },
-      "passes" : {
-        "total" : 36,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19685,
-      "name" : "J. Turner",
-      "firstname" : "Jake Edward",
-      "lastname" : "Turner",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-25",
-        "place" : "Wilmslow",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "194 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19685.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 766,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 8,
-        "assists" : 0,
-        "saves" : 16
-      },
-      "passes" : {
-        "total" : 317,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19832,
-      "name" : "G. Lapslie",
-      "firstname" : "George Robert",
-      "lastname" : "Lapslie",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-09-05",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19832.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 8,
-        "minutes" : 741,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 7,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : 1,
+        "total" : 385,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 13,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 3,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20326,
-      "name" : "T. Dieng",
-      "firstname" : "Sony Thimotée",
-      "lastname" : "Dieng",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-04-09",
-        "place" : "Grenoble",
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "189 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20326.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 8,
-        "minutes" : 640,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 8,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 14,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 8,
+        "total" : 10,
         "won" : 6
       },
       "dribbles" : {
@@ -1020,1017 +179,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 4,
         "committed" : 1
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 70,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37115,
-      "name" : "M. Clark",
-      "firstname" : "Max Oliver",
-      "lastname" : "Clark",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-01-19",
-        "place" : "Kingston upon Hull",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37115.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 22,
-        "minutes" : 1895,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.969565",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 4,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 942,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 59,
-        "blocks" : 10,
-        "interceptions" : 21
-      },
-      "duels" : {
-        "total" : 253,
-        "won" : 143
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 21,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 20,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.150000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 110,
-        "key" : 4,
-        "accuracy" : 44
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 20,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 127109,
-      "name" : "R. Hutton",
-      "firstname" : "Remeao Andrew",
-      "lastname" : "Hutton",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-28",
-        "place" : "Walsall",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/127109.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 27,
-        "lineups" : 23,
-        "minutes" : 2179,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.807407",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 826,
-        "key" : 33,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 34,
-        "blocks" : 3,
-        "interceptions" : 19
-      },
-      "duels" : {
-        "total" : 154,
-        "won" : 73
-      },
-      "dribbles" : {
-        "attempts" : 43,
-        "success" : 19,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 92,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 59,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 129705,
-      "name" : "L. Ashby-Hammond",
-      "firstname" : "Luca",
-      "lastname" : "Ashby-Hammond",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-03-25",
-        "place" : "Kingston upon Thames",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "191 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129705.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 1,
-        "assists" : 0,
-        "saves" : 1
-      },
-      "passes" : {
-        "total" : 11,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.333333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 6,
-        "assists" : 0,
-        "saves" : 15
-      },
-      "passes" : {
-        "total" : 116,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2048,18 +201,18 @@
         "logo" : "https://media.api-sports.io/football/teams/1347.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 1,
         "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
@@ -2075,8 +228,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2110,28 +263,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 144708,
-      "name" : "D. Jefferies",
-      "firstname" : "Dominic",
-      "lastname" : "Jefferies",
-      "age" : 23,
+      "id" : 18071,
+      "name" : "S. Ogie",
+      "firstname" : "Shadrach Nosa",
+      "lastname" : "Ogie",
+      "age" : 24,
       "birth" : {
-        "date" : "2002-05-22",
-        "place" : null,
-        "country" : "Wales"
+        "date" : "2001-08-26",
+        "place" : "Limerick",
+        "country" : "Republic of Ireland"
       },
-      "nationality" : "Wales",
-      "height" : "179 cm",
-      "weight" : null,
+      "nationality" : "Republic of Ireland",
+      "height" : "183",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/144708.png"
+      "photo" : "https://media.api-sports.io/football/players/18071.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2145,19 +298,19 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 180,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "7.600000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
@@ -2167,8 +320,484 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 74,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 42,
+        "won" : 33
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 53,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19416,
+      "name" : "R. McKenzie",
+      "firstname" : "Robbie",
+      "lastname" : "McKenzie",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-25",
+        "place" : "Kingston upon Hull",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "184",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19416.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 968,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "6.81",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 226,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 5,
+        "interceptions" : 15
+      },
+      "duels" : {
+        "total" : 104,
+        "won" : 60
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 44,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 10,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19477,
+      "name" : "B. Dack",
+      "firstname" : "Bradley Paul",
+      "lastname" : "Dack",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-12-31",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19477.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 8,
+        "minutes" : 579,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "6.83",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 8,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 151,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 51,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2195,35 +824,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 284253,
-      "name" : "D. Corness",
-      "firstname" : "Dominic",
-      "lastname" : "Corness",
-      "age" : 22,
+      "id" : 19685,
+      "name" : "J. Turner",
+      "firstname" : "Jake Edward",
+      "lastname" : "Turner",
+      "age" : 26,
       "birth" : {
-        "date" : "2003-05-05",
-        "place" : null,
+        "date" : "1999-02-25",
+        "place" : "Wilmslow",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "174 cm",
-      "weight" : "62 kg",
+      "height" : "194",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284253.png"
+      "photo" : "https://media.api-sports.io/football/players/19685.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2237,21 +866,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 87,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.250000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 25,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
+        "in" : 0,
+        "out" : 0,
+        "bench" : 11
       },
       "shots" : {
         "total" : null,
@@ -2264,187 +893,22 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 28,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 12,
-        "won" : 4
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
         "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 294753,
-      "name" : "J. Wakeling",
-      "firstname" : "Jacob",
-      "lastname" : "Wakeling",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-15",
-        "place" : "Redditch",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/294753.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 5,
-        "minutes" : 482,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.650000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 5,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 78,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 70,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 12,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2475,25 +939,263 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
+        "appearences" : 2,
+        "lineups" : 2,
         "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "number" : 25,
+        "position" : "Goalkeeper",
+        "rating" : "7.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 25,
+        "position" : "Goalkeeper",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 1
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 37115,
+      "name" : "M. Clark",
+      "firstname" : "Max Oliver",
+      "lastname" : "Clark",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-01-19",
+        "place" : "Kingston upon Hull",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "180",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/37115.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 155,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 3,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 43,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 83,
+        "number" : 3,
+        "position" : "Midfielder",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
       },
       "shots" : {
         "total" : 2,
-        "on" : 1
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -2502,8 +1204,503 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 30,
+        "total" : 18,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 3,
+        "position" : "Midfielder",
+        "rating" : "8.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 49,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 90496,
+      "name" : "C. Masterson",
+      "firstname" : "Conor Ciaran",
+      "lastname" : "Masterson",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-08",
+        "place" : "Dublin",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "185",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/90496.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 153,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
         "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 106737,
+      "name" : "A. Little",
+      "firstname" : "Armani George",
+      "lastname" : "Little",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-04-05",
+        "place" : "Portsmouth",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "63",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/106737.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 537,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.183333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 231,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 70,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 2,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 127109,
+      "name" : "R. Hutton",
+      "firstname" : "Remeao Andrew",
+      "lastname" : "Hutton",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-28",
+        "place" : "Walsall",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/127109.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 596,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.100000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 156,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 2,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 63,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
@@ -2512,16 +1709,16 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 9,
-        "won" : 5
+        "total" : 6,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : 1
       },
       "cards" : {
@@ -2543,20 +1740,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1347.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 97,
+        "number" : 2,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
@@ -2570,32 +1767,32 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 21,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 6,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2605,28 +1802,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 321669,
-      "name" : "E. Nevitt",
-      "firstname" : "Elliott Lloyd",
-      "lastname" : "Nevitt",
-      "age" : 29,
+      "id" : 138920,
+      "name" : "N. Khumbeni",
+      "firstname" : "Nelson",
+      "lastname" : "Khumbeni",
+      "age" : 23,
       "birth" : {
-        "date" : "1996-03-25",
-        "place" : "Liverpool",
+        "date" : "2002-10-14",
+        "place" : "Lilongwe",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
+      "height" : "171",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/321669.png"
+      "photo" : "https://media.api-sports.io/football/players/138920.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2640,118 +1837,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 18,
-        "minutes" : 1540,
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 39,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
+        "position" : "Midfielder",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 12,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 21,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 314,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : 4,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 378,
-        "won" : 148
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 24,
-        "committed" : 31
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 8,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -2764,14 +1888,14 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -2786,53 +1910,53 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.900000",
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 64,
+        "number" : 27,
+        "position" : "Midfielder",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 7,
-        "key" : 1,
+        "total" : 8,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 8,
-        "won" : 7
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
-        "success" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
@@ -2854,25 +1978,25 @@
         "logo" : "https://media.api-sports.io/football/teams/1347.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 66,
+        "number" : 27,
+        "position" : "Midfielder",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
@@ -2881,13 +2005,13 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 18,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -2896,8 +2020,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 5,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -2906,99 +2030,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 330982,
-      "name" : "J. Morgan",
-      "firstname" : "Jimmy Jay",
-      "lastname" : "Morgan",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-01-21",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/330982.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 157,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 28,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 28,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 5
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
@@ -3015,13 +2047,13 @@
     } ]
   }, {
     "player" : {
-      "id" : 345273,
-      "name" : "Nathan Harvey",
-      "firstname" : "Nathan",
-      "lastname" : "Harvey",
-      "age" : 23,
+      "id" : 284329,
+      "name" : "Lenni Rae Cirino",
+      "firstname" : "Lenni Rae",
+      "lastname" : "Cirino",
+      "age" : 22,
       "birth" : {
-        "date" : "2002-07-08",
+        "date" : "2003-01-25",
         "place" : null,
         "country" : "England"
       },
@@ -3029,7 +2061,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/345273.png"
+      "photo" : "https://media.api-sports.io/football/players/284329.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3043,30 +2075,176 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 139,
         "number" : null,
-        "position" : "Goalkeeper",
+        "position" : "Defender",
+        "rating" : "7.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 15,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 19,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 87,
+        "number" : 32,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 1,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 32,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3093,15 +2271,180 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 334597,
+      "name" : "A. Smith",
+      "firstname" : "Andrew John",
+      "lastname" : "Smith",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-09-11",
+        "place" : "Banbury",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "192",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/334597.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 900,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "6.67",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 236,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : 6,
+        "interceptions" : 15
+      },
+      "duels" : {
+        "total" : 95,
+        "won" : 52
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 27,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3118,7 +2461,7 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
+      "height" : "180",
       "weight" : null,
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/346138.png"
@@ -3135,25 +2478,25 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 8,
-        "minutes" : 820,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 174,
+        "number" : 17,
         "position" : "Attacker",
-        "rating" : "6.585000",
+        "rating" : "6.65",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
-        "out" : 5,
-        "bench" : 16
+        "in" : 2,
+        "out" : 2,
+        "bench" : 3
       },
       "shots" : {
-        "total" : 11,
-        "on" : 5
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
         "total" : 1,
@@ -3162,27 +2505,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 195,
-        "key" : 6,
+        "total" : 23,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 10,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : 4
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 194,
-        "won" : 71
+        "total" : 43,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 31,
-        "success" : 10,
+        "attempts" : 9,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 25,
-        "committed" : 23
+        "drawn" : 5,
+        "committed" : 6
       },
       "cards" : {
         "yellow" : 2,
@@ -3203,166 +2546,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1347.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 220,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.833333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 59,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 41,
-        "won" : 20
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 66,
-        "number" : null,
+        "minutes" : 74,
+        "number" : 17,
         "position" : "Attacker",
-        "rating" : "6.200000",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
@@ -3372,7 +2569,7 @@
       },
       "shots" : {
         "total" : 1,
-        "on" : null
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -3381,26 +2578,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 11,
+        "total" : 16,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 11,
-        "won" : 4
+        "total" : 17,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 3,
         "committed" : 1
       },
       "cards" : {
@@ -3418,23 +2615,96 @@
     } ]
   }, {
     "player" : {
-      "id" : 349756,
-      "name" : "T. Holtam",
-      "firstname" : "Taite",
-      "lastname" : "Holtam",
-      "age" : 20,
+      "id" : 346524,
+      "name" : "S. Gale",
+      "firstname" : "Sam",
+      "lastname" : "Gale",
+      "age" : 21,
       "birth" : {
-        "date" : "2005-02-14",
+        "date" : "2004-10-01",
         "place" : null,
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
-      "weight" : null,
+      "height" : "187",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/349756.png"
+      "photo" : "https://media.api-sports.io/football/players/346524.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 9,
+        "minutes" : 848,
+        "number" : 30,
+        "position" : "Midfielder",
+        "rating" : "6.93",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 298,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 22,
+        "blocks" : 3,
+        "interceptions" : 19
+      },
+      "duels" : {
+        "total" : 120,
+        "won" : 74
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 1347,
         "name" : "Gillingham",
@@ -3446,15 +2716,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 30,
+        "position" : "Defender",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
@@ -3463,110 +2733,37 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 40,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 14,
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -3578,172 +2775,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 1
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 354529,
-      "name" : "J. Chambers",
-      "firstname" : "Josh",
-      "lastname" : "Chambers",
-      "age" : 21,
+      "id" : 348143,
+      "name" : "E. Williams",
+      "firstname" : "Euan",
+      "lastname" : "Williams",
+      "age" : 22,
       "birth" : {
-        "date" : "2003-11-13",
+        "date" : "2003-01-15",
         "place" : null,
         "country" : "England"
       },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "Northern Ireland",
+      "height" : "171",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/354529.png"
+      "photo" : "https://media.api-sports.io/football/players/348143.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3757,7 +2808,80 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -3821,21 +2945,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 377111,
-      "name" : "M. MacArthur",
-      "firstname" : "Matthew",
-      "lastname" : "MacArthur",
-      "age" : 21,
+      "id" : 351341,
+      "name" : "Travis Akomeah",
+      "firstname" : "Travis",
+      "lastname" : "Akomeah",
+      "age" : 19,
       "birth" : {
-        "date" : "2004-09-24",
+        "date" : "2006-01-06",
         "place" : null,
-        "country" : "Australia"
+        "country" : "England"
       },
-      "nationality" : "Australia",
+      "nationality" : "England",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/377111.png"
+      "photo" : "https://media.api-sports.io/football/players/351341.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3849,21 +2973,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 15,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -3871,8 +2995,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3906,8 +3030,246 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 5,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 379046,
+      "name" : "S. Palmer-Houlden",
+      "firstname" : "Sebastian",
+      "lastname" : "Palmer-Houlden",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-05-12",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/379046.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 63,
+        "number" : 12,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 34,
+        "lineups" : 22,
+        "minutes" : 1720,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.639393",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 12,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 29,
+        "on" : 16
+      },
+      "goals" : {
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 313,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 3,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 345,
+        "won" : 117
+      },
+      "dribbles" : {
+        "attempts" : 22,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 23
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3941,118 +3303,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 7,
-        "minutes" : 587,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 0,
+        "minutes" : 47,
+        "number" : 18,
         "position" : "Attacker",
-        "rating" : "6.541666",
+        "rating" : "6.78",
         "captain" : false
       },
       "substitutes" : {
         "in" : 5,
-        "out" : 5,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 99,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 108,
-        "won" : 26
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
         "out" : 0,
-        "bench" : 1
+        "bench" : 7
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
+        "total" : 15,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 2
+        "total" : 9,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -4087,35 +3376,35 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 134,
-        "number" : null,
+        "lineups" : 2,
+        "minutes" : 64,
+        "number" : 18,
         "position" : "Attacker",
-        "rating" : "6.950000",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 1
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 16,
-        "key" : 2,
+        "total" : 7,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -4124,12 +3413,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 16,
-        "won" : 3
+        "total" : 10,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
@@ -4155,218 +3444,53 @@
         "logo" : "https://media.api-sports.io/football/teams/1347.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 459367,
-      "name" : "Joshua Bayliss",
-      "firstname" : "Joshua",
-      "lastname" : "Bayliss",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459367.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 74,
+        "number" : 18,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 8,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 13,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 3,
         "success" : null,
         "past" : null
       },
@@ -4382,174 +3506,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 499632,
-      "name" : "Stan Sargent",
-      "firstname" : "Stan",
-      "lastname" : "Sargent",
+      "id" : 459228,
+      "name" : "C. Beszant",
+      "firstname" : null,
+      "lastname" : null,
       "age" : null,
       "birth" : {
         "date" : null,
         "place" : null,
-        "country" : "England"
+        "country" : null
       },
-      "nationality" : "England",
+      "nationality" : null,
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/499632.png"
+      "photo" : "https://media.api-sports.io/football/players/459228.png"
     },
     "statistics" : [ {
       "team" : {
@@ -4563,88 +3541,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1347,
-        "name" : "Gillingham",
-        "logo" : "https://media.api-sports.io/football/teams/1347.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 4,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "minutes" : 24,
+        "number" : 33,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
@@ -4673,8 +3578,154 @@
         "interceptions" : null
       },
       "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 33,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : 1,
-        "won" : 1
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1347,
+        "name" : "Gillingham",
+        "logo" : "https://media.api-sports.io/football/teams/1347.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 33,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,

@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "63"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 533,
-      "name" : "R. Kristensen",
-      "firstname" : "Rasmus",
-      "lastname" : "Nissen Kristensen",
-      "age" : 28,
+      "id" : 250,
+      "name" : "J. Piroe",
+      "firstname" : "Joël Mohammed",
+      "lastname" : "Ramzan Piroe",
+      "age" : 26,
       "birth" : {
-        "date" : "1997-07-11",
-        "place" : "Brande",
-        "country" : "Denmark"
+        "date" : "1999-08-02",
+        "place" : "Wijchen",
+        "country" : "Netherlands"
       },
-      "nationality" : "Denmark",
-      "height" : "187 cm",
-      "weight" : "70 kg",
+      "nationality" : "Netherlands",
+      "height" : "181",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/533.png"
+      "photo" : "https://media.api-sports.io/football/players/250.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,39 +36,39 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 136,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Attacker",
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 28,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 11,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -88,110 +88,91 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19118,
-      "name" : "L. Cooper",
-      "firstname" : "Liam David Ian",
-      "lastname" : "Cooper",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-08-30",
-        "place" : "Kingston upon Hull",
-        "country" : "England"
-      },
-      "nationality" : "Scotland",
-      "height" : "186 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19118.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 136,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -206,15 +187,253 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 833,
+      "name" : "J. Bijol",
+      "firstname" : "Jaka",
+      "lastname" : "Bijol",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-02-05",
+        "place" : "Vuzenica",
+        "country" : "Slovenia"
+      },
+      "nationality" : "Slovenia",
+      "height" : "190",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/833.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
         "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 35,
+        "lineups" : 34,
+        "minutes" : 2732,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.031250",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 17,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1374,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 39,
+        "blocks" : 25,
+        "interceptions" : 29
+      },
+      "duels" : {
+        "total" : 228,
+        "won" : 135
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 29
+      },
+      "cards" : {
+        "yellow" : 10,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7.5",
         "captain" : false
       },
       "substitutes" : {
@@ -228,12 +447,415 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 110,
+        "key" : null,
+        "accuracy" : 102
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 1408,
+      "name" : "S. Bornauw",
+      "firstname" : "Sebastiaan",
+      "lastname" : "Bornauw",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-03-22",
+        "place" : "Wemmel",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "191",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/1408.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
       "passes" : {
         "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 99,
+        "key" : null,
+        "accuracy" : 94
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18885,
+      "name" : "K. Darlow",
+      "firstname" : "Karl",
+      "lastname" : "Darlow",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-10-08",
+        "place" : "Northampton",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "190",
+      "weight" : "88",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18885.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 180,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 8
+      },
+      "passes" : {
+        "total" : 69,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 180,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 8
+      },
+      "passes" : {
+        "total" : 69,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 26,
+        "position" : "Goalkeeper",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 2
+      },
+      "passes" : {
+        "total" : 20,
         "key" : null,
         "accuracy" : null
       },
@@ -263,8 +885,173 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18901,
+      "name" : "S. Longstaff",
+      "firstname" : "Sean David",
+      "lastname" : "Longstaff",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-10-30",
+        "place" : "Newcastle upon Tyne",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "180",
+      "weight" : "65",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18901.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 297,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 107,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 41,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 76,
+        "key" : 1,
+        "accuracy" : 72
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -281,8 +1068,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "70 kg",
+      "height" : "175",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19128.png"
     },
@@ -293,394 +1080,26 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 6,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 131,
+        "number" : 20,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.62",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 6,
         "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19131,
-      "name" : "J. Shackleton",
-      "firstname" : "Jamie Stuart",
-      "lastname" : "Shackleton",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-10-08",
-        "place" : "Leeds",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "168 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19131.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37724,
-      "name" : "C. Summerville",
-      "firstname" : "Crysencio Jilbert Sylverio Cir",
-      "lastname" : "Summerville",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-10-30",
-        "place" : "Rotterdam",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Netherlands",
-      "height" : "174 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37724.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47302,
-      "name" : "Diego Llorente",
-      "firstname" : "Diego Javier",
-      "lastname" : "Llorente Ríos",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-08-16",
-        "place" : "Madrid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47302.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 90590,
-      "name" : "G. Rutter",
-      "firstname" : "Georginio",
-      "lastname" : "Rutter",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-04-20",
-        "place" : "Vannes",
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "182 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/90590.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "bench" : 7
       },
       "shots" : {
         "total" : 2,
@@ -689,31 +1108,31 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 20,
-        "key" : 3,
+        "total" : 52,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 26,
-        "won" : 11
+        "total" : 15,
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : 9,
+        "attempts" : 4,
         "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
-        "committed" : 2
+        "drawn" : 3,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -739,24 +1158,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 27,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 20,
+        "position" : "Defender",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -766,21 +1185,21 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 82,
+        "key" : 3,
+        "accuracy" : 75
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -803,21 +1222,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 131278,
-      "name" : "C. Allen",
-      "firstname" : "Charlie Steven",
-      "lastname" : "Allen",
-      "age" : 22,
+      "id" : 19287,
+      "name" : "S. Byram",
+      "firstname" : "Samuel Mark",
+      "lastname" : "Byram",
+      "age" : 32,
       "birth" : {
-        "date" : "2003-11-22",
-        "place" : null,
-        "country" : "Northern Ireland"
+        "date" : "1993-09-16",
+        "place" : "Thurrock",
+        "country" : "England"
       },
-      "nationality" : "Northern Ireland",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "England",
+      "height" : "180",
+      "weight" : "72",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/131278.png"
+      "photo" : "https://media.api-sports.io/football/players/19287.png"
     },
     "statistics" : [ {
       "team" : {
@@ -826,35 +1245,273 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 8,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 71,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
+        "key" : 4,
+        "accuracy" : 50
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19321,
+      "name" : "J. Rodon",
+      "firstname" : "Joseph Peter",
+      "lastname" : "Rodon",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-10-22",
+        "place" : "Swansea",
+        "country" : "Wales"
+      },
+      "nationality" : "Wales",
+      "height" : "193",
+      "weight" : "88",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19321.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "6.96",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 338,
+        "key" : null,
+        "accuracy" : 43
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 4,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 58,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -881,35 +1538,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 138776,
-      "name" : "L. Ramazani",
-      "firstname" : "Largie",
-      "lastname" : "Ramazani",
-      "age" : 24,
+      "id" : 19329,
+      "name" : "D. James",
+      "firstname" : "Daniel Owen",
+      "lastname" : "James",
+      "age" : 28,
       "birth" : {
-        "date" : "2001-02-27",
-        "place" : null,
-        "country" : "Belgium"
+        "date" : "1997-11-10",
+        "place" : "Kingston upon Hull",
+        "country" : "England"
       },
-      "nationality" : "Belgium",
-      "height" : "167 cm",
-      "weight" : "55 kg",
+      "nationality" : "Wales",
+      "height" : "171",
+      "weight" : "63",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/138776.png"
+      "photo" : "https://media.api-sports.io/football/players/19329.png"
     },
     "statistics" : [ {
       "team" : {
@@ -918,59 +1575,646 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 7,
-        "minutes" : 692,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.809523",
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 216,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.73",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 15,
-        "out" : 7,
-        "bench" : 19
+        "in" : 1,
+        "out" : 3,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 23,
-        "on" : 13
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 211,
-        "key" : 12,
+        "total" : 38,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 20,
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 5,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19461,
+      "name" : "L. Nmecha",
+      "firstname" : "Lukas Okechukwu",
+      "lastname" : "Nmecha",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-12-14",
+        "place" : "Hamburg",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "185",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19461.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 138,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.650000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 138,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.650000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 58,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19760,
+      "name" : "J. Justin",
+      "firstname" : "James Michael",
+      "lastname" : "Justin",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-02-23",
+        "place" : "Luton",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19760.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 22,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20619,
+      "name" : "I. Meslier",
+      "firstname" : "Illan Stéphane",
+      "lastname" : "Meslier",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-03-02",
+        "place" : "Lorient",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "197",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20619.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 16,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 48389,
+      "name" : "N. Okafor",
+      "firstname" : "Noah Arinzechukwu",
+      "lastname" : "Okafor",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-24",
+        "place" : "Binningen",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Switzerland",
+      "height" : "185",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/48389.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 309,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.88",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 4,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 66,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
         "blocks" : null,
         "interceptions" : 3
       },
       "duels" : {
-        "total" : 120,
-        "won" : 46
+        "total" : 57,
+        "won" : 23
       },
       "dribbles" : {
-        "attempts" : 36,
-        "success" : 15,
+        "attempts" : 25,
+        "success" : 11,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 15
+        "drawn" : 5,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 2,
@@ -991,62 +2235,62 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 84,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 3
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : null,
+        "total" : 33,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 5
+        "total" : 16,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : null,
+        "attempts" : 8,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1060,21 +2304,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 153400,
-      "name" : "S. Greenwood",
-      "firstname" : "Sam",
-      "lastname" : "Greenwood",
-      "age" : 23,
+      "id" : 50739,
+      "name" : "B. Aaronson",
+      "firstname" : "Brenden Russell",
+      "lastname" : "Aaronson",
+      "age" : 25,
       "birth" : {
-        "date" : "2002-01-26",
-        "place" : null,
-        "country" : "England"
+        "date" : "2000-10-22",
+        "place" : "Medford",
+        "country" : "USA"
       },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "70 kg",
+      "nationality" : "USA",
+      "height" : "177",
+      "weight" : "68",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/153400.png"
+      "photo" : "https://media.api-sports.io/football/players/50739.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1083,12 +2327,488 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 4,
+        "minutes" : 399,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.89",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 4,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 97,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 65,
+        "won" : 33
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 13,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 58,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 26,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129142,
+      "name" : "I. Gruev",
+      "firstname" : "Ilia",
+      "lastname" : "Iliev Gruev",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-06",
+        "place" : "Sofia",
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : "185",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129142.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 194,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.566666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 98,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 194,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.566666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 98,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 71,
+        "number" : 44,
+        "position" : "Midfielder",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 58,
+        "key" : null,
+        "accuracy" : 54
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 177665,
+      "name" : "A. Stach",
+      "firstname" : "Anton Levi",
+      "lastname" : "Stach",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-11-15",
+        "place" : "Buchholz in der Nordheide",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "193",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/177665.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 607,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.84",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 247,
+        "key" : 14,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 14,
+        "blocks" : 2,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -1149,98 +2869,6 @@
         "missed" : null,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162128,
-      "name" : "W. Gnonto",
-      "firstname" : "Degnand Wilfried",
-      "lastname" : "Gnonto",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-11-05",
-        "place" : null,
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "172 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162128.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 30,
-        "lineups" : 20,
-        "minutes" : 1723,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.070000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 18,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 31,
-        "on" : 21
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 5,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 688,
-        "key" : 38,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 15,
-        "blocks" : null,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 236,
-        "won" : 112
-      },
-      "dribbles" : {
-        "attempts" : 70,
-        "success" : 35,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 50,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     }, {
       "team" : {
         "id" : 63,
@@ -1253,15 +2881,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 27,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "minutes" : 25,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "7.3",
         "captain" : false
       },
       "substitutes" : {
@@ -1280,973 +2908,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 13,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 170,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 29,
+        "total" : 21,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
         "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 196855,
-      "name" : "J. Anthony",
-      "firstname" : "Jaidon Kya Denley",
-      "lastname" : "Anthony",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-12-01",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/196855.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 278235,
-      "name" : "K. Moore",
-      "firstname" : "Kristan Richard",
-      "lastname" : "Moore",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-11-13",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278235.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 278240,
-      "name" : "H. Christy",
-      "firstname" : "Harry Thomas",
-      "lastname" : "Christy",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-10-31",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278240.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 278392,
-      "name" : "C. Cresswell",
-      "firstname" : "Charlie Richard",
-      "lastname" : "Cresswell",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-08-17",
-        "place" : "Preston",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278392.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 282124,
-      "name" : "D. Gyabi",
-      "firstname" : "Darko Boateng",
-      "lastname" : "Gyabi",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-02-18",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "196 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/282124.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284408,
-      "name" : "S. Perkins",
-      "firstname" : "Sonny",
-      "lastname" : "Tufail Perkins",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-02-10",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284408.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 313059,
-      "name" : "M. Joseph",
-      "firstname" : "Mateo",
-      "lastname" : "Joseph Fernández-Regatillo",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-19",
-        "place" : "Santander",
-        "country" : "Spain"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/313059.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 32,
-        "lineups" : 11,
-        "minutes" : 1174,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.676666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 21,
-        "out" : 10,
-        "bench" : 22
-      },
-      "shots" : {
-        "total" : 28,
-        "on" : 16
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 234,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 173,
-        "won" : 48
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 17,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 328089,
-      "name" : "A. Gray",
-      "firstname" : "Archie James Francis",
-      "lastname" : "Gray",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-03-12",
-        "place" : "Durham",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/328089.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -2258,15 +2931,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2283,8 +2956,8 @@
         "country" : "Wales"
       },
       "nationality" : "Wales",
-      "height" : "185 cm",
-      "weight" : "70 kg",
+      "height" : "185",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/345435.png"
     },
@@ -2295,30 +2968,452 @@
         "logo" : "https://media.api-sports.io/football/teams/63.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 4,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.700000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 16
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 39,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : 1,
-        "on" : 1
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 39,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 365986,
+      "name" : "R. Chadwick-Chaplin",
+      "firstname" : "Reece",
+      "lastname" : "Chadwick",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-02-19",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/365986.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 443634,
+      "name" : "H. Gray",
+      "firstname" : "Harry",
+      "lastname" : "Gray",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-10-08",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/443634.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 444291,
+      "name" : "Harry Gray",
+      "firstname" : "Harry",
+      "lastname" : "Gray",
+      "age" : null,
+      "birth" : {
+        "date" : null,
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/444291.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 63,
+        "name" : "Leeds",
+        "logo" : "https://media.api-sports.io/football/teams/63.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 45,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -2327,7 +3422,7 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -2373,87 +3468,14 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 63,
-        "name" : "Leeds",
-        "logo" : "https://media.api-sports.io/football/teams/63.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 45,
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
@@ -2469,7 +3491,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {

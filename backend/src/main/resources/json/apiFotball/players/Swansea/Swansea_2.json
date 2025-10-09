@@ -1,109 +1,17 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "76"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 11,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
-    "player" : {
-      "id" : 1411,
-      "name" : "H. Delcroix",
-      "firstname" : "Hannes",
-      "lastname" : "Delcroix",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-28",
-        "place" : "Grande Hatte",
-        "country" : "Haiti"
-      },
-      "nationality" : "Belgium",
-      "height" : "185 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1411.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 5,
-        "minutes" : 450,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
     "player" : {
       "id" : 2549,
       "name" : "L. Vigouroux",
@@ -116,8 +24,8 @@
         "country" : "England"
       },
       "nationality" : "Chile",
-      "height" : "194 cm",
-      "weight" : "77 kg",
+      "height" : "194",
+      "weight" : "77",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/2549.png"
     },
@@ -133,107 +41,34 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 33,
-        "lineups" : 33,
-        "minutes" : 2970,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
         "number" : null,
         "position" : "Goalkeeper",
-        "rating" : "6.842424",
+        "rating" : "7.183333",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 46,
-        "assists" : 0,
-        "saves" : 80
-      },
-      "passes" : {
-        "total" : 1415,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 12
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 2,
+        "conceded" : 5,
         "assists" : 0,
-        "saves" : 2
+        "saves" : 15
       },
       "passes" : {
-        "total" : 76,
+        "total" : 200,
         "key" : null,
         "accuracy" : null
       },
@@ -243,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
@@ -257,7 +92,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -274,18 +109,110 @@
         "logo" : "https://media.api-sports.io/football/teams/76.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 44,
+        "lineups" : 44,
+        "minutes" : 3960,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.961363",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 33,
+        "assists" : null,
+        "saves" : 93
+      },
+      "passes" : {
+        "total" : 1509,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 19,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 17623,
+      "name" : "P. Farman",
+      "firstname" : "Paul David",
+      "lastname" : "Farman",
+      "age" : 36,
+      "birth" : {
+        "date" : "1989-11-02",
+        "place" : "North Shields",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "196",
+      "weight" : "92",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/17623.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 76,
+        "name" : "Swansea",
+        "logo" : "https://media.api-sports.io/football/teams/76.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 29,
         "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
@@ -293,245 +220,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 17606,
-      "name" : "J. Key",
-      "firstname" : "Joshua Myles Abraham",
-      "lastname" : "Key",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-11-19",
-        "place" : "Exeter",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/17606.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 32,
-        "lineups" : 26,
-        "minutes" : 2328,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.703225",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 6,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1324,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 38,
-        "blocks" : 9,
-        "interceptions" : 22
-      },
-      "duels" : {
-        "total" : 284,
-        "won" : 121
-      },
-      "dribbles" : {
-        "attempts" : 84,
-        "success" : 42,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 27,
-        "committed" : 22
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 23,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 16,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "bench" : 3
       },
       "shots" : {
         "total" : null,
@@ -541,171 +230,6 @@
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 58,
-        "key" : null,
-        "accuracy" : 46
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 17943,
-      "name" : "H. Darling",
-      "firstname" : "Harry Jack",
-      "lastname" : "Darling",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-08-08",
-        "place" : "Burwell",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/17943.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 30,
-        "lineups" : 29,
-        "minutes" : 2554,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.160000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 24,
-        "on" : 12
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1938,
-        "key" : 13,
-        "accuracy" : 57
-      },
-      "tackles" : {
-        "total" : 24,
-        "blocks" : 26,
-        "interceptions" : 20
-      },
-      "duels" : {
-        "total" : 231,
-        "won" : 147
-      },
-      "dribbles" : {
-        "attempts" : 14,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 48,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
         "saves" : null
       },
       "passes" : {
@@ -743,262 +267,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 19017,
-      "name" : "C. Christie",
-      "firstname" : "Cyrus Sylvester Frederick",
-      "lastname" : "Christie",
-      "age" : 33,
+      "id" : 19449,
+      "name" : "J. Ginnelly",
+      "firstname" : "Joshua",
+      "lastname" : "Lloyd Ginnelly",
+      "age" : 28,
       "birth" : {
-        "date" : "1992-09-30",
-        "place" : "Coventry",
-        "country" : "England"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "188 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19017.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 2,
-        "minutes" : 261,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.362500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 1,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 187,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 18
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 66,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 52,
-        "key" : null,
-        "accuracy" : 48
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 2,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19280,
-      "name" : "J. Paterson",
-      "firstname" : "Jamie Charles Stuart",
-      "lastname" : "Paterson",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-12-20",
+        "date" : "1997-03-24",
         "place" : "Coventry",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "66 kg",
+      "height" : "175",
+      "weight" : "65",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19280.png"
+      "photo" : "https://media.api-sports.io/football/players/19449.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1012,101 +298,28 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
         "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1135,9 +348,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1153,33 +366,33 @@
         "logo" : "https://media.api-sports.io/football/teams/76.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1208,491 +421,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : null,
         "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19318,
-      "name" : "K. Naughton",
-      "firstname" : "Kyle",
-      "lastname" : "Naughton",
-      "age" : 37,
-      "birth" : {
-        "date" : "1988-11-17",
-        "place" : "Sheffield",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "181 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19318.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 8,
-        "minutes" : 721,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.726315",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 11,
-        "out" : 8,
-        "bench" : 25
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 495,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 25,
-        "blocks" : 4,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 90,
-        "won" : 52
-      },
-      "dribbles" : {
-        "attempts" : 12,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 140,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.150000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 146,
-        "key" : null,
-        "accuracy" : 67
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 14,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 55,
-        "key" : null,
-        "accuracy" : 54
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19327,
-      "name" : "J. Fulton",
-      "firstname" : "Jay",
-      "lastname" : "Fulton",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-04-04",
-        "place" : "Bolton",
-        "country" : "England"
-      },
-      "nationality" : "Scotland",
-      "height" : "185 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19327.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 8,
-        "minutes" : 773,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 11,
-        "out" : 6,
-        "bench" : 22
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 300,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 1,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 58,
-        "won" : 21
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 163,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.050000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 124,
-        "key" : null,
-        "accuracy" : 57
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 11,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1709,8 +446,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "74 kg",
+      "height" : "180",
+      "weight" : "74",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19499.png"
     },
@@ -1726,131 +463,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 32,
-        "lineups" : 31,
-        "minutes" : 2771,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.918750",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1359,
-        "key" : 52,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 36,
-        "blocks" : 4,
-        "interceptions" : 43
-      },
-      "duels" : {
-        "total" : 205,
-        "won" : 92
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 23,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
+        "rating" : "6.783333",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 43,
-        "key" : null,
-        "accuracy" : 41
+        "total" : 254,
+        "key" : 8,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : 2,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 42,
+        "won" : 18
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 5,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1872,45 +536,210 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 55,
+        "minutes" : 27,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.000000",
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 34,
-        "key" : 1,
+        "total" : 11,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
         "total" : 3,
-        "won" : 2
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20457,
+      "name" : "C. Burgess",
+      "firstname" : "Cameron Robert",
+      "lastname" : "Burgess",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-10-21",
+        "place" : "Aberdeen",
+        "country" : "Scotland"
+      },
+      "nationality" : "Australia",
+      "height" : "194",
+      "weight" : "93",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20457.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 76,
+        "name" : "Swansea",
+        "logo" : "https://media.api-sports.io/football/teams/76.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.216666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 461,
+        "key" : null,
+        "accuracy" : 60
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 7,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 51,
+        "won" : 37
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 76,
+        "name" : "Swansea",
+        "logo" : "https://media.api-sports.io/football/teams/76.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "8.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 80,
+        "key" : null,
+        "accuracy" : 63
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -1919,7 +748,172 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162839,
+      "name" : "Z. Vipotnik",
+      "firstname" : "Žan",
+      "lastname" : "Vipotnik",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-03-18",
+        "place" : "Celje",
+        "country" : "Slovenia"
+      },
+      "nationality" : "Slovenia",
+      "height" : "186",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162839.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 76,
+        "name" : "Swansea",
+        "logo" : "https://media.api-sports.io/football/teams/76.png"
+      },
+      "league" : {
+        "id" : 40,
+        "name" : "Championship",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 262,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 53,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 76,
+        "name" : "Swansea",
+        "logo" : "https://media.api-sports.io/football/teams/76.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 174,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.13",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 24,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -1936,21 +930,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 19502,
-      "name" : "J. Allen",
-      "firstname" : "Joseph Michael",
-      "lastname" : "Allen",
-      "age" : 35,
+      "id" : 191368,
+      "name" : "F. Bianchini",
+      "firstname" : "Florian",
+      "lastname" : "Bianchini",
+      "age" : 24,
       "birth" : {
-        "date" : "1990-03-14",
-        "place" : "Carmarthen",
-        "country" : "Wales"
+        "date" : "2001-06-25",
+        "place" : "Reims",
+        "country" : "France"
       },
-      "nationality" : "Wales",
-      "height" : "170 cm",
-      "weight" : "62 kg",
+      "nationality" : "France",
+      "height" : "182",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19502.png"
+      "photo" : "https://media.api-sports.io/football/players/191368.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1964,699 +958,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
+        "appearences" : 6,
         "lineups" : 5,
-        "minutes" : 439,
+        "minutes" : 312,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.631250",
+        "position" : "Attacker",
+        "rating" : "6.600000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 11,
-        "out" : 5,
-        "bench" : 16
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 5,
         "on" : 3
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 212,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 52,
-        "won" : 19
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 17,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 9,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 7,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19522,
-      "name" : "K. Pedersen",
-      "firstname" : "Kristian Majdahl",
-      "lastname" : "Pedersen",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-08-04",
-        "place" : "Ringsted",
-        "country" : "Denmark"
-      },
-      "nationality" : "Denmark",
-      "height" : "189 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19522.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.150000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 224,
-        "key" : 2,
-        "accuracy" : 104
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19880,
-      "name" : "J. McLaughlin",
-      "firstname" : "Jonathan Peter",
-      "lastname" : "McLaughlin",
-      "age" : 38,
-      "birth" : {
-        "date" : "1987-09-09",
-        "place" : "Edinburgh",
-        "country" : "Scotland"
-      },
-      "nationality" : "Scotland",
-      "height" : "191 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19880.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 30
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 3,
-        "assists" : 0,
-        "saves" : 4
-      },
-      "passes" : {
-        "total" : 57,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 104041,
-      "name" : "B. Cabango",
-      "firstname" : "Benjamin George",
-      "lastname" : "Cabango",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-05-30",
-        "place" : "Cardiff",
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "186 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/104041.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 32,
-        "lineups" : 32,
-        "minutes" : 2868,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.065625",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 2443,
-        "key" : 11,
-        "accuracy" : 67
+        "total" : 79,
+        "key" : 4,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 68,
-        "blocks" : 23,
-        "interceptions" : 23
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 245,
-        "won" : 156
+        "total" : 59,
+        "won" : 21
       },
       "dribbles" : {
-        "attempts" : 11,
-        "success" : 7,
+        "attempts" : 14,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 14,
-        "committed" : 22
+        "drawn" : 6,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 7,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2678,58 +1031,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 122,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 312,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "7.150000",
+        "position" : "Attacker",
+        "rating" : "6.600000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 5,
+        "on" : 3
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 222,
-        "key" : null,
-        "accuracy" : 104
+        "total" : 79,
+        "key" : 4,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : null,
+        "total" : 5,
+        "blocks" : 1,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 9,
-        "won" : 5
+        "total" : 59,
+        "won" : 21
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 14,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 6,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2739,97 +1092,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 129066,
-      "name" : "N. Tjoe-A-On",
-      "firstname" : "Nathan",
-      "lastname" : "Tjoe-A-On",
-      "age" : 24,
+      "id" : 237050,
+      "name" : "Eom Ji-Sung",
+      "firstname" : "Ji-Sung",
+      "lastname" : "Eom",
+      "age" : 23,
       "birth" : {
-        "date" : "2001-12-22",
-        "place" : "Rotterdam",
-        "country" : "Netherlands"
+        "date" : "2002-05-09",
+        "place" : "Gimje",
+        "country" : "Korea Republic"
       },
-      "nationality" : "Netherlands",
-      "height" : "182 cm",
-      "weight" : "78 kg",
+      "nationality" : "Korea Republic",
+      "height" : "178",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129066.png"
+      "photo" : "https://media.api-sports.io/football/players/237050.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2843,58 +1123,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 2,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 233,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
+        "position" : "Attacker",
+        "rating" : "6.600000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 23
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
+        "total" : 66,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 1,
-        "won" : null
+        "total" : 40,
+        "won" : 24
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2916,49 +1196,49 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 3,
         "lineups" : 2,
-        "minutes" : 125,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.550000",
+        "minutes" : 178,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 96,
-        "key" : null,
-        "accuracy" : 43
+        "total" : 64,
+        "key" : 4,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
+        "total" : 4,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
         "total" : 19,
-        "won" : 7
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 6,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
@@ -2977,97 +1257,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 169223,
-      "name" : "O. Cooper",
-      "firstname" : "Oliver Joseph",
-      "lastname" : "Cooper",
-      "age" : 26,
+      "id" : 288116,
+      "name" : "K. Casey",
+      "firstname" : "Kaelan",
+      "lastname" : "Casey",
+      "age" : 21,
       "birth" : {
-        "date" : "1999-12-14",
-        "place" : "Derby",
-        "country" : "Wales"
+        "date" : "2004-10-28",
+        "place" : "Brentwood",
+        "country" : "England"
       },
-      "nationality" : "Wales",
-      "height" : "174 cm",
-      "weight" : "65 kg",
+      "nationality" : "England",
+      "height" : "185",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/169223.png"
+      "photo" : "https://media.api-sports.io/football/players/288116.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3081,58 +1288,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 10,
-        "minutes" : 865,
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 16,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
+        "position" : "Defender",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 7,
-        "bench" : 6
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 252,
-        "key" : 10,
+        "total" : 33,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 19,
-        "blocks" : 1,
-        "interceptions" : 6
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 101,
-        "won" : 54
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 9,
-        "success" : 3,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 31,
-        "committed" : 16
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3154,45 +1361,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 73,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
+        "position" : "Defender",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 37,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 66,
+        "key" : null,
+        "accuracy" : 63
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
+        "total" : 1,
+        "blocks" : 1,
         "interceptions" : 1
       },
       "duels" : {
         "total" : 4,
-        "won" : 2
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -3200,12 +1407,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3215,46 +1422,65 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 352205,
+      "name" : "Arthur Parker",
+      "firstname" : "Arthur",
+      "lastname" : "Parker",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-05-03",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/352205.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 76,
         "name" : "Swansea",
         "logo" : "https://media.api-sports.io/football/teams/76.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "minutes" : 13,
+        "number" : 46,
+        "position" : "Defender",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 1,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 9,
         "key" : null,
         "accuracy" : null
       },
@@ -3264,8 +1490,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -3284,28 +1510,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 180308,
-      "name" : "M. Peart-Harris",
-      "firstname" : "Myles",
-      "lastname" : "Spencer Peart-Harris",
-      "age" : 23,
+      "id" : 410125,
+      "name" : "M. Yalcouyé",
+      "firstname" : "Malick Junior",
+      "lastname" : "Yalcouyé",
+      "age" : 20,
       "birth" : {
-        "date" : "2002-09-18",
-        "place" : "London",
-        "country" : "England"
+        "date" : "2005-11-18",
+        "place" : "Bandiagara",
+        "country" : "Mali"
       },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : "80 kg",
+      "nationality" : "Mali",
+      "height" : "169",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/180308.png"
+      "photo" : "https://media.api-sports.io/football/players/410125.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3319,85 +1545,12 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/40.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 27,
-        "lineups" : 16,
-        "minutes" : 1542,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.711111",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 11,
-        "out" : 8,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 459,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 3,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 204,
-        "won" : 87
-      },
-      "dribbles" : {
-        "attempts" : 35,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 25,
-        "committed" : 22
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 200,
         "number" : null,
         "position" : "Midfielder",
         "rating" : "6.700000",
@@ -3405,45 +1558,45 @@
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 28,
+        "total" : 86,
         "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 7,
-        "won" : 2
+        "total" : 20,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 6,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : 4,
         "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3451,98 +1604,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 303020,
-      "name" : "F. Lissah",
-      "firstname" : "Filip",
-      "lastname" : "Lissah",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-12-08",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "182 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/303020.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     }, {
@@ -3557,699 +1618,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 325968,
-      "name" : "B. Lloyd",
-      "firstname" : "Ben",
-      "lastname" : "Lloyd",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-14",
-        "place" : null,
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/325968.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 4,
+        "lineups" : 1,
+        "minutes" : 86,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.300000",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 4
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
-        "key" : null,
+        "total" : 33,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 361402,
-      "name" : "Daniel Watts",
-      "firstname" : "Daniel",
-      "lastname" : "Watts",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-12-16",
-        "place" : null,
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "170 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/361402.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 401380,
-      "name" : "Sam Parker",
-      "firstname" : "Sam",
-      "lastname" : "Parker",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-07-07",
-        "place" : "Cardiff",
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "178 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/401380.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 0,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.175000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
         "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 22,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 11,
-        "won" : 3
+        "total" : 14,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 3,
         "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4257,152 +1677,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 76,
-        "name" : "Swansea",
-        "logo" : "https://media.api-sports.io/football/teams/76.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

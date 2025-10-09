@@ -1,108 +1,35 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "503"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 16,
   "paging" : {
     "current" : 2,
-    "total" : 4
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 842,
-      "name" : "N. Vlašić",
-      "firstname" : "Nikola",
-      "lastname" : "Vlašić",
-      "age" : 28,
+      "id" : 2553,
+      "name" : "G. Maripán",
+      "firstname" : "Guillermo Alfonso",
+      "lastname" : "Maripán Loaysa",
+      "age" : 31,
       "birth" : {
-        "date" : "1997-10-04",
-        "place" : "Split",
-        "country" : "Croatia"
+        "date" : "1994-05-06",
+        "place" : "San Miguel",
+        "country" : "Chile"
       },
-      "nationality" : "Croatia",
-      "height" : "179 cm",
-      "weight" : "79 kg",
+      "nationality" : "Chile",
+      "height" : "190",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/842.png"
+      "photo" : "https://media.api-sports.io/football/players/2553.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 13,
-        "minutes" : 1229,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.005263",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 7,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 443,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 28,
-        "blocks" : 3,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 140,
-        "won" : 72
-      },
-      "dribbles" : {
-        "attempts" : 29,
-        "success" : 17,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -114,21 +41,21 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -136,8 +63,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -171,98 +98,6 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1278,
-      "name" : "Y. Karamoh",
-      "firstname" : "Yann Dorgelès Isaac",
-      "lastname" : "Karamoh",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-07-08",
-        "place" : "Abidjan",
-        "country" : "Côte d'Ivoire"
-      },
-      "nationality" : "France",
-      "height" : "185 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1278.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 10,
-        "minutes" : 840,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.557894",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 10,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 204,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 2,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 87,
-        "won" : 32
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
@@ -274,30 +109,30 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 69,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.500000",
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 405,
+        "number" : 13,
+        "position" : "Defender",
+        "rating" : "6.52",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -306,18 +141,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : null,
+        "total" : 163,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
+        "total" : 6,
+        "blocks" : 7,
+        "interceptions" : 9
       },
       "duels" : {
-        "total" : 4,
-        "won" : 1
+        "total" : 46,
+        "won" : 23
       },
       "dribbles" : {
         "attempts" : 1,
@@ -326,191 +161,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1358,
-      "name" : "E. Elmas",
-      "firstname" : "Eljif",
-      "lastname" : "Elmas",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-09-24",
-        "place" : "Skopje",
-        "country" : "North Macedonia"
-      },
-      "nationality" : "North Macedonia",
-      "height" : "184 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1358.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 28,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 7,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2495,
-      "name" : "D. Zapata",
-      "firstname" : "Duván Esteban",
-      "lastname" : "Zapata Banguero",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-04-01",
-        "place" : "Cali",
-        "country" : "Colombia"
-      },
-      "nationality" : "Colombia",
-      "height" : "189 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2495.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 7,
-        "minutes" : 589,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 10
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 121,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 92,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 10
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 1,
@@ -524,7 +175,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 14329,
+      "name" : "A. Ismajli",
+      "firstname" : "Ardian",
+      "lastname" : "Ismajli",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-09-30",
+        "place" : "Majac",
+        "country" : "Kosovo"
+      },
+      "nationality" : "Albania",
+      "height" : "185",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14329.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -536,384 +206,127 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 134,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.000000",
+        "minutes" : 97,
+        "number" : 44,
+        "position" : "Defender",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 6,
-        "on" : 3
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
+        "total" : 38,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2522,
-      "name" : "A. Sanabria",
-      "firstname" : "Arnaldo Antonio",
-      "lastname" : "Sanabria Ayala",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-03-04",
-        "place" : "San Lorenzo",
-        "country" : "Paraguay"
-      },
-      "nationality" : "Paraguay",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2522.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 13,
-        "minutes" : 1011,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.605882",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 9,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 210,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 113,
-        "won" : 33
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 19,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
+        "total" : 9,
         "won" : 3
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 3009,
-      "name" : "K. Linetty",
-      "firstname" : "Karol",
-      "lastname" : "Linetty",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-02-02",
-        "place" : "Żnin",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "176 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3009.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 15,
-        "minutes" : 1263,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.630000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 9,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 471,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 32,
-        "blocks" : 5,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 127,
-        "won" : 53
-      },
-      "dribbles" : {
-        "attempts" : 15,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 28
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 156,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 75,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 11,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 6
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 257,
+        "number" : 44,
+        "position" : "Defender",
+        "rating" : "6.63",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 99,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 1,
@@ -922,7 +335,7 @@
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
+        "commited" : 1,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
@@ -941,85 +354,12 @@
         "country" : "England"
       },
       "nationality" : "Scotland",
-      "height" : "175 cm",
-      "weight" : "70 kg",
+      "height" : "175",
+      "weight" : "70",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19524.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 19,
-        "minutes" : 1669,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 7,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 28,
-        "on" : 18
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 380,
-        "key" : 22,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 3,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 160,
-        "won" : 66
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 25,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -1031,35 +371,35 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 115,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.150000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : 2,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -1068,21 +408,94 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 11,
-        "won" : 3
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 125,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.500000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1106,8 +519,8 @@
         "country" : "France"
       },
       "nationality" : "France",
-      "height" : "180 cm",
-      "weight" : "78 kg",
+      "height" : "180",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/22174.png"
     },
@@ -1118,30 +531,30 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
+        "id" : 137,
+        "name" : "Coppa Italia",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 8,
-        "minutes" : 598,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 61,
         "position" : "Midfielder",
-        "rating" : "6.560000",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 8,
-        "bench" : 16
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 6,
-        "on" : 3
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1150,30 +563,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 269,
-        "key" : 6,
+        "total" : 33,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 5,
-        "interceptions" : 10
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 56,
-        "won" : 22
+        "total" : 12,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 4,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 7
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 3,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1191,26 +604,26 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 6,
         "lineups" : 1,
-        "minutes" : 84,
-        "number" : null,
+        "minutes" : 185,
+        "number" : 61,
         "position" : "Midfielder",
-        "rating" : "6.550000",
+        "rating" : "6.43",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 5,
         "out" : 1,
-        "bench" : 1
+        "bench" : 5
       },
       "shots" : {
         "total" : null,
@@ -1223,26 +636,191 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 36,
-        "key" : 2,
+        "total" : 85,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30642,
+      "name" : "A. Paleari",
+      "firstname" : "Alberto Andrea",
+      "lastname" : "Paleari",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-08-29",
+        "place" : "Giussano",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "193",
+      "weight" : "88",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30642.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 1
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 5
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -1260,21 +838,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 31056,
-      "name" : "S. Ricci",
-      "firstname" : "Samuele",
-      "lastname" : "Ricci",
-      "age" : 24,
+      "id" : 42796,
+      "name" : "M. Popa",
+      "firstname" : "Mihai Maximilian",
+      "lastname" : "Popa",
+      "age" : 25,
       "birth" : {
-        "date" : "2001-08-21",
-        "place" : "Pontedera",
-        "country" : "Italy"
+        "date" : "2000-10-12",
+        "place" : "Constanța",
+        "country" : "Romania"
       },
-      "nationality" : "Italy",
-      "height" : "181 cm",
-      "weight" : "76 kg",
+      "nationality" : "Romania",
+      "height" : "190",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/31056.png"
+      "photo" : "https://media.api-sports.io/football/players/42796.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1283,62 +861,62 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
+        "id" : 137,
+        "name" : "Coppa Italia",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 24,
-        "lineups" : 24,
-        "minutes" : 2038,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.904166",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 71,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 8,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : 14,
-        "on" : 6
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 931,
-        "key" : 10,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 27,
-        "blocks" : 7,
-        "interceptions" : 18
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 160,
-        "won" : 93
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 18,
-        "success" : 6,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 51,
-        "committed" : 25
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1356,29 +934,29 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 120,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.350000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 71,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1388,18 +966,440 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 58,
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 46170,
+      "name" : "I. Ilić",
+      "firstname" : "Ivan",
+      "lastname" : "Ilić",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-03-17",
+        "place" : "Niš",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "186",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46170.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 147,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.57",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 47,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 2,
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 138777,
+      "name" : "F. Anjorin",
+      "firstname" : "Faustino Adebola Rasheed",
+      "lastname" : "Anjorin",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-11-23",
+        "place" : "Poole",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "185",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/138777.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 35,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.533333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 10,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 156490,
+      "name" : "N. Nkounkou",
+      "firstname" : "Niels Patrick",
+      "lastname" : "Nkounkou",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-11-01",
+        "place" : "Pontoise",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "184",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/156490.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 50,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
         "total" : 13,
-        "won" : 10
+        "won" : 7
       },
       "dribbles" : {
         "attempts" : 4,
@@ -1407,11 +1407,176 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
+        "drawn" : null,
         "committed" : 1
       },
       "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 97,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "6.65",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
         "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 268728,
+      "name" : "S. Sazonov",
+      "firstname" : "Saba",
+      "lastname" : "Sazonov",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-02-01",
+        "place" : "Sankt-Peterburg",
+        "country" : "Russia"
+      },
+      "nationality" : "Georgia",
+      "height" : "192",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/268728.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1436,12 +1601,85 @@
         "country" : "Italy"
       },
       "nationality" : "Italy",
-      "height" : "186 cm",
-      "weight" : "77 kg",
+      "height" : "192",
+      "weight" : "77",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/270507.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -1453,21 +1691,186 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 109,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 289,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.800000",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 102,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 45,
+        "won" : 22
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 275776,
+      "name" : "K. Asllani",
+      "firstname" : "Kristjan",
+      "lastname" : "Asllani",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-03-09",
+        "place" : "Elbasan",
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : "179",
+      "weight" : "69",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/275776.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 32,
+        "position" : "Midfielder",
+        "rating" : "7.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
         "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 412,
+        "number" : 32,
+        "position" : "Midfielder",
+        "rating" : "6.94",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
       },
       "shots" : {
         "total" : 3,
@@ -1480,30 +1883,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 50,
-        "key" : 1,
+        "total" : 214,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 6,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 21,
-        "won" : 14
+        "total" : 19,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1517,96 +1920,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 336573,
-      "name" : "E. İlkhan",
-      "firstname" : "Emirhan",
-      "lastname" : "İlkhan",
+      "id" : 349232,
+      "name" : "A. Dembélé",
+      "firstname" : "Ali",
+      "lastname" : "Dembélé",
       "age" : 21,
       "birth" : {
-        "date" : "2004-06-01",
-        "place" : "İstanbul",
-        "country" : "Türkiye"
+        "date" : "2004-01-05",
+        "place" : "Villepinte",
+        "country" : "France"
       },
-      "nationality" : "Türkiye",
-      "height" : "175 cm",
-      "weight" : "67 kg",
+      "nationality" : "France",
+      "height" : "185",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/336573.png"
+      "photo" : "https://media.api-sports.io/football/players/349232.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -1618,20 +1948,20 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 71,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
@@ -1641,22 +1971,22 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 31,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 7,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -1664,103 +1994,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 343189,
-      "name" : "G. Gineitis",
-      "firstname" : "Gvidas",
-      "lastname" : "Gineitis",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-04-15",
-        "place" : null,
-        "country" : "Lithuania"
-      },
-      "nationality" : "Lithuania",
-      "height" : "187 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/343189.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 8,
-        "minutes" : 815,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 5,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 297,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 15,
-        "blocks" : 4,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 79,
-        "won" : 34
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1778,26 +2016,26 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 1,
+        "out" : 0,
+        "bench" : 6
       },
       "shots" : {
         "total" : 1,
@@ -1810,13 +2048,13 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 17,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
-        "blocks" : 1,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
@@ -1824,264 +2062,7 @@
         "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 343332,
-      "name" : "Zannetos Savva",
-      "firstname" : "Zannetos",
-      "lastname" : "Savva",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-11-26",
-        "place" : "Nicosia",
-        "country" : "Cyprus"
-      },
-      "nationality" : "Cyprus",
-      "height" : "188 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/343332.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 352990,
-      "name" : "A. Salama",
-      "firstname" : "Amine",
-      "lastname" : "Salama",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-07-18",
-        "place" : null,
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "192 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/352990.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -2115,12 +2096,85 @@
         "country" : "Sweden"
       },
       "nationality" : "Sweden",
-      "height" : "171 cm",
-      "weight" : "60 kg",
+      "height" : "171",
+      "weight" : "60",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/383006.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 503,
+        "name" : "Torino",
+        "logo" : "https://media.api-sports.io/football/teams/503.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 65,
+        "number" : 92,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -2132,54 +2186,54 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 378,
-        "number" : null,
+        "minutes" : 9,
+        "number" : 92,
         "position" : "Attacker",
-        "rating" : "6.692857",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 16,
+        "in" : 1,
         "out" : 0,
-        "bench" : 21
+        "bench" : 6
       },
       "shots" : {
-        "total" : 8,
-        "on" : 5
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 83,
-        "key" : 4,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 87,
-        "won" : 36
+        "total" : 3,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 18,
-        "success" : 7,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 12,
-        "committed" : 12
+        "drawn" : null,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -2193,7 +2247,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 438215,
+      "name" : "C. Bianay Balcot",
+      "firstname" : "Côme",
+      "lastname" : "Bianay Balcot",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-05-13",
+        "place" : null,
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "188",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/438215.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -2205,24 +2278,24 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 29,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
+        "minutes" : null,
+        "number" : 80,
+        "position" : "Defender",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -2232,27 +2305,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 8,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 9,
-        "won" : 5
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -2266,26 +2339,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 437088,
-      "name" : "T. Gabellini",
-      "firstname" : "Tommaso",
-      "lastname" : "Gabellini",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-10-21",
-        "place" : null,
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "180 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/437088.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 503,
         "name" : "Torino",
@@ -2297,21 +2351,21 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 80,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2320,7 +2374,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2356,574 +2410,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 437089,
-      "name" : "M. Dalla Vecchia",
-      "firstname" : "Marco",
-      "lastname" : "Dalla Vecchia",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-02-13",
-        "place" : null,
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "175 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/437089.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 444786,
-      "name" : "E. Mahari",
-      "firstname" : "Efdon",
-      "lastname" : "Mahari",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-04-12",
-        "place" : null,
-        "country" : "Eritrea"
-      },
-      "nationality" : "Sweden",
-      "height" : "177 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/444786.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 444990,
-      "name" : "M. Kirilov",
-      "firstname" : "Martin Elias",
-      "lastname" : "Kirilov",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-08-08",
-        "place" : null,
-        "country" : "Finland"
-      },
-      "nationality" : "Finland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/444990.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 503,
-        "name" : "Torino",
-        "logo" : "https://media.api-sports.io/football/teams/503.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -2940,8 +2426,8 @@
         "country" : "Moldova"
       },
       "nationality" : "Moldova",
-      "height" : "175 cm",
-      "weight" : "65 kg",
+      "height" : "175",
+      "weight" : "65",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/452430.png"
     },
@@ -2952,18 +2438,18 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
+        "id" : 137,
+        "name" : "Coppa Italia",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 83,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2971,7 +2457,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2980,7 +2466,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3025,18 +2511,18 @@
         "logo" : "https://media.api-sports.io/football/teams/503.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 83,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -3044,7 +2530,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -3052,8 +2538,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3087,8 +2573,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

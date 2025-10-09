@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "167"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 22,
-      "name" : "J. Bruun Larsen",
-      "firstname" : "Jacob",
-      "lastname" : "Bruun Larsen",
-      "age" : 27,
+      "id" : 702,
+      "name" : "O. Baumann",
+      "firstname" : "Oliver",
+      "lastname" : "Baumann",
+      "age" : 35,
       "birth" : {
-        "date" : "1998-09-19",
-        "place" : "Lyngby",
-        "country" : "Denmark"
+        "date" : "1990-06-02",
+        "place" : "Breisach",
+        "country" : "Germany"
       },
-      "nationality" : "Denmark",
-      "height" : "183 cm",
-      "weight" : "77 kg",
+      "nationality" : "Germany",
+      "height" : "187",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/22.png"
+      "photo" : "https://media.api-sports.io/football/players/702.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,58 +41,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 3,
-        "minutes" : 393,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.766666",
+        "position" : "Goalkeeper",
+        "rating" : "7.050000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 9,
-        "out" : 3,
-        "bench" : 12
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 12,
-        "on" : 7
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
+        "total" : null,
+        "conceded" : 10,
+        "assists" : 0,
+        "saves" : 16
       },
       "passes" : {
-        "total" : 139,
-        "key" : 8,
+        "total" : 119,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 1
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 49,
-        "won" : 17
+        "total" : 4,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 20,
-        "success" : 6,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -100,7 +100,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     }, {
       "team" : {
@@ -114,35 +114,35 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 102,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.000000",
+        "minutes" : 90,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
+        "saves" : 3
       },
       "passes" : {
-        "total" : 35,
-        "key" : 3,
+        "total" : 17,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -151,12 +151,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
-        "won" : 2
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -173,318 +173,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 278,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.560000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 4,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 80,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 719,
-      "name" : "F. Grillitsch",
-      "firstname" : "Florian",
-      "lastname" : "Grillitsch",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-08-07",
-        "place" : "Neunkirchen",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "187 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/719.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 605,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 412,
-        "key" : 5,
-        "accuracy" : 44
-      },
-      "tackles" : {
-        "total" : 15,
-        "blocks" : 2,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 78,
-        "won" : 38
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 150,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 138,
-        "key" : 2,
-        "accuracy" : 57
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 306,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 237,
-        "key" : 3,
-        "accuracy" : 51
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 19
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
@@ -500,8 +189,8 @@
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : "177 cm",
-      "weight" : "73 kg",
+      "height" : "177",
+      "weight" : "73",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/726.png"
     },
@@ -517,913 +206,53 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1718,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 332,
+        "number" : 27,
         "position" : "Attacker",
-        "rating" : "7.175000",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 9,
-        "bench" : 0
+        "in" : 2,
+        "out" : 3,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 33,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 718,
-        "key" : 29,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 98,
-        "won" : 40
-      },
-      "dribbles" : {
-        "attempts" : 22,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 238,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.133333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 7,
+        "total" : 5,
         "on" : 4
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 111,
-        "key" : 5,
+        "total" : 154,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 18,
+        "total" : 14,
         "won" : 8
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 483,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 236,
-        "key" : 13,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 29,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 2,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
         "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1094,
-      "name" : "D. Samassékou",
-      "firstname" : "Diadie",
-      "lastname" : "Samassékou",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-01-11",
-        "place" : "Bamako",
-        "country" : "Mali"
-      },
-      "nationality" : "Mali",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1094.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 5,
-        "minutes" : 290,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.716666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 5,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 153,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 2,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 33,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 78,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 55,
-        "key" : null,
-        "accuracy" : 47
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 2,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 72,
-        "key" : 1,
-        "accuracy" : 67
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 24932,
-      "name" : "F. Becker",
-      "firstname" : "Finn Ole",
-      "lastname" : "Becker",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-06-08",
-        "place" : null,
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "177 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/24932.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 304,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.820000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 170,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 144,
-        "key" : 1,
-        "accuracy" : 61
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 25242,
-      "name" : "M. Bülter",
-      "firstname" : "Marius",
-      "lastname" : "Bülter",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-03-29",
-        "place" : "Ibbenbüren",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "188 cm",
-      "weight" : "85 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/25242.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 14,
-        "minutes" : 1036,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.006666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 10,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 247,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 112,
-        "won" : 55
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 24,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 182,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 49,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 132,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.775000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 47,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 24,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
         "committed" : 2
       },
       "cards" : {
@@ -1434,337 +263,7 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 25389,
-      "name" : "I. Bebou",
-      "firstname" : "Ihlas",
-      "lastname" : "Bebou",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-04-23",
-        "place" : "Sokodé",
-        "country" : "Togo"
-      },
-      "nationality" : "Togo",
-      "height" : "185 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/25389.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 28382,
-      "name" : "H. Tabaković",
-      "firstname" : "Haris",
-      "lastname" : "Tabaković",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-06-20",
-        "place" : "Grenchen",
-        "country" : "Switzerland"
-      },
-      "nationality" : "Switzerland",
-      "height" : "196 cm",
-      "weight" : "90 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/28382.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 2,
-        "minutes" : 333,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.745454",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 2,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 83,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 63,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
+        "scored" : 1,
         "missed" : 0,
         "saved" : null
       }
@@ -1780,34 +279,34 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 107,
-        "number" : null,
+        "minutes" : 79,
+        "number" : 27,
         "position" : "Attacker",
-        "rating" : "6.300000",
+        "rating" : "7.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
+        "total" : 1,
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
+        "total" : 28,
         "key" : 2,
         "accuracy" : null
       },
@@ -1817,81 +316,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 132,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.580000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 24,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : 3,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 7
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : 1,
@@ -1900,7 +326,7 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 5
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1917,21 +343,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 66019,
-      "name" : "A. Hložek",
-      "firstname" : "Adam",
-      "lastname" : "Hložek",
-      "age" : 23,
+      "id" : 1231,
+      "name" : "V. Coufal",
+      "firstname" : "Vladimír",
+      "lastname" : "Coufal",
+      "age" : 33,
       "birth" : {
-        "date" : "2002-07-25",
-        "place" : "Ivančice",
+        "date" : "1992-08-22",
+        "place" : "Ostrava",
         "country" : "Czechia"
       },
       "nationality" : "Czechia",
-      "height" : "188 cm",
-      "weight" : "84 kg",
+      "height" : "174",
+      "weight" : "76",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66019.png"
+      "photo" : "https://media.api-sports.io/football/players/1231.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1945,883 +371,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 18,
-        "minutes" : 1493,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 350,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.105263",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 7,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 39,
-        "on" : 19
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 386,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 211,
-        "won" : 100
-      },
-      "dribbles" : {
-        "attempts" : 47,
-        "success" : 24,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 23,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 139,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
+        "position" : "Defender",
+        "rating" : "6.875000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 7,
-        "minutes" : 525,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.975000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 5
-      },
-      "goals" : {
         "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 118,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 57,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 16,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 128350,
-      "name" : "E. Yardımcı",
-      "firstname" : "Erencan",
-      "lastname" : "Yardımcı",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-02-04",
-        "place" : "Kocaeli",
-        "country" : "Türkiye"
-      },
-      "nationality" : "Türkiye",
-      "height" : "188 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/128350.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 3,
-        "minutes" : 301,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 3,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 52,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 61,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 279907,
-      "name" : "U. Tohumcu",
-      "firstname" : "Umut Deger",
-      "lastname" : "Tohumcu",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-08-11",
-        "place" : "Offenburg",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "175 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/279907.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 2,
-        "minutes" : 284,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 1,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 104,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 30,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "8.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
         "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 36,
+        "total" : 126,
         "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 260,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.860000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 119,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 18,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 279913,
-      "name" : "L. Đurić",
-      "firstname" : "Luka",
-      "lastname" : "Đurić",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-06-18",
-        "place" : "Sinsheim",
-        "country" : "Germany"
-      },
-      "nationality" : "Serbia",
-      "height" : "179 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/279913.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 336031,
-      "name" : "P. Hennrich",
-      "firstname" : "Paul",
-      "lastname" : "Hennrich",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-06",
-        "place" : null,
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "181 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/336031.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 2,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
+        "total" : 8,
         "blocks" : 1,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 2,
-        "won" : null
+        "total" : 26,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 340089,
-      "name" : "Florian Micheler",
-      "firstname" : "Florian",
-      "lastname" : "Micheler",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-17",
-        "place" : "Innsbruck",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "185 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340089.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 31,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 12,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 2,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2843,821 +444,15 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 42,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 13,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 350047,
-      "name" : "D. Mokwa",
-      "firstname" : "David",
-      "lastname" : "Ngabi Mokwa Ntusu",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-05-03",
-        "place" : null,
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "181 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/350047.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.600000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 4,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 101,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 19,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 353143,
-      "name" : "Hennes Behrens",
-      "firstname" : "Hennes",
-      "lastname" : "Behrens",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-19",
-        "place" : "Frankfurt",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/353143.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 28,
-        "number" : null,
+        "minutes" : 90,
+        "number" : 34,
         "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 21,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 361523,
-      "name" : "S. Kalambayi",
-      "firstname" : "Simon Elyan",
-      "lastname" : "Kalambayi Mukuta",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-02-20",
-        "place" : "Mantes-la-Jolie",
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "185 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/361523.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 368260,
-      "name" : "G. Orban",
-      "firstname" : "Gift Emmanuel",
-      "lastname" : "Orban",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-17",
-        "place" : "Benue",
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "178 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/368260.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 2,
-        "minutes" : 279,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.816666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 47,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 28,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 167,
-        "name" : "1899 Hoffenheim",
-        "logo" : "https://media.api-sports.io/football/teams/167.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -3677,17 +472,17 @@
       },
       "passes" : {
         "total" : 23,
-        "key" : 1,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 9,
-        "won" : 2
+        "total" : 6,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : 1,
@@ -3695,8 +490,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -3713,21 +508,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 387643,
-      "name" : "B. Touré",
-      "firstname" : "Bazoumana",
-      "lastname" : "Touré",
-      "age" : 19,
+      "id" : 7327,
+      "name" : "A. Prass",
+      "firstname" : "Alexander",
+      "lastname" : "Prass",
+      "age" : 24,
       "birth" : {
-        "date" : "2006-03-02",
-        "place" : null,
-        "country" : "Côte d'Ivoire"
+        "date" : "2001-05-26",
+        "place" : "Hellmonsödt",
+        "country" : "Austria"
       },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "173 cm",
-      "weight" : null,
+      "nationality" : "Austria",
+      "height" : "180",
+      "weight" : "72",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/387643.png"
+      "photo" : "https://media.api-sports.io/football/players/7327.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3741,21 +536,94 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 128,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 40,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "minutes" : 12,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -3768,26 +636,26 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 4,
-        "won" : 1
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 3,
+        "attempts" : 1,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
@@ -3805,21 +673,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 387973,
-      "name" : "Max Moerstedt",
-      "firstname" : "Max",
-      "lastname" : "Moerstedt",
-      "age" : 19,
+      "id" : 18964,
+      "name" : "Bernardo",
+      "firstname" : "Bernardo",
+      "lastname" : "Fernandes da Silva Junior",
+      "age" : 30,
       "birth" : {
-        "date" : "2006-01-15",
-        "place" : "Mannheim",
-        "country" : "Germany"
+        "date" : "1995-05-14",
+        "place" : "São Paulo",
+        "country" : "Brazil"
       },
-      "nationality" : "Germany",
-      "height" : "194 cm",
-      "weight" : "77 kg",
+      "nationality" : "Brazil",
+      "height" : "186",
+      "weight" : "76",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/387973.png"
+      "photo" : "https://media.api-sports.io/football/players/18964.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3833,25 +701,98 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
+        "appearences" : 4,
         "lineups" : 4,
-        "minutes" : 392,
+        "minutes" : 356,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.766666",
+        "position" : "Defender",
+        "rating" : "6.475000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 4,
-        "bench" : 11
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 6,
-        "on" : 4
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 187,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 3,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 57,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 13,
+        "position" : "Defender",
+        "rating" : "8.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -3860,30 +801,122 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 92,
-        "key" : 6,
+        "total" : 44,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 24854,
+      "name" : "G. Prömel",
+      "firstname" : "Grischa",
+      "lastname" : "Prömel",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-01-09",
+        "place" : "Bad Cannstatt",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "180",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/24854.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 0,
+        "minutes" : 118,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.63",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 66,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 61,
-        "won" : 29
+        "total" : 19,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : 3,
+        "attempts" : 4,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 8,
-        "committed" : 4
+        "drawn" : null,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3906,25 +939,25 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 131,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.000000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
+        "in" : 0,
+        "out" : 0,
         "bench" : 1
       },
       "shots" : {
-        "total" : 2,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -3933,27 +966,1274 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 28,
-        "key" : 2,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 22,
-        "won" : 10
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 25366,
+      "name" : "K. Akpoguma",
+      "firstname" : "Kevin John",
+      "lastname" : "Ufuoma Akpoguma",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-04-19",
+        "place" : "Neustadt an der Weinstraße",
+        "country" : "Germany"
+      },
+      "nationality" : "Nigeria",
+      "height" : "192",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/25366.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 23,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 26300,
+      "name" : "O. Kabak",
+      "firstname" : "Ozan Muhammed",
+      "lastname" : "Kabak",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-03-25",
+        "place" : "Ankara",
+        "country" : "Türkiye"
+      },
+      "nationality" : "Türkiye",
+      "height" : "187",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/26300.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 31,
+        "lineups" : 29,
+        "minutes" : 2393,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.890000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 22,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1262,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 51,
+        "blocks" : 23,
+        "interceptions" : 45
+      },
+      "duels" : {
+        "total" : 299,
+        "won" : 162
+      },
+      "dribbles" : {
+        "attempts" : 26,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 16,
+        "committed" : 55
+      },
+      "cards" : {
+        "yellow" : 12,
+        "yellowred" : null,
+        "red" : 2
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 33067,
+      "name" : "K. Machida",
+      "firstname" : "Koki",
+      "lastname" : "Machida",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-08-25",
+        "place" : "Ibaraki",
+        "country" : "Japan"
+      },
+      "nationality" : "Japan",
+      "height" : "190",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/33067.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 44,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 36,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "7.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 53,
+        "key" : null,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 37153,
+      "name" : "W. Burger",
+      "firstname" : "Wouter",
+      "lastname" : "Burger",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-02-16",
+        "place" : "Zuid-Beijerland",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "191",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/37153.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 213,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 123,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "8.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 29,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 127631,
+      "name" : "V. Gendrey",
+      "firstname" : "Valentin André Stanislas",
+      "lastname" : "Gendrey",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-06-21",
+        "place" : null,
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "179",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/127631.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 38,
+        "lineups" : 37,
+        "minutes" : 3109,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.791891",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1017,
+        "key" : 27,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 88,
+        "blocks" : 4,
+        "interceptions" : 37
+      },
+      "duels" : {
+        "total" : 302,
+        "won" : 177
+      },
+      "dribbles" : {
+        "attempts" : 31,
+        "success" : 14,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 27,
+        "committed" : 23
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162964,
+      "name" : "R. Hranáč",
+      "firstname" : "Robin",
+      "lastname" : "Hranáč",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-01-29",
+        "place" : "Plzeň",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "190",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162964.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 327,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.425000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 149,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 4,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 87,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : null,
+        "accuracy" : 40
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 163066,
+      "name" : "L. Philipp",
+      "firstname" : "Luca",
+      "lastname" : "Philipp",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-11-28",
+        "place" : null,
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "192",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/163066.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 37,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 202501,
+      "name" : "F. Asllani",
+      "firstname" : "Fisnik",
+      "lastname" : "Asllani",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-08-08",
+        "place" : "Berlin",
+        "country" : "Kosovo"
+      },
+      "nationality" : "Germany",
+      "height" : "191",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/202501.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 461,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "6.97",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 5,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 15,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 114,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 51,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -3974,62 +2254,906 @@
         "logo" : "https://media.api-sports.io/football/teams/167.png"
       },
       "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 7,
-        "lineups" : 4,
-        "minutes" : 412,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 87,
+        "number" : 11,
         "position" : "Attacker",
-        "rating" : "6.742857",
+        "rating" : "8",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 3
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 12,
-        "on" : 7
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 278453,
+      "name" : "A. Hajdari",
+      "firstname" : "Albian",
+      "lastname" : "Hajdari",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-18",
+        "place" : "Binningen",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Switzerland",
+      "height" : "189",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/278453.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 185,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.500000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 91,
-        "key" : 4,
+        "total" : 92,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 2,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 288097,
+      "name" : "L. Petersson",
+      "firstname" : "Lúkas Jóhannes",
+      "lastname" : "Blöndal Petersson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-02-09",
+        "place" : "Düsseldorf",
+        "country" : "Germany"
+      },
+      "nationality" : "Iceland",
+      "height" : "193",
+      "weight" : "91",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/288097.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 304686,
+      "name" : "Arthur Chaves",
+      "firstname" : "Arthur",
+      "lastname" : "Largura Chaves",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-29",
+        "place" : "Florianópolis",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "188",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/304686.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 148,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.633333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 84,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 6,
         "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 4,
+        "number" : 35,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 327861,
+      "name" : "T. Drexler",
+      "firstname" : "Tim",
+      "lastname" : "Drexler",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-03-06",
+        "place" : "Bruchsal",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "183",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/327861.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 328262,
+      "name" : "M. Damar",
+      "firstname" : "Muhammed Mehmet",
+      "lastname" : "Damar",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-04-09",
+        "place" : "Berlin",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "185",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/328262.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 210,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.52",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 85,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 69,
-        "won" : 23
+        "total" : 18,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 5,
+        "attempts" : 4,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 9
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 5,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 511606,
+      "name" : "P. Benjamin",
+      "firstname" : "Precious",
+      "lastname" : "Benjamin",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-10-01",
+        "place" : null,
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : "182",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/511606.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 167,
+        "name" : "1899 Hoffenheim",
+        "logo" : "https://media.api-sports.io/football/teams/167.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 53,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },

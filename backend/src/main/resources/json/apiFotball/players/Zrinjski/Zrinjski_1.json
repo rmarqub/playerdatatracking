@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "588"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 2761,
-      "name" : "F. Bradarić",
-      "firstname" : "Filip",
-      "lastname" : "Bradarić",
-      "age" : 32,
+      "id" : 7081,
+      "name" : "S. Šurdanović",
+      "firstname" : "Stefano",
+      "lastname" : "Šurdanović",
+      "age" : 27,
       "birth" : {
-        "date" : "1992-01-11",
-        "place" : "Split",
-        "country" : "Croatia"
+        "date" : "1998-11-23",
+        "place" : "Wels",
+        "country" : "Austria"
       },
-      "nationality" : "Croatia",
-      "height" : "186 cm",
-      "weight" : "78 kg",
+      "nationality" : "Serbia",
+      "height" : "183",
+      "weight" : "79",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2761.png"
+      "photo" : "https://media.api-sports.io/football/players/7081.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,35 +36,181 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 33,
+        "lineups" : 32,
+        "minutes" : 2829,
         "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.969696",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 21,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1027,
+        "key" : 27,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 65,
+        "blocks" : 4,
+        "interceptions" : 16
+      },
+      "duels" : {
+        "total" : 499,
+        "won" : 284
+      },
+      "dribbles" : {
+        "attempts" : 91,
+        "success" : 55,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 111,
+        "committed" : 41
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 33,
+        "lineups" : 32,
+        "minutes" : 2829,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.969696",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 21,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1027,
+        "key" : 27,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 65,
+        "blocks" : 4,
+        "interceptions" : 16
+      },
+      "duels" : {
+        "total" : 499,
+        "won" : 284
+      },
+      "dribbles" : {
+        "attempts" : 91,
+        "success" : 55,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 111,
+        "committed" : 41
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 23,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -91,35 +237,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 14312,
-      "name" : "L. Marin",
-      "firstname" : "Luka",
-      "lastname" : "Marin",
-      "age" : 27,
+      "id" : 9081,
+      "name" : "K. Memija",
+      "firstname" : "Kerim",
+      "lastname" : "Memija",
+      "age" : 29,
       "birth" : {
-        "date" : "1998-03-16",
-        "place" : "Osijek",
-        "country" : "Croatia"
+        "date" : "1996-01-06",
+        "place" : "Sarajevo",
+        "country" : "Bosnia and Herzegovina"
       },
-      "nationality" : "Croatia",
-      "height" : null,
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : "179",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14312.png"
+      "photo" : "https://media.api-sports.io/football/players/9081.png"
     },
     "statistics" : [ {
       "team" : {
@@ -128,12 +274,12 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -194,38 +340,19 @@
         "missed" : null,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 14661,
-      "name" : "M. Magdić",
-      "firstname" : "Marin",
-      "lastname" : "Magdić",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-04-13",
-        "place" : "Osijek",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14661.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 588,
         "name" : "Zrinjski",
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -298,13 +425,13 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 50,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -312,7 +439,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -320,8 +447,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -355,30 +482,176 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 40211,
-      "name" : "I. Jukić",
-      "firstname" : "Ivan",
-      "lastname" : "Jukić",
+      "id" : 14271,
+      "name" : "P. Mamić",
+      "firstname" : "Petar",
+      "lastname" : "Mamić",
       "age" : 29,
       "birth" : {
-        "date" : "1996-06-21",
-        "place" : "Vitez",
-        "country" : "Bosnia and Herzegovina"
+        "date" : "1996-03-06",
+        "place" : "Zagreb",
+        "country" : "Croatia"
       },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : "176 cm",
-      "weight" : "69 kg",
+      "nationality" : "Croatia",
+      "height" : "183",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/40211.png"
+      "photo" : "https://media.api-sports.io/football/players/14271.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 228,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.733333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 139,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 228,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.733333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 139,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 588,
         "name" : "Zrinjski",
@@ -390,107 +663,15 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 43313,
-      "name" : "B. Abdurahimi",
-      "firstname" : "Besart",
-      "lastname" : "Abdurahimi",
-      "age" : 35,
-      "birth" : {
-        "date" : "1990-07-31",
-        "place" : "Zagreb",
-        "country" : "Croatia"
-      },
-      "nationality" : "North Macedonia",
-      "height" : "175 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/43313.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "number" : 12,
+        "position" : "Defender",
+        "rating" : "7.5",
         "captain" : false
       },
       "substitutes" : {
@@ -499,28 +680,28 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 42,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 5
       },
       "dribbles" : {
         "attempts" : null,
@@ -528,7 +709,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
@@ -539,61 +720,80 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 14278,
+      "name" : "D. Velkovski",
+      "firstname" : "Darko",
+      "lastname" : "Velkovski",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-06-21",
+        "place" : "Skopje",
+        "country" : "North Macedonia"
+      },
+      "nationality" : "North Macedonia",
+      "height" : "185",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14278.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 588,
         "name" : "Zrinjski",
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 0,
-        "minutes" : 110,
+        "appearences" : 21,
+        "lineups" : 17,
+        "minutes" : 1024,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "6.786666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 4,
-        "out" : 0,
-        "bench" : 6
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 422,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 14,
+        "blocks" : 12,
+        "interceptions" : 18
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 59,
+        "won" : 26
       },
       "dribbles" : {
         "attempts" : null,
@@ -601,111 +801,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45896,
-      "name" : "A. Rušević",
-      "firstname" : "Anes",
-      "lastname" : "Rušević",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-12-02",
-        "place" : "Novi Pazar",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "181 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45896.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 19,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -720,21 +828,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 4,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 24,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -742,8 +850,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -777,28 +885,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 48665,
-      "name" : "P. Mišić",
-      "firstname" : "Petar",
-      "lastname" : "Mišić",
-      "age" : 31,
+      "id" : 14398,
+      "name" : "N. Đurasek",
+      "firstname" : "Neven",
+      "lastname" : "Đurasek",
+      "age" : 27,
       "birth" : {
-        "date" : "1994-07-24",
-        "place" : "Bruchsal",
-        "country" : "Germany"
+        "date" : "1998-08-15",
+        "place" : "Varaždin",
+        "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : "176 cm",
-      "weight" : "68 kg",
+      "height" : "180",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/48665.png"
+      "photo" : "https://media.api-sports.io/football/players/14398.png"
     },
     "statistics" : [ {
       "team" : {
@@ -807,12 +915,12 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -885,20 +993,20 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 64,
+        "number" : 30,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
@@ -907,63 +1015,63 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 20,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 5,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 62138,
-      "name" : "G. Karačić",
-      "firstname" : "Goran",
-      "lastname" : "Karačić",
-      "age" : 29,
+      "id" : 14480,
+      "name" : "A. Ivančić",
+      "firstname" : "Antonio",
+      "lastname" : "Ivančić",
+      "age" : 30,
       "birth" : {
-        "date" : "1996-08-18",
-        "place" : "Mostar",
-        "country" : "Bosnia and Herzegovina"
+        "date" : "1995-05-25",
+        "place" : "Zagreb",
+        "country" : "Croatia"
       },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : "196 cm",
-      "weight" : "84 kg",
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/62138.png"
+      "photo" : "https://media.api-sports.io/football/players/14480.png"
     },
     "statistics" : [ {
       "team" : {
@@ -972,33 +1080,33 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Goalkeeper",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1027,9 +1135,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1050,21 +1231,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 5
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1072,6 +1253,190 @@
       },
       "goals" : {
         "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 15,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 14539,
+      "name" : "I. Posavec",
+      "firstname" : "Ivan",
+      "lastname" : "Posavec",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-07-05",
+        "place" : "Varaždin",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14539.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 239,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.633333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 14682,
+      "name" : "M. Vranjković",
+      "firstname" : "Marko",
+      "lastname" : "Vranjković",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-02-05",
+        "place" : null,
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14682.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1100,9 +1465,247 @@
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 19,
+        "position" : "Defender",
+        "rating" : "7.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 69922,
+      "name" : "T. Kiš",
+      "firstname" : "Tomislav",
+      "lastname" : "Kiš",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-04",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : "180",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/69922.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1114,21 +1717,589 @@
     } ]
   }, {
     "player" : {
-      "id" : 76884,
-      "name" : "M. Stanić",
-      "firstname" : "Mato",
-      "lastname" : "Stanić",
-      "age" : 27,
+      "id" : 76924,
+      "name" : "S. Jakovljević",
+      "firstname" : "Slobodan",
+      "lastname" : "Jakovljević",
+      "age" : 36,
       "birth" : {
-        "date" : "1998-01-11",
-        "place" : "Odžak",
+        "date" : "1989-05-26",
+        "place" : "Priština",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/76924.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 27,
+        "position" : "Defender",
+        "rating" : "8.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 53,
+        "key" : 2,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 151797,
+      "name" : "K. Abramović",
+      "firstname" : "Karlo",
+      "lastname" : "Abramović",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-17",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/151797.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 77,
+        "number" : 77,
+        "position" : "Midfielder",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 25,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 199446,
+      "name" : "N. Janjić",
+      "firstname" : "Nikola",
+      "lastname" : "Janjić",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-07-14",
+        "place" : null,
+        "country" : "Montenegro"
+      },
+      "nationality" : "Montenegro",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/199446.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 200124,
+      "name" : "I. Mašić",
+      "firstname" : "Ilija",
+      "lastname" : "Mašić",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-08",
+        "place" : "Tomislavgrad",
         "country" : "Bosnia and Herzegovina"
       },
       "nationality" : "Bosnia and Herzegovina",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/76884.png"
+      "photo" : "https://media.api-sports.io/football/players/200124.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1137,19 +2308,257 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 4,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 4,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 204073,
+      "name" : "Milan Šikanjić",
+      "firstname" : "Milan",
+      "lastname" : "Šikanjić",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-01-03",
+        "place" : "Banja Luka",
+        "country" : "Bosnia and Herzegovina"
+      },
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : "184",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/204073.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
@@ -1210,33 +2619,33 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
+        "id" : 2,
+        "name" : "UEFA Champions League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1265,9 +2674,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1279,13 +2688,13 @@
     } ]
   }, {
     "player" : {
-      "id" : 79923,
-      "name" : "I. Batarelo",
-      "firstname" : "Ivica",
-      "lastname" : "Batarelo",
-      "age" : 27,
+      "id" : 315462,
+      "name" : "D. Dujmović",
+      "firstname" : "Duje",
+      "lastname" : "Dujmović",
+      "age" : 22,
       "birth" : {
-        "date" : "1998-05-12",
+        "date" : "2003-12-15",
         "place" : "Split",
         "country" : "Croatia"
       },
@@ -1293,7 +2702,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/79923.png"
+      "photo" : "https://media.api-sports.io/football/players/315462.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1302,24 +2711,24 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 191,
         "number" : null,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.766666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 3,
         "out" : null,
         "bench" : null
       },
@@ -1329,23 +2738,23 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 136,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : null,
@@ -1357,87 +2766,68 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 109799,
-      "name" : "N. Mulahusejnović",
-      "firstname" : "Nardin",
-      "lastname" : "Mulahusejnović",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-02-09",
-        "place" : "Gračanica",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : "190 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/109799.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 588,
         "name" : "Zrinjski",
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 16,
-        "minutes" : 1365,
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 191,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "6.766666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 13,
-        "bench" : 0
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 11,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 136,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : null,
@@ -1449,15 +2839,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1472,77 +2862,77 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 485,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 55,
+        "position" : "Defender",
+        "rating" : "8.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 5,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 62,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 51
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 4,
+        "blocks" : 2,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 10,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 128696,
-      "name" : "M. Malekinušić",
-      "firstname" : "Matija",
-      "lastname" : "Malekinušić",
-      "age" : 26,
+      "id" : 337648,
+      "name" : "J. Pranjić",
+      "firstname" : "Jakov",
+      "lastname" : "Pranjić",
+      "age" : 24,
       "birth" : {
-        "date" : "1999-01-27",
+        "date" : "2001-01-13",
         "place" : null,
         "country" : "Croatia"
       },
@@ -1550,7 +2940,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/128696.png"
+      "photo" : "https://media.api-sports.io/football/players/337648.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1559,33 +2949,33 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 5,
-        "minutes" : 547,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 11,
-        "out" : 4,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1614,9 +3004,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1637,35 +3100,35 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 5,
-        "minutes" : 439,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 45,
+        "number" : 22,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 4,
+        "out" : 0,
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 10,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -1674,8 +3137,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -1694,28 +3157,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 162369,
-      "name" : "F. Sabljić",
-      "firstname" : "Franko",
-      "lastname" : "Sabljić",
-      "age" : 22,
+      "id" : 394912,
+      "name" : "Ante Sušak",
+      "firstname" : "Ante",
+      "lastname" : "Sušak",
+      "age" : 19,
       "birth" : {
-        "date" : "2003-09-17",
-        "place" : "Mostar",
-        "country" : "Bosnia and Herzegovina"
+        "date" : "2006-01-20",
+        "place" : "Metković",
+        "country" : "Croatia"
       },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : "196 cm",
-      "weight" : null,
+      "nationality" : "Croatia",
+      "height" : "178",
+      "weight" : "67",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162369.png"
+      "photo" : "https://media.api-sports.io/football/players/394912.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1724,699 +3187,39 @@
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
+        "id" : 3,
+        "name" : "UEFA Europa League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 10,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 169954,
-      "name" : "S. Corda",
-      "firstname" : "Sebastián",
-      "lastname" : "Corda",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-06-29",
-        "place" : "San Martín",
-        "country" : "Argentina"
-      },
-      "nationality" : "Argentina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/169954.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 340091,
-      "name" : "D. Čamber",
-      "firstname" : "David",
-      "lastname" : "Čamber",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-13",
-        "place" : null,
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340091.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 6,
-        "lineups" : 1,
-        "minutes" : 62,
+        "lineups" : 4,
+        "minutes" : 9,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 340174,
-      "name" : "A. Šutković",
-      "firstname" : "Arman",
-      "lastname" : "Šutković",
-      "age" : 19,
-      "birth" : {
-        "date" : "2005-03-05",
-        "place" : null,
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340174.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 345018,
-      "name" : "A. Prskalo",
-      "firstname" : "Antonio",
-      "lastname" : "Prskalo",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-05-10",
-        "place" : "Mostar",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/345018.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 0,
-        "minutes" : 51,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 10,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
-        "out" : 0,
-        "bench" : 5
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 2,
         "key" : null,
         "accuracy" : null
       },
@@ -2426,11 +3229,11 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -2440,244 +3243,41 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 349419,
-      "name" : "L. Pršlja",
-      "firstname" : "Luka",
-      "lastname" : "Pršlja",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-03-02",
-        "place" : "Zagreb",
-        "country" : "Croatia"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/349419.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 588,
         "name" : "Zrinjski",
         "logo" : "https://media.api-sports.io/football/teams/588.png"
       },
       "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 421860,
-      "name" : "A. Berbić",
-      "firstname" : "Adnan",
-      "lastname" : "Berbić",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-02-11",
-        "place" : "Kakanj",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : "185 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/421860.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 449617,
-      "name" : "A. Duraković",
-      "firstname" : "Amir",
-      "lastname" : "Duraković",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-22",
-        "place" : null,
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/449617.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 588,
-        "name" : "Zrinjski",
-        "logo" : "https://media.api-sports.io/football/teams/588.png"
-      },
-      "league" : {
-        "id" : 315,
-        "name" : "Premijer Liga",
-        "country" : "Bosnia",
-        "logo" : "https://media.api-sports.io/football/leagues/315.png",
-        "flag" : "https://media.api-sports.io/flags/ba.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 9,
         "number" : null,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 2,
         "out" : null,
         "bench" : null
       },
@@ -2687,12 +3287,12 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 2,
         "key" : null,
         "accuracy" : null
       },
@@ -2702,11 +3302,11 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -2715,15 +3315,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -2738,13 +3338,13 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 17,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2760,8 +3360,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2795,8 +3395,503 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 394978,
+      "name" : "T. Majić",
+      "firstname" : "Toni",
+      "lastname" : "Majić",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-05-03",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/394978.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 78,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 78,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 519390,
+      "name" : "F. Šakota",
+      "firstname" : "Filip",
+      "lastname" : "Šakota",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-01-20",
+        "place" : "Mostar",
+        "country" : "Bosnia and Herzegovina"
+      },
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/519390.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 519391,
+      "name" : "B. Filipović",
+      "firstname" : "Born",
+      "lastname" : "Filipović",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-06-05",
+        "place" : "Mostar",
+        "country" : "Bosnia and Herzegovina"
+      },
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/519391.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 588,
+        "name" : "Zrinjski",
+        "logo" : "https://media.api-sports.io/football/teams/588.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 45,
+        "number" : 3,
+        "position" : "Attacker",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

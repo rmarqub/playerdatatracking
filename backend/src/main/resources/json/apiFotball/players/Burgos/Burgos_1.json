@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "9580"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 2189,
-      "name" : "L. Badiashile",
-      "firstname" : "Loïc",
-      "lastname" : "Badiashile Mukinayi",
+      "id" : 8671,
+      "name" : "K. Appin",
+      "firstname" : "Kévin",
+      "lastname" : "Sebastien Appin",
       "age" : 27,
       "birth" : {
-        "date" : "1998-02-05",
-        "place" : "Limoges",
+        "date" : "1998-01-20",
+        "place" : "Marseille",
         "country" : "France"
       },
-      "nationality" : "France",
-      "height" : "186 cm",
-      "weight" : null,
+      "nationality" : "Martinique",
+      "height" : "177 cm",
+      "weight" : "71 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2189.png"
+      "photo" : "https://media.api-sports.io/football/players/8671.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,21 +41,205 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 4,
+        "minutes" : 346,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.86",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 4,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 109,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 21433,
+      "name" : "F. Miguel",
+      "firstname" : "Florian",
+      "lastname" : "Miguel",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-09-01",
+        "place" : "Brugge",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "179 cm",
+      "weight" : "70 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/21433.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 12,
+        "position" : "Defender",
+        "rating" : "7.05",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 21
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 296,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 22,
+        "blocks" : 3,
+        "interceptions" : 12
+      },
+      "duels" : {
+        "total" : 77,
+        "won" : 47
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 46760,
+      "name" : "Sergio González",
+      "firstname" : "Sergio",
+      "lastname" : "González Martínez",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-05-14",
+        "place" : "Cartagena",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184 cm",
+      "weight" : "70 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46760.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 137,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
         "total" : null,
@@ -64,11 +248,103 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 81,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47096,
+      "name" : "Ander Cantero",
+      "firstname" : "Ander",
+      "lastname" : "Cantero Armendariz",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-01-09",
+        "place" : "Rotxapea",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "189 cm",
+      "weight" : "82 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47096.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : "7.29",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
         "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 9,
+        "assists" : 0,
+        "saves" : 23
+      },
+      "passes" : {
+        "total" : 169,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +354,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -91,7 +367,7 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -102,170 +378,24 @@
         "missed" : 0,
         "saved" : 0
       }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 97,
-        "name" : "Taça da Liga",
-        "country" : "Portugal",
-        "logo" : "https://media.api-sports.io/football/leagues/97.png",
-        "flag" : "https://media.api-sports.io/flags/pt.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 11400,
-      "name" : "T. Rodríguez",
-      "firstname" : "Thomas",
-      "lastname" : "Rodríguez Trogsar",
-      "age" : 29,
+      "id" : 47279,
+      "name" : "Iñigo Córdoba",
+      "firstname" : "Iñigo",
+      "lastname" : "Córdoba Querejeta",
+      "age" : 28,
       "birth" : {
-        "date" : "1996-04-05",
-        "place" : "Santiago de Chile",
-        "country" : "Chile"
+        "date" : "1997-03-13",
+        "place" : "Bilbao",
+        "country" : "Spain"
       },
-      "nationality" : "Chile",
-      "height" : "184 cm",
-      "weight" : "75 kg",
+      "nationality" : "Spain",
+      "height" : "180 cm",
+      "weight" : "76 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/11400.png"
+      "photo" : "https://media.api-sports.io/football/players/47279.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,24 +409,24 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 15,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 289,
+        "number" : 21,
+        "position" : "Midfielder",
+        "rating" : "6.58",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
-        "out" : 0,
-        "bench" : 15
+        "out" : 4,
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
+        "total" : 5,
         "on" : null
       },
       "goals" : {
@@ -306,27 +436,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
-        "key" : null,
+        "total" : 100,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 10,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 64,
+        "won" : 32
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 17,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 8,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -334,820 +464,30 @@
         "red" : 0
       },
       "penalty" : {
-        "won" : null,
+        "won" : 1,
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 97,
-        "name" : "Taça da Liga",
-        "country" : "Portugal",
-        "logo" : "https://media.api-sports.io/football/leagues/97.png",
-        "flag" : "https://media.api-sports.io/flags/pt.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 46698,
-      "name" : "José Caro",
-      "firstname" : "José Antonio",
-      "lastname" : "Caro Díaz",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-05-03",
-        "place" : "La Palma del Condado",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "194 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46698.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 46763,
-      "name" : "José Matos",
-      "firstname" : "José Joaquín",
-      "lastname" : "Matos García",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-05-06",
-        "place" : "Sevilla",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "168 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46763.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 46803,
-      "name" : "Joni Montiel",
-      "firstname" : "Jonathan",
-      "lastname" : "Montiel Caballero",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-03",
-        "place" : "Madrid",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "173 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46803.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 46914,
-      "name" : "E. Saveljich",
-      "firstname" : "Esteban Ariel",
-      "lastname" : "Saveljich",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-05-20",
-        "place" : "Tandil",
-        "country" : "Argentina"
-      },
-      "nationality" : "Montenegro",
-      "height" : "187 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46914.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 46941,
-      "name" : "Unai Elgezabal",
-      "firstname" : "Unai",
-      "lastname" : "Elgezabal Udondo",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-04-25",
-        "place" : "Urduliz",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46941.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 92525,
-      "name" : "Borja González",
-      "firstname" : "Borja",
-      "lastname" : "González Tejada",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-11-17",
-        "place" : "Pinto",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/92525.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 129697,
-      "name" : "Álex Bermejo",
-      "firstname" : "Alejandro",
-      "lastname" : "Bermejo Escribano",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-12-11",
-        "place" : "Barcelona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129697.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 163209,
-      "name" : "Rubén de Gea",
-      "firstname" : "Rubén",
-      "lastname" : "de Gea Abril",
+      "id" : 48636,
+      "name" : "G. Barès",
+      "firstname" : "Gabriel Julien Dominique",
+      "lastname" : "Barès",
       "age" : 25,
       "birth" : {
-        "date" : "2000-04-04",
-        "place" : null,
-        "country" : "Spain"
+        "date" : "2000-08-29",
+        "place" : "Lausanne",
+        "country" : "Switzerland"
       },
-      "nationality" : "Spain",
-      "height" : "193 cm",
-      "weight" : null,
+      "nationality" : "Switzerland",
+      "height" : "187",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/163209.png"
+      "photo" : "https://media.api-sports.io/football/players/48636.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1161,99 +501,7 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 193327,
-      "name" : "Miki Muñoz",
-      "firstname" : "Miguel",
-      "lastname" : "Muñoz Mora",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-04-13",
-        "place" : "Blanes",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/193327.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -1317,21 +565,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 199043,
-      "name" : "Javi López",
-      "firstname" : "Francisco Javier",
-      "lastname" : "López-Pinto Dorado",
-      "age" : 24,
+      "id" : 79371,
+      "name" : "A. Arroyo",
+      "firstname" : "Anderson",
+      "lastname" : "Arroyo Córdoba",
+      "age" : 26,
       "birth" : {
-        "date" : "2001-05-05",
-        "place" : "Barcelona",
-        "country" : "Spain"
+        "date" : "1999-09-27",
+        "place" : "Quibdó",
+        "country" : "Colombia"
       },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : null,
+      "nationality" : "Colombia",
+      "height" : "176",
+      "weight" : "71",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/199043.png"
+      "photo" : "https://media.api-sports.io/football/players/79371.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1345,21 +593,21 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 261,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.87",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 13
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1368,34 +616,34 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 135,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 24,
+        "won" : 15
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1406,170 +654,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 97,
-        "name" : "Taça da Liga",
-        "country" : "Portugal",
-        "logo" : "https://media.api-sports.io/football/leagues/97.png",
-        "flag" : "https://media.api-sports.io/flags/pt.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 103,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 306949,
-      "name" : "Sergio Fernández",
-      "firstname" : "Sergio",
-      "lastname" : "Fernández Escobar",
-      "age" : 23,
+      "id" : 104883,
+      "name" : "Grego",
+      "firstname" : "Gregorio",
+      "lastname" : "Sierra Pérez",
+      "age" : 32,
       "birth" : {
-        "date" : "2002-02-14",
-        "place" : "Sevilla",
+        "date" : "1993-03-05",
+        "place" : "Murcia",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
+      "height" : "184 cm",
+      "weight" : "74 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/306949.png"
+      "photo" : "https://media.api-sports.io/football/players/104883.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1583,15 +685,15 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 8,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.14",
         "captain" : false
       },
       "substitutes" : {
@@ -1600,99 +702,7 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 335697,
-      "name" : "David López",
-      "firstname" : "David",
-      "lastname" : "López Guijarro",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-03",
-        "place" : "Palma de Mallorca",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "195 cm",
-      "weight" : "87 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/335697.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 16,
-        "minutes" : 1408,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.005882",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 3,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 1,
+        "total" : 5,
         "on" : 1
       },
       "goals" : {
@@ -1702,633 +712,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 581,
+        "total" : 428,
         "key" : 2,
-        "accuracy" : null
+        "accuracy" : 46
       },
       "tackles" : {
-        "total" : 15,
-        "blocks" : 10,
-        "interceptions" : 22
+        "total" : 7,
+        "blocks" : 6,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : 101,
-        "won" : 67
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 97,
-        "name" : "Taça da Liga",
-        "country" : "Portugal",
-        "logo" : "https://media.api-sports.io/football/leagues/97.png",
-        "flag" : "https://media.api-sports.io/flags/pt.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 76,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 336595,
-      "name" : "Lucas Ricoy",
-      "firstname" : "Lucas",
-      "lastname" : "Ricoy Serrano",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-01-18",
-        "place" : "Villanueva del Pardillo",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/336595.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 337006,
-      "name" : "Saúl del Cerro",
-      "firstname" : "Saúl",
-      "lastname" : "del Cerro García",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-05-20",
-        "place" : "Burgos",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/337006.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 369421,
-      "name" : "Samuel Rodriguez",
-      "firstname" : "Samuel Rodriguez",
-      "lastname" : "Vera",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-05-05",
-        "place" : "La Asunción",
-        "country" : "Spain"
-      },
-      "nationality" : "Venezuela",
-      "height" : "193 cm",
-      "weight" : "90 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/369421.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 395214,
-      "name" : "Javier Moral",
-      "firstname" : "Javier",
-      "lastname" : "Moral",
-      "age" : 19,
-      "birth" : {
-        "date" : "2005-03-19",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/395214.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 401454,
-      "name" : "Ian Forns",
-      "firstname" : "Ian",
-      "lastname" : "Forns Montes",
-      "age" : 21,
-      "birth" : {
-        "date" : "2005-02-05",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/401454.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 186,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 61,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 8
+        "total" : 50,
+        "won" : 31
       },
       "dribbles" : {
         "attempts" : 4,
-        "success" : null,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : null
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 1,
@@ -2342,170 +746,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 97,
-        "name" : "Taça da Liga",
-        "country" : "Portugal",
-        "logo" : "https://media.api-sports.io/football/leagues/97.png",
-        "flag" : "https://media.api-sports.io/flags/pt.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 9580,
-        "name" : "Burgos",
-        "logo" : "https://media.api-sports.io/football/teams/9580.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 67,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 433449,
-      "name" : "José Menor Molinero",
-      "firstname" : "José",
-      "lastname" : "Menor Molinero",
-      "age" : 23,
+      "id" : 104932,
+      "name" : "Curro Sánchez",
+      "firstname" : "Francisco José",
+      "lastname" : "Sánchez Rodríguez",
+      "age" : 29,
       "birth" : {
-        "date" : "2002-08-20",
-        "place" : null,
+        "date" : "1996-01-03",
+        "place" : "La Palma del Condado",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
+      "height" : "173 cm",
+      "weight" : "71 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/433449.png"
+      "photo" : "https://media.api-sports.io/football/players/104932.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2519,14 +777,750 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 422,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.82",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 5,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 236,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 179075,
+      "name" : "Aitor Córdoba",
+      "firstname" : "Aitor",
+      "lastname" : "Córdoba Querejeta",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-05-21",
+        "place" : "Bilbao",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "191 cm",
+      "weight" : "80 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/179075.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 609,
+        "number" : 18,
+        "position" : "Defender",
+        "rating" : "6.79",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 349,
+        "key" : 2,
+        "accuracy" : 41
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 5,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 18
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 181867,
+      "name" : "Miguel Atienza",
+      "firstname" : "Miguel Ángel",
+      "lastname" : "Atienza Villa",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-05-27",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "186 cm",
+      "weight" : "77 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/181867.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 695,
+        "number" : 5,
+        "position" : "Midfielder",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 337,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 22,
+        "blocks" : 6,
+        "interceptions" : 30
+      },
+      "duels" : {
+        "total" : 90,
+        "won" : 50
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 182686,
+      "name" : "Iván Morante",
+      "firstname" : "Iván",
+      "lastname" : "Morante Ruiz",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-15",
+        "place" : "León",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "183 cm",
+      "weight" : "75 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/182686.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 713,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "7.06",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 413,
+        "key" : 6,
+        "accuracy" : 46
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : 3,
+        "interceptions" : 9
+      },
+      "duels" : {
+        "total" : 70,
+        "won" : 33
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 182757,
+      "name" : "Iván Chapela",
+      "firstname" : "Iván",
+      "lastname" : "Chapela López",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-05-21",
+        "place" : "Chiclana de la Frontera",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "181 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/182757.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 179,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 70,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 184277,
+      "name" : "Fer Niño",
+      "firstname" : "Fernando",
+      "lastname" : "Niño Rodríguez",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-10-24",
+        "place" : "Palma de Mallorca",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "191 cm",
+      "weight" : "78 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/184277.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 631,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.13",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 5,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 170,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 112,
+        "won" : 54
+      },
+      "dribbles" : {
+        "attempts" : 18,
+        "success" : 7,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 16,
+        "committed" : 15
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 284241,
+      "name" : "José Mateo Mejía Piedrahita",
+      "firstname" : "José Mateo",
+      "lastname" : "Mejía Piedrahita",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-03-31",
+        "place" : "Zaragoza",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "181 cm",
+      "weight" : "70 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/284241.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 1,
+        "minutes" : 128,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 1,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 285161,
+      "name" : "Brais Martínez",
+      "firstname" : "Brais",
+      "lastname" : "Martínez Prado",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-12-13",
+        "place" : "Vigo",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "175 cm",
+      "weight" : "68 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/285161.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 296494,
+      "name" : "Marc Monedero",
+      "firstname" : "Marc",
+      "lastname" : "Monedero Sánchez",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-01-16",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/296494.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 37,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
@@ -2541,8 +1535,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2576,8 +1570,284 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 308452,
+      "name" : "David González",
+      "firstname" : "David",
+      "lastname" : "González Ballesteros",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-06-22",
+        "place" : "Burgos",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "180 cm",
+      "weight" : "72 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/308452.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 618,
+        "number" : 14,
+        "position" : "Midfielder",
+        "rating" : "6.94",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 8,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 168,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 17,
+        "blocks" : null,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 83,
+        "won" : 42
+      },
+      "dribbles" : {
+        "attempts" : 18,
+        "success" : 7,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 2,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 384137,
+      "name" : "Mario Cantero",
+      "firstname" : "Mario",
+      "lastname" : "Cantero Mariño",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-03-13",
+        "place" : "Vigo",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "175 cm",
+      "weight" : "65 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/384137.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 1,
+        "minutes" : 117,
+        "number" : 17,
+        "position" : "Midfielder",
+        "rating" : "6.52",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 1,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 387097,
+      "name" : "Álex",
+      "firstname" : "Alejandro",
+      "lastname" : "Lizancos Saldaña",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-14",
+        "place" : "Almería",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "186 cm",
+      "weight" : "78 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/387097.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 9580,
+        "name" : "Burgos",
+        "logo" : "https://media.api-sports.io/football/teams/9580.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 436,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.79",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 2,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 183,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 3,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 53,
+        "won" : 27
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

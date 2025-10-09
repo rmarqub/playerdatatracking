@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "1357"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 6938,
-      "name" : "B. Waine",
-      "firstname" : "Benjamin Peter",
-      "lastname" : "Waine",
-      "age" : 24,
+      "id" : 1451,
+      "name" : "Julio Pleguezuelo",
+      "firstname" : "Julio José",
+      "lastname" : "Pleguezuelo Selva",
+      "age" : 28,
       "birth" : {
-        "date" : "2001-06-11",
-        "place" : "Wellington",
-        "country" : "New Zealand"
+        "date" : "1997-01-26",
+        "place" : "Palma de Mallorca",
+        "country" : "Spain"
       },
-      "nationality" : "New Zealand",
-      "height" : "179 cm",
-      "weight" : "78 kg",
+      "nationality" : "Spain",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/6938.png"
+      "photo" : "https://media.api-sports.io/football/players/1451.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,39 +36,39 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 8,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "position" : "Defender",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 3,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 2
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -91,8 +91,173 @@
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 31,
+        "lineups" : 22,
+        "minutes" : 1569,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.937037",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 9,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 894,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 30,
+        "blocks" : 11,
+        "interceptions" : 22
+      },
+      "duels" : {
+        "total" : 223,
+        "won" : 133
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 10,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 23,
+        "committed" : 17
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 15717,
+      "name" : "M. Ross",
+      "firstname" : "Mathias",
+      "lastname" : "Ross Jensen",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-15",
+        "place" : "Aalborg",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "190",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/15717.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 52,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -109,20 +274,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 68,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.700000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 63,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "7.6",
         "captain" : false
       },
       "substitutes" : {
@@ -131,28 +296,28 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 13,
-        "key" : 2,
+        "total" : 28,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 5,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 14,
+        "won" : 11
       },
       "dribbles" : {
         "attempts" : null,
@@ -160,8 +325,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -178,21 +343,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 15595,
-      "name" : "M. Bundu",
-      "firstname" : "Mustapha",
-      "lastname" : "Bundu Shong Hames",
-      "age" : 28,
+      "id" : 17699,
+      "name" : "O. Dale",
+      "firstname" : "Owen",
+      "lastname" : "Dale",
+      "age" : 27,
       "birth" : {
-        "date" : "1997-02-28",
-        "place" : "Freetown",
-        "country" : "Sierra Leone"
+        "date" : "1998-11-01",
+        "place" : "Warrington",
+        "country" : "England"
       },
-      "nationality" : "Sierra Leone",
-      "height" : "188 cm",
-      "weight" : "79 kg",
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "65",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15595.png"
+      "photo" : "https://media.api-sports.io/football/players/17699.png"
     },
     "statistics" : [ {
       "team" : {
@@ -201,63 +366,63 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 23,
-        "lineups" : 13,
-        "minutes" : 1133,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 149,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.756521",
+        "rating" : "6.800000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 10,
-        "out" : 11,
-        "bench" : 15
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 20,
-        "on" : 9
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 313,
-        "key" : 18,
+        "total" : 28,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 18,
+        "total" : 6,
         "blocks" : 1,
-        "interceptions" : 7
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 154,
-        "won" : 61
+        "total" : 26,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : 18,
-        "success" : 5,
+        "attempts" : 3,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 12,
-        "committed" : 25
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -267,57 +432,76 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 18366,
+      "name" : "B. Sarpong-Wiredu",
+      "firstname" : "Brendan Nana",
+      "lastname" : "Sarpong-Wiredu",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-11-07",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "191",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18366.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 1357,
         "name" : "Plymouth",
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 96,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 347,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
+        "position" : "Midfielder",
+        "rating" : "6.433333",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 1,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 41,
-        "key" : 1,
+        "total" : 116,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : 1,
-        "interceptions" : null
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 13,
-        "won" : 5
+        "total" : 30,
+        "won" : 16
       },
       "dribbles" : {
         "attempts" : 2,
@@ -325,13 +509,13 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 3
+        "drawn" : 9,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -347,26 +531,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 102,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "7.6",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -379,27 +563,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 61,
+        "key" : null,
+        "accuracy" : 56
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 22,
+        "total" : 9,
         "won" : 6
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -413,24 +597,97 @@
         "missed" : 0,
         "saved" : null
       }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 189,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "7.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 110,
+        "key" : null,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
     } ]
   }, {
     "player" : {
-      "id" : 18810,
-      "name" : "A. Gray",
-      "firstname" : "Andre Anthony",
-      "lastname" : "Gray",
-      "age" : 34,
+      "id" : 19894,
+      "name" : "B. Mumba",
+      "firstname" : "Bali",
+      "lastname" : "Mumba",
+      "age" : 24,
       "birth" : {
-        "date" : "1991-06-26",
-        "place" : "Wolverhampton",
+        "date" : "2001-10-08",
+        "place" : "South Shields",
         "country" : "England"
       },
-      "nationality" : "Jamaica",
-      "height" : "178 cm",
-      "weight" : "83 kg",
+      "nationality" : "England",
+      "height" : "176",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18810.png"
+      "photo" : "https://media.api-sports.io/football/players/19894.png"
     },
     "statistics" : [ {
       "team" : {
@@ -439,995 +696,59 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 5,
-        "minutes" : 548,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.684615",
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 990,
+        "number" : 11,
+        "position" : "Defender",
+        "rating" : "6.83",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 4,
-        "bench" : 10
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
       },
       "shots" : {
         "total" : 7,
         "on" : 6
       },
       "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 86,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 42,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19127,
-      "name" : "A. Forshaw",
-      "firstname" : "Adam John",
-      "lastname" : "Forshaw",
-      "age" : 34,
-      "birth" : {
-        "date" : "1991-10-08",
-        "place" : "Liverpool",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "174 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19127.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 7,
-        "minutes" : 678,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.712500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 3,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 3,
         "saves" : null
       },
       "passes" : {
-        "total" : 188,
-        "key" : 2,
+        "total" : 340,
+        "key" : 12,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 27,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 42,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 19,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
+        "total" : 22,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : 2,
-        "won" : 2
+        "total" : 130,
+        "won" : 55
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 27,
+        "success" : 10,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19921,
-      "name" : "M. Maroši",
-      "firstname" : "Marko",
-      "lastname" : "Maroši",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-10-23",
-        "place" : "Michalovce",
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "193 cm",
-      "weight" : "90 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19921.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20384,
-      "name" : "M. Cooper",
-      "firstname" : "Michael John",
-      "lastname" : "Cooper",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-10-08",
-        "place" : "Exeter",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "186 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20384.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20432,
-      "name" : "D. Scarr",
-      "firstname" : "Daniel George",
-      "lastname" : "Scarr",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-12-24",
-        "place" : "Bromsgrove",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20432.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 44989,
-      "name" : "M. Miller",
-      "firstname" : "Mickel Carlos",
-      "lastname" : "Miller",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-12-02",
-        "place" : "Croydon",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "173 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/44989.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 82002,
-      "name" : "C. Burton",
-      "firstname" : "Callum Alex David",
-      "lastname" : "Burton",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-08-15",
-        "place" : "Newport",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/82002.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 129709,
-      "name" : "M. Whittaker",
-      "firstname" : "Morgan Reece",
-      "lastname" : "Whittaker",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-07",
-        "place" : "Derby",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129709.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1751,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 70,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 14,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
+        "drawn" : 14,
+        "committed" : 10
       },
       "cards" : {
         "yellow" : 3,
@@ -1448,93 +769,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 7,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
+        "number" : 11,
+        "position" : "Defender",
+        "rating" : "7.6",
         "captain" : false
       },
       "substitutes" : {
@@ -1547,925 +795,27 @@
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 23,
+        "total" : 38,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 5
+        "total" : 7,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 144021,
-      "name" : "M. Tijani",
-      "firstname" : "Muhamed",
-      "lastname" : "Tijani",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-07-26",
-        "place" : null,
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "189 cm",
-      "weight" : "86 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/144021.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 131,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.640000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 7,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 153424,
-      "name" : "L. Gibson",
-      "firstname" : "Lewis Jack",
-      "lastname" : "Gibson",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-07-19",
-        "place" : "Durham",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/153424.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 18,
-        "minutes" : 1620,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.011111",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1149,
-        "key" : 7,
-        "accuracy" : 55
-      },
-      "tackles" : {
-        "total" : 26,
-        "blocks" : 25,
-        "interceptions" : 17
-      },
-      "duels" : {
-        "total" : 116,
-        "won" : 82
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 16,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 41,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 322929,
-      "name" : "I. Cissoko",
-      "firstname" : "Ibrahim",
-      "lastname" : "Cissoko",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-03-26",
-        "place" : "Nijmegen",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Netherlands",
-      "height" : "174 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/322929.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 9,
-        "minutes" : 666,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.792307",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 180,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 15,
-        "blocks" : null,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 124,
-        "won" : 64
-      },
-      "dribbles" : {
-        "attempts" : 47,
-        "success" : 23,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 23,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 38,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 331567,
-      "name" : "O. Halls",
-      "firstname" : "Oscar",
-      "lastname" : "Halls",
-      "age" : 18,
-      "birth" : {
-        "date" : "2006-01-19",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/331567.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 331569,
-      "name" : "F. Issaka",
-      "firstname" : "Frederick",
-      "lastname" : "Habib Yambapou Issaka",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-07-28",
-        "place" : "Truro",
-        "country" : "England"
-      },
-      "nationality" : "Wales",
-      "height" : "177 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/331569.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 3,
-        "minutes" : 545,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.353333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 3,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 88,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 96,
-        "won" : 26
-      },
-      "dribbles" : {
-        "attempts" : 34,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 68,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 22,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 7,
         "success" : 3,
         "past" : null
       },
@@ -2492,24 +842,427 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : 61,
+        "number" : 11,
+        "position" : "Defender",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20423,
+      "name" : "J. Edwards",
+      "firstname" : "Joseph Robert",
+      "lastname" : "Edwards",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-10-31",
+        "place" : "Gloucester",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "173",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20423.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 87,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "6.066666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 63,
+        "number" : 8,
+        "position" : "Defender",
+        "rating" : "7.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 52,
+        "key" : null,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 8,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 28585,
+      "name" : "K. Szűcs",
+      "firstname" : "Kornél",
+      "lastname" : "Szűcs",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-09-24",
+        "place" : null,
+        "country" : "Hungary"
+      },
+      "nationality" : "Hungary",
+      "height" : "190",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/28585.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.400000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 261,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 50,
+        "won" : 26
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 27,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
         "out" : 0,
         "bench" : 1
       },
@@ -2520,22 +1273,22 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 10,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -2558,24 +1311,97 @@
         "missed" : 0,
         "saved" : null
       }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 65,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
     } ]
   }, {
     "player" : {
-      "id" : 331570,
-      "name" : "W. Jenkins-Davies",
-      "firstname" : "William",
-      "lastname" : "Jenkins-Davies",
-      "age" : 21,
+      "id" : 44810,
+      "name" : "J. MacKenzie",
+      "firstname" : "Jack Andrew",
+      "lastname" : "MacKenzie",
+      "age" : 25,
       "birth" : {
-        "date" : "2004-10-22",
-        "place" : "Torquay",
-        "country" : "England"
+        "date" : "2000-04-07",
+        "place" : "Aberdeen",
+        "country" : "Scotland"
       },
-      "nationality" : "Wales",
-      "height" : "180 cm",
-      "weight" : "75 kg",
+      "nationality" : "Scotland",
+      "height" : "191",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/331570.png"
+      "photo" : "https://media.api-sports.io/football/players/44810.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2584,33 +1410,33 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2639,9 +1465,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2662,21 +1488,351 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45203,
+      "name" : "C. Hazard",
+      "firstname" : "Conor William",
+      "lastname" : "Hazard",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-03-05",
+        "place" : "Downpatrick",
+        "country" : "Northern Ireland"
+      },
+      "nationality" : "Northern Ireland",
+      "height" : "198",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45203.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 29,
+        "lineups" : 27,
+        "minutes" : 2250,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.892000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 35,
+        "assists" : 0,
+        "saves" : 85
+      },
+      "passes" : {
+        "total" : 827,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 126876,
+      "name" : "X. Amaechi",
+      "firstname" : "Xavier Casmier",
+      "lastname" : "Amaechi",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-05",
+        "place" : "Bath",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "179",
+      "weight" : "79",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/126876.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 424,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.260000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 142,
+        "key" : 13,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 52,
+        "won" : 27
+      },
+      "dribbles" : {
+        "attempts" : 25,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 4,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "minutes" : 26,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2689,7 +1845,410 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 10,
+        "total" : 11,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129918,
+      "name" : "M. Sorinola",
+      "firstname" : "Matthew Alexander",
+      "lastname" : "Sorinola",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-02-19",
+        "place" : "Lambeth",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "173",
+      "weight" : "65",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129918.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 449,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.628571",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 181,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 59,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 29,
+        "position" : "Defender",
+        "rating" : "8.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 62,
+        "key" : 5,
+        "accuracy" : 55
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 125,
+        "number" : 29,
+        "position" : "Defender",
+        "rating" : "7.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 180556,
+      "name" : "L. Tolaj",
+      "firstname" : "Lorent",
+      "lastname" : "Tolaj",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-10-23",
+        "place" : "Aigle",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Switzerland",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/180556.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 267,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.400000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 55,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "8.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 19,
         "key" : null,
         "accuracy" : null
       },
@@ -2700,7 +2259,245 @@
       },
       "duels" : {
         "total" : 4,
-        "won" : 1
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 34,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 311101,
+      "name" : "A. Mitchell",
+      "firstname" : "Alexander Paul",
+      "lastname" : "Mitchell",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-10-07",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "191",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/311101.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 401,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.580000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 175,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -2726,21 +2523,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 394683,
-      "name" : "J. Hatch",
-      "firstname" : "Joseph",
-      "lastname" : "Hatch",
-      "age" : 19,
+      "id" : 331566,
+      "name" : "Z. Baker",
+      "firstname" : "Zak",
+      "lastname" : "Baker",
+      "age" : 21,
       "birth" : {
-        "date" : "2006-09-07",
-        "place" : "Braunton",
-        "country" : "Wales"
+        "date" : "2006-01-27",
+        "place" : null,
+        "country" : "England"
       },
-      "nationality" : "Wales",
+      "nationality" : "England",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/394683.png"
+      "photo" : "https://media.api-sports.io/football/players/331566.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2749,24 +2546,97 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 1,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
@@ -2822,26 +2692,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -2849,8 +2719,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2884,20 +2754,20 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 456583,
-      "name" : "Jack Matthews",
-      "firstname" : "Jack",
-      "lastname" : "Matthews",
-      "age" : 19,
+      "id" : 340815,
+      "name" : "C. Roberts",
+      "firstname" : "Caleb",
+      "lastname" : "Roberts",
+      "age" : 20,
       "birth" : {
-        "date" : "2006-05-13",
+        "date" : "2004-10-24",
         "place" : null,
         "country" : "England"
       },
@@ -2905,7 +2775,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/456583.png"
+      "photo" : "https://media.api-sports.io/football/players/340815.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2914,162 +2784,70 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 68,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.800000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 23,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 10,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 459528,
-      "name" : "J. Bernard",
-      "firstname" : "Josh",
-      "lastname" : "Bernard",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459528.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1357,
-        "name" : "Plymouth",
-        "logo" : "https://media.api-sports.io/football/teams/1357.png"
-      },
-      "league" : {
-        "id" : 40,
-        "name" : "Championship",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -3079,20 +2857,93 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 51,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 99,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -3106,12 +2957,177 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 23,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 344169,
+      "name" : "A. Benarous",
+      "firstname" : "Ayman Omar",
+      "lastname" : "Benarous",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-07-27",
+        "place" : "Bristol",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "173",
+      "weight" : "64",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/344169.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 227,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
         "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 106,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 27,
+        "number" : 14,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
         "key" : null,
         "accuracy" : null
       },
@@ -3121,16 +3137,89 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "7.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 59,
+        "key" : 2,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
@@ -3141,28 +3230,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 459530,
-      "name" : "T. Finn",
-      "firstname" : "Tegan",
-      "lastname" : "Finn",
-      "age" : null,
+      "id" : 348815,
+      "name" : "L. McCabe",
+      "firstname" : "Law Marc",
+      "lastname" : "McCabe",
+      "age" : 19,
       "birth" : {
-        "date" : null,
-        "place" : null,
+        "date" : "2006-01-16",
+        "place" : "Middlesbrough",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : null,
+      "height" : "173",
+      "weight" : "68",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459530.png"
+      "photo" : "https://media.api-sports.io/football/players/348815.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3171,50 +3260,142 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 40,
-        "name" : "Championship",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/40.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 141,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.500000",
+        "position" : "Midfielder",
+        "rating" : "6.850000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 9
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 58,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 356690,
+      "name" : "Owen Oseni",
+      "firstname" : "Owen",
+      "lastname" : "Oseni",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-07",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "187",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/356690.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 100,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.766666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 1,
         "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
+        "total" : 6,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 17,
-        "won" : 6
+        "total" : 13,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : 2,
@@ -3223,7 +3404,80 @@
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 3
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -3244,26 +3498,191 @@
         "logo" : "https://media.api-sports.io/football/teams/1357.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 145,
+        "number" : 18,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "7.35",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 2,
         "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 19,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 26,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 459530,
+      "name" : "T. Finn",
+      "firstname" : "Tegan",
+      "lastname" : "Finn",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-03-17",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "180",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/459530.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 108,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.433333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 26,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 20,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 22,
+        "number" : 39,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -3271,8 +3690,173 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 136,
+        "number" : 39,
+        "position" : "Midfielder",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 503523,
+      "name" : "S. Campbell",
+      "firstname" : "Seb",
+      "lastname" : "Campbell",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-12-18",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/503523.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 41,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3306,8 +3890,81 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1357,
+        "name" : "Plymouth",
+        "logo" : "https://media.api-sports.io/football/teams/1357.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 41,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

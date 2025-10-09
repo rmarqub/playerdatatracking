@@ -1,25 +1,117 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "708"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 19,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 1
   },
   "response" : [ {
     "player" : {
-      "id" : 3530,
-      "name" : "A. Rrapaj",
-      "firstname" : "Arinaldo",
-      "lastname" : "Rrapaj",
-      "age" : 23,
+      "id" : 3453,
+      "name" : "A. Hoxha",
+      "firstname" : "Alban",
+      "lastname" : "Hoxha",
+      "age" : 38,
       "birth" : {
-        "date" : "2001-08-09",
+        "date" : "1987-11-23",
+        "place" : "Cërrik",
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : "188",
+      "weight" : "79",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/3453.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 708,
+        "name" : "Partizani",
+        "logo" : "https://media.api-sports.io/football/teams/708.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 3512,
+      "name" : "P. Qirko",
+      "firstname" : "Pano",
+      "lastname" : "Qirko",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-06-26",
         "place" : "Vlorë",
         "country" : "Albania"
       },
@@ -27,82 +119,9 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3530.png"
+      "photo" : "https://media.api-sports.io/football/players/3512.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 15,
-        "minutes" : 1313,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 5,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -114,106 +133,14 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 227,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 3875,
-      "name" : "F. Lala",
-      "firstname" : "Franci",
-      "lastname" : "Lala",
-      "age" : 25,
-      "birth" : {
-        "date" : "1999-07-11",
-        "place" : "Tiranë",
-        "country" : "Albania"
-      },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3875.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
@@ -270,96 +197,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 3902,
-      "name" : "A. Hadroj",
-      "firstname" : "Andi",
-      "lastname" : "Hadroj",
+      "id" : 13939,
+      "name" : "C. Martínez",
+      "firstname" : "Carlos Manuel",
+      "lastname" : "Martínez Castro",
       "age" : 26,
       "birth" : {
-        "date" : "1999-02-22",
-        "place" : "Pukë",
-        "country" : "Albania"
+        "date" : "1999-03-30",
+        "place" : "Santa Ana",
+        "country" : "Costa Rica"
       },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "Costa Rica",
+      "height" : "176",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3902.png"
+      "photo" : "https://media.api-sports.io/football/players/13939.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 12,
-        "minutes" : 993,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -371,106 +225,14 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 3911,
-      "name" : "V. Murataj",
-      "firstname" : "Valentino",
-      "lastname" : "Murataj",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-08-15",
-        "place" : "Fier",
-        "country" : "Albania"
-      },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3911.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
@@ -524,7 +286,26 @@
         "missed" : null,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 74667,
+      "name" : "A. Bytyçi",
+      "firstname" : "Altin",
+      "lastname" : "Bytyçi",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-01-14",
+        "place" : "Suharekë",
+        "country" : "Kosovo"
+      },
+      "nationality" : "Kosovo",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/74667.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -536,28 +317,28 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 90,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -586,9 +367,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -600,21 +381,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 3955,
-      "name" : "T. Cara",
-      "firstname" : "Tedi",
-      "lastname" : "Cara",
-      "age" : 25,
+      "id" : 106374,
+      "name" : "V. İsgəndərli",
+      "firstname" : "Vüsal",
+      "lastname" : "İsgəndərli",
+      "age" : 30,
       "birth" : {
-        "date" : "2000-04-15",
-        "place" : "Durrës",
-        "country" : "Albania"
+        "date" : "1995-11-03",
+        "place" : "Fuzuli",
+        "country" : "Azerbaijan"
       },
-      "nationality" : "Albania",
-      "height" : "175 cm",
-      "weight" : null,
+      "nationality" : "Azerbaijan",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3955.png"
+      "photo" : "https://media.api-sports.io/football/players/106374.png"
     },
     "statistics" : [ {
       "team" : {
@@ -623,566 +404,90 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 18,
-        "lineups" : 17,
-        "minutes" : 1385,
+        "lineups" : 11,
+        "minutes" : 424,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.760000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 10,
-        "bench" : 2
+        "in" : 7,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 321,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
         "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 8018,
-      "name" : "D. Podstrelov",
-      "firstname" : "Dmitri",
-      "lastname" : "Podstrelov",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-06",
-        "place" : "Mogilev",
-        "country" : "Belarus"
-      },
-      "nationality" : "Belarus",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/8018.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 255,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 140,
+        "key" : 7,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 13,
+        "blocks" : 1,
+        "interceptions" : 10
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 54,
+        "won" : 23
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37022,
-      "name" : "A. Zeka",
-      "firstname" : "Agim Sali",
-      "lastname" : "Zeka",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-06",
-        "place" : "Ludwigsburg",
-        "country" : "Germany"
-      },
-      "nationality" : "Albania",
-      "height" : "183 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37022.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 18,
-        "minutes" : 1452,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 13,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 159,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 88,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 6,
+        "committed" : 6
       },
       "cards" : {
         "yellow" : 2,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 48468,
-      "name" : "B. Eleke",
-      "firstname" : "Blessing Chibukie",
-      "lastname" : "Eleke",
-      "age" : 29,
+      "id" : 122483,
+      "name" : "J. García",
+      "firstname" : "Judah Emmanuel",
+      "lastname" : "García",
+      "age" : 25,
       "birth" : {
-        "date" : "1996-03-05",
-        "place" : "Aba",
-        "country" : "Nigeria"
+        "date" : "2000-10-24",
+        "place" : "San Fernando",
+        "country" : "Trinidad and Tobago"
       },
-      "nationality" : "Nigeria",
-      "height" : "190 cm",
-      "weight" : "88 kg",
+      "nationality" : "Trinidad and Tobago",
+      "height" : "177",
+      "weight" : "64",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/48468.png"
+      "photo" : "https://media.api-sports.io/football/players/122483.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1191,12 +496,12 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -1260,96 +565,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 74645,
-      "name" : "V. Zguro",
-      "firstname" : "Vangjel",
-      "lastname" : "Zguro",
-      "age" : 32,
+      "id" : 152723,
+      "name" : "M. Shanaj",
+      "firstname" : "Mateo",
+      "lastname" : "Shanaj",
+      "age" : 24,
       "birth" : {
-        "date" : "1993-03-04",
-        "place" : "Pogradec",
+        "date" : "2001-09-06",
+        "place" : "Vlorë",
         "country" : "Albania"
       },
       "nationality" : "Albania",
-      "height" : "183 cm",
-      "weight" : "81 kg",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/74645.png"
+      "photo" : "https://media.api-sports.io/football/players/152723.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 189,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -1361,28 +593,28 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 278,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1411,9 +643,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1425,21 +657,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 127630,
-      "name" : "N. Vujnović",
-      "firstname" : "Nikola",
-      "lastname" : "Vujnović",
-      "age" : 28,
+      "id" : 282899,
+      "name" : "M. Preka",
+      "firstname" : "Marçelino",
+      "lastname" : "Preka",
+      "age" : 22,
       "birth" : {
-        "date" : "1997-01-11",
-        "place" : "Cetinje",
-        "country" : "Montenegro"
+        "date" : "2003-08-02",
+        "place" : "Shkodër",
+        "country" : "Albania"
       },
-      "nationality" : "Montenegro",
+      "nationality" : "Albania",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/127630.png"
+      "photo" : "https://media.api-sports.io/football/players/282899.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1448,33 +680,33 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 15,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1503,9 +735,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1514,40 +746,59 @@
         "missed" : null,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 290144,
+      "name" : "Mateo Çipi",
+      "firstname" : "Mateo",
+      "lastname" : "Çipi",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-07-08",
+        "place" : "Oberhausen",
+        "country" : "Germany"
+      },
+      "nationality" : "Albania",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/290144.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1576,9 +827,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1613,179 +864,33 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 6,
-        "minutes" : 622,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 13,
-        "out" : 4,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 156,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
         "id" : 848,
         "name" : "UEFA Europa Conference League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 6,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 4
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1814,9 +919,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1839,7 +944,7 @@
         "country" : "North Macedonia"
       },
       "nationality" : "North Macedonia",
-      "height" : "176 cm",
+      "height" : "176",
       "weight" : null,
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/293317.png"
@@ -1851,33 +956,33 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 3,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1906,82 +1011,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -1993,169 +1025,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 297954,
-      "name" : "A. Koxy",
-      "firstname" : "Archange Dieudonne",
-      "lastname" : "Bintsouka Koxy",
-      "age" : 23,
+      "id" : 295302,
+      "name" : "A. Mehmeti",
+      "firstname" : "Adnard",
+      "lastname" : "Mehmeti",
+      "age" : 24,
       "birth" : {
-        "date" : "2002-10-25",
-        "place" : null,
-        "country" : "Congo"
+        "date" : "2001-01-23",
+        "place" : "Prishtinë",
+        "country" : "Kosovo"
       },
-      "nationality" : "Congo",
+      "nationality" : "Kosovo",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/297954.png"
+      "photo" : "https://media.api-sports.io/football/players/295302.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 10,
-        "minutes" : 1109,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 4,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 66,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -2167,99 +1053,7 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 170,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 338111,
-      "name" : "X. Hodo",
-      "firstname" : "Xhafer",
-      "lastname" : "Hodo",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-03",
-        "place" : "Ersekë",
-        "country" : "Albania"
-      },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/338111.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2323,21 +1117,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 340945,
-      "name" : "H. Zuna",
-      "firstname" : "Henri",
-      "lastname" : "Zuna",
-      "age" : 22,
+      "id" : 340944,
+      "name" : "S. Sembene",
+      "firstname" : "Saliou Pape",
+      "lastname" : "Sembene",
+      "age" : 24,
       "birth" : {
-        "date" : "2003-05-24",
+        "date" : "2001-10-26",
         "place" : null,
-        "country" : "Albania"
+        "country" : "Senegal"
       },
-      "nationality" : "Albania",
+      "nationality" : "Senegal",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340945.png"
+      "photo" : "https://media.api-sports.io/football/players/340944.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2346,12 +1140,12 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2412,7 +1206,26 @@
         "missed" : null,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 360423,
+      "name" : "P. Buxhelaj",
+      "firstname" : "Paulo",
+      "lastname" : "Buxhelaj",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-01",
+        "place" : "Vlorë",
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : "176",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/360423.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -2424,28 +1237,28 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 4
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2474,9 +1287,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2488,96 +1301,115 @@
     } ]
   }, {
     "player" : {
-      "id" : 382274,
-      "name" : "C. Mba",
-      "firstname" : "Christian",
-      "lastname" : "Mba",
-      "age" : 26,
+      "id" : 390634,
+      "name" : "G. Kote",
+      "firstname" : "Gjergji",
+      "lastname" : "Kote",
+      "age" : 21,
       "birth" : {
-        "date" : "1999-10-12",
-        "place" : null,
+        "date" : "2004-08-20",
+        "place" : "Korçë",
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/390634.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 708,
+        "name" : "Partizani",
+        "logo" : "https://media.api-sports.io/football/teams/708.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 404789,
+      "name" : "K. Ogunleye",
+      "firstname" : "Kazwem",
+      "lastname" : "Ogunleye",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-07-24",
+        "place" : "Akure",
         "country" : "Nigeria"
       },
       "nationality" : "Nigeria",
-      "height" : null,
+      "height" : "177",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/382274.png"
+      "photo" : "https://media.api-sports.io/football/players/404789.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 15,
-        "minutes" : 1291,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 7,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 708,
         "name" : "Partizani",
@@ -2589,28 +1421,28 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 171,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2639,9 +1471,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2653,21 +1485,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 431893,
-      "name" : "S. Baruti",
-      "firstname" : "Shkambi",
-      "lastname" : "Baruti",
-      "age" : 21,
+      "id" : 407298,
+      "name" : "S. Tahri",
+      "firstname" : "Skander",
+      "lastname" : "Tahri",
+      "age" : 20,
       "birth" : {
-        "date" : "2004-02-17",
-        "place" : "Gjakovë",
-        "country" : "Kosovo"
+        "date" : "2005-01-03",
+        "place" : "Tiranë",
+        "country" : "Albania"
       },
-      "nationality" : "Kosovo",
+      "nationality" : "Albania",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/431893.png"
+      "photo" : "https://media.api-sports.io/football/players/407298.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2676,12 +1508,196 @@
         "logo" : "https://media.api-sports.io/football/teams/708.png"
       },
       "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 412761,
+      "name" : "T. Malaj",
+      "firstname" : "Tedi",
+      "lastname" : "Malaj",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-07-02",
+        "place" : null,
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/412761.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 708,
+        "name" : "Partizani",
+        "logo" : "https://media.api-sports.io/football/teams/708.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 521810,
+      "name" : "D. Vata",
+      "firstname" : "Dion",
+      "lastname" : "Vata",
+      "age" : 16,
+      "birth" : {
+        "date" : "2009-02-25",
+        "place" : null,
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/521810.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 708,
+        "name" : "Partizani",
+        "logo" : "https://media.api-sports.io/football/teams/708.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2734,501 +1750,6 @@
         "yellow" : null,
         "yellowred" : null,
         "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 449633,
-      "name" : "O. Rifa",
-      "firstname" : "Oresti",
-      "lastname" : "Rifa",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-02-08",
-        "place" : "Krujë",
-        "country" : "Albania"
-      },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/449633.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 92,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 505831,
-      "name" : "M. Mando",
-      "firstname" : "Mohanad",
-      "lastname" : "Mando",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-03-21",
-        "place" : null,
-        "country" : "Syria"
-      },
-      "nationality" : "Syria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/505831.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 15,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 111,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 505834,
-      "name" : "N. Qokthi",
-      "firstname" : "Nebi",
-      "lastname" : "Qokthi",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-08-16",
-        "place" : null,
-        "country" : "Albania"
-      },
-      "nationality" : "Albania",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/505834.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 310,
-        "name" : "Superliga",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/310.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 708,
-        "name" : "Partizani",
-        "logo" : "https://media.api-sports.io/football/teams/708.png"
-      },
-      "league" : {
-        "id" : 707,
-        "name" : "Cup",
-        "country" : "Albania",
-        "logo" : "https://media.api-sports.io/football/leagues/707.png",
-        "flag" : "https://media.api-sports.io/flags/al.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
       },
       "penalty" : {
         "won" : null,

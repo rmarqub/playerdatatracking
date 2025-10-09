@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "536"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 16,
   "paging" : {
     "current" : 2,
-    "total" : 4
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 1489,
-      "name" : "N. Gudelj",
-      "firstname" : "Nemanja",
-      "lastname" : "Gudelj",
-      "age" : 34,
+      "id" : 557,
+      "name" : "O. Vlachodimos",
+      "firstname" : "Odysseas",
+      "lastname" : "Vlachodimos",
+      "age" : 31,
       "birth" : {
-        "date" : "1991-11-16",
-        "place" : "Beograd",
-        "country" : "Serbia"
+        "date" : "1994-04-26",
+        "place" : "Stuttgart",
+        "country" : "Germany"
       },
-      "nationality" : "Serbia",
-      "height" : "187 cm",
-      "weight" : "79 kg",
+      "nationality" : "Greece",
+      "height" : "188",
+      "weight" : "78",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1489.png"
+      "photo" : "https://media.api-sports.io/football/players/557.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,107 +41,34 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 21,
-        "minutes" : 1871,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.872727",
+        "position" : "Goalkeeper",
+        "rating" : "7.000000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 4,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1067,
-        "key" : 13,
-        "accuracy" : 42
-      },
-      "tackles" : {
-        "total" : 31,
-        "blocks" : 6,
-        "interceptions" : 22
-      },
-      "duels" : {
-        "total" : 133,
-        "won" : 85
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : null,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 4
       },
       "passes" : {
-        "total" : null,
+        "total" : 30,
         "key" : null,
         "accuracy" : null
       },
@@ -164,100 +91,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2813,
-      "name" : "M. Dmitrović",
-      "firstname" : "Marko",
-      "lastname" : "Dmitrović",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-01-24",
-        "place" : "Subotica",
-        "country" : "Yugoslavia"
-      },
-      "nationality" : "Serbia",
-      "height" : "194 cm",
-      "weight" : "91 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2813.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.083333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 28,
-        "assists" : 0,
-        "saves" : 62
-      },
-      "passes" : {
-        "total" : 552,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 14,
-        "won" : 13
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -270,21 +105,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 2924,
-      "name" : "A. Januzaj",
-      "firstname" : "Adnan",
-      "lastname" : "Januzaj",
-      "age" : 30,
+      "id" : 910,
+      "name" : "A. Sánchez",
+      "firstname" : "Alexis Alejandro",
+      "lastname" : "Sánchez Sánchez",
+      "age" : 37,
       "birth" : {
-        "date" : "1995-02-05",
-        "place" : "Brussel",
-        "country" : "Belgium"
+        "date" : "1988-12-19",
+        "place" : "Tocopilla",
+        "country" : "Chile"
       },
-      "nationality" : "Belgium",
-      "height" : "186 cm",
-      "weight" : "76 kg",
+      "nationality" : "Chile",
+      "height" : "169",
+      "weight" : "62",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2924.png"
+      "photo" : "https://media.api-sports.io/football/players/910.png"
     },
     "statistics" : [ {
       "team" : {
@@ -298,58 +133,242 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.987500",
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 318,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "7.14",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 3,
+        "out" : 2,
+        "bench" : 3
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 136,
-        "key" : 10,
+        "total" : 101,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
+        "total" : 7,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 49,
-        "won" : 22
+        "total" : 40,
+        "won" : 21
       },
       "dribbles" : {
-        "attempts" : 17,
-        "success" : 4,
+        "attempts" : 5,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
+        "drawn" : 7,
         "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 957,
+      "name" : "D. Sow",
+      "firstname" : "Mohameth Djibril Ibrahima",
+      "lastname" : "Sow",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-02-06",
+        "place" : "Zürich",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Switzerland",
+      "height" : "183",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/957.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 87,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 2280,
+      "name" : "César Azpilicueta",
+      "firstname" : "César",
+      "lastname" : "Azpilicueta Tanco",
+      "age" : 36,
+      "birth" : {
+        "date" : "1989-08-28",
+        "place" : "Pamplona",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "178",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2280.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.800000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 111,
+        "key" : null,
+        "accuracy" : 50
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -373,8 +392,8 @@
         "country" : "Norway"
       },
       "nationality" : "Norway",
-      "height" : "192 cm",
-      "weight" : "90 kg",
+      "height" : "192",
+      "weight" : "90",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19172.png"
     },
@@ -390,45 +409,45 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 17,
-        "minutes" : 1504,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 360,
         "number" : null,
         "position" : "Goalkeeper",
-        "rating" : "6.794117",
+        "rating" : "6.650000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 3
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 22,
+        "total" : null,
+        "conceded" : 7,
         "assists" : 0,
-        "saves" : 40
+        "saves" : 9
       },
       "passes" : {
-        "total" : 516,
-        "key" : 3,
+        "total" : 117,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
-        "won" : 4
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -441,6 +460,98 @@
       },
       "cards" : {
         "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 21087,
+      "name" : "B. Mendy",
+      "firstname" : "Batista Adélino",
+      "lastname" : "Mendy",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-01-12",
+        "place" : "Saint-Nazaire",
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "191",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/21087.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 362,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "6.44",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 106,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -449,35 +560,238 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 1
+        "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 25458,
+      "name" : "D. Lukebakio",
+      "firstname" : "Dodi",
+      "lastname" : "Lukebakio Ngandoli",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-09-24",
+        "place" : "Asse",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "187",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/25458.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 536,
         "name" : "Sevilla",
         "logo" : "https://media.api-sports.io/football/teams/536.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.300000",
+        "position" : "Attacker",
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 72,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 39121,
+      "name" : "C. Ejuke",
+      "firstname" : "Chidera",
+      "lastname" : "Ejuke",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-01-02",
+        "place" : "Zaria",
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : "176",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/39121.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 130,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 52,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 41208,
+      "name" : "Fábio Cardoso",
+      "firstname" : "Fábio Rafael",
+      "lastname" : "Rodrigues Cardoso",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-19",
+        "place" : "Águeda",
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "187",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/41208.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 77,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
         "total" : null,
@@ -485,23 +799,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 4,
+        "conceded" : 0,
         "assists" : 0,
-        "saves" : 2
+        "saves" : null
       },
       "passes" : {
-        "total" : 21,
+        "total" : 15,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
+        "total" : 1,
+        "blocks" : 1,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 10,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -510,7 +824,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -522,7 +836,99 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47013,
+      "name" : "Rafa Mir",
+      "firstname" : "Rafael",
+      "lastname" : "Mir Vicente",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-06-18",
+        "place" : "Murcia",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "191",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47013.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 317,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.060000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 74,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
       }
     } ]
   }, {
@@ -538,8 +944,8 @@
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : "75 kg",
+      "height" : "185",
+      "weight" : "75",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/47016.png"
     },
@@ -555,102 +961,29 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 7,
-        "minutes" : 656,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.750000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 12,
-        "assists" : 0,
-        "saves" : 17
-      },
-      "passes" : {
-        "total" : 268,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 1
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : null,
         "assists" : null,
         "saves" : null
       },
@@ -678,364 +1011,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47329,
-      "name" : "Adrià Pedrosa",
-      "firstname" : "Adrià",
-      "lastname" : "Giner Pedrosa",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-05-13",
-        "place" : "Barcelona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47329.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 16,
-        "minutes" : 1347,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.772222",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 8,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 523,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 31,
-        "blocks" : 6,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 142,
-        "won" : 59
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 23,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 5,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47389,
-      "name" : "Joan Jordán",
-      "firstname" : "Joan",
-      "lastname" : "Jordán Moreno",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-07-06",
-        "place" : "Gerona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47389.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.061538",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 375,
-        "key" : 12,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : null,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 68,
-        "won" : 37
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47416,
-      "name" : "Óscar Rodríguez",
-      "firstname" : "Óscar",
-      "lastname" : "Rodríguez Arnaiz",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-06-28",
-        "place" : "Talavera de la Reina",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "174 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47416.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 321,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 26,
-        "blocks" : 1,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 123,
-        "won" : 63
-      },
-      "dribbles" : {
-        "attempts" : 35,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1052,8 +1036,8 @@
         "country" : "Switzerland"
       },
       "nationality" : "Switzerland",
-      "height" : "177 cm",
-      "weight" : "77 kg",
+      "height" : "177",
+      "weight" : "77",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/48471.png"
     },
@@ -1069,223 +1053,58 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 5,
-        "minutes" : 396,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 289,
         "number" : null,
         "position" : "Midfielder",
         "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 7,
+        "total" : 4,
         "on" : 2
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 3,
         "saves" : null
       },
       "passes" : {
-        "total" : 121,
-        "key" : 9,
+        "total" : 95,
+        "key" : 7,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 48,
-        "won" : 20
+        "total" : 22,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : 18,
-        "success" : 7,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 174918,
-      "name" : "L. Badé",
-      "firstname" : "Loïc",
-      "lastname" : "Badé",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-04-11",
-        "place" : "Sèvres",
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "191 cm",
-      "weight" : "89 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/174918.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 18,
-        "minutes" : 1640,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.968421",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1162,
-        "key" : 2,
-        "accuracy" : 52
-      },
-      "tackles" : {
-        "total" : 36,
-        "blocks" : 8,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 139,
-        "won" : 91
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 17
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "5.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 71,
-        "key" : null,
-        "accuracy" : 62
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
+        "drawn" : 5,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1298,21 +1117,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 195923,
-      "name" : "José Ángel Carmona",
-      "firstname" : "José Ángel",
-      "lastname" : "Carmona Navarro",
+      "id" : 133110,
+      "name" : "T. Nianzou",
+      "firstname" : "Tanguy-Austin",
+      "lastname" : "Nianzou Kouassi",
       "age" : 23,
       "birth" : {
-        "date" : "2002-01-29",
-        "place" : "El Viso del Alcor",
-        "country" : "Spain"
+        "date" : "2002-06-07",
+        "place" : "Paris",
+        "country" : "France"
       },
-      "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "80 kg",
+      "nationality" : "France",
+      "height" : "187",
+      "weight" : "83",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/195923.png"
+      "photo" : "https://media.api-sports.io/football/players/133110.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1326,1311 +1145,45 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 22,
-        "minutes" : 1935,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 136,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.927272",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 5,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1022,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 53,
-        "blocks" : 7,
-        "interceptions" : 47
-      },
-      "duels" : {
-        "total" : 200,
-        "won" : 114
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 29,
-        "committed" : 25
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 6,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 286271,
-      "name" : "Israel",
-      "firstname" : "Israel",
-      "lastname" : "Dominguez Velasco",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-07",
-        "place" : "Antequera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/286271.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 17,
-        "number" : null,
-        "position" : "Attacker",
         "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
+        "total" : 70,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
+        "total" : 4,
+        "blocks" : 1,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 25,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 290686,
-      "name" : "Rafael Romero",
-      "firstname" : "Rafael",
-      "lastname" : "Romero",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-08-07",
-        "place" : "Jerez de la Frontera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "192 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/290686.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 297311,
-      "name" : "Kike Salas",
-      "firstname" : "Enrique Jesús",
-      "lastname" : "Salas Valiente",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-04-23",
-        "place" : "Morón de la Frontera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/297311.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 12,
-        "minutes" : 1112,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.823529",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 3,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 748,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : 21,
-        "blocks" : 7,
-        "interceptions" : 19
-      },
-      "duels" : {
-        "total" : 106,
-        "won" : 68
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 123,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 27,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 2,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 308346,
-      "name" : "Alberto Flores",
-      "firstname" : "Alberto",
-      "lastname" : "Flores López",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-11-10",
-        "place" : "Fuentes de Andalucía",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/308346.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 331330,
-      "name" : "Matías Árbol",
-      "firstname" : "Matías",
-      "lastname" : "Árbol González",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-09-12",
-        "place" : "Palomares del Río",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/331330.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 1
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 335037,
-      "name" : "Diego Hormigo",
-      "firstname" : "Diego",
-      "lastname" : "Hormigo Iturralde",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-04-16",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "182 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/335037.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 338900,
-      "name" : "L. Antonetti",
-      "firstname" : "Leandro",
-      "lastname" : "Antonetti López",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-01-13",
-        "place" : "Murcia",
-        "country" : "Puerto Rico"
-      },
-      "nationality" : "Puerto Rico",
-      "height" : "189 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/338900.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 338902,
-      "name" : "Andrés Castrín",
-      "firstname" : "Andrés",
-      "lastname" : "López Gallo",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-26",
-        "place" : "Riotorto",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/338902.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 486472,
-      "name" : "Álvaro García",
-      "firstname" : "Álvaro Miguel",
-      "lastname" : "García Pascual",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-01-01",
-        "place" : "Benalmádena",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "191 cm",
-      "weight" : "91 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/486472.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 536,
-        "name" : "Sevilla",
-        "logo" : "https://media.api-sports.io/football/teams/536.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 61,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 13,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 4
+        "won" : 13
       },
       "dribbles" : {
         "attempts" : 1,
@@ -2638,8 +1191,192 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 3,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 197196,
+      "name" : "Ramón Martínez",
+      "firstname" : "Ramón",
+      "lastname" : "Martínez Gil",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-10-22",
+        "place" : "Mula",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "185",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/197196.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 13,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 5,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 341453,
+      "name" : "Oso",
+      "firstname" : "Joaquín",
+      "lastname" : "Martínez Gauna",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-07-09",
+        "place" : "Torrevieja",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/341453.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 536,
+        "name" : "Sevilla",
+        "logo" : "https://media.api-sports.io/football/teams/536.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 36,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 1,
@@ -2653,36 +1390,55 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 437594,
+      "name" : "Alex Costa",
+      "firstname" : "Alejandro",
+      "lastname" : "Costa Quijano",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-01-12",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "189",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/437594.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 536,
         "name" : "Sevilla",
         "logo" : "https://media.api-sports.io/football/teams/536.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 140,
+        "name" : "La Liga",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
+        "minutes" : null,
+        "number" : 26,
         "position" : "Attacker",
-        "rating" : "6.700000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -2692,7 +1448,7 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -2702,8 +1458,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -2711,7 +1467,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {

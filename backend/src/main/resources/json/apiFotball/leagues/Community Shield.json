@@ -2,15 +2,51 @@
   "get" : "teams",
   "parameters" : {
     "league" : "528",
-    "season" : "2024"
+    "season" : "2025"
   },
-  "errors" : {
-    "plan" : "Free plans do not have access to this season, try from 2021 to 2023."
-  },
-  "results" : 0,
+  "errors" : [ ],
+  "results" : 2,
   "paging" : {
     "current" : 1,
     "total" : 1
   },
-  "response" : [ ]
+  "response" : [ {
+    "team" : {
+      "id" : 40,
+      "name" : "Liverpool",
+      "code" : "LIV",
+      "country" : "England",
+      "founded" : 1892,
+      "national" : false,
+      "logo" : "https://media.api-sports.io/football/teams/40.png"
+    },
+    "venue" : {
+      "id" : 550,
+      "name" : "Anfield",
+      "address" : "Anfield Road",
+      "city" : "Liverpool",
+      "capacity" : 61276,
+      "surface" : "grass",
+      "image" : "https://media.api-sports.io/football/venues/550.png"
+    }
+  }, {
+    "team" : {
+      "id" : 52,
+      "name" : "Crystal Palace",
+      "code" : "CRY",
+      "country" : "England",
+      "founded" : 1861,
+      "national" : false,
+      "logo" : "https://media.api-sports.io/football/teams/52.png"
+    },
+    "venue" : {
+      "id" : 525,
+      "name" : "Selhurst Park",
+      "address" : "Holmesdale Road",
+      "city" : "London",
+      "capacity" : 26309,
+      "surface" : "grass",
+      "image" : "https://media.api-sports.io/football/venues/525.png"
+    }
+  } ]
 }

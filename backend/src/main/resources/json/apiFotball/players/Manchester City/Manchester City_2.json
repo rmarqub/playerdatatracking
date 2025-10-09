@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "50"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 2,
-    "total" : 4
+    "total" : 3
   },
   "response" : [ {
     "player" : {
-      "id" : 23,
-      "name" : "Sergio Gómez",
-      "firstname" : "Sergio",
-      "lastname" : "Gómez Martín",
-      "age" : 25,
+      "id" : 5,
+      "name" : "M. Akanji",
+      "firstname" : "Manuel Obafemi",
+      "lastname" : "Akanji",
+      "age" : 30,
       "birth" : {
-        "date" : "2000-09-04",
-        "place" : "Badalona",
-        "country" : "Spain"
+        "date" : "1995-07-19",
+        "place" : "Neftenbach",
+        "country" : "Switzerland"
       },
-      "nationality" : "Spain",
-      "height" : "173 cm",
-      "weight" : "71 kg",
+      "nationality" : "Switzerland",
+      "height" : "188",
+      "weight" : "91",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/23.png"
+      "photo" : "https://media.api-sports.io/football/players/5.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,21 +41,570 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 37,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 157,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 157,
+        "key" : 2,
+        "accuracy" : 75
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 157,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 157,
+        "key" : 2,
+        "accuracy" : 75
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 44,
+      "name" : "Rodri",
+      "firstname" : "Rodrigo",
+      "lastname" : "Hernández Cascante",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-06-22",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "190",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/44.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 272,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.100000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 216,
+        "key" : 2,
+        "accuracy" : 46
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 22
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 60,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "8.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 95,
+        "key" : 3,
+        "accuracy" : 87
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 143,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.166666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 179,
+        "key" : 3,
+        "accuracy" : 53
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 617,
+      "name" : "Ederson",
+      "firstname" : "Ederson",
+      "lastname" : "Santana de Moraes",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-08-17",
+        "place" : "Osasco",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "188",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/617.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -63,8 +612,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -98,28 +647,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 631,
-      "name" : "P. Foden",
-      "firstname" : "Philip Walter",
-      "lastname" : "Foden",
-      "age" : 25,
+      "id" : 633,
+      "name" : "İ. Gündoğan",
+      "firstname" : "İlkay",
+      "lastname" : "Gündoğan",
+      "age" : 35,
       "birth" : {
-        "date" : "2000-05-28",
-        "place" : "Stockport",
-        "country" : "England"
+        "date" : "1990-10-24",
+        "place" : "Gelsenkirchen",
+        "country" : "Germany"
       },
-      "nationality" : "England",
-      "height" : "171 cm",
-      "weight" : "63 kg",
+      "nationality" : "Germany",
+      "height" : "180",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/631.png"
+      "photo" : "https://media.api-sports.io/football/players/633.png"
     },
     "statistics" : [ {
       "team" : {
@@ -133,165 +682,19 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 16,
-        "minutes" : 1442,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 19,
         "position" : "Midfielder",
-        "rating" : "7.410000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 7,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 30,
-        "on" : 14
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 709,
-        "key" : 38,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 112,
-        "won" : 49
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 26,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 148,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.750000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 82,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 53,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
         "out" : 0,
         "bench" : 2
       },
@@ -302,12 +705,12 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 36,
-        "key" : 2,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -316,90 +719,17 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
+        "total" : null,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
         "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 6,
-        "minutes" : 611,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.662500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 19,
-        "on" : 11
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 361,
-        "key" : 18,
-        "accuracy" : 41
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 48,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -427,85 +757,12 @@
         "country" : "Portugal"
       },
       "nationality" : "Portugal",
-      "height" : "173 cm",
-      "weight" : "65 kg",
+      "height" : "173",
+      "weight" : "65",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/636.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 21,
-        "minutes" : 1914,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.169565",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 17,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1119,
-        "key" : 38,
-        "accuracy" : 43
-      },
-      "tackles" : {
-        "total" : 32,
-        "blocks" : 5,
-        "interceptions" : 16
-      },
-      "duels" : {
-        "total" : 166,
-        "won" : 77
-      },
-      "dribbles" : {
-        "attempts" : 41,
-        "success" : 21,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 21,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
@@ -517,21 +774,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 32,
-        "number" : null,
+        "minutes" : null,
+        "number" : 20,
         "position" : "Midfielder",
-        "rating" : "7.300000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -544,8 +801,8 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
-        "key" : 3,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -554,12 +811,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 2
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -585,17 +842,17 @@
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 68,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 353,
         "number" : null,
         "position" : "Midfielder",
         "rating" : "6.700000",
@@ -603,45 +860,45 @@
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 2
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 39,
-        "key" : null,
+        "total" : 156,
+        "key" : 7,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 3,
-        "won" : 1
+        "total" : 46,
+        "won" : 14
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 7,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 7
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -663,58 +920,204 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 676,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.837500",
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 3,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 390,
-        "key" : 10,
-        "accuracy" : 44
+        "total" : 67,
+        "key" : 2,
+        "accuracy" : 64
       },
       "tackles" : {
-        "total" : 9,
-        "blocks" : 3,
-        "interceptions" : 3
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 44,
-        "won" : 18
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 15,
-        "success" : 6,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 6
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 195,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 97,
+        "key" : 5,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 195,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 97,
+        "key" : 5,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -738,8 +1141,8 @@
         "country" : "England"
       },
       "nationality" : "Norway",
-      "height" : "194 cm",
-      "weight" : "88 kg",
+      "height" : "195",
+      "weight" : "88",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1100.png"
     },
@@ -755,204 +1158,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2214,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 416,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.308000",
+        "rating" : "7.740000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 4,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 79,
-        "on" : 54
+        "total" : 21,
+        "on" : 10
       },
       "goals" : {
-        "total" : 19,
+        "total" : 6,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 290,
-        "key" : 24,
+        "total" : 55,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 167,
-        "won" : 72
-      },
-      "dribbles" : {
-        "attempts" : 25,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 20
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 32,
+        "won" : 18
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 5,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 6
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -974,65 +1231,211 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 771,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 80,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.422222",
+        "rating" : "7.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 30,
-        "on" : 21
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
-        "total" : 8,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
-        "key" : 5,
+        "total" : 7,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 4
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 42,
-        "won" : 21
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 6
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 2,
-        "missed" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 165,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.066666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 165,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.066666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1049,8 +1452,8 @@
         "country" : "Belgium"
       },
       "nationality" : "Belgium",
-      "height" : "173 cm",
-      "weight" : "66 kg",
+      "height" : "173",
+      "weight" : "66",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1422.png"
     },
@@ -1066,210 +1469,64 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 9,
-        "minutes" : 803,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 285,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.337500",
+        "rating" : "6.960000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 7,
-        "bench" : 11
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 11,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 369,
-        "key" : 17,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 157,
-        "won" : 85
-      },
-      "dribbles" : {
-        "attempts" : 74,
-        "success" : 46,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
         "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 22,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 74,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "9.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : 0,
         "assists" : 2,
         "saves" : null
       },
       "passes" : {
-        "total" : 19,
-        "key" : 3,
+        "total" : 81,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 7,
-        "won" : 2
+        "total" : 53,
+        "won" : 24
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : 20,
+        "success" : 10,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 8,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 1,
+        "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
@@ -1285,58 +1542,204 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 192,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 69,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.250000",
+        "rating" : "8.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 3
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
+        "total" : 1,
         "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 106,
-        "key" : 7,
+        "total" : 49,
+        "key" : 4,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 246,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 113,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 5,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 36,
-        "won" : 16
+        "total" : 44,
+        "won" : 28
       },
       "dribbles" : {
-        "attempts" : 21,
-        "success" : 9,
+        "attempts" : 25,
+        "success" : 15,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 2
+        "drawn" : 7,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 246,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 113,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 44,
+        "won" : 28
+      },
+      "dribbles" : {
+        "attempts" : 25,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1349,21 +1752,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 6009,
-      "name" : "J. Álvarez",
-      "firstname" : "Julián",
-      "lastname" : "Álvarez",
-      "age" : 25,
+      "id" : 2291,
+      "name" : "M. Kovačić",
+      "firstname" : "Mateo",
+      "lastname" : "Kovačić",
+      "age" : 31,
       "birth" : {
-        "date" : "2000-01-31",
-        "place" : "Cachín",
-        "country" : "Argentina"
+        "date" : "1994-05-06",
+        "place" : "Linz",
+        "country" : "Austria"
       },
-      "nationality" : "Argentina",
-      "height" : "170 cm",
-      "weight" : "71 kg",
+      "nationality" : "Croatia",
+      "height" : "177",
+      "weight" : "78",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/6009.png"
+      "photo" : "https://media.api-sports.io/football/players/2291.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1377,28 +1780,28 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -1427,15 +1830,710 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19012,
+      "name" : "M. Bettinelli",
+      "firstname" : "Marcus",
+      "lastname" : "Bettinelli",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-05-24",
+        "place" : "Camberwell",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "193",
+      "weight" : "82",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19012.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 21138,
+      "name" : "R. Aït-Nouri",
+      "firstname" : "Rayan",
+      "lastname" : "Aït-Nouri",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-06-06",
+        "place" : "Montreuil",
+        "country" : "France"
+      },
+      "nationality" : "Algeria",
+      "height" : "180",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/21138.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 203,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 100,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 248,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.450000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 131,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 195,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 143,
+        "key" : 5,
+        "accuracy" : 69
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 195,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 143,
+        "key" : 5,
+        "accuracy" : 69
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1452,8 +2550,8 @@
         "country" : "Germany"
       },
       "nationality" : "Germany",
-      "height" : "185 cm",
-      "weight" : "88 kg",
+      "height" : "185",
+      "weight" : "88",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/25004.png"
     },
@@ -1469,107 +2567,34 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 810,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
         "position" : "Goalkeeper",
-        "rating" : "6.822222",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 15
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 15,
-        "assists" : 0,
-        "saves" : 26
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
       },
       "passes" : {
-        "total" : 294,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 3,
-        "assists" : 0,
-        "saves" : 5
-      },
-      "passes" : {
-        "total" : 52,
         "key" : null,
         "accuracy" : null
       },
@@ -1593,7 +2618,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1610,17 +2635,17 @@
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 270,
         "number" : null,
         "position" : "Goalkeeper",
         "rating" : "6.900000",
@@ -1628,22 +2653,22 @@
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 1,
-        "assists" : 0,
-        "saves" : 3
+        "total" : null,
+        "conceded" : 4,
+        "assists" : null,
+        "saves" : 7
       },
       "passes" : {
-        "total" : 21,
-        "key" : null,
+        "total" : 116,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -1666,7 +2691,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1683,39 +2708,39 @@
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
         "position" : "Goalkeeper",
-        "rating" : "6.950000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 7
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
-        "saves" : 1
+        "assists" : null,
+        "saves" : null
       },
       "passes" : {
-        "total" : 43,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -1739,7 +2764,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1748,317 +2773,6 @@
         "scored" : 0,
         "missed" : 0,
         "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 41621,
-      "name" : "Matheus Nunes",
-      "firstname" : "Matheus Luiz",
-      "lastname" : "Nunes",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-08-27",
-        "place" : "Rio de Janeiro",
-        "country" : "Brazil"
-      },
-      "nationality" : "Portugal",
-      "height" : "183 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/41621.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 10,
-        "minutes" : 889,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.175000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 2,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 523,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 25,
-        "blocks" : 3,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 115,
-        "won" : 58
-      },
-      "dribbles" : {
-        "attempts" : 21,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "8.150000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 130,
-        "key" : 2,
-        "accuracy" : 60
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 53,
-        "key" : 1,
-        "accuracy" : 45
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 6,
-        "minutes" : 531,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.683333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 359,
-        "key" : 10,
-        "accuracy" : 47
-      },
-      "tackles" : {
-        "total" : 16,
-        "blocks" : 1,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 64,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
       }
     } ]
   }, {
@@ -2074,8 +2788,8 @@
         "country" : "Egypt"
       },
       "nationality" : "Egypt",
-      "height" : "183 cm",
-      "weight" : "81 kg",
+      "height" : "180",
+      "weight" : "81",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/81573.png"
     },
@@ -2091,131 +2805,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 3,
         "lineups" : 3,
-        "minutes" : 222,
+        "minutes" : 151,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.800000",
+        "rating" : "7.166666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 3,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 6,
-        "on" : 3
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 52,
-        "key" : 4,
+        "total" : 47,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 22,
-        "won" : 9
+        "total" : 25,
+        "won" : 14
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
+        "drawn" : 5,
         "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 12,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2237,35 +2878,35 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 6,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 207,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.300000",
+        "rating" : "7.400000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 3
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 2,
         "saves" : null
       },
       "passes" : {
-        "total" : 3,
-        "key" : null,
+        "total" : 70,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
@@ -2274,21 +2915,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 37,
+        "won" : 19
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 25,
+        "success" : 12,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 7,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2298,80 +2939,61 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 158697,
-      "name" : "J. McAtee",
-      "firstname" : "James John",
-      "lastname" : "McAtee",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-10-18",
-        "place" : "Salford",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/158697.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 0,
-        "minutes" : 96,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 144,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.750000",
+        "position" : "Attacker",
+        "rating" : "6.866666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 0,
-        "bench" : 25
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
+        "total" : 4,
         "on" : 2
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 50,
-        "key" : null,
+        "total" : 36,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 14,
+        "total" : 13,
         "won" : 5
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
+        "attempts" : 5,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
@@ -2380,7 +3002,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2397,196 +3019,50 @@
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 3,
         "lineups" : 2,
-        "minutes" : 162,
+        "minutes" : 144,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.750000",
+        "position" : "Attacker",
+        "rating" : "6.866666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 6,
-        "on" : 4
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 63,
-        "key" : 1,
+        "total" : 36,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 82,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
         "total" : 13,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 0,
-        "minutes" : 92,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 0,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 35,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 7
+        "won" : 5
       },
       "dribbles" : {
         "attempts" : 5,
@@ -2595,11 +3071,11 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 4
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2612,21 +3088,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 161933,
-      "name" : "Nico González",
-      "firstname" : "Nicolás",
-      "lastname" : "González Iglesias",
+      "id" : 129033,
+      "name" : "J. Gvardiol",
+      "firstname" : "Joško",
+      "lastname" : "Gvardiol",
       "age" : 23,
       "birth" : {
-        "date" : "2002-01-03",
-        "place" : "A Coruña",
-        "country" : "Spain"
+        "date" : "2002-01-23",
+        "place" : "Zagreb",
+        "country" : "Croatia"
       },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "88 kg",
+      "nationality" : "Croatia",
+      "height" : "185",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/161933.png"
+      "photo" : "https://media.api-sports.io/football/players/129033.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2640,122 +3116,49 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
+        "position" : "Defender",
+        "rating" : "7.100000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 103,
-        "key" : null,
-        "accuracy" : 100
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 22,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 12,
+        "total" : 89,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 2,
-        "won" : null
+        "total" : 9,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2764,7 +3167,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2786,29 +3189,194 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 80,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "8.000000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 80,
+        "key" : null,
+        "accuracy" : 76
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 53,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : null,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 140947,
+      "name" : "I. Kaboré",
+      "firstname" : "Issa",
+      "lastname" : "Kaboré",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-05-12",
+        "place" : "Bobo-Dioulasso",
+        "country" : "Burkina Faso"
+      },
+      "nationality" : "Burkina Faso",
+      "height" : "180",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/140947.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 39,
+        "name" : "Premier League",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : null,
         "assists" : null,
         "saves" : null
       },
@@ -2836,8 +3404,154 @@
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 83,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 83,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2850,21 +3564,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 266657,
-      "name" : "Sávio",
-      "firstname" : "Sávio",
-      "lastname" : "Moreira de Oliveira",
-      "age" : 21,
+      "id" : 156477,
+      "name" : "R. Cherki",
+      "firstname" : "Mathis Rayan",
+      "lastname" : "Cherki",
+      "age" : 22,
       "birth" : {
-        "date" : "2004-04-10",
-        "place" : "São Mateus",
-        "country" : "Brazil"
+        "date" : "2003-08-17",
+        "place" : "Lyon",
+        "country" : "France"
       },
-      "nationality" : "Brazil",
-      "height" : "179 cm",
-      "weight" : "66 kg",
+      "nationality" : "France",
+      "height" : "180",
+      "weight" : "71",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/266657.png"
+      "photo" : "https://media.api-sports.io/football/players/156477.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2878,204 +3592,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 15,
-        "minutes" : 1264,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 9,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 30,
-        "on" : 17
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 7,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 547,
-        "key" : 32,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : 2,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 155,
-        "won" : 76
-      },
-      "dribbles" : {
-        "attempts" : 72,
-        "success" : 42,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 17,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 145,
+        "minutes" : 72,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
+        "position" : "Midfielder",
+        "rating" : "7.450000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 44,
-        "key" : 5,
+        "total" : 62,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 22,
-        "won" : 10
+        "total" : 13,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
+        "attempts" : 3,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 107,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 48,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
+        "drawn" : null,
         "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3097,21 +3665,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 6,
-        "minutes" : 488,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 440,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.037500",
+        "position" : "Midfielder",
+        "rating" : "7.640000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 4,
-        "bench" : 3
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 8,
@@ -3120,35 +3688,181 @@
       "goals" : {
         "total" : 1,
         "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 224,
+        "key" : 19,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 71,
+        "won" : 39
+      },
+      "dribbles" : {
+        "attempts" : 43,
+        "success" : 25,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 105,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.166666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 207,
-        "key" : 10,
+        "total" : 85,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 63,
-        "won" : 29
+        "total" : 11,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 34,
-        "success" : 17,
+        "attempts" : 7,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 105,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.166666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 85,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3161,21 +3875,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 278133,
-      "name" : "Oscar Bobb",
-      "firstname" : "Oscar",
-      "lastname" : "Bobb",
-      "age" : 22,
+      "id" : 278128,
+      "name" : "J. Wilson-Esbrand",
+      "firstname" : "Joshua Darius",
+      "lastname" : "Kamani Wilson-Esbrand",
+      "age" : 23,
       "birth" : {
-        "date" : "2003-07-12",
-        "place" : "Oslo",
-        "country" : "Norway"
+        "date" : "2002-12-26",
+        "place" : "London",
+        "country" : "England"
       },
-      "nationality" : "Norway",
-      "height" : "174 cm",
-      "weight" : "70 kg",
+      "nationality" : "England",
+      "height" : "176",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/278133.png"
+      "photo" : "https://media.api-sports.io/football/players/278128.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3189,28 +3903,28 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -3239,155 +3953,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -3408,28 +3976,28 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -3458,9 +4026,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -3472,21 +4113,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 284228,
-      "name" : "Kian Breckin",
-      "firstname" : "Kian",
-      "lastname" : "Breckin",
-      "age" : 22,
+      "id" : 323591,
+      "name" : "S. Nypan",
+      "firstname" : "Sverre",
+      "lastname" : "Halseth Nypan",
+      "age" : 19,
       "birth" : {
-        "date" : "2003-12-10",
-        "place" : null,
-        "country" : "England"
+        "date" : "2006-12-19",
+        "place" : "Trondheim",
+        "country" : "Norway"
       },
-      "nationality" : "England",
-      "height" : null,
+      "nationality" : "Norway",
+      "height" : "182",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284228.png"
+      "photo" : "https://media.api-sports.io/football/players/323591.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3500,7 +4141,7 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -3561,116 +4202,97 @@
         "missed" : null,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284231,
-      "name" : "Micah Hamilton",
-      "firstname" : "Micah",
-      "lastname" : "Hamilton",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-11-13",
-        "place" : "Manchester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "177 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284231.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 24,
+        "lineups" : 20,
+        "minutes" : 1511,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.634782",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 4,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 18,
+        "on" : 11
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 424,
+        "key" : 15,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 17,
+        "blocks" : 3,
+        "interceptions" : 10
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 195,
+        "won" : 74
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 43,
+        "success" : 26,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 26,
+        "committed" : 19
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 284409,
-      "name" : "D. Mubama",
-      "firstname" : "Divin Saku",
-      "lastname" : "Mubama",
+      "id" : 360114,
+      "name" : "A. Khusanov",
+      "firstname" : "Abduqodir",
+      "lastname" : "Khusanov",
       "age" : 21,
       "birth" : {
-        "date" : "2004-10-25",
-        "place" : null,
-        "country" : "England"
+        "date" : "2004-02-29",
+        "place" : "Toshkent",
+        "country" : "Uzbekistan"
       },
-      "nationality" : "England",
-      "height" : "182 cm",
-      "weight" : "70 kg",
+      "nationality" : "Uzbekistan",
+      "height" : "186",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284409.png"
+      "photo" : "https://media.api-sports.io/football/players/360114.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3684,369 +4306,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 27,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 229,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
+        "position" : "Defender",
+        "rating" : "6.975000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 5
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 3,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 10,
+        "total" : 129,
         "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 307123,
-      "name" : "N. O&apos;Reilly",
-      "firstname" : "Nico",
-      "lastname" : "O'Reilly",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-21",
-        "place" : "Manchester",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/307123.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 21,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 20
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 17,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 163,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.000000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 88,
-        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 7,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 26,
+        "total" : 23,
         "won" : 14
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 50,
-        "name" : "Manchester City",
-        "logo" : "https://media.api-sports.io/football/teams/50.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 162,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "8.150000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 115,
-        "key" : 5,
-        "accuracy" : 51
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 13
-      },
-      "dribbles" : {
-        "attempts" : 2,
+        "attempts" : 3,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : 3,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4068,45 +4379,45 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 9,
+        "lineups" : 1,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
+        "position" : "Defender",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 7
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
+        "total" : 79,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 78
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -4119,7 +4430,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4129,60 +4440,41 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 328097,
-      "name" : "Mahamadou Susoho Sissoho",
-      "firstname" : "Mahamadou",
-      "lastname" : "Susoho Sissoho",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-20",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/328097.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -4211,14 +4503,14 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -4235,8 +4527,8 @@
         "country" : "Argentina"
       },
       "nationality" : "Argentina",
-      "height" : "171 cm",
-      "weight" : "62 kg",
+      "height" : "171",
+      "weight" : "62",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/414385.png"
     },
@@ -4252,19 +4544,19 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 55,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.633333",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 3,
         "out" : null,
         "bench" : null
       },
@@ -4274,23 +4566,96 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 30,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 50,
+        "name" : "Manchester City",
+        "logo" : "https://media.api-sports.io/football/teams/50.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 23,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
         "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 13,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -4298,75 +4663,56 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 451583,
-      "name" : "K. Braithwaite",
-      "firstname" : "Kaden",
-      "lastname" : "Braithwaite",
-      "age" : 17,
-      "birth" : {
-        "date" : "2008-03-25",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/451583.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 39,
-        "name" : "Premier League",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/39.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "id" : 15,
+        "name" : "FIFA Club World Cup",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/15.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -4395,43 +4741,62 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 442048,
+      "name" : "R. McAidoo",
+      "firstname" : "Ryan",
+      "lastname" : "McAidoo",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-06-24",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/442048.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 50,
         "name" : "Manchester City",
         "logo" : "https://media.api-sports.io/football/teams/50.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 39,
+        "name" : "Premier League",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/39.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 76,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 56,
+        "position" : "Attacker",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -4444,18 +4809,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 65,
+        "total" : null,
         "key" : null,
-        "accuracy" : 62
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
-        "won" : 3
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -4463,7 +4828,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {

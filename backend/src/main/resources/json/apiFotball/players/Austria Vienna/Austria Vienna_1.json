@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "601"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 7225,
-      "name" : "M. Raguž",
-      "firstname" : "Marko",
-      "lastname" : "Raguž",
-      "age" : 27,
+      "id" : 968,
+      "name" : "A. Dragović",
+      "firstname" : "Aleksandar",
+      "lastname" : "Dragović",
+      "age" : 34,
       "birth" : {
-        "date" : "1998-06-10",
-        "place" : "Grieskirchen",
+        "date" : "1991-03-06",
+        "place" : "Wien",
         "country" : "Austria"
       },
       "nationality" : "Austria",
-      "height" : "186 cm",
-      "weight" : "80 kg",
+      "height" : "186",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/7225.png"
+      "photo" : "https://media.api-sports.io/football/players/968.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,30 +36,30 @@
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 0,
-        "minutes" : 145,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.425000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 80,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 13,
-        "out" : 0,
-        "bench" : 13
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -68,30 +68,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 64,
-        "key" : 4,
+        "total" : 31,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
+        "total" : null,
+        "blocks" : 3,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 26,
-        "won" : 11
+        "total" : 7,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 3
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -109,433 +109,30 @@
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 220,
-        "name" : "Cup",
+        "id" : 218,
+        "name" : "Bundesliga",
         "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 52,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 554,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7.1",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 7342,
-      "name" : "A. Schmidt",
-      "firstname" : "Alexander",
-      "lastname" : "Schmidt",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-19",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "193 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/7342.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 7453,
-      "name" : "D. Fitz",
-      "firstname" : "Dominik",
-      "lastname" : "Fitz",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-06-16",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "175 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/7453.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 16,
-        "minutes" : 1464,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.823529",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
         "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 29,
-        "on" : 17
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 8,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 678,
-        "key" : 59,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : null,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 146,
-        "won" : 56
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 21,
-        "committed" : 16
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 4,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 220,
-        "name" : "Cup",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 240,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
         "bench" : 0
       },
       "shots" : {
         "total" : 1,
-        "on" : 1
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -544,357 +141,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 90,
-        "key" : 3,
-        "accuracy" : null
+        "total" : 359,
+        "key" : 1,
+        "accuracy" : 46
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 2,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : 28,
-        "won" : 10
+        "total" : 27,
+        "won" : 15
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 3,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 7536,
-      "name" : "J. Holland",
-      "firstname" : "James Robert",
-      "lastname" : "Holland",
-      "age" : 35,
-      "birth" : {
-        "date" : "1989-05-15",
-        "place" : "Sydney",
-        "country" : "Australia"
-      },
-      "nationality" : "Australia",
-      "height" : "182 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/7536.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 25306,
-      "name" : "M. Malone",
-      "firstname" : "Maurice Maximilian",
-      "lastname" : "Malone",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-08-17",
-        "place" : "Augsburg",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "186 cm",
-      "weight" : "87 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/25306.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 18,
-        "minutes" : 1448,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.022222",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 14,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 35,
-        "on" : 18
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 310,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 12,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 206,
-        "won" : 85
-      },
-      "dribbles" : {
-        "attempts" : 49,
-        "success" : 18,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 23,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 220,
-        "name" : "Cup",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 159,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 124,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 30,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 6
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -911,21 +178,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 128954,
-      "name" : "S. Condé",
-      "firstname" : "Sandali",
-      "lastname" : "Condé",
-      "age" : 21,
+      "id" : 7138,
+      "name" : "L. Wedl",
+      "firstname" : "Lukas",
+      "lastname" : "Wedl",
+      "age" : 30,
       "birth" : {
-        "date" : "2003-03-26",
-        "place" : "Wien",
+        "date" : "1995-10-19",
+        "place" : "Amstetten",
         "country" : "Austria"
       },
-      "nationality" : "Guinea",
-      "height" : "180 cm",
-      "weight" : "64 kg",
+      "nationality" : "Austria",
+      "height" : "186",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/128954.png"
+      "photo" : "https://media.api-sports.io/football/players/7138.png"
     },
     "statistics" : [ {
       "team" : {
@@ -939,7 +206,7 @@
         "country" : "Austria",
         "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -1000,423 +267,604 @@
         "missed" : null,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 128955,
-      "name" : "C. Keles",
-      "firstname" : "Can",
-      "lastname" : "Keles",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-02",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "180 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/128955.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 601,
         "name" : "Austria Vienna",
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 176115,
-      "name" : "F. Kopp",
-      "firstname" : "Florian",
-      "lastname" : "Kopp",
-      "age" : 23,
-      "birth" : {
-        "date" : "2001-05-15",
-        "place" : null,
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "186 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/176115.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 202548,
-      "name" : "M. Polster",
-      "firstname" : "Manuel",
-      "lastname" : "Polster",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-12-23",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "183 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/202548.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 202881,
-      "name" : "M. Pečar",
-      "firstname" : "Martin",
-      "lastname" : "Pečar",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-05",
-        "place" : "Izola",
-        "country" : "Slovenia"
-      },
-      "nationality" : "Slovenia",
-      "height" : "174 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/202881.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 239787,
-      "name" : "Cristiano",
-      "firstname" : "Cristiano Robert",
-      "lastname" : "do Amaral",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-08-31",
-        "place" : "Sorocaba",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/239787.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 91,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.450000",
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
+        "in" : 0,
         "out" : 0,
-        "bench" : 7
+        "bench" : 2
       },
       "shots" : {
-        "total" : 5,
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7449,
+      "name" : "M. Sarkaria",
+      "firstname" : "Manprit",
+      "lastname" : "Sarkaria",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-08-26",
+        "place" : "Wien",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "180",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7449.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 220,
+        "name" : "Cup",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 90,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "5.65",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 0,
+        "accuracy" : 70
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 39,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 6,
+        "minutes" : 478,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 5,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 168,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 47,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7453,
+      "name" : "D. Fitz",
+      "firstname" : "Dominik",
+      "lastname" : "Fitz",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-06-16",
+        "place" : "Wien",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "175",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7453.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 36,
+        "position" : "Attacker",
+        "rating" : "8.15",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 52,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 270,
+        "number" : 36,
+        "position" : "Attacker",
+        "rating" : "7.37",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 101,
+        "key" : 15,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7528,
+      "name" : "R. Ranftl",
+      "firstname" : "Reinhold",
+      "lastname" : "Ranftl",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-01-24",
+        "place" : "Feldbach",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "180",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7528.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 26,
+        "position" : "Midfielder",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 76,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 795,
+        "number" : 26,
+        "position" : "Midfielder",
+        "rating" : "6.87",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
         "on" : 2
       },
       "goals" : {
@@ -1426,27 +874,119 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 24,
-        "key" : 1,
+        "total" : 384,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 18,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 20,
-        "won" : 9
+        "total" : 84,
+        "won" : 47
       },
       "dribbles" : {
-        "attempts" : 5,
+        "attempts" : 8,
         "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
+        "drawn" : 16,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7531,
+      "name" : "P. Wiesinger",
+      "firstname" : "Philipp",
+      "lastname" : "Wiesinger",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-05-23",
+        "place" : "Salzburg",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "181",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7531.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 150,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "6.25",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 79,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 1,
@@ -1467,20 +1007,20 @@
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 220,
-        "name" : "Cup",
+        "id" : 218,
+        "name" : "Bundesliga",
         "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 76,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "7.01",
         "captain" : false
       },
       "substitutes" : {
@@ -1494,46 +1034,65 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 338,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 24,
+        "blocks" : 3,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 77,
+        "won" : 47
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 9
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
-        "red" : 0
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 7681,
+      "name" : "M. Fischer",
+      "firstname" : "Manfred",
+      "lastname" : "Fischer",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-08-06",
+        "place" : null,
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "179",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7681.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 601,
         "name" : "Austria Vienna",
@@ -1545,21 +1104,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 112,
+        "number" : 30,
+        "position" : "Midfielder",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1568,11 +1127,341 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 33,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 770,
+        "number" : 30,
+        "position" : "Midfielder",
+        "rating" : "6.84",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 295,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 17,
+        "blocks" : null,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 82,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 25306,
+      "name" : "M. Malone",
+      "firstname" : "Maurice Maximilian",
+      "lastname" : "Malone",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-08-17",
+        "place" : "Augsburg",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "186",
+      "weight" : "87",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/25306.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 130,
+        "number" : 77,
+        "position" : "Attacker",
+        "rating" : "7.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 346,
+        "number" : 77,
+        "position" : "Attacker",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 90,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 40,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 25364,
+      "name" : "S. Şahin-Radlinger",
+      "firstname" : "Samuel",
+      "lastname" : "Şahin-Radlinger",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-11-07",
+        "place" : "Ried im Innkreis",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "198",
+      "weight" : "94",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/25364.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.25",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 5,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 54,
         "key" : null,
         "accuracy" : null
       },
@@ -1604,28 +1493,9 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 263226,
-      "name" : "S. Kani",
-      "firstname" : "Ayi Silva",
-      "lastname" : "Kangni-Soukpe",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-15",
-        "place" : "Tel Aviv",
-        "country" : "Israel"
-      },
-      "nationality" : "Israel",
-      "height" : "186 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/263226.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 601,
         "name" : "Austria Vienna",
@@ -1637,45 +1507,45 @@
         "country" : "Austria",
         "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 810,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.94",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 13,
+        "assists" : 0,
+        "saves" : 20
       },
       "passes" : {
-        "total" : null,
+        "total" : 232,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 5,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -1687,9 +1557,101 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 136154,
+      "name" : "A. Barry",
+      "firstname" : "Abubakr",
+      "lastname" : "Barry",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-07-02",
+        "place" : "Banjul",
+        "country" : "Gambia"
+      },
+      "nationality" : "Gambia",
+      "height" : "190",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/136154.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 220,
+        "name" : "Cup",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 61,
+        "number" : 5,
+        "position" : "Midfielder",
+        "rating" : "7.12",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 21,
+        "key" : 0,
+        "accuracy" : 71
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 0,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
@@ -1710,15 +1672,180 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 5,
+        "position" : "Midfielder",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 56,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 651,
+        "number" : 5,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 261,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 21,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 106,
+        "won" : 57
+      },
+      "dribbles" : {
+        "attempts" : 33,
+        "success" : 12,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 21,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 5,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 202894,
+      "name" : "N. Botić",
+      "firstname" : "Noah Vinko",
+      "lastname" : "Botić",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-01-11",
+        "place" : "Sydney",
+        "country" : "Australia"
+      },
+      "nationality" : "Australia",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/202894.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 220,
+        "name" : "Cup",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 59,
+        "number" : 19,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.73",
         "captain" : false
       },
       "substitutes" : {
@@ -1727,17 +1854,90 @@
         "bench" : 0
       },
       "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : 1,
+        "accuracy" : 85
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
         "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 20,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 2,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 4,
         "key" : null,
         "accuracy" : null
       },
@@ -1747,8 +1947,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -1767,30 +1967,11 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 277305,
-      "name" : "R. Vučić",
-      "firstname" : "Romeo",
-      "lastname" : "Vučić",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-01-30",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "188 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/277305.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 601,
         "name" : "Austria Vienna",
@@ -1802,269 +1983,323 @@
         "country" : "Austria",
         "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 9,
+        "lineups" : 3,
+        "minutes" : 312,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.44",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 6,
+        "out" : 3,
+        "bench" : 6
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 7,
+        "on" : 5
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 62,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 29,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 303950,
-      "name" : "D. Kreiker",
-      "firstname" : "Dario",
-      "lastname" : "Kreiker",
-      "age" : 22,
+      "id" : 224669,
+      "name" : "Lee Kang-Hee",
+      "firstname" : "Kang-Hee",
+      "lastname" : "Lee",
+      "age" : 24,
       "birth" : {
-        "date" : "2003-01-07",
-        "place" : "Baden bei Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "185 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/303950.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 335327,
-      "name" : "L. Haubenwaller",
-      "firstname" : "Lukas",
-      "lastname" : "Haubenwaller",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-04-23",
-        "place" : "Wien",
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : "184 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/335327.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 356050,
-      "name" : "D. Dizdarević",
-      "firstname" : "Denis",
-      "lastname" : "Dizdarević",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-08-02",
+        "date" : "2001-08-24",
         "place" : null,
-        "country" : "Bosnia and Herzegovina"
+        "country" : "Korea Republic"
+      },
+      "nationality" : "Korea Republic",
+      "height" : "188",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/224669.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 220,
+        "name" : "Cup",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 38,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.09",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 21,
+        "key" : 0,
+        "accuracy" : 80
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 16,
+        "position" : "Defender",
+        "rating" : "6.25",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 57,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 178,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.67",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 116,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 2,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 263689,
+      "name" : "M. Husković",
+      "firstname" : "Muharem",
+      "lastname" : "Husković",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-03-05",
+        "place" : null,
+        "country" : "Austria"
       },
       "nationality" : "Austria",
-      "height" : null,
-      "weight" : null,
+      "height" : "180",
+      "weight" : "66",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/356050.png"
+      "photo" : "https://media.api-sports.io/football/players/263689.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2078,34 +2313,126 @@
         "country" : "Austria",
         "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 7,
+        "lineups" : 4,
+        "minutes" : 60,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "position" : "Attacker",
+        "rating" : "6.480000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 3,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
+        "total" : 18,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 263813,
+      "name" : "K. Boateng",
+      "firstname" : "Kelvin Owusu",
+      "lastname" : "Boateng",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-03-24",
+        "place" : "Accra",
+        "country" : "Ghana"
+      },
+      "nationality" : "Ghana",
+      "height" : "184",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/263813.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 9,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
         "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
         "key" : null,
         "accuracy" : null
       },
@@ -2115,11 +2442,11 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 1,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -2128,35 +2455,108 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 48,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.47",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 376062,
-      "name" : "T. Polz",
-      "firstname" : "Tobias",
-      "lastname" : "Polz",
+      "id" : 277303,
+      "name" : "Z. El Sheiwi",
+      "firstname" : "Ziad",
+      "lastname" : "El Sheiwi",
       "age" : 21,
       "birth" : {
-        "date" : "2004-11-22",
-        "place" : "Graz",
+        "date" : "2004-03-11",
+        "place" : null,
         "country" : "Austria"
       },
       "nationality" : "Austria",
-      "height" : "191 cm",
-      "weight" : "80 kg",
+      "height" : "180",
+      "weight" : "77",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/376062.png"
+      "photo" : "https://media.api-sports.io/football/players/277303.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2170,7 +2570,7 @@
         "country" : "Austria",
         "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2229,6 +2629,336 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 78,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 23,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 277304,
+      "name" : "F. Wustinger",
+      "firstname" : "Florian",
+      "lastname" : "Wustinger",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-07-21",
+        "place" : "Wien",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "176",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/277304.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 105,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.433333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 323132,
+      "name" : "M. Wels",
+      "firstname" : "Moritz",
+      "lastname" : "Wels",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-09-25",
+        "place" : "Hartberg",
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "186",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/323132.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 416,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.960000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 101,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 52,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2257,164 +2987,18 @@
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 220,
-        "name" : "Cup",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
         "id" : 848,
         "name" : "UEFA Europa Conference League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 60,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2422,191 +3006,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 409007,
-      "name" : "A. Ilić",
-      "firstname" : "Aleksa",
-      "lastname" : "Ilić",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-12-03",
-        "place" : "Požarevac",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/409007.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 460151,
-      "name" : "Konstantin Aleksa",
-      "firstname" : "Konstantin",
-      "lastname" : "Aleksa",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-04-25",
-        "place" : null,
-        "country" : "Austria"
-      },
-      "nationality" : "Austria",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/460151.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 601,
-        "name" : "Austria Vienna",
-        "logo" : "https://media.api-sports.io/football/teams/601.png"
-      },
-      "league" : {
-        "id" : 218,
-        "name" : "Bundesliga",
-        "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/218.png",
-        "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 6,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2615,12 +3015,12 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -2629,7 +3029,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
+        "total" : null,
         "won" : null
       },
       "dribbles" : {
@@ -2660,26 +3060,191 @@
         "logo" : "https://media.api-sports.io/football/teams/601.png"
       },
       "league" : {
-        "id" : 220,
-        "name" : "Cup",
+        "id" : 218,
+        "name" : "Bundesliga",
         "country" : "Austria",
-        "logo" : "https://media.api-sports.io/football/leagues/220.png",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
         "flag" : "https://media.api-sports.io/flags/at.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 537,
+        "number" : 60,
+        "position" : "Defender",
+        "rating" : "6.67",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 225,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 57,
+        "won" : 28
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 460151,
+      "name" : "Konstantin Aleksa",
+      "firstname" : "Konstantin",
+      "lastname" : "Aleksa",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-04-25",
+        "place" : null,
+        "country" : "Austria"
+      },
+      "nationality" : "Austria",
+      "height" : "181",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/460151.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 6,
+        "minutes" : 94,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.516666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 16,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 17,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2687,6 +3252,98 @@
       },
       "goals" : {
         "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 480397,
+      "name" : "A. Kanté",
+      "firstname" : "Abdoulaye",
+      "lastname" : "Kanté",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-05-15",
+        "place" : null,
+        "country" : "Côte d'Ivoire"
+      },
+      "nationality" : "Côte d'Ivoire",
+      "height" : "170",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/480397.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 218,
+        "name" : "Bundesliga",
+        "country" : "Austria",
+        "logo" : "https://media.api-sports.io/football/leagues/218.png",
+        "flag" : "https://media.api-sports.io/flags/at.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2715,9 +3372,82 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 601,
+        "name" : "Austria Vienna",
+        "logo" : "https://media.api-sports.io/football/teams/601.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,

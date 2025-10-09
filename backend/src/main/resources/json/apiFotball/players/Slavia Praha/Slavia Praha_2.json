@@ -1,15 +1,15 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "560"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 15,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
@@ -24,8 +24,8 @@
         "country" : "Greece"
       },
       "nationality" : "Greece",
-      "height" : "173 cm",
-      "weight" : "69 kg",
+      "height" : "173",
+      "weight" : "69",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/600.png"
     },
@@ -36,18 +36,18 @@
         "logo" : "https://media.api-sports.io/football/teams/560.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 20,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -55,730 +55,16 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.666666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 178,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 41,
-        "won" : 13
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 818,
-      "name" : "T. Chorý",
-      "firstname" : "Tomáš",
-      "lastname" : "Chorý",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-01-26",
-        "place" : "Olomouc",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "199 cm",
-      "weight" : "102 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/818.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 13,
-        "minutes" : 1231,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 9,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 22,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 8,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 175,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 2,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 108,
-        "won" : 62
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 4,
-        "minutes" : 389,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.028571",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 3,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 86,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 74,
-        "won" : 29
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 316,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 21,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1236,
-      "name" : "T. Vlček",
-      "firstname" : "Tomáš",
-      "lastname" : "Vlček",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-02-28",
-        "place" : "Kladno",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "182 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1236.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 43,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 22,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1240,
-      "name" : "L. Masopust",
-      "firstname" : "Lukáš",
-      "lastname" : "Masopust",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-02-12",
-        "place" : "Božejov",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "179 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1240.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 75,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
         "bench" : 3
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 36,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 29,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
         "saves" : null
       },
       "passes" : {
@@ -806,152 +92,6 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 184,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 17,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -965,21 +105,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 1242,
-      "name" : "P. Ševčík",
-      "firstname" : "Petr",
-      "lastname" : "Ševčík",
+      "id" : 1227,
+      "name" : "O. Kolář",
+      "firstname" : "Ondřej",
+      "lastname" : "Kolář",
       "age" : 31,
       "birth" : {
-        "date" : "1994-05-04",
-        "place" : "Jeseník",
+        "date" : "1994-10-17",
+        "place" : "Liberec",
         "country" : "Czechia"
       },
       "nationality" : "Czechia",
-      "height" : "172 cm",
-      "weight" : "66 kg",
+      "height" : "193",
+      "weight" : "81",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1242.png"
+      "photo" : "https://media.api-sports.io/football/players/1227.png"
     },
     "statistics" : [ {
       "team" : {
@@ -993,21 +133,21 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 157,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 10
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -1017,152 +157,6 @@
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
         "saves" : null
       },
       "passes" : {
@@ -1203,21 +197,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 15328,
-      "name" : "I. Schranz",
-      "firstname" : "Ivan",
-      "lastname" : "Schranz",
-      "age" : 32,
+      "id" : 1230,
+      "name" : "J. Bořil",
+      "firstname" : "Jan",
+      "lastname" : "Bořil",
+      "age" : 34,
       "birth" : {
-        "date" : "1993-09-13",
-        "place" : "Bratislava",
-        "country" : "Slovakia"
+        "date" : "1991-01-11",
+        "place" : "Nymburk",
+        "country" : "Czechia"
       },
-      "nationality" : "Slovakia",
-      "height" : "185 cm",
-      "weight" : "75 kg",
+      "nationality" : "Czechia",
+      "height" : "175",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15328.png"
+      "photo" : "https://media.api-sports.io/football/players/1230.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1226,97 +220,24 @@
         "logo" : "https://media.api-sports.io/football/teams/560.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 5,
-        "minutes" : 545,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 5,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 116,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 4,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 24,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 29,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 18,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
@@ -1326,8 +247,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1361,176 +282,11 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 111,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.750000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 48,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
     }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 263,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 13,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66042,
-      "name" : "O. Dorley",
-      "firstname" : "Oscar Murphy",
-      "lastname" : "Dorley",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-07-19",
-        "place" : "Monrovia",
-        "country" : "Liberia"
-      },
-      "nationality" : "Liberia",
-      "height" : "173 cm",
-      "weight" : "63 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66042.png"
-    },
-    "statistics" : [ {
       "team" : {
         "id" : 560,
         "name" : "Slavia Praha",
@@ -1542,584 +298,35 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 19,
-        "minutes" : 1627,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.010000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 368,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 4,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 87,
-        "won" : 47
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 13
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 8,
         "lineups" : 8,
-        "minutes" : 669,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.837500",
+        "minutes" : 645,
+        "number" : 18,
+        "position" : "Defender",
+        "rating" : "7.1",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 287,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : null,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 63,
-        "won" : 37
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 360,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 52,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 25,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66208,
-      "name" : "O. Lingr",
-      "firstname" : "Ondřej",
-      "lastname" : "Lingr",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-10-07",
-        "place" : "Karviná",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66208.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 7,
-        "minutes" : 593,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.980000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 6,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 85,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 36,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
+        "out" : 4,
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 3,
-        "minutes" : 316,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.771428",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 78,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 58,
-        "won" : 29
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66214,
-      "name" : "D. Douděra",
-      "firstname" : "David",
-      "lastname" : "Douděra",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-05-31",
-        "place" : "Brandýs nad Labem-Stará Boleslav",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "175 cm",
-      "weight" : "66 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66214.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 18,
-        "minutes" : 1489,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.187500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 10,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 6,
+        "total" : 3,
         "on" : 2
       },
       "goals" : {
-        "total" : 1,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 263,
-        "key" : 15,
+        "total" : 250,
+        "key" : 11,
         "accuracy" : null
       },
       "tackles" : {
@@ -2128,331 +335,20 @@
         "interceptions" : 8
       },
       "duels" : {
-        "total" : 57,
-        "won" : 29
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 5,
-        "minutes" : 399,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 185,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 36,
-        "won" : 24
+        "total" : 55,
+        "won" : 26
       },
       "dribbles" : {
         "attempts" : 5,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 123,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 8,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66258,
-      "name" : "D. Pech",
-      "firstname" : "David",
-      "lastname" : "Pech",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-02-22",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66258.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.850000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 81,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 4,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 10
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2466,21 +362,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 66275,
-      "name" : "M. Chytil",
-      "firstname" : "Mojmír",
-      "lastname" : "Chytil",
+      "id" : 33095,
+      "name" : "D. Hashioka",
+      "firstname" : "Daiki",
+      "lastname" : "Hashioka",
       "age" : 26,
       "birth" : {
-        "date" : "1999-04-29",
-        "place" : "Skalka",
-        "country" : "Czechia"
+        "date" : "1999-05-17",
+        "place" : "Saitama",
+        "country" : "Japan"
       },
-      "nationality" : "Czechia",
-      "height" : "187 cm",
-      "weight" : "82 kg",
+      "nationality" : "Japan",
+      "height" : "184",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66275.png"
+      "photo" : "https://media.api-sports.io/football/players/33095.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2494,1515 +390,14 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 11,
-        "minutes" : 927,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.775000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 9,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 8,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 86,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 55,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 61,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 4,
-        "minutes" : 358,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.725000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 3,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 55,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 55,
-        "won" : 30
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 12,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66287,
-      "name" : "O. Zmrzlý",
-      "firstname" : "Ondřej",
-      "lastname" : "Zmrzlý",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-04-22",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "185 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66287.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 0,
-        "minutes" : 54,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.550000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 0,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 14,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 61,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 4,
-        "minutes" : 279,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.666666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 86,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 12
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66353,
-      "name" : "L. Provod",
-      "firstname" : "Lukáš",
-      "lastname" : "Provod",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-10-23",
-        "place" : "Plzeň",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "191 cm",
-      "weight" : "85 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66353.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 15,
-        "minutes" : 1362,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.218181",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 10,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 10
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 386,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 90,
-        "won" : 43
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 5,
-        "minutes" : 429,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 3,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 201,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 55,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 12,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 347,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 52,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 33,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 216762,
-      "name" : "C. Zafeiris",
-      "firstname" : "Christos",
-      "lastname" : "Zafeiris",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-23",
-        "place" : "Athens",
-        "country" : "Greece"
-      },
-      "nationality" : "Norway",
-      "height" : "172 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/216762.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 16,
-        "minutes" : 1402,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.122222",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 11,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 230,
-        "key" : 13,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 67,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 13
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 296,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.450000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 44,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 6,
-        "minutes" : 586,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.912500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 236,
-        "key" : 15,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 65,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 17
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 322561,
-      "name" : "S. Michez",
-      "firstname" : "Simion",
-      "lastname" : "Michez",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-02-09",
-        "place" : null,
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/322561.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 177,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.733333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 43,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 18,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 5,
-        "minutes" : 371,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.914285",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 5,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 95,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 49,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 339346,
-      "name" : "D. Teah",
-      "firstname" : "Divine Roosevelt",
-      "lastname" : "Teah",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-04-19",
-        "place" : null,
-        "country" : "Liberia"
-      },
-      "nationality" : "Liberia",
-      "height" : "179 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/339346.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 345322,
-      "name" : "T. Ouma",
-      "firstname" : "Timothy Noor",
-      "lastname" : "Ouma",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-06-10",
-        "place" : "Nairobi",
-        "country" : "Kenya"
-      },
-      "nationality" : "Kenya",
-      "height" : "183 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/345322.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
@@ -4054,6 +449,1034 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 13,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66287,
+      "name" : "O. Zmrzlý",
+      "firstname" : "Ondřej",
+      "lastname" : "Zmrzlý",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-22",
+        "place" : null,
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "185",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66287.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 384,
+        "number" : 33,
+        "position" : "Midfielder",
+        "rating" : "6.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 5,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 136,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66347,
+      "name" : "J. Staněk",
+      "firstname" : "Jindřich",
+      "lastname" : "Staněk",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-04-27",
+        "place" : "Strakonice",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "192",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66347.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 8
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 105726,
+      "name" : "E. Prekop",
+      "firstname" : "Erik",
+      "lastname" : "Prekop",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-10-08",
+        "place" : null,
+        "country" : "Slovakia"
+      },
+      "nationality" : "Slovakia",
+      "height" : "185",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/105726.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 95,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : "6.27",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 18,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 265386,
+      "name" : "D. Javorček",
+      "firstname" : "Dominik",
+      "lastname" : "Javorček",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-11-02",
+        "place" : null,
+        "country" : "Slovakia"
+      },
+      "nationality" : "Slovakia",
+      "height" : "183",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/265386.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 339346,
+      "name" : "D. Teah",
+      "firstname" : "Divine Roosevelt",
+      "lastname" : "Teah",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-04-19",
+        "place" : null,
+        "country" : "Liberia"
+      },
+      "nationality" : "Liberia",
+      "height" : "179",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/339346.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 18,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 353610,
+      "name" : "L. Vorlický",
+      "firstname" : "Lukáš",
+      "lastname" : "Vorlický",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-01-18",
+        "place" : null,
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "186",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/353610.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 0,
+        "minutes" : 163,
+        "number" : 22,
+        "position" : "Midfielder",
+        "rating" : "6.82",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 51,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 26,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 388769,
+      "name" : "D. Toula",
+      "firstname" : "Daniel",
+      "lastname" : "Toula",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-02-19",
+        "place" : null,
+        "country" : "Czech Republic"
+      },
+      "nationality" : "Czech Republic",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/388769.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 30,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 30,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 388771,
+      "name" : "T. Jelínek",
+      "firstname" : "Tomáš",
+      "lastname" : "Jelínek",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-12-27",
+        "place" : null,
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/388771.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 43,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -4082,30 +1505,30 @@
         "logo" : "https://media.api-sports.io/football/teams/560.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 9,
-        "number" : null,
+        "minutes" : null,
+        "number" : 16,
         "position" : "Midfielder",
-        "rating" : "6.937500",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 2
       },
       "shots" : {
-        "total" : 5,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -4114,27 +1537,192 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 257,
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 5,
+        "minutes" : 443,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.64",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 5,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 146,
         "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 15,
-        "blocks" : 2,
-        "interceptions" : 7
+        "total" : 12,
+        "blocks" : null,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 82,
-        "won" : 46
+        "total" : 55,
+        "won" : 28
       },
       "dribbles" : {
-        "attempts" : 16,
-        "success" : 11,
+        "attempts" : 11,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 15,
-        "committed" : 8
+        "drawn" : 9,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 434727,
+      "name" : "E. Fully",
+      "firstname" : "Emmanuel Favor",
+      "lastname" : "Fully",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-03-20",
+        "place" : null,
+        "country" : "Liberia"
+      },
+      "nationality" : "Liberia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/434727.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 560,
+        "name" : "Slavia Praha",
+        "logo" : "https://media.api-sports.io/football/teams/560.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 94,
+        "number" : 15,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 47,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -4151,13 +1739,13 @@
     } ]
   }, {
     "player" : {
-      "id" : 416191,
-      "name" : "M. Naskos",
-      "firstname" : "Marek",
-      "lastname" : "Naskos",
+      "id" : 449706,
+      "name" : "Š. Slončík",
+      "firstname" : "Šimon",
+      "lastname" : "Slončík",
       "age" : 18,
       "birth" : {
-        "date" : "2007-06-29",
+        "date" : "2007-05-15",
         "place" : null,
         "country" : "Czechia"
       },
@@ -4165,7 +1753,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/416191.png"
+      "photo" : "https://media.api-sports.io/football/players/449706.png"
     },
     "statistics" : [ {
       "team" : {
@@ -4179,251 +1767,13 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 462213,
-      "name" : "J. Kolísek",
-      "firstname" : "Jakub",
-      "lastname" : "Kolísek",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-08-14",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "187 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/462213.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
         "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 560,
-        "name" : "Slavia Praha",
-        "logo" : "https://media.api-sports.io/football/teams/560.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "number" : 14,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -4440,7 +1790,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {

@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "542"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 43084,
-      "name" : "I. Hagi",
-      "firstname" : "Ianis",
-      "lastname" : "Hagi",
+      "id" : 143,
+      "name" : "Carles Aleñá",
+      "firstname" : "Carles",
+      "lastname" : "Aleña Castillo",
       "age" : 27,
       "birth" : {
-        "date" : "1998-10-22",
-        "place" : "İstanbul",
-        "country" : "Türkiye"
+        "date" : "1998-01-05",
+        "place" : "Mataró",
+        "country" : "Spain"
       },
-      "nationality" : "Romania",
-      "height" : "182 cm",
-      "weight" : "74 kg",
+      "nationality" : "Spain",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/43084.png"
+      "photo" : "https://media.api-sports.io/football/players/143.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,35 +41,219 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 6,
+        "minutes" : 522,
+        "number" : 10,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.73",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 2,
+        "out" : 4,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 259,
+        "key" : 10,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 49,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 760,
+      "name" : "M. Díaz",
+      "firstname" : "Mariano",
+      "lastname" : "Díaz Mejía",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-08-01",
+        "place" : "Barcelona",
+        "country" : "Spain"
+      },
+      "nationality" : "Dominican Republic",
+      "height" : "180",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/760.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 2,
+        "minutes" : 224,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.43",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 2,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 6085,
+      "name" : "C. Benavídez",
+      "firstname" : "Carlos Nahuel",
+      "lastname" : "Benavídez Protesoni",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-03-30",
+        "place" : "Montevideo",
+        "country" : "Uruguay"
+      },
+      "nationality" : "Uruguay",
+      "height" : "185",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/6085.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 10,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 5,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -78,7 +262,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
       },
       "dribbles" : {
@@ -88,38 +272,38 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 47299,
-      "name" : "Gorosabel",
-      "firstname" : "Andoni",
-      "lastname" : "Gorosabel Espinosa",
+      "id" : 6233,
+      "name" : "N. Tenaglia",
+      "firstname" : "Facundo Nahuel",
+      "lastname" : "Tenaglia",
       "age" : 29,
       "birth" : {
-        "date" : "1996-08-04",
-        "place" : "Arrasate",
-        "country" : "Spain"
+        "date" : "1996-02-21",
+        "place" : "Saladillo",
+        "country" : "Argentina"
       },
-      "nationality" : "Spain",
-      "height" : "174 cm",
-      "weight" : "70 kg",
+      "nationality" : "Argentina",
+      "height" : "180",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47299.png"
+      "photo" : "https://media.api-sports.io/football/players/6233.png"
     },
     "statistics" : [ {
       "team" : {
@@ -133,85 +317,85 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 638,
+        "number" : 14,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.99",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 1
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 257,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 9,
+        "blocks" : 6,
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 57,
+        "won" : 34
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 11,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
-        "won" : null,
+        "won" : 1,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 47306,
-      "name" : "Álex Sola",
-      "firstname" : "Alejandro",
-      "lastname" : "Sola López-Ocaña",
+      "id" : 6638,
+      "name" : "F. Garcés",
+      "firstname" : "Facundo Tomás",
+      "lastname" : "Garcés",
       "age" : 26,
       "birth" : {
-        "date" : "1999-06-09",
-        "place" : "San Sebastián",
-        "country" : "Spain"
+        "date" : "1999-09-05",
+        "place" : "Santa Fe",
+        "country" : "Argentina"
       },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "75 kg",
+      "nationality" : "Argentina",
+      "height" : "191",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47306.png"
+      "photo" : "https://media.api-sports.io/football/players/6638.png"
     },
     "statistics" : [ {
       "team" : {
@@ -225,475 +409,15 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47355,
-      "name" : "Rubén Duarte",
-      "firstname" : "Rubén",
-      "lastname" : "Duarte Sánchez",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-10-18",
-        "place" : "Almería",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47355.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : 2,
         "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 140834,
-      "name" : "A. Mahmoud",
-      "firstname" : "Abdallahi Mohamed",
-      "lastname" : "Mahmoud",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-05-04",
-        "place" : "Nouakchott",
-        "country" : "Mauritania"
-      },
-      "nationality" : "Mauritania",
-      "height" : "189 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/140834.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182556,
-      "name" : "Alan Godoy",
-      "firstname" : "Alan",
-      "lastname" : "Godoy Domínguez",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-05-04",
-        "place" : "Las Palmas de Gran Canaria",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182556.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182636,
-      "name" : "Javi López",
-      "firstname" : "Javier",
-      "lastname" : "López Carballo",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-03-25",
-        "place" : "La Orotava",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182636.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 192011,
-      "name" : "Joseda Álvarez",
-      "firstname" : "José David",
-      "lastname" : "Álvarez Adsuar",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-22",
-        "place" : "Sant Vicenç dels Horts",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/192011.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.68",
         "captain" : false
       },
       "substitutes" : {
@@ -702,13 +426,105 @@
         "bench" : 0
       },
       "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 212,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 8,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 41412,
+      "name" : "N. Maraš",
+      "firstname" : "Nikola",
+      "lastname" : "Maraš",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-12-19",
+        "place" : "Beograd",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "189",
+      "weight" : "79",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/41412.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -742,28 +558,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 197800,
-      "name" : "Unai Ropero",
-      "firstname" : "Unai",
-      "lastname" : "Ropero Pérez",
-      "age" : 24,
+      "id" : 46987,
+      "name" : "Raúl Fernández",
+      "firstname" : "Raúl",
+      "lastname" : "Fernández-Cavada Mateos",
+      "age" : 37,
       "birth" : {
-        "date" : "2001-11-20",
-        "place" : "Vitoria-Gasteiz",
+        "date" : "1988-03-13",
+        "place" : "Bilbao",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "187 cm",
-      "weight" : "72 kg",
+      "height" : "195",
+      "weight" : "92",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/197800.png"
+      "photo" : "https://media.api-sports.io/football/players/46987.png"
     },
     "statistics" : [ {
       "team" : {
@@ -777,30 +593,30 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 0,
+        "lineups" : 0,
         "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
+        "number" : 13,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 8
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -827,35 +643,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 215810,
-      "name" : "G. Gagua",
-      "firstname" : "Giorgi",
-      "lastname" : "Gagua",
-      "age" : 24,
+      "id" : 47309,
+      "name" : "Guevara",
+      "firstname" : "Ander",
+      "lastname" : "Guevara Lajo",
+      "age" : 28,
       "birth" : {
-        "date" : "2001-10-10",
-        "place" : "Tiflis",
-        "country" : "Georgia"
+        "date" : "1997-07-07",
+        "place" : "Vitoria",
+        "country" : "Spain"
       },
-      "nationality" : "Georgia",
-      "height" : "193 cm",
-      "weight" : null,
+      "nationality" : "Spain",
+      "height" : "180",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/215810.png"
+      "photo" : "https://media.api-sports.io/football/players/47309.png"
     },
     "statistics" : [ {
       "team" : {
@@ -869,34 +685,126 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 190,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.64",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 4,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 105,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 27,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47353,
+      "name" : "Sivera",
+      "firstname" : "Antonio",
+      "lastname" : "Sivera Salvá",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-08-11",
+        "place" : "Jávea",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47353.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 728,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.16",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 19
       },
       "passes" : {
-        "total" : null,
+        "total" : 185,
         "key" : null,
         "accuracy" : null
       },
@@ -906,8 +814,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -919,219 +827,219 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 70476,
+      "name" : "M. Diarra",
+      "firstname" : "Moussa",
+      "lastname" : "Diarra",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-11-10",
+        "place" : "Stains",
+        "country" : "France"
+      },
+      "nationality" : "Mali",
+      "height" : "185",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/70476.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 219,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.43",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 27,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 237066,
-      "name" : "Rafa Marín",
-      "firstname" : "Rafael",
-      "lastname" : "Marín Zamora",
+      "id" : 104821,
+      "name" : "Jon Guridi",
+      "firstname" : "Jon",
+      "lastname" : "Guridi Aldalur",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-02-28",
+        "place" : "Azpeitia",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "179",
+      "weight" : "64",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/104821.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 295,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.34",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 5,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 113,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 37,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 128951,
+      "name" : "Víctor Parada",
+      "firstname" : "Víctor",
+      "lastname" : "Parada González",
       "age" : 23,
       "birth" : {
-        "date" : "2002-05-19",
-        "place" : "Guadajoz",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "191 cm",
-      "weight" : "83 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/237066.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 297973,
-      "name" : "Selu Diallo",
-      "firstname" : "Mamadou Selu",
-      "lastname" : "Diallo Diallo",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-01",
-        "place" : "Huesca",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "187 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/297973.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 305970,
-      "name" : "José de León",
-      "firstname" : "José Alejandro",
-      "lastname" : "de León Gómez",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-03-02",
+        "date" : "2002-04-04",
         "place" : "Madrid",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : "77 kg",
+      "height" : "185",
+      "weight" : "76",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/305970.png"
+      "photo" : "https://media.api-sports.io/football/players/128951.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1145,665 +1053,481 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/140.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 311740,
-      "name" : "Tomás Mendes",
-      "firstname" : "Tomás Alage",
-      "lastname" : "Mendes Mendes",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-11-21",
-        "place" : "Almería",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "179 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/311740.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 323935,
-      "name" : "G. Simeone",
-      "firstname" : "Giuliano",
-      "lastname" : "Simeone Baldini",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-12-18",
-        "place" : "Roma",
-        "country" : "Italy"
-      },
-      "nationality" : "Argentina",
-      "height" : "173 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/323935.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 358628,
-      "name" : "Samu",
-      "firstname" : "Samuel",
-      "lastname" : "Omorodion Aghehowa",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-05-05",
-        "place" : "Melilla",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "193 cm",
-      "weight" : "90 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/358628.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 401419,
-      "name" : "Ander Sánchez",
-      "firstname" : "Ander",
-      "lastname" : "Sánchez Fernández De Lar",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-24",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/401419.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 403241,
-      "name" : "Gaizka García",
-      "firstname" : "Gaizka",
-      "lastname" : "García Vázquez",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-02-17",
-        "place" : "Vitoria-Gasteiz",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "192 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/403241.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 439032,
-      "name" : "Rubén Montero",
-      "firstname" : "Rubén",
-      "lastname" : "Montero Fernández",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-08-28",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/439032.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 442058,
-      "name" : "Álvaro García",
-      "firstname" : "Álvaro",
-      "lastname" : "García Blanes",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-09-15",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/442058.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 542,
-        "name" : "Alaves",
-        "logo" : "https://media.api-sports.io/football/teams/542.png"
-      },
-      "league" : {
-        "id" : 140,
-        "name" : "La Liga",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/140.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 7,
+        "lineups" : 3,
+        "minutes" : 285,
+        "number" : 24,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.48",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 3,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 83,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 139001,
+      "name" : "Pablo Ibáñez",
+      "firstname" : "Pablo",
+      "lastname" : "Ibáñez Lumbreras",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-20",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "179",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/139001.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 551,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "6.69",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 6,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 265,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 14,
+        "blocks" : 2,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 96,
+        "won" : 47
+      },
+      "dribbles" : {
+        "attempts" : 24,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 18,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162686,
+      "name" : "Antonio Blanco",
+      "firstname" : "Antonio",
+      "lastname" : "Blanco Conde",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-07-23",
+        "place" : "Montalbán",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "176",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162686.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 611,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.01",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : 2,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 422,
+        "key" : 4,
+        "accuracy" : 50
+      },
+      "tackles" : {
+        "total" : 20,
+        "blocks" : null,
+        "interceptions" : 11
+      },
+      "duels" : {
+        "total" : 76,
+        "won" : 40
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 17
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 183751,
+      "name" : "A. Rebbach",
+      "firstname" : "Abderrahmane",
+      "lastname" : "Rebbach",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-08-11",
+        "place" : "Blida",
+        "country" : "Algeria"
+      },
+      "nationality" : "Algeria",
+      "height" : "176",
+      "weight" : "68",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/183751.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 317,
+        "number" : 21,
+        "position" : "Attacker",
+        "rating" : "6.52",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 118,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 59,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 9,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 187214,
+      "name" : "Carlos Vicente",
+      "firstname" : "Carlos",
+      "lastname" : "Vicente Robles",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-23",
+        "place" : "Zaragoza",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "179",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/187214.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 6,
+        "minutes" : 597,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "7.01",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 2,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 238,
+        "key" : 9,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 19,
+        "blocks" : 2,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 94,
+        "won" : 49
+      },
+      "dribbles" : {
+        "attempts" : 20,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 20,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 3,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 266658,
+      "name" : "Calebe",
+      "firstname" : "Calebe",
+      "lastname" : "Gonçalves Ferreira da Silva",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-04-30",
+        "place" : "Ribeirão Preto",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "173",
+      "weight" : "67",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/266658.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 119,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 6
       },
       "shots" : {
         "total" : null,
@@ -1811,8 +1535,284 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 52,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 315586,
+      "name" : "Lander Pinillos",
+      "firstname" : "Lander",
+      "lastname" : "Pinillos Wilson",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-10-06",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/315586.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 2,
+        "number" : 28,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 361384,
+      "name" : "Yusi",
+      "firstname" : "Youssef",
+      "lastname" : "Enríquez Lekhedim",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-10-07",
+        "place" : "Madrid",
+        "country" : "Spain"
+      },
+      "nationality" : "Morocco",
+      "height" : "175",
+      "weight" : "68",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/361384.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 239,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.78",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 82,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 377215,
+      "name" : "G. Swiderski",
+      "firstname" : "Grégoire",
+      "lastname" : "Swiderski",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-10-05",
+        "place" : null,
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "187",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/377215.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 542,
+        "name" : "Alaves",
+        "logo" : "https://media.api-sports.io/football/teams/542.png"
+      },
+      "league" : {
+        "id" : 140,
+        "name" : "La Liga",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/140.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1846,8 +1846,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

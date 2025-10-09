@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "1345"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 20095,
-      "name" : "P. Madden",
-      "firstname" : "Paddy Stephen",
-      "lastname" : "Madden",
+      "id" : 17975,
+      "name" : "J. Grimes",
+      "firstname" : "Jamie Neil",
+      "lastname" : "Grimes",
       "age" : 35,
       "birth" : {
-        "date" : "1990-03-04",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
+        "date" : "1990-12-22",
+        "place" : "Nottingham",
+        "country" : "England"
       },
-      "nationality" : "Republic of Ireland",
-      "height" : "183 cm",
-      "weight" : "76 kg",
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "83",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20095.png"
+      "photo" : "https://media.api-sports.io/football/players/17975.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,64 +41,64 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 6,
-        "minutes" : 593,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.768750",
+        "position" : "Defender",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 10,
-        "out" : 6,
-        "bench" : 10
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 13,
-        "on" : 5
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 92,
-        "key" : 4,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : 3,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 63,
-        "won" : 22
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 5
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 1,
+        "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
@@ -114,35 +114,108 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 68,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "8.200000",
+        "minutes" : 117,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "5.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 102,
+        "key" : null,
+        "accuracy" : 44
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 5,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 14,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -151,8 +224,1382 @@
         "interceptions" : null
       },
       "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18090,
+      "name" : "R. Boot",
+      "firstname" : "Ryan Thomas William",
+      "lastname" : "Boot",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-11-09",
+        "place" : "Rocester",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "185",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18090.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 3,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : "5.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 7,
+        "assists" : 0,
+        "saves" : 2
+      },
+      "passes" : {
+        "total" : 90,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18096,
+      "name" : "T. Williams",
+      "firstname" : "Tyrone",
+      "lastname" : "Williams",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-10-21",
+        "place" : "Birmingham",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18096.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 270,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.266666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 159,
+        "key" : null,
+        "accuracy" : 46
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 2,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18556,
+      "name" : "R. Sheckleford",
+      "firstname" : "Ryheem Leonard Cole",
+      "lastname" : "Sheckleford",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-05-20",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : "72",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18556.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "5.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 78,
+        "key" : null,
+        "accuracy" : 74
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19542,
+      "name" : "C. Dunkley",
+      "firstname" : "Cheyenne",
+      "lastname" : "Dunkley",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-02-13",
+        "place" : "Wolverhampton",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19542.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.142857",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 284,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 4,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 106,
+        "won" : 72
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 94,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : null,
+        "accuracy" : 51
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19702,
+      "name" : "R. Darcy",
+      "firstname" : "Ronan Thomas",
+      "lastname" : "Darcy",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-11-04",
+        "place" : "Ormskirk",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19702.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 345,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.566666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 121,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 110,
+        "number" : 27,
+        "position" : "Midfielder",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 46,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 76,
+        "number" : 27,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20023,
+      "name" : "K. McFadzean",
+      "firstname" : "Kyle John",
+      "lastname" : "McFadzean",
+      "age" : 38,
+      "birth" : {
+        "date" : "1987-02-20",
+        "place" : "Sheffield",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "185",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20023.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.214285",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 427,
+        "key" : null,
+        "accuracy" : 49
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : null,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 74,
+        "won" : 52
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 9,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 42,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 94,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 82,
+        "key" : null,
+        "accuracy" : 75
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
         "total" : 3,
         "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20095,
+      "name" : "P. Madden",
+      "firstname" : "Paddy Stephen",
+      "lastname" : "Madden",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-03-04",
+        "place" : "Dublin",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "183",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20095.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 11,
+        "number" : 21,
+        "position" : "Attacker",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
@@ -182,26 +1629,264 @@
         "logo" : "https://media.api-sports.io/football/teams/1345.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 33,
+        "minutes" : 12,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20167,
+      "name" : "J. Donacien",
+      "firstname" : "Janoi Denzil Naieme",
+      "lastname" : "Donacien",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-11-03",
+        "place" : "Castries",
+        "country" : "St. Lucia"
+      },
+      "nationality" : "St. Lucia",
+      "height" : "183",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20167.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 17,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 63,
+        "number" : 44,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -209,8 +1894,173 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 29,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129724,
+      "name" : "Z. Hemming",
+      "firstname" : "Zachary",
+      "lastname" : "Hemming",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-03-07",
+        "place" : "Bishop Auckland",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129724.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.857142",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 9,
+        "assists" : 0,
+        "saves" : 10
+      },
+      "passes" : {
+        "total" : 231,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -244,28 +2094,101 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 94,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 3
+      },
+      "passes" : {
+        "total" : 40,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 284474,
-      "name" : "M. Olakigbe",
-      "firstname" : "Michael Oluwakorede",
-      "lastname" : "Olakigbe",
-      "age" : 21,
+      "id" : 138826,
+      "name" : "A. Lewis",
+      "firstname" : "Adam Thomas",
+      "lastname" : "Lewis",
+      "age" : 26,
       "birth" : {
-        "date" : "2004-04-25",
-        "place" : null,
-        "country" : "Nigeria"
+        "date" : "1999-11-08",
+        "place" : "Liverpool",
+        "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
-      "weight" : null,
+      "height" : "175",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284474.png"
+      "photo" : "https://media.api-sports.io/football/players/138826.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,21 +2202,900 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 3,
+        "minutes" : 42,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.425000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 30,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 146,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.550000",
+        "minutes" : 144,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 2,
         "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 82,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 138893,
+      "name" : "D. Markanday",
+      "firstname" : "Dilan Kumar",
+      "lastname" : "Markanday",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-08-20",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "167",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/138893.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 6,
+        "minutes" : 625,
+        "number" : 24,
+        "position" : "Attacker",
+        "rating" : "6.89",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 4,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 205,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 72,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 17,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 160,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 49,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 76,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 29,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 152971,
+      "name" : "V. Campbell",
+      "firstname" : "Vontae Jason",
+      "lastname" : "Daley-Campbell",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-04-02",
+        "place" : "Clapham Town",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/152971.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 565,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.642857",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 255,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 67,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 15,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 20,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 94,
+        "number" : 20,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 46,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 190505,
+      "name" : "J. Berry-McNally",
+      "firstname" : "James",
+      "lastname" : "Berry-McNally",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-12-10",
+        "place" : "Wigan",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "\n    ",
+      "weight" : "\n    ",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/190505.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 39,
+        "number" : 28,
+        "position" : "Attacker",
+        "rating" : "6.85",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 21,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 63,
+        "number" : 28,
+        "position" : "Midfielder",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 197811,
+      "name" : "L. Gordon",
+      "firstname" : "Lewis",
+      "lastname" : "Gordon",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-02-12",
+        "place" : "London",
+        "country" : "Scotland"
+      },
+      "nationality" : "Scotland",
+      "height" : "172",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/197811.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 621,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.642857",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 3,
@@ -306,7 +3108,153 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 24,
+        "total" : 390,
+        "key" : 11,
+        "accuracy" : 47
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 1,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 60,
+        "won" : 28
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 36,
+        "number" : 19,
+        "position" : "Defender",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 94,
+        "number" : 19,
+        "position" : "Defender",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 45,
         "key" : 1,
         "accuracy" : null
       },
@@ -316,20 +3264,350 @@
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 15,
+        "total" : 6,
         "won" : 2
       },
       "dribbles" : {
-        "attempts" : 6,
+        "attempts" : 3,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 199854,
+      "name" : "D. Duffy",
+      "firstname" : "Dylan",
+      "lastname" : "Duffy",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-11-28",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "189",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/199854.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 362,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "7.05",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 5,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 93,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 70,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 284470,
+      "name" : "M. Dibley-Dias",
+      "firstname" : "Matthew Max",
+      "lastname" : "Dibley-Dias",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-10-29",
+        "place" : "Lower Hutt",
+        "country" : "New Zealand"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/284470.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 152,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.625000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
         "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 39,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -350,12 +3628,12 @@
       "age" : 21,
       "birth" : {
         "date" : "2004-01-03",
-        "place" : null,
+        "place" : "\n    ",
         "country" : "USA"
       },
       "nationality" : "Colombia",
-      "height" : "176 cm",
-      "weight" : "74 kg",
+      "height" : "176",
+      "weight" : "74",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/297635.png"
     },
@@ -371,996 +3649,25 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 645,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 216,
+        "number" : 30,
         "position" : "Defender",
-        "rating" : "6.737500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 373,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 52,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 57,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 25,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 22,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 20,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 311673,
-      "name" : "R. D&apos;Sena",
-      "firstname" : "Ryley",
-      "lastname" : "D'Sena",
-      "age" : 21,
-      "birth" : {
-        "date" : "2003-01-31",
-        "place" : "Sydney",
-        "country" : "Australia"
-      },
-      "nationality" : "Australia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/311673.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 340105,
-      "name" : "L. Jessop",
-      "firstname" : "Liam",
-      "lastname" : "Jessop",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-08-13",
-        "place" : null,
-        "country" : "Gibraltar"
-      },
-      "nationality" : "Gibraltar",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340105.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 41,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 21,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 43,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 402661,
-      "name" : "S. Hooper",
-      "firstname" : "Sam",
-      "lastname" : "Hooper",
-      "age" : 18,
-      "birth" : {
-        "date" : "2006-08-18",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/402661.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 402790,
-      "name" : "L. Mitchell",
-      "firstname" : "Luke",
-      "lastname" : "Mitchell",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/402790.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 445033,
-      "name" : "K. Drummond",
-      "firstname" : "Kane",
-      "lastname" : "Drummond",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-12-19",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/445033.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 25,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 2,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 141,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.623076",
+        "rating" : "6.54",
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
         "out" : 1,
-        "bench" : 4
+        "bench" : 3
       },
       "shots" : {
-        "total" : 4,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1369,18 +3676,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 52,
-        "key" : 5,
+        "total" : 103,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : null,
+        "total" : 7,
+        "blocks" : 2,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 44,
-        "won" : 16
+        "total" : 25,
+        "won" : 14
       },
       "dribbles" : {
         "attempts" : 2,
@@ -1388,8 +3695,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 10
+        "drawn" : 5,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -1410,26 +3717,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1345.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : 30,
+        "position" : "Defender",
+        "rating" : "5.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1437,27 +3744,27 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 36,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -1472,8 +3779,100 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 329352,
+      "name" : "William Dickson",
+      "firstname" : "William",
+      "lastname" : "Dickson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-11-25",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "186",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/329352.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1345,
+        "name" : "Chesterfield",
+        "logo" : "https://media.api-sports.io/football/teams/1345.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 167,
+        "number" : 25,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1488,15 +3887,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 162,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 63,
+        "number" : 25,
         "position" : "Attacker",
-        "rating" : "6.650000",
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
@@ -1505,7 +3904,7 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1515,27 +3914,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 30,
+        "total" : 2,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : null,
+        "total" : null,
+        "blocks" : 1,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 30,
-        "won" : 13
+        "total" : 8,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 7,
-        "success" : 5,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 5
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -1552,21 +3951,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 452150,
-      "name" : "T. Marshall",
-      "firstname" : "Thomas",
-      "lastname" : "Marshall",
-      "age" : null,
+      "id" : 376673,
+      "name" : "A. Rinaldo",
+      "firstname" : "Ashton",
+      "lastname" : "Rinaldo",
+      "age" : 20,
       "birth" : {
-        "date" : null,
+        "date" : "2005-10-25",
         "place" : null,
-        "country" : "Gibraltar"
+        "country" : "Australia"
       },
-      "nationality" : "Gibraltar",
-      "height" : null,
+      "nationality" : "Australia",
+      "height" : "194",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/452150.png"
+      "photo" : "https://media.api-sports.io/football/players/376673.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1575,1124 +3974,39 @@
         "logo" : "https://media.api-sports.io/football/teams/1345.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 452164,
-      "name" : "J. Abudu",
-      "firstname" : "Jay",
-      "lastname" : "Abudu",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "Ghana"
-      },
-      "nationality" : "Ghana",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/452164.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454113,
-      "name" : "C. Wragg",
-      "firstname" : "Charlie",
-      "lastname" : "Wragg",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-11-24",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454113.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454114,
-      "name" : "H. Thomas",
-      "firstname" : "Harvey",
-      "lastname" : "Thomas",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "177 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454114.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454115,
-      "name" : "B. Rossiter",
-      "firstname" : "Ben",
-      "lastname" : "Rossiter",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454115.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454117,
-      "name" : "J. Brassey",
-      "firstname" : "Jack",
-      "lastname" : "Brassey",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454117.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454118,
-      "name" : "K. Eratt-Thompson",
-      "firstname" : "Koby",
-      "lastname" : "Eratt-Thompson",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454118.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454119,
-      "name" : "J. Simmonite",
-      "firstname" : "James",
-      "lastname" : "Simmonite",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454119.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454120,
-      "name" : "M. Cook",
-      "firstname" : "Max",
-      "lastname" : "Cook",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454120.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454121,
-      "name" : "J. Millen",
-      "firstname" : "Josh",
-      "lastname" : "Millen",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454121.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 454254,
-      "name" : "B. Smith",
-      "firstname" : "Barnaby",
-      "lastname" : "Smith",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/454254.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 496955,
-      "name" : "G. Elliott",
-      "firstname" : "Gunner",
-      "lastname" : "Elliott",
-      "age" : 17,
-      "birth" : {
-        "date" : "2008-07-18",
-        "place" : "South Yorkshire",
-        "country" : "England"
-      },
-      "nationality" : "Malta",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/496955.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 6,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
+        "position" : "Goalkeeper",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : 1,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
+        "total" : 28,
         "key" : null,
         "accuracy" : null
       },
@@ -2716,7 +4030,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2724,80 +4038,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1345,
-        "name" : "Chesterfield",
-        "logo" : "https://media.api-sports.io/football/teams/1345.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   } ]

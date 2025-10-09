@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "1333"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 18369,
-      "name" : "Omar Bugiel",
-      "firstname" : "Omar Khaled",
-      "lastname" : "Chaaban",
-      "age" : 31,
+      "id" : 17465,
+      "name" : "A. Smith",
+      "firstname" : "Alistair Oluwashaun",
+      "lastname" : "Smith",
+      "age" : 26,
       "birth" : {
-        "date" : "1994-01-03",
-        "place" : "Berlin",
-        "country" : "Germany"
+        "date" : "1999-05-19",
+        "place" : "Beverley",
+        "country" : "England"
       },
-      "nationality" : "Lebanon",
-      "height" : "185 cm",
-      "weight" : "83 kg",
+      "nationality" : "England",
+      "height" : "193",
+      "weight" : "67",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18369.png"
+      "photo" : "https://media.api-sports.io/football/players/17465.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,63 +36,228 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 23,
-        "lineups" : 22,
-        "minutes" : 1807,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.182608",
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 988,
+        "number" : 12,
+        "position" : "Midfielder",
+        "rating" : "6.61",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 372,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 103,
+        "won" : 49
+      },
+      "dribbles" : {
+        "attempts" : 19,
+        "success" : 13,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 36,
+        "number" : 12,
+        "position" : "Midfielder",
+        "rating" : "5.2",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 12,
-        "bench" : 1
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 20,
-        "on" : 10
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 439,
-        "key" : 29,
+        "total" : 21,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 40,
-        "blocks" : 4,
-        "interceptions" : 3
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 506,
-        "won" : 234
+        "total" : 3,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 33,
-        "success" : 20,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 36,
-        "committed" : 48
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 6,
+        "yellow" : 0,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 17980,
+      "name" : "C. Maycock",
+      "firstname" : "Callum",
+      "lastname" : "Maycock",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-12-23",
+        "place" : "Birmingham",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "182",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/17980.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 4,
+        "minutes" : 56,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.560000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -114,57 +279,57 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 39,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.950000",
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 12,
+        "total" : 59,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 50
       },
       "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 11,
-        "won" : 4
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -182,50 +347,215 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 177,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 187,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 26,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 18369,
+      "name" : "Omar Bugiel",
+      "firstname" : "Omar Khaled",
+      "lastname" : "Chaaban",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-01-03",
+        "place" : "Berlin",
+        "country" : "Germany"
+      },
+      "nationality" : "Lebanon",
+      "height" : "185",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/18369.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 182,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.500000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 59,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 53,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 32,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 19,
+        "won" : 9
       },
       "dribbles" : {
         "attempts" : null,
@@ -233,19 +563,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 3,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
-        "won" : null,
+        "won" : 1,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -260,24 +590,24 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
+        "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 177,
-        "number" : null,
+        "minutes" : 168,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : "6.566666",
+        "rating" : "7.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
+        "total" : 4,
         "on" : 1
       },
       "goals" : {
@@ -287,27 +617,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 39,
-        "key" : null,
+        "total" : 34,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 1
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 52,
-        "won" : 24
+        "total" : 43,
+        "won" : 23
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
+        "drawn" : 7,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -335,7 +665,7 @@
         "country" : "Northern Ireland"
       },
       "nationality" : "Northern Ireland",
-      "height" : "175 cm",
+      "height" : "175",
       "weight" : null,
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/18571.png"
@@ -347,62 +677,300 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 11,
-        "minutes" : 1120,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 80,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.772000",
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 14,
-        "out" : 9,
-        "bench" : 17
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 14,
-        "on" : 7
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 4,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 156,
-        "key" : 14,
+        "total" : 11,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 15,
-        "blocks" : 1,
-        "interceptions" : 10
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 131,
-        "won" : 45
+        "total" : 11,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 29,
-        "success" : 8,
+        "attempts" : 2,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 14,
-        "committed" : 25
+        "drawn" : 2,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 4,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 54,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19812,
+      "name" : "P. Bauer",
+      "firstname" : "Patrick",
+      "lastname" : "Bauer",
+      "age" : 33,
+      "birth" : {
+        "date" : "1992-10-28",
+        "place" : "Backnang",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "192 cm",
+      "weight" : "86 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19812.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 164,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.67",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 1,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 57,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -425,49 +993,49 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 75,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
+        "minutes" : 66,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
+        "total" : 1,
         "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 11,
+        "total" : 30,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
         "total" : 10,
-        "won" : 3
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -486,555 +1054,6 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 329,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 25,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 21,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19764,
-      "name" : "J. Neufville",
-      "firstname" : "Josh",
-      "lastname" : "Neufville",
-      "age" : 24,
-      "birth" : {
-        "date" : "2000-05-08",
-        "place" : "Luton",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "183 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19764.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 29,
-        "lineups" : 29,
-        "minutes" : 2563,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.872413",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 630,
-        "key" : 26,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 42,
-        "blocks" : 1,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 235,
-        "won" : 107
-      },
-      "dribbles" : {
-        "attempts" : 56,
-        "success" : 24,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 32,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 16,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19862,
-      "name" : "R. Curtis",
-      "firstname" : "Ronan",
-      "lastname" : "Curtis",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-03-29",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "182 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19862.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
@@ -1049,8 +1068,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "74 kg",
+      "height" : "180",
+      "weight" : "74",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19972.png"
     },
@@ -1061,69 +1080,69 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 29,
-        "lineups" : 25,
-        "minutes" : 2140,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 569,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.151724",
+        "rating" : "6.812500",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 14,
-        "bench" : 4
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 51,
-        "on" : 29
+        "total" : 13,
+        "on" : 7
       },
       "goals" : {
-        "total" : 15,
+        "total" : 5,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 341,
-        "key" : 20,
+        "total" : 78,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 13,
-        "blocks" : 3,
-        "interceptions" : 7
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 348,
-        "won" : 116
+        "total" : 122,
+        "won" : 43
       },
       "dribbles" : {
-        "attempts" : 19,
-        "success" : 11,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 39,
-        "committed" : 40
+        "drawn" : 14,
+        "committed" : 17
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 3,
+        "scored" : 2,
         "missed" : 0,
         "saved" : null
       }
@@ -1139,54 +1158,146 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 133,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 13,
+        "number" : 14,
         "position" : "Attacker",
-        "rating" : "6.733333",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 1,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 13,
+        "total" : 1,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 19,
-        "won" : 9
+        "total" : 6,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
+        "drawn" : 1,
         "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20354,
+      "name" : "J. McDonnell",
+      "firstname" : "Joseph Patrick",
+      "lastname" : "McDonnell",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-05-19",
+        "place" : "Basingstoke",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188 cm",
+      "weight" : "63 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20354.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 20,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 11
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1212,57 +1323,222 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
+        "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 174,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.066666",
+        "minutes" : 90,
+        "number" : 20,
+        "position" : "Goalkeeper",
+        "rating" : "7.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 5,
+        "assists" : 0,
+        "saves" : 5
+      },
+      "passes" : {
+        "total" : 51,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 187,
+        "number" : 20,
+        "position" : "Goalkeeper",
+        "rating" : "7.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 5
+      },
+      "passes" : {
+        "total" : 69,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20362,
+      "name" : "S. Seddon",
+      "firstname" : "Steven Jeffrey",
+      "lastname" : "Seddon",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-12-25",
+        "place" : "Reading",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "179 cm",
+      "weight" : "68 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20362.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 970,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.99",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 23,
-        "key" : 1,
+        "total" : 304,
+        "key" : 14,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
+        "total" : 21,
+        "blocks" : 1,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : 29,
-        "won" : 12
+        "total" : 109,
+        "won" : 58
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : 4,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
+        "drawn" : 6,
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1280,20 +1556,515 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 178,
+        "lineups" : 0,
+        "minutes" : 54,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 24,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45257,
+      "name" : "M. Hippolyte",
+      "firstname" : "Myles Elliot Zach",
+      "lastname" : "Hippolyte",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-11-09",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "Grenada",
+      "height" : "183",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45257.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 565,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.662500",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 144,
+        "key" : 12,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 67,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 16,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 30,
+        "number" : 21,
+        "position" : "Midfielder",
+        "rating" : "7.05",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 16,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 82291,
+      "name" : "R. Johnson",
+      "firstname" : "Ryan Anthony",
+      "lastname" : "Johnson",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-10-02",
+        "place" : "Birmingham",
+        "country" : "England"
+      },
+      "nationality" : "Northern Ireland",
+      "height" : "188",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/82291.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 629,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.871428",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 241,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 10,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 74,
+        "won" : 50
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 121,
+        "number" : 6,
+        "position" : "Defender",
+        "rating" : "6.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 70,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 87807,
+      "name" : "J. Reeves",
+      "firstname" : "Jake Kenny",
+      "lastname" : "Reeves",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-05-30",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "173",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/87807.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 987,
+        "number" : 4,
+        "position" : "Midfielder",
+        "rating" : "6.92",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 532,
+        "key" : 13,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 3,
+        "interceptions" : 9
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 22
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 79,
+        "number" : 4,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
@@ -1306,8 +2077,503 @@
         "on" : null
       },
       "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 119929,
+      "name" : "D. Orsi",
+      "firstname" : "Danilo",
+      "lastname" : "Orsi",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-04-19",
+        "place" : "Camden",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/119929.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 128,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.450000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 86,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
         "total" : 2,
-        "conceded" : null,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 155,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 127122,
+      "name" : "J. Lewis",
+      "firstname" : "Joe Cameron",
+      "lastname" : "Lewis",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-09-20",
+        "place" : "Neath",
+        "country" : "Wales"
+      },
+      "nationality" : "Wales",
+      "height" : "188",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/127122.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 473,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.583333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 177,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 5,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 109,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 45,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 292118,
+      "name" : "O. Foyo",
+      "firstname" : "Osman",
+      "lastname" : "Foyo",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-10-03",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "184",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/292118.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -1335,100 +2601,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20382,
-      "name" : "J. Pigott",
-      "firstname" : "Joseph David Wozencroft",
-      "lastname" : "Pigott",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-11-24",
-        "place" : "Maidstone",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : "60 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20382.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 7,
-        "minutes" : 784,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.780000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 13,
-        "out" : 4,
-        "bench" : 21
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 186,
-        "key" : 12,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 171,
-        "won" : 60
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 20
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1445,58 +2619,58 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 155,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 50,
+        "number" : 19,
         "position" : "Attacker",
-        "rating" : "6.700000",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 2,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
-        "total" : 3,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 31,
-        "key" : 1,
+        "total" : 10,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 25,
-        "won" : 10
+        "total" : 6,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : 2,
-        "success" : 2,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
+        "drawn" : null,
         "committed" : 4
       },
       "cards" : {
@@ -1518,99 +2692,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 284,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.600000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 10,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 72,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 73,
-        "won" : 35
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 15,
-        "number" : null,
+        "minutes" : null,
+        "number" : 19,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1618,8 +2719,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1653,28 +2754,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 69437,
-      "name" : "J. Tilley",
-      "firstname" : "James Alexander David",
-      "lastname" : "Tilley",
-      "age" : 27,
+      "id" : 308847,
+      "name" : "R. Harbottle",
+      "firstname" : "Riley-Jay",
+      "lastname" : "Harbottle",
+      "age" : 25,
       "birth" : {
-        "date" : "1998-06-13",
-        "place" : "Billingshurst",
+        "date" : "2000-09-26",
+        "place" : "Nottingham",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "174 cm",
-      "weight" : "59 kg",
+      "height" : "187",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69437.png"
+      "photo" : "https://media.api-sports.io/football/players/308847.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1683,62 +2784,135 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 22,
-        "minutes" : 1976,
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 260,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.236000",
+        "position" : "Defender",
+        "rating" : "6.660000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
-        "out" : 5,
-        "bench" : 6
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 21,
-        "on" : 15
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 5,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 631,
-        "key" : 53,
+        "total" : 58,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 46,
+        "total" : 5,
         "blocks" : 3,
-        "interceptions" : 16
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 232,
-        "won" : 110
+        "total" : 26,
+        "won" : 13
       },
       "dribbles" : {
-        "attempts" : 37,
-        "success" : 11,
+        "attempts" : 2,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 15,
-        "committed" : 25
+        "drawn" : 2,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 90,
+        "number" : 26,
+        "position" : "Defender",
+        "rating" : "5.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 39,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1761,25 +2935,25 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 269,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.966666",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 187,
+        "number" : 26,
+        "position" : "Defender",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 3,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : 2,
-        "on" : 2
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1788,22 +2962,187 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 54,
+        "total" : 77,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 14,
-        "blocks" : 2,
-        "interceptions" : 2
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 33,
-        "won" : 21
+        "total" : 29,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 1,
         "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 327728,
+      "name" : "Delano McCoy-Splatt\\t",
+      "firstname" : "Delano",
+      "lastname" : "McCoy-Splatt",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-10-11",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "Jamaica",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/327728.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 67,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -1829,177 +3168,12 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 216,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.075000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 57,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 32,
-        "won" : 13
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 106737,
-      "name" : "A. Little",
-      "firstname" : "Armani George",
-      "lastname" : "Little",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-04-05",
-        "place" : "Portsmouth",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "63 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/106737.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2058,409 +3232,6 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 155052,
-      "name" : "R. McLean",
-      "firstname" : "Ryan",
-      "lastname" : "McLean",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-05-03",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/155052.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 292118,
-      "name" : "O. Foyo",
-      "firstname" : "Osman",
-      "lastname" : "Foyo",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-10-03",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/292118.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2477,7 +3248,7 @@
         "country" : "England"
       },
       "nationality" : "Norway",
-      "height" : null,
+      "height" : "185",
       "weight" : null,
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/343296.png"
@@ -2489,30 +3260,103 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 10,
-        "lineups" : 2,
-        "minutes" : 244,
+        "appearences" : 7,
+        "lineups" : 4,
+        "minutes" : 55,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.750000",
+        "rating" : "6.366666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 2,
-        "bench" : 8
+        "in" : 3,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 15,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1333,
+        "name" : "AFC Wimbledon",
+        "logo" : "https://media.api-sports.io/football/teams/1333.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -2521,30 +3365,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 73,
+        "total" : 27,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
+        "total" : 2,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 68,
-        "won" : 35
+        "total" : 13,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 6,
+        "attempts" : 5,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 6
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2567,88 +3411,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 58,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 152,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.25",
         "captain" : false
       },
       "substitutes" : {
@@ -2657,7 +3428,7 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
@@ -2667,18 +3438,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 14,
+        "total" : 31,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 5,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 2
+        "total" : 22,
+        "won" : 11
       },
       "dribbles" : {
         "attempts" : 3,
@@ -2686,11 +3457,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2701,89 +3472,16 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 428599,
-      "name" : "Paris Lock",
-      "firstname" : "Paris",
-      "lastname" : "Lock",
-      "age" : 21,
+      "id" : 377110,
+      "name" : "I. Ogundere",
+      "firstname" : "Isaac",
+      "lastname" : "Ogundere",
+      "age" : 23,
       "birth" : {
-        "date" : "2004-10-18",
+        "date" : "2002-11-06",
         "place" : "London",
         "country" : "England"
       },
@@ -2791,7 +3489,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/428599.png"
+      "photo" : "https://media.api-sports.io/football/players/377110.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2800,166 +3498,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 48,
-        "name" : "League Cup",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 990,
+        "number" : 33,
+        "position" : "Defender",
+        "rating" : "6.88",
         "captain" : false
       },
       "substitutes" : {
@@ -2978,30 +3530,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 8,
-        "key" : null,
+        "total" : 371,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 18,
+        "blocks" : 8,
+        "interceptions" : 8
       },
       "duels" : {
-        "total" : 6,
-        "won" : 1
+        "total" : 90,
+        "won" : 51
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : 1,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 7,
+        "committed" : 13
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3019,258 +3571,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 436976,
-      "name" : "Kai Jennings",
-      "firstname" : "Kai",
-      "lastname" : "Jennings",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-02-18",
-        "place" : "Kingston",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/436976.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 187,
+        "number" : 33,
+        "position" : "Defender",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -3284,23 +3598,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 77,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 8,
+        "blocks" : 1,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 25,
+        "won" : 11
       },
       "dribbles" : {
         "attempts" : null,
@@ -3308,8 +3622,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 0,
@@ -3319,265 +3633,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 449043,
-      "name" : "R. Nkeng",
-      "firstname" : "Robert",
-      "lastname" : "Junior Nkeng",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/449043.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 449819,
-      "name" : "Justin Clarke",
-      "firstname" : "Justin",
-      "lastname" : "Clarke",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/449819.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3606,436 +3663,33 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 459191,
-      "name" : "H. Hedges",
-      "firstname" : "Harry",
-      "lastname" : "Hedges",
-      "age" : 17,
-      "birth" : {
-        "date" : "2008-03-17",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459191.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 459416,
-      "name" : "Harry Sidwell",
-      "firstname" : "Harry",
-      "lastname" : "Sidwell",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-08-31",
-        "place" : "Basingstoke",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "182 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/459416.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
         "id" : 48,
         "name" : "League Cup",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -4064,161 +3718,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : null,
         "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -4247,33 +3755,33 @@
         "logo" : "https://media.api-sports.io/football/teams/1333.png"
       },
       "league" : {
-        "id" : 42,
-        "name" : "League Two",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -4302,393 +3810,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 470118,
-      "name" : "Reuben Amissah",
-      "firstname" : "Reuben",
-      "lastname" : "Amissah",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/470118.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1333,
-        "name" : "AFC Wimbledon",
-        "logo" : "https://media.api-sports.io/football/teams/1333.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,

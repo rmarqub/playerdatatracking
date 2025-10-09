@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "544"
   },
@@ -9,25 +9,301 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 46743,
-      "name" : "Salva Sevilla",
-      "firstname" : "Salvador",
-      "lastname" : "Sevilla López",
-      "age" : 40,
+      "id" : 2040,
+      "name" : "Sergio Escudero",
+      "firstname" : "Sergio",
+      "lastname" : "Escudero Palomo",
+      "age" : 36,
       "birth" : {
-        "date" : "1984-03-18",
-        "place" : "Berja",
+        "date" : "1989-09-02",
+        "place" : "Valladolid",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "176 cm",
+      "weight" : "65 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2040.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 344,
+        "number" : 18,
+        "position" : "Defender",
+        "rating" : "6.93",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 3,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 147,
+        "key" : 10,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 3,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 36928,
+      "name" : "D. Genreau",
+      "firstname" : "Denis",
+      "lastname" : "Genreau",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-05-21",
+        "place" : "Paris",
+        "country" : "France"
+      },
+      "nationality" : "Australia",
+      "height" : "175",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/36928.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 37616,
+      "name" : "Z. Eddahchouri",
+      "firstname" : "Zakaria",
+      "lastname" : "Eddahchouri",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-11",
+        "place" : "Papendrecht",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "187",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/37616.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 3,
+        "minutes" : 323,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.33",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 3,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 16,
+        "on" : 9
+      },
+      "goals" : {
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 18
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 46740,
+      "name" : "Stoichkov",
+      "firstname" : "Juan Diego",
+      "lastname" : "Molina Martínez",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-11-05",
+        "place" : "Los Barrios",
         "country" : "Spain"
       },
       "nationality" : "Spain",
       "height" : "178 cm",
       "weight" : "71 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46743.png"
+      "photo" : "https://media.api-sports.io/football/players/46740.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,706 +317,62 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 46745,
-      "name" : "Pablo Valcarce",
-      "firstname" : "Pablo",
-      "lastname" : "Valcarce Vidal",
-      "age" : 32,
-      "birth" : {
-        "date" : "1992-02-03",
-        "place" : "Ponferrada",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "173 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46745.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47272,
-      "name" : "Balenziaga",
-      "firstname" : "Mikel",
-      "lastname" : "Balenziaga Oruesagasti",
-      "age" : 36,
-      "birth" : {
-        "date" : "1988-02-29",
-        "place" : "Zumárraga",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "177 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47272.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 115558,
-      "name" : "Paris Adot",
-      "firstname" : "Paris Alejandro",
-      "lastname" : "Adot Barandiarán",
-      "age" : 35,
-      "birth" : {
-        "date" : "1990-02-26",
-        "place" : "Pamplona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "172 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/115558.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 119881,
-      "name" : "Pablo Brea",
-      "firstname" : "Pablo",
-      "lastname" : "Brea Fontans",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-06-28",
-        "place" : "Santiago de Compostela",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "87 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/119881.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 122612,
-      "name" : "Berto Cayarga",
-      "firstname" : "Alberto",
-      "lastname" : "Cayarga Fernández",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-09-17",
-        "place" : "Avilés",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "170 cm",
-      "weight" : "63 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/122612.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 141695,
-      "name" : "Iano Imbene",
-      "firstname" : "Iano Simão",
-      "lastname" : "da Silva Imbene",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-02",
-        "place" : "Bissau",
-        "country" : "Guinea-Bissau"
-      },
-      "nationality" : "Guinea-Bissau",
-      "height" : "179 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/141695.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 179183,
-      "name" : "Luis Chacón",
-      "firstname" : "Luis",
-      "lastname" : "Rodríguez Chacón",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-05-30",
-        "place" : "Pontedeume",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "174 cm",
-      "weight" : "60 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/179183.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 1,
+        "minutes" : 206,
+        "number" : 22,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.63",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "in" : 5,
+        "out" : 1,
+        "bench" : 5
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
-        "key" : null,
+        "total" : 55,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 4,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 23,
+        "won" : 12
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
-        "won" : null,
+        "won" : 1,
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
@@ -749,21 +381,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 181325,
-      "name" : "Raúl Alcaina",
-      "firstname" : "Raúl Toni",
-      "lastname" : "Alcaina Fenollosa",
-      "age" : 25,
+      "id" : 47180,
+      "name" : "Cristian Herrera",
+      "firstname" : "Cristian Ignacio",
+      "lastname" : "Herrera Pérez",
+      "age" : 34,
       "birth" : {
-        "date" : "2000-07-19",
-        "place" : "Museros",
+        "date" : "1991-03-13",
+        "place" : "Las Palmas de Gran Canaria",
         "country" : "Spain"
       },
       "nationality" : "Spain",
       "height" : "181 cm",
-      "weight" : "77 kg",
+      "weight" : "76 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/181325.png"
+      "photo" : "https://media.api-sports.io/football/players/47180.png"
     },
     "statistics" : [ {
       "team" : {
@@ -777,24 +409,24 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 4,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 37,
+        "number" : 17,
         "position" : "Attacker",
-        "rating" : "6.300000",
+        "rating" : "6.43",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 4,
         "out" : 0,
-        "bench" : 0
+        "bench" : 8
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
@@ -804,27 +436,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 21,
-        "key" : 1,
+        "total" : 15,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 15,
-        "won" : 5
+        "total" : 6,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : null
+        "drawn" : null,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -841,113 +473,481 @@
     } ]
   }, {
     "player" : {
-      "id" : 189422,
-      "name" : "Mario Nájera",
+      "id" : 47190,
+      "name" : "Miguel Loureiro",
+      "firstname" : "Miguel",
+      "lastname" : "Loureiro Ameijeda",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-11-21",
+        "place" : "Tordoia",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "178 cm",
+      "weight" : "75 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47190.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "7.08",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 441,
+        "key" : 4,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : 7,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 70,
+        "won" : 35
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 47360,
+      "name" : "Ximo Navarro",
+      "firstname" : "Joaquín",
+      "lastname" : "Navarro Jiménez",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-01-23",
+        "place" : "Guadahortuna",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "176 cm",
+      "weight" : "75 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47360.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 5,
+        "minutes" : 495,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "6.91",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 3,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 224,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : null,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 49,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 67940,
+      "name" : "José Gragera",
+      "firstname" : "José",
+      "lastname" : "Gragera Amado",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-14",
+        "place" : "Gijón",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "186 cm",
+      "weight" : "78 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/67940.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 225,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.97",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 146,
+        "key" : null,
+        "accuracy" : 42
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 3,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 19
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 96324,
+      "name" : "M. Bouldini",
+      "firstname" : "Mohamed",
+      "lastname" : "Bouldini",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-11-27",
+        "place" : "Casablanca",
+        "country" : "Morocco"
+      },
+      "nationality" : "Morocco",
+      "height" : "187 cm",
+      "weight" : "88 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/96324.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 43,
+        "number" : 22,
+        "position" : "Attacker",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 9,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 105015,
+      "name" : "Germán Parreño",
+      "firstname" : "Germán",
+      "lastname" : "Parreño Boix",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-02-16",
+        "place" : "Elche",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "189 cm",
+      "weight" : "83 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/105015.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.09",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 6,
+        "assists" : 0,
+        "saves" : 26
+      },
+      "passes" : {
+        "total" : 277,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 161965,
+      "name" : "Mario Soriano",
       "firstname" : "Mario",
-      "lastname" : "Nájera León",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-23",
-        "place" : "Logroño",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "177 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/189422.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 192437,
-      "name" : "Óscar Marotías",
-      "firstname" : "Óscar",
-      "lastname" : "Marotías Prados",
+      "lastname" : "Soriano Carreño",
       "age" : 23,
       "birth" : {
-        "date" : "2001-08-25",
-        "place" : "Santander",
+        "date" : "2002-04-22",
+        "place" : "Torrejón de Ardoz",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "184 cm",
-      "weight" : "73 kg",
+      "height" : "163 cm",
+      "weight" : "60 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/192437.png"
+      "photo" : "https://media.api-sports.io/football/players/161965.png"
     },
     "statistics" : [ {
       "team" : {
@@ -961,330 +961,54 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 287465,
-      "name" : "Álex Barba",
-      "firstname" : "Alejandro",
-      "lastname" : "Barba Fernández",
-      "age" : 23,
-      "birth" : {
-        "date" : "2001-08-11",
-        "place" : "A Coruña",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/287465.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 678,
+        "number" : 21,
         "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 293238,
-      "name" : "Ángel Puerto",
-      "firstname" : "Ángel",
-      "lastname" : "Puerto Pineda",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-11-13",
-        "place" : "El Viso del Alcor",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/293238.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 306185,
-      "name" : "Jairo Noriega",
-      "firstname" : "Jairo",
-      "lastname" : "Noriega Figueroa",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-08-14",
-        "place" : "A Coruña",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/306185.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.14",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 3,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 335,
+        "key" : 14,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 47,
+        "won" : 17
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 8,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 6,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -1294,28 +1018,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 337012,
-      "name" : "Alejandro Pereira",
-      "firstname" : "Alejandro",
-      "lastname" : "Pereira Pacha",
-      "age" : 22,
+      "id" : 162695,
+      "name" : "Arnau Comas",
+      "firstname" : "Arnau",
+      "lastname" : "Comas Feixas",
+      "age" : 25,
       "birth" : {
-        "date" : "2002-01-10",
-        "place" : "Barcelona",
+        "date" : "2000-04-11",
+        "place" : "Cassà de la Selva",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
+      "height" : "191",
+      "weight" : "83",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/337012.png"
+      "photo" : "https://media.api-sports.io/football/players/162695.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1329,21 +1053,21 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 210,
+        "number" : 3,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 2,
+        "out" : 3,
+        "bench" : 5
       },
       "shots" : {
         "total" : null,
@@ -1351,23 +1075,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 133,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 6,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 21,
+        "won" : 9
       },
       "dribbles" : {
         "attempts" : null,
@@ -1375,223 +1099,39 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 337016,
-      "name" : "Marc Lachèvre",
-      "firstname" : "Marc",
-      "lastname" : "Lachèvre Guerra",
-      "age" : 23,
+      "id" : 182988,
+      "name" : "Diego Villares",
+      "firstname" : "Diego",
+      "lastname" : "Villares Yáñez",
+      "age" : 29,
       "birth" : {
-        "date" : "2002-04-23",
-        "place" : "Barcelona",
+        "date" : "1996-06-17",
+        "place" : "Vilalba",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/337016.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 354868,
-      "name" : "Martín Ochoa",
-      "firstname" : "Martín",
-      "lastname" : "Ochoa Ruiz",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-12-20",
-        "place" : "Logroño",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/354868.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 369481,
-      "name" : "L. Quintero",
-      "firstname" : "Luis Eduardo",
-      "lastname" : "Quintero Hernández",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-10-12",
-        "place" : "Alicante",
-        "country" : "Spain"
-      },
-      "nationality" : "Colombia",
       "height" : "180 cm",
-      "weight" : null,
+      "weight" : "75 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/369481.png"
+      "photo" : "https://media.api-sports.io/football/players/182988.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1605,30 +1145,582 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 648,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 5,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 285,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : null,
+        "interceptions" : 11
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 29
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 188445,
+      "name" : "Luismi Cruz",
+      "firstname" : "Luis Miguel",
+      "lastname" : "Cruz Hernández",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-05-23",
+        "place" : "El Puerto de Santa María",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "166 cm",
+      "weight" : "62 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/188445.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 540,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "7.29",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 7,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 171,
+        "key" : 15,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 59,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 14,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 295880,
+      "name" : "Peke",
+      "firstname" : "Yeremay",
+      "lastname" : "Hernández Cubas",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-12-10",
+        "place" : "Las Palmas de Gran Canaria",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "169 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/295880.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 701,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.99",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 19,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 224,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 91,
+        "won" : 40
+      },
+      "dribbles" : {
+        "attempts" : 48,
+        "success" : 21,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 2,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 299763,
+      "name" : "Dani Barcia",
+      "firstname" : "Daniel",
+      "lastname" : "Barcia Rama",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-01-19",
+        "place" : "Cabana",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "186 cm",
+      "weight" : "80 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/299763.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 720,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "7.06",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 490,
+        "key" : 1,
+        "accuracy" : 54
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 3,
+        "interceptions" : 12
+      },
+      "duels" : {
+        "total" : 54,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 319512,
+      "name" : "L. Noubi",
+      "firstname" : "Lucas Dominique",
+      "lastname" : "Noubi Ngnokam",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-01-15",
+        "place" : "Mouscron",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "180 cm",
+      "weight" : "81 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/319512.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 46,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 23,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 335720,
+      "name" : "David Mella",
+      "firstname" : "David",
+      "lastname" : "Mella Boullón",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-05-23",
+        "place" : "Teo",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "169 cm",
+      "weight" : "62 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/335720.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 3,
+        "minutes" : 302,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "7.36",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 95,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 14,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 340530,
+      "name" : "Enrique Teijo",
+      "firstname" : "Enrique",
+      "lastname" : "Teijo Rico",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-04-03",
+        "place" : "Betanzos",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/340530.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 544,
+        "name" : "Deportivo La Coruna",
+        "logo" : "https://media.api-sports.io/football/teams/544.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 30,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1655,15 +1747,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1673,7 +1765,7 @@
       "name" : "Samu Fernández",
       "firstname" : "Samuel",
       "lastname" : "Fernández Leonardo",
-      "age" : 17,
+      "age" : 18,
       "birth" : {
         "date" : "2007-03-17",
         "place" : null,
@@ -1697,13 +1789,13 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 27,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -1711,7 +1803,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1720,7 +1812,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1756,244 +1848,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 466808,
-      "name" : "Adrián Guerrero",
-      "firstname" : "Adrián",
-      "lastname" : "Guerrero Mouriz",
-      "age" : 18,
-      "birth" : {
-        "date" : "2006-02-15",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "186 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/466808.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 544,
-        "name" : "Deportivo La Coruna",
-        "logo" : "https://media.api-sports.io/football/teams/544.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]

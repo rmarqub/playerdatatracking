@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "278"
   },
@@ -13,21 +13,21 @@
   },
   "response" : [ {
     "player" : {
-      "id" : 2071,
-      "name" : "J. Fjóluson",
-      "firstname" : "Jón Guðni",
-      "lastname" : "Fjóluson",
+      "id" : 15949,
+      "name" : "I. Jónsson",
+      "firstname" : "Ingvar",
+      "lastname" : "Jónsson",
       "age" : 36,
       "birth" : {
-        "date" : "1989-04-10",
-        "place" : "Þorlákshöfn",
+        "date" : "1989-10-18",
+        "place" : "Keflavík",
         "country" : "Iceland"
       },
       "nationality" : "Iceland",
-      "height" : "192 cm",
-      "weight" : "84 kg",
+      "height" : "186 cm",
+      "weight" : "77 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2071.png"
+      "photo" : "https://media.api-sports.io/football/players/15949.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,41 +41,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 17,
-        "lineups" : 9,
-        "minutes" : 899,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 12,
+        "lineups" : 12,
+        "minutes" : 1024,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.61",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 4,
-        "bench" : 9
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 12,
+        "assists" : 0,
+        "saves" : 19
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 345,
+        "key" : 1,
+        "accuracy" : 84
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 0,
+        "interceptions" : 16
       },
       "duels" : {
         "total" : null,
@@ -83,7 +83,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -91,9 +91,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -114,20 +114,93 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 331,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "5.67",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 1
+      },
+      "passes" : {
+        "total" : 27,
+        "key" : 0,
+        "accuracy" : 85
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 136,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -136,19 +209,19 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -156,7 +229,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -164,8 +237,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -187,21 +260,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 8,
-        "minutes" : 729,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.500000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 4,
-        "bench" : 5
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -211,79 +284,6 @@
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 168,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 30,
-        "won" : 18
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
         "saves" : null
       },
       "passes" : {
@@ -317,8 +317,246 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 28650,
+      "name" : "V. Ingimundarson",
+      "firstname" : "Valdimar Þór",
+      "lastname" : "Ingimundarson",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-04-28",
+        "place" : "Reykjavik",
+        "country" : "Iceland"
+      },
+      "nationality" : "Iceland",
+      "height" : "181 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/28650.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 164,
+        "name" : "Úrvalsdeild",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/164.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 14,
+        "lineups" : 13,
+        "minutes" : 1001,
+        "number" : 25,
+        "position" : "Attacker",
+        "rating" : "6.69",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 9,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 13,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 12,
+        "assists" : 3,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 238,
+        "key" : 12,
+        "accuracy" : 65
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 4,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 29,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 241,
+        "number" : 25,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 169,
+        "number" : 25,
+        "position" : "Attacker",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -352,478 +590,94 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 11,
-        "minutes" : 1013,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 167,
-        "name" : "Cup",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/167.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 155,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 117,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 157,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 28686,
-      "name" : "Ó. Hauksson",
-      "firstname" : "Óskar Örn",
-      "lastname" : "Hauksson",
-      "age" : 41,
-      "birth" : {
-        "date" : "1984-08-22",
-        "place" : "Njarðvík",
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : "174 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/28686.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 164,
-        "name" : "Úrvalsdeild",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/164.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
         "lineups" : 1,
-        "minutes" : 183,
-        "number" : null,
+        "minutes" : 75,
+        "number" : 10,
         "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 1,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 167,
-        "name" : "Cup",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/167.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 64,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 6,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.09",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : 1,
+        "accuracy" : 81
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 7,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
         "out" : 0,
-        "bench" : 9
+        "bench" : 3
       },
       "shots" : {
         "total" : null,
@@ -832,11 +686,11 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 1,
         "key" : null,
         "accuracy" : null
       },
@@ -868,79 +722,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -974,41 +755,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 24,
-        "lineups" : 20,
-        "minutes" : 1783,
-        "number" : null,
+        "appearences" : 12,
+        "lineups" : 9,
+        "minutes" : 847,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.46",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 4
+        "in" : 3,
+        "out" : 4,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 7,
+        "on" : 4
       },
       "goals" : {
         "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 8,
+        "assists" : 1,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 440,
+        "key" : 5,
+        "accuracy" : 88
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 11
       },
       "duels" : {
         "total" : null,
@@ -1016,7 +797,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 9,
         "past" : null
       },
       "fouls" : {
@@ -1024,8 +805,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 7,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1047,41 +828,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 373,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.26",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 28,
+        "key" : 0,
+        "accuracy" : 82
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -1089,7 +870,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -1097,8 +878,81 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 186,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1120,58 +974,58 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 12,
-        "minutes" : 987,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 168,
+        "number" : 22,
         "position" : "Defender",
-        "rating" : "7.100000",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 4,
+        "out" : 2,
         "bench" : 0
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 194,
-        "key" : 7,
+        "total" : 75,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 4
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 35,
-        "won" : 18
+        "total" : 20,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 4,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 7
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 1,
+        "yellow" : 2,
+        "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
@@ -1181,6 +1035,98 @@
         "missed" : 0,
         "saved" : null
       }
+    } ]
+  }, {
+    "player" : {
+      "id" : 28769,
+      "name" : "D. Hafsteinsson",
+      "firstname" : "Daníel",
+      "lastname" : "Hafsteinsson",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-11-12",
+        "place" : null,
+        "country" : "Iceland"
+      },
+      "nationality" : "Iceland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/28769.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 164,
+        "name" : "Úrvalsdeild",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/164.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 16,
+        "lineups" : 15,
+        "minutes" : 1251,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.62",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 11,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 18,
+        "on" : 8
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 15,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 697,
+        "key" : 6,
+        "accuracy" : 87
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 6,
+        "interceptions" : 25
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 13,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
     }, {
       "team" : {
         "id" : 278,
@@ -1188,24 +1134,97 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 167,
+        "name" : "Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/167.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 71,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.53",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : 0,
+        "accuracy" : 78
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 0,
+        "minutes" : 311,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
         "out" : 0,
         "bench" : 0
       },
@@ -1214,20 +1233,20 @@
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -1235,12 +1254,85 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
         "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 169,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 82,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -1250,8 +1342,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1285,352 +1377,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 12,
-        "minutes" : 1155,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 12,
-        "out" : 5,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 167,
-        "name" : "Cup",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/167.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 222,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 23,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 13,
-        "lineups" : 9,
-        "minutes" : 844,
-        "number" : null,
+        "lineups" : 6,
+        "minutes" : 632,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : "6.842857",
+        "rating" : "7.01",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 2,
-        "bench" : 4
+        "in" : 7,
+        "out" : 4,
+        "bench" : 10
       },
       "shots" : {
-        "total" : 4,
-        "on" : 1
+        "total" : 8,
+        "on" : 4
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 5,
+        "assists" : 3,
+        "saves" : 0
       },
       "passes" : {
-        "total" : 232,
-        "key" : 7,
-        "accuracy" : null
+        "total" : 202,
+        "key" : 11,
+        "accuracy" : 70
       },
       "tackles" : {
-        "total" : 6,
+        "total" : 2,
         "blocks" : 3,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 40,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 28795,
-      "name" : "H. Sigurðsson",
-      "firstname" : "Halldór Smári",
-      "lastname" : "Sigurðsson",
-      "age" : 37,
-      "birth" : {
-        "date" : "1988-10-04",
-        "place" : null,
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/28795.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 164,
-        "name" : "Úrvalsdeild",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/164.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 4,
-        "minutes" : 349,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
         "total" : null,
@@ -1638,7 +1419,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 19,
         "past" : null
       },
       "fouls" : {
@@ -1646,8 +1427,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1669,15 +1450,15 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 92,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "6.76",
         "captain" : false
       },
       "substitutes" : {
@@ -1686,24 +1467,24 @@
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 13,
+        "key" : 0,
+        "accuracy" : 76
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
       },
       "duels" : {
         "total" : null,
@@ -1711,7 +1492,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -1720,7 +1501,80 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 210,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1742,54 +1596,54 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 107,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.800000",
+        "lineups" : 0,
+        "minutes" : 35,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.55",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 8
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 63,
+        "total" : 21,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 4
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 11,
-        "won" : 8
+        "total" : 4,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 2,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1801,79 +1655,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1907,41 +1688,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 16,
-        "minutes" : 1474,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 16,
+        "lineups" : 13,
+        "minutes" : 1124,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.40",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
+        "in" : 3,
+        "out" : 11,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 11,
+        "on" : 4
       },
       "goals" : {
-        "total" : 5,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 2,
+        "conceded" : 14,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 307,
+        "key" : 4,
+        "accuracy" : 77
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 10
       },
       "duels" : {
         "total" : null,
@@ -1949,7 +1730,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 16,
         "past" : null
       },
       "fouls" : {
@@ -1957,8 +1738,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1980,41 +1761,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 318,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 38,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.56",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 11,
+        "key" : 0,
+        "accuracy" : 72
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -2022,7 +1803,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2031,7 +1812,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2048,25 +1829,25 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 172,
-        "number" : null,
-        "position" : "Attacker",
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 181,
+        "number" : 7,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
+        "in" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -2074,20 +1855,20 @@
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -2095,7 +1876,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2103,8 +1884,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2126,57 +1907,57 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 10,
-        "lineups" : 8,
-        "minutes" : 709,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.900000",
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 169,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 8,
-        "bench" : 3
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 77,
-        "key" : 2,
+        "total" : 27,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 32,
-        "won" : 17
+        "total" : 14,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 5,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 4
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2218,41 +1999,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 21,
-        "lineups" : 12,
-        "minutes" : 1241,
-        "number" : null,
+        "appearences" : 13,
+        "lineups" : 7,
+        "minutes" : 792,
+        "number" : 24,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.60",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 9,
-        "out" : 6,
+        "in" : 6,
+        "out" : 3,
         "bench" : 9
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 12,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 428,
+        "key" : 8,
+        "accuracy" : 81
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 2,
+        "interceptions" : 11
       },
       "duels" : {
         "total" : null,
@@ -2260,7 +2041,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
@@ -2268,8 +2049,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2291,41 +2072,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
+        "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 143,
-        "number" : null,
+        "minutes" : 90,
+        "number" : 24,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.80",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 3
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 71,
+        "key" : 0,
+        "accuracy" : 76
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 2
       },
       "duels" : {
         "total" : null,
@@ -2333,7 +2114,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2342,7 +2123,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2359,46 +2140,46 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 105,
+        "number" : 24,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -2406,7 +2187,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2414,8 +2195,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2437,25 +2218,336 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 7,
-        "minutes" : 649,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 24,
         "position" : "Defender",
-        "rating" : "6.657142",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 6,
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 11,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 28810,
+      "name" : "N. Hansen",
+      "firstname" : "Nikolaj Andreas",
+      "lastname" : "Hansen",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-03-15",
+        "place" : null,
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "192 cm",
+      "weight" : "79 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/28810.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 164,
+        "name" : "Úrvalsdeild",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/164.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 14,
+        "lineups" : 9,
+        "minutes" : 766,
+        "number" : 23,
+        "position" : "Attacker",
+        "rating" : "7.16",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 7,
         "bench" : 5
       },
       "shots" : {
+        "total" : 18,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 5,
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 101,
+        "key" : 2,
+        "accuracy" : 70
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 3,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 167,
+        "name" : "Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/167.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 26,
+        "number" : 23,
+        "position" : "Attacker",
+        "rating" : "6.47",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
         "total" : 1,
-        "on" : 1
+        "key" : 0,
+        "accuracy" : 100
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 75,
+        "number" : 23,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 126,
+        "number" : 23,
+        "position" : "Attacker",
+        "rating" : "7.15",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
       },
       "goals" : {
         "total" : 1,
@@ -2464,30 +2556,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 196,
-        "key" : 3,
+        "total" : 9,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 11,
-        "blocks" : 2,
-        "interceptions" : 6
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 49,
-        "won" : 22
+        "total" : 16,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 4,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 10
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2529,41 +2621,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 7,
-        "minutes" : 652,
-        "number" : null,
+        "appearences" : 12,
+        "lineups" : 4,
+        "minutes" : 496,
+        "number" : 27,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.00",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 3,
-        "bench" : 7
+        "in" : 8,
+        "out" : 2,
+        "bench" : 9
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
         "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 1,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 202,
+        "key" : 3,
+        "accuracy" : 84
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 2,
+        "interceptions" : 9
       },
       "duels" : {
         "total" : null,
@@ -2571,7 +2663,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2579,8 +2671,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2602,41 +2694,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 285,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 59,
+        "number" : 27,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.61",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 1,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 56,
+        "key" : 0,
+        "accuracy" : 96
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 3
       },
       "duels" : {
         "total" : null,
@@ -2644,7 +2736,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2653,7 +2745,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2670,99 +2762,26 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 98,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.725000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 31,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 14,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 68,
-        "number" : null,
+        "minutes" : 46,
+        "number" : 27,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2770,19 +2789,19 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -2790,7 +2809,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2799,7 +2818,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2840,41 +2859,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 23,
-        "lineups" : 23,
-        "minutes" : 2038,
-        "number" : null,
+        "appearences" : 12,
+        "lineups" : 12,
+        "minutes" : 1080,
+        "number" : 4,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 1
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 8,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 14,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 821,
+        "key" : 2,
+        "accuracy" : 89
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 3,
+        "interceptions" : 17
       },
       "duels" : {
         "total" : null,
@@ -2882,7 +2901,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
@@ -2890,8 +2909,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2908,25 +2927,25 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 167,
-        "name" : "Cup",
+        "id" : 814,
+        "name" : "Reykjavik Cup",
         "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/167.png",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 5,
-        "minutes" : 407,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 151,
+        "number" : 4,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -2934,20 +2953,20 @@
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -2955,7 +2974,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -2964,7 +2983,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2986,88 +3005,15 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 12,
-        "minutes" : 1036,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 174,
+        "number" : 4,
         "position" : "Defender",
-        "rating" : "6.966666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 313,
-        "key" : 2,
-        "accuracy" : 46
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 2,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 28,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.7",
         "captain" : false
       },
       "substitutes" : {
@@ -3076,28 +3022,28 @@
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 109,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 49
       },
       "tackles" : {
-        "total" : null,
+        "total" : 5,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 11,
+        "won" : 8
       },
       "dribbles" : {
         "attempts" : null,
@@ -3105,19 +3051,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3151,41 +3097,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 16,
-        "minutes" : 1196,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 48,
+        "number" : 21,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.38",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 12,
-        "bench" : 4
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 0,
+        "on" : 0
       },
       "goals" : {
-        "total" : 4,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 11,
+        "key" : 1,
+        "accuracy" : 100
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
       },
       "duels" : {
         "total" : null,
@@ -3193,80 +3139,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 167,
-        "name" : "Cup",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/167.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 234,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -3275,7 +3148,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3292,99 +3165,26 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 10,
-        "minutes" : 731,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.866666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 9,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 114,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : null,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 83,
-        "won" : 42
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 8,
-        "number" : null,
+        "minutes" : 67,
+        "number" : 21,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -3392,19 +3192,19 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -3412,7 +3212,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -3421,7 +3221,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3434,21 +3234,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 73007,
-      "name" : "G. Vatnhamar",
-      "firstname" : "Gunnar",
-      "lastname" : "Vatnhamar",
-      "age" : 30,
+      "id" : 61588,
+      "name" : "H. Guðjónsson",
+      "firstname" : "Helgi",
+      "lastname" : "Guðjónsson",
+      "age" : 26,
       "birth" : {
-        "date" : "1995-03-29",
+        "date" : "1999-08-04",
         "place" : null,
-        "country" : "Faroe Islands"
+        "country" : "Iceland"
       },
-      "nationality" : "Faroe Islands",
+      "nationality" : "Iceland",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/73007.png"
+      "photo" : "https://media.api-sports.io/football/players/61588.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3462,41 +3262,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 24,
-        "lineups" : 23,
-        "minutes" : 2018,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 15,
+        "lineups" : 12,
+        "minutes" : 1141,
+        "number" : 9,
+        "position" : "Midfielder",
+        "rating" : "7.08",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 2
+        "in" : 3,
+        "out" : 4,
+        "bench" : 4
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 16,
+        "on" : 6
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 4,
+        "conceded" : 16,
+        "assists" : 4,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 383,
+        "key" : 30,
+        "accuracy" : 74
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 4,
+        "interceptions" : 21
       },
       "duels" : {
         "total" : null,
@@ -3504,7 +3304,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 6,
         "past" : null
       },
       "fouls" : {
@@ -3512,8 +3312,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3535,41 +3335,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 390,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 9,
+        "position" : "Midfielder",
+        "rating" : "8.14",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 44,
+        "key" : 4,
+        "accuracy" : 75
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
       },
       "duels" : {
         "total" : null,
@@ -3577,7 +3377,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
@@ -3586,7 +3386,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3603,25 +3403,25 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 224,
+        "number" : 9,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
@@ -3629,20 +3429,20 @@
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -3650,7 +3450,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -3659,7 +3459,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3681,57 +3481,57 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 720,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.100000",
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 179,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.05",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "out" : 2,
+        "bench" : 0
       },
       "shots" : {
         "total" : 1,
-        "on" : 1
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 194,
-        "key" : null,
-        "accuracy" : 55
+        "total" : 41,
+        "key" : 2,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 1,
         "blocks" : null,
-        "interceptions" : 4
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 23,
-        "won" : 13
+        "total" : 12,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 5
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3741,6 +3541,244 @@
         "scored" : 0,
         "missed" : 0,
         "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 61649,
+      "name" : "Pálmi Rafn Arinbjörnsson",
+      "firstname" : "Pálmi Rafn",
+      "lastname" : "Arinbjörnsson",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-11-29",
+        "place" : null,
+        "country" : "Iceland"
+      },
+      "nationality" : "Iceland",
+      "height" : "191 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/61649.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 164,
+        "name" : "Úrvalsdeild",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/164.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 438,
+        "number" : 80,
+        "position" : "Goalkeeper",
+        "rating" : "7.46",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 6,
+        "assists" : 0,
+        "saves" : 15
+      },
+      "passes" : {
+        "total" : 167,
+        "key" : 0,
+        "accuracy" : 90
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 134,
+        "number" : 80,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 186,
+        "number" : 80,
+        "position" : "Goalkeeper",
+        "rating" : "6.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 4,
+        "assists" : 0,
+        "saves" : 8
+      },
+      "passes" : {
+        "total" : 79,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     } ]
   }, {
@@ -3773,41 +3811,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 715,
-        "number" : null,
+        "appearences" : 15,
+        "lineups" : 10,
+        "minutes" : 1035,
+        "number" : 20,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 0
+        "in" : 5,
+        "out" : 3,
+        "bench" : 5
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 1
       },
       "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 0,
+        "conceded" : 13,
+        "assists" : 1,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 538,
+        "key" : 4,
+        "accuracy" : 89
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 15
       },
       "duels" : {
         "total" : null,
@@ -3815,7 +3853,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 18,
         "past" : null
       },
       "fouls" : {
@@ -3823,8 +3861,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellow" : 4,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3846,41 +3884,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 30,
-        "number" : null,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 20,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.77",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 50,
+        "key" : 1,
+        "accuracy" : 80
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -3888,7 +3926,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -3896,8 +3934,81 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 224,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3919,21 +4030,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
+        "appearences" : 3,
         "lineups" : 3,
-        "minutes" : 389,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.933333",
+        "minutes" : 168,
+        "number" : 20,
+        "position" : "Defender",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 8,
-        "out" : 2,
-        "bench" : 8
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -3946,18 +4057,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 113,
-        "key" : 2,
+        "total" : 69,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 10,
-        "blocks" : null,
-        "interceptions" : 9
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 36,
-        "won" : 24
+        "total" : 25,
+        "won" : 12
       },
       "dribbles" : {
         "attempts" : 2,
@@ -3966,10 +4077,10 @@
       },
       "fouls" : {
         "drawn" : 8,
-        "committed" : 7
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3983,21 +4094,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 308644,
-      "name" : "B. Gunnarsson",
-      "firstname" : "Bjarki Björn",
-      "lastname" : "Gunnarsson",
-      "age" : 25,
+      "id" : 283261,
+      "name" : "Ó. Borgþórsson",
+      "firstname" : "Óskar",
+      "lastname" : "Borgþórsson",
+      "age" : 22,
       "birth" : {
-        "date" : "2000-06-06",
+        "date" : "2003-07-15",
         "place" : null,
         "country" : "Iceland"
       },
       "nationality" : "Iceland",
-      "height" : "171 cm",
+      "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/308644.png"
+      "photo" : "https://media.api-sports.io/football/players/283261.png"
     },
     "statistics" : [ {
       "team" : {
@@ -4011,41 +4122,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 109,
+        "number" : 36,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.37",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
+        "in" : 1,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 35,
+        "key" : 1,
+        "accuracy" : 85
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -4053,7 +4164,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
@@ -4061,8 +4172,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4079,18 +4190,256 @@
         "logo" : "https://media.api-sports.io/football/teams/278.png"
       },
       "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 61,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 18,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 324645,
+      "name" : "Stígur Diljan Þórðarson",
+      "firstname" : "Stígur Diljan",
+      "lastname" : "Þórðarson",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-01-04",
+        "place" : "\n    ",
+        "country" : "Iceland"
+      },
+      "nationality" : "Iceland",
+      "height" : "\n    ",
+      "weight" : "\n    ",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/324645.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 164,
+        "name" : "Úrvalsdeild",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/164.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 6,
+        "minutes" : 666,
+        "number" : 77,
+        "position" : "Midfielder",
+        "rating" : "7.19",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 4,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 14,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 10,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 172,
+        "key" : 5,
+        "accuracy" : 79
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 5,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 28,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 167,
+        "name" : "Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/167.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 77,
+        "position" : "Midfielder",
+        "rating" : "6.31",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 24,
+        "key" : 1,
+        "accuracy" : 87
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 209,
+        "number" : 77,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -4105,13 +4454,86 @@
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 18,
+        "number" : 77,
+        "position" : "Attacker",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 5,
         "key" : null,
         "accuracy" : null
       },
@@ -4121,11 +4543,11 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 1,
         "won" : null
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -4141,8 +4563,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -4176,41 +4598,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 10,
-        "lineups" : 3,
-        "minutes" : 279,
-        "number" : null,
+        "appearences" : 12,
+        "lineups" : 8,
+        "minutes" : 697,
+        "number" : 2,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "7.32",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 3,
-        "bench" : 14
+        "in" : 4,
+        "out" : 2,
+        "bench" : 6
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 7,
+        "on" : 3
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 395,
+        "key" : 5,
+        "accuracy" : 85
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 10
       },
       "duels" : {
         "total" : null,
@@ -4218,7 +4640,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
@@ -4226,8 +4648,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4249,20 +4671,93 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 86,
-        "number" : null,
+        "minutes" : 90,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.73",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 0,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 67,
+        "key" : 1,
+        "accuracy" : 76
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 0,
+        "minutes" : 310,
+        "number" : 2,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -4271,19 +4766,19 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
         "total" : null,
-        "key" : null,
+        "key" : 0,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 0,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 0
       },
       "duels" : {
         "total" : null,
@@ -4291,7 +4786,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -4300,8 +4795,8 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -4322,272 +4817,15 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
+        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 116,
-        "number" : null,
+        "minutes" : 30,
+        "number" : 2,
         "position" : "Defender",
-        "rating" : "6.850000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 24,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 385697,
-      "name" : "Elmar Logi Þrándarson",
-      "firstname" : "Elmar Logi",
-      "lastname" : "Þrándarson",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-04",
-        "place" : null,
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/385697.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 426856,
-      "name" : "Hrannar Ingi Magnússon",
-      "firstname" : "Hrannar Ingi",
-      "lastname" : "Magnússon",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-04",
-        "place" : null,
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/426856.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 164,
-        "name" : "Úrvalsdeild",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/164.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -4601,181 +4839,35 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 11,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -4789,21 +4881,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 426857,
-      "name" : "Daði Berg Jónsson",
-      "firstname" : "Daði",
-      "lastname" : "Berg Jónsson",
-      "age" : 19,
+      "id" : 410510,
+      "name" : "A. Jónasson",
+      "firstname" : "Atli Þór",
+      "lastname" : "Jónasson",
+      "age" : 23,
       "birth" : {
-        "date" : "2006-06-11",
+        "date" : "2002-08-01",
         "place" : null,
         "country" : "Iceland"
       },
       "nationality" : "Iceland",
-      "height" : "183 cm",
+      "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/426857.png"
+      "photo" : "https://media.api-sports.io/football/players/410510.png"
     },
     "statistics" : [ {
       "team" : {
@@ -4817,41 +4909,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
+        "appearences" : 7,
         "lineups" : 0,
-        "minutes" : 151,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 145,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.72",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 9,
+        "in" : 7,
         "out" : 0,
-        "bench" : 11
+        "bench" : 13
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : 1,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 33,
+        "key" : 1,
+        "accuracy" : 66
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
         "total" : null,
@@ -4859,7 +4951,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
@@ -4867,8 +4959,8 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4890,41 +4982,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/167.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 64,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 71,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.36",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 1,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 0
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 7,
+        "key" : 0,
+        "accuracy" : 71
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
         "total" : null,
@@ -4932,7 +5024,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 0,
         "past" : null
       },
       "fouls" : {
@@ -4941,7 +5033,80 @@
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 278,
+        "name" : "Vikingur Reykjavik",
+        "logo" : "https://media.api-sports.io/football/teams/278.png"
+      },
+      "league" : {
+        "id" : 814,
+        "name" : "Reykjavik Cup",
+        "country" : "Iceland",
+        "logo" : "https://media.api-sports.io/football/leagues/814.png",
+        "flag" : "https://media.api-sports.io/flags/is.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 16,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : null,
+        "key" : 0,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : null,
+        "interceptions" : 0
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4963,257 +5128,19 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 3,
         "lineups" : 0,
-        "minutes" : 38,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "5.950000",
+        "minutes" : 7,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
-        "out" : 0,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 8,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 426858,
-      "name" : "Jóhann Kanfory Tjörvason",
-      "firstname" : "Jóhann Kanfory",
-      "lastname" : "Tjörvason",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-08-02",
-        "place" : null,
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/426858.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 164,
-        "name" : "Úrvalsdeild",
-        "country" : "Iceland",
-        "logo" : "https://media.api-sports.io/football/leagues/164.png",
-        "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
         "out" : 0,
         "bench" : 3
       },
@@ -5224,7 +5151,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -5238,7 +5165,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 1,
         "won" : null
       },
       "dribbles" : {
@@ -5251,7 +5178,7 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -5265,21 +5192,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 476847,
-      "name" : "David Helgi Aronsson",
-      "firstname" : "Davíð Helgi",
-      "lastname" : "Aronsson",
-      "age" : 18,
+      "id" : 426069,
+      "name" : "A. Al Mosawe",
+      "firstname" : "Ali",
+      "lastname" : "Al Mosawe",
+      "age" : 23,
       "birth" : {
-        "date" : "2007-04-06",
+        "date" : "2002-01-28",
         "place" : null,
-        "country" : "Iceland"
+        "country" : "Denmark"
       },
-      "nationality" : "Iceland",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "Denmark",
+      "height" : "175 cm",
+      "weight" : "70 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/476847.png"
+      "photo" : "https://media.api-sports.io/football/players/426069.png"
     },
     "statistics" : [ {
       "team" : {
@@ -5293,41 +5220,41 @@
         "country" : "Iceland",
         "logo" : "https://media.api-sports.io/football/leagues/164.png",
         "flag" : "https://media.api-sports.io/flags/is.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 3,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 9,
+        "lineups" : 2,
+        "minutes" : 275,
+        "number" : 12,
+        "position" : "Attacker",
+        "rating" : "6.55",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 7,
+        "out" : 2,
+        "bench" : 8
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 3
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 0
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
+        "total" : 91,
+        "key" : 2,
+        "accuracy" : 76
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 2
       },
       "duels" : {
         "total" : null,
@@ -5335,7 +5262,7 @@
       },
       "dribbles" : {
         "attempts" : null,
-        "success" : null,
+        "success" : 21,
         "past" : null
       },
       "fouls" : {
@@ -5344,7 +5271,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -5352,79 +5279,6 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 278,
-        "name" : "Vikingur Reykjavik",
-        "logo" : "https://media.api-sports.io/football/teams/278.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
         "saved" : null
       }
     } ]

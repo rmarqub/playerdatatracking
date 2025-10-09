@@ -1,17 +1,109 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "732"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 14,
   "paging" : {
     "current" : 2,
-    "total" : 4
+    "total" : 2
   },
   "response" : [ {
+    "player" : {
+      "id" : 38,
+      "name" : "Tachi",
+      "firstname" : "Alberto",
+      "lastname" : "Rodríguez Baró",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-09-10",
+        "place" : "Fuenlabrada",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "184 cm",
+      "weight" : "71 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/38.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 732,
+        "name" : "Zaragoza",
+        "logo" : "https://media.api-sports.io/football/teams/732.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "7.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 103,
+        "key" : 2,
+        "accuracy" : 43
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 3,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
     "player" : {
       "id" : 47,
       "name" : "Toni Moya",
@@ -41,57 +133,57 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 11,
-        "minutes" : 1240,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 137,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : "7.004166",
+        "rating" : "6.97",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 14,
-        "out" : 4,
-        "bench" : 15
+        "in" : 2,
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
-        "total" : 13,
-        "on" : 7
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 4,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 706,
-        "key" : 24,
+        "total" : 66,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 39,
-        "blocks" : 3,
-        "interceptions" : 12
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 126,
-        "won" : 64
+        "total" : 13,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 6,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 10,
-        "committed" : 27
+        "drawn" : 4,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 3,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -102,97 +194,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 130,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 46768,
-      "name" : "Ager Aketxe",
-      "firstname" : "Ager",
-      "lastname" : "Aketxe Barrutia",
-      "age" : 32,
+      "id" : 1568,
+      "name" : "P. Akouokou",
+      "firstname" : "Edgar Paul",
+      "lastname" : "Akouokou",
+      "age" : 28,
       "birth" : {
-        "date" : "1993-12-30",
-        "place" : "Bilbao",
-        "country" : "Spain"
+        "date" : "1997-12-20",
+        "place" : "Abidjan",
+        "country" : "Côte d'Ivoire"
       },
-      "nationality" : "Spain",
-      "height" : "174 cm",
-      "weight" : "69 kg",
+      "nationality" : "Côte d'Ivoire",
+      "height" : "181",
+      "weight" : "68",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/46768.png"
+      "photo" : "https://media.api-sports.io/football/players/1568.png"
     },
     "statistics" : [ {
       "team" : {
@@ -206,94 +225,113 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 23,
-        "lineups" : 17,
-        "minutes" : 1384,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 440,
+        "number" : 24,
         "position" : "Midfielder",
-        "rating" : "7.013636",
+        "rating" : "6.8",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 13,
-        "bench" : 6
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 24,
-        "on" : 10
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 659,
-        "key" : 19,
+        "total" : 235,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 26,
-        "blocks" : 2,
-        "interceptions" : 6
+        "total" : 11,
+        "blocks" : 1,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : 124,
-        "won" : 62
+        "total" : 47,
+        "won" : 27
       },
       "dribbles" : {
-        "attempts" : 14,
-        "success" : 6,
+        "attempts" : 6,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 19,
-        "committed" : 18
+        "drawn" : 7,
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 3,
-        "yellowred" : 0,
+        "yellowred" : 1,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : 0,
-        "missed" : 1,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 2462,
+      "name" : "E. Andrada",
+      "firstname" : "Esteban Maximiliano",
+      "lastname" : "Andrada",
+      "age" : 34,
+      "birth" : {
+        "date" : "1991-01-26",
+        "place" : "Mendoza",
+        "country" : "Argentina"
+      },
+      "nationality" : "Argentina",
+      "height" : "193",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/2462.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 732,
         "name" : "Zaragoza",
         "logo" : "https://media.api-sports.io/football/teams/732.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 3
       },
       "shots" : {
         "total" : null,
@@ -301,8 +339,100 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 60,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 7720,
+      "name" : "S. Bakış",
+      "firstname" : "Sinan",
+      "lastname" : "Bakış",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-22",
+        "place" : "Troisdof",
+        "country" : "Germany"
+      },
+      "nationality" : "Türkiye",
+      "height" : "186 cm",
+      "weight" : "73 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/7720.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 732,
+        "name" : "Zaragoza",
+        "logo" : "https://media.api-sports.io/football/teams/732.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 12,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -336,8 +466,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -354,8 +484,8 @@
         "country" : "Albania"
       },
       "nationality" : "Albania",
-      "height" : "174 cm",
-      "weight" : "66 kg",
+      "height" : "174",
+      "weight" : "66",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/46825.png"
     },
@@ -371,292 +501,35 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 17,
-        "minutes" : 1391,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 137,
+        "number" : 6,
         "position" : "Midfielder",
-        "rating" : "6.682352",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 12,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 599,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : 7,
-        "interceptions" : 14
-      },
-      "duels" : {
-        "total" : 149,
-        "won" : 70
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 30,
-        "committed" : 27
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 43,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47057,
-      "name" : "Raúl Guti",
-      "firstname" : "José Raúl",
-      "lastname" : "Gutiérrez Parejo",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-12-30",
-        "place" : "Zaragoza",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "177 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47057.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.820000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 300,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 45,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 118129,
-      "name" : "Mario Soberón",
-      "firstname" : "Mario",
-      "lastname" : "Soberón Gutiérrez",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-05-18",
-        "place" : "Unquera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/118129.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 8,
-        "minutes" : 588,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.233333",
+        "rating" : "6.83",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
-        "out" : 8,
-        "bench" : 3
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 15,
-        "on" : 9
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 6,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 115,
-        "key" : 5,
+        "total" : 76,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
@@ -665,278 +538,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 46,
-        "won" : 18
+        "total" : 16,
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : 9,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 119232,
-      "name" : "Dani Gómez",
-      "firstname" : "Daniel",
-      "lastname" : "Gómez Alcón",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-07-30",
-        "place" : "Alcorcón",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/119232.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 78,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 12,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 3,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
+        "drawn" : 5,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 125239,
-      "name" : "K. Arriaga",
-      "firstname" : "Kervin Fabián",
-      "lastname" : "Arriaga Villanueva",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-05",
-        "place" : "Puerto Cortés",
-        "country" : "Honduras"
-      },
-      "nationality" : "Honduras",
-      "height" : "191 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/125239.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 404,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.980000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 242,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 79,
-        "won" : 50
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
@@ -949,21 +565,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 162249,
-      "name" : "Francho Serrano",
-      "firstname" : "Francho",
-      "lastname" : "Serrano Gracia",
-      "age" : 24,
+      "id" : 47292,
+      "name" : "K. Kodro",
+      "firstname" : "Kenan",
+      "lastname" : "Kodro",
+      "age" : 32,
       "birth" : {
-        "date" : "2001-10-17",
-        "place" : "Zaragoza",
+        "date" : "1993-08-19",
+        "place" : "San Sebastián",
         "country" : "Spain"
       },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "72 kg",
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : "190",
+      "weight" : "80",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162249.png"
+      "photo" : "https://media.api-sports.io/football/players/47292.png"
     },
     "statistics" : [ {
       "team" : {
@@ -977,771 +593,19 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 14,
-        "minutes" : 1337,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.868181",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 7,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 593,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 29,
-        "blocks" : 4,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 133,
-        "won" : 69
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 46,
+        "lineups" : 1,
+        "minutes" : 89,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162438,
-      "name" : "Jaime Vallejo",
-      "firstname" : "Jaime",
-      "lastname" : "Vallejo Mellado",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-18",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162438.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 2,
-        "number" : null,
-        "position" : "Defender",
+        "position" : "Attacker",
         "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 4,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 288074,
-      "name" : "Alberto Marí",
-      "firstname" : "Alberto",
-      "lastname" : "Marí Sánchez",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-07-11",
-        "place" : "Alicante",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/288074.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 5,
-        "minutes" : 532,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.684210",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 16,
-        "out" : 5,
-        "bench" : 20
-      },
-      "shots" : {
-        "total" : 17,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 102,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 3,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 103,
-        "won" : 38
-      },
-      "dribbles" : {
-        "attempts" : 15,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 22
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 152,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 288525,
-      "name" : "Malcom Adu",
-      "firstname" : "Malcom Abdulai",
-      "lastname" : "Ares Djaló",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-10-12",
-        "place" : "Bibao",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/288525.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 9,
-        "minutes" : 733,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.694117",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 9,
-        "out" : 9,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 211,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 94,
-        "won" : 39
-      },
-      "dribbles" : {
-        "attempts" : 25,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 16,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 314377,
-      "name" : "S. Baždar",
-      "firstname" : "Samed",
-      "lastname" : "Baždar",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-31",
-        "place" : "Novi Pazar",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "185 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/314377.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 15,
-        "minutes" : 1202,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.861111",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 12,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 25,
-        "on" : 13
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 247,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 117,
-        "won" : 39
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 10,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 329727,
-      "name" : "F. Angong",
-      "firstname" : "Franck",
-      "lastname" : "Angong Ebolo",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-05",
-        "place" : null,
-        "country" : "Cameroon"
-      },
-      "nationality" : "Cameroon",
-      "height" : "179 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/329727.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
         "out" : null,
         "bench" : null
       },
@@ -1751,13 +615,13 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 18,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -1766,48 +630,48 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 16,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 330440,
-      "name" : "Aitor Mañas",
-      "firstname" : "Aitor",
-      "lastname" : "Mañas Buenadicha",
-      "age" : 22,
+      "id" : 47354,
+      "name" : "Martín Aguirregabiria",
+      "firstname" : "Martín",
+      "lastname" : "Aguirregabiria Padilla",
+      "age" : 29,
       "birth" : {
-        "date" : "2003-01-05",
-        "place" : "Madrid",
+        "date" : "1996-05-10",
+        "place" : "Vitoria",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "185 cm",
-      "weight" : null,
+      "height" : "178 cm",
+      "weight" : "69 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/330440.png"
+      "photo" : "https://media.api-sports.io/football/players/47354.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1821,21 +685,21 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 20,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 4
       },
       "shots" : {
         "total" : null,
@@ -1843,8 +707,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1878,37 +742,56 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 47514,
+      "name" : "Valery",
+      "firstname" : "Valery",
+      "lastname" : "Fernández Estrada",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-11-23",
+        "place" : "L'Escala",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "182 cm",
+      "weight" : "75 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/47514.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 732,
         "name" : "Zaragoza",
         "logo" : "https://media.api-sports.io/football/teams/732.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 5,
         "lineups" : 0,
-        "minutes" : 36,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 132,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.56",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 5,
         "out" : 0,
-        "bench" : 1
+        "bench" : 6
       },
       "shots" : {
         "total" : null,
@@ -1916,43 +799,43 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 34,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 10,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1986,579 +869,65 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 123,
+        "number" : 23,
         "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 391817,
-      "name" : "Chema Aragües",
-      "firstname" : "Chema",
-      "lastname" : "Aragües Bernal",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-17",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/391817.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 394573,
-      "name" : "Adrian Liso",
-      "firstname" : "Adrian",
-      "lastname" : "Liso Lahoz",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-04-02",
-        "place" : "Zaragoza",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "182 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/394573.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 26,
-        "lineups" : 19,
-        "minutes" : 1820,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.704000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 11,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 24,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 329,
-        "key" : 17,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 34,
-        "blocks" : 1,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 243,
-        "won" : 96
-      },
-      "dribbles" : {
-        "attempts" : 59,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 28,
-        "committed" : 32
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 58,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.57",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : 2,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 401981,
-      "name" : "Lucas Terrer",
-      "firstname" : "Lucas",
-      "lastname" : "Terrer Casas",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-06-07",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/401981.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 31,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 406267,
-      "name" : "Pau Sans",
-      "firstname" : "Pau",
-      "lastname" : "Sans López",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-11-24",
-        "place" : "Zaragoza",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/406267.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 3,
-        "minutes" : 475,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.729411",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 15,
-        "out" : 3,
-        "bench" : 23
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 111,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 89,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 23,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 732,
-        "name" : "Zaragoza",
-        "logo" : "https://media.api-sports.io/football/teams/732.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 152,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
         "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 19,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 5,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2592,13 +961,13 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 32,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2606,7 +975,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2615,7 +984,283 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 451595,
+      "name" : "Y. Saidu",
+      "firstname" : "Yussif",
+      "lastname" : "Saidu",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-06-14",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/451595.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 732,
+        "name" : "Zaragoza",
+        "logo" : "https://media.api-sports.io/football/teams/732.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 6,
+        "minutes" : 539,
+        "number" : 33,
+        "position" : "Midfielder",
+        "rating" : "6.97",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 270,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 17,
+        "blocks" : 3,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 468969,
+      "name" : "Hugo Pinilla",
+      "firstname" : "Hugo",
+      "lastname" : "Pinilla Ruiz",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-04-28",
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/468969.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 732,
+        "name" : "Zaragoza",
+        "logo" : "https://media.api-sports.io/football/teams/732.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 15,
+        "number" : 31,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 6,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 504530,
+      "name" : "Jaime Sánchez",
+      "firstname" : "Jaime",
+      "lastname" : "Sánchez Rubio Rubio",
+      "age" : null,
+      "birth" : {
+        "date" : null,
+        "place" : null,
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/504530.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 732,
+        "name" : "Zaragoza",
+        "logo" : "https://media.api-sports.io/football/teams/732.png"
+      },
+      "league" : {
+        "id" : 141,
+        "name" : "Segunda División",
+        "country" : "Spain",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
+        "flag" : "https://media.api-sports.io/flags/es.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 30,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {

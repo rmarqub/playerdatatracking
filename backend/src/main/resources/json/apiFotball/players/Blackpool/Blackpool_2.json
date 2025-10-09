@@ -1,15 +1,15 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "1356"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 8,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
@@ -24,8 +24,8 @@
         "country" : "England"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "185 cm",
-      "weight" : "74 kg",
+      "height" : "185",
+      "weight" : "74",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/17460.png"
     },
@@ -41,54 +41,127 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 17,
-        "minutes" : 1492,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 302,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.920000",
+        "rating" : "6.316666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 7,
-        "bench" : 3
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 16,
-        "on" : 9
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 393,
-        "key" : 18,
+        "total" : 68,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 28,
-        "blocks" : 3,
-        "interceptions" : 13
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 172,
-        "won" : 81
+        "total" : 28,
+        "won" : 12
       },
       "dribbles" : {
-        "attempts" : 33,
-        "success" : 17,
+        "attempts" : 9,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 13,
-        "committed" : 10
+        "drawn" : 4,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1356,
+        "name" : "Blackpool",
+        "logo" : "https://media.api-sports.io/football/teams/1356.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "7.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 59,
+        "key" : 3,
+        "accuracy" : 49
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -109,25 +182,25 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 62,
+        "number" : 22,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
@@ -136,8 +209,100 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 24,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 19115,
+      "name" : "B. Peacock-Farrell",
+      "firstname" : "Bailey",
+      "lastname" : "Peacock-Farrell",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-10-29",
+        "place" : "Darlington",
+        "country" : "England"
+      },
+      "nationality" : "Northern Ireland",
+      "height" : "193",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/19115.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1356,
+        "name" : "Blackpool",
+        "logo" : "https://media.api-sports.io/football/teams/1356.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -171,8 +336,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -187,21 +352,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 28,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -209,32 +374,32 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 0,
+        "conceded" : 1,
         "assists" : 0,
-        "saves" : null
+        "saves" : 2
       },
       "passes" : {
-        "total" : 7,
-        "key" : null,
+        "total" : 35,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 4,
-        "won" : 1
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -246,7 +411,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     }, {
       "team" : {
@@ -255,63 +420,63 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 118,
+        "appearences" : 7,
+        "lineups" : 7,
+        "minutes" : 630,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.900000",
+        "position" : "Goalkeeper",
+        "rating" : "6.285714",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : 14,
         "assists" : 0,
-        "saves" : null
+        "saves" : 16
       },
       "passes" : {
-        "total" : 37,
-        "key" : 2,
+        "total" : 236,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
-        "blocks" : 1,
-        "interceptions" : 1
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 13,
-        "won" : 4
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -319,7 +484,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
@@ -335,8 +500,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "78 kg",
+      "height" : "185",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/19251.png"
     },
@@ -347,337 +512,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 18,
-        "minutes" : 1469,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.852000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 17,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 30,
-        "on" : 13
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 393,
-        "key" : 21,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : 2,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 286,
-        "won" : 94
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 47
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 112,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.500000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 31,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 1,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
         "id" : 46,
         "name" : "EFL Trophy",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 217,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 56,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 41,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 11,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "8.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19393,
-      "name" : "J. Onomah",
-      "firstname" : "Joshua Oghenetega Peter",
-      "lastname" : "Onomah",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-04-27",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19393.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 3,
-        "minutes" : 266,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.671428",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 3,
-        "bench" : 7
+        "bench" : 0
       },
       "shots" : {
         "total" : 3,
@@ -686,336 +540,25 @@
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
+        "total" : 24,
         "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 16,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 49,
-        "won" : 21
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
         "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 62,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 27,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
         "total" : 6,
-        "won" : 3
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19552,
-      "name" : "L. Evans",
-      "firstname" : "Lee",
-      "lastname" : "Evans",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-07-24",
-        "place" : "Newport",
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : "185 cm",
-      "weight" : "90 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19552.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 26,
-        "lineups" : 24,
-        "minutes" : 2182,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.515384",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 22,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 5,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1677,
-        "key" : 73,
-        "accuracy" : 51
-      },
-      "tackles" : {
-        "total" : 48,
-        "blocks" : 8,
-        "interceptions" : 21
-      },
-      "duels" : {
-        "total" : 225,
-        "won" : 139
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 49,
-        "committed" : 32
-      },
-      "cards" : {
-        "yellow" : 7,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.550000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 65,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
@@ -1042,506 +585,30 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 19834,
-      "name" : "A. Morgan",
-      "firstname" : "Albie Robert",
-      "lastname" : "Morgan",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-02",
-        "place" : "Portsmouth",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "180 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19834.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
         "id" : 41,
         "name" : "League One",
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1727,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 267,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 7,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 18,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 986,
-        "key" : 26,
-        "accuracy" : 40
-      },
-      "tackles" : {
-        "total" : 35,
-        "blocks" : 4,
-        "interceptions" : 27
-      },
-      "duels" : {
-        "total" : 146,
-        "won" : 83
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 10,
-        "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 9,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 73,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 36,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 5,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 87869,
-      "name" : "J. Beesley",
-      "firstname" : "Jake Elliott",
-      "lastname" : "Beesley",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-12-02",
-        "place" : "Sheffield",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/87869.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 3,
-        "minutes" : 315,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.863636",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 2,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 3
+        "total" : 6,
+        "on" : 2
       },
       "goals" : {
         "total" : 1,
@@ -1550,80 +617,7 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 83,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 75,
-        "won" : 38
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 228,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.066666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 37,
+        "total" : 64,
         "key" : 2,
         "accuracy" : null
       },
@@ -1633,351 +627,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 31,
-        "won" : 18
+        "total" : 59,
+        "won" : 27
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 6,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 146,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 38,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 20,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 2
+        "drawn" : 6,
+        "committed" : 7
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 126872,
-      "name" : "S. Silvera",
-      "firstname" : "Samuel Miles",
-      "lastname" : "Silvera",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-10-25",
-        "place" : "London",
-        "country" : "Australia"
-      },
-      "nationality" : "Australia",
-      "height" : "173 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/126872.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 177,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.780000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 62,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 33,
-        "won" : 15
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 167165,
-      "name" : "S. Carey",
-      "firstname" : "Sonny Jack",
-      "lastname" : "Carey",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-01-20",
-        "place" : "Norwich",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "184 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/167165.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 11,
-        "minutes" : 1030,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.690000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 3,
-        "bench" : 13
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 509,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 133,
-        "won" : 55
-      },
-      "dribbles" : {
-        "attempts" : 21,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1999,59 +663,59 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
+        "appearences" : 42,
+        "lineups" : 37,
+        "minutes" : 2504,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.150000",
+        "position" : "Attacker",
+        "rating" : "6.890243",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 5,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : 3
+        "total" : 48,
+        "on" : 25
       },
       "goals" : {
-        "total" : 0,
+        "total" : 11,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 8,
         "saves" : null
       },
       "passes" : {
-        "total" : 90,
-        "key" : null,
+        "total" : 630,
+        "key" : 31,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 34,
+        "blocks" : 3,
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : 15,
-        "won" : 9
+        "total" : 451,
+        "won" : 158
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
+        "attempts" : 31,
+        "success" : 12,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 29,
+        "committed" : 70
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -2060,113 +724,59 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 20076,
+      "name" : "J. Husband",
+      "firstname" : "James Andrew",
+      "lastname" : "Husband",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-01-03",
+        "place" : "Leeds",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "179",
+      "weight" : "65",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20076.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 1356,
         "name" : "Blackpool",
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 41,
+        "name" : "League One",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 94,
-        "key" : 1,
-        "accuracy" : 86
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2195,15 +805,253 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1356,
+        "name" : "Blackpool",
+        "logo" : "https://media.api-sports.io/football/teams/1356.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 41,
+        "lineups" : 40,
+        "minutes" : 3436,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.056410",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 11,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2367,
+        "key" : 31,
+        "accuracy" : 44
+      },
+      "tackles" : {
+        "total" : 46,
+        "blocks" : 18,
+        "interceptions" : 53
+      },
+      "duels" : {
+        "total" : 372,
+        "won" : 235
+      },
+      "dribbles" : {
+        "attempts" : 21,
+        "success" : 10,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 49,
+        "committed" : 16
+      },
+      "cards" : {
+        "yellow" : 7,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 107087,
+      "name" : "S. Banks",
+      "firstname" : "Scott Brian",
+      "lastname" : "Banks",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-09-26",
+        "place" : "Linlithgow",
+        "country" : "Scotland"
+      },
+      "nationality" : "Scotland",
+      "height" : "183",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/107087.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1356,
+        "name" : "Blackpool",
+        "logo" : "https://media.api-sports.io/football/teams/1356.png"
+      },
+      "league" : {
+        "id" : 41,
+        "name" : "League One",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 95,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 19,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1356,
+        "name" : "Blackpool",
+        "logo" : "https://media.api-sports.io/football/teams/1356.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 78,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "8.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 13,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2237,58 +1085,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 338,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 325,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "7.475000",
+        "rating" : "6.240000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 3,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
-        "on" : 4
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 2,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 53,
-        "key" : 5,
+        "total" : 80,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
+        "total" : 3,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 54,
-        "won" : 23
+        "total" : 48,
+        "won" : 18
       },
       "dribbles" : {
-        "attempts" : 22,
-        "success" : 14,
+        "attempts" : 6,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 6,
+        "committed" : 9
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2298,88 +1146,69 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 282254,
-      "name" : "O. Offiah",
-      "firstname" : "Odeluga Joshua",
-      "lastname" : "Offiah",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-10-26",
-        "place" : "London Borough of Camden",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "187 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/282254.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 1356,
         "name" : "Blackpool",
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 41,
-        "name" : "League One",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 26,
-        "lineups" : 26,
-        "minutes" : 2297,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.942307",
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 64,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 3,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : 4,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1101,
-        "key" : 8,
+        "total" : 13,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 61,
-        "blocks" : 12,
-        "interceptions" : 22
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 228,
-        "won" : 138
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : 25,
-        "success" : 14,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 18,
-        "committed" : 17
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2402,161 +1231,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 38,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 2,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 158,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 62,
+        "number" : 14,
+        "position" : "Attacker",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
@@ -2570,12 +1253,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 17,
         "key" : null,
         "accuracy" : null
       },
@@ -2585,12 +1268,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 7,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
@@ -2605,8 +1288,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2640,1619 +1323,45 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 2,
-        "minutes" : 191,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.728571",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 2,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 85,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 29,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 252,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.266666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 90,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 30,
-        "won" : 18
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 136,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
         "lineups" : 1,
-        "minutes" : 70,
+        "minutes" : 52,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 24,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 291108,
-      "name" : "R. Apter",
-      "firstname" : "Robert Julian",
-      "lastname" : "Apter",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-01-16",
-        "place" : "Liverpool",
-        "country" : "England"
-      },
-      "nationality" : "Scotland",
-      "height" : "175 cm",
-      "weight" : "58 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/291108.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 30,
-        "lineups" : 27,
-        "minutes" : 2297,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.880000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 18,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 29,
-        "on" : 16
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 602,
-        "key" : 35,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 37,
-        "blocks" : null,
-        "interceptions" : 15
-      },
-      "duels" : {
-        "total" : 267,
-        "won" : 110
-      },
-      "dribbles" : {
-        "attempts" : 86,
-        "success" : 37,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 29,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 197,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.433333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 61,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 25,
-        "won" : 11
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 28,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 9,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 486405,
-      "name" : "Theo Upton",
-      "firstname" : "Theo",
-      "lastname" : "Upton",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/486405.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 94,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 39,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 486406,
-      "name" : "Spencer Knight",
-      "firstname" : "Spencer",
-      "lastname" : "Knight",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/486406.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 94,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.950000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 15,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 498725,
-      "name" : "Takudzwa Gwanzura",
-      "firstname" : "Takudzwa",
-      "lastname" : "Gwanzura",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498725.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Defender",
         "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 23,
+        "total" : 21,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 498726,
-      "name" : "Terry Bondo",
-      "firstname" : "Terry",
-      "lastname" : "Bondo",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-02-08",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498726.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 55,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
         "total" : 8,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 129,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 27,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 25,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 498727,
-      "name" : "Jack Richardson",
-      "firstname" : "Jack",
-      "lastname" : "Richardson",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498727.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 2,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
@@ -4260,12 +1369,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4275,98 +1384,6 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 498728,
-      "name" : "Oluchukwu Nwankwo",
-      "firstname" : "Oluchukwu",
-      "lastname" : "Nwankwo",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498728.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     }, {
       "team" : {
         "id" : 1356,
@@ -4374,63 +1391,63 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 82,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 17,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4443,96 +1460,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 498729,
-      "name" : "Gabriel Schluter",
-      "firstname" : "Gabriel",
-      "lastname" : "Schluter",
-      "age" : null,
+      "id" : 339138,
+      "name" : "D. Taylor",
+      "firstname" : "Dale",
+      "lastname" : "Taylor",
+      "age" : 22,
       "birth" : {
-        "date" : null,
+        "date" : "2003-12-12",
         "place" : null,
-        "country" : "England"
+        "country" : "Northern Ireland"
       },
-      "nationality" : "England",
+      "nationality" : "Northern Ireland",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498729.png"
+      "photo" : "https://media.api-sports.io/football/players/339138.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 1356,
-        "name" : "Blackpool",
-        "logo" : "https://media.api-sports.io/football/teams/1356.png"
-      },
-      "league" : {
-        "id" : 41,
-        "name" : "League One",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/41.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 1356,
         "name" : "Blackpool",
@@ -4544,15 +1488,15 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 8,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
+        "minutes" : 26,
+        "number" : 18,
+        "position" : "Attacker",
+        "rating" : "7.9",
         "captain" : false
       },
       "substitutes" : {
@@ -4561,17 +1505,17 @@
         "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 6,
+        "total" : 4,
         "key" : null,
         "accuracy" : null
       },
@@ -4581,12 +1525,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 4,
-        "won" : 3
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -4605,26 +1549,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 498730,
-      "name" : "Ky-Mani Leliendal",
-      "firstname" : "Ky-Mani",
-      "lastname" : "Leliendal",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/498730.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 1356,
         "name" : "Blackpool",
@@ -4636,65 +1561,65 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/41.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 353,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Attacker",
+        "rating" : "6.275000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 46,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 50,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -4704,63 +1629,63 @@
         "logo" : "https://media.api-sports.io/football/teams/1356.png"
       },
       "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 353,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Attacker",
+        "rating" : "6.275000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 46,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 50,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {

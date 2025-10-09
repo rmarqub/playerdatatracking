@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "367"
   },
@@ -13,21 +13,21 @@
   },
   "response" : [ {
     "player" : {
-      "id" : 1172,
-      "name" : "E. Hovland",
-      "firstname" : "Even",
-      "lastname" : "Hovland",
-      "age" : 36,
+      "id" : 15919,
+      "name" : "M. Rygaard",
+      "firstname" : "Mikkel",
+      "lastname" : "Rygaard Jensen",
+      "age" : 35,
       "birth" : {
-        "date" : "1989-02-14",
-        "place" : "Vadheim",
-        "country" : "Norway"
+        "date" : "1990-12-25",
+        "place" : "Nykøbing Falster",
+        "country" : "Denmark"
       },
-      "nationality" : "Norway",
-      "height" : "191 cm",
-      "weight" : "90 kg",
+      "nationality" : "Denmark",
+      "height" : "176",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1172.png"
+      "photo" : "https://media.api-sports.io/football/players/15919.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,62 +36,135 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 26,
-        "lineups" : 21,
-        "minutes" : 1867,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 80,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "7.008333",
+        "position" : "Midfielder",
+        "rating" : "8.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 2,
-        "bench" : 6
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 11,
-        "on" : 5
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1259,
-        "key" : 7,
-        "accuracy" : 45
+        "total" : 67,
+        "key" : null,
+        "accuracy" : 49
       },
       "tackles" : {
-        "total" : 21,
-        "blocks" : 28,
-        "interceptions" : 31
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 108,
-        "won" : 69
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : 1,
-        "success" : null,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 9,
-        "committed" : 7
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 156,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 116,
+        "key" : null,
+        "accuracy" : 44
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -109,20 +182,185 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
+        "id" : 113,
+        "name" : "Allsvenskan",
         "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 21,
+        "lineups" : 17,
+        "minutes" : 1488,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.12",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 8,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 27,
+        "on" : 14
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 965,
+        "key" : 36,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 21,
+        "blocks" : 9,
+        "interceptions" : 12
+      },
+      "duels" : {
+        "total" : 164,
+        "won" : 73
+      },
+      "dribbles" : {
+        "attempts" : 47,
+        "success" : 15,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 31,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30416,
+      "name" : "E. Berisha",
+      "firstname" : "Etrit",
+      "lastname" : "Berisha",
+      "age" : 36,
+      "birth" : {
+        "date" : "1989-03-10",
+        "place" : "Prishtinë",
+        "country" : "Kosovo"
+      },
+      "nationality" : "Albania",
+      "height" : "194",
+      "weight" : "92",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30416.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 4
+      },
+      "passes" : {
+        "total" : 41,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 99,
+        "position" : "Goalkeeper",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
@@ -136,23 +374,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 5
       },
       "passes" : {
-        "total" : null,
+        "total" : 73,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -171,11 +409,103 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
       }
     }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 18,
+        "lineups" : 18,
+        "minutes" : 1620,
+        "number" : 99,
+        "position" : "Goalkeeper",
+        "rating" : "6.98",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 26,
+        "assists" : 0,
+        "saves" : 42
+      },
+      "passes" : {
+        "total" : 511,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 18,
+        "won" : 18
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 37180,
+      "name" : "Simon Gustafson",
+      "firstname" : "Simon",
+      "lastname" : "Gustafson",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-01-11",
+        "place" : "Mölndal",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "185",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/37180.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 367,
         "name" : "BK Hacken",
@@ -187,49 +517,49 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
+        "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 236,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.450000",
+        "minutes" : 180,
+        "number" : 14,
+        "position" : "Midfielder",
+        "rating" : "7.75",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
+        "in" : 0,
         "out" : 0,
-        "bench" : 4
+        "bench" : 0
       },
       "shots" : {
-        "total" : 1,
-        "on" : null
+        "total" : 5,
+        "on" : 3
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 111,
-        "key" : null,
-        "accuracy" : 47
+        "total" : 134,
+        "key" : 5,
+        "accuracy" : 56
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 10,
-        "won" : 6
+        "total" : 16,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -248,24 +578,262 @@
         "missed" : 0,
         "saved" : null
       }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 19,
+        "lineups" : 17,
+        "minutes" : 1587,
+        "number" : 14,
+        "position" : "Midfielder",
+        "rating" : "7.39",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 17,
+        "on" : 9
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1114,
+        "key" : 32,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : 45,
+        "blocks" : 6,
+        "interceptions" : 17
+      },
+      "duels" : {
+        "total" : 185,
+        "won" : 108
+      },
+      "dribbles" : {
+        "attempts" : 21,
+        "success" : 11,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 33,
+        "committed" : 17
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : 0,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
     } ]
   }, {
     "player" : {
-      "id" : 15919,
-      "name" : "M. Rygaard",
-      "firstname" : "Mikkel",
-      "lastname" : "Rygaard Jensen",
-      "age" : 35,
+      "id" : 48007,
+      "name" : "P. Abrahamsson",
+      "firstname" : "Peter Anders",
+      "lastname" : "Abrahamsson",
+      "age" : 37,
       "birth" : {
-        "date" : "1990-12-25",
-        "place" : "Nykøbing Falster",
-        "country" : "Denmark"
+        "date" : "1988-07-18",
+        "place" : "Göteborg",
+        "country" : "Sweden"
       },
-      "nationality" : "Denmark",
-      "height" : "176 cm",
-      "weight" : "69 kg",
+      "nationality" : "Sweden",
+      "height" : "190",
+      "weight" : "90",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15919.png"
+      "photo" : "https://media.api-sports.io/football/players/48007.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 29,
+        "lineups" : 29,
+        "minutes" : 2610,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.827586",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 38,
+        "assists" : null,
+        "saves" : 84
+      },
+      "passes" : {
+        "total" : 725,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 26,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 48012,
+      "name" : "J. Hammar",
+      "firstname" : "Per Johan Gustav",
+      "lastname" : "Hammar",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-02-22",
+        "place" : "Malmö",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "197",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/48012.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,87 +847,14 @@
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 26,
-        "lineups" : 21,
-        "minutes" : 1810,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 0,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.241666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 14,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 22,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 6,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1113,
-        "key" : 51,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 5,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 172,
-        "won" : 71
-      },
-      "dribbles" : {
-        "attempts" : 38,
-        "success" : 13,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 32,
-        "committed" : 16
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
@@ -373,7 +868,7 @@
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -411,6 +906,171 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 19,
+        "lineups" : 16,
+        "minutes" : 1023,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.230769",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 768,
+        "key" : 1,
+        "accuracy" : 54
+      },
+      "tackles" : {
+        "total" : 10,
+        "blocks" : 13,
+        "interceptions" : 14
+      },
+      "duels" : {
+        "total" : 68,
+        "won" : 48
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 51083,
+      "name" : "A. Lundkvist",
+      "firstname" : "Adam Stefan",
+      "lastname" : "Lundkvist",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-03-20",
+        "place" : "Nyköping",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "175",
+      "weight" : "65",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/51083.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 74,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 7,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -425,146 +1085,54 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 362,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.250000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 128,
-        "key" : 4,
-        "accuracy" : 52
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 18724,
-      "name" : "B. Turgott",
-      "firstname" : "Blair Sebastian",
-      "lastname" : "Turgott",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-05-22",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "Jamaica",
-      "height" : "183 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/18724.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
+        "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 200,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.660000",
+        "minutes" : 164,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.75",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 11
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 22,
-        "key" : null,
-        "accuracy" : null
+        "total" : 118,
+        "key" : 1,
+        "accuracy" : 55
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 6,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 16,
-        "won" : 6
+        "total" : 13,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -585,151 +1153,59 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37180,
-      "name" : "Simon Gustafson",
-      "firstname" : "Simon",
-      "lastname" : "Gustafson",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-01-11",
-        "place" : "Mölndal",
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "185 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37180.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
         "id" : 113,
         "name" : "Allsvenskan",
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 28,
-        "lineups" : 28,
-        "minutes" : 2520,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.565384",
+        "appearences" : 21,
+        "lineups" : 20,
+        "minutes" : 1724,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "7.01",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : 3,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 20,
-        "on" : 9
+        "total" : 5,
+        "on" : null
       },
       "goals" : {
-        "total" : 6,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 4,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 1946,
-        "key" : 51,
-        "accuracy" : 65
+        "total" : 1156,
+        "key" : 17,
+        "accuracy" : 47
       },
       "tackles" : {
-        "total" : 64,
+        "total" : 60,
         "blocks" : 4,
-        "interceptions" : 42
+        "interceptions" : 21
       },
       "duels" : {
-        "total" : 263,
-        "won" : 162
+        "total" : 190,
+        "won" : 116
       },
       "dribbles" : {
-        "attempts" : 27,
-        "success" : 17,
+        "attempts" : 31,
+        "success" : 18,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 56,
-        "committed" : 20
+        "drawn" : 29,
+        "committed" : 19
       },
       "cards" : {
         "yellow" : 7,
@@ -739,7 +1215,99 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 2,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 57173,
+      "name" : "B. Wembangomo",
+      "firstname" : "Brice",
+      "lastname" : "Wembangomo",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-12-18",
+        "place" : null,
+        "country" : "Norway"
+      },
+      "nationality" : "Norway",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/57173.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 22,
+        "lineups" : 20,
+        "minutes" : 1384,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.945454",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1153,
+        "key" : 15,
+        "accuracy" : 49
+      },
+      "tackles" : {
+        "total" : 23,
+        "blocks" : 5,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 157,
+        "won" : 102
+      },
+      "dribbles" : {
+        "attempts" : 70,
+        "success" : 51,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 23,
+        "committed" : 11
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
         "missed" : 0,
         "saved" : null
       }
@@ -750,26 +1318,26 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
+        "id" : 113,
+        "name" : "Allsvenskan",
         "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 195,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "out" : 3,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -777,32 +1345,270 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 124,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 24,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 8,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 3,
         "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 191980,
+      "name" : "B. Engdahl",
+      "firstname" : "Ben Mikael",
+      "lastname" : "Engdahl",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-17",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "179",
+      "weight" : "69",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/191980.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 17,
+        "lineups" : 9,
+        "minutes" : 186,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.916666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 8,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 156,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 17,
+        "lineups" : 9,
+        "minutes" : 186,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.916666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 8,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 156,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 1,
+        "minutes" : 206,
+        "number" : 17,
+        "position" : "Defender",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 0,
+        "bench" : 17
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 176,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 19,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -812,8 +1618,100 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 323901,
+      "name" : "S. Ngabo",
+      "firstname" : "Sanders",
+      "lastname" : "Ngabo",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-07-04",
+        "place" : "Sundby",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "174",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/323901.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -828,21 +1726,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 469,
-        "number" : null,
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 7,
         "position" : "Midfielder",
-        "rating" : "7.250000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -852,171 +1750,6 @@
         "total" : 0,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 169,
-        "key" : 1,
-        "accuracy" : 73
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 23,
-        "won" : 16
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 39078,
-      "name" : "A. Layouni",
-      "firstname" : "Amor Yonas",
-      "lastname" : "Layouni",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-10-03",
-        "place" : "Falun",
-        "country" : "Sweden"
-      },
-      "nationality" : "Tunisia",
-      "height" : "191 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/39078.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 19,
-        "lineups" : 16,
-        "minutes" : 1405,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.094117",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 28,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 282,
-        "key" : 17,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 110,
-        "won" : 53
-      },
-      "dribbles" : {
-        "attempts" : 28,
-        "success" : 17,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
         "saves" : null
       },
       "passes" : {
@@ -1050,8 +1783,173 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 296,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.93",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 3,
+        "bench" : 9
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 110,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 18
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 341822,
+      "name" : "S. Andersen",
+      "firstname" : "Silas Sinan Erhen Thorup",
+      "lastname" : "Andersen",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-06-13",
+        "place" : null,
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "190",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/341822.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "9.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 81,
+        "key" : 1,
+        "accuracy" : 72
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1066,137 +1964,45 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 336,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.6",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : 4,
+        "on" : 3
       },
       "goals" : {
-        "total" : 4,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 14,
-        "key" : 1,
-        "accuracy" : null
+        "total" : 172,
+        "key" : 2,
+        "accuracy" : 77
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 4,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47776,
-      "name" : "S. Leach Holm",
-      "firstname" : "Samuel Ruben",
-      "lastname" : "Leach Holm",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-10-09",
-        "place" : null,
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "184 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47776.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 7,
-        "minutes" : 631,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.192857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 5,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 751,
-        "key" : 16,
-        "accuracy" : 45
-      },
-      "tackles" : {
-        "total" : 22,
+        "total" : 8,
         "blocks" : 1,
-        "interceptions" : 13
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 79,
-        "won" : 44
+        "total" : 41,
+        "won" : 22
       },
       "dribbles" : {
         "attempts" : 5,
@@ -1204,483 +2010,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 11,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 48120,
-      "name" : "S. Sandberg",
-      "firstname" : "Simon Christer",
-      "lastname" : "Sandberg",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-03-25",
-        "place" : null,
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "186 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/48120.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 3,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "5.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 12
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 57224,
-      "name" : "L. Olden Larsen",
-      "firstname" : "Lars",
-      "lastname" : "Olden Larsen",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-09-17",
-        "place" : "Oslo",
-        "country" : "Norway"
-      },
-      "nationality" : "Norway",
-      "height" : "175 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/57224.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 8,
-        "minutes" : 644,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.754545",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 6,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 222,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 55,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
+        "drawn" : 3,
         "committed" : 4
       },
       "cards" : {
@@ -1702,154 +2032,62 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 89717,
-      "name" : "V. Lunddal Friðriksson",
-      "firstname" : "Valgeir",
-      "lastname" : "Lunddal Friðriksson",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-24",
-        "place" : null,
-        "country" : "Iceland"
-      },
-      "nationality" : "Iceland",
-      "height" : "191 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/89717.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
         "id" : 113,
         "name" : "Allsvenskan",
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 10,
-        "lineups" : 8,
-        "minutes" : 704,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.011111",
+        "appearences" : 23,
+        "lineups" : 22,
+        "minutes" : 1989,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.52",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 6,
-        "bench" : 2
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 5,
-        "on" : 5
+        "total" : 16,
+        "on" : 7
       },
       "goals" : {
-        "total" : 3,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 2,
         "saves" : null
       },
       "passes" : {
-        "total" : 304,
-        "key" : 9,
-        "accuracy" : null
+        "total" : 1667,
+        "key" : 22,
+        "accuracy" : 63
       },
       "tackles" : {
-        "total" : 12,
-        "blocks" : 8,
-        "interceptions" : 4
+        "total" : 78,
+        "blocks" : 14,
+        "interceptions" : 34
       },
       "duels" : {
-        "total" : 53,
-        "won" : 24
+        "total" : 296,
+        "won" : 180
       },
       "dribbles" : {
-        "attempts" : 10,
-        "success" : 3,
+        "attempts" : 39,
+        "success" : 23,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 7
+        "drawn" : 49,
+        "committed" : 35
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 10,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1860,57 +2098,76 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 357771,
+      "name" : "O. Samuelsson",
+      "firstname" : "Olle",
+      "lastname" : "Samuelsson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-05-16",
+        "place" : "\n    ",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "\n    ",
+      "weight" : "\n    ",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/357771.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 367,
         "name" : "BK Hacken",
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
         "number" : null,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 76,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 66
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -1919,18 +2176,18 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -1945,184 +2202,19 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 179,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 16,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 160934,
-      "name" : "Julius Lindberg",
-      "firstname" : "Jörgen Julius",
-      "lastname" : "Lindberg",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-01-04",
-        "place" : null,
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "182 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/160934.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 27,
-        "lineups" : 21,
-        "minutes" : 1938,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.195833",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 6,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : 36,
-        "on" : 17
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 798,
-        "key" : 30,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 63,
-        "blocks" : 1,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 293,
-        "won" : 153
-      },
-      "dribbles" : {
-        "attempts" : 61,
-        "success" : 31,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 44,
-        "committed" : 30
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
         "bench" : 1
       },
@@ -2132,23 +2224,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 76,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 66
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -2157,83 +2249,10 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 320,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 57,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 14
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2244,26 +2263,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 206478,
-      "name" : "Z. Inoussa",
-      "firstname" : "Zeidane",
-      "lastname" : "Inoussa",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-13",
-        "place" : "Hasselby",
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "177 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/206478.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 367,
         "name" : "BK Hacken",
@@ -2275,54 +2275,54 @@
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 18,
-        "minutes" : 1655,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.190000",
+        "appearences" : 10,
+        "lineups" : 9,
+        "minutes" : 804,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "6.76",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 4
+        "in" : 1,
+        "out" : 4,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 24,
-        "on" : 12
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 6,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 3,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 545,
-        "key" : 31,
-        "accuracy" : null
+        "total" : 576,
+        "key" : null,
+        "accuracy" : 52
       },
       "tackles" : {
-        "total" : 28,
-        "blocks" : 1,
-        "interceptions" : 8
+        "total" : 20,
+        "blocks" : 6,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 226,
-        "won" : 117
+        "total" : 68,
+        "won" : 38
       },
       "dribbles" : {
-        "attempts" : 72,
-        "success" : 37,
+        "attempts" : 4,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 48,
-        "committed" : 24
+        "drawn" : 11,
+        "committed" : 8
       },
       "cards" : {
         "yellow" : 3,
@@ -2336,813 +2336,99 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 147,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 460,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 46,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 22,
-        "won" : 8
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 255121,
-      "name" : "I. Abdulrazak",
-      "firstname" : "Ishaq",
-      "lastname" : "Abdulrazak",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-05",
-        "place" : null,
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "175 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/255121.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 31,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 6,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 266792,
-      "name" : "S. Hrstić",
-      "firstname" : "Srđan",
-      "lastname" : "Hrstić",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-07-18",
-        "place" : "Sombor",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "192 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/266792.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 8,
-        "minutes" : 866,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.622727",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 17,
-        "out" : 5,
-        "bench" : 21
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 4,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 153,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 3,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 88,
-        "won" : 38
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 3,
-        "minutes" : 252,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 3,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 6,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 350854,
-      "name" : "R. Amané",
-      "firstname" : "Akoua Romeo",
-      "lastname" : "Amané",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-20",
-        "place" : null,
-        "country" : "Côte d'Ivoire"
-      },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "169 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/350854.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 28,
-        "lineups" : 26,
-        "minutes" : 2157,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.023076",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 11,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1233,
-        "key" : 31,
-        "accuracy" : 41
-      },
-      "tackles" : {
-        "total" : 44,
-        "blocks" : 12,
-        "interceptions" : 30
-      },
-      "duels" : {
-        "total" : 244,
-        "won" : 135
-      },
-      "dribbles" : {
-        "attempts" : 56,
-        "success" : 36,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 43,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 5,
-        "minutes" : 406,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 103,
-        "key" : 7,
-        "accuracy" : 44
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 23,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386852,
-      "name" : "J. Agbonifo",
-      "firstname" : "Jeremy",
-      "lastname" : "Nosakhare Agbonifo",
+      "id" : 364303,
+      "name" : "J. Engvall",
+      "firstname" : "Johannes",
+      "lastname" : "Engvall",
       "age" : 20,
       "birth" : {
-        "date" : "2005-10-24",
+        "date" : "2005-08-18",
         "place" : null,
         "country" : "Sweden"
       },
       "nationality" : "Sweden",
-      "height" : "178 cm",
-      "weight" : "68 kg",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386852.png"
+      "photo" : "https://media.api-sports.io/football/players/364303.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 367,
         "name" : "BK Hacken",
@@ -3154,94 +2440,21 @@
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 13,
-        "minutes" : 1069,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.807692",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 7,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 8
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 212,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 145,
-        "won" : 59
-      },
-      "dribbles" : {
-        "attempts" : 51,
-        "success" : 20,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 16,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 33,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 46,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -3249,8 +2462,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3284,11 +2497,30 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 395631,
+      "name" : "N. Zečević",
+      "firstname" : "Nikola",
+      "lastname" : "Zečević",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-06-16",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "192",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/395631.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 367,
         "name" : "BK Hacken",
@@ -3300,48 +2532,194 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 2,
-        "minutes" : 223,
+        "appearences" : 15,
+        "lineups" : 8,
+        "minutes" : 135,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Defender",
         "rating" : "6.550000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 4
+        "in" : 7,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 16,
-        "key" : null,
+        "total" : 107,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 6
       },
       "duels" : {
         "total" : 11,
-        "won" : 2
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : 5,
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 15,
+        "lineups" : 8,
+        "minutes" : 135,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.550000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 7,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 107,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 143,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "6.66",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 0,
+        "bench" : 15
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 115,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 2,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
@@ -3364,21 +2742,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 394996,
-      "name" : "A. Gashi",
-      "firstname" : "Albin",
-      "lastname" : "Gashi",
-      "age" : 19,
+      "id" : 404169,
+      "name" : "P. Dahbo",
+      "firstname" : "Pontus Bror Harry",
+      "lastname" : "Dahbo",
+      "age" : 20,
       "birth" : {
-        "date" : "2006-06-15",
+        "date" : "2005-10-11",
         "place" : null,
         "country" : "Sweden"
       },
       "nationality" : "Sweden",
-      "height" : null,
-      "weight" : null,
+      "height" : "185",
+      "weight" : "78",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/394996.png"
+      "photo" : "https://media.api-sports.io/football/players/404169.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3387,146 +2765,54 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 404884,
-      "name" : "S. Jansson",
-      "firstname" : "Sigge",
-      "lastname" : "Skorpan Jansson",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-11-10",
-        "place" : "Göteborg",
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "184 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/404884.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 64,
+        "lineups" : 0,
+        "minutes" : 10,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.300000",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 13
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 34,
+        "total" : 8,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 6,
-        "won" : 2
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -3535,7 +2821,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3543,79 +2829,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     }, {
@@ -3630,21 +2843,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 56,
-        "number" : null,
+        "minutes" : 24,
+        "number" : 16,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.85",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
         "out" : 0,
-        "bench" : 6
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -3653,11 +2866,11 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 21,
         "key" : null,
         "accuracy" : null
       },
@@ -3667,20 +2880,93 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 3,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 20,
+        "lineups" : 10,
+        "minutes" : 975,
+        "number" : 16,
+        "position" : "Midfielder",
+        "rating" : "6.84",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 10,
+        "out" : 7,
+        "bench" : 13
+      },
+      "shots" : {
+        "total" : 14,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 462,
+        "key" : 16,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 21,
+        "blocks" : null,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 114,
+        "won" : 46
+      },
+      "dribbles" : {
+        "attempts" : 22,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 26
+      },
+      "cards" : {
+        "yellow" : 3,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3717,113 +3003,40 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
         "id" : 848,
         "name" : "UEFA Europa Conference League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 95,
+        "number" : 19,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "7.6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 2
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
-        "key" : null,
+        "total" : 24,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -3832,16 +3045,16 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 6,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 3,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
@@ -3868,57 +3081,57 @@
         "country" : "Sweden",
         "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 21,
+        "lineups" : 10,
+        "minutes" : 937,
+        "number" : 19,
         "position" : "Attacker",
-        "rating" : "6.450000",
+        "rating" : "6.77",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 11,
+        "out" : 6,
+        "bench" : 12
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 25,
+        "on" : 13
       },
       "goals" : {
-        "total" : 0,
+        "total" : 4,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 3,
-        "key" : null,
+        "total" : 186,
+        "key" : 12,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 93,
+        "won" : 38
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 17,
+        "success" : 6,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 7,
+        "committed" : 17
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 5,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3932,21 +3145,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 429927,
-      "name" : "S. Nioule",
-      "firstname" : "Severin",
-      "lastname" : "Nioule",
-      "age" : 20,
+      "id" : 442520,
+      "name" : "H. Hilvenius",
+      "firstname" : "Harry Joachim",
+      "lastname" : "Hilvenius",
+      "age" : 18,
       "birth" : {
-        "date" : "2005-03-03",
+        "date" : "2007-10-06",
         "place" : null,
-        "country" : "Côte d'Ivoire"
+        "country" : "Sweden"
       },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "175 cm",
-      "weight" : "70 kg",
+      "nationality" : "Sweden",
+      "height" : "185",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/429927.png"
+      "photo" : "https://media.api-sports.io/football/players/442520.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3955,30 +3168,103 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 0,
-        "minutes" : 118,
+        "appearences" : 16,
+        "lineups" : 11,
+        "minutes" : 524,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.750000",
+        "position" : "Defender",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 0,
-        "bench" : 17
+        "in" : 5,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 2,
-        "on" : 1
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 272,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 4,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 29
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 45,
+        "number" : 44,
+        "position" : "Defender",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -3987,27 +3273,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 35,
-        "key" : 3,
-        "accuracy" : null
+        "total" : 48,
+        "key" : null,
+        "accuracy" : 42
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 2
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 15,
-        "won" : 7
+        "total" : 6,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 3,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -4028,135 +3314,62 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
+        "id" : 113,
+        "name" : "Allsvenskan",
         "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 101,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 11,
+        "lineups" : 7,
+        "minutes" : 704,
+        "number" : 44,
+        "position" : "Defender",
+        "rating" : "6.91",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 4,
+        "out" : 3,
+        "bench" : 12
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 367,
-        "name" : "BK Hacken",
-        "logo" : "https://media.api-sports.io/football/teams/367.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 53,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 366,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 14,
+        "blocks" : 7,
+        "interceptions" : 12
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 64,
+        "won" : 38
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 9,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -4193,50 +3406,50 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 113,
-        "name" : "Allsvenskan",
-        "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/113.png",
-        "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 21,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.700000",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 22,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 4,
-        "won" : 2
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
         "attempts" : null,
@@ -4248,15 +3461,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     }, {
@@ -4266,26 +3479,26 @@
         "logo" : "https://media.api-sports.io/football/teams/367.png"
       },
       "league" : {
-        "id" : 115,
-        "name" : "Svenska Cupen",
+        "id" : 113,
+        "name" : "Allsvenskan",
         "country" : "Sweden",
-        "logo" : "https://media.api-sports.io/football/leagues/115.png",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
         "flag" : "https://media.api-sports.io/flags/se.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 20,
-        "number" : null,
+        "minutes" : null,
+        "number" : 41,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -4293,8 +3506,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -4328,8 +3541,576 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 496418,
+      "name" : "Filip Ohman",
+      "firstname" : "Filip Olov",
+      "lastname" : "Öhman",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-01-26",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/496418.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 12,
+        "lineups" : 10,
+        "minutes" : 729,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.672727",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 315,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 27,
+        "blocks" : 1,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 98,
+        "won" : 46
+      },
+      "dribbles" : {
+        "attempts" : 22,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 12,
+        "lineups" : 10,
+        "minutes" : 799,
+        "number" : 28,
+        "position" : "Defender",
+        "rating" : "6.69",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 8,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 362,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 28,
+        "blocks" : 3,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 103,
+        "won" : 49
+      },
+      "dribbles" : {
+        "attempts" : 23,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 512860,
+      "name" : "C. Jansson",
+      "firstname" : "Chris",
+      "lastname" : "Jansson",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-02-06",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/512860.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 40,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 513512,
+      "name" : "N. Mitrovic",
+      "firstname" : "Nikola",
+      "lastname" : "Mitrovic",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-05-28",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/513512.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 4,
+        "minutes" : 46,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 18,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 367,
+        "name" : "BK Hacken",
+        "logo" : "https://media.api-sports.io/football/teams/367.png"
+      },
+      "league" : {
+        "id" : 113,
+        "name" : "Allsvenskan",
+        "country" : "Sweden",
+        "logo" : "https://media.api-sports.io/football/leagues/113.png",
+        "flag" : "https://media.api-sports.io/flags/se.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 116,
+        "number" : 42,
+        "position" : "Midfielder",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

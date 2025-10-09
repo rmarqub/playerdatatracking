@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "504"
   },
@@ -9,9 +9,101 @@
   "results" : 20,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
+    "player" : {
+      "id" : 203,
+      "name" : "R. Gagliardini",
+      "firstname" : "Roberto",
+      "lastname" : "Gagliardini",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-04-07",
+        "place" : "Bergamo",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "190",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/203.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 140,
+        "number" : 63,
+        "position" : "Midfielder",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 100,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
     "player" : {
       "id" : 418,
       "name" : "S. Serdar",
@@ -24,8 +116,8 @@
         "country" : "Germany"
       },
       "nationality" : "Germany",
-      "height" : "184 cm",
-      "weight" : "75 kg",
+      "height" : "184",
+      "weight" : "75",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/418.png"
     },
@@ -41,219 +133,54 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 14,
-        "lineups" : 12,
-        "minutes" : 940,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 517,
+        "number" : 8,
         "position" : "Midfielder",
-        "rating" : "6.714285",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 6,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 323,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : 3,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 123,
-        "won" : 57
-      },
-      "dribbles" : {
-        "attempts" : 25,
-        "success" : 14,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 23
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.92",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 3,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 867,
-      "name" : "G. Kastanos",
-      "firstname" : "Grigoris",
-      "lastname" : "Kastanos",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-30",
-        "place" : "Nikosia",
-        "country" : "Cyprus"
-      },
-      "nationality" : "Cyprus",
-      "height" : "176 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/867.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 8,
-        "minutes" : 716,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 8,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 5
+        "total" : 7,
+        "on" : 2
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 222,
-        "key" : 9,
+        "total" : 186,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 21,
-        "blocks" : 2,
-        "interceptions" : 8
+        "total" : 17,
+        "blocks" : 1,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 99,
-        "won" : 45
+        "total" : 61,
+        "won" : 34
       },
       "dribbles" : {
-        "attempts" : 11,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 14,
-        "committed" : 10
+        "drawn" : 7,
+        "committed" : 11
       },
       "cards" : {
         "yellow" : 2,
@@ -262,80 +189,7 @@
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 19,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 6,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
+        "commited" : 1,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
@@ -354,8 +208,8 @@
         "country" : "France"
       },
       "nationality" : "France",
-      "height" : "178 cm",
-      "weight" : "73 kg",
+      "height" : "178",
+      "weight" : "73",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1090.png"
     },
@@ -371,190 +225,25 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 67,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 495,
+        "number" : 24,
         "position" : "Midfielder",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 22,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 2822,
-      "name" : "D. Lazović",
-      "firstname" : "Darko",
-      "lastname" : "Lazović",
-      "age" : 35,
-      "birth" : {
-        "date" : "1990-09-15",
-        "place" : "Čačak",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "181 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/2822.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 17,
-        "minutes" : 1376,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.730434",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 13,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 13,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 344,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 3,
-        "interceptions" : 11
-      },
-      "duels" : {
-        "total" : 92,
-        "won" : 37
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 71,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
+        "rating" : "6.57",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 4,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -563,30 +252,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 23,
-        "key" : 3,
+        "total" : 174,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 2,
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 2,
-        "won" : 1
+        "total" : 50,
+        "won" : 22
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 10,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 5,
+        "committed" : 8
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -611,8 +300,8 @@
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : "178 cm",
-      "weight" : "69 kg",
+      "height" : "178",
+      "weight" : "69",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/14327.png"
     },
@@ -628,25 +317,25 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 14,
-        "minutes" : 1125,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.550000",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 511,
+        "number" : 12,
+        "position" : "Midfielder",
+        "rating" : "6.9",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 10,
-        "bench" : 9
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 3,
-        "on" : 3
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -655,119 +344,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 325,
-        "key" : 15,
+        "total" : 160,
+        "key" : 6,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 22,
-        "blocks" : 3,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 113,
-        "won" : 50
-      },
-      "dribbles" : {
-        "attempts" : 26,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 15909,
-      "name" : "M. Frese",
-      "firstname" : "Martin",
-      "lastname" : "Sønder Frese",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-04",
-        "place" : "Rødovre",
-        "country" : "Denmark"
-      },
-      "nationality" : "Denmark",
-      "height" : "179 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15909.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 336,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 135,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
+        "total" : 8,
         "blocks" : 1,
-        "interceptions" : 6
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 44,
-        "won" : 27
+        "total" : 30,
+        "won" : 18
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 7
+        "drawn" : 4,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -781,7 +378,26 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 15912,
+      "name" : "V. Nelsson",
+      "firstname" : "Victor Enok",
+      "lastname" : "Nelsson",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-10-14",
+        "place" : "Hornbæk",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "185",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/15912.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 504,
         "name" : "Verona",
@@ -793,13 +409,13 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 15,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -807,7 +423,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -815,8 +431,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -850,30 +466,11 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 22239,
-      "name" : "C. Niasse",
-      "firstname" : "Cheikh Ahmet Tidiane",
-      "lastname" : "Niasse",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-01-19",
-        "place" : "Gossas",
-        "country" : "Senegal"
-      },
-      "nationality" : "Senegal",
-      "height" : "188 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/22239.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 504,
         "name" : "Verona",
@@ -885,24 +482,24 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 219,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.800000",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : 15,
+        "position" : "Defender",
+        "rating" : "6.77",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -912,18 +509,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 70,
+        "total" : 201,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
-        "blocks" : 4,
-        "interceptions" : 11
+        "total" : 9,
+        "blocks" : 6,
+        "interceptions" : 9
       },
       "duels" : {
-        "total" : 26,
-        "won" : 16
+        "total" : 40,
+        "won" : 22
       },
       "dribbles" : {
         "attempts" : 1,
@@ -931,11 +528,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 4
+        "drawn" : 1,
+        "committed" : 7
       },
       "cards" : {
-        "yellow" : 3,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -949,21 +546,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 30921,
-      "name" : "P. Dawidowicz",
-      "firstname" : "Paweł Marek",
-      "lastname" : "Dawidowicz",
-      "age" : 30,
+      "id" : 30611,
+      "name" : "L. Montipò",
+      "firstname" : "Lorenzo",
+      "lastname" : "Montipò",
+      "age" : 29,
       "birth" : {
-        "date" : "1995-05-20",
-        "place" : "Olsztyn",
-        "country" : "Poland"
+        "date" : "1996-02-20",
+        "place" : "Novara",
+        "country" : "Italy"
       },
-      "nationality" : "Poland",
-      "height" : "189 cm",
-      "weight" : "80 kg",
+      "nationality" : "Italy",
+      "height" : "191",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/30921.png"
+      "photo" : "https://media.api-sports.io/football/players/30611.png"
     },
     "statistics" : [ {
       "team" : {
@@ -972,29 +569,29 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
+        "id" : 137,
+        "name" : "Coppa Italia",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 14,
-        "minutes" : 1062,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.393750",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 4,
-        "bench" : 3
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 3,
+        "total" : null,
         "on" : null
       },
       "goals" : {
@@ -1004,32 +601,32 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 482,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 28,
-        "blocks" : 4,
-        "interceptions" : 11
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 101,
-        "won" : 59
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 8,
-        "committed" : 22
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 0,
         "yellowred" : 0,
-        "red" : 1
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
@@ -1045,40 +642,40 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 35,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "6.62",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 0,
+        "conceded" : 9,
         "assists" : 0,
-        "saves" : null
+        "saves" : 17
       },
       "passes" : {
-        "total" : 27,
-        "key" : null,
+        "total" : 152,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -1109,26 +706,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 1
       }
     } ]
   }, {
     "player" : {
-      "id" : 30922,
-      "name" : "M. Faraoni",
-      "firstname" : "Marco Davide",
-      "lastname" : "Faraoni",
-      "age" : 34,
+      "id" : 31678,
+      "name" : "J. Akpa Akpro",
+      "firstname" : "Jean-Daniel Dave",
+      "lastname" : "Lewis Akpa Akpro",
+      "age" : 33,
       "birth" : {
-        "date" : "1991-10-25",
-        "place" : "Bracciano",
-        "country" : "Italy"
+        "date" : "1992-10-11",
+        "place" : "Toulouse",
+        "country" : "France"
       },
-      "nationality" : "Italy",
-      "height" : "180 cm",
-      "weight" : "71 kg",
+      "nationality" : "Côte d'Ivoire",
+      "height" : "180",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/30922.png"
+      "photo" : "https://media.api-sports.io/football/players/31678.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1142,262 +739,24 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 5,
-        "lineups" : 1,
-        "minutes" : 132,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 1,
-        "bench" : 22
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 37,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 3,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 37437,
-      "name" : "A. Harroui",
-      "firstname" : "Abdoulrahmane",
-      "lastname" : "Harroui",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-13",
-        "place" : "Leiden",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Morocco",
-      "height" : "182 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/37437.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 10,
-        "lineups" : 5,
-        "minutes" : 462,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 197,
+        "number" : 11,
         "position" : "Midfielder",
-        "rating" : "6.700000",
+        "rating" : "6.15",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 4,
-        "bench" : 6
+        "in" : 2,
+        "out" : 2,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 12,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 189,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 65,
-        "won" : 26
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 55,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
+        "total" : 2,
         "on" : 1
       },
       "goals" : {
@@ -1407,30 +766,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 27,
+        "total" : 45,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 25,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 3,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
+        "drawn" : null,
+        "committed" : 11
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1455,8 +814,8 @@
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "188 cm",
-      "weight" : "63 kg",
+      "height" : "188",
+      "weight" : "63",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/153408.png"
     },
@@ -1467,283 +826,191 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 34,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 194837,
-      "name" : "T. Suslov",
-      "firstname" : "Tomáš",
-      "lastname" : "Suslov",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-06-07",
-        "place" : "Spišská Nová Ves",
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "173 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/194837.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 19,
-        "minutes" : 1529,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.790909",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 14,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 21,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 352,
-        "key" : 22,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 39,
-        "blocks" : 2,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 259,
-        "won" : 116
-      },
-      "dribbles" : {
-        "attempts" : 49,
-        "success" : 29,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 44,
-        "committed" : 38
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
         "id" : 137,
         "name" : "Coppa Italia",
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 23,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 274299,
-      "name" : "Y. Okou",
-      "firstname" : "Yllan",
-      "lastname" : "Okou",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-12-23",
-        "place" : "Poitiers",
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "189 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/274299.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 1,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 8,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
         "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 180128,
+      "name" : "S. Mitrović",
+      "firstname" : "Stefan",
+      "lastname" : "Mitrović",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-08-15",
+        "place" : "Kruševac",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "181",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/180128.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 80,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : 0,
-        "bench" : 20
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -1756,7 +1023,99 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 303362,
+      "name" : "R. Belghali",
+      "firstname" : "Rafik",
+      "lastname" : "Belghali",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-06-07",
+        "place" : "Leuven",
+        "country" : "Belgium"
+      },
+      "nationality" : "Algeria",
+      "height" : "186",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/303362.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 7,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -1797,195 +1156,30 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 55,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 46,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 296560,
-      "name" : "J. Tchatchoua",
-      "firstname" : "Jackson",
-      "lastname" : "Tchatchoua",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-09-14",
-        "place" : "Ixelles",
-        "country" : "Belgium"
-      },
-      "nationality" : "Cameroon",
-      "height" : "186 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/296560.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
         "id" : 135,
         "name" : "Serie A",
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 23,
-        "lineups" : 23,
-        "minutes" : 1999,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 386,
+        "number" : 7,
         "position" : "Defender",
-        "rating" : "6.682608",
+        "rating" : "6.57",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
+        "in" : 2,
+        "out" : 1,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 10,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 558,
-        "key" : 23,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 41,
-        "blocks" : 7,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 155,
-        "won" : 88
-      },
-      "dribbles" : {
-        "attempts" : 29,
-        "success" : 15,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 17
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -1994,30 +1188,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 36,
-        "key" : 2,
+        "total" : 91,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 2,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 5
       },
       "duels" : {
-        "total" : 8,
-        "won" : 4
+        "total" : 29,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 11,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : 1
+        "drawn" : 1,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 3,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2042,8 +1236,8 @@
         "country" : "Argentina"
       },
       "nationality" : "Argentina",
-      "height" : "184 cm",
-      "weight" : "79 kg",
+      "height" : "184",
+      "weight" : "79",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/311071.png"
     },
@@ -2059,178 +1253,13 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 111,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 342019,
-      "name" : "D. Ghilardi",
-      "firstname" : "Daniele",
-      "lastname" : "Ghilardi",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-01-06",
-        "place" : null,
-        "country" : "Italy"
-      },
-      "nationality" : "Italy",
-      "height" : "189 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/342019.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 14,
-        "lineups" : 12,
-        "minutes" : 1180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.814285",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 492,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 24,
-        "blocks" : 9,
-        "interceptions" : 15
-      },
-      "duels" : {
-        "total" : 136,
-        "won" : 73
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 19
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 6,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2247,7 +1276,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2288,21 +1317,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 342063,
-      "name" : "D. Coppola",
-      "firstname" : "Diego",
-      "lastname" : "Coppola",
+      "id" : 312615,
+      "name" : "Giovane",
+      "firstname" : "Giovane",
+      "lastname" : "Santana do Nascimento",
       "age" : 22,
       "birth" : {
-        "date" : "2003-12-28",
+        "date" : "2003-11-24",
         "place" : null,
-        "country" : "Italy"
+        "country" : "Brazil"
       },
-      "nationality" : "Italy",
-      "height" : "192 cm",
-      "weight" : "78 kg",
+      "nationality" : "Brazil",
+      "height" : "183",
+      "weight" : "84",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/342063.png"
+      "photo" : "https://media.api-sports.io/football/players/312615.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2311,62 +1340,62 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 135,
-        "name" : "Serie A",
+        "id" : 137,
+        "name" : "Coppa Italia",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 21,
-        "minutes" : 1847,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.871428",
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 15,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 1,
-        "bench" : 2
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 7,
-        "on" : 2
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 728,
-        "key" : 3,
+        "total" : 2,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 44,
-        "blocks" : 20,
-        "interceptions" : 51
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 221,
-        "won" : 131
+        "total" : 4,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 3,
+        "attempts" : 2,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 29
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 9,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2384,59 +1413,59 @@
         "logo" : "https://media.api-sports.io/football/teams/504.png"
       },
       "league" : {
-        "id" : 137,
-        "name" : "Coppa Italia",
+        "id" : 135,
+        "name" : "Serie A",
         "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.200000",
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 492,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 3,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 18,
+        "on" : 12
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 73,
-        "key" : null,
-        "accuracy" : 64
+        "total" : 116,
+        "key" : 7,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : 2,
-        "interceptions" : 1
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 8
+        "total" : 79,
+        "won" : 26
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 15,
+        "success" : 8,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
+        "drawn" : 6,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 1,
@@ -2453,188 +1482,23 @@
     } ]
   }, {
     "player" : {
-      "id" : 368129,
-      "name" : "T. Slotsager",
-      "firstname" : "Tobias",
-      "lastname" : "Slotsager",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-01-01",
-        "place" : "Morud",
-        "country" : "Denmark"
-      },
-      "nationality" : "Denmark",
-      "height" : "190 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/368129.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 407337,
-      "name" : "K. Nwanege",
-      "firstname" : "Karlson Mukum",
-      "lastname" : "Nwanege",
+      "id" : 340076,
+      "name" : "L. Monticelli",
+      "firstname" : "Luca",
+      "lastname" : "Monticelli",
       "age" : 20,
       "birth" : {
-        "date" : "2005-04-28",
+        "date" : "2005-02-12",
         "place" : null,
-        "country" : "Sweden"
+        "country" : "Belgium"
       },
-      "nationality" : "Sweden",
-      "height" : "186 cm",
-      "weight" : "75 kg",
+      "nationality" : "Belgium",
+      "height" : "184",
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/407337.png"
+      "photo" : "https://media.api-sports.io/football/players/340076.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 504,
-        "name" : "Verona",
-        "logo" : "https://media.api-sports.io/football/teams/504.png"
-      },
-      "league" : {
-        "id" : 135,
-        "name" : "Serie A",
-        "country" : "Italy",
-        "logo" : "https://media.api-sports.io/football/leagues/135.png",
-        "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 504,
         "name" : "Verona",
@@ -2646,13 +1510,251 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/137.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 92,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 92,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 343565,
+      "name" : "A. Kurti",
+      "firstname" : "Adi",
+      "lastname" : "Kurti",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-01-17",
+        "place" : null,
+        "country" : "Albania"
+      },
+      "nationality" : "Albania",
+      "height" : "194",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/343565.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 5,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 22,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2669,7 +1771,356 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 350539,
+      "name" : "G. Toniolo",
+      "firstname" : "Giacomo",
+      "lastname" : "Toniolo",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-04-01",
+        "place" : null,
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/350539.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 94,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 368260,
+      "name" : "G. Orban",
+      "firstname" : "Gift Emmanuel",
+      "lastname" : "Orban",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-07-17",
+        "place" : "Benue",
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : "178",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/368260.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 5,
+        "number" : 16,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 169,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.550000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 12,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 37,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 405273,
+      "name" : "Charlys",
+      "firstname" : "Charlys Matheus",
+      "lastname" : "Lima Pontes",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-02-19",
+        "place" : "Maceió",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "186",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/405273.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2721,12 +2172,85 @@
         "country" : "Italy"
       },
       "nationality" : "Italy",
-      "height" : "180 cm",
-      "weight" : "78 kg",
+      "height" : "180",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/418846.png"
     },
     "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 15,
+        "number" : 71,
+        "position" : "Defender",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 504,
         "name" : "Verona",
@@ -2738,13 +2262,13 @@
         "country" : "Italy",
         "logo" : "https://media.api-sports.io/football/leagues/135.png",
         "flag" : "https://media.api-sports.io/flags/it.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 71,
         "position" : "Defender",
         "rating" : null,
         "captain" : false
@@ -2752,7 +2276,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2760,8 +2284,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2795,8 +2319,192 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 472079,
+      "name" : "William Feola",
+      "firstname" : "William",
+      "lastname" : "Feola",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-01-04",
+        "place" : "Roma",
+        "country" : "Italy"
+      },
+      "nationality" : "Italy",
+      "height" : "182 cm",
+      "weight" : "78 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/472079.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 137,
+        "name" : "Coppa Italia",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/137.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 77,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 546632,
+      "name" : "Mirko Castagnini",
+      "firstname" : null,
+      "lastname" : null,
+      "age" : null,
+      "birth" : {
+        "date" : null,
+        "place" : null,
+        "country" : null
+      },
+      "nationality" : null,
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/546632.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 504,
+        "name" : "Verona",
+        "logo" : "https://media.api-sports.io/football/teams/504.png"
+      },
+      "league" : {
+        "id" : 135,
+        "name" : "Serie A",
+        "country" : "Italy",
+        "logo" : "https://media.api-sports.io/football/leagues/135.png",
+        "flag" : "https://media.api-sports.io/flags/it.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 76,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

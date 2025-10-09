@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "569"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 11,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 78,
-      "name" : "H. Vanaken",
-      "firstname" : "Hans",
-      "lastname" : "Vanaken",
-      "age" : 33,
+      "id" : 282,
+      "name" : "S. Mignolet",
+      "firstname" : "Simon Luc Hildebert",
+      "lastname" : "Mignolet",
+      "age" : 37,
       "birth" : {
-        "date" : "1992-08-24",
-        "place" : "Neerpelt",
+        "date" : "1988-03-06",
+        "place" : "Sint-Truiden",
         "country" : "Belgium"
       },
       "nationality" : "Belgium",
-      "height" : "195 cm",
-      "weight" : "77 kg",
+      "height" : "193",
+      "weight" : "88",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/78.png"
+      "photo" : "https://media.api-sports.io/football/players/282.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,102 +41,29 @@
         "country" : "Belgium",
         "logo" : "https://media.api-sports.io/football/leagues/144.png",
         "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 25,
-        "lineups" : 25,
-        "minutes" : 2224,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.575000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 26,
-        "on" : 20
-      },
-      "goals" : {
-        "total" : 8,
-        "conceded" : 0,
-        "assists" : 6,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1224,
-        "key" : 36,
-        "accuracy" : 54
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : null,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 168,
-        "won" : 93
-      },
-      "dribbles" : {
-        "attempts" : 16,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 20,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 5,
-        "minutes" : 433,
-        "number" : null,
-        "position" : "Midfielder",
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
-        "conceded" : null,
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -164,16 +91,89 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 40,
+        "lineups" : 40,
+        "minutes" : 3600,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.855000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 48,
+        "assists" : null,
+        "saves" : 101
+      },
+      "passes" : {
+        "total" : 1290,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
       }
     }, {
       "team" : {
@@ -187,107 +187,34 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 810,
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 379,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.177777",
+        "position" : "Goalkeeper",
+        "rating" : "7.240000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 468,
-        "key" : 12,
-        "accuracy" : 46
-      },
-      "tackles" : {
-        "total" : 12,
-        "blocks" : 1,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 60,
-        "won" : 39
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 9,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "total" : null,
+        "conceded" : 3,
+        "assists" : 0,
+        "saves" : 8
       },
       "passes" : {
-        "total" : null,
+        "total" : 129,
         "key" : null,
         "accuracy" : null
       },
@@ -297,29 +224,29 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 5,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
       }
     } ]
   }, {
@@ -335,8 +262,8 @@
         "country" : "Sweden"
       },
       "nationality" : "Sweden",
-      "height" : "196 cm",
-      "weight" : "78 kg",
+      "height" : "196",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/15683.png"
     },
@@ -352,5247 +279,14 @@
         "country" : "Belgium",
         "logo" : "https://media.api-sports.io/football/leagues/144.png",
         "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 16,
-        "minutes" : 1344,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.475000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 7,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 46,
-        "on" : 23
-      },
-      "goals" : {
-        "total" : 9,
-        "conceded" : 0,
-        "assists" : 5,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 230,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 177,
-        "won" : 88
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 27,
-        "committed" : 26
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 96,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 132,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.725000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 29,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 15862,
-      "name" : "C. Nielsen",
-      "firstname" : "Casper",
-      "lastname" : "Mørup Nielsen",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-04-29",
-        "place" : "Esbjerg",
-        "country" : "Denmark"
-      },
-      "nationality" : "Denmark",
-      "height" : "182 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15862.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 5,
-        "minutes" : 433,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.741666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 5,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 161,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 3,
-        "interceptions" : 6
-      },
-      "duels" : {
-        "total" : 37,
-        "won" : 17
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 252,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 92,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 14,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 39080,
-      "name" : "P. Zinckernagel",
-      "firstname" : "Philip Aksel",
-      "lastname" : "Frigast Zinckernagel",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-12-16",
-        "place" : "København",
-        "country" : "Denmark"
-      },
-      "nationality" : "Denmark",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/39080.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 18,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 39291,
-      "name" : "H. Vetlesen",
-      "firstname" : "Hugo Vegard",
-      "lastname" : "Vetlesen",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-29",
-        "place" : "Oslo",
-        "country" : "Belgium"
-      },
-      "nationality" : "Norway",
-      "height" : "174 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/39291.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 14,
-        "minutes" : 1075,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.906666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 11,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 16,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 378,
-        "key" : 19,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : null,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 94,
-        "won" : 45
-      },
-      "dribbles" : {
-        "attempts" : 21,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 14
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 15,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 1,
-        "minutes" : 179,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.350000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 1,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 42,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 16,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 40809,
-      "name" : "M. Skóraś",
-      "firstname" : "Michał Krzysztof",
-      "lastname" : "Skóraś",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-15",
-        "place" : "Jastrzębie-Zdrój",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "172 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/40809.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 4,
-        "minutes" : 580,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.776470",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 16,
-        "out" : 2,
-        "bench" : 19
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 178,
-        "key" : 12,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 12,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 75,
-        "won" : 34
-      },
-      "dribbles" : {
-        "attempts" : 12,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 14,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 145,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 84,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.533333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 0,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 26,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 122734,
-      "name" : "Ferran Jutglà",
-      "firstname" : "Ferran",
-      "lastname" : "Jutglà Blanch",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-01",
-        "place" : "Sant Julià de Vilatorta",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/122734.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 5,
-        "minutes" : 745,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.772222",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 18,
-        "out" : 4,
-        "bench" : 21
-      },
-      "shots" : {
-        "total" : 20,
-        "on" : 14
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 210,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 9,
-        "blocks" : 1,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 85,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 264,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 8,
-        "minutes" : 628,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.911111",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 8,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 183,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 58,
-        "won" : 25
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 161800,
-      "name" : "C. Tzolis",
-      "firstname" : "Christos",
-      "lastname" : "Tzolis",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-01-30",
-        "place" : "Thessaloniki",
-        "country" : "Greece"
-      },
-      "nationality" : "Greece",
-      "height" : "179 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/161800.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 25,
-        "lineups" : 22,
-        "minutes" : 1847,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.410000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 17,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 51,
-        "on" : 25
-      },
-      "goals" : {
-        "total" : 8,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 576,
-        "key" : 40,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 1,
-        "interceptions" : 11
-      },
-      "duels" : {
-        "total" : 141,
-        "won" : 64
-      },
-      "dribbles" : {
-        "attempts" : 34,
-        "success" : 18,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 24,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 327,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 4,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 9,
-        "minutes" : 709,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.255555",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 8,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 9
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 241,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 10,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 71,
-        "won" : 35
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 10,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162219,
-      "name" : "R. Onyedika",
-      "firstname" : "Raphael",
-      "lastname" : "Onyedika Nwadike",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-04-19",
-        "place" : "Imo",
-        "country" : "Nigeria"
-      },
-      "nationality" : "Nigeria",
-      "height" : "184 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162219.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 22,
-        "lineups" : 18,
-        "minutes" : 1530,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.923529",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 11,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 658,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 26,
-        "blocks" : 3,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 126,
-        "won" : 62
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 15,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 311,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 3,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 670,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.737500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 343,
-        "key" : 6,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 61,
-        "won" : 32
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 12
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162463,
-      "name" : "A. Et-Taïbi",
-      "firstname" : "Amine",
-      "lastname" : "Et-Taïbi",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-02-05",
-        "place" : null,
-        "country" : "Belgium"
-      },
-      "nationality" : "Morocco",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162463.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 264705,
-      "name" : "A. Jashari",
-      "firstname" : "Ardon",
-      "lastname" : "Jashari",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-30",
-        "place" : "Cham",
-        "country" : "Switzerland"
-      },
-      "nationality" : "Switzerland",
-      "height" : "181 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/264705.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 17,
-        "minutes" : 1526,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.035294",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 880,
-        "key" : 12,
-        "accuracy" : 46
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : 3,
-        "interceptions" : 13
-      },
-      "duels" : {
-        "total" : 101,
-        "won" : 52
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 13,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 3,
-        "minutes" : 322,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 8,
-        "minutes" : 713,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.937500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 400,
-        "key" : 3,
-        "accuracy" : 44
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : 3,
-        "interceptions" : 5
-      },
-      "duels" : {
-        "total" : 50,
-        "won" : 25
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 7,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 271276,
-      "name" : "R. Vermant",
-      "firstname" : "Romeo",
-      "lastname" : "Vermant",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-24",
-        "place" : "Gelsenkirchen",
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "181 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/271276.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 7,
-        "minutes" : 636,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.981818",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 7,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 95,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 68,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 111,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 0,
-        "minutes" : 51,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.400000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 0,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 8,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 271609,
-      "name" : "L. Audoor",
-      "firstname" : "Lynnt",
-      "lastname" : "Audoor",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-10-13",
-        "place" : null,
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "182 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/271609.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 314511,
-      "name" : "A. Nusa",
-      "firstname" : "Antonio",
-      "lastname" : "Eromonsele Nordby Nusa",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-04-17",
-        "place" : "Ski",
-        "country" : "Norway"
-      },
-      "nationality" : "Norway",
-      "height" : "180 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/314511.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 163,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 49,
-        "key" : 8,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.575000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 156,
-        "key" : 11,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 68,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 29,
-        "success" : 13,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 12,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 336659,
-      "name" : "C. Talbi",
-      "firstname" : "Chemsdine",
-      "lastname" : "Talbi",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-05-09",
-        "place" : null,
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "175 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/336659.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 7,
-        "minutes" : 758,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.023076",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 11,
-        "out" : 7,
-        "bench" : 15
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 4
-      },
-      "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 226,
-        "key" : 17,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 50,
-        "won" : 26
-      },
-      "dribbles" : {
-        "attempts" : 26,
-        "success" : 13,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 3,
-        "minutes" : 254,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 4,
-        "minutes" : 353,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.537500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 4,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 90,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : null,
-        "interceptions" : 3
-      },
-      "duels" : {
-        "total" : 27,
-        "won" : 9
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 375974,
-      "name" : "J. Seys",
-      "firstname" : "Joaquin",
-      "lastname" : "Seys",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-28",
-        "place" : "Oostende",
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "168 cm",
-      "weight" : "52 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/375974.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 20,
-        "minutes" : 1583,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.021052",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 14,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 835,
-        "key" : 14,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 49,
-        "blocks" : 4,
-        "interceptions" : 25
-      },
-      "duels" : {
-        "total" : 137,
-        "won" : 84
-      },
-      "dribbles" : {
-        "attempts" : 15,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 10,
-        "committed" : 8
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 109,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 8,
-        "minutes" : 678,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.777777",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 347,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : 2,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 53,
-        "won" : 27
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 4
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 387644,
-      "name" : "B. Yameogo",
-      "firstname" : "Bi Abdoul",
-      "lastname" : "Kader Yameogo",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-12-17",
-        "place" : null,
-        "country" : "Côte d'Ivoire"
-      },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "184 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/387644.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 393193,
-      "name" : "Kaye Iyowuna Furo",
-      "firstname" : "Kaye Iyowuna",
-      "lastname" : "Furo",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-02-06",
-        "place" : null,
-        "country" : "Belgium"
-      },
-      "nationality" : "Belgium",
-      "height" : "190 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/393193.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 147,
-        "name" : "Cup",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/147.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 430077,
-      "name" : "S. Campbell",
-      "firstname" : "Shandre",
-      "lastname" : "Campbell",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-07-15",
-        "place" : null,
-        "country" : "South Africa"
-      },
-      "nationality" : "South Africa",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/430077.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 5,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 2,
-        "name" : "UEFA Champions League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/2.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 667,
-        "name" : "Friendlies Clubs",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/667.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 474741,
-      "name" : "V. Osuji",
-      "firstname" : "Vince Chijioke",
-      "lastname" : "Osuji",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-04-06",
-        "place" : null,
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : "188 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/474741.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 569,
-        "name" : "Club Brugge KV",
-        "logo" : "https://media.api-sports.io/football/teams/569.png"
-      },
-      "league" : {
-        "id" : 144,
-        "name" : "Jupiler Pro League",
-        "country" : "Belgium",
-        "logo" : "https://media.api-sports.io/football/leagues/144.png",
-        "flag" : "https://media.api-sports.io/flags/be.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
@@ -5653,26 +347,429 @@
         "logo" : "https://media.api-sports.io/football/teams/569.png"
       },
       "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 30,
+        "lineups" : 17,
+        "minutes" : 1047,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.755172",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 13,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 26,
+        "on" : 12
+      },
+      "goals" : {
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 237,
+        "key" : 12,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 16,
+        "blocks" : 4,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 174,
+        "won" : 82
+      },
+      "dribbles" : {
+        "attempts" : 19,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 12,
+        "committed" : 26
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
         "id" : 2,
         "name" : "UEFA Champions League",
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 32,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.200000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 8,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 38124,
+      "name" : "L. Reis",
+      "firstname" : "Ludovit",
+      "lastname" : "Reis",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-06-01",
+        "place" : "Haarlem",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "178",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/38124.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 59,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
+        "key" : null,
+        "accuracy" : 52
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 31,
+        "lineups" : 31,
+        "minutes" : 2669,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.993548",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 27,
+        "on" : 16
+      },
+      "goals" : {
+        "total" : 9,
+        "conceded" : 0,
+        "assists" : 5,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1422,
+        "key" : 41,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 72,
+        "blocks" : 3,
+        "interceptions" : 22
+      },
+      "duels" : {
+        "total" : 396,
+        "won" : 191
+      },
+      "dribbles" : {
+        "attempts" : 109,
+        "success" : 74,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 23,
+        "committed" : 41
+      },
+      "cards" : {
+        "yellow" : 5,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 156,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.800000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 89,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 40809,
+      "name" : "M. Skóraś",
+      "firstname" : "Michał Krzysztof",
+      "lastname" : "Skóraś",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-02-15",
+        "place" : "Jastrzębie-Zdrój",
+        "country" : "Poland"
+      },
+      "nationality" : "Poland",
+      "height" : "172",
+      "weight" : "64",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/40809.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 21,
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -5680,8 +777,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -5715,8 +812,1528 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 76,
+        "number" : 21,
+        "position" : "Attacker",
+        "rating" : "7.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 36,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 161800,
+      "name" : "C. Tzolis",
+      "firstname" : "Christos",
+      "lastname" : "Tzolis",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-01-30",
+        "place" : "Thessaloniki",
+        "country" : "Greece"
+      },
+      "nationality" : "Greece",
+      "height" : "179",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/161800.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 38,
+        "lineups" : 37,
+        "minutes" : 2830,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.654054",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 102,
+        "on" : 53
+      },
+      "goals" : {
+        "total" : 16,
+        "conceded" : 0,
+        "assists" : 9,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1097,
+        "key" : 77,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 34,
+        "blocks" : 2,
+        "interceptions" : 21
+      },
+      "duels" : {
+        "total" : 269,
+        "won" : 131
+      },
+      "dribbles" : {
+        "attempts" : 56,
+        "success" : 31,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 47,
+        "committed" : 20
+      },
+      "cards" : {
+        "yellow" : 6,
+        "yellowred" : null,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 3,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 418,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.840000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 16,
+        "on" : 9
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 4,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 160,
+        "key" : 19,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 44,
+        "won" : 27
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 9,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 282126,
+      "name" : "Carlos Forbs",
+      "firstname" : "Carlos Roberto",
+      "lastname" : "Forbs Borges",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-03-19",
+        "place" : null,
+        "country" : "Portugal"
+      },
+      "nationality" : "Portugal",
+      "height" : "169",
+      "weight" : "62",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/282126.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 31,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 161,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 49,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 269,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "7.400000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 92,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 19
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 9,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 282903,
+      "name" : "D. van den Heuvel",
+      "firstname" : "Tristan Danique",
+      "lastname" : "van den Heuvel",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-28",
+        "place" : "Delft",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "186",
+      "weight" : "73",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/282903.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 9,
+        "assists" : 0,
+        "saves" : 25
+      },
+      "passes" : {
+        "total" : 238,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 287923,
+      "name" : "N. Tresoldi",
+      "firstname" : "Nicolò",
+      "lastname" : "Tresoldi",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-08-20",
+        "place" : "Cagliari",
+        "country" : "Italy"
+      },
+      "nationality" : "Germany",
+      "height" : "183",
+      "weight" : "77",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/287923.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 32,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 2,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 25,
+        "lineups" : 17,
+        "minutes" : 432,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.580000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 8,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 58,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 57,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 4,
+        "minutes" : 227,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.875000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 11,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 46,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 290213,
+      "name" : "H. Siquet",
+      "firstname" : "Hugo Thierry",
+      "lastname" : "Siquet",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-07-09",
+        "place" : "Marche-en-Famenne",
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : "180",
+      "weight" : "70",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/290213.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : null,
+        "name" : "Super Cup",
+        "country" : null,
+        "logo" : null,
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 29,
+        "lineups" : 15,
+        "minutes" : 667,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.761111",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 14,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 369,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 23,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 97,
+        "won" : 52
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 7,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 5,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 1,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 55,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "7.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 32,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 386481,
+      "name" : "M. Diakhon",
+      "firstname" : "Mamadou",
+      "lastname" : "Diakhon",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-09-22",
+        "place" : null,
+        "country" : "France"
+      },
+      "nationality" : "France",
+      "height" : "180",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/386481.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 82,
+        "number" : 67,
+        "position" : "Attacker",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 34,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 1,
+        "minutes" : 177,
+        "number" : 67,
+        "position" : "Attacker",
+        "rating" : "6.84",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 1,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 54,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 395891,
+      "name" : "A. De Corte",
+      "firstname" : "Axl",
+      "lastname" : "De Corte",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-03-24",
+        "place" : null,
+        "country" : "Belgium"
+      },
+      "nationality" : "Belgium",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/395891.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 569,
+        "name" : "Club Brugge KV",
+        "logo" : "https://media.api-sports.io/football/teams/569.png"
+      },
+      "league" : {
+        "id" : 144,
+        "name" : "Jupiler Pro League",
+        "country" : "Belgium",
+        "logo" : "https://media.api-sports.io/football/leagues/144.png",
+        "flag" : "https://media.api-sports.io/flags/be.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 71,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

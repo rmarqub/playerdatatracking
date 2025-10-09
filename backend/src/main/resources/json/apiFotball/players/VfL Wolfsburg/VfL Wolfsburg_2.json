@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "161"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 15,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 1141,
-      "name" : "M. Müller",
-      "firstname" : "Marius",
-      "lastname" : "Müller",
-      "age" : 32,
+      "id" : 1302,
+      "name" : "J. Wind",
+      "firstname" : "Jonas Older",
+      "lastname" : "Wind",
+      "age" : 26,
       "birth" : {
-        "date" : "1993-07-12",
-        "place" : "Heppenheim",
-        "country" : "Germany"
+        "date" : "1999-02-07",
+        "place" : "København",
+        "country" : "Denmark"
       },
-      "nationality" : "Germany",
-      "height" : "192 cm",
-      "weight" : "92 kg",
+      "nationality" : "Denmark",
+      "height" : "190",
+      "weight" : "82",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1141.png"
+      "photo" : "https://media.api-sports.io/football/players/1302.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,34 +41,34 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
+        "appearences" : 4,
         "lineups" : 2,
-        "minutes" : 204,
+        "minutes" : 18,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.066666",
+        "position" : "Attacker",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 20
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 2,
+        "total" : null,
+        "conceded" : 0,
         "assists" : 0,
-        "saves" : 5
+        "saves" : null
       },
       "passes" : {
-        "total" : 92,
+        "total" : 4,
         "key" : null,
         "accuracy" : null
       },
@@ -78,8 +78,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 2
+        "total" : 5,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -87,177 +87,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 2
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1291,
-      "name" : "D. Vavro",
-      "firstname" : "Denis",
-      "lastname" : "Vavro",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-04-10",
-        "place" : "Partizánske",
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "189 cm",
-      "weight" : "81 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1291.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 17,
-        "minutes" : 1530,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.211764",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 946,
-        "key" : 6,
-        "accuracy" : 48
-      },
-      "tackles" : {
-        "total" : 11,
-        "blocks" : 17,
-        "interceptions" : 18
-      },
-      "duels" : {
-        "total" : 111,
-        "won" : 70
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 6
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -279,65 +114,65 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
+        "appearences" : 25,
+        "lineups" : 20,
+        "minutes" : 1300,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "7.550000",
+        "position" : "Attacker",
+        "rating" : "6.865217",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 5,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : 1
+        "total" : 22,
+        "on" : 10
       },
       "goals" : {
-        "total" : 1,
+        "total" : 6,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 119,
-        "key" : null,
-        "accuracy" : 52
+        "total" : 367,
+        "key" : 14,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
-        "blocks" : 1,
+        "total" : 14,
+        "blocks" : 4,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 15,
-        "won" : 9
+        "total" : 212,
+        "won" : 106
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 20,
+        "success" : 7,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
+        "drawn" : 22,
+        "committed" : 17
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
         "scored" : 0,
-        "missed" : 0,
+        "missed" : 1,
         "saved" : null
       }
     } ]
@@ -354,8 +189,8 @@
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : "178 cm",
-      "weight" : "76 kg",
+      "height" : "178",
+      "weight" : "76",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1321.png"
     },
@@ -371,58 +206,131 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 146,
+        "lineups" : 4,
+        "minutes" : 279,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.050000",
+        "rating" : "6.675000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 94,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : 3,
-        "on" : 2
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 33,
+        "lineups" : 26,
+        "minutes" : 1675,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.943750",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 7,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 24,
+        "on" : 12
       },
       "goals" : {
         "total" : 2,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 5,
         "saves" : null
       },
       "passes" : {
-        "total" : 41,
-        "key" : 1,
+        "total" : 895,
+        "key" : 36,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 34,
+        "blocks" : 1,
+        "interceptions" : 21
       },
       "duels" : {
-        "total" : 22,
-        "won" : 8
+        "total" : 217,
+        "won" : 99
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 3,
+        "attempts" : 41,
+        "success" : 28,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 5
+        "drawn" : 30,
+        "committed" : 48
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -439,63 +347,63 @@
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 180,
+        "minutes" : 144,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "7.550000",
+        "rating" : "6.600000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 94,
-        "key" : 5,
+        "total" : 67,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 6,
         "blocks" : null,
-        "interceptions" : 3
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 17,
-        "won" : 7
+        "total" : 16,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 2
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -519,8 +427,8 @@
         "country" : "Belgium"
       },
       "nationality" : "Belgium",
-      "height" : "191 cm",
-      "weight" : "81 kg",
+      "height" : "191",
+      "weight" : "81",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/1408.png"
     },
@@ -531,85 +439,12 @@
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 7,
-        "minutes" : 659,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 0,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 7,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 246,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 7,
-        "blocks" : 12,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 64,
-        "won" : 36
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
@@ -622,15 +457,15 @@
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
@@ -660,7 +495,7 @@
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -673,21 +508,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 1930,
-      "name" : "J. Mæhle",
-      "firstname" : "Joakim",
-      "lastname" : "Mæhle Pedersen",
-      "age" : 28,
+      "id" : 15916,
+      "name" : "A. Skov Olsen",
+      "firstname" : "Andreas",
+      "lastname" : "Skov Olsen",
+      "age" : 26,
       "birth" : {
-        "date" : "1997-05-20",
-        "place" : "Østervrå",
+        "date" : "1999-12-29",
+        "place" : "Hillerød",
         "country" : "Denmark"
       },
       "nationality" : "Denmark",
-      "height" : "185 cm",
-      "weight" : "79 kg",
+      "height" : "187",
+      "weight" : "75",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1930.png"
+      "photo" : "https://media.api-sports.io/football/players/15916.png"
     },
     "statistics" : [ {
       "team" : {
@@ -701,200 +536,35 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 14,
-        "minutes" : 1197,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 268,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.953333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 9,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 525,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : 3,
-        "interceptions" : 15
-      },
-      "duels" : {
-        "total" : 105,
-        "won" : 52
-      },
-      "dribbles" : {
-        "attempts" : 32,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 207,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.450000",
+        "position" : "Attacker",
+        "rating" : "6.950000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 4,
-        "on" : 1
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 79,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : 4,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 11,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 2,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 15573,
-      "name" : "K. Grabara",
-      "firstname" : "Kamil Mieczysław",
-      "lastname" : "Grabara",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-01-08",
-        "place" : "Ruda Śląska",
-        "country" : "Poland"
-      },
-      "nationality" : "Poland",
-      "height" : "195 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15573.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1776,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.040000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 31,
-        "assists" : 0,
-        "saves" : 66
-      },
-      "passes" : {
-        "total" : 691,
-        "key" : 2,
+        "total" : 86,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
@@ -903,21 +573,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 8
+        "total" : 9,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 3,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -925,7 +595,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 2
+        "saved" : null
       }
     }, {
       "team" : {
@@ -939,34 +609,199 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 300,
+        "appearences" : 23,
+        "lineups" : 20,
+        "minutes" : 1575,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "7.400000",
+        "position" : "Attacker",
+        "rating" : "7.439130",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 43,
+        "on" : 22
+      },
+      "goals" : {
+        "total" : 7,
+        "conceded" : 0,
+        "assists" : 6,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 611,
+        "key" : 50,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 14,
+        "blocks" : 3,
+        "interceptions" : 13
+      },
+      "duels" : {
+        "total" : 151,
+        "won" : 77
+      },
+      "dribbles" : {
+        "attempts" : 58,
+        "success" : 30,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 30,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 71,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 20,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 25400,
+      "name" : "Y. Gerhardt",
+      "firstname" : "Yannick",
+      "lastname" : "Gerhardt",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-03-13",
+        "place" : "Würselen",
+        "country" : "Germany"
+      },
+      "nationality" : "Germany",
+      "height" : "184",
+      "weight" : "81",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/25400.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 2,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
-        "saves" : 5
+        "saves" : null
       },
       "passes" : {
-        "total" : 103,
+        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -990,7 +825,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -998,26 +833,172 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 29,
+        "lineups" : 26,
+        "minutes" : 1873,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.700000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 23,
+        "on" : 13
+      },
+      "goals" : {
+        "total" : 6,
+        "conceded" : 0,
+        "assists" : 4,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 646,
+        "key" : 20,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 29,
+        "blocks" : 5,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 171,
+        "won" : 76
+      },
+      "dribbles" : {
+        "attempts" : 15,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 21,
+        "committed" : 18
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 171,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.100000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 96,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 15,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 15745,
-      "name" : "M. Roerslev",
-      "firstname" : "Mads",
-      "lastname" : "Roerslev Rasmussen",
-      "age" : 26,
+      "id" : 25408,
+      "name" : "M. Arnold",
+      "firstname" : "Maximilian",
+      "lastname" : "Arnold",
+      "age" : 31,
       "birth" : {
-        "date" : "1999-06-24",
-        "place" : "København",
-        "country" : "Denmark"
+        "date" : "1994-05-27",
+        "place" : "Riesa",
+        "country" : "Germany"
       },
-      "nationality" : "Denmark",
-      "height" : "184 cm",
-      "weight" : "77 kg",
+      "nationality" : "Germany",
+      "height" : "184",
+      "weight" : "74",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/15745.png"
+      "photo" : "https://media.api-sports.io/football/players/25408.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1031,28 +1012,266 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 59,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.250000",
+        "position" : "Midfielder",
+        "rating" : "7.600000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 2,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 196,
+        "key" : 13,
+        "accuracy" : 41
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 3,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 13,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 81,
+        "name" : "DFB Pokal",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 32,
+        "lineups" : 32,
+        "minutes" : 2775,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.250000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 26,
+        "on" : 15
+      },
+      "goals" : {
+        "total" : 5,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 1465,
+        "key" : 43,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 62,
+        "blocks" : 11,
+        "interceptions" : 26
+      },
+      "duels" : {
+        "total" : 280,
+        "won" : 164
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 8,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 64,
+        "committed" : 33
+      },
+      "cards" : {
+        "yellow" : 5,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 3,
+        "missed" : 2,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 210,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.800000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 104,
+        "key" : 10,
+        "accuracy" : 48
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30484,
+      "name" : "M. Svanberg",
+      "firstname" : "Mattias Olof",
+      "lastname" : "Svanberg",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-01-05",
+        "place" : "Malmö",
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "185",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30484.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 78,
+        "name" : "Bundesliga",
+        "country" : "Germany",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "flag" : "https://media.api-sports.io/flags/de.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 87,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.966666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
@@ -1068,8 +1287,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 6,
-        "won" : 1
+        "total" : 15,
+        "won" : 9
       },
       "dribbles" : {
         "attempts" : null,
@@ -1077,13 +1296,13 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
@@ -1091,98 +1310,6 @@
         "scored" : 0,
         "missed" : 0,
         "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 25396,
-      "name" : "P. Pervan",
-      "firstname" : "Pavao",
-      "lastname" : "Pervan",
-      "age" : 38,
-      "birth" : {
-        "date" : "1987-11-13",
-        "place" : "Livno",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Austria",
-      "height" : "194 cm",
-      "weight" : "88 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/25396.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 1
       }
     }, {
       "team" : {
@@ -1196,150 +1323,131 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 33,
+        "lineups" : 27,
+        "minutes" : 1841,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.753125",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 6,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 21,
+        "on" : 10
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 6,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 526,
+        "key" : 26,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 25,
+        "blocks" : 5,
+        "interceptions" : 21
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 211,
+        "won" : 90
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 39,
+        "success" : 17,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 28,
+        "committed" : 27
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 4,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 25917,
-      "name" : "R. Baku",
-      "firstname" : "Bote Ridle",
-      "lastname" : "Nzuzi Baku",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-04-08",
-        "place" : "Mainz",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "176 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/25917.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 161,
         "name" : "VfL Wolfsburg",
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 15,
-        "lineups" : 14,
-        "minutes" : 1175,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 203,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.871428",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 6,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 160,
-        "key" : 2,
+        "total" : 78,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 9,
-        "blocks" : 2,
-        "interceptions" : 2
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 37,
-        "won" : 21
+        "total" : 27,
+        "won" : 20
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 5,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
+        "drawn" : 10,
         "committed" : 3
       },
       "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1347,244 +1455,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 257,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.166666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 2,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 104,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 2,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 19,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 3,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 30527,
-      "name" : "Rogério",
-      "firstname" : "Rogério",
-      "lastname" : "Oliveira da Silva",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-01-13",
-        "place" : "Nobres",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "178 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/30527.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1601,8 +1471,8 @@
         "country" : "Poland"
       },
       "nationality" : "Poland",
-      "height" : "179 cm",
-      "weight" : "64 kg",
+      "height" : "179",
+      "weight" : "64",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/40560.png"
     },
@@ -1618,223 +1488,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 8,
-        "minutes" : 721,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.692307",
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 2,
-        "bench" : 11
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 5,
-        "on" : 1
+        "total" : 7,
+        "on" : 4
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 212,
-        "key" : 13,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 12,
-        "blocks" : 6,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 64,
-        "won" : 21
-      },
-      "dribbles" : {
-        "attempts" : 9,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 133,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.050000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 64,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 10,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 48574,
-      "name" : "C. Zesiger",
-      "firstname" : "Cédric Adrian",
-      "lastname" : "Zesiger",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-06-24",
-        "place" : "Meyriez FR",
-        "country" : "Switzerland"
-      },
-      "nationality" : "Switzerland",
-      "height" : "194 cm",
-      "weight" : "92 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/48574.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 5,
-        "minutes" : 520,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 117,
-        "key" : 1,
+        "total" : 114,
+        "key" : 9,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
         "blocks" : 1,
-        "interceptions" : 8
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 34,
-        "won" : 19
+        "total" : 28,
+        "won" : 12
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
         "drawn" : 3,
-        "committed" : 3
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1856,34 +1561,34 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 90,
+        "minutes" : 75,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.900000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 31,
         "key" : null,
         "accuracy" : null
       },
@@ -1893,21 +1598,21 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 7,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 4,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1931,8 +1636,8 @@
         "country" : "Belgium"
       },
       "nationality" : "Belgium",
-      "height" : "183 cm",
-      "weight" : "78 kg",
+      "height" : "183",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/127413.png"
     },
@@ -1948,58 +1653,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 9,
-        "lineups" : 2,
-        "minutes" : 252,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 202,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : "6.477777",
+        "rating" : "6.766666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 1,
-        "bench" : 9
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 79,
+        "total" : 73,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : 1,
-        "interceptions" : 5
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 42,
-        "won" : 21
+        "total" : 24,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 4,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
-        "committed" : 6
+        "drawn" : 8,
+        "committed" : 3
       },
       "cards" : {
         "yellow" : 1,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2021,34 +1726,34 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 13,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.700000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
+        "total" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
@@ -2058,8 +1763,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -2067,39 +1772,112 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 1,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 9,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.300000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 129133,
-      "name" : "N. Klinger",
-      "firstname" : "Niklas",
-      "lastname" : "Klinger",
-      "age" : 30,
+      "id" : 149557,
+      "name" : "K. Paredes",
+      "firstname" : "Kevin Alexander",
+      "lastname" : "Paredes",
+      "age" : 22,
       "birth" : {
-        "date" : "1995-10-13",
-        "place" : "Wolfsburg",
-        "country" : "Germany"
+        "date" : "2003-05-07",
+        "place" : "South Riding",
+        "country" : "USA"
       },
-      "nationality" : "Germany",
-      "height" : "187 cm",
-      "weight" : "85 kg",
+      "nationality" : "USA",
+      "height" : "170",
+      "weight" : "61",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/129133.png"
+      "photo" : "https://media.api-sports.io/football/players/149557.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2113,28 +1891,28 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Goalkeeper",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2163,9 +1941,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2186,65 +1964,138 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 24,
+        "lineups" : 12,
+        "minutes" : 519,
         "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.772727",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 12,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 3,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 174,
+        "key" : 14,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 13,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 61,
+        "won" : 38
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 11,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 18,
+        "committed" : 4
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 24,
+        "lineups" : 12,
+        "minutes" : 519,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.772727",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 12,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 174,
+        "key" : 14,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : null,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 61,
+        "won" : 38
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 18,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -2261,8 +2112,8 @@
         "country" : "Greece"
       },
       "nationality" : "Greece",
-      "height" : "188 cm",
-      "weight" : "78 kg",
+      "height" : "188",
+      "weight" : "78",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/162409.png"
     },
@@ -2278,118 +2129,45 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 18,
-        "minutes" : 1634,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.895000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1018,
-        "key" : 7,
-        "accuracy" : 42
-      },
-      "tackles" : {
-        "total" : 32,
-        "blocks" : 9,
-        "interceptions" : 22
-      },
-      "duels" : {
-        "total" : 138,
-        "won" : 81
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 21
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.750000",
+        "rating" : "6.850000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 3,
-        "on" : 2
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 113,
+        "total" : 224,
         "key" : null,
-        "accuracy" : 48
+        "accuracy" : 47
       },
       "tackles" : {
         "total" : 4,
-        "blocks" : 4,
-        "interceptions" : 5
+        "blocks" : 5,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 18,
-        "won" : 12
+        "total" : 23,
+        "won" : 10
       },
       "dribbles" : {
         "attempts" : null,
@@ -2397,12 +2175,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 3
+        "drawn" : 1,
+        "committed" : 6
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2412,89 +2190,70 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 177618,
-      "name" : "K. Fischer",
-      "firstname" : "Kilian",
-      "lastname" : "Fischer",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-10-12",
-        "place" : "Miltenberg",
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "182 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/177618.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 161,
         "name" : "VfL Wolfsburg",
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
+        "id" : 81,
+        "name" : "DFB Pokal",
         "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
+        "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 22,
-        "lineups" : 20,
-        "minutes" : 1601,
+        "appearences" : 21,
+        "lineups" : 19,
+        "minutes" : 1448,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.586363",
+        "rating" : "6.917647",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
-        "out" : 12,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 2,
-        "on" : null
+        "total" : 16,
+        "on" : 8
       },
       "goals" : {
-        "total" : 0,
+        "total" : 2,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 592,
-        "key" : 7,
-        "accuracy" : null
+        "total" : 985,
+        "key" : 1,
+        "accuracy" : 49
       },
       "tackles" : {
-        "total" : 47,
-        "blocks" : 5,
-        "interceptions" : 14
+        "total" : 10,
+        "blocks" : 9,
+        "interceptions" : 15
       },
       "duels" : {
-        "total" : 154,
-        "won" : 71
+        "total" : 89,
+        "won" : 55
       },
       "dribbles" : {
-        "attempts" : 17,
-        "success" : 7,
+        "attempts" : 5,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 23
+        "drawn" : 11,
+        "committed" : 20
       },
       "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
+        "yellow" : 3,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2511,63 +2270,63 @@
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 254,
+        "lineups" : 3,
+        "minutes" : 300,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.166666",
+        "rating" : "7.500000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 3,
+        "on" : 2
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 98,
-        "key" : 2,
-        "accuracy" : null
+        "total" : 175,
+        "key" : null,
+        "accuracy" : 50
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 2
+        "total" : 6,
+        "blocks" : 5,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : 23,
-        "won" : 14
+        "total" : 25,
+        "won" : 17
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 7,
-        "committed" : 3
+        "drawn" : 4,
+        "committed" : 5
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2580,21 +2339,113 @@
     } ]
   }, {
     "player" : {
-      "id" : 231032,
-      "name" : "M. Jenz",
-      "firstname" : "Moritz",
-      "lastname" : "Jenz",
-      "age" : 26,
+      "id" : 265363,
+      "name" : "Tiago Tomás",
+      "firstname" : "Tiago",
+      "lastname" : "Barreiros de Melo Tomás",
+      "age" : 23,
       "birth" : {
-        "date" : "1999-04-30",
-        "place" : "Berlin",
-        "country" : "Germany"
+        "date" : "2002-06-16",
+        "place" : "Lisboa",
+        "country" : "Portugal"
       },
-      "nationality" : "Germany",
-      "height" : "190 cm",
-      "weight" : "86 kg",
+      "nationality" : "Portugal",
+      "height" : "180",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/231032.png"
+      "photo" : "https://media.api-sports.io/football/players/265363.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 290545,
+      "name" : "J. Seelt",
+      "firstname" : "Jenson",
+      "lastname" : "Seelt",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-23",
+        "place" : "Ede",
+        "country" : "Netherlands"
+      },
+      "nationality" : "Netherlands",
+      "height" : "192",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/290545.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2608,58 +2459,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
+        "minutes" : 21,
         "number" : null,
         "position" : "Defender",
-        "rating" : "7.154545",
+        "rating" : "6.200000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 4,
-        "on" : 3
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 497,
-        "key" : 2,
-        "accuracy" : 41
+        "total" : 5,
+        "key" : null,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 19,
-        "blocks" : 9,
-        "interceptions" : 11
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 108,
-        "won" : 70
+        "total" : 4,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
-        "committed" : 12
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2669,52 +2520,71 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 362564,
+      "name" : "A. Daghim",
+      "firstname" : "Adam",
+      "lastname" : "Daghim",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-09-28",
+        "place" : "Vanløse",
+        "country" : "Denmark"
+      },
+      "nationality" : "Denmark",
+      "height" : "189",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/362564.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 161,
         "name" : "VfL Wolfsburg",
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
+        "id" : 78,
+        "name" : "Bundesliga",
         "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
+        "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 62,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "5.900000",
+        "position" : "Attacker",
+        "rating" : "6.250000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 8,
+        "total" : 24,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 1,
-        "blocks" : 1,
+        "blocks" : null,
         "interceptions" : 1
       },
       "duels" : {
@@ -2722,17 +2592,90 @@
         "won" : 2
       },
       "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 161,
+        "name" : "VfL Wolfsburg",
+        "logo" : "https://media.api-sports.io/football/teams/161.png"
+      },
+      "league" : {
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 82,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.500000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 25,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 10,
+        "won" : 3
+      },
+      "dribbles" : {
         "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 3
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2745,21 +2688,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 394740,
-      "name" : "D. Odogu",
-      "firstname" : "David Uyoyo",
-      "lastname" : "Odogu",
+      "id" : 380503,
+      "name" : "Bence Dárdai",
+      "firstname" : "Bence",
+      "lastname" : "Dárdai",
       "age" : 19,
       "birth" : {
-        "date" : "2006-06-03",
-        "place" : null,
+        "date" : "2006-01-24",
+        "place" : "Berlin",
         "country" : "Germany"
       },
       "nationality" : "Germany",
-      "height" : "191 cm",
-      "weight" : "83 kg",
+      "height" : "188",
+      "weight" : "71",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/394740.png"
+      "photo" : "https://media.api-sports.io/football/players/380503.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2773,28 +2716,28 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/78.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 7
+        "in" : 2,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : 0,
         "assists" : null,
         "saves" : null
@@ -2824,7 +2767,7 @@
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2846,315 +2789,58 @@
         "country" : "Germany",
         "logo" : "https://media.api-sports.io/football/leagues/81.png",
         "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 34,
+        "lineups" : 24,
+        "minutes" : 1312,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.714285",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "in" : 10,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 6,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 434,
+        "key" : 11,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 24,
+        "blocks" : 4,
+        "interceptions" : 12
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 104,
+        "won" : 53
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 7,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 16,
+        "committed" : 9
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 435086,
-      "name" : "T. Neininger",
-      "firstname" : "Till",
-      "lastname" : "Neininger",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-04-03",
-        "place" : null,
-        "country" : "Germany"
-      },
-      "nationality" : "Germany",
-      "height" : "186 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/435086.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 449714,
-      "name" : "M. Angely",
-      "firstname" : "Mathys",
-      "lastname" : "Angély",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-04-21",
-        "place" : null,
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : "190 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/449714.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 161,
-        "name" : "VfL Wolfsburg",
-        "logo" : "https://media.api-sports.io/football/teams/161.png"
-      },
-      "league" : {
-        "id" : 78,
-        "name" : "Bundesliga",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/78.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -3171,70 +2857,70 @@
         "logo" : "https://media.api-sports.io/football/teams/161.png"
       },
       "league" : {
-        "id" : 81,
-        "name" : "DFB Pokal",
-        "country" : "Germany",
-        "logo" : "https://media.api-sports.io/football/leagues/81.png",
-        "flag" : "https://media.api-sports.io/flags/de.svg",
-        "season" : 2024
+        "id" : 667,
+        "name" : "Friendlies Clubs",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/667.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 228,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "6.575000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 87,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 16,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 7
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

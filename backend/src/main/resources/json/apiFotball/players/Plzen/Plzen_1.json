@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "567"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 804,
-      "name" : "R. Řezník",
-      "firstname" : "Radim",
-      "lastname" : "Řezník",
-      "age" : 35,
+      "id" : 799,
+      "name" : "M. Havel",
+      "firstname" : "Milan",
+      "lastname" : "Havel",
+      "age" : 31,
       "birth" : {
-        "date" : "1989-01-20",
-        "place" : "Český Těšín",
+        "date" : "1994-08-07",
+        "place" : "Benešov",
         "country" : "Czechia"
       },
       "nationality" : "Czechia",
-      "height" : "183 cm",
-      "weight" : "82 kg",
+      "height" : "183",
+      "weight" : "77",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/804.png"
+      "photo" : "https://media.api-sports.io/football/players/799.png"
     },
     "statistics" : [ {
       "team" : {
@@ -36,306 +36,30 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 110,
+        "number" : 24,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.87",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 2,
+        "out" : 1,
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 818,
-      "name" : "T. Chorý",
-      "firstname" : "Tomáš",
-      "lastname" : "Chorý",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-01-26",
-        "place" : "Olomouc",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "199 cm",
-      "weight" : "102 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/818.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 1245,
-      "name" : "I. Traoré",
-      "firstname" : "Ibrahim Benjamin",
-      "lastname" : "Traoré",
-      "age" : 36,
-      "birth" : {
-        "date" : "1988-09-16",
-        "place" : "Abidjan",
-        "country" : "Côte d'Ivoire"
-      },
-      "nationality" : "Côte d'Ivoire",
-      "height" : "187 cm",
-      "weight" : "80 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/1245.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66053,
-      "name" : "J. Sýkora",
-      "firstname" : "Jan",
-      "lastname" : "Sýkora",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-12-29",
-        "place" : "Plzeň",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "170 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66053.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -344,22 +68,22 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 4,
-        "key" : null,
+        "total" : 46,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 3,
-        "won" : null
+        "total" : 11,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -378,26 +102,80 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 66463,
-      "name" : "M. Valenta",
-      "firstname" : "Matěj",
-      "lastname" : "Valenta",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-09",
-        "place" : null,
-        "country" : "Czechia"
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
-      "nationality" : "Czechia",
-      "height" : "182 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66463.png"
-    },
-    "statistics" : [ {
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 10,
+        "number" : 24,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 4,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 567,
         "name" : "Plzen",
@@ -409,14 +187,1699 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 3,
+        "minutes" : 275,
+        "number" : 24,
+        "position" : "Defender",
+        "rating" : "6.59",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 2,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 108,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 11
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 800,
+      "name" : "L. Hejda",
+      "firstname" : "Lukáš",
+      "lastname" : "Hejda",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-03-09",
+        "place" : "Bílovec",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "189",
+      "weight" : "85",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/800.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 125,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 3,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 2,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 810,
+      "name" : "J. Kopic",
+      "firstname" : "Jan",
+      "lastname" : "Kopic",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-06-04",
+        "place" : "Humpolec",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "180",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/810.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 100,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 27,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 0,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 0,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 10,
         "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45824,
+      "name" : "S. Marković",
+      "firstname" : "Svetozar",
+      "lastname" : "Marković",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-03-23",
+        "place" : "Bijeljina",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "185",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45824.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 215,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "7.37",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 88,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 513,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.83",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 1,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 252,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 6,
+        "interceptions" : 11
+      },
+      "duels" : {
+        "total" : 38,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 61161,
+      "name" : "M. Jedlička",
+      "firstname" : "Martin",
+      "lastname" : "Jedlička",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-01-24",
+        "place" : "Pribram",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "186",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/61161.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : "6.9",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 2
+      },
+      "passes" : {
+        "total" : 59,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : "6.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 1,
+        "assists" : 0,
+        "saves" : 2
+      },
+      "passes" : {
+        "total" : 40,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 1,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 825,
+        "number" : 23,
+        "position" : "Goalkeeper",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 11,
+        "assists" : 0,
+        "saves" : 25
+      },
+      "passes" : {
+        "total" : 289,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 0
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66253,
+      "name" : "T. Ladra",
+      "firstname" : "Tomáš",
+      "lastname" : "Ladra",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-04-24",
+        "place" : "Ceska Lipa",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "178",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66253.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 86,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 96,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "6.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 42,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 7,
+        "minutes" : 619,
+        "number" : 18,
+        "position" : "Midfielder",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 5,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 11,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 240,
+        "key" : 14,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 2,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 68,
+        "won" : 27
+      },
+      "dribbles" : {
+        "attempts" : 13,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66270,
+      "name" : "V. Jemelka",
+      "firstname" : "Václav",
+      "lastname" : "Jemelka",
+      "age" : 30,
+      "birth" : {
+        "date" : "1995-06-23",
+        "place" : "Olomouc",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "186",
+      "weight" : "75",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66270.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 270,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "7.53",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 150,
+        "key" : 1,
+        "accuracy" : 41
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 4,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 19
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "7.1",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 107,
+        "key" : null,
+        "accuracy" : 47
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 21,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 855,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "7.03",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 469,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 21,
+        "blocks" : 7,
+        "interceptions" : 18
+      },
+      "duels" : {
+        "total" : 85,
+        "won" : 51
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 9
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66387,
+      "name" : "P. Šulc",
+      "firstname" : "Pavel",
+      "lastname" : "Šulc",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-12-29",
+        "place" : "Karlovy Vary",
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : "177",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66387.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 179,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 52,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 161,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : "7.95",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 55,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 66447,
+      "name" : "M. Tvrdoň",
+      "firstname" : "Marián",
+      "lastname" : "Tvrdoň",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-08-18",
+        "place" : null,
+        "country" : "Slovakia"
+      },
+      "nationality" : "Slovakia",
+      "height" : "194",
+      "weight" : "86",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/66447.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 13,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
@@ -432,153 +1895,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 5
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -619,21 +1936,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 66659,
-      "name" : "D. Vašulín",
-      "firstname" : "Daniel",
-      "lastname" : "Vašulín",
-      "age" : 27,
+      "id" : 162194,
+      "name" : "L. Červ",
+      "firstname" : "Lukáš",
+      "lastname" : "Červ",
+      "age" : 24,
       "birth" : {
-        "date" : "1998-06-11",
-        "place" : null,
+        "date" : "2001-04-10",
+        "place" : "Praha",
         "country" : "Czechia"
       },
       "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
+      "height" : "182",
+      "weight" : "70",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/66659.png"
+      "photo" : "https://media.api-sports.io/football/players/162194.png"
     },
     "statistics" : [ {
       "team" : {
@@ -642,59 +1959,59 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 20,
-        "lineups" : 11,
-        "minutes" : 1079,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.912500",
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 270,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "7.13",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 9,
-        "out" : 9,
-        "bench" : 9
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 11,
-        "on" : 5
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
-        "total" : 4,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 89,
+        "total" : 120,
         "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : 1,
-        "interceptions" : 1
+        "total" : 6,
+        "blocks" : null,
+        "interceptions" : 12
       },
       "duels" : {
-        "total" : 87,
-        "won" : 34
+        "total" : 36,
+        "won" : 24
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 4,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 7
+        "drawn" : 9,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 1,
@@ -706,79 +2023,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     }, {
@@ -793,59 +2037,59 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/3.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 4,
-        "minutes" : 443,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.728571",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "7.05",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 4,
-        "bench" : 8
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 7,
-        "on" : 4
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 3,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 55,
+        "total" : 94,
         "key" : 1,
-        "accuracy" : null
+        "accuracy" : 42
       },
       "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 35,
+        "total" : 23,
         "won" : 13
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 3
+        "drawn" : 10,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
-        "red" : 1
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
@@ -854,26 +2098,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 90746,
-      "name" : "J. Kliment",
-      "firstname" : "Jan",
-      "lastname" : "Kliment",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-09-01",
-        "place" : "Jihlava",
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : "185 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/90746.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 567,
         "name" : "Plzen",
@@ -885,65 +2110,65 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 11,
+        "lineups" : 11,
+        "minutes" : 946,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.86",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 7,
+        "on" : 2
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 430,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 14,
+        "blocks" : 4,
+        "interceptions" : 14
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 99,
+        "won" : 54
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 10,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 22,
+        "committed" : 10
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -972,59 +2197,59 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 32,
+        "number" : 7,
         "position" : "Attacker",
-        "rating" : "6.900000",
+        "rating" : "6.8",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
         "out" : 0,
-        "bench" : 0
+        "bench" : 4
       },
       "shots" : {
-        "total" : 3,
-        "on" : null
+        "total" : 5,
+        "on" : 3
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 26,
-        "key" : null,
+        "total" : 12,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 26,
-        "won" : 10
+        "total" : 10,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : 3
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1038,52 +2263,33 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 281323,
-      "name" : "I. Metsoko",
-      "firstname" : "Idjessi",
-      "lastname" : "Metsoko",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-03-14",
-        "place" : null,
-        "country" : "France"
-      },
-      "nationality" : "France",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/281323.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 567,
         "name" : "Plzen",
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 35,
-        "number" : null,
+        "minutes" : null,
+        "number" : 7,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : 0,
         "out" : 0,
-        "bench" : 4
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -1092,7 +2298,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -1137,50 +2343,142 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 8,
+        "lineups" : 3,
+        "minutes" : 227,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 3,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 48,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 37,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 306368,
+      "name" : "Ricardinho",
+      "firstname" : "Ricardo",
+      "lastname" : "Viana Filho",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-04-23",
+        "place" : "São Paulo",
+        "country" : "Brazil"
+      },
+      "nationality" : "Brazil",
+      "height" : "178",
+      "weight" : "83",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/306368.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 112,
         "number" : null,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.625000",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 21,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 29,
+        "won" : 8
       },
       "dribbles" : {
         "attempts" : null,
@@ -1188,8 +2486,100 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 317825,
+      "name" : "S. Dweh",
+      "firstname" : "Sampson",
+      "lastname" : "Kargeoh Dweh Jr.",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-10-10",
+        "place" : null,
+        "country" : "Liberia"
+      },
+      "nationality" : "Liberia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/317825.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 236,
+        "number" : 40,
+        "position" : "Defender",
+        "rating" : "7.23",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 127,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 2,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 14
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
       },
       "cards" : {
         "yellow" : 0,
@@ -1199,30 +2589,84 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 282307,
-      "name" : "D. Fišer",
-      "firstname" : "Dominik",
-      "lastname" : "Fišer",
-      "age" : 23,
-      "birth" : {
-        "date" : "2001-12-18",
-        "place" : null,
-        "country" : "Czechia"
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/282307.png"
-    },
-    "statistics" : [ {
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 180,
+        "number" : 40,
+        "position" : "Defender",
+        "rating" : "7.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 97,
+        "key" : null,
+        "accuracy" : 45
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 20
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
       "team" : {
         "id" : 567,
         "name" : "Plzen",
@@ -1234,45 +2678,45 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 490,
+        "number" : 40,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.73",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 1,
+        "out" : 1,
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 263,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 1,
+        "interceptions" : 10
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 57,
+        "won" : 29
       },
       "dribbles" : {
         "attempts" : null,
@@ -1280,19 +2724,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 10
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -1321,59 +2765,205 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 60,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 162,
+        "number" : 99,
         "position" : "Midfielder",
-        "rating" : "7.133333",
+        "rating" : "7.17",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 4,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 170,
+        "number" : 99,
+        "position" : "Midfielder",
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 1,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
-        "total" : 16,
-        "on" : 10
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 203,
-        "key" : 14,
+        "total" : 54,
+        "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
+        "total" : 1,
         "blocks" : 1,
-        "interceptions" : 5
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 80,
-        "won" : 37
+        "total" : 26,
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : 13,
-        "success" : 4,
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 9,
+        "minutes" : 816,
+        "number" : 99,
+        "position" : "Midfielder",
+        "rating" : "7.05",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 6,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 4,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 245,
+        "key" : 10,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 1,
+        "interceptions" : 14
+      },
+      "duels" : {
+        "total" : 64,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
         "drawn" : 8,
-        "committed" : 5
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -1413,20 +3003,331 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 193,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "7.07",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 11,
+        "on" : 6
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 42,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 150,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "7.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 24,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
         "id" : 345,
         "name" : "Czech Liga",
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 7,
+        "minutes" : 695,
+        "number" : 17,
+        "position" : "Attacker",
+        "rating" : "7.1",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 2,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 20,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 4,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 154,
+        "key" : 6,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 103,
+        "won" : 56
+      },
+      "dribbles" : {
+        "attempts" : 12,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 15
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 2,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 410016,
+      "name" : "P. Adu",
+      "firstname" : "Prince Kwabena",
+      "lastname" : "Adu",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-09-23",
+        "place" : "Sunyani",
+        "country" : "Ghana"
+      },
+      "nationality" : "Ghana",
+      "height" : "179",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/410016.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 146,
+        "number" : 80,
+        "position" : "Attacker",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 1,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 7,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
+        "minutes" : 26,
+        "number" : 80,
         "position" : "Attacker",
-        "rating" : "6.200000",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
@@ -1445,8 +3346,8 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 13,
-        "key" : 2,
+        "total" : 8,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
@@ -1455,296 +3356,20 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 7,
-        "won" : 4
+        "total" : 8,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : 1,
+        "attempts" : 2,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386830,
-      "name" : "Ondřej Deml",
-      "firstname" : "Ondřej",
-      "lastname" : "Deml",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-01-20",
-        "place" : null,
-        "country" : "Czech Republic"
-      },
-      "nationality" : "Czech Republic",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386830.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386834,
-      "name" : "M. Doubek",
-      "firstname" : "Martin",
-      "lastname" : "Doubek",
-      "age" : 20,
-      "birth" : {
-        "date" : "2004-05-18",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386834.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386837,
-      "name" : "A. Sojka",
-      "firstname" : "Alexandr",
-      "lastname" : "Sojka",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-04-02",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386837.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 4,
-        "minutes" : 373,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.040000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 3,
-        "bench" : 17
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 109,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 35,
-        "won" : 22
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
+        "drawn" : 1,
         "committed" : 2
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1762,49 +3387,214 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 347,
-        "name" : "Cup",
+        "id" : 345,
+        "name" : "Czech Liga",
         "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 7,
+        "minutes" : 632,
+        "number" : 80,
+        "position" : "Attacker",
+        "rating" : "7.05",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 4,
+        "out" : 6,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 20,
+        "on" : 14
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 150,
+        "key" : 10,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 11,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 90,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 24,
+        "success" : 10,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 21
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 426130,
+      "name" : "Karel Spáčil",
+      "firstname" : "Karel",
+      "lastname" : "Spáčil",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-05-18",
+        "place" : null,
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/426130.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 230,
+        "number" : 5,
+        "position" : "Midfielder",
+        "rating" : "6.83",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 97,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 29,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
         "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "8.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 80,
         "key" : null,
-        "accuracy" : null
+        "accuracy" : 76
       },
       "tackles" : {
         "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "blocks" : 1,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : null,
+        "total" : 1,
         "won" : null
       },
       "dribbles" : {
@@ -1814,80 +3604,7 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 8,
-        "lineups" : 2,
-        "minutes" : 168,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.525000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 2,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 41,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 3
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -1901,26 +3618,7 @@
         "missed" : 0,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 386838,
-      "name" : "F. Lörincz",
-      "firstname" : "Filip",
-      "lastname" : "Lörincz",
-      "age" : 20,
-      "birth" : {
-        "date" : "2004-12-10",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/386838.png"
-    },
-    "statistics" : [ {
+    }, {
       "team" : {
         "id" : 567,
         "name" : "Plzen",
@@ -1932,457 +3630,54 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 390567,
-      "name" : "T. Slončík",
-      "firstname" : "Tom",
-      "lastname" : "Slončík",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-12-21",
-        "place" : null,
-        "country" : "Czechia"
-      },
-      "nationality" : "Czechia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/390567.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 9,
-        "lineups" : 3,
-        "minutes" : 302,
-        "number" : null,
+        "lineups" : 7,
+        "minutes" : 577,
+        "number" : 5,
         "position" : "Midfielder",
-        "rating" : "6.900000",
+        "rating" : "6.99",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 2,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 32,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 3,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 5
-      },
-      "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 347,
-        "name" : "Cup",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 18,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 1,
-        "minutes" : 81,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 1,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 5,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 2,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 410016,
-      "name" : "P. Adu",
-      "firstname" : "Prince Kwabena",
-      "lastname" : "Adu",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-09-23",
-        "place" : "Sunyani",
-        "country" : "Ghana"
-      },
-      "nationality" : "Ghana",
-      "height" : "179 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/410016.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 12,
-        "lineups" : 9,
-        "minutes" : 696,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.785714",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
+        "in" : 2,
+        "out" : 4,
         "bench" : 3
       },
       "shots" : {
-        "total" : 6,
-        "on" : 5
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
-        "total" : 5,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 100,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 6,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 62,
-        "won" : 23
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 567,
-        "name" : "Plzen",
-        "logo" : "https://media.api-sports.io/football/teams/567.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 7,
-        "lineups" : 6,
-        "minutes" : 491,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.942857",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 5,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 3,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 84,
+        "total" : 296,
         "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 3
+        "total" : 9,
+        "blocks" : 2,
+        "interceptions" : 11
       },
       "duels" : {
-        "total" : 108,
-        "won" : 44
+        "total" : 64,
+        "won" : 36
       },
       "dribbles" : {
-        "attempts" : 32,
-        "success" : 17,
+        "attempts" : 7,
+        "success" : 6,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 12,
-        "committed" : 11
+        "drawn" : 8,
+        "committed" : 10
       },
       "cards" : {
         "yellow" : 2,
@@ -2422,30 +3717,30 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 345,
-        "name" : "Czech Liga",
-        "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/345.png",
-        "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "id" : 2,
+        "name" : "UEFA Champions League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 11,
-        "lineups" : 2,
-        "minutes" : 267,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 31,
+        "number" : 20,
         "position" : "Midfielder",
-        "rating" : "6.650000",
+        "rating" : "6.45",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 9,
-        "out" : 2,
-        "bench" : 18
+        "in" : 2,
+        "out" : 1,
+        "bench" : 3
       },
       "shots" : {
-        "total" : 3,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -2454,27 +3749,27 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 63,
-        "key" : 1,
+        "total" : 16,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 27,
-        "won" : 15
+        "total" : 3,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 5,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : null
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -2495,33 +3790,125 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 347,
-        "name" : "Cup",
+        "id" : 345,
+        "name" : "Czech Liga",
         "country" : "Czech-Republic",
-        "logo" : "https://media.api-sports.io/football/leagues/347.png",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 72,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 48,
+        "number" : 20,
         "position" : "Midfielder",
+        "rating" : "6.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 449713,
+      "name" : "M. Šilhavý",
+      "firstname" : "Matyáš",
+      "lastname" : "Šilhavý",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-03-06",
+        "place" : null,
+        "country" : "Czechia"
+      },
+      "nationality" : "Czechia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/449713.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 345,
+        "name" : "Czech Liga",
+        "country" : "Czech-Republic",
+        "logo" : "https://media.api-sports.io/football/leagues/345.png",
+        "flag" : "https://media.api-sports.io/flags/cz.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2550,9 +3937,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2568,62 +3955,62 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
+        "id" : 2,
+        "name" : "UEFA Champions League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 2,
-        "minutes" : 145,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.766666",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 15,
+        "position" : "Goalkeeper",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 2,
-        "bench" : 10
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 32,
-        "key" : 1,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 16,
-        "won" : 9
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 8,
-        "success" : 6,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2660,26 +4047,99 @@
         "logo" : "https://media.api-sports.io/football/teams/567.png"
       },
       "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
+        "id" : 2,
+        "name" : "UEFA Champions League",
         "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "logo" : "https://media.api-sports.io/football/leagues/2.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 31,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
         "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 567,
+        "name" : "Plzen",
+        "logo" : "https://media.api-sports.io/football/teams/567.png"
+      },
+      "league" : {
+        "id" : 3,
+        "name" : "UEFA Europa League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/3.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 72,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 1
       },
       "shots" : {
         "total" : null,
@@ -2687,8 +4147,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2722,8 +4182,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -2738,21 +4198,21 @@
         "country" : "Czech-Republic",
         "logo" : "https://media.api-sports.io/football/leagues/345.png",
         "flag" : "https://media.api-sports.io/flags/cz.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 25,
+        "number" : 72,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "6.25",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
         "out" : 0,
-        "bench" : 3
+        "bench" : 8
       },
       "shots" : {
         "total" : null,
@@ -2761,31 +4221,31 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 8,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 8,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 3,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,

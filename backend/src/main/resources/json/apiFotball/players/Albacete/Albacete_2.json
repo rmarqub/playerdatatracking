@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "722"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 7,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 47002,
-      "name" : "Fidel",
-      "firstname" : "Fidel",
-      "lastname" : "Chaves de la Torre",
-      "age" : 36,
+      "id" : 741,
+      "name" : "Vallejo",
+      "firstname" : "Jesús",
+      "lastname" : "Vallejo Lázaro",
+      "age" : 28,
       "birth" : {
-        "date" : "1989-10-27",
-        "place" : "Dehesa de Riotinto",
+        "date" : "1997-01-05",
+        "place" : "Zaragoza",
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "74 kg",
+      "height" : "184 cm",
+      "weight" : "79 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47002.png"
+      "photo" : "https://media.api-sports.io/football/players/741.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,57 +41,57 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 21,
-        "lineups" : 15,
-        "minutes" : 1186,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.155000",
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 450,
+        "number" : 24,
+        "position" : "Defender",
+        "rating" : "6.56",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 12,
-        "bench" : 7
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 12,
-        "on" : 8
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 4,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 4,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 493,
-        "key" : 46,
+        "total" : 195,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 9,
-        "blocks" : null,
-        "interceptions" : 5
+        "total" : 4,
+        "blocks" : 5,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : 127,
-        "won" : 57
+        "total" : 31,
+        "won" : 15
       },
       "dribbles" : {
-        "attempts" : 47,
-        "success" : 24,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 20,
-        "committed" : 12
+        "drawn" : 2,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 3,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -102,57 +102,76 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 46682,
+      "name" : "Carlos Neva",
+      "firstname" : "Carlos",
+      "lastname" : "Neva Tey",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-06-12",
+        "place" : "Puerto de Santa María",
+        "country" : "Spain"
+      },
+      "nationality" : "Spain",
+      "height" : "174 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46682.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 722,
         "name" : "Albacete",
         "logo" : "https://media.api-sports.io/football/teams/722.png"
       },
       "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
+        "id" : 141,
+        "name" : "Segunda División",
         "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
+        "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 77,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : 21,
+        "position" : "Defender",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : null,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 186,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 11,
+        "blocks" : 2,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 25,
+        "won" : 16
       },
       "dribbles" : {
         "attempts" : null,
@@ -160,19 +179,19 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -206,932 +225,34 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 10,
-        "minutes" : 869,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.826666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 7,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 26,
-        "on" : 15
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 80,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 5,
-        "blocks" : 1,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 96,
-        "won" : 40
-      },
-      "dribbles" : {
-        "attempts" : 18,
-        "success" : 6,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 18,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 3,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47170,
-      "name" : "José Carlos Lazo",
-      "firstname" : "José Carlos",
-      "lastname" : "Lazo Romero",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-02-16",
-        "place" : "Sanlúcar de Barrameda",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "180 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47170.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 14,
-        "lineups" : 8,
-        "minutes" : 633,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.925000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 7,
-        "bench" : 8
-      },
-      "shots" : {
-        "total" : 14,
-        "on" : 6
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 151,
-        "key" : 10,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 13,
-        "blocks" : 2,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 65,
-        "won" : 32
-      },
-      "dribbles" : {
-        "attempts" : 19,
-        "success" : 11,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 5,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 107210,
-      "name" : "Riki Rodríguez",
-      "firstname" : "Ricardo",
-      "lastname" : "Rodríguez Gil Carcedo",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-09-25",
-        "place" : "Oviedo",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/107210.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 21,
-        "minutes" : 1924,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.039130",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 7,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 17,
-        "on" : 7
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 722,
-        "key" : 16,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 35,
-        "blocks" : 6,
-        "interceptions" : 17
-      },
-      "duels" : {
-        "total" : 147,
-        "won" : 88
-      },
-      "dribbles" : {
-        "attempts" : 24,
-        "success" : 17,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 23,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 116884,
-      "name" : "Juanma García",
-      "firstname" : "Juan Manuel",
-      "lastname" : "García García",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-02-20",
-        "place" : "San José de la Rinconada",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "166 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/116884.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 27,
-        "lineups" : 17,
-        "minutes" : 1645,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.757692",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 10,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 18,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 2,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 358,
-        "key" : 18,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 22,
-        "blocks" : 1,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 164,
-        "won" : 89
-      },
-      "dribbles" : {
-        "attempts" : 20,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 39,
-        "committed" : 13
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
+        "minutes" : 17,
+        "number" : 9,
         "position" : "Attacker",
-        "rating" : null,
+        "rating" : "5.9",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 1
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 123061,
-      "name" : "Agus Medina",
-      "firstname" : "Agustín",
-      "lastname" : "Medina Delgado",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-09-08",
-        "place" : "Barberá del Vallés",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "71 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/123061.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 26,
-        "lineups" : 23,
-        "minutes" : 1980,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.844000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 8,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 6
-      },
-      "goals" : {
         "total" : 1,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 720,
-        "key" : 22,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 36,
-        "blocks" : 3,
-        "interceptions" : 14
-      },
-      "duels" : {
-        "total" : 224,
-        "won" : 91
-      },
-      "dribbles" : {
-        "attempts" : 32,
-        "success" : 9,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 21,
-        "committed" : 24
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
         "on" : null
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 137579,
-      "name" : "Rai",
-      "firstname" : "Raimon",
-      "lastname" : "Marchán Vidal",
-      "age" : 32,
-      "birth" : {
-        "date" : "1993-08-11",
-        "place" : "Vilafranca del Penedés",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "181 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/137579.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 6,
-        "minutes" : 592,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.664285",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 10,
-        "out" : 4,
-        "bench" : 18
-      },
-      "shots" : {
         "total" : 2,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 231,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : 6,
-        "interceptions" : 19
-      },
-      "duels" : {
-        "total" : 62,
-        "won" : 25
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
         "key" : null,
         "accuracy" : null
       },
@@ -1141,7 +262,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 3,
         "won" : null
       },
       "dribbles" : {
@@ -1151,38 +272,38 @@
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
-        "red" : 0
+        "red" : 1
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 144734,
-      "name" : "Zoubdi",
-      "firstname" : "Nabili",
-      "lastname" : "Zoubdi Touaizi",
-      "age" : 24,
+      "id" : 182164,
+      "name" : "Pepe Sánchez",
+      "firstname" : "José",
+      "lastname" : "Sánchez Martínez",
+      "age" : 25,
       "birth" : {
-        "date" : "2001-02-01",
-        "place" : "Santomera",
+        "date" : "2000-03-02",
+        "place" : "Linares",
         "country" : "Spain"
       },
-      "nationality" : "Morocco",
-      "height" : "183 cm",
+      "nationality" : "Spain",
+      "height" : "185 cm",
       "weight" : "63 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/144734.png"
+      "photo" : "https://media.api-sports.io/football/players/182164.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1196,25 +317,25 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 13,
-        "lineups" : 1,
-        "minutes" : 220,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.425000",
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 225,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "7.03",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 12,
+        "in" : 0,
         "out" : 1,
-        "bench" : 21
+        "bench" : 1
       },
       "shots" : {
-        "total" : 2,
-        "on" : 2
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1223,183 +344,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 65,
+        "total" : 83,
         "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : 2
       },
       "duels" : {
-        "total" : 37,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 13,
-        "success" : 4,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 5
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 179153,
-      "name" : "Javi Martón",
-      "firstname" : "Javier",
-      "lastname" : "Martón Ansó",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-05-06",
-        "place" : "Villafranca",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "183 cm",
-      "weight" : "72 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/179153.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 65,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 11,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 12,
-        "won" : 4
+        "total" : 19,
+        "won" : 12
       },
       "dribbles" : {
         "attempts" : null,
@@ -1408,7 +364,7 @@
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 2
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 1,
@@ -1420,593 +376,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 179955,
-      "name" : "Javi Rueda",
-      "firstname" : "Javier",
-      "lastname" : "Rueda García",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-08",
-        "place" : "Alozaina",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "177 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/179955.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 24,
-        "lineups" : 19,
-        "minutes" : 1680,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "7.173913",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 8,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 15,
-        "on" : 10
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 653,
-        "key" : 20,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 40,
-        "blocks" : 2,
-        "interceptions" : 33
-      },
-      "duels" : {
-        "total" : 197,
-        "won" : 128
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 22,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 32,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 182259,
-      "name" : "Álex Meléndez",
-      "firstname" : "Alejandro",
-      "lastname" : "Meléndez Ruiz",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-03-13",
-        "place" : "Utrera",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "178 cm",
-      "weight" : "66 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/182259.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 9,
-        "lineups" : 7,
-        "minutes" : 610,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.875000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 275,
-        "key" : 3,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 17,
-        "blocks" : 2,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 57,
-        "won" : 32
-      },
-      "dribbles" : {
-        "attempts" : 6,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 8,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 190530,
-      "name" : "Pablo Sáenz",
-      "firstname" : "Pablo",
-      "lastname" : "Sáenz Ezquerra",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-05-22",
-        "place" : "Pamplona",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "175 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/190530.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 135,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 34,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 2,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 23,
-        "won" : 10
-      },
-      "dribbles" : {
-        "attempts" : 8,
-        "success" : 5,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 3,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 194747,
-      "name" : "Neco Rubayo Sánchez",
-      "firstname" : "Neco",
-      "lastname" : "Rubayo Sánchez",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-12-02",
-        "place" : "Torrelavega",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "170 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/194747.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -2040,516 +409,21 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 10,
-        "minutes" : 931,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 7,
-        "bench" : 11
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 386,
-        "key" : 5,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 27,
-        "blocks" : 4,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 113,
-        "won" : 71
-      },
-      "dribbles" : {
-        "attempts" : 11,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 19,
-        "committed" : 9
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 336633,
-      "name" : "Javi Villar",
-      "firstname" : "Javier",
-      "lastname" : "Villar del Fraile",
-      "age" : 22,
-      "birth" : {
-        "date" : "2003-03-15",
-        "place" : "Murcia",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "187 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/336633.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 13,
-        "lineups" : 5,
-        "minutes" : 508,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.615384",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 5,
-        "bench" : 14
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 241,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 8,
-        "blocks" : 4,
-        "interceptions" : 4
-      },
-      "duels" : {
-        "total" : 63,
-        "won" : 34
-      },
-      "dribbles" : {
-        "attempts" : 7,
-        "success" : 7,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 337955,
-      "name" : "Lalo Aguilar",
-      "firstname" : "Gonzalo",
-      "lastname" : "Aguilar López",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-06-11",
-        "place" : "Los Yébenes",
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : "188 cm",
-      "weight" : "82 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/337955.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 16,
-        "minutes" : 1380,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 3,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 3,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 604,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 22,
-        "blocks" : 10,
-        "interceptions" : 12
-      },
-      "duels" : {
-        "total" : 69,
-        "won" : 43
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 6,
-        "committed" : 7
-      },
-      "cards" : {
-        "yellow" : 4,
-        "yellowred" : 1,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 380743,
-      "name" : "Willy",
-      "firstname" : "Alejandro",
-      "lastname" : "Muñoz Langreo",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-02-10",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/380743.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 26,
+        "number" : 6,
         "position" : "Midfielder",
-        "rating" : "6.200000",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 3
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -2562,8 +436,8 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 1,
-        "key" : 1,
+        "total" : 4,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
@@ -2572,12 +446,12 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
-        "won" : 1
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2610,8 +484,8 @@
         "country" : "Spain"
       },
       "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
+      "height" : "178 cm",
+      "weight" : "74 kg",
       "injured" : false,
       "photo" : "https://media.api-sports.io/football/players/412693.png"
     },
@@ -2627,13 +501,13 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 26,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2641,7 +515,7 @@
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2650,7 +524,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2691,21 +565,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 440756,
-      "name" : "Eduardo de la Casa",
-      "firstname" : "Eduardo",
-      "lastname" : "de la Casa Simarro",
-      "age" : 22,
+      "id" : 527188,
+      "name" : "Antonio Velilla Miro",
+      "firstname" : null,
+      "lastname" : null,
+      "age" : null,
       "birth" : {
-        "date" : "2003-01-15",
-        "place" : "La Roda",
-        "country" : "Spain"
+        "date" : null,
+        "place" : null,
+        "country" : null
       },
-      "nationality" : "Spain",
-      "height" : "176 cm",
-      "weight" : "68 kg",
+      "nationality" : null,
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/440756.png"
+      "photo" : "https://media.api-sports.io/football/players/527188.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2719,87 +593,14 @@
         "country" : "Spain",
         "logo" : "https://media.api-sports.io/football/leagues/141.png",
         "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 143,
-        "name" : "Copa del Rey",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/143.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 1,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 28,
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
@@ -2814,100 +615,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 447438,
-      "name" : "Joaquin Domingo",
-      "firstname" : "Joaquin",
-      "lastname" : "Domingo Ponce",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-05-14",
-        "place" : null,
-        "country" : "Spain"
-      },
-      "nationality" : "Spain",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/447438.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 722,
-        "name" : "Albacete",
-        "logo" : "https://media.api-sports.io/football/teams/722.png"
-      },
-      "league" : {
-        "id" : 141,
-        "name" : "Segunda División",
-        "country" : "Spain",
-        "logo" : "https://media.api-sports.io/football/leagues/141.png",
-        "flag" : "https://media.api-sports.io/flags/es.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {

@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "702"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 24669,
-      "name" : "G. Giorbelidze",
-      "firstname" : "Guram",
-      "lastname" : "Giorbelidze",
-      "age" : 29,
+      "id" : 366,
+      "name" : "A. Vukanović",
+      "firstname" : "Aleksa",
+      "lastname" : "Vukanović",
+      "age" : 33,
       "birth" : {
-        "date" : "1996-02-25",
-        "place" : null,
-        "country" : "Georgia"
+        "date" : "1992-06-18",
+        "place" : "Novi Sad",
+        "country" : "Serbia"
       },
-      "nationality" : "Georgia",
-      "height" : "174 cm",
-      "weight" : "68 kg",
+      "nationality" : "Serbia",
+      "height" : "189 cm",
+      "weight" : "81 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/24669.png"
+      "photo" : "https://media.api-sports.io/football/players/366.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,231 +41,85 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "appearences" : 9,
+        "lineups" : 7,
+        "minutes" : 584,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.72",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : 2,
+        "out" : 4,
+        "bench" : 2
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 11,
+        "on" : 6
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 123,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 72,
+        "won" : 28
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 10,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 11,
+        "committed" : 13
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : 1,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 32621,
-      "name" : "N. Campbell",
-      "firstname" : "Norman Odale",
-      "lastname" : "Campbell",
+      "id" : 10049,
+      "name" : "Lucas Barros",
+      "firstname" : "Lucas",
+      "lastname" : "Barros da Cunha",
       "age" : 26,
       "birth" : {
-        "date" : "1999-11-24",
-        "place" : null,
-        "country" : "Jamaica"
+        "date" : "1999-08-21",
+        "place" : "Rio de Janeiro",
+        "country" : "Brazil"
       },
-      "nationality" : "Jamaica",
-      "height" : "178 cm",
-      "weight" : "60 kg",
+      "nationality" : "Brazil",
+      "height" : null,
+      "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/32621.png"
+      "photo" : "https://media.api-sports.io/football/players/10049.png"
     },
     "statistics" : [ {
       "team" : {
@@ -279,7 +133,99 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 130,
+        "number" : 23,
+        "position" : "Defender",
+        "rating" : "6.8",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 39,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 2,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 26729,
+      "name" : "L. Romanić",
+      "firstname" : "Lazar",
+      "lastname" : "Romanić",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-03-25",
+        "place" : "Kragujevac",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "180",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/26729.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -338,6 +284,190 @@
         "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 30869,
+      "name" : "L. Nikolić",
+      "firstname" : "Lazar",
+      "lastname" : "Nikolić",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-08-01",
+        "place" : "Leskovac",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "176 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/30869.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 905,
+        "number" : 22,
+        "position" : "Defender",
+        "rating" : "7.42",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 432,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 38,
+        "blocks" : 5,
+        "interceptions" : 7
+      },
+      "duels" : {
+        "total" : 88,
+        "won" : 58
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 12
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 40183,
+      "name" : "V. Savićević",
+      "firstname" : "Vukan",
+      "lastname" : "Savićević",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-01-29",
+        "place" : "Belgrade",
+        "country" : "Serbia"
+      },
+      "nationality" : "Montenegro",
+      "height" : "179 cm",
+      "weight" : "72 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/40183.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 6,
+        "minutes" : 555,
+        "number" : 8,
+        "position" : "Midfielder",
+        "rating" : "7.01",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 5,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 374,
+        "key" : 14,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 1,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 48,
+        "won" : 26
+      },
+      "dribbles" : {
+        "attempts" : 8,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -371,54 +501,330 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 10,
-        "minutes" : 903,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 86,
+        "number" : 4,
         "position" : "Midfielder",
-        "rating" : "7.042857",
+        "rating" : "6.63",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 5,
-        "bench" : 7
+        "in" : 2,
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
-        "total" : 3,
-        "on" : 3
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 260,
-        "key" : 12,
+        "total" : 27,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 8,
-        "blocks" : null,
-        "interceptions" : 4
+        "total" : null,
+        "blocks" : 2,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 30,
-        "won" : 15
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 43113,
+      "name" : "M. Butean",
+      "firstname" : "Mihai Ionuţ",
+      "lastname" : "Butean",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-09-14",
+        "place" : "Cluj-Napoca",
+        "country" : "Romania"
+      },
+      "nationality" : "Romania",
+      "height" : "181 cm",
+      "weight" : "72 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/43113.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 10,
+        "number" : 16,
+        "position" : "Defender",
+        "rating" : "6.6",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 9
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 4,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45771,
+      "name" : "Đ. Crnomarković",
+      "firstname" : "Đorđe",
+      "lastname" : "Crnomarković",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-09-10",
+        "place" : "Belgrad",
+        "country" : "Yugoslavia"
+      },
+      "nationality" : "Serbia",
+      "height" : "188 cm",
+      "weight" : "77 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45771.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 6,
+        "minutes" : 498,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "6.66",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 2,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 269,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 9,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 43,
+        "won" : 23
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
         "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 45846,
+      "name" : "D. Rosić",
+      "firstname" : "Dragan",
+      "lastname" : "Rosić",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-09-22",
+        "place" : "Užice",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "194",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/45846.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 10,
+        "lineups" : 10,
+        "minutes" : 905,
+        "number" : 12,
+        "position" : "Goalkeeper",
+        "rating" : "6.82",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 29
+      },
+      "passes" : {
+        "total" : 183,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 1,
@@ -430,34 +836,329 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 46090,
+      "name" : "N. Petrović",
+      "firstname" : "Njegoš",
+      "lastname" : "Petrović",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-07-18",
+        "place" : "Krupanj",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "185 cm",
+      "weight" : "72 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/46090.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 702,
         "name" : "Vojvodina",
         "logo" : "https://media.api-sports.io/football/teams/702.png"
       },
       "league" : {
-        "id" : 732,
-        "name" : "Cup",
+        "id" : 286,
+        "name" : "Super Liga",
         "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 63,
-        "number" : null,
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 777,
+        "number" : 18,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.23",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 3,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 9,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 453,
+        "key" : 14,
+        "accuracy" : 43
+      },
+      "tackles" : {
+        "total" : 19,
+        "blocks" : 1,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 40
+      },
+      "dribbles" : {
+        "attempts" : 9,
+        "success" : 5,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 76350,
+      "name" : "U. Nikolić",
+      "firstname" : "Uroš",
+      "lastname" : "Nikolić",
+      "age" : 32,
+      "birth" : {
+        "date" : "1993-12-14",
+        "place" : "Niš",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : "185 cm",
+      "weight" : "75 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/76350.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 1,
+        "minutes" : 215,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.06",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 1,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 99,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 14,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 199779,
+      "name" : "B. Yusuf",
+      "firstname" : "Bamidele Isa",
+      "lastname" : "Yusuf",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-02-22",
+        "place" : "Lagos",
+        "country" : "Nigeria"
+      },
+      "nationality" : "Nigeria",
+      "height" : "180 cm",
+      "weight" : "76 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/199779.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 442,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "7.38",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 118,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 26
+      },
+      "dribbles" : {
+        "attempts" : 16,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : 1,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 266791,
+      "name" : "S. Stanisavljević",
+      "firstname" : "Stefan",
+      "lastname" : "Stanisavljević",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-01-16",
+        "place" : "Jagodina",
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/266791.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 1,
+        "number" : 19,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
         "bench" : 1
       },
       "shots" : {
@@ -466,12 +1167,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 1,
         "key" : null,
         "accuracy" : null
       },
@@ -481,7 +1182,7 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
+        "total" : 2,
         "won" : null
       },
       "dribbles" : {
@@ -501,266 +1202,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 166,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 50,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 45806,
-      "name" : "A. Kajević",
-      "firstname" : "Asmir",
-      "lastname" : "Kajević",
-      "age" : 34,
+      "id" : 283144,
+      "name" : "C. Sichenje",
+      "firstname" : "Collins",
+      "lastname" : "Lusaka Sichenje",
+      "age" : 22,
       "birth" : {
-        "date" : "1990-02-15",
-        "place" : "Rožaje",
-        "country" : "Montenegro"
+        "date" : "2003-09-19",
+        "place" : null,
+        "country" : "Kenya"
       },
-      "nationality" : "Montenegro",
-      "height" : "187 cm",
-      "weight" : "73 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45806.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45931,
-      "name" : "M. Bjeković",
-      "firstname" : "Marko",
-      "lastname" : "Bjeković",
-      "age" : 24,
-      "birth" : {
-        "date" : "2000-09-21",
-        "place" : "Novi Sad",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
+      "nationality" : "Kenya",
+      "height" : "189",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45931.png"
+      "photo" : "https://media.api-sports.io/football/players/283144.png"
     },
     "statistics" : [ {
       "team" : {
@@ -774,77 +1237,77 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 768,
+        "number" : 29,
         "position" : "Defender",
-        "rating" : null,
+        "rating" : "6.82",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 2
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 419,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 10,
+        "blocks" : 5,
+        "interceptions" : 6
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 78,
+        "won" : 43
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 6,
+        "committed" : 18
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 2,
+        "yellowred" : 1,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 45934,
-      "name" : "I. Jeličić",
-      "firstname" : "Igor",
-      "lastname" : "Jeličić",
-      "age" : 25,
+      "id" : 302862,
+      "name" : "M. Gočmanac",
+      "firstname" : "Matija",
+      "lastname" : "Gočmanac",
+      "age" : 22,
       "birth" : {
-        "date" : "2000-02-28",
+        "date" : "2003-08-05",
         "place" : null,
         "country" : "Serbia"
       },
@@ -852,7 +1315,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45934.png"
+      "photo" : "https://media.api-sports.io/football/players/302862.png"
     },
     "statistics" : [ {
       "team" : {
@@ -866,21 +1329,21 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 3
+        "bench" : 10
       },
       "shots" : {
         "total" : null,
@@ -889,7 +1352,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -927,446 +1390,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 45935,
-      "name" : "M. Lazarević",
-      "firstname" : "Milan",
-      "lastname" : "Lazarević",
-      "age" : 28,
+      "id" : 310947,
+      "name" : "D. Kokanović",
+      "firstname" : "Dragan",
+      "lastname" : "Kokanović",
+      "age" : 23,
       "birth" : {
-        "date" : "1997-01-10",
+        "date" : "2002-05-01",
         "place" : null,
         "country" : "Serbia"
       },
       "nationality" : "Serbia",
-      "height" : "175 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45935.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45950,
-      "name" : "D. Zukić",
-      "firstname" : "Dejan",
-      "lastname" : "Zukić",
-      "age" : 24,
-      "birth" : {
-        "date" : "2001-05-07",
-        "place" : "Novi Sad",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "182 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45950.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 47084,
-      "name" : "F. Malbašić",
-      "firstname" : "Filip",
-      "lastname" : "Malbašić",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-11-18",
-        "place" : "Beograd",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "182 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/47084.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 133425,
-      "name" : "S. Vukić",
-      "firstname" : "Stefan",
-      "lastname" : "Vukić",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-06-29",
-        "place" : "Niš",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/133425.png"
+      "photo" : "https://media.api-sports.io/football/players/310947.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1380,145 +1421,145 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162152,
-      "name" : "A. Radulović",
-      "firstname" : "Andrija",
-      "lastname" : "Radulović",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-07-03",
-        "place" : "Kotor",
-        "country" : "Montenegro"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162152.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 10,
-        "minutes" : 863,
-        "number" : null,
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 314,
+        "number" : 20,
         "position" : "Midfielder",
-        "rating" : "7.014285",
+        "rating" : "6.54",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 7,
-        "out" : 9,
-        "bench" : 8
+        "in" : 3,
+        "out" : 2,
+        "bench" : 6
       },
       "shots" : {
-        "total" : 12,
-        "on" : 6
+        "total" : 6,
+        "on" : 3
       },
       "goals" : {
-        "total" : 3,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 101,
-        "key" : 7,
+        "total" : 111,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 9,
         "blocks" : null,
-        "interceptions" : 7
+        "interceptions" : 2
       },
       "duels" : {
-        "total" : 32,
-        "won" : 20
+        "total" : 57,
+        "won" : 24
       },
       "dribbles" : {
-        "attempts" : 15,
-        "success" : 7,
+        "attempts" : 8,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 8,
+        "drawn" : 7,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 314423,
+      "name" : "M. Veličković",
+      "firstname" : "Marko",
+      "lastname" : "Veličković",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-10-12",
+        "place" : null,
+        "country" : "Serbia"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/314423.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 702,
+        "name" : "Vojvodina",
+        "logo" : "https://media.api-sports.io/football/teams/702.png"
+      },
+      "league" : {
+        "id" : 286,
+        "name" : "Super Liga",
+        "country" : "Serbia",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
+        "flag" : "https://media.api-sports.io/flags/rs.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 1,
+        "minutes" : 161,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.45",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 57,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : 4,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
         "committed" : 2
       },
       "cards" : {
@@ -1533,665 +1574,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 104,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 34,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 33,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 163466,
-      "name" : "L. Carević",
-      "firstname" : "Lazar",
-      "lastname" : "Carević",
-      "age" : 26,
+      "id" : 354084,
+      "name" : "Marko Mladenovic",
+      "firstname" : "Marko",
+      "lastname" : "Mladenovic",
+      "age" : 20,
       "birth" : {
-        "date" : "1999-03-16",
+        "date" : "2005-01-30",
         "place" : null,
-        "country" : "Montenegro"
+        "country" : "Germany"
       },
-      "nationality" : "Montenegro",
-      "height" : "193 cm",
-      "weight" : "85 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/163466.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 270,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 4,
-        "assists" : 0,
-        "saves" : 5
-      },
-      "passes" : {
-        "total" : 63,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 195432,
-      "name" : "Matheus Índio",
-      "firstname" : "Matheus",
-      "lastname" : "Salgueiro Pains",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-08-27",
-        "place" : "Rio de Janeiro",
-        "country" : "Brazil"
-      },
-      "nationality" : "Brazil",
-      "height" : "182 cm",
-      "weight" : "76 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/195432.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 342329,
-      "name" : "M. Kovačev",
-      "firstname" : "Milan",
-      "lastname" : "Kovačev",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-08-10",
-        "place" : "Vrbas",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "178 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/342329.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 366694,
-      "name" : "Andrej Borak",
-      "firstname" : "Andrej",
-      "lastname" : "Borak",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-07-24",
-        "place" : "Beograd",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
+      "nationality" : "Germany",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/366694.png"
+      "photo" : "https://media.api-sports.io/football/players/354084.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2205,145 +1605,53 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 4,
+        "lineups" : 2,
+        "minutes" : 186,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.55",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 2,
+        "out" : 2,
+        "bench" : 8
       },
       "shots" : {
-        "total" : null,
+        "total" : 2,
         "on" : null
       },
       "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 368659,
-      "name" : "M. Ivanović",
-      "firstname" : "Mihailo",
-      "lastname" : "Ivanović",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-11-29",
-        "place" : "Novi Sad",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : "191 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/368659.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 5,
-        "lineups" : 4,
-        "minutes" : 335,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.100000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : 8,
-        "on" : 3
-      },
-      "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 75,
-        "key" : 3,
+        "total" : 56,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 1,
+        "total" : 3,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 44,
-        "won" : 23
+        "total" : 17,
+        "won" : 10
       },
       "dribbles" : {
-        "attempts" : 4,
-        "success" : 2,
+        "attempts" : 3,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
+        "drawn" : 3,
         "committed" : 3
       },
       "cards" : {
@@ -2358,162 +1666,16 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 118,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 1,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 1,
-        "minutes" : 177,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 368663,
-      "name" : "Luka Drobnjak",
-      "firstname" : "Luka",
-      "lastname" : "Drobnjak",
-      "age" : 21,
+      "id" : 361396,
+      "name" : "S. Bukinac",
+      "firstname" : "Stefan",
+      "lastname" : "Bukinac",
+      "age" : 20,
       "birth" : {
-        "date" : "2004-04-25",
+        "date" : "2005-07-08",
         "place" : null,
         "country" : "Serbia"
       },
@@ -2521,7 +1683,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/368663.png"
+      "photo" : "https://media.api-sports.io/football/players/361396.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2535,25 +1697,25 @@
         "country" : "Serbia",
         "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 160,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.800000",
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 855,
+        "number" : 30,
+        "position" : "Defender",
+        "rating" : "6.85",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 1,
-        "bench" : 5
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -2562,30 +1724,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 108,
-        "key" : null,
-        "accuracy" : 50
+        "total" : 430,
+        "key" : 10,
+        "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 18,
         "blocks" : 2,
-        "interceptions" : 2
+        "interceptions" : 15
       },
       "duels" : {
-        "total" : 13,
-        "won" : 8
+        "total" : 64,
+        "won" : 36
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : 9,
+        "success" : 5,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 7,
+        "committed" : 9
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2596,139 +1758,85 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 456997,
+      "name" : "P. Sukacev",
+      "firstname" : "Petar",
+      "lastname" : "Sukacev",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-08-28",
+        "place" : "Kilchberg",
+        "country" : "Switzerland"
+      },
+      "nationality" : "Serbia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/456997.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 702,
         "name" : "Vojvodina",
         "logo" : "https://media.api-sports.io/football/teams/702.png"
       },
       "league" : {
-        "id" : 732,
-        "name" : "Cup",
+        "id" : 286,
+        "name" : "Super Liga",
         "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
+        "logo" : "https://media.api-sports.io/football/leagues/286.png",
         "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 7,
+        "lineups" : 6,
+        "minutes" : 467,
+        "number" : 27,
+        "position" : "Midfielder",
+        "rating" : "6.44",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
+        "in" : 1,
+        "out" : 6,
         "bench" : 2
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 4,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 107,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 11,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 65,
+        "won" : 23
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 16,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 4,
+        "committed" : 7
       },
       "cards" : {
         "yellow" : 0,
@@ -2738,576 +1846,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 398194,
-      "name" : "L. JovanoviÄ",
-      "firstname" : "Lazar",
-      "lastname" : "Jovanović",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-11-30",
-        "place" : null,
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/398194.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 431638,
-      "name" : "U. Jakovljević",
-      "firstname" : "Uroš",
-      "lastname" : "Jakovljević",
-      "age" : 19,
-      "birth" : {
-        "date" : "2005-05-26",
-        "place" : "Sremska Mitrovica",
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/431638.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 439992,
-      "name" : "Mihajlo Butrakovic",
-      "firstname" : "Mihajlo",
-      "lastname" : "Butrakovic",
-      "age" : 19,
-      "birth" : {
-        "date" : "2006-04-12",
-        "place" : null,
-        "country" : "Serbia"
-      },
-      "nationality" : "Serbia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/439992.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 286,
-        "name" : "Super Liga",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/286.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 732,
-        "name" : "Cup",
-        "country" : "Serbia",
-        "logo" : "https://media.api-sports.io/football/leagues/732.png",
-        "flag" : "https://media.api-sports.io/flags/rs.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 702,
-        "name" : "Vojvodina",
-        "logo" : "https://media.api-sports.io/football/teams/702.png"
-      },
-      "league" : {
-        "id" : 3,
-        "name" : "UEFA Europa League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/3.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

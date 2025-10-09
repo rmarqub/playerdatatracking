@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "1360"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 19710,
-      "name" : "J. Pritchard",
-      "firstname" : "Joe Cameron",
-      "lastname" : "Pritchard",
+      "id" : 17485,
+      "name" : "F. Rawson",
+      "firstname" : "Farrend James",
+      "lastname" : "Rawson",
       "age" : 29,
       "birth" : {
-        "date" : "1996-09-10",
-        "place" : "Watford",
+        "date" : "1996-07-11",
+        "place" : "Nottingham",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "174 cm",
-      "weight" : "66 kg",
+      "height" : "193",
+      "weight" : "73",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/19710.png"
+      "photo" : "https://media.api-sports.io/football/players/17485.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,19 +41,184 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 348,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "6.85",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 93,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 4,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 61,
+        "won" : 43
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : 1,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 189,
+        "number" : 5,
+        "position" : "Defender",
+        "rating" : "7.4",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20095,
+      "name" : "P. Madden",
+      "firstname" : "Paddy Stephen",
+      "lastname" : "Madden",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-03-04",
+        "place" : "Dublin",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "183",
+      "weight" : "76",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20095.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 216,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.333333",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
         "out" : null,
         "bench" : null
       },
@@ -63,128 +228,36 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20094,
-      "name" : "A. Hunter",
-      "firstname" : "Ashley Matthew",
-      "lastname" : "Hunter",
-      "age" : 30,
-      "birth" : {
-        "date" : "1995-09-29",
-        "place" : "Derby",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "178 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20094.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 15,
-        "lineups" : 7,
-        "minutes" : 702,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.733333",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 4,
-        "bench" : 18
-      },
-      "shots" : {
-        "total" : 6,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 253,
-        "key" : 14,
+        "total" : 38,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 13,
-        "blocks" : 1,
-        "interceptions" : 6
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 97,
-        "won" : 43
+        "total" : 25,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 17,
-        "success" : 4,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 18,
-        "committed" : 10
+        "drawn" : null,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -206,53 +279,53 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 214,
-        "number" : null,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 78,
+        "number" : 8,
         "position" : "Attacker",
-        "rating" : "7.400000",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 3,
-        "bench" : 0
+        "in" : 1,
+        "out" : 1,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 5,
-        "on" : 3
+        "total" : 3,
+        "on" : 1
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 81,
-        "key" : 2,
+        "total" : 22,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 4
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 23,
-        "won" : 14
+        "total" : 11,
+        "won" : 7
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 4,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 5,
+        "drawn" : 1,
         "committed" : 1
       },
       "cards" : {
@@ -274,30 +347,30 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 91,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 12,
+        "number" : 8,
         "position" : "Attacker",
-        "rating" : "6.300000",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 1,
-        "bench" : 2
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
@@ -306,22 +379,187 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 7,
+        "total" : 2,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 5,
+        "total" : 3,
         "won" : 2
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 20166,
+      "name" : "S. Conneely",
+      "firstname" : "Séamus Joseph",
+      "lastname" : "Conneely",
+      "age" : 37,
+      "birth" : {
+        "date" : "1988-07-09",
+        "place" : "London",
+        "country" : "England"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "175",
+      "weight" : "68",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20166.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 158,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.566666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 60,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 10
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 98,
+        "number" : 28,
+        "position" : "Midfielder",
+        "rating" : "7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
@@ -352,25 +590,25 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 183,
+        "number" : 28,
+        "position" : "Midfielder",
+        "rating" : "7.2",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
+        "in" : 0,
+        "out" : 1,
         "bench" : 1
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -379,7 +617,264 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 20,
+        "total" : 43,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 82900,
+      "name" : "T. Walton",
+      "firstname" : "Tyler",
+      "lastname" : "Walton",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-23",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/82900.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 394,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.060000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 10,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 3,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 77,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 105,
+        "won" : 31
+      },
+      "dribbles" : {
+        "attempts" : 14,
+        "success" : 6,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 15
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 25,
+        "number" : 23,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 4,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129641,
+      "name" : "M. Kelly",
+      "firstname" : "Michael",
+      "lastname" : "Kelly",
+      "age" : 29,
+      "birth" : {
+        "date" : "1996-07-13",
+        "place" : "Leixlip",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "196",
+      "weight" : "80",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129641.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 270,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : "6.566666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 5,
+        "assists" : 0,
+        "saves" : 3
+      },
+      "passes" : {
+        "total" : 108,
         "key" : 1,
         "accuracy" : null
       },
@@ -389,8 +884,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : 2,
-        "won" : 2
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -398,12 +893,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 2,
         "committed" : null
       },
       "cards" : {
         "yellow" : 0,
-        "yellowred" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -411,99 +906,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 20318,
-      "name" : "S. Whalley",
-      "firstname" : "Shaun James",
-      "lastname" : "Whalley",
-      "age" : 38,
-      "birth" : {
-        "date" : "1987-08-07",
-        "place" : "Whiston",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "67 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/20318.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 23,
-        "lineups" : 23,
-        "minutes" : 1985,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.043478",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 8,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 40,
-        "on" : 20
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 602,
-        "key" : 39,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 31,
-        "blocks" : 4,
-        "interceptions" : 9
-      },
-      "duels" : {
-        "total" : 331,
-        "won" : 128
-      },
-      "dribbles" : {
-        "attempts" : 70,
-        "success" : 24,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 37,
-        "committed" : 41
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 2,
-        "missed" : 0,
-        "saved" : null
+        "saved" : 1
       }
     }, {
       "team" : {
@@ -512,166 +915,20 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 2,
         "lineups" : 2,
-        "minutes" : 177,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 21,
-        "key" : 2,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 8,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 1
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 85,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 31,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 2
-      },
-      "duels" : {
-        "total" : 17,
-        "won" : 12
-      },
-      "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 4,
-        "committed" : 2
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 188,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.4",
         "captain" : false
       },
       "substitutes" : {
@@ -685,127 +942,35 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 4,
+        "assists" : 0,
+        "saves" : 5
       },
       "passes" : {
-        "total" : null,
+        "total" : 79,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 82050,
-      "name" : "K. Mooney",
-      "firstname" : "Kelsey Thomas",
-      "lastname" : "Mooney",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-02-05",
-        "place" : "Hemel Hempstead",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "189 cm",
-      "weight" : "79 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/82050.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 16,
-        "lineups" : 12,
-        "minutes" : 1005,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.766666",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 7,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 12,
-        "on" : 5
-      },
-      "goals" : {
-        "total" : 2,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 206,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 14,
-        "blocks" : 1,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 226,
-        "won" : 92
+        "total" : 4,
+        "won" : 4
       },
       "dribbles" : {
-        "attempts" : 15,
-        "success" : 5,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 18,
-        "committed" : 23
+        "drawn" : 2,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
@@ -814,7 +979,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     }, {
       "team" : {
@@ -828,20 +993,20 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "minutes" : 90,
+        "number" : 1,
+        "position" : "Goalkeeper",
+        "rating" : "7.7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -850,169 +1015,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 0,
+        "conceded" : 2,
         "assists" : 0,
-        "saves" : null
+        "saves" : 3
       },
       "passes" : {
-        "total" : 10,
+        "total" : 41,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
         "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 12,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 3,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -1033,7 +1052,7 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
@@ -1066,480 +1085,58 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 28,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 291,
         "number" : null,
         "position" : "Attacker",
-        "rating" : "6.450000",
+        "rating" : "6.960000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 6,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 3,
-        "won" : 2
-      },
-      "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 180559,
-      "name" : "C. Caton",
-      "firstname" : "Charlie",
-      "lastname" : "Caton",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-11-25",
-        "place" : "Bodelwyddan",
-        "country" : "Wales"
-      },
-      "nationality" : "Wales",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/180559.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 70,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.550000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 10,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 4
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284282,
-      "name" : "E. Poilly",
-      "firstname" : "Emerich",
-      "lastname" : "Poilly",
-      "age" : 20,
-      "birth" : {
-        "date" : "2004-11-24",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "France",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284282.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
+        "in" : 1,
         "out" : null,
         "bench" : null
       },
       "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 284420,
-      "name" : "Zachariah Olumide Awe",
-      "firstname" : "Zachariah Olumide",
-      "lastname" : "Awe",
-      "age" : 21,
-      "birth" : {
-        "date" : "2004-01-09",
-        "place" : "London",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "192 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/284420.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 21,
-        "lineups" : 21,
-        "minutes" : 1890,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.810000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 7,
+        "total" : 5,
         "on" : 2
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 537,
+        "total" : 54,
         "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 39,
-        "blocks" : 5,
-        "interceptions" : 40
-      },
-      "duels" : {
-        "total" : 300,
-        "won" : 177
-      },
-      "dribbles" : {
-        "attempts" : 10,
-        "success" : 8,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 30,
-        "committed" : 35
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 210,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.700000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 38,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
+        "total" : 13,
         "blocks" : 1,
-        "interceptions" : 1
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 16,
-        "won" : 11
+        "total" : 49,
+        "won" : 24
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 9,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 1
+        "drawn" : 4,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1561,20 +1158,93 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.250000",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 20,
+        "position" : "Attacker",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 162,
+        "number" : 20,
+        "position" : "Midfielder",
+        "rating" : "7.15",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
         "bench" : 0
       },
       "shots" : {
@@ -1588,32 +1258,32 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
-        "key" : 1,
+        "total" : 52,
+        "key" : 5,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 6,
         "blocks" : 1,
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 30,
-        "won" : 18
+        "total" : 24,
+        "won" : 14
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
         "drawn" : 4,
-        "committed" : 4
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 1,
+        "yellow" : 2,
         "yellowred" : 0,
-        "red" : 1
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
@@ -1625,21 +1295,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 322305,
-      "name" : "J. O&apos;Brien-Whitmarsh",
-      "firstname" : "Joseph",
-      "lastname" : "O'Brien-Whitmarsh",
-      "age" : 20,
+      "id" : 138869,
+      "name" : "O. Wright",
+      "firstname" : "Oliver",
+      "lastname" : "Lennon George Wright",
+      "age" : 23,
       "birth" : {
-        "date" : "2005-05-11",
-        "place" : "Cork",
-        "country" : "Republic of Ireland"
+        "date" : "2002-10-25",
+        "place" : "Bath",
+        "country" : "England"
       },
-      "nationality" : "Republic of Ireland",
-      "height" : "173 cm",
-      "weight" : "73 kg",
+      "nationality" : "England",
+      "height" : "187",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/322305.png"
+      "photo" : "https://media.api-sports.io/football/players/138869.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1653,40 +1323,113 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 22,
+        "appearences" : 6,
+        "lineups" : 5,
+        "minutes" : 270,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
+        "position" : "Goalkeeper",
+        "rating" : "7.066666",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 1,
+        "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : 0,
+        "total" : null,
+        "conceded" : 1,
         "assists" : 0,
-        "saves" : null
+        "saves" : 7
       },
       "passes" : {
-        "total" : 3,
+        "total" : 97,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
         "total" : 1,
-        "blocks" : 1,
+        "won" : 1
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 189,
+        "number" : 13,
+        "position" : "Goalkeeper",
+        "rating" : "6.35",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 2,
+        "assists" : 0,
+        "saves" : 3
+      },
+      "passes" : {
+        "total" : 61,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
@@ -1712,26 +1455,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 325343,
-      "name" : "J. Woods",
-      "firstname" : "Josh",
-      "lastname" : "Woods",
-      "age" : 25,
+      "id" : 157032,
+      "name" : "D. Martin",
+      "firstname" : "Dan",
+      "lastname" : "Martin",
+      "age" : 23,
       "birth" : {
-        "date" : "2000-07-05",
+        "date" : "2002-04-19",
         "place" : null,
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : null,
+      "height" : "176",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/325343.png"
+      "photo" : "https://media.api-sports.io/football/players/157032.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1745,57 +1488,130 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 18,
-        "lineups" : 7,
-        "minutes" : 720,
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : null,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.817647",
+        "position" : "Midfielder",
+        "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 11,
-        "out" : 5,
-        "bench" : 16
+        "in" : 1,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
-        "total" : 13,
-        "on" : 8
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 3,
+        "total" : null,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : null,
         "saves" : null
       },
       "passes" : {
-        "total" : 175,
-        "key" : 7,
+        "total" : null,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 9,
-        "blocks" : 2,
-        "interceptions" : 4
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 138,
-        "won" : 51
+        "total" : null,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 16,
-        "success" : 7,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 14
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 178,
+        "number" : 22,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 64,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 28,
+        "won" : 12
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -1818,21 +1634,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 44,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.700000",
+        "lineups" : 1,
+        "minutes" : 60,
+        "number" : 22,
+        "position" : "Midfielder",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1845,18 +1661,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 12,
+        "total" : 15,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 2,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 6,
-        "won" : 3
+        "total" : 7,
+        "won" : 4
       },
       "dribbles" : {
         "attempts" : null,
@@ -1864,12 +1680,104 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 162902,
+      "name" : "L. Coyle",
+      "firstname" : "Liam",
+      "lastname" : "Coyle",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-12-06",
+        "place" : "Liverpool",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "175",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/162902.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 3,
+        "minutes" : 278,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.875000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 101,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 36,
+        "won" : 24
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 8,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -1891,25 +1799,190 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
-        "lineups" : 3,
-        "minutes" : 258,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.166666",
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : 6,
-        "on" : 1
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 37,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 9,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 51,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 167225,
+      "name" : "I. Sinclair",
+      "firstname" : "Isaac",
+      "lastname" : "Sinclair",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-07-26",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "178",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/167225.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.100000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 4
       },
       "goals" : {
         "total" : 1,
@@ -1918,27 +1991,100 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 63,
-        "key" : 3,
+        "total" : 126,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 6,
+        "total" : 5,
+        "blocks" : 4,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 74,
+        "won" : 36
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 22,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 5,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 59,
-        "won" : 23
+        "total" : 2,
+        "won" : 1
       },
       "dribbles" : {
-        "attempts" : 5,
-        "success" : 2,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
-        "committed" : 4
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 1,
@@ -1959,54 +2105,384 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 3,
-        "lineups" : 2,
-        "minutes" : 188,
+        "lineups" : 0,
+        "minutes" : 99,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 13,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 19,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 284215,
+      "name" : "B. Woods",
+      "firstname" : "Benjamin",
+      "lastname" : "Woods",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-09-27",
+        "place" : "Wigan",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "177",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/284215.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
         "number" : null,
-        "position" : "Attacker",
+        "position" : "Midfielder",
         "rating" : "7.000000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 2,
-        "bench" : 1
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 22,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 8,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 301282,
+      "name" : "Benn David Ward",
+      "firstname" : "Benn David",
+      "lastname" : "Ward",
+      "age" : 22,
+      "birth" : {
+        "date" : "2004-01-20",
+        "place" : "Hastings",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "188",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/301282.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.900000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : null,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 8,
-        "key" : 1,
+        "total" : 134,
+        "key" : 3,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
-        "blocks" : 1,
-        "interceptions" : null
+        "blocks" : 2,
+        "interceptions" : 5
       },
       "duels" : {
+        "total" : 51,
+        "won" : 29
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 78,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "7.2",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 38,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : 3,
-        "won" : 2
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 11,
+        "won" : 6
       },
       "dribbles" : {
         "attempts" : null,
         "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 1
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 14,
+        "position" : "Defender",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 36,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 2,
+        "interceptions" : 5
+      },
+      "duels" : {
+        "total" : 5,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
@@ -2028,21 +2504,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 326106,
-      "name" : "O. Patrick",
-      "firstname" : "Oliver Edward",
-      "lastname" : "Patrick",
-      "age" : 21,
+      "id" : 308864,
+      "name" : "J. Bauress",
+      "firstname" : "Joseph Michael",
+      "lastname" : "Bauress",
+      "age" : 20,
       "birth" : {
-        "date" : "2003-02-02",
-        "place" : "Oldham",
+        "date" : "2006-03-01",
+        "place" : null,
         "country" : "England"
       },
       "nationality" : "England",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/326106.png"
+      "photo" : "https://media.api-sports.io/football/players/308864.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2056,13 +2532,86 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 338,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.775000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 139,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 17
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : null,
+        "number" : 16,
         "position" : "Midfielder",
         "rating" : null,
         "captain" : false
@@ -2079,7 +2628,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2129,21 +2678,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : 16,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -2152,35 +2701,127 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 46,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
         "total" : null,
         "blocks" : null,
-        "interceptions" : null
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : null,
+        "attempts" : 1,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : null,
-        "committed" : null
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 325343,
+      "name" : "J. Woods",
+      "firstname" : "Josh",
+      "lastname" : "Woods",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-07-05",
+        "place" : "Skelmersdale",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/325343.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 209,
+        "number" : null,
+        "position" : "Attacker",
+        "rating" : "6.375000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 42,
+        "key" : 2,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 16
+      },
+      "dribbles" : {
+        "attempts" : 2,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2202,15 +2843,253 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
+        "appearences" : 2,
         "lineups" : 1,
-        "minutes" : 46,
-        "number" : null,
+        "minutes" : 120,
+        "number" : 39,
         "position" : "Midfielder",
-        "rating" : "6.200000",
+        "rating" : "6.55",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 33,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 201,
+        "number" : 39,
+        "position" : "Attacker",
+        "rating" : "7.1",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 7,
+        "on" : 5
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 45,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 1,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 46,
+        "won" : 22
+      },
+      "dribbles" : {
+        "attempts" : 10,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 5,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 1,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 375889,
+      "name" : "D. Matthews",
+      "firstname" : "Devon",
+      "lastname" : "Matthews",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-01-04",
+        "place" : "Oldham",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "190",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/375889.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 6,
+        "minutes" : 540,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.750000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 173,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 97,
+        "won" : 58
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 16,
+        "committed" : 14
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 172,
+        "number" : 17,
+        "position" : "Defender",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -2229,110 +3108,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 23,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 7,
-        "won" : 3
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 390597,
-      "name" : "L. Trickett",
-      "firstname" : "Lewis",
-      "lastname" : "Trickett",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-04-27",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "Northern Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/390597.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 9,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.900000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 3,
+        "total" : 85,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
         "total" : 2,
-        "blocks" : null,
+        "blocks" : 1,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 3,
-        "won" : 3
+        "total" : 24,
+        "won" : 13
       },
       "dribbles" : {
         "attempts" : null,
@@ -2340,11 +3127,11 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2367,15 +3154,180 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 279,
+        "number" : 17,
+        "position" : "Defender",
+        "rating" : "7.23",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 90,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 39,
+        "won" : 29
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 6,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 425969,
+      "name" : "F. Sass",
+      "firstname" : "Freddie",
+      "lastname" : "Sass",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-07-27",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/425969.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
         "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "7.000000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 113,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 6,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 53,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 5,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 10
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 279,
+        "number" : 3,
+        "position" : "Defender",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
@@ -2389,109 +3341,128 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 1,
-        "minutes" : 114,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.600000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 37,
-        "key" : 1,
+        "total" : 74,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
-        "blocks" : 1,
-        "interceptions" : 1
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 7
       },
       "duels" : {
-        "total" : 13,
-        "won" : 8
+        "total" : 19,
+        "won" : 11
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
         "success" : null,
         "past" : null
       },
       "fouls" : {
         "drawn" : 1,
-        "committed" : 1
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 444299,
+      "name" : "Alex Henderson",
+      "firstname" : "Alex",
+      "lastname" : "Henderson",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-11-27",
+        "place" : "Accrington",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "182",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/444299.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 2,
+        "minutes" : 114,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.666666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 28,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 23,
+        "won" : 9
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2508,151 +3479,59 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 46,
+        "name" : "EFL Trophy",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 2,
+        "minutes" : 166,
+        "number" : 10,
+        "position" : "Attacker",
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 2
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 5,
+        "on" : 3
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 412021,
-      "name" : "A. Popoola",
-      "firstname" : "Anjola",
-      "lastname" : "Popoola",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-06-19",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/412021.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 8,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
-        "key" : null,
+        "total" : 66,
+        "key" : 1,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 2,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 1,
-        "won" : null
+        "total" : 26,
+        "won" : 13
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 6,
+        "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 2
       },
       "cards" : {
         "yellow" : 0,
@@ -2678,94 +3557,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 210,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "7.17",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 3,
         "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 12,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
-        "out" : 0,
-        "bench" : 3
       },
       "shots" : {
         "total" : 1,
@@ -2774,22 +3580,114 @@
       "goals" : {
         "total" : 1,
         "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 67,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 32,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 6,
+        "success" : 4,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 481259,
+      "name" : "J. Smith",
+      "firstname" : "Joshua Jack",
+      "lastname" : "Smith",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-09-17",
+        "place" : "Blackburn",
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/481259.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 42,
+        "name" : "League Two",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/42.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 180,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
+        "total" : 43,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 2,
-        "won" : null
+        "total" : 22,
+        "won" : 13
       },
       "dribbles" : {
         "attempts" : null,
@@ -2797,12 +3695,12 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 3,
+        "committed" : 3
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 1,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -2819,20 +3717,93 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 22,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 180,
         "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "position" : "Defender",
+        "rating" : "6.600000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 43,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 22,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 46,
+        "name" : "EFL Trophy",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/46.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 2,
+        "lineups" : 1,
+        "minutes" : 106,
+        "number" : 25,
+        "position" : "Defender",
+        "rating" : "5.95",
         "captain" : false
       },
       "substitutes" : {
@@ -2846,23 +3817,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 54,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 9,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -2870,31 +3841,31 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 5
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 450701,
-      "name" : "O. Riva",
-      "firstname" : "Oliver",
-      "lastname" : "Riva",
-      "age" : 19,
+      "id" : 483956,
+      "name" : "James Rogerson",
+      "firstname" : "James Gordon",
+      "lastname" : "Rogerson",
+      "age" : 21,
       "birth" : {
-        "date" : "2005-12-01",
+        "date" : "2004-06-30",
         "place" : null,
         "country" : "England"
       },
@@ -2902,7 +3873,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/450701.png"
+      "photo" : "https://media.api-sports.io/football/players/483956.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2916,7 +3887,7 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
@@ -2977,171 +3948,6 @@
         "missed" : null,
         "saved" : null
       }
-    } ]
-  }, {
-    "player" : {
-      "id" : 481260,
-      "name" : "C. Hall",
-      "firstname" : "Charlie David",
-      "lastname" : "Hall",
-      "age" : null,
-      "birth" : {
-        "date" : null,
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/481260.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 48,
-        "name" : "League Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/48.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
     }, {
       "team" : {
         "id" : 1360,
@@ -3154,257 +3960,19 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.550000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 40,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : 1
-      },
-      "duels" : {
-        "total" : 9,
-        "won" : 7
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 1,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 21,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 494011,
-      "name" : "Finlay Tunstall",
-      "firstname" : "Finlay James",
-      "lastname" : "Tunstall",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-02-26",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/494011.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
         "out" : 0,
         "bench" : 2
       },
@@ -3460,26 +4028,26 @@
         "logo" : "https://media.api-sports.io/football/teams/1360.png"
       },
       "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
+        "id" : 48,
+        "name" : "League Cup",
         "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
+        "minutes" : null,
+        "number" : 21,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 3
       },
       "shots" : {
         "total" : null,
@@ -3487,8 +4055,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -3522,20 +4090,20 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 497780,
-      "name" : "Finlay Wilkinson",
-      "firstname" : "Finlay",
-      "lastname" : "Wilkinson",
+      "id" : 494011,
+      "name" : "Finlay Tunstall",
+      "firstname" : "Finlay James",
+      "lastname" : "Tunstall",
       "age" : 18,
       "birth" : {
-        "date" : "2007-10-23",
+        "date" : "2007-02-26",
         "place" : null,
         "country" : "England"
       },
@@ -3543,7 +4111,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/497780.png"
+      "photo" : "https://media.api-sports.io/football/players/494011.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3557,11 +4125,11 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/42.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
+        "appearences" : 2,
+        "lineups" : 2,
         "minutes" : null,
         "number" : null,
         "position" : "Midfielder",
@@ -3569,7 +4137,7 @@
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
+        "in" : 0,
         "out" : null,
         "bench" : null
       },
@@ -3579,7 +4147,7 @@
       },
       "goals" : {
         "total" : null,
-        "conceded" : null,
+        "conceded" : 0,
         "assists" : null,
         "saves" : null
       },
@@ -3607,15 +4175,15 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
+        "yellow" : 0,
         "yellowred" : null,
-        "red" : null
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -3630,21 +4198,21 @@
         "country" : "England",
         "logo" : "https://media.api-sports.io/football/leagues/46.png",
         "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 1,
         "lineups" : 0,
-        "minutes" : 78,
-        "number" : null,
+        "minutes" : 16,
+        "number" : 31,
         "position" : "Midfielder",
-        "rating" : "6.700000",
+        "rating" : "6.5",
         "captain" : false
       },
       "substitutes" : {
         "in" : 1,
         "out" : 0,
-        "bench" : 1
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -3657,594 +4225,99 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 14,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 12,
-        "won" : 6
+        "total" : 1,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 2,
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 1360,
+        "name" : "Accrington ST",
+        "logo" : "https://media.api-sports.io/football/teams/1360.png"
+      },
+      "league" : {
+        "id" : 48,
+        "name" : "League Cup",
+        "country" : "England",
+        "logo" : "https://media.api-sports.io/football/leagues/48.png",
+        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 1,
+        "minutes" : 122,
+        "number" : 31,
+        "position" : "Midfielder",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 31,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 4,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 8
+      },
+      "dribbles" : {
+        "attempts" : 1,
         "success" : 1,
         "past" : null
       },
       "fouls" : {
         "drawn" : 2,
-        "committed" : 3
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 497781,
-      "name" : "Sheikh Sohna",
-      "firstname" : "Sheikh",
-      "lastname" : "Sohna",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-03-02",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/497781.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 1,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : 1
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 45,
-        "name" : "FA Cup",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/45.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 497782,
-      "name" : "Lennox Williams",
-      "firstname" : "Lennox",
-      "lastname" : "Williams",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-09-28",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/497782.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 14,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.200000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 7,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : 1,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 497783,
-      "name" : "Rio Alston",
-      "firstname" : "Rio Matthew",
-      "lastname" : "Alston",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-01-17",
-        "place" : null,
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/497783.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 42,
-        "name" : "League Two",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/42.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 1360,
-        "name" : "Accrington ST",
-        "logo" : "https://media.api-sports.io/football/teams/1360.png"
-      },
-      "league" : {
-        "id" : 46,
-        "name" : "EFL Trophy",
-        "country" : "England",
-        "logo" : "https://media.api-sports.io/football/leagues/46.png",
-        "flag" : "https://media.api-sports.io/flags/gb-eng.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
         "committed" : null
       },
       "cards" : {

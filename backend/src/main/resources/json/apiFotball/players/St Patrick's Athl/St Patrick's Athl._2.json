@@ -1,17 +1,182 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "2",
     "team" : "3843"
   },
   "errors" : [ ],
-  "results" : 20,
+  "results" : 19,
   "paging" : {
     "current" : 2,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
+    "player" : {
+      "id" : 20090,
+      "name" : "B. Baggley",
+      "firstname" : "Barry Thomas",
+      "lastname" : "Crowe",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-01-11",
+        "place" : "Belfast",
+        "country" : "Northern Ireland"
+      },
+      "nationality" : "Northern Ireland",
+      "height" : "176 cm",
+      "weight" : "64 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/20090.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 99,
+        "number" : 19,
+        "position" : "Midfielder",
+        "rating" : "6.5",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 53,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 11,
+        "lineups" : 6,
+        "minutes" : 570,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "6.475000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 2,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 91,
+        "key" : 4,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 12,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 4,
+        "yellowred" : 1,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
     "player" : {
       "id" : 20232,
       "name" : "Ryan McLaughlin",
@@ -36,453 +201,123 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 16,
-        "lineups" : 12,
-        "minutes" : 983,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 170,
+        "number" : 23,
         "position" : "Defender",
-        "rating" : "6.708333",
+        "rating" : "6.45",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 4,
-        "out" : 8,
-        "bench" : 9
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 362,
-        "key" : 4,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 20,
-        "blocks" : 1,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 85,
-        "won" : 60
-      },
-      "dribbles" : {
-        "attempts" : 5,
-        "success" : 1,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 11
-      },
-      "cards" : {
-        "yellow" : 6,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
+        "total" : 52,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 44874,
-      "name" : "J. Mulraney",
-      "firstname" : "Jake David",
-      "lastname" : "Mulraney",
-      "age" : 29,
-      "birth" : {
-        "date" : "1996-04-05",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "172 cm",
-      "weight" : "64 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/44874.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 31,
-        "lineups" : 23,
-        "minutes" : 1857,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.034782",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 8,
-        "out" : 18,
-        "bench" : 10
-      },
-      "shots" : {
-        "total" : 26,
-        "on" : 11
-      },
-      "goals" : {
-        "total" : 7,
-        "conceded" : 0,
-        "assists" : 4,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 328,
-        "key" : 25,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 18,
-        "blocks" : 2,
-        "interceptions" : 10
-      },
-      "duels" : {
-        "total" : 149,
-        "won" : 65
-      },
-      "dribbles" : {
-        "attempts" : 37,
-        "success" : 12,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 27,
-        "committed" : 18
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 455,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 6,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
         "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 44997,
-      "name" : "D. Rogers",
-      "firstname" : "Daniel",
-      "lastname" : "Rogers",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-03-23",
-        "place" : "New York",
-        "country" : "USA"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "185 cm",
-      "weight" : "77 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/44997.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 20,
-        "lineups" : 20,
-        "minutes" : 1800,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : "6.784615",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 16
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 17,
-        "assists" : 0,
-        "saves" : 36
-      },
-      "passes" : {
-        "total" : 374,
-        "key" : 1,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "blocks" : 1,
+        "interceptions" : 2
       },
       "duels" : {
         "total" : 8,
-        "won" : 7
+        "won" : 5
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 223,
+        "number" : null,
+        "position" : "Defender",
+        "rating" : "6.800000",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 1,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 12,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : 3
       },
       "dribbles" : {
         "attempts" : null,
@@ -503,82 +338,28 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : 0
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 37721,
+      "name" : "S. Power",
+      "firstname" : "Simon",
+      "lastname" : "Power",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-05-13",
+        "place" : "Greystones",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "177 cm",
+      "weight" : "71 kg",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/37721.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 3843,
         "name" : "St Patrick's Athl.",
@@ -590,149 +371,57 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 125,
+        "number" : 25,
+        "position" : "Midfielder",
+        "rating" : "7.25",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 45056,
-      "name" : "T. Grivosti",
-      "firstname" : "Tom",
-      "lastname" : "Grivosti",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-06-15",
-        "place" : "Liverpool",
-        "country" : "England"
-      },
-      "nationality" : "England",
-      "height" : "185 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/45056.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 14,
-        "lineups" : 12,
-        "minutes" : 1145,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.954545",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 2,
         "out" : 1,
-        "bench" : 5
+        "bench" : 0
       },
       "shots" : {
-        "total" : 7,
-        "on" : 3
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 1,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 510,
-        "key" : 2,
+        "total" : 25,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 7,
-        "blocks" : 7,
-        "interceptions" : 13
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 61,
-        "won" : 29
+        "total" : 16,
+        "won" : 8
       },
       "dribbles" : {
-        "attempts" : 1,
-        "success" : null,
+        "attempts" : 4,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 5
+        "drawn" : 2,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 5,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -750,39 +439,39 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
+        "id" : 357,
+        "name" : "Premier Division",
         "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 84,
+        "appearences" : 5,
+        "lineups" : 0,
+        "minutes" : 120,
         "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "position" : "Midfielder",
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 5,
+        "out" : 0,
+        "bench" : 7
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 2,
+        "on" : 1
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 3,
         "key" : null,
         "accuracy" : null
       },
@@ -792,17 +481,17 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 2,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -812,101 +501,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 540,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 69267,
-      "name" : "B. Kavanagh",
-      "firstname" : "Brandon",
-      "lastname" : "Kavanagh",
-      "age" : 25,
+      "id" : 69235,
+      "name" : "S. Hoare",
+      "firstname" : "Seán",
+      "lastname" : "Hoare",
+      "age" : 31,
       "birth" : {
-        "date" : "2000-09-21",
+        "date" : "1994-03-15",
         "place" : "Dublin",
         "country" : "Republic of Ireland"
       },
       "nationality" : "Republic of Ireland",
-      "height" : "171 cm",
-      "weight" : "63 kg",
+      "height" : "189 cm",
+      "weight" : "77 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69267.png"
+      "photo" : "https://media.api-sports.io/football/players/69235.png"
     },
     "statistics" : [ {
       "team" : {
@@ -920,191 +536,45 @@
         "country" : "Ireland",
         "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 34,
-        "lineups" : 27,
-        "minutes" : 2295,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.378260",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 23,
-        "bench" : 9
-      },
-      "shots" : {
-        "total" : 43,
-        "on" : 26
-      },
-      "goals" : {
-        "total" : 6,
-        "conceded" : 0,
-        "assists" : 7,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 566,
-        "key" : 56,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
-        "blocks" : null,
-        "interceptions" : 8
-      },
-      "duels" : {
-        "total" : 122,
-        "won" : 58
-      },
-      "dribbles" : {
-        "attempts" : 36,
-        "success" : 20,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 13,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 2,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 1,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 71,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 3,
-        "lineups" : 0,
-        "minutes" : 24,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 15,
+        "lineups" : 12,
+        "minutes" : 1035,
+        "number" : 2,
+        "position" : "Defender",
+        "rating" : "6.93",
         "captain" : false
       },
       "substitutes" : {
         "in" : 3,
-        "out" : 0,
+        "out" : 2,
         "bench" : 6
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 8,
+        "on" : 3
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 637,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 12,
+        "blocks" : 9,
+        "interceptions" : 14
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 80,
+        "won" : 48
       },
       "dribbles" : {
         "attempts" : null,
@@ -1112,100 +582,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 69350,
-      "name" : "C. Forrester",
-      "firstname" : "Christopher Stephen",
-      "lastname" : "Forrester",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-12-17",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "175 cm",
-      "weight" : "69 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69350.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 36,
-        "lineups" : 32,
-        "minutes" : 2910,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.262500",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 4,
-        "out" : 5,
-        "bench" : 4
-      },
-      "shots" : {
-        "total" : 32,
-        "on" : 16
-      },
-      "goals" : {
-        "total" : 3,
-        "conceded" : 0,
-        "assists" : 3,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 1178,
-        "key" : 32,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 55,
-        "blocks" : 9,
-        "interceptions" : 23
-      },
-      "duels" : {
-        "total" : 213,
-        "won" : 114
-      },
-      "dribbles" : {
-        "attempts" : 27,
-        "success" : 16,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 22,
-        "committed" : 19
+        "drawn" : 6,
+        "committed" : 13
       },
       "cards" : {
         "yellow" : 6,
@@ -1215,154 +593,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : 3,
+        "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 467,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 5,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -1391,68 +623,68 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 34,
-        "lineups" : 33,
-        "minutes" : 2949,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 125,
+        "number" : 6,
         "position" : "Midfielder",
-        "rating" : "7.077272",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 4,
-        "bench" : 1
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 10,
-        "on" : 5
+        "total" : 1,
+        "on" : null
       },
       "goals" : {
-        "total" : 2,
+        "total" : 0,
         "conceded" : 0,
-        "assists" : 1,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 974,
-        "key" : 19,
+        "total" : 53,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 72,
-        "blocks" : 12,
-        "interceptions" : 25
+        "total" : 5,
+        "blocks" : 1,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 252,
-        "won" : 141
+        "total" : 8,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 15,
-        "success" : 8,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 27,
-        "committed" : 48
+        "drawn" : null,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 12,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
-        "commited" : null,
+        "commited" : 1,
         "scored" : 0,
         "missed" : 0,
         "saved" : null
@@ -1464,73 +696,92 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
+        "id" : 357,
+        "name" : "Premier Division",
         "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 63,
-        "number" : null,
+        "appearences" : 25,
+        "lineups" : 24,
+        "minutes" : 2085,
+        "number" : 6,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "7.07",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "in" : 1,
+        "out" : 3,
+        "bench" : 1
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 15,
+        "on" : 6
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
-        "key" : null,
+        "total" : 1031,
+        "key" : 20,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 57,
+        "blocks" : 15,
+        "interceptions" : 21
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 204,
+        "won" : 108
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 12,
+        "success" : 8,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 17,
+        "committed" : 36
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 10,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 69448,
+      "name" : "J. McClelland",
+      "firstname" : "Jason",
+      "lastname" : "McClelland",
+      "age" : 28,
+      "birth" : {
+        "date" : "1997-03-05",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/69448.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 3843,
         "name" : "St Patrick's Athl.",
@@ -1542,20 +793,20 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 538,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 90,
+        "number" : 11,
+        "position" : "Defender",
+        "rating" : "6",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
@@ -1564,105 +815,13 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 69394,
-      "name" : "Z. Elbouzedi",
-      "firstname" : "Zachary",
-      "lastname" : "Elbouzedi",
-      "age" : 27,
-      "birth" : {
-        "date" : "1998-04-05",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "180 cm",
-      "weight" : "70 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69394.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 11,
-        "lineups" : 8,
-        "minutes" : 660,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "7.088888",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 3,
-        "out" : 5,
-        "bench" : 3
-      },
-      "shots" : {
-        "total" : 1,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
-        "assists" : 4,
+        "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 152,
-        "key" : 23,
+        "total" : 29,
+        "key" : 2,
         "accuracy" : null
       },
       "tackles" : {
@@ -1671,17 +830,17 @@
         "interceptions" : 1
       },
       "duels" : {
-        "total" : 32,
-        "won" : 13
+        "total" : 9,
+        "won" : 3
       },
       "dribbles" : {
-        "attempts" : 15,
-        "success" : 9,
+        "attempts" : 2,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 2
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -1702,700 +861,59 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
+        "id" : 357,
+        "name" : "Premier Division",
         "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 27,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
+        "appearences" : 27,
+        "lineups" : 17,
+        "minutes" : 1499,
+        "number" : 11,
+        "position" : "Attacker",
+        "rating" : "7.02",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 480,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
+        "in" : 10,
         "out" : 5,
-        "bench" : 0
+        "bench" : 13
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 12,
+        "on" : 6
       },
       "goals" : {
         "total" : 2,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 69558,
-      "name" : "A. Breslin",
-      "firstname" : "Anthony",
-      "lastname" : "Breslin",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-02-13",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/69558.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 30,
-        "lineups" : 29,
-        "minutes" : 2555,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.847368",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 6,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 1
-      },
-      "goals" : {
-        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 661,
-        "key" : 11,
+        "total" : 754,
+        "key" : 32,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 18,
-        "blocks" : 2,
-        "interceptions" : 15
-      },
-      "duels" : {
-        "total" : 95,
-        "won" : 52
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : 2,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 11,
-        "committed" : 10
-      },
-      "cards" : {
-        "yellow" : 5,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 538,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 105972,
-      "name" : "A. Bolger",
-      "firstname" : "Aaron Nigel",
-      "lastname" : "Bolger",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-02-02",
-        "place" : null,
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : "170 cm",
-      "weight" : "65 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/105972.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 17,
-        "lineups" : 10,
-        "minutes" : 956,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.872727",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 7,
-        "out" : 5,
-        "bench" : 24
-      },
-      "shots" : {
-        "total" : 5,
-        "on" : 2
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 0,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 342,
-        "key" : 7,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 21,
+        "total" : 25,
         "blocks" : 3,
-        "interceptions" : 12
+        "interceptions" : 18
       },
       "duels" : {
-        "total" : 80,
-        "won" : 44
-      },
-      "dribbles" : {
-        "attempts" : 2,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : 17,
-        "committed" : 15
-      },
-      "cards" : {
-        "yellow" : 3,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : 0,
-        "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 0,
-        "minutes" : 77,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 6,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 1
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 119746,
-      "name" : "A. Sjöberg",
-      "firstname" : "Carl Axel",
-      "lastname" : "Sjöberg",
-      "age" : 25,
-      "birth" : {
-        "date" : "2000-04-12",
-        "place" : "Helsingborg",
-        "country" : "Sweden"
-      },
-      "nationality" : "Sweden",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/119746.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 18,
-        "lineups" : 13,
-        "minutes" : 1180,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : "6.723076",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 5,
-        "out" : 6,
-        "bench" : 7
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : 0,
-        "assists" : 1,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : 354,
-        "key" : 9,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : 19,
-        "blocks" : 6,
-        "interceptions" : 7
-      },
-      "duels" : {
-        "total" : 98,
-        "won" : 48
+        "total" : 128,
+        "won" : 68
       },
       "dribbles" : {
         "attempts" : 17,
-        "success" : 7,
+        "success" : 8,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 11,
-        "committed" : 12
+        "drawn" : 20,
+        "committed" : 6
       },
       "cards" : {
         "yellow" : 2,
@@ -2409,26 +927,45 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 129704,
+      "name" : "J. Garrick",
+      "firstname" : "Jordon D'Andre",
+      "lastname" : "Garrick",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-07-15",
+        "place" : null,
+        "country" : "England"
+      },
+      "nationality" : "England",
+      "height" : "183",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129704.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 3843,
         "name" : "St Patrick's Athl.",
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 22,
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
@@ -2443,8 +980,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2478,8 +1015,8 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     }, {
@@ -2489,33 +1026,33 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 540,
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
         "number" : null,
-        "position" : "Defender",
+        "position" : "Midfielder",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
+        "in" : null,
+        "out" : null,
+        "bench" : null
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 0,
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -2544,9 +1081,9 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
       },
       "penalty" : {
         "won" : null,
@@ -2581,62 +1118,62 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 32,
-        "lineups" : 32,
-        "minutes" : 2782,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 180,
+        "number" : 4,
         "position" : "Defender",
-        "rating" : "7.161904",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 2,
+        "out" : 0,
         "bench" : 0
       },
       "shots" : {
-        "total" : 13,
-        "on" : 8
+        "total" : null,
+        "on" : null
       },
       "goals" : {
-        "total" : 4,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 1,
         "saves" : null
       },
       "passes" : {
-        "total" : 1146,
-        "key" : 7,
-        "accuracy" : 43
+        "total" : 85,
+        "key" : 1,
+        "accuracy" : 40
       },
       "tackles" : {
-        "total" : 22,
-        "blocks" : 19,
-        "interceptions" : 25
+        "total" : 3,
+        "blocks" : 2,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 153,
-        "won" : 99
+        "total" : 11,
+        "won" : 6
       },
       "dribbles" : {
-        "attempts" : 3,
-        "success" : 2,
+        "attempts" : 1,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 6,
-        "committed" : 8
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 6,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2648,171 +1185,6 @@
         "saved" : null
       }
     }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 540,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 1,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 138455,
-      "name" : "L. Turner",
-      "firstname" : "Luke",
-      "lastname" : "Turner",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-05-20",
-        "place" : "Dublin",
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/138455.png"
-    },
-    "statistics" : [ {
       "team" : {
         "id" : 3843,
         "name" : "St Patrick's Athl.",
@@ -2824,57 +1196,57 @@
         "country" : "Ireland",
         "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 28,
-        "lineups" : 25,
-        "minutes" : 2229,
+        "appearences" : 13,
+        "lineups" : 13,
+        "minutes" : 1170,
         "number" : null,
         "position" : "Defender",
-        "rating" : "6.825000",
+        "rating" : "7.280000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
-        "out" : 2,
-        "bench" : 11
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
       },
       "shots" : {
-        "total" : 6,
+        "total" : 4,
         "on" : 1
       },
       "goals" : {
-        "total" : 3,
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 694,
-        "key" : 3,
-        "accuracy" : null
+        "total" : 297,
+        "key" : 2,
+        "accuracy" : 48
       },
       "tackles" : {
-        "total" : 26,
-        "blocks" : 9,
-        "interceptions" : 10
+        "total" : 1,
+        "blocks" : 2,
+        "interceptions" : 14
       },
       "duels" : {
-        "total" : 151,
-        "won" : 86
+        "total" : 26,
+        "won" : 20
       },
       "dribbles" : {
-        "attempts" : 13,
-        "success" : 8,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 19,
-        "committed" : 16
+        "drawn" : 4,
+        "committed" : 1
       },
       "cards" : {
-        "yellow" : 4,
+        "yellow" : 1,
         "yellowred" : 0,
         "red" : 0
       },
@@ -2883,152 +1255,6 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 0,
-        "minutes" : 6,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 1,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 6
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
         "saved" : null
       }
     } ]
@@ -3057,20 +1283,20 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 12,
-        "lineups" : 12,
-        "minutes" : 1080,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 180,
+        "number" : 94,
         "position" : "Goalkeeper",
-        "rating" : "7.170000",
+        "rating" : "6.25",
         "captain" : false
       },
       "substitutes" : {
@@ -3084,23 +1310,23 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : 10,
+        "conceded" : 7,
         "assists" : 0,
-        "saves" : 29
+        "saves" : 8
       },
       "passes" : {
-        "total" : 332,
+        "total" : 47,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 9,
-        "won" : 9
+        "total" : 1,
+        "won" : 1
       },
       "dribbles" : {
         "attempts" : null,
@@ -3108,7 +1334,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
+        "drawn" : null,
         "committed" : null
       },
       "cards" : {
@@ -3130,20 +1356,20 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
+        "id" : 357,
+        "name" : "Premier Division",
         "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
+        "appearences" : 13,
+        "lineups" : 13,
+        "minutes" : 1170,
         "number" : null,
         "position" : "Goalkeeper",
-        "rating" : null,
+        "rating" : "7.300000",
         "captain" : false
       },
       "substitutes" : {
@@ -3157,12 +1383,12 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
+        "conceded" : 8,
+        "assists" : 0,
+        "saves" : 19
       },
       "passes" : {
-        "total" : null,
+        "total" : 150,
         "key" : null,
         "accuracy" : null
       },
@@ -3172,8 +1398,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 2,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -3185,108 +1411,35 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : 0,
+        "yellow" : 2,
         "yellowred" : 0,
         "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 6,
-        "lineups" : 6,
-        "minutes" : 540,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 1,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
       }
     } ]
   }, {
     "player" : {
-      "id" : 156824,
-      "name" : "A. Kazeem",
-      "firstname" : "Al-Amin",
-      "lastname" : "Kazeem",
-      "age" : 23,
+      "id" : 194833,
+      "name" : "R. Palmer",
+      "firstname" : "Romal Jordan",
+      "lastname" : "Palmer",
+      "age" : 27,
       "birth" : {
-        "date" : "2002-04-06",
-        "place" : null,
+        "date" : "1998-09-30",
+        "place" : "Wigan",
         "country" : "England"
       },
       "nationality" : "England",
-      "height" : "175 cm",
-      "weight" : "66 kg",
+      "height" : "181 cm",
+      "weight" : "75 kg",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/156824.png"
+      "photo" : "https://media.api-sports.io/football/players/194833.png"
     },
     "statistics" : [ {
       "team" : {
@@ -3300,54 +1453,54 @@
         "country" : "Ireland",
         "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 8,
+        "appearences" : 3,
         "lineups" : 2,
-        "minutes" : 206,
+        "minutes" : 128,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.772727",
+        "position" : "Midfielder",
+        "rating" : "6.300000",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 6,
-        "out" : 1,
-        "bench" : 10
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 3,
+        "total" : 1,
         "on" : null
       },
       "goals" : {
-        "total" : 1,
+        "total" : 0,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 138,
-        "key" : 2,
+        "total" : 8,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 17,
+        "total" : null,
         "blocks" : null,
-        "interceptions" : 1
+        "interceptions" : null
       },
       "duels" : {
-        "total" : 78,
-        "won" : 48
+        "total" : 1,
+        "won" : null
       },
       "dribbles" : {
-        "attempts" : 12,
-        "success" : 5,
+        "attempts" : null,
+        "success" : null,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 20,
-        "committed" : 10
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 1,
@@ -3359,6 +1512,98 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 280691,
+      "name" : "C. Carty",
+      "firstname" : "Conor Thomas",
+      "lastname" : "Carty",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-05-25",
+        "place" : "Dunlavin",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/280691.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 359,
+        "name" : "FAI Cup",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 90,
+        "number" : 15,
+        "position" : "Attacker",
+        "rating" : "7.75",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 19,
+        "key" : 2,
+        "accuracy" : 89
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 2,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
         "saved" : null
       }
     }, {
@@ -3373,34 +1618,34 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 3,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 29,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 65,
+        "number" : 15,
+        "position" : "Attacker",
+        "rating" : "6.7",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 3,
+        "in" : 2,
         "out" : 0,
-        "bench" : 5
+        "bench" : 3
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 5,
         "key" : null,
         "accuracy" : null
       },
@@ -3410,8 +1655,8 @@
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 4,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : null,
@@ -3419,8 +1664,8 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
-        "committed" : null
+        "drawn" : 1,
+        "committed" : 1
       },
       "cards" : {
         "yellow" : 0,
@@ -3430,8 +1675,81 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 1,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 22,
+        "lineups" : 0,
+        "minutes" : 233,
+        "number" : 15,
+        "position" : "Attacker",
+        "rating" : "6.47",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 22,
+        "out" : 0,
+        "bench" : 32
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 35,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 31,
+        "won" : 7
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 2,
+        "committed" : 5
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
@@ -3460,30 +1778,30 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 33,
-        "lineups" : 20,
-        "minutes" : 1881,
-        "number" : null,
+        "appearences" : 3,
+        "lineups" : 2,
+        "minutes" : 138,
+        "number" : 10,
         "position" : "Midfielder",
-        "rating" : "6.595238",
+        "rating" : "6.4",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 13,
-        "out" : 12,
-        "bench" : 14
+        "in" : 1,
+        "out" : 2,
+        "bench" : 1
       },
       "shots" : {
-        "total" : 11,
-        "on" : 5
+        "total" : null,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -3492,30 +1810,30 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 280,
-        "key" : 12,
+        "total" : 26,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 13,
-        "blocks" : 2,
-        "interceptions" : 3
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
       },
       "duels" : {
-        "total" : 131,
-        "won" : 55
+        "total" : 9,
+        "won" : 5
       },
       "dribbles" : {
-        "attempts" : 34,
-        "success" : 15,
+        "attempts" : 6,
+        "success" : 4,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 25,
-        "committed" : 6
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
-        "yellow" : 2,
+        "yellow" : 0,
         "yellowred" : 0,
         "red" : 0
       },
@@ -3533,131 +1851,58 @@
         "logo" : "https://media.api-sports.io/football/teams/3843.png"
       },
       "league" : {
-        "id" : 359,
-        "name" : "FAI Cup",
+        "id" : 357,
+        "name" : "Premier Division",
         "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
         "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 63,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 6,
-        "lineups" : 1,
-        "minutes" : 213,
+        "lineups" : 2,
+        "minutes" : 246,
         "number" : null,
         "position" : "Midfielder",
-        "rating" : null,
+        "rating" : "6.466666",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 5,
-        "out" : 0,
-        "bench" : 5
+        "in" : 4,
+        "out" : 1,
+        "bench" : 4
       },
       "shots" : {
-        "total" : null,
-        "on" : null
+        "total" : 1,
+        "on" : 1
       },
       "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : null,
+        "total" : 31,
         "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : null,
-        "won" : null
+        "total" : 15,
+        "won" : 9
       },
       "dribbles" : {
-        "attempts" : null,
-        "success" : null,
+        "attempts" : 1,
+        "success" : 1,
         "past" : null
       },
       "fouls" : {
-        "drawn" : null,
+        "drawn" : 7,
         "committed" : null
       },
       "cards" : {
@@ -3668,103 +1913,30 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 331557,
-      "name" : "M. Boylan",
-      "firstname" : "Matt",
-      "lastname" : "Boylan",
+      "id" : 315769,
+      "name" : "D. Robinson",
+      "firstname" : "Darren Robert",
+      "lastname" : "Russell Robinson",
       "age" : 21,
       "birth" : {
-        "date" : "2004-07-04",
+        "date" : "2004-12-29",
         "place" : null,
-        "country" : "England"
+        "country" : "Northern Ireland"
       },
-      "nationality" : "England",
-      "height" : null,
-      "weight" : null,
+      "nationality" : "Northern Ireland",
+      "height" : "180",
+      "weight" : "77",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/331557.png"
+      "photo" : "https://media.api-sports.io/football/players/315769.png"
     },
     "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
       "team" : {
         "id" : 3843,
         "name" : "St Patrick's Athl.",
@@ -3776,437 +1948,15 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 361375,
-      "name" : "D. McHale",
-      "firstname" : "Daniel",
-      "lastname" : "McHale",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-04-01",
-        "place" : null,
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/361375.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 458831,
-      "name" : "A. Banim",
-      "firstname" : "Adam",
-      "lastname" : "Banim",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-11-13",
-        "place" : null,
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/458831.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 465153,
-      "name" : "Adam Deans",
-      "firstname" : "Adam",
-      "lastname" : "Deans",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-11-21",
-        "place" : null,
-        "country" : "Republic of Ireland"
-      },
-      "nationality" : "Republic of Ireland",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/465153.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 3843,
-        "name" : "St Patrick's Athl.",
-        "logo" : "https://media.api-sports.io/football/teams/3843.png"
-      },
-      "league" : {
-        "id" : 357,
-        "name" : "Premier Division",
-        "country" : "Ireland",
-        "logo" : "https://media.api-sports.io/football/leagues/357.png",
-        "flag" : "https://media.api-sports.io/flags/ie.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
+        "minutes" : 56,
+        "number" : 26,
+        "position" : "Midfielder",
+        "rating" : "6.6",
         "captain" : false
       },
       "substitutes" : {
@@ -4220,6 +1970,79 @@
       },
       "goals" : {
         "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 2
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : null,
+        "lineups" : null,
+        "minutes" : null,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : null,
+        "out" : null,
+        "bench" : null
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : null,
         "conceded" : null,
         "assists" : null,
         "saves" : null
@@ -4248,8 +2071,522 @@
         "committed" : null
       },
       "cards" : {
+        "yellow" : null,
+        "yellowred" : null,
+        "red" : null
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 340733,
+      "name" : "Sean Molloy",
+      "firstname" : "Sean",
+      "lastname" : "Molloy",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-08-02",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/340733.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 49,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
         "yellow" : 0,
         "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 49,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 394935,
+      "name" : "M. Melia",
+      "firstname" : "Mason",
+      "lastname" : "Melia",
+      "age" : 18,
+      "birth" : {
+        "date" : "2007-10-01",
+        "place" : "Kilcoole",
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/394935.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 848,
+        "name" : "UEFA Europa Conference League",
+        "country" : "World",
+        "logo" : "https://media.api-sports.io/football/leagues/848.png",
+        "flag" : null,
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 3,
+        "minutes" : 123,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "6.7",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 14,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 17,
+        "won" : 6
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 1
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 31,
+        "lineups" : 25,
+        "minutes" : 2109,
+        "number" : 9,
+        "position" : "Attacker",
+        "rating" : "7.11",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 6,
+        "out" : 16,
+        "bench" : 6
+      },
+      "shots" : {
+        "total" : 56,
+        "on" : 34
+      },
+      "goals" : {
+        "total" : 12,
+        "conceded" : 0,
+        "assists" : 3,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 312,
+        "key" : 20,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 12,
+        "blocks" : 1,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 260,
+        "won" : 108
+      },
+      "dribbles" : {
+        "attempts" : 49,
+        "success" : 22,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 46,
+        "committed" : 23
+      },
+      "cards" : {
+        "yellow" : 2,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 1,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 472087,
+      "name" : "Jason Oyenuga",
+      "firstname" : "Jason Folarin",
+      "lastname" : "Oyenuga",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-11-20",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : "176 cm",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/472087.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 38,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 497629,
+      "name" : "B. Hayes",
+      "firstname" : null,
+      "lastname" : null,
+      "age" : 16,
+      "birth" : {
+        "date" : null,
+        "place" : null,
+        "country" : null
+      },
+      "nationality" : null,
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/497629.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 359,
+        "name" : "FAI Cup",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 46,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : "7.68",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 17,
+        "key" : 2,
+        "accuracy" : 82
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 1,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
         "red" : 0
       },
       "penalty" : {
@@ -4271,21 +2608,21 @@
         "country" : "World",
         "logo" : "https://media.api-sports.io/football/leagues/848.png",
         "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Defender",
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 0
+        "bench" : 2
       },
       "shots" : {
         "total" : null,
@@ -4293,8 +2630,8 @@
       },
       "goals" : {
         "total" : 0,
-        "conceded" : null,
-        "assists" : null,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -4328,8 +2665,338 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 31,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 497673,
+      "name" : "B. Canny",
+      "firstname" : "Billy",
+      "lastname" : "Canny",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-05-28",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/497673.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 32,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 512546,
+      "name" : "Mattthew O'Hara",
+      "firstname" : "Mattthew",
+      "lastname" : "O'Hara",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-04-15",
+        "place" : null,
+        "country" : "Republic of Ireland"
+      },
+      "nationality" : "Republic of Ireland",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/512546.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 359,
+        "name" : "FAI Cup",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/359.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 0,
+        "minutes" : 66,
+        "number" : 45,
+        "position" : "Attacker",
+        "rating" : "5.89",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 0
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : 0
+      },
+      "passes" : {
+        "total" : 36,
+        "key" : 0,
+        "accuracy" : 91
+      },
+      "tackles" : {
+        "total" : 0,
+        "blocks" : 0,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : 0,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : null,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
         "scored" : null,
         "missed" : null,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 3843,
+        "name" : "St Patrick's Athl.",
+        "logo" : "https://media.api-sports.io/football/teams/3843.png"
+      },
+      "league" : {
+        "id" : 357,
+        "name" : "Premier Division",
+        "country" : "Ireland",
+        "logo" : "https://media.api-sports.io/football/leagues/357.png",
+        "flag" : "https://media.api-sports.io/flags/ie.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 45,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

@@ -1,7 +1,7 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "1",
     "team" : "616"
   },
@@ -9,25 +9,25 @@
   "results" : 20,
   "paging" : {
     "current" : 1,
-    "total" : 3
+    "total" : 2
   },
   "response" : [ {
     "player" : {
-      "id" : 3575,
-      "name" : "E. Çokaj",
-      "firstname" : "Enis",
-      "lastname" : "Çokaj",
+      "id" : 3568,
+      "name" : "J. Mersinaj",
+      "firstname" : "Jon",
+      "lastname" : "Mersinaj",
       "age" : 26,
       "birth" : {
-        "date" : "1999-02-23",
-        "place" : "Koplik",
+        "date" : "1999-02-08",
+        "place" : "Tiranë",
         "country" : "Albania"
       },
       "nationality" : "Albania",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/3575.png"
+      "photo" : "https://media.api-sports.io/football/players/3568.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,14 +41,14 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Defender",
         "rating" : null,
         "captain" : false
       },
@@ -105,21 +105,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 14343,
-      "name" : "D. Nejašmić",
-      "firstname" : "Darko",
-      "lastname" : "Nejašmić",
-      "age" : 25,
+      "id" : 9867,
+      "name" : "Renan Guedes",
+      "firstname" : "Renan",
+      "lastname" : "Guedes Borges",
+      "age" : 27,
       "birth" : {
-        "date" : "1999-01-25",
-        "place" : "Split",
-        "country" : "Croatia"
+        "date" : "1998-01-19",
+        "place" : "São Paulo",
+        "country" : "Brazil"
       },
-      "nationality" : "Croatia",
-      "height" : "183 cm",
-      "weight" : "74 kg",
+      "nationality" : "Brazil",
+      "height" : "177",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14343.png"
+      "photo" : "https://media.api-sports.io/football/players/9867.png"
     },
     "statistics" : [ {
       "team" : {
@@ -133,25 +133,25 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 360,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : "6.550000",
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 731,
+        "number" : 42,
+        "position" : "Defender",
+        "rating" : "6.83",
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 0,
+        "out" : 1,
         "bench" : 0
       },
       "shots" : {
-        "total" : 1,
-        "on" : 1
+        "total" : 4,
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -160,27 +160,211 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 88,
-        "key" : null,
+        "total" : 249,
+        "key" : 11,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 4,
+        "total" : 18,
+        "blocks" : 4,
+        "interceptions" : 8
+      },
+      "duels" : {
+        "total" : 86,
+        "won" : 44
+      },
+      "dribbles" : {
+        "attempts" : 11,
+        "success" : 3,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 10,
+        "committed" : 13
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 11088,
+      "name" : "S. Shopov",
+      "firstname" : "Stanislav",
+      "lastname" : "Tihomirov Shopov",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-02-23",
+        "place" : "Plovdiv",
+        "country" : "Bulgaria"
+      },
+      "nationality" : "Bulgaria",
+      "height" : "179",
+      "weight" : "69",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/11088.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 7,
+        "minutes" : 471,
+        "number" : 10,
+        "position" : "Midfielder",
+        "rating" : "6.46",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 1,
+        "out" : 6,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : 8,
+        "on" : 4
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 156,
+        "key" : 7,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 10,
         "blocks" : null,
         "interceptions" : 2
       },
       "duels" : {
-        "total" : 20,
-        "won" : 9
+        "total" : 38,
+        "won" : 13
       },
       "dribbles" : {
-        "attempts" : 4,
+        "attempts" : 6,
         "success" : 2,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 2,
-        "committed" : 1
+        "drawn" : 1,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 3,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 14298,
+      "name" : "M. Malenica",
+      "firstname" : "Marko",
+      "lastname" : "Malenica",
+      "age" : 31,
+      "birth" : {
+        "date" : "1994-02-08",
+        "place" : "Nova Gradiška",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : "192",
+      "weight" : "84",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/14298.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 8,
+        "minutes" : 731,
+        "number" : 31,
+        "position" : "Goalkeeper",
+        "rating" : "7.08",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 9,
+        "assists" : 0,
+        "saves" : 21
+      },
+      "passes" : {
+        "total" : 223,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
@@ -192,99 +376,26 @@
         "commited" : null,
         "scored" : 0,
         "missed" : 0,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 4,
-        "lineups" : 4,
-        "minutes" : 346,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 1,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
+        "saved" : 0
       }
     } ]
   }, {
     "player" : {
-      "id" : 14377,
-      "name" : "K. Lovrić",
-      "firstname" : "Kristijan",
-      "lastname" : "Lovrić",
-      "age" : 30,
+      "id" : 34356,
+      "name" : "V. Jugović",
+      "firstname" : "Vedran",
+      "lastname" : "Jugović",
+      "age" : 36,
       "birth" : {
-        "date" : "1995-12-01",
-        "place" : "Ogulin",
+        "date" : "1989-09-10",
+        "place" : "Osijek",
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : null,
-      "weight" : null,
+      "height" : "178",
+      "weight" : "69",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14377.png"
+      "photo" : "https://media.api-sports.io/football/players/34356.png"
     },
     "statistics" : [ {
       "team" : {
@@ -298,190 +409,25 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
+        "appearences" : 2,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
+        "minutes" : 49,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : 0,
+        "in" : 2,
         "out" : 0,
-        "bench" : 0
+        "bench" : 5
       },
       "shots" : {
         "total" : null,
         "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 14491,
-      "name" : "R. Mierez",
-      "firstname" : "Ramón Nazareno",
-      "lastname" : "Mierez",
-      "age" : 28,
-      "birth" : {
-        "date" : "1997-05-13",
-        "place" : "Resistencia",
-        "country" : "Argentina"
-      },
-      "nationality" : "Argentina",
-      "height" : "182 cm",
-      "weight" : "78 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14491.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 1,
-        "lineups" : 1,
-        "minutes" : 90,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "7.300000",
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 0
-      },
-      "shots" : {
-        "total" : 4,
-        "on" : 2
       },
       "goals" : {
         "total" : 0,
@@ -490,18 +436,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 25,
-        "key" : 2,
+        "total" : 16,
+        "key" : null,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : null,
+        "total" : 1,
         "blocks" : null,
         "interceptions" : null
       },
       "duels" : {
-        "total" : 10,
-        "won" : 5
+        "total" : 6,
+        "won" : 2
       },
       "dribbles" : {
         "attempts" : 1,
@@ -524,42 +470,337 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
+    } ]
+  }, {
+    "player" : {
+      "id" : 79944,
+      "name" : "L. Jelenić",
+      "firstname" : "Luka",
+      "lastname" : "Jelenić",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-05-24",
+        "place" : "Zagreb",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : "187",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/79944.png"
+    },
+    "statistics" : [ {
       "team" : {
         "id" : 616,
         "name" : "NK Osijek",
         "logo" : "https://media.api-sports.io/football/teams/616.png"
       },
       "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 2,
-        "lineups" : 2,
-        "minutes" : 166,
-        "number" : null,
+        "appearences" : 4,
+        "lineups" : 4,
+        "minutes" : 360,
+        "number" : 26,
+        "position" : "Defender",
+        "rating" : "7.15",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 4
+      },
+      "shots" : {
+        "total" : 2,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 198,
+        "key" : null,
+        "accuracy" : 44
+      },
+      "tackles" : {
+        "total" : 2,
+        "blocks" : 3,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 25,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 129035,
+      "name" : "H. Babec",
+      "firstname" : "Hrvoje",
+      "lastname" : "Babec",
+      "age" : 26,
+      "birth" : {
+        "date" : "1999-07-28",
+        "place" : "Virovitica",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/129035.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 382,
+        "number" : 6,
+        "position" : "Midfielder",
+        "rating" : "6.88",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 2,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 255,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 3
+      },
+      "duels" : {
+        "total" : 33,
+        "won" : 15
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 138795,
+      "name" : "Y. Toure",
+      "firstname" : "Fodé Yannick",
+      "lastname" : "Toure",
+      "age" : 25,
+      "birth" : {
+        "date" : "2000-09-29",
+        "place" : null,
+        "country" : "Senegal"
+      },
+      "nationality" : "Switzerland",
+      "height" : "184",
+      "weight" : "78",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/138795.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 8,
+        "lineups" : 3,
+        "minutes" : 401,
+        "number" : 9,
         "position" : "Attacker",
+        "rating" : "6.49",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 5,
+        "out" : 2,
+        "bench" : 5
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 3
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 60,
+        "key" : 5,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : 1,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 43,
+        "won" : 13
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 4,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 174957,
+      "name" : "N. Curcija",
+      "firstname" : "Nikola Tony",
+      "lastname" : "Curcija",
+      "age" : 24,
+      "birth" : {
+        "date" : "2001-04-08",
+        "place" : "Mississauga",
+        "country" : "Canada"
+      },
+      "nationality" : "Canada",
+      "height" : "184",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/174957.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 1,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
-        "out" : 1,
-        "bench" : 0
+        "out" : 0,
+        "bench" : 8
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
-        "total" : 3,
-        "conceded" : null,
-        "assists" : null,
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -593,28 +834,28 @@
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]
   }, {
     "player" : {
-      "id" : 14639,
-      "name" : "M. Barešić",
-      "firstname" : "Marko",
-      "lastname" : "Barešić",
-      "age" : 25,
+      "id" : 204038,
+      "name" : "S. Mkrtchyan",
+      "firstname" : "Styopa",
+      "lastname" : "Mkrtchyan",
+      "age" : 22,
       "birth" : {
-        "date" : "1999-04-30",
-        "place" : "Zadar",
-        "country" : "Croatia"
+        "date" : "2003-02-17",
+        "place" : null,
+        "country" : "Armenia"
       },
-      "nationality" : "Croatia",
-      "height" : null,
+      "nationality" : "Armenia",
+      "height" : "190",
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/14639.png"
+      "photo" : "https://media.api-sports.io/football/players/204038.png"
     },
     "statistics" : [ {
       "team" : {
@@ -628,665 +869,297 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 26794,
-      "name" : "S. Bralić",
-      "firstname" : "Slavko",
-      "lastname" : "Bralić",
-      "age" : 33,
-      "birth" : {
-        "date" : "1992-12-15",
-        "place" : "Split",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : "191 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/26794.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
+        "appearences" : 6,
+        "lineups" : 4,
+        "minutes" : 484,
+        "number" : 5,
         "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 48404,
-      "name" : "P. Brlek",
-      "firstname" : "Petar",
-      "lastname" : "Brlek",
-      "age" : 30,
-      "birth" : {
-        "date" : "1994-01-29",
-        "place" : "Varaždin",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : "180 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/48404.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 79897,
-      "name" : "V. Petković",
-      "firstname" : "Vinko",
-      "lastname" : "Petković",
-      "age" : 29,
-      "birth" : {
-        "date" : "1995-10-01",
-        "place" : "Šibenik",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : "180 cm",
-      "weight" : "75 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/79897.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 80118,
-      "name" : "Š. Gržan",
-      "firstname" : "Šime",
-      "lastname" : "Gržan",
-      "age" : 31,
-      "birth" : {
-        "date" : "1994-04-06",
-        "place" : "Zadar",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/80118.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 98859,
-      "name" : "L. Almási",
-      "firstname" : "Ladislav",
-      "lastname" : "Almási",
-      "age" : 26,
-      "birth" : {
-        "date" : "1999-03-06",
-        "place" : "Bratislava",
-        "country" : "Slovakia"
-      },
-      "nationality" : "Slovakia",
-      "height" : "195 cm",
-      "weight" : "84 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/98859.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 162047,
-      "name" : "O. Drambaev",
-      "firstname" : "Oleksandr",
-      "lastname" : "Drambaev",
-      "age" : 23,
-      "birth" : {
-        "date" : "2001-04-21",
-        "place" : "Zaporizhzhia",
-        "country" : "Ukraine"
-      },
-      "nationality" : "Ukraine",
-      "height" : "186 cm",
-      "weight" : "74 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/162047.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Defender",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 319918,
-      "name" : "R. Kewal",
-      "firstname" : "Ricuenio",
-      "lastname" : "Kewal",
-      "age" : 23,
-      "birth" : {
-        "date" : "2002-06-06",
-        "place" : "Amsterdam",
-        "country" : "Netherlands"
-      },
-      "nationality" : "Netherlands",
-      "height" : "175 cm",
-      "weight" : "68 kg",
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/319918.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 2,
-        "lineups" : 0,
-        "minutes" : 38,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : "6.200000",
+        "rating" : "7",
         "captain" : false
       },
       "substitutes" : {
         "in" : 2,
         "out" : 0,
-        "bench" : 9
+        "bench" : 2
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 286,
+        "key" : 1,
+        "accuracy" : 40
+      },
+      "tackles" : {
+        "total" : 7,
+        "blocks" : 3,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 51,
+        "won" : 30
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 11,
+        "committed" : 4
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 268110,
+      "name" : "N. Omerović",
+      "firstname" : "Nail",
+      "lastname" : "Omerović",
+      "age" : 23,
+      "birth" : {
+        "date" : "2002-10-20",
+        "place" : "Tutla",
+        "country" : "Bosnia and Herzegovina"
+      },
+      "nationality" : "Bosnia and Herzegovina",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/268110.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 709,
+        "number" : 11,
+        "position" : "Midfielder",
+        "rating" : "6.68",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 17,
+        "on" : 7
+      },
+      "goals" : {
+        "total" : 2,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 266,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 15,
+        "blocks" : null,
+        "interceptions" : 2
+      },
+      "duels" : {
+        "total" : 121,
+        "won" : 51
+      },
+      "dribbles" : {
+        "attempts" : 42,
+        "success" : 19,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 16,
+        "committed" : 16
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 327684,
+      "name" : "D. Bukvić",
+      "firstname" : "Domagoj",
+      "lastname" : "Bukvić",
+      "age" : 21,
+      "birth" : {
+        "date" : "2004-02-22",
+        "place" : "Osijek",
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/327684.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 573,
+        "number" : 39,
+        "position" : "Defender",
+        "rating" : "6.81",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 5,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 193,
+        "key" : 11,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 26,
+        "blocks" : 1,
+        "interceptions" : 6
+      },
+      "duels" : {
+        "total" : 88,
+        "won" : 42
+      },
+      "dribbles" : {
+        "attempts" : 24,
+        "success" : 10,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 3,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 341918,
+      "name" : "E. Hasić",
+      "firstname" : "Emin",
+      "lastname" : "Hasić",
+      "age" : 22,
+      "birth" : {
+        "date" : "2003-02-08",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "191",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/341918.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 5,
+        "lineups" : 5,
+        "minutes" : 446,
+        "number" : 33,
+        "position" : "Defender",
+        "rating" : "6.74",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 1,
+        "bench" : 0
       },
       "shots" : {
         "total" : null,
@@ -1299,18 +1172,18 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 2,
-        "key" : null,
-        "accuracy" : null
+        "total" : 278,
+        "key" : 2,
+        "accuracy" : 49
       },
       "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
+        "total" : 5,
+        "blocks" : 2,
+        "interceptions" : 3
       },
       "duels" : {
-        "total" : 3,
-        "won" : 1
+        "total" : 29,
+        "won" : 16
       },
       "dribbles" : {
         "attempts" : null,
@@ -1318,7 +1191,7 @@
         "past" : null
       },
       "fouls" : {
-        "drawn" : 1,
+        "drawn" : 5,
         "committed" : 1
       },
       "cards" : {
@@ -1333,346 +1206,16 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 212,
-        "name" : "Cup",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/212.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 2
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 340093,
-      "name" : "A. Zahirović",
-      "firstname" : "Amar",
-      "lastname" : "Zahirović",
+      "id" : 342307,
+      "name" : "L. Vrbančić",
+      "firstname" : "Luka",
+      "lastname" : "Vrbančić",
       "age" : 20,
       "birth" : {
-        "date" : "2005-06-17",
-        "place" : "Gračanica",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/340093.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 342220,
-      "name" : "F. Mažar",
-      "firstname" : "Filip",
-      "lastname" : "Mažar",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-24",
-        "place" : "Vukovar",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/342220.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 342316,
-      "name" : "M. Prekodravac",
-      "firstname" : "Marin",
-      "lastname" : "Prekodravac",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-03-03",
+        "date" : "2005-07-04",
         "place" : null,
         "country" : "Croatia"
       },
@@ -1680,7 +1223,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/342316.png"
+      "photo" : "https://media.api-sports.io/football/players/342307.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1694,15 +1237,15 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
+        "minutes" : 547,
+        "number" : 23,
         "position" : "Midfielder",
-        "rating" : "6.487500",
+        "rating" : "6.97",
         "captain" : false
       },
       "substitutes" : {
@@ -1712,7 +1255,7 @@
       },
       "shots" : {
         "total" : 6,
-        "on" : 2
+        "on" : null
       },
       "goals" : {
         "total" : 0,
@@ -1721,31 +1264,31 @@
         "saves" : null
       },
       "passes" : {
-        "total" : 132,
-        "key" : 3,
+        "total" : 281,
+        "key" : 8,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 3,
+        "total" : 19,
         "blocks" : null,
-        "interceptions" : 2
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 49,
-        "won" : 18
+        "total" : 75,
+        "won" : 41
       },
       "dribbles" : {
-        "attempts" : 6,
-        "success" : 1,
+        "attempts" : 11,
+        "success" : 6,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 3,
-        "committed" : 13
+        "drawn" : 16,
+        "committed" : 12
       },
       "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
+        "yellow" : 2,
+        "yellowred" : 1,
         "red" : 0
       },
       "penalty" : {
@@ -1755,97 +1298,24 @@
         "missed" : 0,
         "saved" : null
       }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
     } ]
   }, {
     "player" : {
-      "id" : 404635,
-      "name" : "D. Babić",
-      "firstname" : "Dominik",
-      "lastname" : "Babić",
+      "id" : 394975,
+      "name" : "J. HlapÄiÄ",
+      "firstname" : "Jan",
+      "lastname" : "Hlapčić",
       "age" : 19,
       "birth" : {
-        "date" : "2006-09-05",
-        "place" : "Bjelovar",
+        "date" : "2006-04-07",
+        "place" : null,
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/404635.png"
+      "photo" : "https://media.api-sports.io/football/players/394975.png"
     },
     "statistics" : [ {
       "team" : {
@@ -1859,278 +1329,21 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    }, {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 848,
-        "name" : "UEFA Europa Conference League",
-        "country" : "World",
-        "logo" : "https://media.api-sports.io/football/leagues/848.png",
-        "flag" : null,
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
         "appearences" : 0,
         "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
+        "minutes" : null,
+        "number" : 20,
+        "position" : "Goalkeeper",
         "rating" : null,
         "captain" : false
       },
       "substitutes" : {
         "in" : 0,
         "out" : 0,
-        "bench" : 1
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : 0,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : 0,
-        "yellowred" : 0,
-        "red" : 0
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 442755,
-      "name" : "L. Barić",
-      "firstname" : "Luka",
-      "lastname" : "Barić",
-      "age" : 20,
-      "birth" : {
-        "date" : "2005-07-03",
-        "place" : "Vinkovci",
-        "country" : "Croatia"
-      },
-      "nationality" : "Croatia",
-      "height" : "176 cm",
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/442755.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Midfielder",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
-      },
-      "shots" : {
-        "total" : null,
-        "on" : null
-      },
-      "goals" : {
-        "total" : null,
-        "conceded" : null,
-        "assists" : null,
-        "saves" : null
-      },
-      "passes" : {
-        "total" : null,
-        "key" : null,
-        "accuracy" : null
-      },
-      "tackles" : {
-        "total" : null,
-        "blocks" : null,
-        "interceptions" : null
-      },
-      "duels" : {
-        "total" : null,
-        "won" : null
-      },
-      "dribbles" : {
-        "attempts" : null,
-        "success" : null,
-        "past" : null
-      },
-      "fouls" : {
-        "drawn" : null,
-        "committed" : null
-      },
-      "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
-      },
-      "penalty" : {
-        "won" : null,
-        "commited" : null,
-        "scored" : null,
-        "missed" : null,
-        "saved" : null
-      }
-    } ]
-  }, {
-    "player" : {
-      "id" : 450922,
-      "name" : "Andrej Micic",
-      "firstname" : "Andrej",
-      "lastname" : "Mićić",
-      "age" : 18,
-      "birth" : {
-        "date" : "2007-01-21",
-        "place" : "Banja Luka",
-        "country" : "Bosnia and Herzegovina"
-      },
-      "nationality" : "Bosnia and Herzegovina",
-      "height" : null,
-      "weight" : null,
-      "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/450922.png"
-    },
-    "statistics" : [ {
-      "team" : {
-        "id" : 616,
-        "name" : "NK Osijek",
-        "logo" : "https://media.api-sports.io/football/teams/616.png"
-      },
-      "league" : {
-        "id" : 210,
-        "name" : "HNL",
-        "country" : "Croatia",
-        "logo" : "https://media.api-sports.io/football/leagues/210.png",
-        "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
-      },
-      "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
-        "number" : null,
-        "position" : "Attacker",
-        "rating" : null,
-        "captain" : false
-      },
-      "substitutes" : {
-        "in" : 0,
-        "out" : 0,
-        "bench" : 1
+        "bench" : 4
       },
       "shots" : {
         "total" : null,
@@ -2139,7 +1352,7 @@
       "goals" : {
         "total" : 0,
         "conceded" : 0,
-        "assists" : null,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2180,21 +1393,21 @@
     } ]
   }, {
     "player" : {
-      "id" : 470474,
-      "name" : "A. Grgić",
-      "firstname" : "Ante",
-      "lastname" : "Grgić",
-      "age" : 17,
+      "id" : 394977,
+      "name" : "F. Živković",
+      "firstname" : "Filip",
+      "lastname" : "Živković",
+      "age" : 19,
       "birth" : {
-        "date" : "2007-08-11",
-        "place" : "Osijek",
+        "date" : "2006-08-01",
+        "place" : null,
         "country" : "Croatia"
       },
       "nationality" : "Croatia",
-      "height" : "175 cm",
+      "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/470474.png"
+      "photo" : "https://media.api-sports.io/football/players/394977.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2208,14 +1421,106 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 272,
+        "number" : 24,
+        "position" : "Midfielder",
+        "rating" : "6.56",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 72,
+        "key" : 8,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 8,
+        "blocks" : null,
+        "interceptions" : 1
+      },
+      "duels" : {
+        "total" : 58,
+        "won" : 21
+      },
+      "dribbles" : {
+        "attempts" : 14,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 7,
+        "committed" : 7
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 412876,
+      "name" : "A. MatkoviÄ",
+      "firstname" : "Anton",
+      "lastname" : "Matković",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-02-19",
+        "place" : null,
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/412876.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
       },
       "games" : {
         "appearences" : null,
         "lineups" : null,
         "minutes" : null,
         "number" : null,
-        "position" : "Midfielder",
+        "position" : "Attacker",
         "rating" : null,
         "captain" : false
       },
@@ -2272,13 +1577,13 @@
     } ]
   }, {
     "player" : {
-      "id" : 471304,
-      "name" : "M. Grahovac",
-      "firstname" : "Matej",
-      "lastname" : "Grahovac",
-      "age" : 16,
+      "id" : 448469,
+      "name" : "I. Barić",
+      "firstname" : "Ivan",
+      "lastname" : "Barić",
+      "age" : 18,
       "birth" : {
-        "date" : "2008-03-26",
+        "date" : "2007-01-10",
         "place" : null,
         "country" : "Croatia"
       },
@@ -2286,7 +1591,7 @@
       "height" : null,
       "weight" : null,
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/471304.png"
+      "photo" : "https://media.api-sports.io/football/players/448469.png"
     },
     "statistics" : [ {
       "team" : {
@@ -2300,30 +1605,122 @@
         "country" : "Croatia",
         "logo" : "https://media.api-sports.io/football/leagues/210.png",
         "flag" : "https://media.api-sports.io/flags/hr.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : null,
-        "lineups" : null,
-        "minutes" : null,
-        "number" : null,
-        "position" : "Goalkeeper",
-        "rating" : null,
+        "appearences" : 2,
+        "lineups" : 0,
+        "minutes" : 24,
+        "number" : 46,
+        "position" : "Attacker",
+        "rating" : "6.3",
         "captain" : false
       },
       "substitutes" : {
-        "in" : null,
-        "out" : null,
-        "bench" : null
+        "in" : 2,
+        "out" : 0,
+        "bench" : 6
       },
       "shots" : {
         "total" : null,
         "on" : null
       },
       "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 7,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
         "total" : null,
-        "conceded" : null,
-        "assists" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 3,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 456028,
+      "name" : "Krešimir Vrbanac",
+      "firstname" : "Krešimir",
+      "lastname" : "Vrbanac",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-04-24",
+        "place" : null,
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/456028.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 4,
+        "position" : "Defender",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 8
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
         "saves" : null
       },
       "passes" : {
@@ -2350,15 +1747,107 @@
         "committed" : null
       },
       "cards" : {
-        "yellow" : null,
-        "yellowred" : null,
-        "red" : null
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
       },
       "penalty" : {
         "won" : null,
         "commited" : null,
-        "scored" : null,
-        "missed" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 478102,
+      "name" : "Niko Farkaš",
+      "firstname" : "Niko",
+      "lastname" : "Farkaš",
+      "age" : 19,
+      "birth" : {
+        "date" : "2006-11-29",
+        "place" : null,
+        "country" : "Croatia"
+      },
+      "nationality" : "Croatia",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/478102.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 616,
+        "name" : "NK Osijek",
+        "logo" : "https://media.api-sports.io/football/teams/616.png"
+      },
+      "league" : {
+        "id" : 210,
+        "name" : "HNL",
+        "country" : "Croatia",
+        "logo" : "https://media.api-sports.io/football/leagues/210.png",
+        "flag" : "https://media.api-sports.io/flags/hr.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 3,
+        "lineups" : 0,
+        "minutes" : 49,
+        "number" : 7,
+        "position" : "Midfielder",
+        "rating" : "6.3",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 0,
+        "bench" : 7
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 16,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 6,
+        "won" : 2
+      },
+      "dribbles" : {
+        "attempts" : 1,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
         "saved" : null
       }
     } ]

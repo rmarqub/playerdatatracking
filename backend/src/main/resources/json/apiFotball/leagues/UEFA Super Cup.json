@@ -1,0 +1,52 @@
+{
+  "get" : "teams",
+  "parameters" : {
+    "league" : "531",
+    "season" : "2025"
+  },
+  "errors" : [ ],
+  "results" : 2,
+  "paging" : {
+    "current" : 1,
+    "total" : 1
+  },
+  "response" : [ {
+    "team" : {
+      "id" : 47,
+      "name" : "Tottenham",
+      "code" : "TOT",
+      "country" : "England",
+      "founded" : 1882,
+      "national" : false,
+      "logo" : "https://media.api-sports.io/football/teams/47.png"
+    },
+    "venue" : {
+      "id" : 593,
+      "name" : "Tottenham Hotspur Stadium",
+      "address" : "Bill Nicholson Way, 748 High Road",
+      "city" : "London",
+      "capacity" : 62850,
+      "surface" : "grass",
+      "image" : "https://media.api-sports.io/football/venues/593.png"
+    }
+  }, {
+    "team" : {
+      "id" : 85,
+      "name" : "Paris Saint Germain",
+      "code" : "PAR",
+      "country" : "France",
+      "founded" : 1970,
+      "national" : false,
+      "logo" : "https://media.api-sports.io/football/teams/85.png"
+    },
+    "venue" : {
+      "id" : 671,
+      "name" : "Parc des Princes",
+      "address" : "24, rue du Commandant Guilbaud",
+      "city" : "Paris",
+      "capacity" : 47929,
+      "surface" : "grass",
+      "image" : "https://media.api-sports.io/football/venues/671.png"
+    }
+  } ]
+}

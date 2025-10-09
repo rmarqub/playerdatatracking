@@ -1,33 +1,33 @@
 {
   "get" : "players",
   "parameters" : {
-    "season" : "2024",
+    "season" : "2025",
     "page" : "3",
     "team" : "325"
   },
   "errors" : [ ],
-  "results" : 1,
+  "results" : 7,
   "paging" : {
     "current" : 3,
     "total" : 3
   },
   "response" : [ {
     "player" : {
-      "id" : 57216,
-      "name" : "D. Gaye",
-      "firstname" : "Dadi Dodou",
-      "lastname" : "Gaye",
-      "age" : 30,
+      "id" : 19492,
+      "name" : "J. Haugaard",
+      "firstname" : "Jakob",
+      "lastname" : "Let Haugaard",
+      "age" : 33,
       "birth" : {
-        "date" : "1995-03-21",
-        "place" : "Oslo",
-        "country" : "Norway"
+        "date" : "1992-05-01",
+        "place" : "Sundby",
+        "country" : "Denmark"
       },
-      "nationality" : "Gambia",
-      "height" : "183 cm",
-      "weight" : "75 kg",
+      "nationality" : "Denmark",
+      "height" : "199",
+      "weight" : "87",
       "injured" : false,
-      "photo" : "https://media.api-sports.io/football/players/57216.png"
+      "photo" : "https://media.api-sports.io/football/players/19492.png"
     },
     "statistics" : [ {
       "team" : {
@@ -41,15 +41,15 @@
         "country" : "Norway",
         "logo" : "https://media.api-sports.io/football/leagues/103.png",
         "flag" : "https://media.api-sports.io/flags/no.svg",
-        "season" : 2024
+        "season" : 2025
       },
       "games" : {
-        "appearences" : 0,
-        "lineups" : 0,
-        "minutes" : 0,
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 810,
         "number" : null,
-        "position" : "Defender",
-        "rating" : "6.827272",
+        "position" : "Goalkeeper",
+        "rating" : "6.755555",
         "captain" : false
       },
       "substitutes" : {
@@ -63,32 +63,730 @@
       },
       "goals" : {
         "total" : 0,
+        "conceded" : 14,
+        "assists" : 0,
+        "saves" : 26
+      },
+      "passes" : {
+        "total" : 414,
+        "key" : 1,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : 4,
+        "won" : 3
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 1,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 1,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : 1
+      }
+    }, {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 105,
+        "name" : "NM Cupen",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/105.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 0,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 1
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 39218,
+      "name" : "R. Jenssen",
+      "firstname" : "Ruben",
+      "lastname" : "Yttergård Jenssen",
+      "age" : 37,
+      "birth" : {
+        "date" : "1988-05-04",
+        "place" : "Tromsø",
+        "country" : "Norway"
+      },
+      "nationality" : "Norway",
+      "height" : "173",
+      "weight" : "71",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/39218.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 9,
+        "lineups" : 9,
+        "minutes" : 810,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : "7.266666",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : 3,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 1,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 543,
+        "key" : 14,
+        "accuracy" : 53
+      },
+      "tackles" : {
+        "total" : 13,
+        "blocks" : 3,
+        "interceptions" : 10
+      },
+      "duels" : {
+        "total" : 62,
+        "won" : 32
+      },
+      "dribbles" : {
+        "attempts" : 7,
+        "success" : 2,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : 13,
+        "committed" : 8
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    }, {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 105,
+        "name" : "NM Cupen",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/105.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 1,
+        "lineups" : 1,
+        "minutes" : 90,
+        "number" : null,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 57212,
+      "name" : "S. Thomas",
+      "firstname" : "Simon Edmund",
+      "lastname" : "Thomas",
+      "age" : 35,
+      "birth" : {
+        "date" : "1990-04-12",
+        "place" : "Victoria",
+        "country" : "Canada"
+      },
+      "nationality" : "Canada",
+      "height" : "191",
+      "weight" : "90",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/57212.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : 0,
+        "number" : null,
+        "position" : "Goalkeeper",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 0
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : null,
+        "assists" : null,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : null,
+        "missed" : null,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 57224,
+      "name" : "L. Olden Larsen",
+      "firstname" : "Lars",
+      "lastname" : "Olden Larsen",
+      "age" : 27,
+      "birth" : {
+        "date" : "1998-09-17",
+        "place" : "Oslo",
+        "country" : "Norway"
+      },
+      "nationality" : "Norway",
+      "height" : "175",
+      "weight" : "74",
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/57224.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 6,
+        "lineups" : 3,
+        "minutes" : 265,
+        "number" : 7,
+        "position" : "Attacker",
+        "rating" : "6.77",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 3,
+        "out" : 3,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 1,
+        "on" : 1
+      },
+      "goals" : {
+        "total" : 1,
         "conceded" : 0,
         "assists" : 0,
         "saves" : null
       },
       "passes" : {
-        "total" : 398,
+        "total" : 94,
+        "key" : 3,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : 1,
+        "blocks" : null,
+        "interceptions" : 4
+      },
+      "duels" : {
+        "total" : 16,
+        "won" : 4
+      },
+      "dribbles" : {
+        "attempts" : 3,
+        "success" : 1,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : 3
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 408480,
+      "name" : "A. Warneryd",
+      "firstname" : "Alexander Rickard Chadchai",
+      "lastname" : "Thongla-Iad Warneryd",
+      "age" : 20,
+      "birth" : {
+        "date" : "2005-08-21",
+        "place" : null,
+        "country" : "Sweden"
+      },
+      "nationality" : "Sweden",
+      "height" : "174",
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/408480.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 7,
+        "lineups" : 5,
+        "minutes" : 425,
+        "number" : 29,
+        "position" : "Midfielder",
+        "rating" : "6.93",
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 2,
+        "out" : 5,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : 6,
+        "on" : 2
+      },
+      "goals" : {
+        "total" : 1,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : 150,
         "key" : 4,
         "accuracy" : null
       },
       "tackles" : {
-        "total" : 18,
-        "blocks" : 1,
-        "interceptions" : 8
+        "total" : 3,
+        "blocks" : null,
+        "interceptions" : 4
       },
       "duels" : {
-        "total" : 63,
-        "won" : 37
+        "total" : 42,
+        "won" : 16
       },
       "dribbles" : {
-        "attempts" : 7,
-        "success" : 5,
+        "attempts" : 13,
+        "success" : 3,
         "past" : null
       },
       "fouls" : {
-        "drawn" : 4,
-        "committed" : 5
+        "drawn" : 8,
+        "committed" : 6
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 521589,
+      "name" : "J. Solstad-Nøis",
+      "firstname" : "Johan",
+      "lastname" : "Solstad-Nøis",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-01-30",
+        "place" : null,
+        "country" : "Norway"
+      },
+      "nationality" : "Norway",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/521589.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 35,
+        "position" : "Attacker",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 3
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
+      },
+      "cards" : {
+        "yellow" : 0,
+        "yellowred" : 0,
+        "red" : 0
+      },
+      "penalty" : {
+        "won" : null,
+        "commited" : null,
+        "scored" : 0,
+        "missed" : 0,
+        "saved" : null
+      }
+    } ]
+  }, {
+    "player" : {
+      "id" : 521591,
+      "name" : "M. Mikkelsen",
+      "firstname" : "Mads",
+      "lastname" : "Mikkelsen",
+      "age" : 17,
+      "birth" : {
+        "date" : "2008-08-28",
+        "place" : null,
+        "country" : "Norway"
+      },
+      "nationality" : "Norway",
+      "height" : null,
+      "weight" : null,
+      "injured" : false,
+      "photo" : "https://media.api-sports.io/football/players/521591.png"
+    },
+    "statistics" : [ {
+      "team" : {
+        "id" : 325,
+        "name" : "Tromso",
+        "logo" : "https://media.api-sports.io/football/teams/325.png"
+      },
+      "league" : {
+        "id" : 103,
+        "name" : "Eliteserien",
+        "country" : "Norway",
+        "logo" : "https://media.api-sports.io/football/leagues/103.png",
+        "flag" : "https://media.api-sports.io/flags/no.svg",
+        "season" : 2025
+      },
+      "games" : {
+        "appearences" : 0,
+        "lineups" : 0,
+        "minutes" : null,
+        "number" : 34,
+        "position" : "Midfielder",
+        "rating" : null,
+        "captain" : false
+      },
+      "substitutes" : {
+        "in" : 0,
+        "out" : 0,
+        "bench" : 10
+      },
+      "shots" : {
+        "total" : null,
+        "on" : null
+      },
+      "goals" : {
+        "total" : 0,
+        "conceded" : 0,
+        "assists" : 0,
+        "saves" : null
+      },
+      "passes" : {
+        "total" : null,
+        "key" : null,
+        "accuracy" : null
+      },
+      "tackles" : {
+        "total" : null,
+        "blocks" : null,
+        "interceptions" : null
+      },
+      "duels" : {
+        "total" : null,
+        "won" : null
+      },
+      "dribbles" : {
+        "attempts" : null,
+        "success" : null,
+        "past" : null
+      },
+      "fouls" : {
+        "drawn" : null,
+        "committed" : null
       },
       "cards" : {
         "yellow" : 0,
