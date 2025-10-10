@@ -238,7 +238,8 @@ public class Methods {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(content);
             JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
-            if (!errorsNode.isMissingNode() && Constants.RATE_LIMIT_ERROR_MESSAGE.equals(errorsNode.asText())) {
+            String errorsText = errorsNode.asText();
+            if (!errorsNode.isMissingNode() && errorsNode.asText().toLowerCase().contains("too many requests")) {
                 System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
                 Methods.sleep(60000);
                 System.out.println("Reiniciando operacion...");
