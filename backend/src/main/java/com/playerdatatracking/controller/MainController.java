@@ -33,6 +33,8 @@ import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+import jakarta.annotation.security.PermitAll;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
