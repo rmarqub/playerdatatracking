@@ -8,6 +8,8 @@ import { SearchPlayersComponent } from './search-players/search-players.componen
 import { ManageIndexalDbComponent } from './manage-indexal-db/manage-indexal-db.component';
 import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.component';
 import { IndexPlayerComponent } from './index-player/index-player.component';
+import { LoginComponent } from './features/login/login.component';
+import { AuthGuard } from './core/guards/auth.guard';
 
 const appRoutes : Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +21,10 @@ const appRoutes : Routes = [
   { path: 'searchPlayers', component: SearchPlayersComponent },
   { path: 'manageIndexalDB', component: ManageIndexalDbComponent },
   { path: 'manageApikeys', component: ManageApikeysComponent },
-  { path: 'player/:id', component: IndexPlayerComponent}
+  { path: 'player/:id', component: IndexPlayerComponent},
+  { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '' },
+  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
 ]
+
 export const routing = RouterModule.forRoot(appRoutes);
