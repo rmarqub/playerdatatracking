@@ -27,11 +27,13 @@ public class LoginController {
 	public ResponseEntity<?> login(@RequestBody Map<String, String> body, HttpServletRequest request) {
 		String user = body.get("username");
 		String pass = body.get("password");
+		
 		if (!validate(user, pass)) {
 			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("ok", false));
 		}
+		
 		HttpSession session = request.getSession(true);
-		session.setAttribute("USER", Map.of("username", user, "roles", List.of("USER")));
+	    session.setAttribute("USER", Map.of("username", user, "roles", List.of("USER")));
 
 		return ResponseEntity.ok(Map.of("ok", true));
 	}

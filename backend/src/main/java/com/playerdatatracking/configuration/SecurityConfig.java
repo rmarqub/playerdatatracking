@@ -20,11 +20,12 @@ public class SecurityConfig {
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 	  
 	  
-    http.csrf(csrf -> csrf.disable()).cors(cors -> {})
-
-      .authorizeHttpRequests(auth -> auth
-        .requestMatchers("/auth/**", "/public/**").permitAll()
-        .anyRequest().authenticated()
+    http
+    	.csrf(csrf -> csrf.disable())
+    	.cors(cors -> {})
+    	.authorizeHttpRequests(auth -> auth
+    			.requestMatchers("/auth/**", "/public/**").permitAll()
+    			.anyRequest().authenticated()
       )
 
       .sessionManagement(sm -> sm
@@ -35,7 +36,7 @@ public class SecurityConfig {
     		  .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
     		  .maximumSessions(3)              		// SESIONES MAXIMAS
     		  .maxSessionsPreventsLogin(false)    	// si llega al límite, invalida la más antigua
-    		);
+    		).addFilterBefore(new SessionUserAuthFilter(), org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.class);
 
 
     return http.build();
