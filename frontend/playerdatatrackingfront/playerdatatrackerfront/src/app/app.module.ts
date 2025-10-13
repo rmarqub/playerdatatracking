@@ -18,6 +18,7 @@ import { SearchPlayersComponent } from './search-players/search-players.componen
 import { ManageIndexalDbComponent } from './manage-indexal-db/manage-indexal-db.component';
 import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.component';
 import { IndexPlayerComponent } from './index-player/index-player.component';
+import { LoginComponent } from './features/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IndexPlayerComponent } from './index-player/index-player.component';
     SearchPlayersComponent,
     ManageIndexalDbComponent,
     ManageApikeysComponent,
-    IndexPlayerComponent
+    IndexPlayerComponent,
+    LoginComponent
   ],
   imports: [
     BrowserAnimationsModule,
