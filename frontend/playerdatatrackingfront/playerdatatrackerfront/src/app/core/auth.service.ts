@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/enviroment/environment';
-import { BehaviorSubject, Observable, of, timer } from 'rxjs';
+import { CryptoService } from '../services/crypto.service';
+import { BehaviorSubject, Observable, of, from } from 'rxjs';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
 
 export interface User {
@@ -19,34 +20,55 @@ export class AuthService {
   private STALE_MS = 2 * 60 * 1000;
 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private crypto: CryptoService) {}
 
   me(): Observable<User> {
     return this.http.get<User>(`${this.base}/auth/me`);
   }
 
-  login(username: string, password: string): Observable<boolean> {
-    return this.http.post(`${this.base}/auth/login`, { username, password })
-      .pipe(
-        switchMap(() => this.me()),
-        tap(user => {
-          this.user$.next(user);
-          this.lastFetch = Date.now();
-        }),
-        map(() => true)
-      );
+  private ensurePubKey(): Observable<void> {
+  return this.http.get<{kid:string, pem:string, alg:string}>(`${this.base}/auth/pubkey`)
+    .pipe(
+      switchMap(({ kid, pem }) => from(this.crypto.loadPublicKeyFromPem(pem, kid)))
+    );
   }
 
-    logout(): Observable<boolean> {
-    return this.http.post(`${this.base}/auth/logout`, {})
-      .pipe(
-        tap(() => {
-          this.user$.next(null);
-          this.lastFetch = 0;
-        }),
-        map(() => true)
-      );
+  login(username: string, password: string): Observable<boolean> {
+    return this.ensurePubKey().pipe(
+      switchMap(() => from(this.crypto.encryptPassword(password))),
+      switchMap((pwdB64) => this.http.post(`${this.base}/auth/login`, {
+        username,
+        pwd: pwdB64,
+        kid: this.crypto.getKid()
+      }, { withCredentials: true })),
+      map(() => true)
+    );
   }
+
+  logout(): Observable<boolean> {
+  return this.http.post(`${this.base}/auth/logout`, {})
+    .pipe(
+      tap(() => {
+        this.user$.next(null);
+        this.lastFetch = 0;
+      }),
+      map(() => true)
+    );
+  }
+
+  register(username: string, password: string) {
+    return this.ensurePubKey().pipe(
+      switchMap(() => from(this.crypto.encryptPassword(password))),
+      switchMap((pwdB64) =>
+        this.http.post(`${this.base}/auth/register`, {
+          username,
+          pwd: pwdB64,
+          kid: this.crypto.getKid()
+        }, { withCredentials: true })
+      )
+    );
+  }
+
 
     /** Devuelve el usuario en caché (puede ser null) */
   getCachedUser(): User | null {
@@ -95,5 +117,7 @@ export class AuthService {
       })
     );
   }
+
+
 
 }

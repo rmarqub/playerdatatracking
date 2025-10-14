@@ -27,6 +27,7 @@ public class SecurityConfig {
     	.cors(cors -> {})
     	.authorizeHttpRequests(auth -> auth
     			.requestMatchers(HttpMethod.POST, "/updatePlayers").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
     			.requestMatchers("/auth/**", "/public/**").permitAll()
     			.anyRequest().authenticated()
       )

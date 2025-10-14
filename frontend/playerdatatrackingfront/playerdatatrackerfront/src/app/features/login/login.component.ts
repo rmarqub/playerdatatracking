@@ -39,8 +39,6 @@ export class LoginComponent {
   }
 
   register() {
-  // Por ahora solo un placeholder; más adelante puedes navegar a /register
-  console.log('Botón de registro pulsado');
-  // this.router.navigate(['/register']);
-}
+  this.router.navigate(['/register']);
+  }
 }

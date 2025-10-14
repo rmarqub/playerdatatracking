@@ -10,9 +10,11 @@ import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.componen
 import { IndexPlayerComponent } from './index-player/index-player.component';
 import { LoginComponent } from './features/login/login.component';
 import { AuthGuard } from './core/guards/auth.guard';
+import { RegisterComponent } from './features/register/register.component';
 
 const appRoutes : Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'manualData', component: ManualDataComponent, canActivate: [AuthGuard]},
   { path: 'addplayer', component: AddPlayerComponent, canActivate: [AuthGuard]},

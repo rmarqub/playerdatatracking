@@ -36,7 +36,7 @@
       <button class="btn-primary full" [disabled]="loading || form.invalid" type="submit">
         {{ loading ? 'Entrando…' : 'Entrar' }}
       </button>
-      <button type="button" class="btn-secondary full" (click)="register()"> Registrarse </button>
+      <button type="button" class="btn-secondary full" (click)="register()">Registrarse</button>
 
       <p *ngIf="error" class="alert-error">{{ error }}</p>
     </form>

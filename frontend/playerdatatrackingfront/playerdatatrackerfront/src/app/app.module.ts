@@ -21,6 +21,7 @@ import { IndexPlayerComponent } from './index-player/index-player.component';
 import { CredentialsInterceptor } from './core/interceptors/credentials.interceptor';
 import { LoginComponent } from './features/login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './features/register/register.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HomeComponent } from './home/home.component';
     ManageApikeysComponent,
     IndexPlayerComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserAnimationsModule,

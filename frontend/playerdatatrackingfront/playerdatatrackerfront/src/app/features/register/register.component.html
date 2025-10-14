@@ -1,0 +1,32 @@
+<div class="login-page">
+  <div class="login-card">
+    <h1 class="login-title">Registro de usuario</h1>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <div class="form-group">
+        <label for="username">Usuario</label>
+        <input id="username" type="text" formControlName="username" class="input" autocomplete="username" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" formControlName="password" class="input" autocomplete="new-password" />
+      </div>
+
+      <div class="form-group">
+        <label for="confirm">Confirmar contraseña</label>
+        <input id="confirm" type="password" formControlName="confirm" class="input" autocomplete="new-password" />
+      </div>
+
+      <button class="btn-primary full" [disabled]="loading || form.invalid" type="submit">
+        {{ loading ? 'Registrando…' : 'Registrarse' }}
+      </button>
+
+      <p *ngIf="error" class="alert-error">{{ error }}</p>
+
+      <div class="link-container">
+        <a (click)="goToLogin()" class="link">¿Ya tienes cuenta? Inicia sesión</a>
+      </div>
+    </form>
+  </div>
+</div>
