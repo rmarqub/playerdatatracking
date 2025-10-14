@@ -15,3 +15,4 @@
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
 - Separar controlador en varias clases.
 - Validacion de parametros en las requests.
+- Modulo de testing escalable

@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
   loading = false;
@@ -36,4 +37,10 @@ export class LoginComponent {
       }
     });
   }
+
+  register() {
+  // Por ahora solo un placeholder; más adelante puedes navegar a /register
+  console.log('Botón de registro pulsado');
+  // this.router.navigate(['/register']);
+}
 }

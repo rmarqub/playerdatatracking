@@ -1,0 +1,134 @@
+.login-page {
+  min-height: calc(100vh - 60px); /* deja sitio para tu header si lo tienes fijo de 60px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.login-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    font-family: Roboto;
+}
+
+.login-title {
+  flex: auto;
+  margin: 0 0 12px 0;
+  font-size: 1.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.input {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #CD853F;
+  box-shadow: 0 0 0 3px rgba(205,133,63,0.15);
+}
+
+.input.invalid {
+  border-color: #c0392b;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: #f3b32b;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d49a1d;
+}
+
+.btn-primary:disabled {
+  background-color: #f3df9b;
+  cursor: not-allowed;
+}
+
+.full {
+  width: 100%;
+}
+
+.alert-error {
+  margin-top: 12px;
+  color: #c0392b;
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 20px 16px;
+  }
+}
+
+.btn-secondary {
+  background-color: #CD853F; /* color de tu header */
+  color: white;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #b37236;
+}
+
+.btn-secondary:disabled {
+  background-color: #e3c5a1;
+  cursor: not-allowed;
+}
