@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { AuthService } from '../core/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,22 +9,27 @@ import { Location } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private router: Router, private route: ActivatedRoute, private location: Location){}
+  constructor(private router: Router, private route: ActivatedRoute, private location: Location, private auth: AuthService){}
 
   isHomePage: boolean = false;
-
+  isLoginPage = false;
   ngOnInit() {
-    // Detecta si la URL actual es /home
     this.router.events.subscribe(() => {
       this.isHomePage = this.router.url === '/home';
+      this.isLoginPage = this.router.url === '/login';
     });
   }
 
   navigateToHome() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/home']);
   }
   goBack(): void {
     this.location.back(); // Vuelve a la página anterior
+  }
+  logout(): void {
+    this.auth.logout().subscribe(() => {
+      this.router.navigate(['/login']);
+    });
   }
 
 

@@ -28,7 +28,7 @@ export class LoginComponent {
     this.auth.login(username, password).subscribe({
       next: () => {
         this.loading = false;
-        this.router.navigateByUrl('/'); // home o ruta privada por defecto
+        this.router.navigateByUrl('/home'); // home o ruta privada por defecto
       },
       error: (e) => {
         this.loading = false;

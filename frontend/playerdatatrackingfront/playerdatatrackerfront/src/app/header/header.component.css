@@ -25,3 +25,36 @@
 .btn-back:hover {
   color: grey;
 }
+
+
+.btn-logout {
+  margin-left: 93%; /* empuja a la derecha */
+  background-color: rgb(241 57 57);
+  color: black;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font: Roboto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-logout:active{
+  transform: translateY(1px);
+  background-color: rgb(184, 14, 14);
+}
+
+.btn-logout:hover {
+  background-color: rgb(184, 14, 14); /* Color de fondo al pasar el ratón */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+}
+
+.btn-logout:hover:active{
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-logout:hover:enabled {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}

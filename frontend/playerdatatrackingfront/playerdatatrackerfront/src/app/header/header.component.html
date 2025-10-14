@@ -1,4 +1,5 @@
 <div class="header">
   <button class="toggle-button btn-back" (click)="goBack()">⬅</button>
   <img *ngIf="!isHomePage" src="assets/images/home-icon.png" alt="Home" (click)="navigateToHome()" class="home-icon"/>
+    <button *ngIf="!isLoginPage" class="btn-logout" (click)="logout()">Logout</button>
 </div>

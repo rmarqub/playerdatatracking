@@ -149,8 +149,11 @@ public class UpdatePlayersData {
 						        	String steamId = responseParameters.path("team").asText();
 						        	JsonNode responseNode = root.path("response");
 							        for (JsonNode node : responseNode) {
+							        	
 							        	Player newPlayer = new Player();
 							        	JsonNode playerNode = node.path("player");
+							        	System.out.println((playerNode.path("name").asText()));
+							        	
 							        	newPlayer.setIndexId(playerNode.path("id").asLong());
 							        	newPlayer.setTeam(Integer.toUnsignedLong(Integer.parseInt(steamId)));
 							        	newPlayer.setFirstname(playerNode.path("firstname").asText());
@@ -160,12 +163,14 @@ public class UpdatePlayersData {
 							        	newPlayer.setInjured(playerNode.path("injured").asBoolean());
 							        	String height = playerNode.path("height").asText();
 							        	if(height!=null && !height.equals("null")){
-							        		height = height.substring(0, height.length() - 3);
+							        		if (height.endsWith("cm"))
+							        			height = height.substring(0, height.length() - 3);
 							        		newPlayer.setHeight(Integer.parseInt(height));
 							        	}
 							        	String weight = playerNode.path("weight").asText();
 							        	if(weight!=null && !weight.equals("null")) {
-							        		weight = weight.substring(0, weight.length() - 3);
+							        		if (weight.endsWith("kg"))
+							        			weight = weight.substring(0, weight.length() - 3);
 							        		newPlayer.setWeight(Integer.parseInt(weight));
 							        	}
 							        	JsonNode birthNode = playerNode.path("birth");
