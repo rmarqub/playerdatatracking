@@ -11,7 +11,11 @@ import { DeletePlayerComponent } from './delete-player/delete-player.component';
 })
 export class ManualDataComponent {
 
-  constructor(private router: Router, private http: HttpClient) {}
+  constructor(private router: Router, private http: HttpClient) {
+
+    this.fetchPlayers();
+    this.isDataVisible = true;
+  }
 
   players: any[] = [];
   isDataVisible: boolean = false;

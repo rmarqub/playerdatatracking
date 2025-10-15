@@ -68,6 +68,7 @@ export class PlayerService {
     return this.http.get<GenericResponse<Player>>(this.apiUrlIndexalP, { params }).pipe(
       map(response => {
         if (response.code === 0) {
+          console.log(response.entityList);
           return response.entityList || [];
         } else {
           console.error(response.description);

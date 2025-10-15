@@ -5,9 +5,11 @@ package com.playerdatatracking.entities.indexaldata;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @Entity
@@ -39,14 +41,19 @@ public class ManualTrackedPlayer {
     private Integer age;
 
     @Temporal(TemporalType.DATE)
-    private Date date;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate date;
     
     @Temporal(TemporalType.DATE)
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
-    private Date birth;
+    private LocalDate birth;
     
     private Long fbrefID;
     private Long indexID;
+    
+    @Column(name = "id_user")
+    private Long userId;
 
     // Getters y setters
     public Long getId() {
@@ -61,11 +68,11 @@ public class ManualTrackedPlayer {
 		this.age = age;
 	}
 
-	public Date getBirth() {
+	public LocalDate getBirth() {
 		return birth;
 	}
 
-	public void setBirth(Date birth) {
+	public void setBirth(LocalDate birth) {
 		this.birth = birth;
 	}
 
@@ -129,11 +136,11 @@ public class ManualTrackedPlayer {
         this.likeable = likeable;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -152,6 +159,23 @@ public class ManualTrackedPlayer {
 	public Long getIndexID() {
 	    return indexID != null ? indexID : 0L;
 	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public void setFbrefID(Long fbrefID) {
+		this.fbrefID = fbrefID;
+	}
+
+	public void setIndexID(Long indexID) {
+		this.indexID = indexID;
+	}
     
+	
     
 }

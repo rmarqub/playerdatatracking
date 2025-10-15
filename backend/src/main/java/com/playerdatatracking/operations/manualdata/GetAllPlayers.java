@@ -1,6 +1,5 @@
 package com.playerdatatracking.operations.manualdata;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.playerdatatracking.clients.PlayerDataClient;
@@ -20,9 +19,9 @@ public class GetAllPlayers {
 		this.pdClient = pdClient;
 	}
 	
-	
-	public GenericResponse<ManualTrackedPlayer> ejecutar() throws PlayerDataDBException {
-		List<ManualTrackedPlayer> playersList = pdClient.getAllPlayers();
+	public GenericResponse<ManualTrackedPlayer> ejecutar(Long userId) throws PlayerDataDBException {
+		response = new GenericResponse<ManualTrackedPlayer>();
+		List<ManualTrackedPlayer> playersList = pdClient.getPlayersByUserId(userId);
 		response.setEntityList(playersList);
 		response.setCODE(Constants.CODE_OK);
 		if (playersList==null)
@@ -30,5 +29,9 @@ public class GetAllPlayers {
 		else
 			response.setDescription("OK");
 		return response;
+		
+		
 	}
+	
+	
 }

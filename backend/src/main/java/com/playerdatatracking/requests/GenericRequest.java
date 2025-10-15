@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GenericRequest {
 	private Long id;
+	private Long indexId;
     private String nombre;
     private float nota;
     private String club;
@@ -45,7 +46,15 @@ public class GenericRequest {
         return id;
     }
 
-    public String getAge() {
+    public Long getIndexId() {
+		return indexId;
+	}
+
+	public void setIndexId(Long indexId) {
+		this.indexId = indexId;
+	}
+
+	public String getAge() {
 		return age;
 	}
 

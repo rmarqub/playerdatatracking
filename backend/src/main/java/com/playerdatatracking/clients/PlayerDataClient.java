@@ -76,6 +76,23 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+	@Transactional
+	public List<ManualTrackedPlayer> getPlayersByUserId(Long userId) {
+        return mpRepository.findAllByUserId(userId);
+    }
+	
+	@Transactional
+	public ManualTrackedPlayer getPlayerByNameAndUserId(String nombre, Long userId) throws PlayerDataDBException {
+		try {
+			Optional<ManualTrackedPlayer> p = mpRepository.findByNombreAndUserId(nombre, userId);
+			if (p.isPresent())
+				return p.get();
+			else
+				throw new IllegalArgumentException("Player already registered for this user"); 
+		} catch(Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	
 	@Transactional
 	public List<ManualTrackedPlayer> getAllPlayers() {

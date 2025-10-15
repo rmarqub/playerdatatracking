@@ -40,8 +40,7 @@ public class AddPlayer{
 		if ((Object)player.getAge()==null) {
 		    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 		    LocalDate fechaHoy = LocalDate.now();
-		    LocalDate birthDate = convertToLocalDateViaInstant(player.getBirth());
-		    player.setAge(Period.between(birthDate, fechaHoy).getYears());
+		    player.setAge(Period.between(player.getBirth(), fechaHoy).getYears());
 		}
 		boolean operationDone = pdClient.savePlayer(player);
 		if (operationDone) {
@@ -55,7 +54,25 @@ public class AddPlayer{
 	}
 
 
+    public GenericResponse createForUser(ManualTrackedPlayer player, Long userId) throws PlayerDataDBException {
+    	
+    	response = new GenericResponse();
 
+        if (player.getAge() == null && player.getBirth() != null) {
+            LocalDate today = LocalDate.now();
+            player.setAge(Period.between(player.getBirth(), today).getYears());
+        }
+
+        player.setUserId(userId);
+        boolean operationDone = pdClient.savePlayer(player);
+        
+        if (operationDone) {
+			response.setCODE(Constants.CODE_OK);
+			response.setDescription("OK");
+			return response;
+		}else
+			throw new PlayerDataDBException("Error found while saving player in MANUAL_TRACKED_PLAYER table, check method in clients package");
+    }
 
 	public PlayerDataClient getPdClient() {
 		return pdClient;
@@ -66,11 +83,6 @@ public class AddPlayer{
 	}
 
 	
-	 private static LocalDate convertToLocalDateViaInstant(Date dateToConvert) {
-	        return dateToConvert.toInstant()
-	          .atZone(ZoneId.systemDefault())
-	          .toLocalDate();
-	    }
 	
 	
 	

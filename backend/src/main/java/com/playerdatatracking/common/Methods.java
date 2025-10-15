@@ -7,6 +7,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -89,18 +92,37 @@ public class Methods {
 			player.setLikeable(request.getLikeable());
 			player.setMostLikeDestination(request.getMostLikeDestination());
 			player.setQualities(request.getQualities());
+			player.setIndexID(request.getIndexId());
 			player.setPosicion(request.getPosicion());
-	
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			if (request.getDate()!=null)
-				player.setDate(sdf.parse(request.getDate()));
-			else
-				player.setDate(new Date());
-			player.setBirth(sdf.parse(request.getBirth()));
+		    LocalDate birthDate = parseLocalDateFlexible(request.getBirth());
+		    player.setBirth(birthDate);
+		    LocalDate date = (request.getDate() != null && !request.getDate().isBlank())
+		            ? parseLocalDateFlexible(request.getDate())
+		            : LocalDate.now();
+		    player.setDate(date);
 			return player;
 		} else
 			throw new MalformedRequestException("Error found while checking input parameters, the following ones are not present or whit a wrong type: " + errors.toString());
 	}
+	
+	
+	private static LocalDate parseLocalDateFlexible(String input) {
+	    if (input == null || input.isBlank()) {
+	        throw new IllegalArgumentException("Date string is null/blank");
+	    }
+	    DateTimeFormatter[] fmts = new DateTimeFormatter[] {
+	            DateTimeFormatter.ISO_LOCAL_DATE,
+	            DateTimeFormatter.ofPattern("dd/MM/yyyy"),
+	            DateTimeFormatter.ofPattern("yyyy/MM/dd")
+	    };
+	    for (DateTimeFormatter f : fmts) {
+	        try {
+	            return LocalDate.parse(input, f);
+	        } catch (DateTimeParseException ignore) {}
+	    }
+	    throw new IllegalArgumentException("Unsupported date format: " + input);
+	}
+	
 	
 	public static int getTournamentType(String name, String country, String type) {
 		switch (country) {

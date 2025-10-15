@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Player } from '../entitites/player';
 import { PlayerService } from '../services/player-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-index-player',
@@ -14,7 +15,8 @@ export class IndexPlayerComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private playerService: PlayerService
+    private playerService: PlayerService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +36,23 @@ export class IndexPlayerComponent implements OnInit {
   }
 
   toggleFavorite(): void {
-    this.isFavorite = !this.isFavorite;
+  // 1) marca local si quieres
+  this.isFavorite = !this.isFavorite;
+
+  // 2) navega a /addPlayer con prefill
+  if (this.player && this.isFavorite) {
+    this.router.navigate(['/addplayer'], {
+      state: {
+        prefill: {
+          nombre: this.player.firstname + " " + this.player.lastname,
+          club: this.player.team,
+          birth: this.player.birth ?? '',
+          age: this.player.age ?? null,
+          fbrefId: this.player.fbrefId ?? null,
+          indexId: this.player.id ?? null
+        }
+      }
+    });
   }
+}
 }

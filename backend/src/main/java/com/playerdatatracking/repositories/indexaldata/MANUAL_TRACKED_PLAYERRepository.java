@@ -1,5 +1,8 @@
 package com.playerdatatracking.repositories.indexaldata;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +13,7 @@ public interface MANUAL_TRACKED_PLAYERRepository extends JpaRepository<ManualTra
 	
 	
 	ManualTrackedPlayer findByNombre(String nombre);
+	List<ManualTrackedPlayer> findAllByUserId(Long userId);
+    Optional<ManualTrackedPlayer> findByNombreAndUserId(String nombre, Long userId);
 	
 }

@@ -1,10 +1,13 @@
 package com.playerdatatracking.controller;
 
 import java.text.ParseException;
+import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.http.HttpStatus;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -26,7 +29,6 @@ import com.playerdatatracking.operations.manualdata.AddPlayer;
 import com.playerdatatracking.operations.manualdata.DeletePlayer;
 import com.playerdatatracking.operations.manualdata.GetAllPlayers;
 import com.playerdatatracking.operations.manualdata.GetPlayer;
-import com.playerdatatracking.operations.manualdata.XslImport;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.requests.GenericRequest;
@@ -34,6 +36,8 @@ import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
 import jakarta.annotation.security.PermitAll;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,6 +46,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 
 
@@ -68,7 +73,6 @@ public class MainController {
 //  ---------OPERATIONS---------
 	private AddPlayer operationAddPlayer = new AddPlayer();
 	private GetAllPlayers operationGetAllPlayers = new GetAllPlayers();
-	private XslImport operationXslImport = new XslImport();
 	private GetAllLeagues operationGetAllLeagues = new GetAllLeagues();
 	private AESCrypto operationCrypto = new AESCrypto();
 	private KeysManagement operationKeys = new KeysManagement();
@@ -140,33 +144,6 @@ public class MainController {
         }
 		return response;
 	}
-    @GetMapping("/players")
-    public GenericResponse listPlayers() {
-    	response = new GenericResponse();
-    	operationGetAllPlayers.setPdClient(pdClient);
-    	try {
-    		response = operationGetAllPlayers.ejecutar();
-    	} catch (Exception e) {
-        	response.setCODE(Methods.exceptionCodeManagement(e));
-        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
-        }
-        return response;
-    }
-    
-    @PostMapping("/xslBackendImport")
-    public GenericResponse xslImport() {
-    	response = new GenericResponse();
-    	String path = env.getProperty("xsl.path");
-    	operationXslImport.setPdClient(pdClient);
-    	operationXslImport.setResourceLoader(resourceLoader);
-    	try {
-    		response = operationXslImport.ejecutar(path);
-    	} catch (Exception e) {
-    		response.setCODE(Methods.exceptionCodeManagement(e));
-    		response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
-    	}
-    	return response;
-    }
     
     @PostMapping("/leagues")
     public GenericResponse getAllLeagues(@RequestBody GenericRequest request) {
@@ -229,19 +206,34 @@ public class MainController {
     	return response;
     }
     
+//    @PostMapping("/player")
+//    public GenericResponse addPlayer(@RequestBody GenericRequest request) throws PlayerDataDBException, PlayerInputException, ParseException {
+//    	response = new GenericResponse();
+//    	operationAddPlayer.setPdClient(pdClient);
+//        try {
+//        	ManualTrackedPlayer player = Methods.bindRequestAsPlayer(request);
+//        	response = operationAddPlayer.ejecutar(player);
+//        } catch (Exception e) {
+//        	response.setCODE(Methods.exceptionCodeManagement(e));
+//        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+//        }
+//        return response;
+//    }
     @PostMapping("/player")
-    public GenericResponse addPlayer(@RequestBody GenericRequest request) throws PlayerDataDBException, PlayerInputException, ParseException {
+    public GenericResponse addPlayer(@RequestBody GenericRequest p, HttpServletRequest request) {
     	response = new GenericResponse();
     	operationAddPlayer.setPdClient(pdClient);
+        Long userId = currentUserId(request);
         try {
-        	ManualTrackedPlayer player = Methods.bindRequestAsPlayer(request);
-        	response = operationAddPlayer.ejecutar(player);
+        	ManualTrackedPlayer player = Methods.bindRequestAsPlayer(p);
+        	response = operationAddPlayer.createForUser(player, userId);
         } catch (Exception e) {
-        	response.setCODE(Methods.exceptionCodeManagement(e));
-        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+    		response.setCODE(Methods.exceptionCodeManagement(e));
+    		response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
         }
         return response;
     }
+    
     
     @DeleteMapping("/player")
     public GenericResponse deletePlayer(@RequestBody GenericRequest request) {
@@ -255,6 +247,9 @@ public class MainController {
         }
         return response;
     }
+    
+    
+    
     @GetMapping("/player/{id}")
     public GenericResponse<ManualTrackedPlayer> getPlayer(@PathVariable("id") Long id) {
     	response = new GenericResponse();
@@ -323,4 +318,30 @@ public class MainController {
         }
         return response;
     }
+    
+    private Long currentUserId(HttpServletRequest request) {
+        HttpSession session = request.getSession(false);
+        if (session == null) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+        Object user = session.getAttribute("USER");
+        if (!(user instanceof Map<?,?> map) || map.get("id") == null) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+        return ((Number) map.get("id")).longValue();
+    }
+
+    @GetMapping("/players")
+    public GenericResponse<ManualTrackedPlayer> listMine(HttpServletRequest request) throws PlayerDataDBException {
+    	response = new GenericResponse<ManualTrackedPlayer>();
+    	operationGetAllPlayers.setPdClient(pdClient);
+        Long userId = currentUserId(request);
+        try {
+        	response = operationGetAllPlayers.ejecutar(userId);
+        }catch (Exception e) {
+        	response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+        
+    
+    }
+    
+    
 }
