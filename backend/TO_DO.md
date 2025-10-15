@@ -1,18 +1,20 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Añadir funcionalidad de lista de jugadores a revisar en un futuro. Al seleccionar uno, debe llevar a la página existente de guardar manual data player. Debe existir una tabla de ID de lista y jugador en la propia lista, para en un futuro poder jugar con la lógica de usuarios.
+- Fotos de los jugadores.
+- Añadir club en player detail para que se vea de que club es (revisar resto de la informacion por si faltase algo mas).
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
 - Arreglar funcionalidad de búsqueda de por club.
-- Too Many Request Exception Handler en todas las operaciones que manden external calls.
-- Diseño de convivencia para cargar información básica del jugador e información manual, a la hora de cargar la información básica, esta debe verse bien.
-- Añadir columna de fotos y método para detectar paises que no se estén guardando en su columna.
-- Filtros de búsqueda de jugadores.
+- Método para detectar paises que no se estén guardando en su columna.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
+- Hablar con el tutor.
+- Extraer datos de fbref y que se almacenen en jsons posteriormente revisables. Estos, una vez que funcionen, deben poder ser eliminados.
+- Funcionalidad de frontal para añadir información de los jugadores de fbref, pulsar el boton y que busque al jugador determinado. Además de encontrarla, se generaria un botón para almacenar informacion (guardar el id del jugador).
+- Almacenamiento de estadísticas en BBDD.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
 - Diseño de spinner de espera para la carga de datos.
-- Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
 - Separar controlador en varias clases.
-- Validacion de parametros en las requests.
-- Modulo de testing escalable
+- Too Many Request Exception Handler en todas las operaciones que manden external calls.
+- Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
+- Modulo de testing escalable y estable.
