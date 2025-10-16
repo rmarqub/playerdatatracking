@@ -3,10 +3,14 @@ package com.playerdatatracking.entities.indexaldata;
 import jakarta.persistence.*;
 import java.util.Date;
 
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "player")
@@ -57,6 +61,17 @@ public class Player {
     
     @Column(name="isStudied")
     private Boolean isStudied;
+    
+    @JdbcTypeCode(SqlTypes.BINARY)
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "photo")
+    private byte[] photo;
+
+    @Column(name = "photo_content_type")
+    private String photoContentType;
+
+    @Column(name = "photo_updated_at")
+    private LocalDateTime photoUpdatedAt;
 
 	public Long getId() {
 		return id;
@@ -172,6 +187,32 @@ public class Player {
 
 	public Boolean isStudied() {
 		return isStudied;
+	}
+
+	
+	
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
+	}
+
+	public String getPhotoContentType() {
+		return photoContentType;
+	}
+
+	public void setPhotoContentType(String photoContentType) {
+		this.photoContentType = photoContentType;
+	}
+
+	public LocalDateTime getPhotoUpdatedAt() {
+		return photoUpdatedAt;
+	}
+
+	public void setPhotoUpdatedAt(LocalDateTime photoUpdatedAt) {
+		this.photoUpdatedAt = photoUpdatedAt;
 	}
 
 	public void setStudied(Boolean isStudied) {

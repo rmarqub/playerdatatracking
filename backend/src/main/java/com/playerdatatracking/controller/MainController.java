@@ -1,5 +1,6 @@
 package com.playerdatatracking.controller;
 
+import java.awt.PageAttributes.MediaType;
 import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ import com.playerdatatracking.operations.IndelxalData.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.GetAllLeagues;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
+import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersData;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.operations.manualdata.AddPlayer;
@@ -35,16 +37,19 @@ import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+
 import jakarta.annotation.security.PermitAll;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -83,6 +88,7 @@ public class MainController {
 	private UpdatePlayersData operationUpdatePlayersData = new UpdatePlayersData();
 	private SearchIndexatedPlayers operationSearchIndexatedPlayers = new SearchIndexatedPlayers();
 	private GetIndexedPlayer operationGetIxPlayer = new GetIndexedPlayer();
+	private UpdatePlayer operationUpdatePlayer = new UpdatePlayer();
 	
 	
 // 	---------RESPONSES---------	
@@ -248,7 +254,19 @@ public class MainController {
         return response;
     }
     
-    
+    @PatchMapping(value = "/updatePlayer", consumes = "multipart/form-data")
+    public GenericResponse<Player> updatePlayer(@RequestBody GenericRequest request){
+    	response = new GenericResponse<Player>();
+    	operationUpdatePlayer.setPdClient(pdClient);
+    	try {
+    		response = operationUpdatePlayer.ejecutar(request.getIndexId(), request.getPhoto());
+    	} catch (Exception e) {
+        	response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    	
+    }
     
     @GetMapping("/player/{id}")
     public GenericResponse<ManualTrackedPlayer> getPlayer(@PathVariable("id") Long id) {

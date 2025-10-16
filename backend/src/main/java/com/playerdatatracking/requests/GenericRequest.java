@@ -3,6 +3,8 @@ package com.playerdatatracking.requests;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -29,6 +31,7 @@ public class GenericRequest {
     private String update;
     private String restUpdate;
     private int idService;
+    private MultipartFile photo;
     
     public String getRestUpdate() {
 		return restUpdate;
@@ -46,10 +49,18 @@ public class GenericRequest {
         return id;
     }
 
-    public Long getIndexId() {
-		return indexId;
+    
+    public MultipartFile getPhoto() {
+		return photo;
 	}
 
+	public void setPhoto(MultipartFile photo) {
+		this.photo = photo;
+	}
+
+	public Long getIndexId() {
+		return indexId;
+	}
 	public void setIndexId(Long indexId) {
 		this.indexId = indexId;
 	}

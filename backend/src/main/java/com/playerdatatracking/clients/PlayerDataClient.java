@@ -232,9 +232,19 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
-	public ManualTrackedPlayer getPlayer(Long id) throws PlayerDataDBException{
+	public ManualTrackedPlayer getStudiedPlayer(Long id) throws PlayerDataDBException{
 		try {
 			Optional<ManualTrackedPlayer> player = mpRepository.findById(id);
+			return player.isPresent() ? player.get() : null;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	
+	@Transactional
+	public Player getPlayer(Long id) throws PlayerDataDBException{
+		try {
+			Optional<Player> player = pRepository.findById(id);
 			return player.isPresent() ? player.get() : null;
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());

@@ -2,6 +2,7 @@ package com.playerdatatracking.operations.IndelxalData;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -15,6 +16,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.sql.Timestamp;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.time.LocalDateTime;
 
 import org.springframework.core.env.Environment;
 
@@ -47,6 +54,9 @@ public class UpdatePlayersData {
 	String directoryPath = "src/main/resources/json/apiFotball/players/";
 	String leaguesPath = "src/main/resources/json/apiFotball/leagues/";
 	String excludedLeague = "leagues.json";
+	private static final HttpClient HTTP = HttpClient.newBuilder().followRedirects(HttpClient.Redirect.NORMAL).build();
+	private static final long MAX_BYTES = 5L * 1024 * 1024; // 5 MB
+	private static final String DEFAULT_CT = "image/png";
 	private GenericResponse<Player> response = new GenericResponse();
 	private Methods methods;
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -173,6 +183,40 @@ public class UpdatePlayersData {
 							        			weight = weight.substring(0, weight.length() - 3);
 							        		newPlayer.setWeight(Integer.parseInt(weight));
 							        	}
+							        	
+							        	String photoUrl = playerNode.path("photo").asText(null);
+							        	try {
+							        	    byte[] imageBytes = null;
+							        	    String contentType = null;
+
+							        	    if (photoUrl != null && !photoUrl.isBlank()) {
+							        	        imageBytes = downloadImage(photoUrl);
+							        	        contentType = lastContentType != null ? lastContentType : "image/png";
+							        	    }
+
+							        	    if (imageBytes == null || imageBytes.length == 0) {
+							        	        try (InputStream in = getClass().getResourceAsStream("/images/standard-pic.jpg")) {
+							        	            if (in != null) {
+							        	                imageBytes = in.readAllBytes();
+							        	                contentType = "image/jpeg";
+							        	            } else {
+							        	                System.err.println("⚠️ No se encontró la imagen estándar en resources/images/standard-pic.jpg");
+							        	            }
+							        	        }
+							        	    }
+
+							        	    if (imageBytes != null && imageBytes.length > 0) {
+							        	        newPlayer.setPhoto(imageBytes);
+							        	        newPlayer.setPhotoContentType(contentType);
+							        	        newPlayer.setPhotoUpdatedAt(LocalDateTime.now());
+							        	    }
+
+							        	} catch (Exception e) {
+							        	    System.err.println("⚠️ Error procesando la foto: " + e.getMessage());
+							        	}
+
+							        	
+							        	
 							        	JsonNode birthNode = playerNode.path("birth");
 							        	String birthString = birthNode.path("date").asText();
 							        	if(birthString!=null && !birthString.equals("null")) {
@@ -214,5 +258,31 @@ public class UpdatePlayersData {
 			return true;
 		}
 		return false;
+	}
+	
+	private String lastContentType = null;
+
+	private byte[] downloadImage(String url) throws Exception {
+	    HttpRequest req = HttpRequest.newBuilder()
+	            .uri(URI.create(url))
+	            .GET()
+	            .build();
+
+	    HttpResponse<byte[]> res = HTTP.send(req, HttpResponse.BodyHandlers.ofByteArray());
+
+	    if (res.statusCode() != 200) return null;
+
+	    // Guardamos content-type para usarlo al setear la entidad
+	    lastContentType = res.headers().firstValue("Content-Type").orElse(null);
+
+	    // (Opcional) validar tamaño si el servidor lo expone
+	    long contentLength = res.headers().firstValue("Content-Length")
+	            .map(Long::parseLong).orElse(-1L);
+	    if (contentLength > 0 && contentLength > MAX_BYTES) return null;
+
+	    byte[] body = res.body();
+	    if (body != null && body.length > MAX_BYTES) return null;
+
+	    return body;
 	}
 }

@@ -18,7 +18,7 @@ public class GetPlayer {
 		this.pdClient = pdClient;
 	}
 	public GenericResponse<ManualTrackedPlayer> ejecutar(Long id) throws PlayerDataDBException, PlayerInputException{
-		ManualTrackedPlayer player = pdClient.getPlayer(id);
+		ManualTrackedPlayer player = pdClient.getStudiedPlayer(id);
 		if (player==null)
 			throw new PlayerInputException("no player has been found with that name");
 		response.setCODE(Constants.CODE_OK);
