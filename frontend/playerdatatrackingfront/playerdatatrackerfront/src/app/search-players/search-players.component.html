@@ -12,6 +12,7 @@
     <table class="results-table">
       <thead>
         <tr>
+          <th class="player-info">Foto</th>
           <th class="player-info" (click)="sortData('id')">ID <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('id')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('id')}">&#9660;</span></th>
           <th class="player-info" (click)="sortData('firstname')">Nombre <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('firstname')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('firstname')}">&#9660;</span></th>
           <th class="player-info" (click)="sortData('lastname')">Apellido <span class="sort-icon asc" [ngClass]="{'active': isSortedAsc('lastname')}">&#9650;</span><span class="sort-icon desc" [ngClass]="{'active': isSortedDesc('lastname')}">&#9660;</span></th>
@@ -27,7 +28,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="player-found-row" *ngFor="let player of paginatedPlayers" (click)="viewPlayer(player.id)">
+        <tr class="player-found-row" *ngFor="let player of paginatedPlayers;trackBy: trackByPlayerId" (click)="viewPlayer(player.id)">
+          <td class="photo-col">
+            <img
+              class="avatar"
+              [src]="getPlayerPhotoUrl(player)"
+              alt="Foto de {{ player.fullname || (player.firstname + ' ' + player.lastname) }}"
+              (error)="onImgError($event)"
+              loading="lazy" />
+          </td>
           <td class="player-found-row-value">{{ player.id }}</td>
           <td class="player-found-row-value">{{ player.firstname }}</td>
           <td class="player-found-row-value">{{ player.lastname }}</td>

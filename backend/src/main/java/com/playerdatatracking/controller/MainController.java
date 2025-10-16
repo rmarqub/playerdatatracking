@@ -1,6 +1,5 @@
 package com.playerdatatracking.controller;
 
-import java.awt.PageAttributes.MediaType;
 import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
@@ -9,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -357,9 +358,16 @@ public class MainController {
         	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
         }
         return response;
-        
-    
     }
     
+    @GetMapping("/players/{id}/photo")
+    public ResponseEntity<byte[]> getPhoto(@PathVariable("id") Long id) throws PlayerDataDBException {
+        byte[] bytes = operationGetIxPlayer.getPlayerPhoto(id);
+        if (bytes == null || bytes.length == 0) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        String contentType = operationGetIxPlayer.getPlayerPhotoContentType(id);
+        return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType != null ? contentType : MediaType.APPLICATION_OCTET_STREAM_VALUE)).body(bytes);
+    }
     
 }

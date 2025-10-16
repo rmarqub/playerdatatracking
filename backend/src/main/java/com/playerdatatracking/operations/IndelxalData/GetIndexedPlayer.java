@@ -8,6 +8,7 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
 import com.playerdatatracking.entities.indexaldata.Player;
+import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.NoPlayerFoundException;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
@@ -43,4 +44,14 @@ public class GetIndexedPlayer {
 		}
 		return response;
 	}
+	
+    public byte[] getPlayerPhoto(Long playerId) throws PlayerDataDBException {
+        Player player = pdClient.getPlayer(playerId);
+        return player.getPhoto();
+    }
+
+    public String getPlayerPhotoContentType(Long playerId) throws PlayerDataDBException {
+    	Player player = pdClient.getPlayer(playerId);
+        return player.getPhotoContentType();
+    }
 }

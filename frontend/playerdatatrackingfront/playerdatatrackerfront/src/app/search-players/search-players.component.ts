@@ -3,6 +3,7 @@ import { Player } from '../entitites/player';
 import { PlayerService } from '../services/player-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-search-players',
@@ -17,37 +18,76 @@ export class SearchPlayersComponent {
   players: Player[] = [];
   currentPage: number = 1;
   pageSize: number = 40;
+  private searchSub?: Subscription;
   paginatedPlayers: Player[] = [];
-    constructor(
-      private route: ActivatedRoute,
-      private router: Router,
-      private playerService: PlayerService
-    ) {}
+  defaultAvatarUrl = 'assets/images/standard-pic.jpg';
 
-    searchByPlayerName(): void {
-      if (this.playerName.trim()) {
-        this.playerService.searchPlayers(this.playerName).subscribe(players => {
-          this.players = players;
-          this.currentPage = 1;
-          this.updatePagination();
-        });
-      }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private playerService: PlayerService
+  ) {}
+
+
+  getPlayerPhotoUrl(player: any): string {
+    const base = 'http://localhost:8080';
+    const v = player.photoUpdatedAt || player.lastUpdated || '';
+    return `${base}/players/${player.id}/photo`;
+  }
+
+
+
+  trackByPlayerId = (_: number, p: Player) => p.id;
+
+  onImgError(evt: Event): void {
+    const img = evt.target as HTMLImageElement;
+    img.src = this.defaultAvatarUrl;
+  }
+
+
+  searchByPlayerName(): void {
+    const q = this.playerName?.trim();
+    if (!q) {
+      this.players = [];
+      this.paginatedPlayers = [];
+      this.currentPage = 1;
+      return;
     }
 
-    searchByTeam(): void {
-      if (this.teamName.trim()) {
-        this.playerService.searchPlayers(undefined, this.teamName).subscribe(players => {
-          this.players = players;
-          this.currentPage = 1;
-          this.updatePagination();
-        });
-      }
+    this.searchSub?.unsubscribe();
+
+    this.searchSub = this.playerService.searchPlayers(q).subscribe(players => {
+      this.players = Array.isArray(players) ? players : [];
+      this.currentPage = 1;
+      this.updatePagination();
+    });
+  }
+
+  searchByTeam(): void {
+    if (this.teamName.trim()) {
+      this.playerService.searchPlayers(undefined, this.teamName).subscribe(players => {
+        this.players = players;
+        this.currentPage = 1;
+        this.updatePagination();
+      });
     }
+  }
+
+
 
   updatePagination(): void {
-    const startIndex = (this.currentPage - 1) * this.pageSize;
-    const endIndex = startIndex + this.pageSize;
-    this.paginatedPlayers = this.players.slice(startIndex, endIndex);
+    const total = this.players?.length ?? 0;
+    if (total === 0) {
+      this.paginatedPlayers = [];
+      return;
+    }
+    const maxPage = Math.max(1, Math.ceil(total / this.pageSize));
+    this.currentPage = Math.min(Math.max(1, this.currentPage), maxPage);
+
+    const start = (this.currentPage - 1) * this.pageSize;
+    const end = start + this.pageSize;
+
+    this.paginatedPlayers = this.players.slice(start, end);
   }
 
   nextPage(): void {

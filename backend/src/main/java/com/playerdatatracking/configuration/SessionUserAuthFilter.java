@@ -27,5 +27,11 @@ public class SessionUserAuthFilter extends OncePerRequestFilter {
     }
     chain.doFilter(req, res);
   }
+  
+  @Override
+  protected boolean shouldNotFilter(HttpServletRequest req) {
+    String p = req.getRequestURI();
+    return p.matches("^/players/\\d+/photo$"); // no filtrar esta ruta
+  }
 }
 
