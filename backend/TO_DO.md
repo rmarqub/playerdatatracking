@@ -1,13 +1,16 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Fotos de los jugadores.
-- Añadir club en player detail para que se vea de que club es (revisar resto de la informacion por si faltase algo mas).
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
 - Arreglar funcionalidad de búsqueda de por club.
 - Método para detectar paises que no se estén guardando en su columna.
+- Mostrar bien la ultima fecha de actualizacion de futbolistas.
+- Mostrar fotos de jugadores en manual data.
+- Carga de datos basicos desde Manual Data.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
 - Hablar con el tutor.
+- Base de datos en MongoDB para almacenar los jsons de futbolistas, clubes y torneos.
+- Operacion de carga de datos basicos (pagina de muestra de datos basicos).
 - Revisar comportamiento de las fotos ya que la primera busqueda, al levantar la aplicación no devuelve la foto
 - Extraer datos de fbref y que se almacenen en jsons posteriormente revisables. Estos, una vez que funcionen, deben poder ser eliminados.
 - Funcionalidad de frontal para añadir información de los jugadores de fbref, pulsar el boton y que busque al jugador determinado. Además de encontrarla, se generaria un botón para almacenar informacion (guardar el id del jugador).
