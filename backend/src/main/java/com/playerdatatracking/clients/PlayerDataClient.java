@@ -1,5 +1,6 @@
 package com.playerdatatracking.clients;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -428,6 +429,14 @@ public class PlayerDataClient {
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
-
     }
+	
+	@Transactional
+	public byte[] getPhoto(Long id) { return pRepository.findPhotoById(id); }
+
+	@Transactional
+	public String getPhotoContentType(Long id) { return pRepository.findPhotoContentTypeById(id); }
+
+	@Transactional
+	public LocalDateTime getPhotoUpdatedAt(Long id) { return pRepository.findPhotoUpdatedAtById(id); }
 }

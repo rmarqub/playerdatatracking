@@ -1,12 +1,17 @@
 package com.playerdatatracking.controller;
 
 import java.text.ParseException;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -359,15 +364,26 @@ public class MainController {
         }
         return response;
     }
-    
-    @GetMapping("/players/{id}/photo")
-    public ResponseEntity<byte[]> getPhoto(@PathVariable("id") Long id) throws PlayerDataDBException {
-        byte[] bytes = operationGetIxPlayer.getPlayerPhoto(id);
+    @GetMapping(value = "players/{id}/photo", produces = { MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE,"image/webp"})
+    public ResponseEntity<byte[]> getPhoto(@PathVariable Long id) {
+        byte[] bytes = pdClient.getPhoto(id);
         if (bytes == null || bytes.length == 0) {
-            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+          // evita cachear un 204
+          return ResponseEntity.status(HttpStatus.NO_CONTENT)
+              .cacheControl(CacheControl.noStore())
+              .header("Pragma", "no-cache")
+              .build();
         }
-        String contentType = operationGetIxPlayer.getPlayerPhotoContentType(id);
-        return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType != null ? contentType : MediaType.APPLICATION_OCTET_STREAM_VALUE)).body(bytes);
-    }
+
+        String ct = Optional.ofNullable(pdClient.getPhotoContentType(id)).orElse("image/jpeg");
+        var updatedAt = Optional.ofNullable(pdClient.getPhotoUpdatedAt(id)).orElse(LocalDateTime.now());
+        long lastMod = updatedAt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+
+        return ResponseEntity.ok()
+            .contentType(MediaType.parseMediaType(ct))
+            .cacheControl(CacheControl.maxAge(365, TimeUnit.DAYS).cachePublic())
+            .lastModified(lastMod)
+            .body(bytes);
+      }
     
 }
