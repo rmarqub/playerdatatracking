@@ -8,6 +8,7 @@
 - YAML de operaciones de postman.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
 - Hablar con el tutor.
+- Revisar comportamiento de las fotos ya que la primera busqueda, al levantar la aplicación no devuelve la foto
 - Extraer datos de fbref y que se almacenen en jsons posteriormente revisables. Estos, una vez que funcionen, deben poder ser eliminados.
 - Funcionalidad de frontal para añadir información de los jugadores de fbref, pulsar el boton y que busque al jugador determinado. Además de encontrarla, se generaria un botón para almacenar informacion (guardar el id del jugador).
 - Almacenamiento de estadísticas en BBDD.

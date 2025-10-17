@@ -10,25 +10,43 @@ import { PlayerService } from '../services/player-service.service';
 })
 export class PlayerDetailComponent implements OnInit {
   player: ManualTrackedPlayer | null = null;
+  photoSrc = 'assets/images/standard-pic.jpg';
+  private detailId!: number;
 
   constructor(
     private route: ActivatedRoute,
     private playerService: PlayerService
   ) {}
 
+
   ngOnInit(): void {
-    const playerId = Number(this.route.snapshot.paramMap.get('id'));
-    if (playerId) {
-      this.playerService.getPlayer(playerId).subscribe(
-        data => {
-          if (data) {
-            this.player = data;
-          } else {
-            console.error('No se pudo obtener la información del jugador.');
-          }
+    this.detailId = Number(this.route.snapshot.paramMap.get('id'));
+
+    if (this.detailId) {
+      this.playerService.getPlayer(this.detailId).subscribe({
+        next: data => {
+          this.player = data ?? null;
+
+          const photoPlayerId = this.player?.id ?? this.detailId;
+          this.photoSrc = this.getPlayerPhotoUrl(photoPlayerId);
         },
-        error => console.error('Error en la solicitud:', error)
-      );
+        error: err => console.error('Error en la solicitud:', err)
+      });
     }
+  }
+
+
+  onImgError(ev: Event): void {
+    (ev.target as HTMLImageElement).src = 'assets/images/standard-pic.jpg';
+  }
+
+  ngOnDestroy(): void {
+
+  }
+
+  getPlayerPhotoUrl(player: any): string {
+    const base = 'http://localhost:8080';
+    console.log(base + '/players/' + `${player}` + '/photo');
+    return `${base}/players/${player}/photo`;
   }
 }

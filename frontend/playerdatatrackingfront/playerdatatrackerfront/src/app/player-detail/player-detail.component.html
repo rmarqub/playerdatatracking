@@ -5,9 +5,7 @@
   <button class="toggle-button btn-apifoot"> Cargar data basica </button>
 </div>
 <div class="basic-info-container">
-  <div class="player-photo-container">
-    <img src="assets/images/standard-pic.jpg" class="player-photo">
-  </div>
+  <div class="player-photo-container"><img class="player-photo" [src]="photoSrc" alt="Foto de {{ player?.nombre || 'jugador' }}" (error)="onImgError($event)" loading="lazy"/> </div>
   <div *ngIf="player" class="player-detail-container">
     <h2 class="player-name"> {{ player.nombre }}</h2>
     <p><strong>Posición:</strong> {{ player.posicion }}</p>

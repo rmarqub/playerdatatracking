@@ -1,19 +1,27 @@
 <div class="player-data-buttons-container">
-  <button class="toggle-button btn-update"> Actualizar jugador</button>
+  <!--<button class="toggle-button btn-update"> Actualizar jugador</button>-->
   <button class="toggle-button btn-fbref"> Cargar data fbref </button>
+  <button class="toggle-button btn-apifoot"> Cargar data basica </button>
 </div>
 
 <div class="basic-info-container">
   <div class="player-container">
-    <div class="player-photo-container">
-      <img src="assets/images/standard-pic.jpg" class="player-photo">
-    </div>
+      <div *ngIf="player" class="player-photo-container">
+    <img
+      class="player-photo"
+      [src]="photoSrc"
+      alt="Foto de {{ player?.fullname || 'jugador' }}"
+      (error)="onImgError($event)"
+      loading="lazy"
+    />
+  </div>
 
     <div *ngIf="player" class="player-detail-container">
       <h2 class="player-name"> {{ player.fullname }}</h2>
       <p><strong>Nombre:</strong> {{ player.firstname }}</p>
       <p><strong>Apellido:</strong> {{ player.lastname }}</p>
       <p><strong>Edad:</strong> {{ player.age }}</p>
+      <p><strong>Club:</strong> {{ player.team }}</p>
       <p><strong>Altrua:</strong> {{ player.height }}</p>
       <p><strong>Peso:</strong> {{ player.weight }}</p>
       <p><strong>Nacionalidad:</strong> {{ player.nacionalidad }}</p>
