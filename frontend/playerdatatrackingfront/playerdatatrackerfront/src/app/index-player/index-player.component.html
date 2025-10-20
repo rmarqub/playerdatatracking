@@ -28,7 +28,7 @@
       <p><strong>Lesionado:</strong> {{ player.injured }}</p>
       <p><strong>Edad:</strong> {{ player.age }}</p>
       <p><strong>Fecha de Nacimiento:</strong> {{ player.birth }}</p>
-      <p><strong>Fecha Actualizacion:</strong> {{ player.lastUpdated }}</p>
+      <p><strong>Fecha Actualizacion:</strong> {{ lastUpdatedPretty  }}</p>
     </div>
   </div>
   <div *ngIf="!player" class="player-detail-container">

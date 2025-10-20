@@ -1,8 +1,5 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
 - Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
-- Arreglar funcionalidad de búsqueda de por club.
-- Método para detectar paises que no se estén guardando en su columna.
-- Mostrar bien la ultima fecha de actualizacion de futbolistas.
 - Mostrar fotos de jugadores en manual data.
 - Carga de datos basicos desde Manual Data.
 - Actualizar scripts de creacion de tablas.
@@ -13,6 +10,7 @@
 - Operacion de carga de datos basicos (pagina de muestra de datos basicos).
 - Extraer datos de fbref y que se almacenen en jsons posteriormente revisables. Estos, una vez que funcionen, deben poder ser eliminados.
 - Funcionalidad de frontal para añadir información de los jugadores de fbref, pulsar el boton y que busque al jugador determinado. Además de encontrarla, se generaria un botón para almacenar informacion (guardar el id del jugador).
+- Marca de favorito activada o desactivada en funcion de isStudied. Actualizar esta variable al agregar un jugador a manual data.
 - Almacenamiento de estadísticas en BBDD.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
@@ -21,3 +19,4 @@
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs
 - Modulo de testing escalable y estable.
+- Método para detectar paises que no se estén guardando en su columna.

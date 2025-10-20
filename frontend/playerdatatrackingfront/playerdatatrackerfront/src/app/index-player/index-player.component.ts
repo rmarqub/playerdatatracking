@@ -5,11 +5,31 @@ import { PlayerService } from '../services/player-service.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
+
+    const fmtDate = new Intl.DateTimeFormat('es-ES', {
+    timeZone: 'Europe/Madrid',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+
+  const fmtDateTime = new Intl.DateTimeFormat('es-ES', {
+    timeZone: 'Europe/Madrid',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  });
 @Component({
   selector: 'app-index-player',
   templateUrl: './index-player.component.html',
   styleUrls: ['./index-player.component.css']
 })
+
+
 export class IndexPlayerComponent implements OnInit {
   player: any = null;
   isFavorite: boolean = false;
@@ -45,10 +65,10 @@ export class IndexPlayerComponent implements OnInit {
   }
 
   toggleFavorite(): void {
-    // 1) marca local si quieres
+
     this.isFavorite = !this.isFavorite;
 
-    // 2) navega a /addPlayer con prefill
+
     if (this.player && this.isFavorite) {
       this.router.navigate(['/addplayer'], {
         state: {
@@ -72,5 +92,16 @@ export class IndexPlayerComponent implements OnInit {
     (ev.target as HTMLImageElement).src = 'assets/images/standard-pic.jpg';
   }
 
+    private toDate(value: any): Date | null {
+    if (!value) return null;
+    return value instanceof Date ? value : new Date(value);
+  }
+
   ngOnDestroy(): void { this.sub?.unsubscribe(); }
+
+    get lastUpdatedPretty(): string {
+    const d = this.toDate(this.player?.lastUpdated);
+    return d ? fmtDateTime.format(d) : '';
+  }
+
 }
