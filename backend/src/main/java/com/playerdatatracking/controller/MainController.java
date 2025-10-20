@@ -354,7 +354,6 @@ public class MainController {
     @GetMapping("/players")
     public GenericResponse<ManualTrackedPlayer> listMine(HttpServletRequest request) throws PlayerDataDBException {
     	response = new GenericResponse<ManualTrackedPlayer>();
-    	operationGetAllPlayers.setPdClient(pdClient);
         Long userId = currentUserId(request);
         try {
         	response = operationGetAllPlayers.ejecutar(userId);

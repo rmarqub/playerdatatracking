@@ -47,8 +47,9 @@ public class Player {
     @Column(name="injured")
     private Boolean injured;
     
-    @Column(name="team")
-    private Long team;
+    @ManyToOne
+    @JoinColumn(name = "team")
+    private Club team;
     
     @Column(name = "last_updated", nullable = false)
     private Timestamp lastUpdated;
@@ -153,13 +154,19 @@ public class Player {
 		this.injured = injured;
 	}
 
-	public Long getTeam() {
-		return team;
-	}
-
-	public void setTeam(Long team) {
-		this.team = team;
-	}
+    public void setTeam(Long clubId) {
+        if (clubId == null) {
+            this.team = null;
+        } else {
+            Club c = new Club();
+            c.setId(clubId);
+            this.team = c;
+        }
+    }
+    
+    public Long getTeam() {
+        return (team != null) ? team.getId() : null;
+    }
 
 	public Timestamp getLastUpdated() {
 		return lastUpdated;

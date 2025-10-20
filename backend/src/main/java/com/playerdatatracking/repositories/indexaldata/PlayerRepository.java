@@ -17,8 +17,7 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
             "OR LOWER(p.fullname) LIKE LOWER(CONCAT('%', :playerName, '%'))")
     List<Player> findByPlayerName(@Param("playerName") String playerName);
 
-	@Query("SELECT p FROM Player p JOIN Torneo t ON p.team = t.id WHERE t.name = :teamName")
-	List<Player> findByTeamName(@Param("teamName") String teamName);
+	List<Player> findByTeam_NombreContainingIgnoreCase(String clubName);
 	
 	@Query("select p.photo from Player p where p.id = :id")
 	byte[] findPhotoById(@Param("id") Long id);

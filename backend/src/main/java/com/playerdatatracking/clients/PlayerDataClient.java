@@ -417,7 +417,7 @@ public class PlayerDataClient {
         if (playerName != null && !playerName.isEmpty()) {
             return pRepository.findByPlayerName(playerName);
         } else if (teamName != null && !teamName.isEmpty()) {
-            return pRepository.findByTeamName(teamName);
+            return pRepository.findByTeam_NombreContainingIgnoreCase(teamName);
         }
         return new ArrayList<>();
     }
