@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { PlayerService } from '../services/player-service.service';
+import { ActivatedRoute } from '@angular/router';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
 
 @Component({
@@ -27,6 +28,7 @@ export class UpdateTrackedPlayerComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private service: PlayerService,
     private toastr: ToastrService
   ) {
@@ -36,41 +38,42 @@ export class UpdateTrackedPlayerComponent implements OnInit {
 
   ngOnInit(): void {
     const nav = this.router.getCurrentNavigation();
-    const manualId = Number(nav?.extras?.state?.['manualId'] ?? 0);
+
+    const fromNav = nav?.extras?.state?.['manualId'];
+    const fromHistory = (history.state && history.state['manualId']) || null;
+
+    const manualId = Number(fromNav ?? fromHistory ?? 0);
 
     if (!manualId) {
       this.toastr.error('Falta el identificador del jugador.');
-      this.router.navigate(['/manualdata']);
+      this.router.navigate(['/manualData']);
       return;
     }
 
     this.service.getPlayer(manualId).subscribe({
       next: (m) => {
-        if (!m) {                               // ⬅️ guarda contra null
+        if (!m) {
           this.toastr.error('No se encontró el jugador.');
-          this.router.navigate(['/manualdata']);
+          this.router.navigate(['/manualData']);
           return;
         }
-        this.manual = m;                        // ⬅️ ya no da error
-        this.prefillFromManual(m);              // ⬅️ m es ManualTrackedPlayer
+        this.manual = m;
+        this.prefillFromManual(m);
       },
       error: () => {
         this.toastr.error('No se pudo cargar el jugador.');
-        this.router.navigate(['/manualdata']);
+        this.router.navigate(['/manualData']);
       }
     });
   }
 
   private prefillFromManual(m: ManualTrackedPlayer) {
-    // Campos solicitados: todos vienen de manualdataplayer
     this.form.nombre = m.nombre ?? '';
     this.form.nota = m.nota ?? null;
     this.form.likeable = m.likeable ?? '';
     this.form.posicion = m.posicion ?? '';
-    this.form.birth = this.normalizeToInputDate(m.birth); // yyyy-MM-dd
+    this.form.birth = this.normalizeToInputDate(m.birth);
     this.form.mostLikeDestination = m.mostLikeDestination ?? '';
-
-    // qualities array -> string con comas
     this.qualitiesInput = Array.isArray(m.qualities) ? m.qualities.join(', ') : '';
   }
 
@@ -106,7 +109,7 @@ export class UpdateTrackedPlayerComponent implements OnInit {
       next: (res) => {
         if (res?.code === 0 || res === true) {
           this.toastr.success('Jugador actualizado correctamente');
-          this.router.navigate(['/manualdata']);
+          this.router.navigate(['/manualdataplayer', updated.id]);
         } else {
           this.toastr.error(res?.description ?? 'No se pudo actualizar el jugador');
         }

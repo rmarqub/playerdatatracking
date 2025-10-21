@@ -26,9 +26,8 @@ const appRoutes : Routes = [
   { path: 'manageApikeys', component: ManageApikeysComponent, canActivate: [AuthGuard]},
   { path: 'player/:id', component: IndexPlayerComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: '' },
-  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'updateTrackedPlayer', component: UpdateTrackedPlayerComponent }
+  { path: 'updateTrackedPlayer', component: UpdateTrackedPlayerComponent },
+  { path: '**', redirectTo: '' }
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);

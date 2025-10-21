@@ -37,6 +37,7 @@ import com.playerdatatracking.operations.manualdata.AddPlayer;
 import com.playerdatatracking.operations.manualdata.DeletePlayer;
 import com.playerdatatracking.operations.manualdata.GetAllPlayers;
 import com.playerdatatracking.operations.manualdata.GetPlayer;
+import com.playerdatatracking.operations.manualdata.UpdateManualPlayer;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.requests.GenericRequest;
@@ -53,6 +54,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
@@ -95,6 +97,7 @@ public class MainController {
 	private SearchIndexatedPlayers operationSearchIndexatedPlayers = new SearchIndexatedPlayers();
 	private GetIndexedPlayer operationGetIxPlayer = new GetIndexedPlayer();
 	private UpdatePlayer operationUpdatePlayer = new UpdatePlayer();
+	private UpdateManualPlayer operationUpdateManualPlayer = new UpdateManualPlayer();
 	
 	
 // 	---------RESPONSES---------	
@@ -217,20 +220,7 @@ public class MainController {
     	}
     	return response;
     }
-    
-//    @PostMapping("/player")
-//    public GenericResponse addPlayer(@RequestBody GenericRequest request) throws PlayerDataDBException, PlayerInputException, ParseException {
-//    	response = new GenericResponse();
-//    	operationAddPlayer.setPdClient(pdClient);
-//        try {
-//        	ManualTrackedPlayer player = Methods.bindRequestAsPlayer(request);
-//        	response = operationAddPlayer.ejecutar(player);
-//        } catch (Exception e) {
-//        	response.setCODE(Methods.exceptionCodeManagement(e));
-//        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
-//        }
-//        return response;
-//    }
+
     @PostMapping("/player")
     public GenericResponse addPlayer(@RequestBody GenericRequest p, HttpServletRequest request) {
     	response = new GenericResponse();
@@ -384,6 +374,20 @@ public class MainController {
             .cacheControl(CacheControl.maxAge(365, TimeUnit.DAYS).cachePublic())
             .lastModified(lastMod)
             .body(bytes);
-      }
+    }
     
+    @PutMapping("/manualTrackedPlayer/{id}")
+    public GenericResponse<ManualTrackedPlayer> updateManualPlayer(@PathVariable("id") Long id, @RequestBody GenericRequest request, HttpServletRequest servlet){
+    	response = new GenericResponse<ManualTrackedPlayer>();
+    	Long userId = currentUserId(servlet);
+    	operationUpdateManualPlayer.setPdClient(pdClient);
+        try {
+        	response = operationUpdateManualPlayer.ejecutar(request,id,userId);
+        }catch (Exception e) {
+        	response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    	
+    }
 }

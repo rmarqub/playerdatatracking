@@ -1,0 +1,61 @@
+.add-player-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 2%;
+}
+
+.add-player-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-player-container form div {
+  margin-bottom: 15px;
+}
+
+.add-player-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-player-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.add-player-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #CD853F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-player-container button:hover {
+  background-color: #cf7a25;
+}
+
+.add-player-container button:active {
+  background-color: #ac5e11; /* Color de fondo al hacer clic */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más cercana */
+  transform: translateY(2px); /* Simulación de movimiento hacia abajo */
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}

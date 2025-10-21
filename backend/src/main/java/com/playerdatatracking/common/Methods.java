@@ -106,7 +106,7 @@ public class Methods {
 	}
 	
 	
-	private static LocalDate parseLocalDateFlexible(String input) {
+	public static LocalDate parseLocalDateFlexible(String input) {
 	    if (input == null || input.isBlank()) {
 	        throw new IllegalArgumentException("Date string is null/blank");
 	    }
