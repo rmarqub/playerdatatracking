@@ -355,6 +355,7 @@ public class MainController {
     public GenericResponse<ManualTrackedPlayer> listMine(HttpServletRequest request) throws PlayerDataDBException {
     	response = new GenericResponse<ManualTrackedPlayer>();
         Long userId = currentUserId(request);
+        operationGetAllPlayers.setPdClient(pdClient);
         try {
         	response = operationGetAllPlayers.ejecutar(userId);
         }catch (Exception e) {

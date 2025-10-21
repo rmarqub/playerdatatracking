@@ -54,6 +54,11 @@ public class ManualTrackedPlayer {
     
     @Column(name = "id_user")
     private Long userId;
+    
+    @Column(name = "basicid")
+    private Long basicID;
+    
+    private byte[] photo;
 
     // Getters y setters
     public Long getId() {
@@ -174,6 +179,22 @@ public class ManualTrackedPlayer {
 
 	public void setIndexID(Long indexID) {
 		this.indexID = indexID;
+	}
+
+	public Long getBasicID() {
+		return basicID;
+	}
+
+	public void setBasicID(Long basicID) {
+		this.basicID = basicID;
+	}
+
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
 	}
     
 	

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
 import { PlayerService } from '../services/player-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-player-detail',
@@ -15,7 +16,8 @@ export class PlayerDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private playerService: PlayerService
+    private playerService: PlayerService,
+    private router: Router
   ) {}
 
 
@@ -27,7 +29,7 @@ export class PlayerDetailComponent implements OnInit {
         next: data => {
           this.player = data ?? null;
 
-          const photoPlayerId = this.player?.id ?? this.detailId;
+          const photoPlayerId = this.player?.indexID ?? this.detailId;
           this.photoSrc = this.getPlayerPhotoUrl(photoPlayerId);
         },
         error: err => console.error('Error en la solicitud:', err)
@@ -43,6 +45,19 @@ export class PlayerDetailComponent implements OnInit {
   ngOnDestroy(): void {
 
   }
+
+  goToUpdate(): void {
+      if (!this.player) return;
+      this.router.navigate(['/updateTrackedPlayer'], {
+        state: {
+          manualId: this.player.id,
+          indexID: this.player.indexID,
+          fbrefid: this.player.fbrefID ?? null,
+          id_user: this.player.iduser ?? null,
+          basicid: this.player.basicid ?? null
+        }
+      });
+    }
 
   getPlayerPhotoUrl(player: any): string {
     const base = 'http://localhost:8080';
