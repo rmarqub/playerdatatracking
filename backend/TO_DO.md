@@ -1,7 +1,6 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Página para actualizar información de los jugadores, recibiendo información preescrita en el formulario que se va a enviar.
-- Base de datos en MongoDB para almacenar los jsons de futbolistas, clubes y torneos.
-- Carga de datos basicos desde Manual Data.
+- Base de datos con JSONB para almacenar los jsons de futbolistas, clubes y torneos.
+- Carga de datos basicos desde Manual Data ee indexal data.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.

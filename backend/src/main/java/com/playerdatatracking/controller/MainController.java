@@ -29,6 +29,7 @@ import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.operations.IndelxalData.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.GetAllLeagues;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
+import com.playerdatatracking.operations.IndelxalData.IngestRawData;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersData;
@@ -43,7 +44,7 @@ import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepo
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
-
+import com.playerdatatracking.services.PlayerJsonIngestService;
 
 import jakarta.annotation.security.PermitAll;
 import jakarta.servlet.http.HttpServletRequest;
@@ -73,9 +74,11 @@ public class MainController {
 	private ResourceLoader resourceLoader;
 	
 	
-//	---------CLIENTS---------
+//	---------CLIENTS & SERVICES---------
 	@Autowired
 	private PlayerDataClient pdClient;
+	@Autowired
+	private PlayerJsonIngestService jsonService;
 	
 	
 //	---------RFEPOSITORIES---------
@@ -98,6 +101,7 @@ public class MainController {
 	private GetIndexedPlayer operationGetIxPlayer = new GetIndexedPlayer();
 	private UpdatePlayer operationUpdatePlayer = new UpdatePlayer();
 	private UpdateManualPlayer operationUpdateManualPlayer = new UpdateManualPlayer();
+	private IngestRawData operationIngestRawData;
 	
 	
 // 	---------RESPONSES---------	
@@ -389,5 +393,20 @@ public class MainController {
         }
         return response;
     	
+    }
+    
+    @PostMapping("/ingestRawData")
+    public GenericResponse ingestRawData() {
+    	operationIngestRawData = new IngestRawData(jsonService);
+    	response = new GenericResponse<>();
+    	try {
+    		operationIngestRawData.ejecutar();
+    		response.setCODE(Constants.CODE_OK);
+			response.setDescription("OK");
+    	} catch(Exception e) {
+    		response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+    	}
+    	return response;
     }
 }

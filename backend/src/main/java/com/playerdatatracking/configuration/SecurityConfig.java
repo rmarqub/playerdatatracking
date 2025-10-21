@@ -28,6 +28,7 @@ public class SecurityConfig {
     	.authorizeHttpRequests(auth -> auth
     			.requestMatchers(HttpMethod.POST, "/updatePlayers").permitAll()
     			.requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/ingestRawData").permitAll()
     			.requestMatchers("/auth/**", "/public/**").permitAll()
     			.anyRequest().authenticated()
       )
