@@ -22,6 +22,7 @@ import { CredentialsInterceptor } from './core/interceptors/credentials.intercep
 import { LoginComponent } from './features/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './features/register/register.component';
+import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tracked-player.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { RegisterComponent } from './features/register/register.component';
     IndexPlayerComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpdateTrackedPlayerComponent
   ],
   imports: [
     BrowserAnimationsModule,

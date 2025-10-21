@@ -10,6 +10,7 @@ import { ManageApikeysComponent } from './manage-apikeys/manage-apikeys.componen
 import { IndexPlayerComponent } from './index-player/index-player.component';
 import { LoginComponent } from './features/login/login.component';
 import { AuthGuard } from './core/guards/auth.guard';
+import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tracked-player.component';
 import { RegisterComponent } from './features/register/register.component';
 
 const appRoutes : Routes = [
@@ -27,6 +28,7 @@ const appRoutes : Routes = [
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '' },
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+  { path: 'updateTrackedPlayer', component: UpdateTrackedPlayerComponent }
 ]
 
 export const routing = RouterModule.forRoot(appRoutes);

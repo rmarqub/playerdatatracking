@@ -1,0 +1,52 @@
+<!-- update-tracked-player.component.html -->
+<div class="add-player-container">
+  <h2>Actualizar Jugador</h2>
+
+  <form (ngSubmit)="onSubmit()" #playerForm="ngForm">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" required [(ngModel)]="form.nombre" name="nombre"
+             [class.error-border]="formErrors['nombre']" />
+      <div *ngIf="formErrors['nombre']" class="error-message">{{ formErrors['nombre'] }}</div>
+    </div>
+
+    <div>
+      <label for="nota">Nota:</label>
+      <input id="nota" type="number" required [(ngModel)]="form.nota" name="nota"
+             [class.error-border]="formErrors['nota']" />
+      <div *ngIf="formErrors['nota']" class="error-message">{{ formErrors['nota'] }}</div>
+    </div>
+
+    <div>
+      <label for="posicion">Posición:</label>
+      <input id="posicion" type="text" required [(ngModel)]="form.posicion" name="posicion"
+             [class.error-border]="formErrors['posicion']" />
+      <div *ngIf="formErrors['posicion']" class="error-message">{{ formErrors['posicion'] }}</div>
+    </div>
+
+    <div>
+      <label for="likeable">Jugador Similar:</label>
+      <input id="likeable" type="text" required [(ngModel)]="form.likeable" name="likeable" />
+    </div>
+
+    <div>
+      <label for="birth">Fecha de Nacimiento:</label>
+      <input id="birth" type="date" required [(ngModel)]="form.birth" name="birth"
+             [class.error-border]="birthDateError" [attr.max]="todayDate" />
+      <div *ngIf="birthDateError" class="error-message">{{ birthDateError }}</div>
+    </div>
+
+    <div>
+      <label for="mostLikeDestination">Destino Más Probable:</label>
+      <input id="mostLikeDestination" type="text"
+             [(ngModel)]="form.mostLikeDestination" name="mostLikeDestination" />
+    </div>
+
+    <div>
+      <label for="qualities">Cualidades (separadas por comas):</label>
+      <input id="qualities" type="text" [(ngModel)]="qualitiesInput" name="qualities" />
+    </div>
+
+    <button type="submit">Actualizar</button>
+  </form>
+</div>

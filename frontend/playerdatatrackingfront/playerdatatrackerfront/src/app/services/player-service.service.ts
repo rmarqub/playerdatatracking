@@ -16,6 +16,7 @@ interface GenericResponse<T> {
   providedIn: 'root'
 })
 export class PlayerService {
+  private base = 'http://localhost:8080';
   private apiUrlManualP = 'http://localhost:8080/player';
   private apiUrlIndexalP = 'http://localhost:8080/search';
   private apiUrlIndxPlayer = 'http://localhost:8080/searchPlayer';
@@ -39,6 +40,10 @@ export class PlayerService {
         return of(null);
       })
     );
+  }
+
+  updateManualTrackedPlayer(id: number, payload: ManualTrackedPlayer) {
+    return this.http.put<any>(`${this.base}/manualTrackedPlayer/${id}`, payload, { withCredentials: true });
   }
 
   getIndxPlayer(id: number): Observable<Player | null> {

@@ -47,17 +47,11 @@ export class PlayerDetailComponent implements OnInit {
   }
 
   goToUpdate(): void {
-      if (!this.player) return;
-      this.router.navigate(['/updateTrackedPlayer'], {
-        state: {
-          manualId: this.player.id,
-          indexID: this.player.indexID,
-          fbrefid: this.player.fbrefID ?? null,
-          id_user: this.player.iduser ?? null,
-          basicid: this.player.basicid ?? null
-        }
-      });
-    }
+    if (!this.player) return;
+    this.router.navigate(['/updateTrackedPlayer'], {
+      state: { manualId: this.player.id }
+    });
+  }
 
   getPlayerPhotoUrl(player: any): string {
     const base = 'http://localhost:8080';
