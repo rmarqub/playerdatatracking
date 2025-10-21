@@ -10,6 +10,8 @@ export interface ManualTrackedPlayer {
   fbrefID: number;
   posicion: string;
   birth: string;
+  basicid: number;
+  iduser: number;
   age: number;
   qualities: string[];
 }
