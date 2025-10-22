@@ -396,11 +396,11 @@ public class MainController {
     }
     
     @PostMapping("/ingestRawData")
-    public GenericResponse ingestRawData() {
+    public GenericResponse ingestRawData(@RequestBody GenericRequest request) {
     	operationIngestRawData = new IngestRawData(jsonService);
     	response = new GenericResponse<>();
     	try {
-    		operationIngestRawData.ejecutar();
+    		operationIngestRawData.ejecutar(request);
     		response.setCODE(Constants.CODE_OK);
 			response.setDescription("OK");
     	} catch(Exception e) {

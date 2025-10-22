@@ -30,8 +30,10 @@ public class GenericRequest {
     private String apiKey;
     private String update;
     private String restUpdate;
+    private int threads;
     private int idService;
     private MultipartFile photo;
+    private String purgeBeforeRun;
     
     public String getRestUpdate() {
 		return restUpdate;
@@ -44,7 +46,23 @@ public class GenericRequest {
 	
     
     
-    // Getters y setters
+    public int getThreads() {
+		return threads;
+	}
+
+	public void setThreads(int threads) {
+		this.threads = threads;
+	}
+
+	public String getPurgeBeforeRun() {
+		return purgeBeforeRun;
+	}
+
+	public void setPurgeBeforeRun(String purgeBeforeRun) {
+		this.purgeBeforeRun = purgeBeforeRun;
+	}
+
+	// Getters y setters
     public Long getId() {
         return id;
     }
