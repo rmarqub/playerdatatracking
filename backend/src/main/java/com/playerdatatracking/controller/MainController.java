@@ -28,6 +28,7 @@ import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.operations.IndelxalData.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.GetAllLeagues;
+import com.playerdatatracking.operations.IndelxalData.GetBasicStats;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.IngestRawData;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
@@ -42,6 +43,7 @@ import com.playerdatatracking.operations.manualdata.UpdateManualPlayer;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.requests.GenericRequest;
+import com.playerdatatracking.requests.PlayerMatchRow;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 import com.playerdatatracking.services.PlayerJsonIngestService;
@@ -102,6 +104,7 @@ public class MainController {
 	private UpdatePlayer operationUpdatePlayer = new UpdatePlayer();
 	private UpdateManualPlayer operationUpdateManualPlayer = new UpdateManualPlayer();
 	private IngestRawData operationIngestRawData;
+	private GetBasicStats operationGetBasicStats = new GetBasicStats();
 	
 	
 // 	---------RESPONSES---------	
@@ -401,6 +404,21 @@ public class MainController {
     	response = new GenericResponse<>();
     	try {
     		operationIngestRawData.ejecutar(request);
+    		response.setCODE(Constants.CODE_OK);
+			response.setDescription("OK");
+    	} catch(Exception e) {
+    		response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+    	}
+    	return response;
+    }
+    
+    @GetMapping("/players/{indexId}/basic-stats")
+    public GenericResponse<PlayerMatchRow> getBasicStats(@PathVariable("indexId") Long indexId) {
+    	response = new GenericResponse<PlayerMatchRow>();
+    	operationGetBasicStats.setPdClient(pdClient);
+    	try {
+    		response = operationGetBasicStats.ejecutar(indexId);
     		response.setCODE(Constants.CODE_OK);
 			response.setDescription("OK");
     	} catch(Exception e) {

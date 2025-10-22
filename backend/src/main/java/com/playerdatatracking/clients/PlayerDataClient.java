@@ -28,8 +28,10 @@ import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepo
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
 import com.playerdatatracking.repositories.indexaldata.PaisRepository;
 import com.playerdatatracking.repositories.indexaldata.PlayerRepository;
+import com.playerdatatracking.repositories.indexaldata.PlayerStatsRepository;
 import com.playerdatatracking.repositories.indexaldata.TorneoRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
+import com.playerdatatracking.requests.PlayerMatchRow;
 
 import jakarta.transaction.Transactional;
 
@@ -56,6 +58,8 @@ public class PlayerDataClient {
 	private ClubInLeagueRepository cilRepository;
 	@Autowired
 	private PlayerRepository pRepository;
+	@Autowired
+	private PlayerStatsRepository psRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -430,6 +434,10 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
     }
+	
+	public List<PlayerMatchRow> getStaticsByIndexId(Long indexId) {
+	    return psRepository.findByIndexId(indexId);
+	}
 	
 	@Transactional
 	public byte[] getPhoto(Long id) { return pRepository.findPhotoById(id); }
