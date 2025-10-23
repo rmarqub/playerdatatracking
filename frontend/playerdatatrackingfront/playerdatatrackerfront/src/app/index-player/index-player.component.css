@@ -130,3 +130,112 @@ cursor: not-allowed;
   justify-content: space-evenly;
   width: 55%;
 }
+
+.player-info{
+  color: #fff;
+  border-left: 1px solid #878787;
+  border-right: 1px solid #878787;
+  border-top: 1px solid #878787;
+  border-bottom: 3px solid #878787;
+}
+.player-info:hover{
+    cursor: pointer;
+}
+
+.sort-icon {
+  width: 12px;
+  font-size: 12px;
+  display: none;
+}
+.sort-icon.active {
+  display: inline;
+  color: #ffee00
+}
+.sorted-column {
+  color: #ffee00;
+}
+.normalized-stats {
+  margin: 1%;
+  width: 90%;
+  max-height: 1100px;
+  overflow-y: auto;
+}
+
+.results-table-stats-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 6px 8px;
+  table-layout: auto;
+}
+.player-found-row:nth-child(even) {
+  background-color: #e3e3e3;
+}
+.player-found-row{
+  background-color: #d5d5d5;
+}
+
+.player-found-row-value{
+  border-right: 1px solid #878787;
+  border-left: 1px solid #878787;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+.results-table-stats-table th {
+  background-color: #CD853F;
+  padding: 10px 14px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.results-table-stats-table tbody td.player-found-row-value {
+  background: #ececec;
+  padding: 10px 12px;
+  border: none;
+  box-shadow: inset 0 0 0 1px #d8d8d8; /* línea interior muy suave, opcional */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;          /* quita si prefieres salto de línea */
+}
+
+/* Efecto hover de fila: ilumina todas las celdas sin perder los gaps */
+.results-table-stats-table tbody tr.player-found-row:hover td {
+  background-color: #e9d08f;
+  box-shadow: inset 0 0 0 1px #d1b36a;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+/* Paleta por grupos */
+.results-table-stats-table th.th-offense {
+  background: #c44d31;        /* rojizo ofensivo */
+}
+.results-table-stats-table th.th-passing {
+  background: #2f7fc8;        /* azul pases */
+}
+.results-table-stats-table th.th-control {
+  background: #7a9a22;        /* verde control/duelos */
+}
+
+/* Mejor contraste para texto e icono en cabeceras coloreadas */
+.results-table-stats-table th.th-offense,
+.results-table-stats-table th.th-passing,
+.results-table-stats-table th.th-control {
+  color: #fff;
+}
+.results-table-stats-table th.th-basic {
+  background: #CD853F;        /* verde control/duelos */
+}
+/* Iconos de orden siguen visibles sobre los nuevos fondos */
+.results-table-stats-table th.th-offense .sort-icon.active,
+.results-table-stats-table th.th-passing .sort-icon.active,
+.results-table-stats-table th.th-control .sort-icon.active {
+  color: #ffeb7a; /* amarillo cálido */
+}
+
+/* Hover en cabeceras: tono un pelín más oscuro, sin perder sticky */
+.results-table-stats-table th.th-offense:hover { background: #aa3f28; }
+.results-table-stats-table th.th-basic:hover { background: #b87431; }
+.results-table-stats-table th.th-passing:hover { background: #276aa6; }
+.results-table-stats-table th.th-control:hover  { background: #668219; }

@@ -1,0 +1,30 @@
+export interface PlayerMatchRow {
+  playerId: number;
+  playerName: string;
+  teamId: number | null;
+  teamName: string | null;
+  leagueId: number | null;
+  leagueName: string | null;
+  season: string | null;
+  matchBucket: string | null;
+  minutes: number | null;
+  position: string | null;
+  rating: number | null;
+  shotsTotal: number | null;
+  shotsOn: number | null;
+  goals: number | null;
+  assists: number | null;
+  passesTotal: number | null;
+  passesKey: number | null;
+  passesAcc: number | null;
+  tacklesTotal: number | null;
+  interceptions: number | null;
+  duelsTotal: number | null;
+  duelsWon: number | null;
+  dribblesAtt: number | null;
+  dribblesSuc: number | null;
+  foulsDrawn: number | null;
+  foulsComm: number | null;
+  yc: number | null;
+  rc: number | null;
+}
