@@ -63,6 +63,25 @@ public class PlayerDataClient {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	
+	@Transactional
+	public List<Player> getPlayerByIndexIdAndTeam(Long teamid, Long indexid) throws PlayerDataDBException{
+		try {
+			Optional<Club> oClub =clubRepository.findById(teamid);
+			Club c = oClub.isPresent() ? oClub.get() : null;
+			if (c!=null) {
+				List<Player> response = pRepository.findByTeamAndIndexId(c, indexid);
+				if (response==null || response.isEmpty())
+					return new ArrayList<Player>();
+				else
+					return response;
+			}
+			else
+				throw new PlayerDataDBException("Club of the player not found");
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	@Transactional
 	public boolean savePlayer(ManualTrackedPlayer player) throws PlayerDataDBException {
 		try {

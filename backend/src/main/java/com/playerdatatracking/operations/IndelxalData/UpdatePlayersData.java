@@ -128,6 +128,7 @@ public class UpdatePlayersData {
 			} 
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
 				try {
+					String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
 					List<Path> directories = Files.list(Paths.get(directoryPath)).filter(Files::isDirectory).collect(Collectors.toList());
 					if (directories==null || !(directories.size()>0))
 						throw new NotCreatedJsonFileResponse("No hay archivos de jugadores disponibles para realizar la carga de datos");
@@ -157,6 +158,10 @@ public class UpdatePlayersData {
 						        if(!jsonResponseHasErrors(root, file.getPath())) {
 						        	JsonNode responseParameters = root.path("parameters");
 						        	String steamId = responseParameters.path("team").asText();
+						        	String jsonSeason = responseParameters.path("season").asText();
+						        	if(!actualSeason.equals(jsonSeason))
+						        		continue;
+						        		
 						        	JsonNode responseNode = root.path("response");
 							        for (JsonNode node : responseNode) {
 							        	
@@ -228,6 +233,16 @@ public class UpdatePlayersData {
 							        		newPlayer.setNacionalidad(p.getId());
 							        	Timestamp ts = new Timestamp(System.currentTimeMillis());
 							        	newPlayer.setLastUpdated(ts);
+							        	
+							        	//find duplicates
+							        	List<Player> duppedPlayers = pdClient.getPlayerByIndexIdAndTeam(newPlayer.getTeam(), newPlayer.getIndexId());
+							        	if (duppedPlayers!=null) {
+							        		if(!duppedPlayers.isEmpty()) {
+							        			System.out.println("Player: " + newPlayer.getFullname() + " already stored");
+							        			continue;
+							        		}
+							        			
+							        	}
 							        	Player savedPlayer = pdClient.saveIndexedPlayer(newPlayer);
 							        	System.out.println("Player: " + savedPlayer.getId() + ", " + savedPlayer.getFullname() + " saved.");
 							        }

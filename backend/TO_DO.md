@@ -1,17 +1,15 @@
-# LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND
-- Base de datos con JSONB para almacenar los jsons de futbolistas, clubes y torneos.
+# LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND Y FRONTEND
+- Terminar de arreglar funcionalidad relativa al procesamiento de jsons y su almacenado.
+- Operación de transferencia para eliminar jugadores que tienen dos registros en Player con diferente club.
 - Carga de datos basicos desde Manual Data ee indexal data.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
 - Hablar con el tutor.
 - Mejorar filtros de busqueda para que busque por nombre + apellidos + nombre completo.
-- Operacion de carga de datos basicos (pagina de muestra de datos basicos).
 - Extraer datos de fbref y que se almacenen en jsons posteriormente revisables. Estos, una vez que funcionen, deben poder ser eliminados.
 - Funcionalidad de frontal para añadir información de los jugadores de fbref, pulsar el boton y que busque al jugador determinado. Además de encontrarla, se generaria un botón para almacenar informacion (guardar el id del jugador).
-- Marca de favorito activada o desactivada en funcion de isStudied. Actualizar esta variable al agregar un jugador a manual data.
 - Transfer view, donde se elimina el id de origen si está duplicado en player.
-- Almacenamiento de estadísticas en BBDD.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
 - Diseño de spinner de espera para la carga de datos.

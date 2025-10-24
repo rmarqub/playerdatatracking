@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.Player;
 
 public interface PlayerRepository extends JpaRepository<Player, Long>{
@@ -27,4 +28,6 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
 
 	@Query("select p.photoUpdatedAt from Player p where p.id = :id")
 	LocalDateTime findPhotoUpdatedAtById(@Param("id") Long id);
+	
+	List<Player> findByTeamAndIndexId(Club team, Long indexId);
 }
