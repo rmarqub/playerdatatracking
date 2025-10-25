@@ -30,6 +30,7 @@ public class GenericRequest {
     private String apiKey;
     private String update;
     private String restUpdate;
+    private String updateWithTransfers;
     private int threads;
     private int idService;
     private MultipartFile photo;
@@ -46,7 +47,15 @@ public class GenericRequest {
 	
     
     
-    public int getThreads() {
+    public String getUpdateWithTransfers() {
+		return updateWithTransfers;
+	}
+
+	public void setUpdateWithTransfers(String updateWithTransfers) {
+		this.updateWithTransfers = updateWithTransfers;
+	}
+
+	public int getThreads() {
 		return threads;
 	}
 

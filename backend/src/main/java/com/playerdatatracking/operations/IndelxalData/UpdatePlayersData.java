@@ -3,9 +3,11 @@ package com.playerdatatracking.operations.IndelxalData;
 import java.io.File;
 import java.io.FileReader;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -60,6 +62,7 @@ public class UpdatePlayersData {
 	private GenericResponse<Player> response = new GenericResponse();
 	private Methods methods;
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+	Path duplicateLogPath;
 	
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -128,6 +131,10 @@ public class UpdatePlayersData {
 			} 
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
 				try {
+					String ts = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+				    Path logDir = Paths.get("logs");
+				    Files.createDirectories(logDir);
+				    duplicateLogPath = logDir.resolve("players_not_stored_" + ts + ".txt");
 					String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
 					List<Path> directories = Files.list(Paths.get(directoryPath)).filter(Files::isDirectory).collect(Collectors.toList());
 					if (directories==null || !(directories.size()>0))
@@ -158,9 +165,6 @@ public class UpdatePlayersData {
 						        if(!jsonResponseHasErrors(root, file.getPath())) {
 						        	JsonNode responseParameters = root.path("parameters");
 						        	String steamId = responseParameters.path("team").asText();
-						        	String jsonSeason = responseParameters.path("season").asText();
-						        	if(!actualSeason.equals(jsonSeason))
-						        		continue;
 						        		
 						        	JsonNode responseNode = root.path("response");
 							        for (JsonNode node : responseNode) {
@@ -231,14 +235,34 @@ public class UpdatePlayersData {
 							        	Pais p = pdClient.findCountry(playerNode.path("nationality").asText());
 							        	if (p!=null)
 							        		newPlayer.setNacionalidad(p.getId());
-							        	Timestamp ts = new Timestamp(System.currentTimeMillis());
-							        	newPlayer.setLastUpdated(ts);
+							        	Timestamp timest = new Timestamp(System.currentTimeMillis());
+							        	newPlayer.setLastUpdated(timest);
 							        	
 							        	//find duplicates
 							        	List<Player> duppedPlayers = pdClient.getPlayerByIndexIdAndTeam(newPlayer.getTeam(), newPlayer.getIndexId());
 							        	if (duppedPlayers!=null) {
 							        		if(!duppedPlayers.isEmpty()) {
-							        			System.out.println("Player: " + newPlayer.getFullname() + " already stored");
+							        			String line = String.format(
+							        			        "%s | Player: %s (indexId=%s, team=%s) already stored%n",
+							        			        LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME),
+							        			        newPlayer.getFullname(),
+							        			        String.valueOf(newPlayer.getIndexId()),
+							        			        String.valueOf(newPlayer.getTeam())
+							        			    );
+
+							        			    try {
+							        			        Files.writeString(
+							        			            duplicateLogPath,
+							        			            line,
+							        			            StandardCharsets.UTF_8,
+							        			            StandardOpenOption.CREATE,
+							        			            StandardOpenOption.APPEND
+							        			        );
+							        			    } catch (Exception e) {
+							        			        // No bloquees el flujo por un fallo de log
+							        			        System.err.println("No se pudo escribir en el log: " + e.getMessage());
+							        			    }
+
 							        			continue;
 							        		}
 							        			

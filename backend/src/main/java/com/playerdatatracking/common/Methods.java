@@ -273,6 +273,27 @@ public class Methods {
         }
         
 	}
+	public void checkGoodTransferCall(String content, String apiKey, Long indexID) throws Exception {
+		
+        try {
+            this.restClient = new ApiFootballClient();
+            
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(content);
+            JsonNode errorsNode = jsonNode.path("errors").path("rateLimit");
+            String errorsText = errorsNode.asText();
+            if (!errorsNode.isMissingNode() && errorsNode.asText().toLowerCase().contains("too many requests")) {
+                System.out.println("Se ha detectado un error de rate limit. Iniciando espera de 1 minuto...");
+                Methods.sleep(60000);
+                System.out.println("Reiniciando operacion...");
+                restClient.getTransfer(apiKey, indexID);
+            }
+
+        } catch (Exception e) {
+            throw e;
+        }
+		
+	}
 	
 	public int getTotalOfPagesResponse(String jsonResponsePath) throws NotCreatedJsonFileResponse, NotFilledJsonFileResponse, IOException {
 		int response = 0;

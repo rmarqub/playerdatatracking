@@ -31,6 +31,7 @@ import com.playerdatatracking.repositories.indexaldata.PlayerRepository;
 import com.playerdatatracking.repositories.indexaldata.PlayerStatsRepository;
 import com.playerdatatracking.repositories.indexaldata.TorneoRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
+import com.playerdatatracking.requests.IndexTeamPair;
 import com.playerdatatracking.requests.PlayerMatchRow;
 
 import jakarta.transaction.Transactional;
@@ -63,6 +64,28 @@ public class PlayerDataClient {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	@Transactional
+	public boolean deleteIndexedPlayer(Long indexid, Long teamid) throws PlayerDataDBException{
+		try {
+			Optional<Club> oClub =clubRepository.findById(teamid);
+			Club c = oClub.isPresent() ? oClub.get() : null;
+			if (c!=null) {
+				List<Player> response = pRepository.findByTeamAndIndexId(c, indexid);
+				if (!response.isEmpty()) {
+					for(Player p : response) {
+						pRepository.delete(p);
+					}
+					return true;
+				}
+				else
+					throw new PlayerDataDBException("Club " + teamid + " of the player " + indexid +" not found");
+			}
+			else
+				throw new PlayerDataDBException("Club " + teamid + " of the player " + indexid +" not found");
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	
 	@Transactional
 	public List<Player> getPlayerByIndexIdAndTeam(Long teamid, Long indexid) throws PlayerDataDBException{
@@ -77,7 +100,16 @@ public class PlayerDataClient {
 					return response;
 			}
 			else
-				throw new PlayerDataDBException("Club of the player not found");
+				throw new PlayerDataDBException("Club " + teamid + " of the player " + indexid +" not found");
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	@Transactional 
+	public List<IndexTeamPair> getDuppedPlayersWithDiffTeam() throws PlayerDataDBException{
+		try {
+			List<IndexTeamPair> l = pRepository.findIndexIdTeamPairsWithCrossTeamDuplicates();
+			return l;
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}

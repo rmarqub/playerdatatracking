@@ -15,13 +15,20 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.concurrent.CompletableFuture;
 
 
 public class ApiFootballClient {
-	
+	 private static final HttpClient HTTP = HttpClient.newHttpClient();
+	 
 	 public void getLeaguesInfo(String apikey) throws Exception {
 		 
 		 HashMap<String, String> headers = new HashMap<>();
@@ -39,6 +46,22 @@ public class ApiFootballClient {
 		 String jsonFilePath = "src/main/resources/json/apiFotball/leagues/" + leagueName +".json";
 		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/teams", apikey, headers, queryParams, "src/main/resources/json/apiFotball/leagues/" + leagueName +".json", "src/main/resources/json/apiFotball/leagues");
 		 return jsonFilePath;
+	 }
+	 
+	 public HttpResponse<String> getTransfer(String apiSportsKey, Long indexId) throws Exception{
+		String url = "https://v3.football.api-sports.io/transfers?player=" + indexId;
+		HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+		            .GET()
+		            .header("Accept", "application/json")
+		            .header("x-apisports-key", apiSportsKey)
+		            .build();
+		
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200) {
+            throw new ApiFootballRequestException("[" + resp.statusCode()+ "] API error para indexId="+ indexId);
+        }
+        return resp;
+		 
 	 }
 	 
 	 public String getPlayersPaged(HashMap<String, String> queryParams, String apikey, String teamName, String page) throws Exception{
