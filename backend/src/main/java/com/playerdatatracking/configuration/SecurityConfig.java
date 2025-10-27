@@ -29,6 +29,7 @@ public class SecurityConfig {
     			.requestMatchers(HttpMethod.POST, "/updatePlayers").permitAll()
     			.requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestRawData").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/updatePlayerBySquads").permitAll()//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     			.requestMatchers("/auth/**", "/public/**").permitAll()
     			.anyRequest().authenticated()
       )

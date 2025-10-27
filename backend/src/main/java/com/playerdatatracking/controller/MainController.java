@@ -34,6 +34,7 @@ import com.playerdatatracking.operations.IndelxalData.IngestRawData;
 import com.playerdatatracking.operations.IndelxalData.TransferCheckOfPlayers;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
+import com.playerdatatracking.operations.IndelxalData.UpdatePlayersBySquads;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersData;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.operations.manualdata.AddPlayer;
@@ -107,6 +108,7 @@ public class MainController {
 	private IngestRawData operationIngestRawData;
 	private GetBasicStats operationGetBasicStats = new GetBasicStats();
 	private TransferCheckOfPlayers operationTCP = new TransferCheckOfPlayers();
+	private UpdatePlayersBySquads operationUPS = new UpdatePlayersBySquads();
 	
 	
 // 	---------RESPONSES---------	
@@ -437,6 +439,20 @@ public class MainController {
     	operationTCP.setPdClient(pdClient);
     	try {
     		response = operationTCP.ejecutar();
+    	} catch(Exception e) {
+    		response.setCODE(Methods.exceptionCodeManagement(e));
+        	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+    	}
+    	return response;
+    }
+    
+    @PostMapping("/updatePlayerBySquads")
+    public GenericResponse cleanupDuplicatesBySquads() {
+    	response = new GenericResponse();
+    	operationUPS.setPdClient(pdClient);
+    	operationUPS.setEnv(env);
+    	try{
+    		response = operationUPS.ejecutar();
     	} catch(Exception e) {
     		response.setCODE(Methods.exceptionCodeManagement(e));
         	response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
