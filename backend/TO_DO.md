@@ -1,5 +1,5 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND Y FRONTEND
-- Eliminar foreign key de indexID en manual_tracked_player, para no borrar los datos de la clave.
+- Actualizar ingest data para recibir todos los datos de los jsons.
 - Actualizar CIL a la hora de hacer un update de players.
 - Hablar con el tutor.
 - Actualizacion de datos de los jugadores con estadisticas de 2024.
