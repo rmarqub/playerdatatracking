@@ -68,6 +68,7 @@ public class ApiFootballClient {
 		 //suponemos que queryParams, de inicio, trae consigo el valor de la página 1 como
 		 HashMap<String, String> headers = new HashMap<>();
 		 headers.put("x-rapidapi-key", apikey);
+			 
 		 headers.put("x-rapidapi-host", "v3.football.api-sports.io");
 		 String jsonFilePath = "src/main/resources/json/apiFotball/players/" + teamName + "/" + teamName + "_" + page + ".json";
 		 apiFootballClientCall("GET", "https://v3.football.api-sports.io/players", apikey, headers, queryParams, "src/main/resources/json/apiFotball/players/" + teamName + "/" + teamName + "_" + page + ".json", "src/main/resources/json/apiFotball/players/" + teamName);

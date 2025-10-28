@@ -18,7 +18,10 @@ import java.util.List;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
+import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
+import com.playerdatatracking.entities.indexaldata.Pais;
+import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.file.NotCreatedJsonFileResponse;
 import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
 import com.playerdatatracking.exceptions.operations.MalformedRequestException;
@@ -42,6 +45,24 @@ public class Methods {
 		return errors;
 	}
 	
+	public static String checkCountryClub(PlayerDataClient pdClient, String country, String club) throws PlayerDataDBException {
+		Pais p = pdClient.findCountry(country);
+		if (p!=null)
+			return country;
+		if (club.equals("Galatasaray U18"))
+			return "Turkey";
+		if (country.equals("Türkiye"))
+			return "Turkey";
+		if (country.equals("Lituania"))
+			return "Lithuania";
+		if (country.equals("intl") && club.equals("Crvena Zvezda U18"))
+			return "Serbia";
+		if (country.equals("North Macedonia"))
+			return "Macedonia";
+		if (country==null || country.equals("intl"))
+			return "World";
+		return "World";
+	}
 	
 	
 	public static int exceptionCodeManagement(Exception e) {

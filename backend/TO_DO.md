@@ -1,8 +1,9 @@
 # LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND Y FRONTEND
-- Operación de transferencia para eliminar jugadores que tienen dos registros en Player con diferente club.
 - Eliminar foreign key de indexID en manual_tracked_player, para no borrar los datos de la clave.
+- Actualizar CIL a la hora de hacer un update de players.
 - Hablar con el tutor.
 - Actualizacion de datos de los jugadores con estadisticas de 2024.
+- Cambiar método de almacenado de jsons para agruparlos por ligas y que no aparezcan todos en subcarpetas por clubs.
 - Carga de datos basicos desde Manual Data ee indexal data.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
@@ -22,4 +23,3 @@
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
 - Modulo de testing escalable y estable.
-- Método para detectar paises que no se estén guardando en su columna.

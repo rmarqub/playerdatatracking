@@ -131,6 +131,8 @@ public class UpdateClubsData {
 					        String nombre = teamNode.path("name").asText();
 					        String codeaf = teamNode.path("code").asText();
 					        String paisName = teamNode.path("country").asText();
+					        paisName = Methods.checkCountryClub(pdClient, paisName, nombre);
+					        	
 					        System.out.println(paisName);
 					        
 					        Pais pais = pdClient.findCountry(paisName);
