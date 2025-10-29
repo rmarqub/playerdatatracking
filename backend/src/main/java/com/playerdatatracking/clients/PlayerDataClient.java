@@ -24,12 +24,15 @@ import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
 import com.playerdatatracking.repositories.indexaldata.ClubRepository;
 import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
+import com.playerdatatracking.repositories.indexaldata.DuppedPlayerRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
 import com.playerdatatracking.repositories.indexaldata.PaisRepository;
 import com.playerdatatracking.repositories.indexaldata.PlayerRepository;
 import com.playerdatatracking.repositories.indexaldata.PlayerStatsRepository;
+import com.playerdatatracking.repositories.indexaldata.SquadRepository;
 import com.playerdatatracking.repositories.indexaldata.TorneoRepository;
+import com.playerdatatracking.repositories.indexaldata.TransferRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
 import com.playerdatatracking.requests.IndexTeamPair;
 import com.playerdatatracking.requests.PlayerMatchRow;
@@ -59,6 +62,12 @@ public class PlayerDataClient {
 	private ClubInLeagueRepository cilRepository;
 	@Autowired
 	private PlayerRepository pRepository;
+	@Autowired
+	private DuppedPlayerRepository dpRepository;
+	@Autowired
+	private TransferRepository tRepository;
+	@Autowired
+	private SquadRepository sRepository;
 	@Autowired
 	private PlayerStatsRepository psRepository;
 	@Autowired
