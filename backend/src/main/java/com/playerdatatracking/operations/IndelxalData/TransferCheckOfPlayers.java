@@ -134,6 +134,7 @@ public class TransferCheckOfPlayers {
 	            Long toDeleteTeamId = tr.getOutId();
 	            Long newTeam = tr.getInId();
 	            saveTransfer(indexId, tr.getInId(), tr.getOutId(), actualSeason);
+	            saveDupped(indexId, tr.getInId(), actualSeason);
 	            try {
 	                pdClient.deleteIndexedPlayer(indexId, toDeleteTeamId);
 	                System.out.printf("Eliminado duplicado: indexId=%d, teamId(out)=%d (mantengo in=%d, fecha=%s)%n",indexId, toDeleteTeamId, tr.getInId(), tr.getDate());
@@ -217,7 +218,13 @@ public class TransferCheckOfPlayers {
 		t.setSeason(actualSeason);
 		pdClient.saveTransfer(t);
 	}
-	
+	private void saveDupped(Long id, Long club, String actualSeason) throws PlayerDataDBException{
+		DuppedPlayers dupp = new DuppedPlayers();
+		dupp.setPlayer(id);
+		dupp.setTeam(club);
+		dupp.setSeason(actualSeason);
+		pdClient.saveDuppedPlayer(dupp);
+	}
 	
 }
 
