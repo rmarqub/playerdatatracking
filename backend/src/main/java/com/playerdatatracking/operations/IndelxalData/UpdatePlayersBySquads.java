@@ -15,7 +15,9 @@ import org.springframework.core.env.Environment;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.entities.indexaldata.DuppedPlayers;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
@@ -29,6 +31,9 @@ public class UpdatePlayersBySquads {
 	private KeysManagement keyMethods = new KeysManagement();
 	private Environment env;
 	private HttpClient http = HttpClient.newHttpClient();
+	boolean isMarketActive;
+	boolean useDupped;
+	String actualSeason = "";
 	
 	public void setEnv(Environment env) {
 		this.env = env;
@@ -44,6 +49,9 @@ public class UpdatePlayersBySquads {
 		http = HttpClient.newHttpClient();
 		List<IndexTeamPair> pairs = pdClient.getDuppedPlayersWithDiffTeam();
 		Map<Long, List<Long>> porJugador = agruparPorJugador(pairs);
+		actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+		isMarketActive = Methods.isMarketActive(pdClient);
+		useDupped = Methods.useDupped(pdClient);
 		
 		Path logPath = prepararLog();
         int procesados = 0;
@@ -60,7 +68,36 @@ public class UpdatePlayersBySquads {
             if (teamIds.size() < 2) {
                 continue;
             }
-
+			if(!isMarketActive && useDupped) {
+				
+				List<DuppedPlayers> duppedList = pdClient.getDuppedPlayerById(indexId);
+				DuppedPlayers dupp = new DuppedPlayers();
+				if (duppedList !=null && duppedList.size()>1) {
+					//jugador duplicado en duppedPlayer (no deberia haber ningun caso)
+					for (DuppedPlayers d : duppedList) {
+						if (d.getSeason().equals(actualSeason)) {
+							dupp= d;
+							break;
+						}
+					}
+				//jugador registrado en duppedPlayer
+				}else if (duppedList !=null && duppedList.size()==1)
+					dupp= duppedList.get(0);
+				
+				//jugador duplicado encontrado
+				if(dupp.getId()!=null) {
+					if (teamIds.contains(dupp.getTeam())) {
+						teamIds.remove(dupp.getTeam());
+						for (Long club : teamIds) {
+							pdClient.deleteIndexedPlayer(indexId, club);
+							System.out.printf("Eliminado duplicado: indexId=%d, teamId(out)=%d (mantengo in=%d)%n", indexId, club, dupp.getTeam());
+						}
+						continue;
+					}
+				}
+			}
+            
+            
             procesados++;
 
             Optional<Long> teamActual = encontrarTeamActualPorSquad(indexId, teamIds);
