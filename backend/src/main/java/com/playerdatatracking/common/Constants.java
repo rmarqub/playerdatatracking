@@ -129,5 +129,7 @@ public class Constants {
 	
 	//CONFIG_PARAMS
 	public static final String ACTUAL_APF_SEASON = "ACTUAL_SEASON";
+	public static final String USE_DUPPED = "USE_DUPPED";
+	public static final String MARKET_ACTIVE = "MARKET_ACTIVE";
 	
 }

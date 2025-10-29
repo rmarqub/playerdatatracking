@@ -22,14 +22,18 @@ public class Transfer {
     private Long player;
 
     @Column(name = "in", nullable = false)
-    private Long inPlayer;
+    private Long in;
 
     @Column(name = "out", nullable = false)
-    private Long outPlayer;
+    private Long out;
 
     @Column(name = "kind")
     private TipoTransfer kind;
 
+    @Column(name="season")
+    private String season;
+    
+    
 	public Long getId() {
 		return id;
 	}
@@ -46,20 +50,20 @@ public class Transfer {
 		this.player = player;
 	}
 
-	public Long getInPlayer() {
-		return inPlayer;
+	public Long getIn() {
+		return in;
 	}
 
-	public void setInPlayer(Long inPlayer) {
-		this.inPlayer = inPlayer;
+	public void setIn(Long in) {
+		this.in = in;
 	}
 
-	public Long getOutPlayer() {
-		return outPlayer;
+	public Long getOut() {
+		return out;
 	}
 
-	public void setOutPlayer(Long outPlayer) {
-		this.outPlayer = outPlayer;
+	public void setOut(Long out) {
+		this.out = out;
 	}
 
 	public TipoTransfer getKind() {
@@ -68,6 +72,14 @@ public class Transfer {
 
 	public void setKind(TipoTransfer kind) {
 		this.kind = kind;
+	}
+
+	public String getSeason() {
+		return season;
+	}
+
+	public void setSeason(String season) {
+		this.season = season;
 	}
 
     

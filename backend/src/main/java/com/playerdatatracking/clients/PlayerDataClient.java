@@ -14,11 +14,13 @@ import org.springframework.stereotype.Service;
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ClubInLeague;
 import com.playerdatatracking.entities.indexaldata.ConfigParams;
+import com.playerdatatracking.entities.indexaldata.DuppedPlayers;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.PLAYER_QUALITIES;
 import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.Torneo;
+import com.playerdatatracking.entities.indexaldata.Transfer;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
@@ -73,6 +75,41 @@ public class PlayerDataClient {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	
+	@Transactional
+	public boolean saveTransfer(Transfer t) throws PlayerDataDBException {
+		try {
+			tRepository.save(t);
+			return true;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	@Transactional
+	public boolean saveDuppedPlayer(DuppedPlayers d) throws PlayerDataDBException{
+		try {
+			dpRepository.save(d);
+			return true;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	@Transactional
+	public List<Transfer> getTransfersByPlayers(Long indexId) throws PlayerDataDBException{
+		try {
+			return tRepository.findByPlayer(indexId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+	@Transactional
+	public List<DuppedPlayers> getDuppedPlayerById(Long indexId) throws PlayerDataDBException{
+		try {
+			return dpRepository.findByPlayer(indexId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	@Transactional
 	public boolean deleteIndexedPlayer(Long indexid, Long teamid) throws PlayerDataDBException{
 		try {

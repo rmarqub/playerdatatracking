@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.entities.indexaldata.ConfigParams;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
@@ -44,7 +45,20 @@ public class Methods {
 			errors.add("Birth");
 		return errors;
 	}
-	
+	public static boolean isMarketActive(PlayerDataClient pdClient) throws PlayerDataDBException {
+		ConfigParams c = pdClient.getParam(Constants.MARKET_ACTIVE);
+		if (c.getValue().equalsIgnoreCase("true"))
+			return true;
+		else
+			return false;
+	}
+	public static boolean useDupped(PlayerDataClient pdClient) throws PlayerDataDBException {
+		ConfigParams c = pdClient.getParam(Constants.USE_DUPPED);
+		if (c.getValue().equalsIgnoreCase("true"))
+			return true;
+		else
+			return false;
+	}
 	public static String checkCountryClub(PlayerDataClient pdClient, String country, String club) throws PlayerDataDBException {
 		Pais p = pdClient.findCountry(country);
 		if (p!=null)

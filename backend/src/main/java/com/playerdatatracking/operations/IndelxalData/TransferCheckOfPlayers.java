@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +26,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.entities.indexaldata.DuppedPlayers;
+import com.playerdatatracking.entities.indexaldata.Transfer;
 import com.playerdatatracking.entities.indexaldata.TransferRecord;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
@@ -43,7 +47,10 @@ public class TransferCheckOfPlayers {
 	private ApiFootballClient apiClient;
 	private KeysManagement keyMethods = new KeysManagement();
 	private Environment env;
+	boolean isMarketActive;
+	boolean useDupped;
 	private GenericResponse response;
+	String actualSeason = "";
 
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -57,8 +64,12 @@ public class TransferCheckOfPlayers {
 	public GenericResponse ejecutar() throws PlayerDataDBException {
 		response = new GenericResponse();
 		try {
+			actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+			isMarketActive = Methods.isMarketActive(pdClient);
+			useDupped = Methods.useDupped(pdClient);
 			List<IndexTeamPair> l = pdClient.getDuppedPlayersWithDiffTeam();
 			processList(l);
+			
 			response.setCODE(0);
 			response.setDescription("OK");
 			return response;
@@ -66,7 +77,7 @@ public class TransferCheckOfPlayers {
 			throw e;
 		}
 	}
-	public void processList(List<IndexTeamPair> duppedPlayers) {
+	public void processList(List<IndexTeamPair> duppedPlayers) throws PlayerDataDBException {
 		keyMethods = new KeysManagement();
 		keyMethods.setEnv(env);
 		keyMethods.setPdClient(pdClient);
@@ -74,9 +85,41 @@ public class TransferCheckOfPlayers {
 		for (Entry<Long, List<Long>> e : checklist.entrySet()) {
 			Long indexId = e.getKey();
 			Set<Long> teamIds = e.getValue().stream().filter(Objects::nonNull).collect(Collectors.toCollection(LinkedHashSet::new));
-			if (teamIds.size() < 2) {//nunca deberia entrar por aqui pero no está de mas comprobarlo para no romper la logica
+			
+			if (teamIds.size() < 2) {
 	            continue;
 	        }
+			if(!isMarketActive && useDupped) {
+				
+				List<DuppedPlayers> duppedList = pdClient.getDuppedPlayerById(indexId);
+				DuppedPlayers dupp = new DuppedPlayers();
+				if (duppedList !=null && duppedList.size()>1) {
+					//jugador duplicado en duppedPlayer (no deberia haber ningun caso)
+					for (DuppedPlayers d : duppedList) {
+						if (d.getSeason().equals(actualSeason)) {
+							dupp= d;
+							break;
+						}
+					}
+				//jugador registrado en duppedPlayer
+				}else if (duppedList !=null && duppedList.size()==1)
+					dupp= duppedList.get(0);
+				
+				//jugador duplicado encontrado
+				if(dupp.getId()!=null) {
+					if (teamIds.contains(dupp.getTeam())) {
+						teamIds.remove(dupp.getTeam());
+						for (Long club : teamIds) {
+							pdClient.deleteIndexedPlayer(indexId, club);
+							System.out.printf("Eliminado duplicado: indexId=%d, teamId(out)=%d (mantengo in=%d)%n", indexId, club, dupp.getTeam());
+						}
+						continue;
+					}
+				}
+			}
+
+			
+			//jugador no registrado en duppedPlayer ni hay transfer registrada (nuevo mercado de transferencias con registros ya accesibles)
 			List<TransferRecord> transfers = fetchTransfers(indexId);
 
 	        transfers.sort(Comparator.comparing(TransferRecord::getDate).reversed());
@@ -89,19 +132,19 @@ public class TransferCheckOfPlayers {
 	        if (match.isPresent()) {
 	            TransferRecord tr = match.get();
 	            Long toDeleteTeamId = tr.getOutId();
+	            Long newTeam = tr.getInId();
+	            saveTransfer(indexId, tr.getInId(), tr.getOutId(), actualSeason);
 	            try {
 	                pdClient.deleteIndexedPlayer(indexId, toDeleteTeamId);
-	                System.out.printf("Eliminado duplicado: indexId=%d, teamId(out)=%d (mantengo in=%d, fecha=%s)%n",
-	                        indexId, toDeleteTeamId, tr.getInId(), tr.getDate());
+	                System.out.printf("Eliminado duplicado: indexId=%d, teamId(out)=%d (mantengo in=%d, fecha=%s)%n",indexId, toDeleteTeamId, tr.getInId(), tr.getDate());
 	            } catch (Exception ex) {
-	                System.err.printf("Fallo al eliminar indexId=%d teamId=%d: %s%n",
-	                        indexId, toDeleteTeamId, ex.getMessage());
+	                System.err.printf("Fallo al eliminar indexId=%d teamId=%d: %s%n",indexId, toDeleteTeamId, ex.getMessage());
 	            }
 	        } else {
 	            System.out.printf("Sin transfer coincidente para indexId=%d con teams=%s%n", indexId, teamIds);
 	        }
-	    }
-	}
+		}
+    }
 	
 	public Map<Long, List<Long>> groupTeamsByIndexId(List<IndexTeamPair> pairs) {
 	    if (pairs == null || pairs.isEmpty()) {
@@ -132,8 +175,8 @@ public class TransferCheckOfPlayers {
 	        JsonNode root = MAPPER.readTree(resp.body());
 	        JsonNode responseArr = root.path("response");
 	        if (!responseArr.isArray() || responseArr.size() == 0) return Collections.emptyList();
-	
-	        // Hay casos con múltiples bloques en "response" (distintas fuentes); iteramos todos por robustez
+	        
+	        
 	        List<TransferRecord> out = new ArrayList<>();
 	        for (JsonNode responseNode : responseArr) {
 	            JsonNode transfers = responseNode.path("transfers");
@@ -147,7 +190,6 @@ public class TransferCheckOfPlayers {
 	                try {
 	                    date = LocalDate.parse(dateStr, DTF);
 	                } catch (Exception ex) {
-	                    // Si alguna fecha viniera en otro formato, la ignoramos
 	                    continue;
 	                }
 	
@@ -155,8 +197,6 @@ public class TransferCheckOfPlayers {
 	                JsonNode outNode = t.path("teams").path("out");
 	                Long inId  = inNode.path("id").isNumber()  ? inNode.path("id").asLong()  : null;
 	                Long outId = outNode.path("id").isNumber() ? outNode.path("id").asLong() : null;
-	
-	                // Importante: Solo nos quedamos con registros donde in.id no sea null (tu requisito)
 	                if (inId != null) {
 	                    out.add(new TransferRecord(date, inId, outId));
 	                }
@@ -168,6 +208,17 @@ public class TransferCheckOfPlayers {
 	        return Collections.emptyList();
 	    }
 	}
+	
+	private void saveTransfer(Long id, Long in, Long out, String actualSeason) throws PlayerDataDBException {
+		Transfer t = new Transfer();
+		t.setId(id);
+		t.setIn(in);
+		t.setOut(out);
+		t.setSeason(actualSeason);
+		pdClient.saveTransfer(t);
+	}
+	
+	
 }
 
 
