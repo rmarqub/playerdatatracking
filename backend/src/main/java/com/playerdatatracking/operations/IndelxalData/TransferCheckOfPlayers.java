@@ -210,9 +210,9 @@ public class TransferCheckOfPlayers {
 	    }
 	}
 	
-	private void saveTransfer(Long id, Long in, Long out, String actualSeason) throws PlayerDataDBException {
+	private void saveTransfer(Long player, Long in, Long out, String actualSeason) throws PlayerDataDBException {
 		Transfer t = new Transfer();
-		t.setId(id);
+		t.setPlayer(player);
 		t.setIn(in);
 		t.setOut(out);
 		t.setSeason(actualSeason);

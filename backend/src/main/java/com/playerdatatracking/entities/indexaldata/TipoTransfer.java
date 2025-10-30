@@ -15,7 +15,7 @@ public class TipoTransfer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "tipo", nullable = false, length = 100)
     private String nombre;
 
     public Integer getId() {
