@@ -23,3 +23,4 @@
 - Too Many Request Exception Handler en todas las operaciones que manden external calls.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
 - Modulo de testing escalable y estable.
+- Diseño de logica de usuario
