@@ -1,48 +1,108 @@
 <div class="fixtures-page">
 
-  <!-- Partidos en Directo -->
+  <!-- Partidos en Directo (API externa) -->
   <div class="panel">
     <div class="panel-header">
       <h2 class="panel-title">Partidos en Directo</h2>
       <button class="action-button live-button" (click)="loadLiveFixtures()" [disabled]="isLoadingLive">
         {{ isLoadingLive ? 'Cargando...' : 'Buscar Partidos en Directo' }}
       </button>
+
+      <ng-container *ngIf="liveLoaded && liveFixturesApi.length > 0">
+
+        <!-- Countries filter -->
+        <div class="filter-dropdown-wrap">
+          <button class="filter-btn" [class.filter-btn-active]="selectedCountries.size > 0" (click)="toggleCountriesDropdown()">
+            {{ countriesLabel }} <span class="filter-chevron">&#9660;</span>
+          </button>
+          <div class="filter-dropdown" *ngIf="countriesDropdownOpen">
+            <label class="filter-option" *ngFor="let c of availableCountries">
+              <input type="checkbox" [checked]="selectedCountries.has(c)" (change)="toggleCountry(c)">
+              {{ c }}
+            </label>
+          </div>
+        </div>
+
+        <!-- Leagues filter -->
+        <div class="filter-dropdown-wrap">
+          <button class="filter-btn" [class.filter-btn-active]="selectedLeagues.size > 0" (click)="toggleLeaguesDropdown()">
+            {{ leaguesLabel }} <span class="filter-chevron">&#9660;</span>
+          </button>
+          <div class="filter-dropdown" *ngIf="leaguesDropdownOpen">
+            <label class="filter-option" *ngFor="let l of availableLeagues">
+              <input type="checkbox" [checked]="selectedLeagues.has(l.id)" (change)="toggleLeague(l.id)">
+              <img *ngIf="l.logo" [src]="l.logo" class="filter-league-logo" alt="" (error)="$any($event.target).style.display='none'">
+              {{ l.name }}
+            </label>
+          </div>
+        </div>
+
+        <button class="filter-clear-btn" *ngIf="hasActiveFilters" (click)="clearFilters()">
+          Limpiar filtros
+        </button>
+
+        <span class="filter-count-label">
+          {{ filteredLiveFixtures.length }} partido{{ filteredLiveFixtures.length !== 1 ? 's' : '' }}
+        </span>
+
+      </ng-container>
     </div>
-    <div class="fixtures-table-container" *ngIf="liveFixtures.length > 0">
-      <table class="fixtures-table">
-        <thead>
-          <tr>
-            <th>Liga</th>
-            <th>Jornada</th>
-            <th>Fecha</th>
-            <th>Local</th>
-            <th>Resultado</th>
-            <th>Visitante</th>
-            <th>Estado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let f of liveFixtures" class="fixture-row live-row">
-            <td>{{ f.leagueName }}</td>
-            <td>{{ f.round }}</td>
-            <td>{{ formatDate(f.matchDate) }}</td>
-            <td class="team-name">{{ f.homeTeamName }}</td>
-            <td class="score">{{ f.goalsHome ?? '-' }} - {{ f.goalsAway ?? '-' }}</td>
-            <td class="team-name">{{ f.awayTeamName }}</td>
-            <td><span class="status-badge live-badge">{{ getStatusLabel(f) }}</span></td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div class="live-grid" *ngIf="liveFixturesApi.length > 0">
+      <div
+        class="live-card"
+        *ngFor="let f of filteredLiveFixtures"
+        (click)="navigateToFixture(f.fixture.id)"
+        role="button"
+        tabindex="0"
+        (keyup.enter)="navigateToFixture(f.fixture.id)">
+
+        <div class="live-card-league">
+          <img *ngIf="f.league.logo" [src]="f.league.logo" class="league-logo" alt="" (error)="$any($event.target).style.display='none'">
+          <span>{{ f.league.name }}</span>
+          <span class="league-round">{{ f.league.round }}</span>
+        </div>
+
+        <div class="live-card-match">
+          <div class="live-team home-team">
+            <img *ngIf="f.teams.home.logo" [src]="f.teams.home.logo" class="team-logo" alt="" (error)="$any($event.target).style.display='none'">
+            <span class="team-name-live" [class.winner]="f.teams.home.winner">{{ f.teams.home.name }}</span>
+          </div>
+
+          <div class="live-score-block">
+            <div class="live-score">
+              <span>{{ f.goals.home ?? '-' }}</span>
+              <span class="score-sep">:</span>
+              <span>{{ f.goals.away ?? '-' }}</span>
+            </div>
+            <div class="live-status-badge">
+              <span class="live-dot"></span>
+              <span>{{ getApiStatusLabel(f) }}</span>
+            </div>
+          </div>
+
+          <div class="live-team away-team">
+            <span class="team-name-live" [class.winner]="f.teams.away.winner">{{ f.teams.away.name }}</span>
+            <img *ngIf="f.teams.away.logo" [src]="f.teams.away.logo" class="team-logo" alt="" (error)="$any($event.target).style.display='none'">
+          </div>
+        </div>
+
+        <div class="live-card-venue" *ngIf="f.fixture.venue.name">
+          {{ f.fixture.venue.name }}{{ f.fixture.venue.city ? ', ' + f.fixture.venue.city : '' }}
+        </div>
+      </div>
     </div>
-    <p class="empty-msg" *ngIf="liveLoaded && liveFixtures.length === 0">
+
+    <p class="empty-msg" *ngIf="liveLoaded && liveFixturesApi.length === 0 && !liveError">
       No hay partidos en directo en este momento.
     </p>
+    <p class="error-msg" *ngIf="liveError">{{ liveError }}</p>
   </div>
 
-  <!-- Buscador de Partidos -->
+  <!-- Buscador de Partidos (base de datos local) -->
   <div class="panel">
     <div class="panel-header">
-      <h2 class="panel-title">Buscar Partidos</h2>
+      <h2 class="panel-title">Buscar Partidos en Base de Datos</h2>
     </div>
     <div class="search-controls">
       <div class="search-group">

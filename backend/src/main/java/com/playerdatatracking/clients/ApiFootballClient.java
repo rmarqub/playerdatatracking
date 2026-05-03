@@ -139,6 +139,32 @@ public class ApiFootballClient {
 		 
 	 }
 	 
+    public String getLiveFixturesRaw(String apikey) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures?live=all";
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching live fixtures");
+        return resp.body();
+    }
+
+    public String getFixtureByIdRaw(String apikey, Long fixtureId) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures?id=" + fixtureId;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching fixture id=" + fixtureId);
+        return resp.body();
+    }
+
     public void checkForErrors(String filePath) throws Exception {
         File file = new File(filePath);
         if (!file.exists()) {

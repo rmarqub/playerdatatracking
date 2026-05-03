@@ -37,6 +37,54 @@ export interface Torneo {
   studied: boolean;
 }
 
+export interface ApiFixtureStatus {
+  long: string;
+  short: string;
+  elapsed: number | null;
+  extra: number | null;
+}
+
+export interface ApiFixtureTeam {
+  id: number;
+  name: string;
+  logo: string;
+  winner: boolean | null;
+}
+
+export interface ApiFixtureItem {
+  fixture: {
+    id: number;
+    referee: string | null;
+    timezone: string;
+    date: string;
+    timestamp: number;
+    periods: { first: number | null; second: number | null };
+    venue: { id: number | null; name: string | null; city: string | null };
+    status: ApiFixtureStatus;
+  };
+  league: {
+    id: number;
+    name: string;
+    country: string;
+    logo: string;
+    flag: string | null;
+    season: number;
+    round: string;
+  };
+  teams: { home: ApiFixtureTeam; away: ApiFixtureTeam };
+  goals: { home: number | null; away: number | null };
+  score: {
+    halftime: { home: number | null; away: number | null };
+    fulltime: { home: number | null; away: number | null };
+    extratime: { home: number | null; away: number | null };
+    penalty: { home: number | null; away: number | null };
+  };
+  events: any[];
+  lineups: any[];
+  statistics: any[];
+  players: any[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -70,6 +118,20 @@ export class FixtureService {
     return this.http.post<GenericResponse<Fixture>>(`${this.base}/searchFixtures`, { id: leagueId }).pipe(
       map(r => r.code === 0 ? (r.entityList || []) : []),
       catchError(() => of([]))
+    );
+  }
+
+  getLiveFixturesFromApi(): Observable<ApiFixtureItem[]> {
+    return this.http.post<GenericResponse<ApiFixtureItem>>(`${this.base}/liveFixturesApi`, {}).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  getFixtureDetailFromApi(fixtureId: number): Observable<ApiFixtureItem | null> {
+    return this.http.post<GenericResponse<ApiFixtureItem>>(`${this.base}/fixtureDetailApi`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
     );
   }
 }

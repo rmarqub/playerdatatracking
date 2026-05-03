@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './features/register/register.component';
 import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tracked-player.component';
 import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
+import { FixtureDetailComponent } from './fixture-detail/fixture-detail.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SearchFixturesComponent } from './search-fixtures/search-fixtures.compo
     HomeComponent,
     RegisterComponent,
     UpdateTrackedPlayerComponent,
-    SearchFixturesComponent
+    SearchFixturesComponent,
+    FixtureDetailComponent
   ],
   imports: [
     BrowserAnimationsModule,

@@ -1,0 +1,225 @@
+<div class="detail-page">
+
+  <!-- Loading / Error -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <p>Cargando partido...</p>
+  </div>
+
+  <div class="error-panel" *ngIf="!isLoading && error">
+    <p>{{ error }}</p>
+    <button class="btn-back" (click)="goBack()">Volver</button>
+  </div>
+
+  <ng-container *ngIf="!isLoading && fixture && !error">
+
+    <!-- Back button -->
+    <button class="btn-back" (click)="goBack()">← Volver</button>
+
+    <!-- Match Header -->
+    <div class="match-header">
+
+      <div class="header-league">
+        <img *ngIf="fixture.league.logo" [src]="fixture.league.logo" class="header-league-logo" alt="" (error)="$any($event.target).style.display='none'">
+        <span class="header-league-name">{{ fixture.league.name }} — {{ fixture.league.country }}</span>
+        <span class="header-league-round">{{ fixture.league.round }} · Temporada {{ fixture.league.season }}</span>
+      </div>
+
+      <div class="header-teams">
+        <div class="header-team home">
+          <img *ngIf="fixture.teams.home.logo" [src]="fixture.teams.home.logo" class="header-team-logo" alt="" (error)="$any($event.target).style.display='none'">
+          <span class="header-team-name" [class.winner]="fixture.teams.home.winner">{{ fixture.teams.home.name }}</span>
+        </div>
+
+        <div class="header-center">
+          <div class="header-score">
+            {{ fixture.goals.home ?? '-' }} : {{ fixture.goals.away ?? '-' }}
+          </div>
+          <div class="header-status" [class.live-status]="isLive">
+            <span *ngIf="isLive" class="live-pulse-dot"></span>
+            <span>{{ statusLabel }}</span>
+          </div>
+          <div class="header-ht" *ngIf="fixture.score.halftime.home !== null">
+            <span>MT: {{ fixture.score.halftime.home }} - {{ fixture.score.halftime.away }}</span>
+          </div>
+          <div class="header-et" *ngIf="fixture.score.extratime.home !== null">
+            <span>ET: {{ fixture.score.extratime.home }} - {{ fixture.score.extratime.away }}</span>
+          </div>
+          <div class="header-pen" *ngIf="fixture.score.penalty.home !== null">
+            <span>PEN: {{ fixture.score.penalty.home }} - {{ fixture.score.penalty.away }}</span>
+          </div>
+        </div>
+
+        <div class="header-team away">
+          <span class="header-team-name" [class.winner]="fixture.teams.away.winner">{{ fixture.teams.away.name }}</span>
+          <img *ngIf="fixture.teams.away.logo" [src]="fixture.teams.away.logo" class="header-team-logo" alt="" (error)="$any($event.target).style.display='none'">
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <span *ngIf="fixture.fixture.date">{{ formatDate(fixture.fixture.date) }}</span>
+        <span class="meta-sep" *ngIf="fixture.fixture.venue.name">·</span>
+        <span *ngIf="fixture.fixture.venue.name">{{ fixture.fixture.venue.name }}{{ fixture.fixture.venue.city ? ', ' + fixture.fixture.venue.city : '' }}</span>
+        <span class="meta-sep" *ngIf="fixture.fixture.referee">·</span>
+        <span *ngIf="fixture.fixture.referee">Árbitro: {{ fixture.fixture.referee }}</span>
+      </div>
+    </div>
+
+    <!-- Events Timeline -->
+    <div class="section-card" *ngIf="sortedEvents.length > 0">
+      <h3 class="section-title">Eventos del Partido</h3>
+      <div class="events-timeline">
+        <div
+          *ngFor="let ev of sortedEvents"
+          class="event-item"
+          [class.event-home]="isHomeTeamEvent(ev)"
+          [class.event-away]="!isHomeTeamEvent(ev)">
+
+          <div class="event-minute">{{ ev.time?.elapsed }}'<span *ngIf="ev.time?.extra">+{{ ev.time.extra }}</span></div>
+
+          <div class="event-icon-wrap">
+            <div class="event-icon" [ngClass]="getEventIcon(ev.type, ev.detail)"></div>
+          </div>
+
+          <div class="event-desc">
+            <span class="event-player">{{ ev.player?.name }}</span>
+            <span class="event-detail" *ngIf="ev.detail">{{ ev.detail }}</span>
+            <span class="event-assist" *ngIf="ev.assist?.name && ev.type === 'Goal'">
+              Asistencia: {{ ev.assist.name }}
+            </span>
+            <span class="event-assist" *ngIf="ev.assist?.name && ev.type === 'subst'">
+              Entra: {{ ev.assist.name }}
+            </span>
+            <span class="event-team">{{ ev.team?.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics -->
+    <div class="section-card" *ngIf="homeStats.length > 0">
+      <h3 class="section-title">Estadísticas</h3>
+      <div class="stats-header">
+        <div class="stats-team-name">
+          <img *ngIf="fixture.teams.home.logo" [src]="fixture.teams.home.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+          {{ fixture.teams.home.name }}
+        </div>
+        <div></div>
+        <div class="stats-team-name">
+          {{ fixture.teams.away.name }}
+          <img *ngIf="fixture.teams.away.logo" [src]="fixture.teams.away.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+        </div>
+      </div>
+      <div class="stat-row" *ngFor="let type of statTypes">
+        <div class="stat-value home-val">{{ getStatValue(homeStats, type) }}</div>
+        <div class="stat-label">{{ type }}</div>
+        <div class="stat-value away-val">{{ getStatValue(awayStats, type) }}</div>
+      </div>
+    </div>
+
+    <!-- Lineups -->
+    <div class="section-card lineups-section" *ngIf="homeLineup || awayLineup">
+      <h3 class="section-title">Alineaciones</h3>
+      <div class="lineups-grid">
+
+        <!-- Home lineup -->
+        <div class="lineup-team" *ngIf="homeLineup">
+          <div class="lineup-header">
+            <img *ngIf="fixture.teams.home.logo" [src]="fixture.teams.home.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+            <span class="lineup-team-name">{{ fixture.teams.home.name }}</span>
+            <span class="lineup-formation">{{ homeLineup.formation }}</span>
+          </div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of homeLineup.startXI">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup">{{ p.player?.name }}</span>
+          </div>
+          <div class="lineup-section-label" *ngIf="homeLineup.substitutes?.length">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of homeLineup.substitutes">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup">{{ p.player?.name }}</span>
+          </div>
+        </div>
+
+        <!-- Away lineup -->
+        <div class="lineup-team" *ngIf="awayLineup">
+          <div class="lineup-header">
+            <img *ngIf="fixture.teams.away.logo" [src]="fixture.teams.away.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+            <span class="lineup-team-name">{{ fixture.teams.away.name }}</span>
+            <span class="lineup-formation">{{ awayLineup.formation }}</span>
+          </div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of awayLineup.startXI">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup">{{ p.player?.name }}</span>
+          </div>
+          <div class="lineup-section-label" *ngIf="awayLineup.substitutes?.length">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of awayLineup.substitutes">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup">{{ p.player?.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player ratings -->
+    <div class="section-card" *ngIf="homePlayers.length > 0 || awayPlayers.length > 0">
+      <h3 class="section-title">Estadísticas de Jugadores</h3>
+
+      <ng-container *ngFor="let teamData of [
+        { team: fixture.teams.home, players: homePlayers },
+        { team: fixture.teams.away, players: awayPlayers }
+      ]">
+        <div class="players-team-header" *ngIf="teamData.players.length > 0">
+          <img *ngIf="teamData.team.logo" [src]="teamData.team.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+          <span>{{ teamData.team.name }}</span>
+        </div>
+        <div class="players-table-wrap" *ngIf="teamData.players.length > 0">
+          <table class="players-table">
+            <thead>
+              <tr>
+                <th>Jugador</th>
+                <th>Pos</th>
+                <th>Min</th>
+                <th>Rating</th>
+                <th>Goles</th>
+                <th>Asist.</th>
+                <th>Tiros</th>
+                <th>Pases</th>
+                <th>Ent.</th>
+                <th>Faltas</th>
+                <th>Tarj.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of teamData.players" [class.substitute-row]="p.statistics?.[0]?.games?.substitute">
+                <td class="player-name-cell">{{ p.player?.name }}</td>
+                <td>{{ p.statistics?.[0]?.games?.position ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.games?.minutes ?? '-' }}</td>
+                <td class="rating-cell" [class.high-rating]="p.statistics?.[0]?.games?.rating >= 7">
+                  {{ p.statistics?.[0]?.games?.rating ?? '-' }}
+                </td>
+                <td>{{ p.statistics?.[0]?.goals?.total ?? 0 }}</td>
+                <td>{{ p.statistics?.[0]?.goals?.assists ?? 0 }}</td>
+                <td>{{ p.statistics?.[0]?.shots?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.passes?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.tackles?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.fouls?.committed ?? '-' }}</td>
+                <td>
+                  <span class="card-dot yellow" *ngIf="p.statistics?.[0]?.cards?.yellow > 0"></span>
+                  <span class="card-dot red" *ngIf="p.statistics?.[0]?.cards?.red > 0"></span>
+                  <span *ngIf="!p.statistics?.[0]?.cards?.yellow && !p.statistics?.[0]?.cards?.red">-</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-container>
+    </div>
+
+  </ng-container>
+</div>

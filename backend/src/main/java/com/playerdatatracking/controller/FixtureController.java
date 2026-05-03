@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.entities.indexaldata.Torneo;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixtures;
+import com.playerdatatracking.operations.IndelxalData.GetLiveFixturesFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetStudiedLeagues;
 import com.playerdatatracking.operations.IndelxalData.SearchFixtures;
 import com.playerdatatracking.requests.GenericRequest;
@@ -23,6 +25,10 @@ public class FixtureController {
     private GetStudiedLeagues operationGetStudiedLeagues;
     @Autowired
     private SearchFixtures operationSearchFixtures;
+    @Autowired
+    private GetLiveFixturesFromApi operationGetLiveFixturesFromApi;
+    @Autowired
+    private GetFixtureDetailFromApi operationGetFixtureDetailFromApi;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -53,6 +59,30 @@ public class FixtureController {
         GenericResponse<Fixture> response = new GenericResponse<>();
         try {
             response = operationSearchFixtures.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/liveFixturesApi")
+    public GenericResponse<Object> getLiveFixturesFromApi() {
+        GenericResponse<Object> response = new GenericResponse<>();
+        try {
+            response = operationGetLiveFixturesFromApi.ejecutar();
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureDetailApi")
+    public GenericResponse<Object> getFixtureDetailFromApi(@RequestBody GenericRequest request) {
+        GenericResponse<Object> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureDetailFromApi.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
