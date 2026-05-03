@@ -24,10 +24,12 @@ import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.entities.indexaldata.Transfer;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
+import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
 import com.playerdatatracking.repositories.indexaldata.ClubRepository;
 import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.DuppedPlayerRepository;
+import com.playerdatatracking.repositories.indexaldata.FixtureRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
 import com.playerdatatracking.repositories.indexaldata.PaisRepository;
@@ -73,6 +75,8 @@ public class PlayerDataClient {
 	private SquadRepository sRepository;
 	@Autowired
 	private PlayerStatsRepository psRepository;
+	@Autowired
+	private FixtureRepository fixtureRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -537,6 +541,33 @@ public class PlayerDataClient {
 	    return psRepository.findByIndexId(indexId);
 	}
 	
+	@Transactional
+	public List<Fixture> getLiveFixtures() throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findLiveFixtures();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> searchFixturesByTeam(String teamName) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findByTeamNameContaining(teamName);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> searchFixturesByLeague(Integer leagueId) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findByLeagueIdOrderByMatchDateDesc(leagueId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
 	@Transactional
 	public byte[] getPhoto(Long id) { return pRepository.findPhotoById(id); }
 

@@ -23,6 +23,7 @@ import { LoginComponent } from './features/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './features/register/register.component';
 import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tracked-player.component';
+import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tra
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    UpdateTrackedPlayerComponent
+    UpdateTrackedPlayerComponent,
+    SearchFixturesComponent
   ],
   imports: [
     BrowserAnimationsModule,

@@ -68,4 +68,9 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
     // Partidos finalizados de un equipo como visitante
     @Query("SELECT f FROM Fixture f WHERE f.awayTeamId = :teamId AND f.statusShort = 'FT' ORDER BY f.matchDate DESC LIMIT :limit")
     List<Fixture> findLastAwayFixtures(@Param("teamId") Long teamId, @Param("limit") int limit);
+
+    @Query("SELECT f FROM Fixture f WHERE LOWER(f.homeTeamName) LIKE LOWER(CONCAT('%', :teamName, '%')) OR LOWER(f.awayTeamName) LIKE LOWER(CONCAT('%', :teamName, '%')) ORDER BY f.matchDate DESC")
+    List<Fixture> findByTeamNameContaining(@Param("teamName") String teamName);
+
+    List<Fixture> findByLeagueIdOrderByMatchDateDesc(Integer leagueId);
 }

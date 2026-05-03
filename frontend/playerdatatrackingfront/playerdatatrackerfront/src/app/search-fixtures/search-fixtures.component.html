@@ -1,0 +1,100 @@
+<div class="fixtures-page">
+
+  <!-- Partidos en Directo -->
+  <div class="panel">
+    <div class="panel-header">
+      <h2 class="panel-title">Partidos en Directo</h2>
+      <button class="action-button live-button" (click)="loadLiveFixtures()" [disabled]="isLoadingLive">
+        {{ isLoadingLive ? 'Cargando...' : 'Buscar Partidos en Directo' }}
+      </button>
+    </div>
+    <div class="fixtures-table-container" *ngIf="liveFixtures.length > 0">
+      <table class="fixtures-table">
+        <thead>
+          <tr>
+            <th>Liga</th>
+            <th>Jornada</th>
+            <th>Fecha</th>
+            <th>Local</th>
+            <th>Resultado</th>
+            <th>Visitante</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let f of liveFixtures" class="fixture-row live-row">
+            <td>{{ f.leagueName }}</td>
+            <td>{{ f.round }}</td>
+            <td>{{ formatDate(f.matchDate) }}</td>
+            <td class="team-name">{{ f.homeTeamName }}</td>
+            <td class="score">{{ f.goalsHome ?? '-' }} - {{ f.goalsAway ?? '-' }}</td>
+            <td class="team-name">{{ f.awayTeamName }}</td>
+            <td><span class="status-badge live-badge">{{ getStatusLabel(f) }}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="empty-msg" *ngIf="liveLoaded && liveFixtures.length === 0">
+      No hay partidos en directo en este momento.
+    </p>
+  </div>
+
+  <!-- Buscador de Partidos -->
+  <div class="panel">
+    <div class="panel-header">
+      <h2 class="panel-title">Buscar Partidos</h2>
+    </div>
+    <div class="search-controls">
+      <div class="search-group">
+        <input type="text" class="search-input" placeholder="Nombre del equipo" [(ngModel)]="teamName" (keyup.enter)="searchByTeam()">
+        <button class="action-button search-button" (click)="searchByTeam()" [disabled]="isLoadingSearch || !teamName.trim()">
+          Buscar por Equipo
+        </button>
+      </div>
+      <div class="search-group">
+        <select class="search-select" [(ngModel)]="selectedLeagueId">
+          <option [ngValue]="null" disabled>Seleccionar liga...</option>
+          <option *ngFor="let league of studiedLeagues" [ngValue]="league.id">{{ league.name }}</option>
+        </select>
+        <button class="action-button search-button" (click)="searchByLeague()" [disabled]="isLoadingSearch || !selectedLeagueId">
+          Buscar por Liga
+        </button>
+      </div>
+    </div>
+
+    <div class="fixtures-table-container" *ngIf="fixtures.length > 0">
+      <table class="fixtures-table">
+        <thead>
+          <tr>
+            <th>Liga</th>
+            <th>Jornada</th>
+            <th>Fecha</th>
+            <th>Local</th>
+            <th>Resultado</th>
+            <th>Visitante</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let f of fixtures" class="fixture-row" [class.live-row]="isLive(f)">
+            <td>{{ f.leagueName }}</td>
+            <td>{{ f.round }}</td>
+            <td>{{ formatDate(f.matchDate) }}</td>
+            <td class="team-name">{{ f.homeTeamName }}</td>
+            <td class="score">{{ f.goalsHome ?? '-' }} - {{ f.goalsAway ?? '-' }}</td>
+            <td class="team-name">{{ f.awayTeamName }}</td>
+            <td>
+              <span class="status-badge" [class.live-badge]="isLive(f)" [class.ft-badge]="f.statusShort === 'FT'">
+                {{ getStatusLabel(f) }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="empty-msg" *ngIf="searchPerformed && fixtures.length === 0">
+      No se encontraron partidos con los criterios indicados.
+    </p>
+  </div>
+
+</div>

@@ -1,8 +1,8 @@
 package com.playerdatatracking.entities.indexaldata;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -106,12 +106,15 @@ public class Fixture {
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
  
+    @JsonIgnore
     @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<FixtureEvent> events = new ArrayList<>();
- 
+
+    @JsonIgnore
     @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<FixtureTeamStats> teamStats = new ArrayList<>();
- 
+
+    @JsonIgnore
     @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<FixturePlayerStats> playerStats = new ArrayList<>();
     

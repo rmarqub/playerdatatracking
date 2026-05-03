@@ -21,4 +21,8 @@ export class TrackedDataComponent {
   navigateToManageApikeys() {
     this.router.navigate(['/manageApikeys']);
   }
+
+  navigateToSearchFixtures() {
+    this.router.navigate(['/searchFixtures']);
+  }
 }

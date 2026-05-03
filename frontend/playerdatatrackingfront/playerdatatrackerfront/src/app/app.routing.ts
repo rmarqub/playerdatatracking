@@ -12,6 +12,7 @@ import { LoginComponent } from './features/login/login.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tracked-player.component';
 import { RegisterComponent } from './features/register/register.component';
+import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
 
 const appRoutes : Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const appRoutes : Routes = [
   { path: 'player/:id', component: IndexPlayerComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
   { path: 'updateTrackedPlayer', component: UpdateTrackedPlayerComponent },
+  { path: 'searchFixtures', component: SearchFixturesComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '' }
 ]
 
