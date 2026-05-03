@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,13 +23,17 @@ import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class GetAllCountries {
 
 	private ApiFootballClient restClient;
 	private GenericResponse response;
 	String filePath = "src/main/resources/json/apiFotball/countries/countries.json";
+	@Autowired
 	private PlayerDataClient pdClient;
-	private KeysManagement keyMethods = new KeysManagement();
+	@Autowired
+	private KeysManagement keyMethods;
+	@Autowired
 	private Environment env;
 
 	public void setPdClient(PlayerDataClient pdClient) {
@@ -42,8 +48,6 @@ public class GetAllCountries {
 		try {
 			response = new GenericResponse();
 			restClient = new ApiFootballClient();
-			keyMethods.setEnv(env);
-			keyMethods.setPdClient(pdClient);
 			Keys apiKey = keyMethods.nextKey();
 			if (apiKey==null)
 				throw new ApiKeyManagementException("no hay almacenada ninguna key valida");

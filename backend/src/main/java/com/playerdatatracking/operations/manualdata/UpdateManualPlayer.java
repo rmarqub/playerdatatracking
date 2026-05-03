@@ -4,6 +4,9 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
@@ -15,8 +18,10 @@ import com.playerdatatracking.exceptions.operations.MalformedRequestException;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class UpdateManualPlayer {
-	
+
+	@Autowired
 	private PlayerDataClient pdClient;
 	private GenericResponse response;
 

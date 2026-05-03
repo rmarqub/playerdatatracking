@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -15,15 +17,18 @@ import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class KeysManagement {
 
-	
-	private AESCrypto crypt = new AESCrypto();
+	@Autowired
+	private AESCrypto crypt;
+	@Autowired
 	private PlayerDataClient pdClient;
+	@Autowired
 	private Environment env;
 	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-	
-	
+
+
 	public void setEnv(Environment extenv) {
 		this.env = extenv;
 	}
@@ -59,7 +64,6 @@ public class KeysManagement {
 	}
 	public void storeUsedKey(Keys key) throws Exception {
 		try {
-			crypt.setEnv(env);
 			key.setValor(crypt.encrypt(key.getValor()));
 			pdClient.saveApiKey(key);
 		} catch (Exception e) {
@@ -144,7 +148,6 @@ public class KeysManagement {
 		Keys storedKey;
 		GenericResponse <Keys> response = new GenericResponse<>();
 		try {
-			crypt.setEnv(this.env);
 			keyHash = crypt.hashKey(key);
 		} catch (Exception e) {
 			throw new ApiKeyManagementException("Error al encriptar la clave de conexion con la api aportada");
@@ -175,7 +178,6 @@ public class KeysManagement {
 		boolean isPlanValid = true;
 		String cryptedKey;
 		try {
-			crypt.setEnv(this.env);
 			cryptedKey = crypt.encrypt(apiKey);
 		} catch (Exception e) {
 			throw new ApiKeyManagementException("Error al encriptar la clave de conexion con la api aportada");
@@ -239,7 +241,6 @@ public class KeysManagement {
 	}
 	
 	public Keys uncryptKey(Keys key) throws Exception {
-		crypt.setEnv(env);
 		String keyValue = crypt.decrypt(key.getValor());
 		key.setValor(keyValue);
 		return key;

@@ -2,7 +2,10 @@ package com.playerdatatracking.operations.IndelxalData;
 
 import java.time.format.DateTimeFormatter;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
@@ -13,10 +16,12 @@ import com.playerdatatracking.exceptions.operations.NoPlayerFoundException;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class GetIndexedPlayer {
 
-	
+	@Autowired
 	private PlayerDataClient pdClient;
+	@Autowired
 	private Environment env;
 	private GenericResponse<ConvertedPlayer> response = new GenericResponse();
 	private Methods methods;

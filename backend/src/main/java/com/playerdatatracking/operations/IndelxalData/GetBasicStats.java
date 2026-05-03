@@ -2,12 +2,17 @@ package com.playerdatatracking.operations.IndelxalData;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.requests.PlayerMatchRow;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class GetBasicStats {
-	
+
+	@Autowired
 	private PlayerDataClient pdClient;
 	private GenericResponse<PlayerMatchRow> response;
 	

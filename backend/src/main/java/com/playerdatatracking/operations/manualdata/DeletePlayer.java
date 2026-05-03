@@ -1,13 +1,18 @@
 package com.playerdatatracking.operations.manualdata;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class DeletePlayer {
-	
-private PlayerDataClient pdClient;
+
+	@Autowired
+	private PlayerDataClient pdClient;
 	
 	private GenericResponse response;
 	

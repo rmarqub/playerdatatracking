@@ -3,7 +3,9 @@ package com.playerdatatracking.operations.IndelxalData;
 import java.time.LocalDateTime;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.playerdatatracking.clients.PlayerDataClient;
@@ -13,9 +15,11 @@ import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class UpdatePlayer {
-	
+
 	private Methods methods;
+	@Autowired
 	private PlayerDataClient pdClient;
 	private GenericResponse<Player> response = new GenericResponse();
 	private Environment env;

@@ -2,15 +2,19 @@ package com.playerdatatracking.operations.manualdata;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class GetAllPlayers {
 
-	
+	@Autowired
 	private PlayerDataClient pdClient;
 	
 	private GenericResponse<ManualTrackedPlayer> response = new GenericResponse();

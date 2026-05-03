@@ -1,0 +1,122 @@
+package com.playerdatatracking.controller;
+
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.CacheControl;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
+import com.playerdatatracking.entities.indexaldata.Player;
+import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
+import com.playerdatatracking.operations.IndelxalData.GetBasicStats;
+import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
+import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
+import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
+import com.playerdatatracking.requests.GenericRequest;
+import com.playerdatatracking.requests.PlayerMatchRow;
+import com.playerdatatracking.requests.SearchPlayersRequest;
+import com.playerdatatracking.responses.GenericResponse;
+import org.springframework.web.bind.annotation.RequestBody;
+
+@RestController
+public class IndexedPlayerController {
+
+    @Autowired
+    private PlayerDataClient pdClient;
+    @Autowired
+    private SearchIndexatedPlayers operationSearchIndexatedPlayers;
+    @Autowired
+    private GetIndexedPlayer operationGetIxPlayer;
+    @Autowired
+    private UpdatePlayer operationUpdatePlayer;
+    @Autowired
+    private GetBasicStats operationGetBasicStats;
+
+    @GetMapping("/search")
+    public GenericResponse<ConvertedPlayer> searchPlayers(
+            @RequestParam(required = false) String player,
+            @RequestParam(required = false) String team) {
+        GenericResponse<ConvertedPlayer> response = new GenericResponse<>();
+        try {
+            SearchPlayersRequest request = new SearchPlayersRequest(player, team);
+            response = operationSearchIndexatedPlayers.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @GetMapping("/searchPlayer/{id}")
+    public GenericResponse<ConvertedPlayer> getConvertedPlayer(@PathVariable("id") Long id) {
+        GenericResponse<ConvertedPlayer> response = new GenericResponse<>();
+        try {
+            response = operationGetIxPlayer.ejecutar(id);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PatchMapping(value = "/updatePlayer", consumes = "multipart/form-data")
+    public GenericResponse<Player> updatePlayer(@RequestBody GenericRequest request) {
+        GenericResponse<Player> response = new GenericResponse<>();
+        try {
+            response = operationUpdatePlayer.ejecutar(request.getIndexId(), request.getPhoto());
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @GetMapping(value = "/players/{id}/photo", produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE, "image/webp"})
+    public ResponseEntity<byte[]> getPhoto(@PathVariable Long id) {
+        PlayerPhotoData photoData = pdClient.getPhotoData(id);
+        if (photoData == null || photoData.getPhoto() == null || photoData.getPhoto().length == 0) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT)
+                    .cacheControl(CacheControl.noStore())
+                    .header("Pragma", "no-cache")
+                    .build();
+        }
+
+        String ct = Optional.ofNullable(photoData.getPhotoContentType()).orElse("image/jpeg");
+        LocalDateTime updatedAt = Optional.ofNullable(photoData.getPhotoUpdatedAt()).orElse(LocalDateTime.now());
+        long lastMod = updatedAt.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(ct))
+                .cacheControl(CacheControl.maxAge(365, TimeUnit.DAYS).cachePublic())
+                .lastModified(lastMod)
+                .body(photoData.getPhoto());
+    }
+
+    @GetMapping("/players/{indexId}/basic-stats")
+    public GenericResponse<PlayerMatchRow> getBasicStats(@PathVariable("indexId") Long indexId) {
+        GenericResponse<PlayerMatchRow> response = new GenericResponse<>();
+        try {
+            response = operationGetBasicStats.ejecutar(indexId);
+            response.setCODE(Constants.CODE_OK);
+            response.setDescription("OK");
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+}

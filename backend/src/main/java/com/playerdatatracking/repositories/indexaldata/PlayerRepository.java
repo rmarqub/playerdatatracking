@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.Player;
+import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
 import com.playerdatatracking.requests.IndexTeamPair;
 
 public interface PlayerRepository extends JpaRepository<Player, Long>{
@@ -29,6 +30,9 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
 
 	@Query("select p.photoUpdatedAt from Player p where p.id = :id")
 	LocalDateTime findPhotoUpdatedAtById(@Param("id") Long id);
+
+	@Query("SELECT p.photo AS photo, p.photoContentType AS photoContentType, p.photoUpdatedAt AS photoUpdatedAt FROM Player p WHERE p.id = :id")
+	PlayerPhotoData findPhotoDataById(@Param("id") Long id);
 	
 	List<Player> findByTeamAndIndexId(Club team, Long indexId);
 	

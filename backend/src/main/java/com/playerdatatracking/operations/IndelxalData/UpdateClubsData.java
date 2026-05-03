@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,12 +32,15 @@ import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class UpdateClubsData {
 
-	
+	@Autowired
 	private PlayerDataClient pdClient;
 	private ApiFootballClient restClient;
-	private KeysManagement keyMethods = new KeysManagement();
+	@Autowired
+	private KeysManagement keyMethods;
+	@Autowired
 	private Environment env;
 	String directoryPath = "src/main/resources/json/apiFotball/leagues/";
     String excludedFile = "leagues.json";
@@ -52,10 +57,8 @@ public class UpdateClubsData {
 	
 	
 	public GenericResponse<Club> ejecutar(GenericRequest request) throws Exception {
-		
+
 		restClient = new ApiFootballClient();
-		keyMethods.setEnv(env);
-		keyMethods.setPdClient(pdClient);
 		methods = new Methods();
 		try {
 			if(request.getRestUpdate()!=null && request.getRestUpdate().equals("true")) {

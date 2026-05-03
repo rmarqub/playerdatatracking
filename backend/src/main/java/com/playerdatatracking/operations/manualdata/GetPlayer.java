@@ -10,6 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
@@ -17,9 +20,10 @@ import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class GetPlayer {
 
-	
+	@Autowired
 	private PlayerDataClient pdClient;
 	
 	private GenericResponse<ManualTrackedPlayer> response = new GenericResponse();

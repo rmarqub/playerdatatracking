@@ -10,7 +10,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,10 +27,14 @@ import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.IndexTeamPair;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class UpdatePlayersBySquads {
 
+	@Autowired
 	private PlayerDataClient pdClient;
-	private KeysManagement keyMethods = new KeysManagement();
+	@Autowired
+	private KeysManagement keyMethods;
+	@Autowired
 	private Environment env;
 	private HttpClient http = HttpClient.newHttpClient();
 	boolean isMarketActive;
@@ -139,9 +145,6 @@ public class UpdatePlayersBySquads {
     
     
     private boolean squadContieneJugador(Long teamId, Long playerIndexId) throws PlayerDataDBException, ApiKeyManagementException {
-    	keyMethods = new KeysManagement();
-		keyMethods.setEnv(env);
-		keyMethods.setPdClient(pdClient);
 		Keys apiKey = keyMethods.nextKey();
 		Methods m = new Methods();
 		if (apiKey==null)

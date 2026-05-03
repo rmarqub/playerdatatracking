@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -19,10 +20,10 @@ import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.responses.GenericResponse;
 
-public class AddPlayer{
+@Component
+public class AddPlayer {
 
-	
-	
+	@Autowired
 	private PlayerDataClient pdClient;
 	
 	private GenericResponse response;

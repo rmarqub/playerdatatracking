@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ClubInLeague;
+import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
 import com.playerdatatracking.entities.indexaldata.ConfigParams;
 import com.playerdatatracking.entities.indexaldata.DuppedPlayers;
 import com.playerdatatracking.entities.indexaldata.ManualTrackedPlayer;
@@ -544,4 +545,7 @@ public class PlayerDataClient {
 
 	@Transactional
 	public LocalDateTime getPhotoUpdatedAt(Long id) { return pRepository.findPhotoUpdatedAtById(id); }
+
+	@Transactional
+	public PlayerPhotoData getPhotoData(Long id) { return pRepository.findPhotoDataById(id); }
 }

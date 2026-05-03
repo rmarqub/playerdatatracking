@@ -3,7 +3,9 @@ package com.playerdatatracking.operations.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
@@ -13,9 +15,12 @@ import com.playerdatatracking.exceptions.operations.PlayerInputException;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class SearchIndexatedPlayers {
 
+	@Autowired
 	private PlayerDataClient pdClient;
+	@Autowired
 	private Environment env;
 	private GenericResponse<ConvertedPlayer> response;
 	

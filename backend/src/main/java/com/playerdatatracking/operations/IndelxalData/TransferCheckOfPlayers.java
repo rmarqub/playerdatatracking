@@ -20,7 +20,9 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -38,14 +40,18 @@ import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.IndexTeamPair;
 import com.playerdatatracking.responses.GenericResponse;
 
+@Component
 public class TransferCheckOfPlayers {
-	
-	PlayerDataClient pdClient;
+
+	@Autowired
+	private PlayerDataClient pdClient;
 	private static final HttpClient HTTP = HttpClient.newHttpClient();
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private static final DateTimeFormatter DTF = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-	private ApiFootballClient apiClient;
-	private KeysManagement keyMethods = new KeysManagement();
+	private ApiFootballClient apiClient = new ApiFootballClient();
+	@Autowired
+	private KeysManagement keyMethods;
+	@Autowired
 	private Environment env;
 	boolean isMarketActive;
 	boolean useDupped;
@@ -54,9 +60,8 @@ public class TransferCheckOfPlayers {
 
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
-		apiClient = new ApiFootballClient();
 	}
-	
+
 	public void setEnv(Environment env) {
 		this.env = env;
 	}
@@ -78,9 +83,6 @@ public class TransferCheckOfPlayers {
 		}
 	}
 	public void processList(List<IndexTeamPair> duppedPlayers) throws PlayerDataDBException {
-		keyMethods = new KeysManagement();
-		keyMethods.setEnv(env);
-		keyMethods.setPdClient(pdClient);
 		Map<Long, List<Long>> checklist = groupTeamsByIndexId(duppedPlayers);
 		for (Entry<Long, List<Long>> e : checklist.entrySet()) {
 			Long indexId = e.getKey();

@@ -7,7 +7,9 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.exceptions.apikeys.SecretKeyBadGeneratedException;
@@ -17,11 +19,13 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Base64;
 
+@Component
 public class AESCrypto {
 	private static String algorithm = "AES/CBC/PKCS5Padding";
-	
+
+	@Autowired
 	private Environment env;
-	
+
 	public void setEnv(Environment extenv) {
 		this.env = extenv;
 	}
