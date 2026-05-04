@@ -13,12 +13,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
@@ -113,6 +115,25 @@ public class IndexedPlayerController {
             response = operationGetBasicStats.ejecutar(indexId);
             response.setCODE(Constants.CODE_OK);
             response.setDescription("OK");
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/playerIdByIndexId")
+    public GenericResponse<Long> getPlayerIdByIndexId(@RequestBody GenericRequest request) {
+        GenericResponse<Long> response = new GenericResponse<>();
+        try {
+            Long playerId = pdClient.getPlayerIdByIndexId(request.getIndexId());
+            if (playerId != null) {
+                response.setCODE(Constants.CODE_OK);
+                response.setEntity(playerId);
+            } else {
+                response.setCODE(Constants.CODE_ERR_NO_PLAYER_FOUND);
+                response.setDescription("Jugador con indexId " + request.getIndexId() + " no encontrado");
+            }
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

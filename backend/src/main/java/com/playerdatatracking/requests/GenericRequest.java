@@ -35,7 +35,16 @@ public class GenericRequest {
     private int idService;
     private MultipartFile photo;
     private String purgeBeforeRun;
-    
+    private List<Long> leagueIds;
+
+    public List<Long> getLeagueIds() {
+        return leagueIds;
+    }
+
+    public void setLeagueIds(List<Long> leagueIds) {
+        this.leagueIds = leagueIds;
+    }
+
     public String getRestUpdate() {
 		return restUpdate;
 	}

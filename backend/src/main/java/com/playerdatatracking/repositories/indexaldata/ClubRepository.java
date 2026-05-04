@@ -10,7 +10,7 @@ import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.Player;
 
 public interface ClubRepository extends JpaRepository<Club, Long> {
-	
-	
+
+    List<Club> findByNombreContainingIgnoreCase(String nombre);
 }
 

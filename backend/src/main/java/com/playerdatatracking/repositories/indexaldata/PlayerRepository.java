@@ -2,6 +2,7 @@ package com.playerdatatracking.repositories.indexaldata;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -35,6 +36,8 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
 	PlayerPhotoData findPhotoDataById(@Param("id") Long id);
 	
 	List<Player> findByTeamAndIndexId(Club team, Long indexId);
+
+	Optional<Player> findFirstByIndexIdOrderByIdDesc(Long indexId);
 	
     @Query(value = """
             SELECT p.index_id AS indexId, p.team AS team

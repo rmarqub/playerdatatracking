@@ -1,0 +1,16 @@
+<div class="notfound-page">
+  <div class="notfound-card">
+    <div class="notfound-icon">⚠</div>
+    <h2>Jugador no encontrado</h2>
+    <p *ngIf="playerName">
+      El jugador <strong>{{ playerName }}</strong> no está registrado en el sistema.
+    </p>
+    <p *ngIf="!playerName">
+      No se ha encontrado el jugador especificado en el sistema.
+    </p>
+    <p class="notfound-hint">
+      Es posible que pertenezca a una liga que no está siendo seguida actualmente.
+    </p>
+    <button class="btn-back" (click)="goBack()">← Volver</button>
+  </div>
+</div>

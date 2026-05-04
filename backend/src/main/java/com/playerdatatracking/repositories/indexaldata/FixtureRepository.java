@@ -76,13 +76,22 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
 
     List<Fixture> findByLeagueIdOrderByMatchDateDesc(Integer leagueId);
 
+    @Query("SELECT f FROM Fixture f WHERE (f.homeTeamId IN :teamIds OR f.awayTeamId IN :teamIds) ORDER BY f.matchDate DESC")
+    List<Fixture> findByTeamIds(@Param("teamIds") List<Long> teamIds);
+
+    @Query("SELECT f FROM Fixture f WHERE (f.homeTeamId IN :teamIds OR f.awayTeamId IN :teamIds) AND f.leagueId IN :leagueIds ORDER BY f.matchDate DESC")
+    List<Fixture> findByTeamIdsAndLeagueIds(@Param("teamIds") List<Long> teamIds, @Param("leagueIds") List<Integer> leagueIds);
+
+    @Query("SELECT f FROM Fixture f WHERE f.leagueId IN :leagueIds ORDER BY f.matchDate DESC")
+    List<Fixture> findByLeagueIds(@Param("leagueIds") List<Integer> leagueIds);
+
     @Transactional
     @Modifying
     void deleteByLeagueIdAndSeason(Integer leagueId, Integer season);
 
-    @Query("SELECT f.id FROM Fixture f ORDER BY f.id ASC")
+    @Query("SELECT f.id FROM Fixture f WHERE f.statusShort <> 'NS' ORDER BY f.id ASC")
     List<Long> findAllIds();
 
-    @Query("SELECT f.id FROM Fixture f WHERE NOT EXISTS (SELECT 1 FROM FixtureEvent e WHERE e.fixture.id = f.id) ORDER BY f.id ASC")
+    @Query("SELECT f.id FROM Fixture f WHERE NOT EXISTS (SELECT 1 FROM FixtureEvent e WHERE e.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
     List<Long> findIdsWithoutEvents();
 }

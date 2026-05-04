@@ -8,9 +8,11 @@ import { FixtureService, Fixture, Torneo, ApiFixtureItem } from '../services/fix
   styleUrls: ['./search-fixtures.component.css']
 })
 export class SearchFixturesComponent implements OnInit {
+
   // ── DB search ──────────────────────────────────────────────────────────────
   teamName: string = '';
-  selectedLeagueId: number | null = null;
+  selectedSearchLeagueIds: number[] = [];
+  searchLeaguesDropdownOpen = false;
   studiedLeagues: Torneo[] = [];
   fixtures: Fixture[] = [];
   isLoadingSearch: boolean = false;
@@ -22,7 +24,7 @@ export class SearchFixturesComponent implements OnInit {
   liveLoaded: boolean = false;
   liveError: string = '';
 
-  // ── Filters ────────────────────────────────────────────────────────────────
+  // ── Live filters ───────────────────────────────────────────────────────────
   availableCountries: string[] = [];
   availableLeagues: { id: number; name: string; logo: string }[] = [];
   selectedCountries = new Set<string>();
@@ -38,13 +40,13 @@ export class SearchFixturesComponent implements OnInit {
     });
   }
 
-  // ── Close dropdowns on outside click ──────────────────────────────────────
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent): void {
     const target = event.target as HTMLElement;
     if (!target.closest?.('.filter-dropdown-wrap')) {
       this.countriesDropdownOpen = false;
       this.leaguesDropdownOpen = false;
+      this.searchLeaguesDropdownOpen = false;
     }
   }
 
@@ -82,14 +84,16 @@ export class SearchFixturesComponent implements OnInit {
     this.availableLeagues = [...leagueMap.values()].sort((a, b) => a.name.localeCompare(b.name));
   }
 
-  // ── Filter toggles ─────────────────────────────────────────────────────────
+  // ── Live filter toggles ────────────────────────────────────────────────────
   toggleCountriesDropdown(): void {
     this.leaguesDropdownOpen = false;
+    this.searchLeaguesDropdownOpen = false;
     this.countriesDropdownOpen = !this.countriesDropdownOpen;
   }
 
   toggleLeaguesDropdown(): void {
     this.countriesDropdownOpen = false;
+    this.searchLeaguesDropdownOpen = false;
     this.leaguesDropdownOpen = !this.leaguesDropdownOpen;
   }
 
@@ -110,7 +114,6 @@ export class SearchFixturesComponent implements OnInit {
     this.selectedLeagues = new Set();
   }
 
-  // ── Filtered list (applied to the live grid) ───────────────────────────────
   get filteredLiveFixtures(): ApiFixtureItem[] {
     return this.liveFixturesApi.filter(f => {
       const countryOk = this.selectedCountries.size === 0 || this.selectedCountries.has(f.league.country);
@@ -136,35 +139,58 @@ export class SearchFixturesComponent implements OnInit {
     return `${this.selectedLeagues.size} competiciones`;
   }
 
-  // ── Navigation ─────────────────────────────────────────────────────────────
-  navigateToFixture(fixtureId: number): void {
-    this.router.navigate(['/fixture', fixtureId]);
-  }
-
   // ── DB search ──────────────────────────────────────────────────────────────
-  searchByTeam(): void {
-    if (!this.teamName.trim()) return;
+  toggleSearchLeaguesDropdown(): void {
+    this.countriesDropdownOpen = false;
+    this.leaguesDropdownOpen = false;
+    this.searchLeaguesDropdownOpen = !this.searchLeaguesDropdownOpen;
+  }
+
+  toggleSearchLeague(leagueId: number): void {
+    const idx = this.selectedSearchLeagueIds.indexOf(leagueId);
+    if (idx >= 0) {
+      this.selectedSearchLeagueIds = this.selectedSearchLeagueIds.filter(id => id !== leagueId);
+    } else {
+      this.selectedSearchLeagueIds = [...this.selectedSearchLeagueIds, leagueId];
+    }
+  }
+
+  get searchLeaguesLabel(): string {
+    if (this.selectedSearchLeagueIds.length === 0) return 'Todas las ligas';
+    if (this.selectedSearchLeagueIds.length === 1)
+      return this.studiedLeagues.find(l => l.id === this.selectedSearchLeagueIds[0])?.name ?? '1 liga';
+    return `${this.selectedSearchLeagueIds.length} ligas`;
+  }
+
+  get canSearch(): boolean {
+    return this.teamName.trim().length > 0 || this.selectedSearchLeagueIds.length > 0;
+  }
+
+  searchFixtures(): void {
+    if (!this.canSearch) return;
     this.isLoadingSearch = true;
     this.searchPerformed = false;
-    this.fixtureService.searchByTeam(this.teamName.trim()).subscribe(fixtures => {
-      this.fixtures = fixtures;
-      this.isLoadingSearch = false;
-      this.searchPerformed = true;
+    this.fixtureService.searchFixturesCombined(this.teamName, this.selectedSearchLeagueIds).subscribe({
+      next: fixtures => {
+        this.fixtures = fixtures;
+        this.isLoadingSearch = false;
+        this.searchPerformed = true;
+      },
+      error: () => {
+        this.fixtures = [];
+        this.isLoadingSearch = false;
+        this.searchPerformed = true;
+      }
     });
   }
 
-  searchByLeague(): void {
-    if (!this.selectedLeagueId) return;
-    this.isLoadingSearch = true;
-    this.searchPerformed = false;
-    this.fixtureService.searchByLeague(this.selectedLeagueId).subscribe(fixtures => {
-      this.fixtures = fixtures;
-      this.isLoadingSearch = false;
-      this.searchPerformed = true;
-    });
+  // ── Navigation ─────────────────────────────────────────────────────────────
+  navigateToFixture(fixtureId: number, source?: string): void {
+    const queryParams = source ? { source } : {};
+    this.router.navigate(['/fixture', fixtureId], { queryParams });
   }
 
-  // ── Shared display helpers ─────────────────────────────────────────────────
+  // ── Display helpers ────────────────────────────────────────────────────────
   statusLabel(statusShort: string, statusElapsed: number | null, statusLong: string): string {
     if (statusShort === '1H' || statusShort === '2H' || statusShort === 'ET')
       return `${statusElapsed ?? 0}'`;

@@ -14,6 +14,7 @@ import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tra
 import { RegisterComponent } from './features/register/register.component';
 import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
 import { FixtureDetailComponent } from './fixture-detail/fixture-detail.component';
+import { PlayerNotFoundComponent } from './player-not-found/player-not-found.component';
 
 const appRoutes : Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -31,6 +32,7 @@ const appRoutes : Routes = [
   { path: 'updateTrackedPlayer', component: UpdateTrackedPlayerComponent },
   { path: 'searchFixtures', component: SearchFixturesComponent, canActivate: [AuthGuard] },
   { path: 'fixture/:id', component: FixtureDetailComponent, canActivate: [AuthGuard] },
+  { path: 'player-not-found', component: PlayerNotFoundComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '' }
 ]
 

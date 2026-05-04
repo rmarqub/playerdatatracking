@@ -9,7 +9,9 @@ import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.entities.indexaldata.FixtureEvent;
 import com.playerdatatracking.entities.indexaldata.Torneo;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureById;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureEventsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixtures;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixturesFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetStudiedLeagues;
@@ -36,6 +38,10 @@ public class FixtureController {
     private IngestFixtures operationIngestFixtures;
     @Autowired
     private IngestFixtureEvents operationIngestFixtureEvents;
+    @Autowired
+    private GetFixtureById operationGetFixtureById;
+    @Autowired
+    private GetFixtureEventsByFixtureId operationGetFixtureEventsByFixtureId;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -102,6 +108,30 @@ public class FixtureController {
         GenericResponse<FixtureEvent> response = new GenericResponse<>();
         try {
             response = operationIngestFixtureEvents.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureById")
+    public GenericResponse<Fixture> getFixtureById(@RequestBody GenericRequest request) {
+        GenericResponse<Fixture> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureById.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureEvents")
+    public GenericResponse<FixtureEvent> getFixtureEvents(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureEvent> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureEventsByFixtureId.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

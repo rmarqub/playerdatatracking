@@ -160,7 +160,18 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
-	@Transactional 
+	@Transactional
+	public Long getPlayerIdByIndexId(Long indexId) throws PlayerDataDBException {
+		try {
+			return pRepository.findFirstByIndexIdOrderByIdDesc(indexId)
+					.map(Player::getId)
+					.orElse(null);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
 	public List<IndexTeamPair> getDuppedPlayersWithDiffTeam() throws PlayerDataDBException{
 		try {
 			List<IndexTeamPair> l = pRepository.findIndexIdTeamPairsWithCrossTeamDuplicates();
@@ -642,6 +653,60 @@ public class PlayerDataClient {
 	public List<Fixture> searchFixturesByLeague(Integer leagueId) throws PlayerDataDBException {
 		try {
 			return fixtureRepository.findByLeagueIdOrderByMatchDateDesc(leagueId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Club> findClubsByNameContaining(String name) throws PlayerDataDBException {
+		try {
+			return clubRepository.findByNombreContainingIgnoreCase(name);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> searchFixturesByTeamIds(List<Long> teamIds) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findByTeamIds(teamIds);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> searchFixturesByTeamIdsAndLeagueIds(List<Long> teamIds, List<Integer> leagueIds) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findByTeamIdsAndLeagueIds(teamIds, leagueIds);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> searchFixturesByLeagueIds(List<Integer> leagueIds) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findByLeagueIds(leagueIds);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public Fixture getFixtureById(Long id) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findById(id).orElse(null);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<FixtureEvent> getFixtureEventsByFixtureId(Long fixtureId) throws PlayerDataDBException {
+		try {
+			return fixtureEventRepository.findByFixtureIdOrderByTimeElapsedAsc(fixtureId);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}

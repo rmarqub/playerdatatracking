@@ -299,14 +299,9 @@
 .search-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.search-group {
-  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 .search-input {
@@ -359,7 +354,7 @@
   border-bottom: 1px solid #a5a5a5;
 }
 
-.fixture-row { background-color: #d5d5d5; }
+.fixture-row { background-color: #d5d5d5; cursor: pointer; }
 .fixture-row:nth-child(even) { background-color: #e3e3e3; }
 .fixture-row:hover { background-color: #e2ca87; transition: background-color 0.2s ease; }
 .live-row { background-color: #fff3e0 !important; }

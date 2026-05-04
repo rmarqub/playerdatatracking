@@ -1,19 +1,21 @@
 package com.playerdatatracking.entities.indexaldata;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "fixture_event")
 public class FixtureEvent {
 
-	
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "fixture_event_seq")
     @SequenceGenerator(name = "fixture_event_seq", sequenceName = "fixture_event_id_seq", allocationSize = 1)
     @Column(name = "id")
     private Long id;
- 
+
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "fixture_id", nullable = false)
     private Fixture fixture;

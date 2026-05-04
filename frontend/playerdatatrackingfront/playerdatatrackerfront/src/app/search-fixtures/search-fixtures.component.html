@@ -52,10 +52,10 @@
       <div
         class="live-card"
         *ngFor="let f of filteredLiveFixtures"
-        (click)="navigateToFixture(f.fixture.id)"
+        (click)="navigateToFixture(f.fixture.id, 'api')"
         role="button"
         tabindex="0"
-        (keyup.enter)="navigateToFixture(f.fixture.id)">
+        (keyup.enter)="navigateToFixture(f.fixture.id, 'api')">
 
         <div class="live-card-league">
           <img *ngIf="f.league.logo" [src]="f.league.logo" class="league-logo" alt="" (error)="$any($event.target).style.display='none'">
@@ -102,24 +102,38 @@
   <!-- Buscador de Partidos (base de datos local) -->
   <div class="panel">
     <div class="panel-header">
-      <h2 class="panel-title">Buscar Partidos en Base de Datos</h2>
+      <h2 class="panel-title">Buscar Partidos</h2>
     </div>
+
     <div class="search-controls">
-      <div class="search-group">
-        <input type="text" class="search-input" placeholder="Nombre del equipo" [(ngModel)]="teamName" (keyup.enter)="searchByTeam()">
-        <button class="action-button search-button" (click)="searchByTeam()" [disabled]="isLoadingSearch || !teamName.trim()">
-          Buscar por Equipo
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Equipo (ej: Liv, Man, Bar...)"
+        [(ngModel)]="teamName"
+        (keyup.enter)="searchFixtures()">
+
+      <div class="filter-dropdown-wrap">
+        <button
+          class="filter-btn"
+          [class.filter-btn-active]="selectedSearchLeagueIds.length > 0"
+          (click)="toggleSearchLeaguesDropdown()">
+          {{ searchLeaguesLabel }} <span class="filter-chevron">&#9660;</span>
         </button>
+        <div class="filter-dropdown" *ngIf="searchLeaguesDropdownOpen">
+          <label class="filter-option" *ngFor="let l of studiedLeagues">
+            <input type="checkbox" [checked]="selectedSearchLeagueIds.includes(l.id)" (change)="toggleSearchLeague(l.id)">
+            {{ l.name }}
+          </label>
+        </div>
       </div>
-      <div class="search-group">
-        <select class="search-select" [(ngModel)]="selectedLeagueId">
-          <option [ngValue]="null" disabled>Seleccionar liga...</option>
-          <option *ngFor="let league of studiedLeagues" [ngValue]="league.id">{{ league.name }}</option>
-        </select>
-        <button class="action-button search-button" (click)="searchByLeague()" [disabled]="isLoadingSearch || !selectedLeagueId">
-          Buscar por Liga
-        </button>
-      </div>
+
+      <button
+        class="action-button search-button"
+        (click)="searchFixtures()"
+        [disabled]="isLoadingSearch || !canSearch">
+        {{ isLoadingSearch ? 'Buscando...' : 'Buscar' }}
+      </button>
     </div>
 
     <div class="fixtures-table-container" *ngIf="fixtures.length > 0">
@@ -136,7 +150,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let f of fixtures" class="fixture-row" [class.live-row]="isLive(f)">
+          <tr
+            *ngFor="let f of fixtures"
+            class="fixture-row"
+            [class.live-row]="isLive(f)"
+            (click)="navigateToFixture(f.id)"
+            title="Ver eventos del partido">
             <td>{{ f.leagueName }}</td>
             <td>{{ f.round }}</td>
             <td>{{ formatDate(f.matchDate) }}</td>
@@ -152,6 +171,7 @@
         </tbody>
       </table>
     </div>
+
     <p class="empty-msg" *ngIf="searchPerformed && fixtures.length === 0">
       No se encontraron partidos con los criterios indicados.
     </p>
