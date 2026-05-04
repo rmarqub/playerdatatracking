@@ -29,6 +29,8 @@ import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
 import com.playerdatatracking.repositories.indexaldata.ClubRepository;
 import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.DuppedPlayerRepository;
+import com.playerdatatracking.entities.indexaldata.FixtureEvent;
+import com.playerdatatracking.repositories.indexaldata.FixtureEventRepository;
 import com.playerdatatracking.repositories.indexaldata.FixtureRepository;
 import com.playerdatatracking.repositories.indexaldata.MANUAL_TRACKED_PLAYERRepository;
 import com.playerdatatracking.repositories.indexaldata.PLAYER_QUALITIESRepository;
@@ -77,6 +79,8 @@ public class PlayerDataClient {
 	private PlayerStatsRepository psRepository;
 	@Autowired
 	private FixtureRepository fixtureRepository;
+	@Autowired
+	private FixtureEventRepository fixtureEventRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -554,6 +558,81 @@ public class PlayerDataClient {
 	public List<Fixture> searchFixturesByTeam(String teamName) throws PlayerDataDBException {
 		try {
 			return fixtureRepository.findByTeamNameContaining(teamName);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public Fixture saveFixture(Fixture f) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.save(f);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Fixture> saveAllFixtures(List<Fixture> fixtures) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.saveAll(fixtures);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void deleteFixturesByLeagueAndSeason(Integer leagueId, Integer season) throws PlayerDataDBException {
+		try {
+			fixtureRepository.deleteByLeagueIdAndSeason(leagueId, season);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Long> getAllFixtureIds() throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findAllIds();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Long> getFixtureIdsWithoutEvents() throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findIdsWithoutEvents();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void saveAllFixtureEvents(Long fixtureId, List<FixtureEvent> events) throws PlayerDataDBException {
+		try {
+			Fixture fixtureRef = fixtureRepository.getReferenceById(fixtureId);
+			for (FixtureEvent event : events)
+				event.setFixture(fixtureRef);
+			fixtureEventRepository.saveAll(events);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void deleteEventsByFixtureId(Long fixtureId) throws PlayerDataDBException {
+		try {
+			fixtureEventRepository.deleteByFixtureId(fixtureId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public boolean hasFixtureEvents(Long fixtureId) throws PlayerDataDBException {
+		try {
+			return fixtureEventRepository.existsByFixtureId(fixtureId);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}

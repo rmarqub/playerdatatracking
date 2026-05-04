@@ -1,9 +1,11 @@
 package com.playerdatatracking.repositories.indexaldata;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import jakarta.transaction.Transactional;
 
 import com.playerdatatracking.entities.indexaldata.Fixture;
 
@@ -73,4 +75,14 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
     List<Fixture> findByTeamNameContaining(@Param("teamName") String teamName);
 
     List<Fixture> findByLeagueIdOrderByMatchDateDesc(Integer leagueId);
+
+    @Transactional
+    @Modifying
+    void deleteByLeagueIdAndSeason(Integer leagueId, Integer season);
+
+    @Query("SELECT f.id FROM Fixture f ORDER BY f.id ASC")
+    List<Long> findAllIds();
+
+    @Query("SELECT f.id FROM Fixture f WHERE NOT EXISTS (SELECT 1 FROM FixtureEvent e WHERE e.fixture.id = f.id) ORDER BY f.id ASC")
+    List<Long> findIdsWithoutEvents();
 }

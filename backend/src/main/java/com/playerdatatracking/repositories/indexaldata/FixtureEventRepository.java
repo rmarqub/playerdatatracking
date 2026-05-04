@@ -35,4 +35,6 @@ public interface FixtureEventRepository extends JpaRepository<FixtureEvent, Long
     List<FixtureEvent> findCardsByPlayer(@Param("playerId") Long playerId);
  
     void deleteByFixtureId(Long fixtureId);
+
+    boolean existsByFixtureId(Long fixtureId);
 }

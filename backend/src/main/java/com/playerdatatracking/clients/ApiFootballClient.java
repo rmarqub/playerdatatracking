@@ -152,6 +152,32 @@ public class ApiFootballClient {
         return resp.body();
     }
 
+    public String getFixtureEventsRaw(String apikey, Long fixtureId) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures/events?fixture=" + fixtureId;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching events for fixture=" + fixtureId);
+        return resp.body();
+    }
+
+    public String getFixturesByLeagueAndSeasonRaw(String apikey, Long leagueId, Integer season) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures?league=" + leagueId + "&season=" + season;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching fixtures for league=" + leagueId + " season=" + season);
+        return resp.body();
+    }
+
     public String getFixtureByIdRaw(String apikey, Long fixtureId) throws Exception {
         String url = "https://v3.football.api-sports.io/fixtures?id=" + fixtureId;
         HttpRequest req = HttpRequest.newBuilder(URI.create(url))
