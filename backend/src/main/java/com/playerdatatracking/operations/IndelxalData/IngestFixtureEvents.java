@@ -1,7 +1,9 @@
 package com.playerdatatracking.operations.IndelxalData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,9 +14,12 @@ import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
+import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.FixtureEvent;
+import com.playerdatatracking.entities.indexaldata.Pais;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
+import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
@@ -49,6 +54,7 @@ public class IngestFixtureEvents {
 
         List<Long> idsToProcess = purge ? fixtureIds : pdClient.getFixtureIdsWithoutEvents();
 
+        Set<Long> ensuredClubs = new HashSet<>();
         int totalEvents = 0;
         int processed = 0;
         int total = idsToProcess.size();
@@ -75,6 +81,11 @@ public class IngestFixtureEvents {
 
             List<FixtureEvent> events = new ArrayList<>();
             for (JsonNode item : responseArray) {
+                Long teamId = longOrNull(item.path("team"), "id");
+                String teamName = textOrNull(item.path("team"), "name");
+                if (teamId != null)
+                    ensureClubExists(teamId, teamName, ensuredClubs);
+
                 FixtureEvent e = mapToEvent(item);
                 if (e != null) events.add(e);
             }
@@ -142,5 +153,18 @@ public class IngestFixtureEvents {
     private Long longOrNull(JsonNode node, String field) {
         JsonNode n = node.path(field);
         return (n.isMissingNode() || n.isNull()) ? null : n.asLong();
+    }
+
+    private void ensureClubExists(Long teamId, String teamName, Set<Long> ensuredClubs) throws PlayerDataDBException {
+        if (ensuredClubs.contains(teamId)) return;
+        if (pdClient.findClub(teamId) == null) {
+            Club club = new Club();
+            club.setId(teamId);
+            club.setNombre(teamName);
+            //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            club.setIdPais(0);
+            pdClient.saveClub(club);
+        }
+        ensuredClubs.add(teamId);
     }
 }
