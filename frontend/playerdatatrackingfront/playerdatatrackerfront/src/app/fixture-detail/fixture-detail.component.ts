@@ -11,6 +11,7 @@ import { FixtureService, Fixture, FixtureEvent, ApiFixtureItem } from '../servic
 export class FixtureDetailComponent implements OnInit {
   fixture: Fixture | null = null;
   events: FixtureEvent[] = [];
+  rawApiItem: ApiFixtureItem | null = null;
   isLoading: boolean = true;
   error: string = '';
   source: string = '';
@@ -33,6 +34,7 @@ export class FixtureDetailComponent implements OnInit {
       this.fixtureService.getFixtureDetailFromApi(id).subscribe({
         next: (item) => {
           if (item) {
+            this.rawApiItem = item;
             this.fixture = this.normalizeApiFixture(item);
             this.events = this.normalizeApiEvents(item);
           } else {
@@ -120,6 +122,41 @@ export class FixtureDetailComponent implements OnInit {
         this.router.navigate(['/player-not-found'], { queryParams: { name: playerName ?? '' } });
       }
     });
+  }
+
+  get homeStats(): any[] { return this.rawApiItem?.statistics?.[0]?.statistics ?? []; }
+  get awayStats(): any[] { return this.rawApiItem?.statistics?.[1]?.statistics ?? []; }
+  get statTypes(): string[] {
+    const all = [...this.homeStats, ...this.awayStats].map((s: any) => s.type);
+    return [...new Set(all)] as string[];
+  }
+
+  get homeLineup(): any | null {
+    if (!this.rawApiItem?.lineups?.length) return null;
+    const homeId = this.fixture?.homeTeamId;
+    return (this.rawApiItem.lineups as any[]).find(l => l.team?.id === homeId) ?? this.rawApiItem.lineups[0] ?? null;
+  }
+  get awayLineup(): any | null {
+    if (!this.rawApiItem?.lineups?.length) return null;
+    const awayId = this.fixture?.awayTeamId;
+    return (this.rawApiItem.lineups as any[]).find(l => l.team?.id === awayId) ?? this.rawApiItem.lineups[1] ?? null;
+  }
+
+  get homePlayers(): any[] {
+    if (!this.rawApiItem?.players?.length) return [];
+    const homeId = this.fixture?.homeTeamId;
+    const team = (this.rawApiItem.players as any[]).find(t => t.team?.id === homeId) ?? this.rawApiItem.players[0];
+    return team?.players ?? [];
+  }
+  get awayPlayers(): any[] {
+    if (!this.rawApiItem?.players?.length) return [];
+    const awayId = this.fixture?.awayTeamId;
+    const team = (this.rawApiItem.players as any[]).find(t => t.team?.id === awayId) ?? this.rawApiItem.players[1];
+    return team?.players ?? [];
+  }
+
+  getStatValue(stats: any[], type: string): string {
+    return stats.find((s: any) => s.type === type)?.value ?? '-';
   }
 
   goBack(): void {

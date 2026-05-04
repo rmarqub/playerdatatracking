@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -92,7 +93,22 @@ public class IngestFixtures {
                 leagueFixtures.add(f);
             }
 
-            pdClient.saveAllFixtures(leagueFixtures);
+            if (purge) {
+                pdClient.saveAllFixtures(leagueFixtures);
+            } else {
+                Set<Long> existingIds = new HashSet<>(pdClient.getExistingFixtureIds(leagueId, season));
+                List<Fixture> toInsert = leagueFixtures.stream()
+                    .filter(f -> !existingIds.contains(f.getId()))
+                    .collect(Collectors.toList());
+                List<Fixture> toUpdate = leagueFixtures.stream()
+                    .filter(f -> existingIds.contains(f.getId()))
+                    .collect(Collectors.toList());
+
+                if (!toInsert.isEmpty())
+                    pdClient.saveAllFixtures(toInsert);
+                for (Fixture f : toUpdate)
+                    pdClient.updateFixtureStatus(f);
+            }
             totalIngested += leagueFixtures.size();
         }
 

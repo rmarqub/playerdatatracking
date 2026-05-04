@@ -89,6 +89,46 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
     @Modifying
     void deleteByLeagueIdAndSeason(Integer leagueId, Integer season);
 
+    @Modifying
+    @Transactional
+    @Query("""
+        UPDATE Fixture f SET
+            f.statusShort    = :statusShort,
+            f.statusLong     = :statusLong,
+            f.statusElapsed  = :statusElapsed,
+            f.statusExtra    = :statusExtra,
+            f.goalsHome      = :goalsHome,
+            f.goalsAway      = :goalsAway,
+            f.scoreHtHome    = :scoreHtHome,
+            f.scoreHtAway    = :scoreHtAway,
+            f.scoreFtHome    = :scoreFtHome,
+            f.scoreFtAway    = :scoreFtAway,
+            f.scoreEtHome    = :scoreEtHome,
+            f.scoreEtAway    = :scoreEtAway,
+            f.scorePenHome   = :scorePenHome,
+            f.scorePenAway   = :scorePenAway,
+            f.referee        = :referee
+        WHERE f.id = :id
+        """)
+    void updateStatusAndScore(
+        @Param("id")           Long id,
+        @Param("statusShort")  String statusShort,
+        @Param("statusLong")   String statusLong,
+        @Param("statusElapsed") Integer statusElapsed,
+        @Param("statusExtra")  Integer statusExtra,
+        @Param("goalsHome")    Integer goalsHome,
+        @Param("goalsAway")    Integer goalsAway,
+        @Param("scoreHtHome")  Integer scoreHtHome,
+        @Param("scoreHtAway")  Integer scoreHtAway,
+        @Param("scoreFtHome")  Integer scoreFtHome,
+        @Param("scoreFtAway")  Integer scoreFtAway,
+        @Param("scoreEtHome")  Integer scoreEtHome,
+        @Param("scoreEtAway")  Integer scoreEtAway,
+        @Param("scorePenHome") Integer scorePenHome,
+        @Param("scorePenAway") Integer scorePenAway,
+        @Param("referee")      String referee
+    );
+
     @Query("SELECT f.id FROM Fixture f WHERE f.statusShort <> 'NS' ORDER BY f.id ASC")
     List<Long> findAllIds();
 

@@ -602,6 +602,33 @@ public class PlayerDataClient {
 	}
 
 	@Transactional
+	public List<Long> getExistingFixtureIds(Integer leagueId, Integer season) throws PlayerDataDBException {
+		try {
+			return fixtureRepository.findIdsByLeagueAndSeason(leagueId, season);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void updateFixtureStatus(Fixture f) throws PlayerDataDBException {
+		try {
+			fixtureRepository.updateStatusAndScore(
+				f.getId(),
+				f.getStatusShort(), f.getStatusLong(), f.getStatusElapsed(), f.getStatusExtra(),
+				f.getGoalsHome(), f.getGoalsAway(),
+				f.getScoreHtHome(), f.getScoreHtAway(),
+				f.getScoreFtHome(), f.getScoreFtAway(),
+				f.getScoreEtHome(), f.getScoreEtAway(),
+				f.getScorePenHome(), f.getScorePenAway(),
+				f.getReferee()
+			);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
 	public List<Long> getAllFixtureIds() throws PlayerDataDBException {
 		try {
 			return fixtureRepository.findAllIds();

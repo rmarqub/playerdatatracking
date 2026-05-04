@@ -112,5 +112,149 @@
       <p class="empty-msg">No hay eventos registrados para este partido.</p>
     </div>
 
+    <!-- Statistics -->
+    <div class="section-card" *ngIf="homeStats.length > 0">
+      <h3 class="section-title">Estadísticas</h3>
+      <div class="stats-header">
+        <div class="stats-team-name">
+          <img *ngIf="rawApiItem?.teams?.home?.logo" [src]="rawApiItem!.teams.home.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+          {{ fixture!.homeTeamName }}
+        </div>
+        <div></div>
+        <div class="stats-team-name">
+          {{ fixture!.awayTeamName }}
+          <img *ngIf="rawApiItem?.teams?.away?.logo" [src]="rawApiItem!.teams.away.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+        </div>
+      </div>
+      <div class="stat-row" *ngFor="let type of statTypes">
+        <div class="stat-value home-val">{{ getStatValue(homeStats, type) }}</div>
+        <div class="stat-label">{{ type }}</div>
+        <div class="stat-value away-val">{{ getStatValue(awayStats, type) }}</div>
+      </div>
+    </div>
+
+    <!-- Lineups -->
+    <div class="section-card lineups-section" *ngIf="homeLineup || awayLineup">
+      <h3 class="section-title">Alineaciones</h3>
+      <div class="lineups-grid">
+
+        <div class="lineup-team" *ngIf="homeLineup">
+          <div class="lineup-header">
+            <img *ngIf="homeLineup.team?.logo" [src]="homeLineup.team.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+            <span class="lineup-team-name">{{ fixture!.homeTeamName }}</span>
+            <span class="lineup-formation">{{ homeLineup.formation }}</span>
+          </div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of homeLineup.startXI">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.player?.id != null"
+              (click)="p.player?.id != null && navigateToPlayer(p.player.id, p.player.name)">
+              {{ p.player?.name }}
+            </span>
+          </div>
+          <div class="lineup-section-label" *ngIf="homeLineup.substitutes?.length">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of homeLineup.substitutes">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.player?.id != null"
+              (click)="p.player?.id != null && navigateToPlayer(p.player.id, p.player.name)">
+              {{ p.player?.name }}
+            </span>
+          </div>
+        </div>
+
+        <div class="lineup-team" *ngIf="awayLineup">
+          <div class="lineup-header">
+            <img *ngIf="awayLineup.team?.logo" [src]="awayLineup.team.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+            <span class="lineup-team-name">{{ fixture!.awayTeamName }}</span>
+            <span class="lineup-formation">{{ awayLineup.formation }}</span>
+          </div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of awayLineup.startXI">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.player?.id != null"
+              (click)="p.player?.id != null && navigateToPlayer(p.player.id, p.player.name)">
+              {{ p.player?.name }}
+            </span>
+          </div>
+          <div class="lineup-section-label" *ngIf="awayLineup.substitutes?.length">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of awayLineup.substitutes">
+            <span class="player-num">{{ p.player?.number }}</span>
+            <span class="player-pos">{{ p.player?.pos }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.player?.id != null"
+              (click)="p.player?.id != null && navigateToPlayer(p.player.id, p.player.name)">
+              {{ p.player?.name }}
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Player ratings -->
+    <div class="section-card" *ngIf="homePlayers.length > 0 || awayPlayers.length > 0">
+      <h3 class="section-title">Estadísticas de Jugadores</h3>
+
+      <ng-container *ngFor="let teamData of [
+        { team: rawApiItem?.teams?.home, players: homePlayers },
+        { team: rawApiItem?.teams?.away, players: awayPlayers }
+      ]">
+        <div class="players-team-header" *ngIf="teamData.players.length > 0">
+          <img *ngIf="teamData.team?.logo" [src]="teamData.team!.logo" class="stats-logo" alt="" (error)="$any($event.target).style.display='none'">
+          <span>{{ teamData.team?.name }}</span>
+        </div>
+        <div class="players-table-wrap" *ngIf="teamData.players.length > 0">
+          <table class="players-table">
+            <thead>
+              <tr>
+                <th>Jugador</th>
+                <th>Pos</th>
+                <th>Min</th>
+                <th>Rating</th>
+                <th>Goles</th>
+                <th>Asist.</th>
+                <th>Tiros</th>
+                <th>Pases</th>
+                <th>Ent.</th>
+                <th>Faltas</th>
+                <th>Tarj.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of teamData.players" [class.substitute-row]="p.statistics?.[0]?.games?.substitute">
+                <td class="player-name-cell"
+                  [class.player-link]="p.player?.id != null"
+                  (click)="p.player?.id != null && navigateToPlayer(p.player.id, p.player.name)">
+                  {{ p.player?.name }}
+                </td>
+                <td>{{ p.statistics?.[0]?.games?.position ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.games?.minutes ?? '-' }}</td>
+                <td class="rating-cell" [class.high-rating]="p.statistics?.[0]?.games?.rating >= 7">
+                  {{ p.statistics?.[0]?.games?.rating ?? '-' }}
+                </td>
+                <td>{{ p.statistics?.[0]?.goals?.total ?? 0 }}</td>
+                <td>{{ p.statistics?.[0]?.goals?.assists ?? 0 }}</td>
+                <td>{{ p.statistics?.[0]?.shots?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.passes?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.tackles?.total ?? '-' }}</td>
+                <td>{{ p.statistics?.[0]?.fouls?.committed ?? '-' }}</td>
+                <td>
+                  <span class="card-dot yellow" *ngIf="p.statistics?.[0]?.cards?.yellow > 0"></span>
+                  <span class="card-dot red" *ngIf="p.statistics?.[0]?.cards?.red > 0"></span>
+                  <span *ngIf="!p.statistics?.[0]?.cards?.yellow && !p.statistics?.[0]?.cards?.red">-</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-container>
+    </div>
+
   </ng-container>
 </div>
