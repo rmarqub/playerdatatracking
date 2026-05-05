@@ -100,9 +100,21 @@ public class Fixture {
     @Column(name = "score_pen_away")
     private Integer scorePenAway;
  
+    @Column(name = "eventsStored")
+    private Boolean eventsStored;
+
+    @Column(name = "matchStored")
+    private Boolean matchStored;
+
+    @Column(name = "lineupStored")
+    private Boolean lineupStored;
+
+    @Column(name = "statsStored")
+    private Boolean statsStored;
+
     @Column(name = "ingested_at", updatable = false)
     private OffsetDateTime ingestedAt;
- 
+
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
  
@@ -117,7 +129,11 @@ public class Fixture {
     @JsonIgnore
     @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<FixturePlayerStats> playerStats = new ArrayList<>();
-    
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<FixtureLineup> lineups = new ArrayList<>();
+
     @PrePersist
     protected void onCreate() {
         this.ingestedAt = OffsetDateTime.now();
@@ -400,5 +416,45 @@ public class Fixture {
 	public void setPlayerStats(List<FixturePlayerStats> playerStats) {
 		this.playerStats = playerStats;
 	}
-	
+
+	public Boolean getEventsStored() {
+		return eventsStored;
+	}
+
+	public void setEventsStored(Boolean eventsStored) {
+		this.eventsStored = eventsStored;
+	}
+
+	public Boolean getMatchStored() {
+		return matchStored;
+	}
+
+	public void setMatchStored(Boolean matchStored) {
+		this.matchStored = matchStored;
+	}
+
+	public Boolean getLineupStored() {
+		return lineupStored;
+	}
+
+	public void setLineupStored(Boolean lineupStored) {
+		this.lineupStored = lineupStored;
+	}
+
+	public Boolean getStatsStored() {
+		return statsStored;
+	}
+
+	public void setStatsStored(Boolean statsStored) {
+		this.statsStored = statsStored;
+	}
+
+	public List<FixtureLineup> getLineups() {
+		return lineups;
+	}
+
+	public void setLineups(List<FixtureLineup> lineups) {
+		this.lineups = lineups;
+	}
+
 }

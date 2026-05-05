@@ -132,6 +132,35 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
     @Query("SELECT f.id FROM Fixture f WHERE f.statusShort <> 'NS' ORDER BY f.id ASC")
     List<Long> findAllIds();
 
-    @Query("SELECT f.id FROM Fixture f WHERE NOT EXISTS (SELECT 1 FROM FixtureEvent e WHERE e.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
+    @Query("SELECT f.id FROM Fixture f WHERE (f.eventsStored IS NULL OR f.eventsStored = false) AND NOT EXISTS (SELECT 1 FROM FixtureEvent e WHERE e.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
     List<Long> findIdsWithoutEvents();
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Fixture f SET f.eventsStored = true WHERE f.id = :id")
+    void markEventsStored(@Param("id") Long id);
+
+    @Query("SELECT f.id FROM Fixture f WHERE (f.matchStored IS NULL OR f.matchStored = false) AND NOT EXISTS (SELECT 1 FROM FixtureTeamStats s WHERE s.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
+    List<Long> findIdsWithoutTeamStats();
+
+    @Query("SELECT f.id FROM Fixture f WHERE (f.statsStored IS NULL OR f.statsStored = false) AND NOT EXISTS (SELECT 1 FROM FixturePlayerStats s WHERE s.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
+    List<Long> findIdsWithoutPlayerStats();
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Fixture f SET f.matchStored = true WHERE f.id = :id")
+    void markMatchStored(@Param("id") Long id);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Fixture f SET f.statsStored = true WHERE f.id = :id")
+    void markStatsStored(@Param("id") Long id);
+
+    @Query("SELECT f.id FROM Fixture f WHERE (f.lineupStored IS NULL OR f.lineupStored = false) AND NOT EXISTS (SELECT 1 FROM FixtureLineup l WHERE l.fixture.id = f.id) AND f.statusShort <> 'NS' ORDER BY f.id ASC")
+    List<Long> findIdsWithoutLineups();
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Fixture f SET f.lineupStored = true WHERE f.id = :id")
+    void markLineupStored(@Param("id") Long id);
 }

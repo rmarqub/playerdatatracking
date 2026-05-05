@@ -72,4 +72,44 @@ public class FixtureTeamStats {
     @Column(name = "goals_prevented", precision = 5, scale = 2)
     private BigDecimal goalsPrevented;
 
+    public Fixture getFixture() { return fixture; }
+    public void setFixture(Fixture fixture) { this.fixture = fixture; }
+    public Long getTeamId() { return teamId; }
+    public void setTeamId(Long teamId) { this.teamId = teamId; }
+    public Integer getShotsOnGoal() { return shotsOnGoal; }
+    public void setShotsOnGoal(Integer shotsOnGoal) { this.shotsOnGoal = shotsOnGoal; }
+    public Integer getShotsOffGoal() { return shotsOffGoal; }
+    public void setShotsOffGoal(Integer shotsOffGoal) { this.shotsOffGoal = shotsOffGoal; }
+    public Integer getShotsTotal() { return shotsTotal; }
+    public void setShotsTotal(Integer shotsTotal) { this.shotsTotal = shotsTotal; }
+    public Integer getShotsBlocked() { return shotsBlocked; }
+    public void setShotsBlocked(Integer shotsBlocked) { this.shotsBlocked = shotsBlocked; }
+    public Integer getShotsInsideBox() { return shotsInsideBox; }
+    public void setShotsInsideBox(Integer shotsInsideBox) { this.shotsInsideBox = shotsInsideBox; }
+    public Integer getShotsOutsideBox() { return shotsOutsideBox; }
+    public void setShotsOutsideBox(Integer shotsOutsideBox) { this.shotsOutsideBox = shotsOutsideBox; }
+    public Integer getFouls() { return fouls; }
+    public void setFouls(Integer fouls) { this.fouls = fouls; }
+    public Integer getCornerKicks() { return cornerKicks; }
+    public void setCornerKicks(Integer cornerKicks) { this.cornerKicks = cornerKicks; }
+    public Integer getOffsides() { return offsides; }
+    public void setOffsides(Integer offsides) { this.offsides = offsides; }
+    public BigDecimal getBallPossession() { return ballPossession; }
+    public void setBallPossession(BigDecimal ballPossession) { this.ballPossession = ballPossession; }
+    public Integer getYellowCards() { return yellowCards; }
+    public void setYellowCards(Integer yellowCards) { this.yellowCards = yellowCards; }
+    public Integer getRedCards() { return redCards; }
+    public void setRedCards(Integer redCards) { this.redCards = redCards; }
+    public Integer getGoalkeeperSaves() { return goalkeeperSaves; }
+    public void setGoalkeeperSaves(Integer goalkeeperSaves) { this.goalkeeperSaves = goalkeeperSaves; }
+    public Integer getTotalPasses() { return totalPasses; }
+    public void setTotalPasses(Integer totalPasses) { this.totalPasses = totalPasses; }
+    public Integer getPassesAccurate() { return passesAccurate; }
+    public void setPassesAccurate(Integer passesAccurate) { this.passesAccurate = passesAccurate; }
+    public BigDecimal getPassesPct() { return passesPct; }
+    public void setPassesPct(BigDecimal passesPct) { this.passesPct = passesPct; }
+    public BigDecimal getExpectedGoals() { return expectedGoals; }
+    public void setExpectedGoals(BigDecimal expectedGoals) { this.expectedGoals = expectedGoals; }
+    public BigDecimal getGoalsPrevented() { return goalsPrevented; }
+    public void setGoalsPrevented(BigDecimal goalsPrevented) { this.goalsPrevented = goalsPrevented; }
 }

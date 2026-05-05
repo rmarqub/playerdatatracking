@@ -178,6 +178,45 @@ public class ApiFootballClient {
         return resp.body();
     }
 
+    public String getFixtureLineupsRaw(String apikey, Long fixtureId) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures/lineups?fixture=" + fixtureId;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching lineups for fixture=" + fixtureId);
+        return resp.body();
+    }
+
+    public String getFixtureTeamStatsRaw(String apikey, Long fixtureId) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures/statistics?fixture=" + fixtureId;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching team stats for fixture=" + fixtureId);
+        return resp.body();
+    }
+
+    public String getFixturePlayerStatsRaw(String apikey, Long fixtureId) throws Exception {
+        String url = "https://v3.football.api-sports.io/fixtures/players?fixture=" + fixtureId;
+        HttpRequest req = HttpRequest.newBuilder(URI.create(url))
+                .GET()
+                .header("Accept", "application/json")
+                .header("x-apisports-key", apikey)
+                .build();
+        HttpResponse<String> resp = HTTP.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+        if (resp.statusCode() != 200)
+            throw new ApiFootballRequestException("[" + resp.statusCode() + "] API error fetching player stats for fixture=" + fixtureId);
+        return resp.body();
+    }
+
     public String getFixtureByIdRaw(String apikey, Long fixtureId) throws Exception {
         String url = "https://v3.football.api-sports.io/fixtures?id=" + fixtureId;
         HttpRequest req = HttpRequest.newBuilder(URI.create(url))

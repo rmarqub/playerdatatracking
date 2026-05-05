@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.entities.indexaldata.FixtureEvent;
+import com.playerdatatracking.entities.indexaldata.FixtureTeamStats;
+import com.playerdatatracking.entities.indexaldata.FixturePlayerStats;
+import com.playerdatatracking.entities.indexaldata.FixtureLineup;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureById;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
@@ -16,6 +19,9 @@ import com.playerdatatracking.operations.IndelxalData.GetLiveFixtures;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixturesFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetStudiedLeagues;
 import com.playerdatatracking.operations.IndelxalData.IngestFixtureEvents;
+import com.playerdatatracking.operations.IndelxalData.IngestFixtureTeamStats;
+import com.playerdatatracking.operations.IndelxalData.IngestFixturePlayerStats;
+import com.playerdatatracking.operations.IndelxalData.IngestFixtureLineup;
 import com.playerdatatracking.operations.IndelxalData.IngestFixtures;
 import com.playerdatatracking.operations.IndelxalData.SearchFixtures;
 import com.playerdatatracking.requests.GenericRequest;
@@ -38,6 +44,12 @@ public class FixtureController {
     private IngestFixtures operationIngestFixtures;
     @Autowired
     private IngestFixtureEvents operationIngestFixtureEvents;
+    @Autowired
+    private IngestFixtureTeamStats operationIngestFixtureTeamStats;
+    @Autowired
+    private IngestFixturePlayerStats operationIngestFixturePlayerStats;
+    @Autowired
+    private IngestFixtureLineup operationIngestFixtureLineup;
     @Autowired
     private GetFixtureById operationGetFixtureById;
     @Autowired
@@ -108,6 +120,42 @@ public class FixtureController {
         GenericResponse<FixtureEvent> response = new GenericResponse<>();
         try {
             response = operationIngestFixtureEvents.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/ingestFixtureTeamStats")
+    public GenericResponse<FixtureTeamStats> ingestFixtureTeamStats(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureTeamStats> response = new GenericResponse<>();
+        try {
+            response = operationIngestFixtureTeamStats.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/ingestFixturePlayerStats")
+    public GenericResponse<FixturePlayerStats> ingestFixturePlayerStats(@RequestBody GenericRequest request) {
+        GenericResponse<FixturePlayerStats> response = new GenericResponse<>();
+        try {
+            response = operationIngestFixturePlayerStats.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/ingestFixtureLineup")
+    public GenericResponse<FixtureLineup> ingestFixtureLineup(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureLineup> response = new GenericResponse<>();
+        try {
+            response = operationIngestFixtureLineup.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

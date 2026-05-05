@@ -30,6 +30,9 @@ public class SecurityConfig {
     			.requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestRawData").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtureEvents").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/ingestFixturePlayerStats").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/ingestFixtureLineup").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/ingestFixtureTeamStats").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtures").permitAll()
     			.requestMatchers(HttpMethod.POST, "/updateTransferedPlayers").permitAll()//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     			.requestMatchers(HttpMethod.POST, "/updatePlayerBySquads").permitAll()//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
