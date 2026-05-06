@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
-import { FixtureService, Fixture, FixtureEvent, ApiFixtureItem } from '../services/fixture.service';
+import {
+  FixtureService, Fixture, FixtureEvent, ApiFixtureItem,
+  FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry
+} from '../services/fixture.service';
 
 @Component({
   selector: 'app-fixture-detail',
@@ -15,6 +18,10 @@ export class FixtureDetailComponent implements OnInit {
   isLoading: boolean = true;
   error: string = '';
   source: string = '';
+
+  dbTeamStats: FixtureTeamStats[] = [];
+  dbPlayerStats: FixturePlayerStats[] = [];
+  dbLineupEntries: FixtureLineupEntry[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -50,11 +57,17 @@ export class FixtureDetailComponent implements OnInit {
     } else {
       forkJoin({
         fixture: this.fixtureService.getFixtureById(id),
-        events: this.fixtureService.getFixtureEventsFromDb(id)
+        events: this.fixtureService.getFixtureEventsFromDb(id),
+        teamStats: this.fixtureService.getFixtureTeamStats(id),
+        playerStats: this.fixtureService.getFixturePlayerStats(id),
+        lineup: this.fixtureService.getFixtureLineup(id)
       }).subscribe({
-        next: ({ fixture, events }) => {
+        next: ({ fixture, events, teamStats, playerStats, lineup }) => {
           this.fixture = fixture;
           this.events = events.sort((a, b) => (a.timeElapsed ?? 0) - (b.timeElapsed ?? 0));
+          this.dbTeamStats = teamStats;
+          this.dbPlayerStats = playerStats;
+          this.dbLineupEntries = lineup;
           this.isLoading = false;
           if (!fixture) this.error = 'No se encontraron datos para este partido.';
         },
@@ -124,6 +137,8 @@ export class FixtureDetailComponent implements OnInit {
     });
   }
 
+  // ── API mode getters ──────────────────────────────────────────────────────
+
   get homeStats(): any[] { return this.rawApiItem?.statistics?.[0]?.statistics ?? []; }
   get awayStats(): any[] { return this.rawApiItem?.statistics?.[1]?.statistics ?? []; }
   get statTypes(): string[] {
@@ -158,6 +173,118 @@ export class FixtureDetailComponent implements OnInit {
   getStatValue(stats: any[], type: string): string {
     return stats.find((s: any) => s.type === type)?.value ?? '-';
   }
+
+  // ── DB mode: team stats ───────────────────────────────────────────────────
+
+  get dbHomeTeamStats(): FixtureTeamStats | null {
+    return this.dbTeamStats.find(s => s.teamId === this.fixture?.homeTeamId) ?? null;
+  }
+  get dbAwayTeamStats(): FixtureTeamStats | null {
+    return this.dbTeamStats.find(s => s.teamId === this.fixture?.awayTeamId) ?? null;
+  }
+
+  get teamStatRows(): Array<{ label: string; homeVal: number | null; awayVal: number | null }> {
+    const h = this.dbHomeTeamStats;
+    const a = this.dbAwayTeamStats;
+    if (!h && !a) return [];
+    return [
+      { label: 'Posesión (%)',             homeVal: h?.ballPossession   ?? null, awayVal: a?.ballPossession   ?? null },
+      { label: 'Tiros a puerta',            homeVal: h?.shotsOnGoal      ?? null, awayVal: a?.shotsOnGoal      ?? null },
+      { label: 'Tiros fuera',               homeVal: h?.shotsOffGoal     ?? null, awayVal: a?.shotsOffGoal     ?? null },
+      { label: 'Tiros totales',             homeVal: h?.shotsTotal       ?? null, awayVal: a?.shotsTotal       ?? null },
+      { label: 'Tiros bloqueados',          homeVal: h?.shotsBlocked     ?? null, awayVal: a?.shotsBlocked     ?? null },
+      { label: 'Tiros dentro del área',     homeVal: h?.shotsInsideBox   ?? null, awayVal: a?.shotsInsideBox   ?? null },
+      { label: 'Tiros fuera del área',      homeVal: h?.shotsOutsideBox  ?? null, awayVal: a?.shotsOutsideBox  ?? null },
+      { label: 'Córners',                   homeVal: h?.cornerKicks      ?? null, awayVal: a?.cornerKicks      ?? null },
+      { label: 'Fueras de juego',           homeVal: h?.offsides         ?? null, awayVal: a?.offsides         ?? null },
+      { label: 'Faltas',                    homeVal: h?.fouls            ?? null, awayVal: a?.fouls            ?? null },
+      { label: 'Tarjetas amarillas',        homeVal: h?.yellowCards      ?? null, awayVal: a?.yellowCards      ?? null },
+      { label: 'Tarjetas rojas',            homeVal: h?.redCards         ?? null, awayVal: a?.redCards         ?? null },
+      { label: 'Paradas portero',           homeVal: h?.goalkeeperSaves  ?? null, awayVal: a?.goalkeeperSaves  ?? null },
+      { label: 'Pases totales',             homeVal: h?.totalPasses      ?? null, awayVal: a?.totalPasses      ?? null },
+      { label: 'Pases precisos',            homeVal: h?.passesAccurate   ?? null, awayVal: a?.passesAccurate   ?? null },
+      { label: 'Precisión pases (%)',       homeVal: h?.passesPct        ?? null, awayVal: a?.passesPct        ?? null },
+      { label: 'Goles esperados (xG)',      homeVal: h?.expectedGoals    ?? null, awayVal: a?.expectedGoals    ?? null },
+      { label: 'Goles evitados',            homeVal: h?.goalsPrevented   ?? null, awayVal: a?.goalsPrevented   ?? null },
+    ];
+  }
+
+  getBarPct(homeVal: number | null, awayVal: number | null, side: 'home' | 'away'): string {
+    const h = homeVal != null ? Number(homeVal) : 0;
+    const a = awayVal != null ? Number(awayVal) : 0;
+    const total = h + a;
+    if (total === 0) return '50%';
+    return side === 'home'
+      ? `${(h / total * 100).toFixed(0)}%`
+      : `${(a / total * 100).toFixed(0)}%`;
+  }
+
+  // ── DB mode: lineup ───────────────────────────────────────────────────────
+
+  get dbHomeLineupStarters(): FixtureLineupEntry[] {
+    return this.dbLineupEntries.filter(l => l.teamId === this.fixture?.homeTeamId && !l.substitute && l.playerId != null);
+  }
+  get dbHomeLineupSubs(): FixtureLineupEntry[] {
+    return this.dbLineupEntries.filter(l => l.teamId === this.fixture?.homeTeamId && l.substitute && l.playerId != null);
+  }
+  get dbAwayLineupStarters(): FixtureLineupEntry[] {
+    return this.dbLineupEntries.filter(l => l.teamId === this.fixture?.awayTeamId && !l.substitute && l.playerId != null);
+  }
+  get dbAwayLineupSubs(): FixtureLineupEntry[] {
+    return this.dbLineupEntries.filter(l => l.teamId === this.fixture?.awayTeamId && l.substitute && l.playerId != null);
+  }
+  get dbHomeFormation(): string | null {
+    return this.dbLineupEntries.find(l => l.teamId === this.fixture?.homeTeamId && l.formation)?.formation ?? null;
+  }
+  get dbAwayFormation(): string | null {
+    return this.dbLineupEntries.find(l => l.teamId === this.fixture?.awayTeamId && l.formation)?.formation ?? null;
+  }
+  get dbHomeCoach(): string | null {
+    return this.dbLineupEntries.find(l => l.teamId === this.fixture?.homeTeamId && l.coachName)?.coachName ?? null;
+  }
+  get dbAwayCoach(): string | null {
+    return this.dbLineupEntries.find(l => l.teamId === this.fixture?.awayTeamId && l.coachName)?.coachName ?? null;
+  }
+
+  getRatingForPlayer(playerId: number | null): string {
+    if (playerId == null) return '-';
+    const ps = this.dbPlayerStats.find(s => s.playerId === playerId);
+    return ps?.rating != null ? String(ps.rating) : '-';
+  }
+
+  isHighRating(playerId: number | null): boolean {
+    if (playerId == null) return false;
+    const ps = this.dbPlayerStats.find(s => s.playerId === playerId);
+    return ps?.rating != null && Number(ps.rating) >= 7;
+  }
+
+  // ── DB mode: player stats table ───────────────────────────────────────────
+
+  get dbHomePlayerStats(): FixturePlayerStats[] {
+    return this.dbPlayerStats
+      .filter(s => s.teamId === this.fixture?.homeTeamId)
+      .sort((a, b) => {
+        if (!a.substitute && b.substitute) return -1;
+        if (a.substitute && !b.substitute) return 1;
+        return (b.minutesPlayed ?? 0) - (a.minutesPlayed ?? 0);
+      });
+  }
+  get dbAwayPlayerStats(): FixturePlayerStats[] {
+    return this.dbPlayerStats
+      .filter(s => s.teamId === this.fixture?.awayTeamId)
+      .sort((a, b) => {
+        if (!a.substitute && b.substitute) return -1;
+        if (a.substitute && !b.substitute) return 1;
+        return (b.minutesPlayed ?? 0) - (a.minutesPlayed ?? 0);
+      });
+  }
+
+  val(v: any): string {
+    if (v == null) return '-';
+    return String(v);
+  }
+
+  // ── Shared helpers ────────────────────────────────────────────────────────
 
   goBack(): void {
     this.router.navigate(['/searchFixtures']);

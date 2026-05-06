@@ -108,11 +108,11 @@
       </div>
     </div>
 
-    <div class="section-card" *ngIf="events.length === 0">
+    <div class="section-card" *ngIf="events.length === 0 && source !== 'api'">
       <p class="empty-msg">No hay eventos registrados para este partido.</p>
     </div>
 
-    <!-- Statistics -->
+    <!-- ── API: Statistics ─────────────────────────────────────────────────── -->
     <div class="section-card" *ngIf="homeStats.length > 0">
       <h3 class="section-title">Estadísticas</h3>
       <div class="stats-header">
@@ -133,7 +133,34 @@
       </div>
     </div>
 
-    <!-- Lineups -->
+    <!-- ── DB: Team Stats Chart ────────────────────────────────────────────── -->
+    <div class="section-card" *ngIf="teamStatRows.length > 0">
+      <h3 class="section-title">Estadísticas del Partido</h3>
+
+      <div class="ts-teams-header">
+        <span class="ts-team-name home">{{ fixture!.homeTeamName }}</span>
+        <span class="ts-teams-vs"></span>
+        <span class="ts-team-name away">{{ fixture!.awayTeamName }}</span>
+      </div>
+
+      <div class="ts-row" *ngFor="let row of teamStatRows">
+        <div class="ts-side home">
+          <span class="ts-val">{{ row.homeVal != null ? row.homeVal : '-' }}</span>
+          <div class="ts-track home">
+            <div class="ts-bar home" [style.width]="getBarPct(row.homeVal, row.awayVal, 'home')"></div>
+          </div>
+        </div>
+        <span class="ts-label">{{ row.label }}</span>
+        <div class="ts-side away">
+          <div class="ts-track away">
+            <div class="ts-bar away" [style.width]="getBarPct(row.homeVal, row.awayVal, 'away')"></div>
+          </div>
+          <span class="ts-val">{{ row.awayVal != null ? row.awayVal : '-' }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── API: Lineups ────────────────────────────────────────────────────── -->
     <div class="section-card lineups-section" *ngIf="homeLineup || awayLineup">
       <h3 class="section-title">Alineaciones</h3>
       <div class="lineups-grid">
@@ -197,7 +224,85 @@
       </div>
     </div>
 
-    <!-- Player ratings -->
+    <!-- ── DB: Lineup ──────────────────────────────────────────────────────── -->
+    <div class="section-card lineups-section" *ngIf="dbLineupEntries.length > 0">
+      <h3 class="section-title">Alineaciones</h3>
+      <div class="lineups-grid">
+
+        <!-- Home lineup -->
+        <div class="lineup-team">
+          <div class="lineup-header">
+            <span class="lineup-team-name">{{ fixture!.homeTeamName }}</span>
+            <span class="lineup-formation" *ngIf="dbHomeFormation">{{ dbHomeFormation }}</span>
+          </div>
+          <div class="lineup-coach" *ngIf="dbHomeCoach">DT: {{ dbHomeCoach }}</div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of dbHomeLineupStarters">
+            <span class="player-num">{{ p.playerNumber }}</span>
+            <span class="player-pos">{{ p.position }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.playerId != null"
+              (click)="p.playerId != null && navigateToPlayer(p.playerId, p.playerName)">
+              {{ p.playerName }}
+            </span>
+            <span class="lineup-rating" [class.high-rating]="isHighRating(p.playerId)">
+              {{ getRatingForPlayer(p.playerId) }}
+            </span>
+          </div>
+          <div class="lineup-section-label" *ngIf="dbHomeLineupSubs.length > 0">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of dbHomeLineupSubs">
+            <span class="player-num">{{ p.playerNumber }}</span>
+            <span class="player-pos">{{ p.position }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.playerId != null"
+              (click)="p.playerId != null && navigateToPlayer(p.playerId, p.playerName)">
+              {{ p.playerName }}
+            </span>
+            <span class="lineup-rating" [class.high-rating]="isHighRating(p.playerId)">
+              {{ getRatingForPlayer(p.playerId) }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Away lineup -->
+        <div class="lineup-team">
+          <div class="lineup-header">
+            <span class="lineup-team-name">{{ fixture!.awayTeamName }}</span>
+            <span class="lineup-formation" *ngIf="dbAwayFormation">{{ dbAwayFormation }}</span>
+          </div>
+          <div class="lineup-coach" *ngIf="dbAwayCoach">DT: {{ dbAwayCoach }}</div>
+          <div class="lineup-section-label">Titulares</div>
+          <div class="lineup-player" *ngFor="let p of dbAwayLineupStarters">
+            <span class="player-num">{{ p.playerNumber }}</span>
+            <span class="player-pos">{{ p.position }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.playerId != null"
+              (click)="p.playerId != null && navigateToPlayer(p.playerId, p.playerName)">
+              {{ p.playerName }}
+            </span>
+            <span class="lineup-rating" [class.high-rating]="isHighRating(p.playerId)">
+              {{ getRatingForPlayer(p.playerId) }}
+            </span>
+          </div>
+          <div class="lineup-section-label" *ngIf="dbAwayLineupSubs.length > 0">Suplentes</div>
+          <div class="lineup-player substitute" *ngFor="let p of dbAwayLineupSubs">
+            <span class="player-num">{{ p.playerNumber }}</span>
+            <span class="player-pos">{{ p.position }}</span>
+            <span class="player-name-lineup"
+              [class.player-link]="p.playerId != null"
+              (click)="p.playerId != null && navigateToPlayer(p.playerId, p.playerName)">
+              {{ p.playerName }}
+            </span>
+            <span class="lineup-rating" [class.high-rating]="isHighRating(p.playerId)">
+              {{ getRatingForPlayer(p.playerId) }}
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── API: Player ratings ─────────────────────────────────────────────── -->
     <div class="section-card" *ngIf="homePlayers.length > 0 || awayPlayers.length > 0">
       <h3 class="section-title">Estadísticas de Jugadores</h3>
 
@@ -249,6 +354,104 @@
                   <span class="card-dot red" *ngIf="p.statistics?.[0]?.cards?.red > 0"></span>
                   <span *ngIf="!p.statistics?.[0]?.cards?.yellow && !p.statistics?.[0]?.cards?.red">-</span>
                 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-container>
+    </div>
+
+    <!-- ── DB: Full Player Stats Table ────────────────────────────────────── -->
+    <div class="section-card" *ngIf="dbPlayerStats.length > 0">
+      <h3 class="section-title">Estadísticas de Jugadores</h3>
+
+      <ng-container *ngFor="let group of [
+        { teamName: fixture!.homeTeamName, players: dbHomePlayerStats },
+        { teamName: fixture!.awayTeamName, players: dbAwayPlayerStats }
+      ]">
+        <div class="players-team-header" *ngIf="group.players.length > 0">
+          <span>{{ group.teamName }}</span>
+        </div>
+        <div class="players-table-wrap" *ngIf="group.players.length > 0">
+          <table class="players-table">
+            <thead>
+              <tr>
+                <th>Jugador</th>
+                <th title="Posición">Pos</th>
+                <th title="Minutos jugados">Min</th>
+                <th title="Valoración">Rating</th>
+                <th title="Capitán">Cap.</th>
+                <th title="Suplente">Sub.</th>
+                <th title="Fueras de juego">F.J.</th>
+                <th title="Tiros totales">Tiros</th>
+                <th title="Tiros a puerta">T. Puerta</th>
+                <th title="Goles marcados">Goles</th>
+                <th title="Goles encajados">G.Conc.</th>
+                <th title="Asistencias">Asist.</th>
+                <th title="Paradas">Par.</th>
+                <th title="Pases totales">Pases</th>
+                <th title="Pases clave">P.Clave</th>
+                <th title="Precisión de pases (%)">%Pases</th>
+                <th title="Entradas totales">Entr.</th>
+                <th title="Bloqueos">Bloq.</th>
+                <th title="Intercepciones">Interc.</th>
+                <th title="Duelos totales">Duelos</th>
+                <th title="Duelos ganados">D.G.</th>
+                <th title="Regates intentados">Reg.I.</th>
+                <th title="Regates conseguidos">Reg.G.</th>
+                <th title="Veces superado">Superado</th>
+                <th title="Faltas recibidas">F.Rec.</th>
+                <th title="Faltas cometidas">F.Com.</th>
+                <th title="Tarjeta amarilla">TA</th>
+                <th title="Tarjeta roja">TR</th>
+                <th title="Doble amarilla">TRA</th>
+                <th title="Penaltis a favor">Pen.F.</th>
+                <th title="Penaltis marcados">Pen.Gol</th>
+                <th title="Penaltis fallados">Pen.Fal.</th>
+                <th title="Penaltis parados">Pen.Par.</th>
+                <th title="Penaltis cometidos">Pen.Com.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of group.players" [class.substitute-row]="p.substitute">
+                <td class="player-name-cell"
+                    [class.player-link]="p.playerId != null"
+                    (click)="p.playerId != null && navigateToPlayer(p.playerId, p.playerName)">
+                  {{ p.playerName ?? '-' }}
+                </td>
+                <td>{{ val(p.position) }}</td>
+                <td>{{ val(p.minutesPlayed) }}</td>
+                <td class="rating-cell" [class.high-rating]="p.rating != null && p.rating >= 7">{{ val(p.rating) }}</td>
+                <td>{{ p.captain ? '©' : '-' }}</td>
+                <td>{{ p.substitute ? '⬆' : '-' }}</td>
+                <td>{{ val(p.offsides) }}</td>
+                <td>{{ val(p.shotsTotal) }}</td>
+                <td>{{ val(p.shotsOn) }}</td>
+                <td>{{ val(p.goalsScored) }}</td>
+                <td>{{ val(p.goalsConceded) }}</td>
+                <td>{{ val(p.assists) }}</td>
+                <td>{{ val(p.saves) }}</td>
+                <td>{{ val(p.passesTotal) }}</td>
+                <td>{{ val(p.passesKey) }}</td>
+                <td>{{ val(p.passesAccuracy) }}</td>
+                <td>{{ val(p.tacklesTotal) }}</td>
+                <td>{{ val(p.tacklesBlocks) }}</td>
+                <td>{{ val(p.interceptions) }}</td>
+                <td>{{ val(p.duelsTotal) }}</td>
+                <td>{{ val(p.duelsWon) }}</td>
+                <td>{{ val(p.dribblesAtt) }}</td>
+                <td>{{ val(p.dribblesSuc) }}</td>
+                <td>{{ val(p.dribblesPast) }}</td>
+                <td>{{ val(p.foulsDrawn) }}</td>
+                <td>{{ val(p.foulsCommitted) }}</td>
+                <td>{{ val(p.yellowCards) }}</td>
+                <td>{{ val(p.redCards) }}</td>
+                <td>{{ val(p.yellowRedCards) }}</td>
+                <td>{{ val(p.penaltyWon) }}</td>
+                <td>{{ val(p.penaltyScored) }}</td>
+                <td>{{ val(p.penaltyMissed) }}</td>
+                <td>{{ val(p.penaltySaved) }}</td>
+                <td>{{ val(p.penaltyCommitted) }}</td>
               </tr>
             </tbody>
           </table>

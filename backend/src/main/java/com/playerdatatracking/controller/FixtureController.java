@@ -15,6 +15,9 @@ import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureById;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureEventsByFixtureId;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureTeamStatsByFixtureId;
+import com.playerdatatracking.operations.IndelxalData.GetFixturePlayerStatsByFixtureId;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureLineupByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixtures;
 import com.playerdatatracking.operations.IndelxalData.GetLiveFixturesFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetStudiedLeagues;
@@ -54,6 +57,12 @@ public class FixtureController {
     private GetFixtureById operationGetFixtureById;
     @Autowired
     private GetFixtureEventsByFixtureId operationGetFixtureEventsByFixtureId;
+    @Autowired
+    private GetFixtureTeamStatsByFixtureId operationGetFixtureTeamStatsByFixtureId;
+    @Autowired
+    private GetFixturePlayerStatsByFixtureId operationGetFixturePlayerStatsByFixtureId;
+    @Autowired
+    private GetFixtureLineupByFixtureId operationGetFixtureLineupByFixtureId;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -192,6 +201,42 @@ public class FixtureController {
         GenericResponse<Object> response = new GenericResponse<>();
         try {
             response = operationGetFixtureDetailFromApi.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureTeamStats")
+    public GenericResponse<FixtureTeamStats> getFixtureTeamStats(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureTeamStats> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureTeamStatsByFixtureId.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixturePlayerStats")
+    public GenericResponse<FixturePlayerStats> getFixturePlayerStats(@RequestBody GenericRequest request) {
+        GenericResponse<FixturePlayerStats> response = new GenericResponse<>();
+        try {
+            response = operationGetFixturePlayerStatsByFixtureId.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureLineup")
+    public GenericResponse<FixtureLineup> getFixtureLineup(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureLineup> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureLineupByFixtureId.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

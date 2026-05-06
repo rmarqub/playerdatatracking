@@ -878,6 +878,33 @@ public class PlayerDataClient {
 	}
 
 	@Transactional
+	public List<FixtureTeamStats> getFixtureTeamStatsByFixtureId(Long fixtureId) throws PlayerDataDBException {
+		try {
+			return fixtureTeamStatsRepository.findByFixtureId(fixtureId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<FixturePlayerStats> getFixturePlayerStatsByFixtureId(Long fixtureId) throws PlayerDataDBException {
+		try {
+			return fixturePlayerStatsRepository.findByFixtureId(fixtureId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<FixtureLineup> getFixtureLineupByFixtureId(Long fixtureId) throws PlayerDataDBException {
+		try {
+			return fixtureLineupRepository.findByFixtureId(fixtureId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
 	public byte[] getPhoto(Long id) { return pRepository.findPhotoById(id); }
 
 	@Transactional

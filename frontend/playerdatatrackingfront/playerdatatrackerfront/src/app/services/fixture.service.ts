@@ -58,6 +58,81 @@ export interface Torneo {
   studied: boolean;
 }
 
+export interface FixtureTeamStats {
+  teamId: number;
+  shotsOnGoal: number | null;
+  shotsOffGoal: number | null;
+  shotsTotal: number | null;
+  shotsBlocked: number | null;
+  shotsInsideBox: number | null;
+  shotsOutsideBox: number | null;
+  fouls: number | null;
+  cornerKicks: number | null;
+  offsides: number | null;
+  ballPossession: number | null;
+  yellowCards: number | null;
+  redCards: number | null;
+  goalkeeperSaves: number | null;
+  totalPasses: number | null;
+  passesAccurate: number | null;
+  passesPct: number | null;
+  expectedGoals: number | null;
+  goalsPrevented: number | null;
+}
+
+export interface FixturePlayerStats {
+  playerId: number;
+  teamId: number;
+  playerName: string | null;
+  position: string | null;
+  minutesPlayed: number | null;
+  rating: number | null;
+  captain: boolean;
+  substitute: boolean;
+  offsides: number | null;
+  shotsTotal: number | null;
+  shotsOn: number | null;
+  goalsScored: number | null;
+  goalsConceded: number | null;
+  assists: number | null;
+  saves: number | null;
+  passesTotal: number | null;
+  passesKey: number | null;
+  passesAccuracy: number | null;
+  tacklesTotal: number | null;
+  tacklesBlocks: number | null;
+  interceptions: number | null;
+  duelsTotal: number | null;
+  duelsWon: number | null;
+  dribblesAtt: number | null;
+  dribblesSuc: number | null;
+  dribblesPast: number | null;
+  foulsDrawn: number | null;
+  foulsCommitted: number | null;
+  yellowCards: number | null;
+  redCards: number | null;
+  yellowRedCards: number | null;
+  penaltyWon: number | null;
+  penaltyScored: number | null;
+  penaltyMissed: number | null;
+  penaltySaved: number | null;
+  penaltyCommitted: number | null;
+}
+
+export interface FixtureLineupEntry {
+  id: number;
+  teamId: number;
+  formation: string | null;
+  coachId: number | null;
+  coachName: string | null;
+  playerId: number | null;
+  playerName: string | null;
+  playerNumber: number | null;
+  position: string | null;
+  grid: string | null;
+  substitute: boolean;
+}
+
 export interface ApiFixtureStatus {
   long: string;
   short: string;
@@ -170,6 +245,27 @@ export class FixtureService {
     return this.http.post<GenericResponse<number>>(`${this.base}/playerIdByIndexId`, { indexId }).pipe(
       map(r => r.code === 0 && r.entity != null ? r.entity : null),
       catchError(() => of(null))
+    );
+  }
+
+  getFixtureTeamStats(fixtureId: number): Observable<FixtureTeamStats[]> {
+    return this.http.post<GenericResponse<FixtureTeamStats>>(`${this.base}/fixtureTeamStats`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  getFixturePlayerStats(fixtureId: number): Observable<FixturePlayerStats[]> {
+    return this.http.post<GenericResponse<FixturePlayerStats>>(`${this.base}/fixturePlayerStats`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  getFixtureLineup(fixtureId: number): Observable<FixtureLineupEntry[]> {
+    return this.http.post<GenericResponse<FixtureLineupEntry>>(`${this.base}/fixtureLineup`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
     );
   }
 }

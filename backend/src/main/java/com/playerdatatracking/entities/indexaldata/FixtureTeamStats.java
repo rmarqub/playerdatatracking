@@ -1,15 +1,17 @@
 package com.playerdatatracking.entities.indexaldata;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
- 
+
 @Entity
 @Table(name = "fixture_team_stats")
 @IdClass(FixtureTeamStatsId.class)
 public class FixtureTeamStats {
-	
+
     @Id
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "fixture_id", nullable = false)
     private Fixture fixture;
