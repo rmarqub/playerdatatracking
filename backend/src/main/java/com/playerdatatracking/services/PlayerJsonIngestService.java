@@ -29,10 +29,20 @@ public class PlayerJsonIngestService {
     }
 
     public void ingestAllPlayers(String rootDir, boolean purgeBeforeRun, int parallelism) throws Exception {
+        ingestAllPlayers(rootDir, purgeBeforeRun, parallelism, null);
+    }
+
+    public void ingestAllPlayers(String rootDir, boolean purgeBeforeRun, int parallelism, String season) throws Exception {
         final boolean rebuildMode = purgeBeforeRun;
+        final String rawTable = tableForSeason(season);
 
         if (purgeBeforeRun) {
-            tx.execute(s -> { jdbc.update("TRUNCATE TABLE player_match_stats"); return null; });
+            if (season != null && !season.trim().isEmpty()) {
+                final String s = season.trim();
+                tx.execute(st -> { jdbc.update("DELETE FROM player_match_stats WHERE season = ?", s); return null; });
+            } else {
+                tx.execute(st -> { jdbc.update("TRUNCATE TABLE player_match_stats"); return null; });
+            }
         }
 
         List<Path> files = listAllJsonFiles(Paths.get(rootDir));
@@ -46,7 +56,7 @@ public class PlayerJsonIngestService {
         for (Path p : files) {
             futures.add(pool.submit(() -> {
                 try {
-                    Long rawId = processRawOnly(p);
+                    Long rawId = processRawOnly(p, rawTable);
                     if (rawId != null) newRawIds.add(rawId);
                 } catch (Exception e) {
                     Throwable t = e; while (t.getCause()!=null) t=t.getCause();
@@ -59,20 +69,32 @@ public class PlayerJsonIngestService {
 
         // 2: TRANSFORM
         if (rebuildMode) {
-            // reconstruye desde TODOS los raw existentes
+            // reconstruye desde TODOS los raw existentes en la tabla seleccionada
             List<Long> allRawIds = jdbc.query(
-                "SELECT id FROM raw_ingest ORDER BY id",
+                "SELECT id FROM " + rawTable + " ORDER BY id",
                 (rs, rn) -> rs.getLong(1)
             );
             for (Long rid : allRawIds) {
-                transformOneRawWithRetry(rid);
+                transformOneRawWithRetry(rid, rawTable);
             }
         } else {
             // solo los nuevos en esta ejecución
             for (Long rid : newRawIds) {
-                transformOneRawWithRetry(rid);
+                transformOneRawWithRetry(rid, rawTable);
             }
         }
+    }
+
+    /**
+     * Resuelve la tabla raw_ingest a usar según la temporada solicitada.
+     * Whitelist explícita para evitar inyección SQL al interpolar el nombre.
+     */
+    private static String tableForSeason(String season) {
+        if (season == null) return "raw_ingest";
+        String s = season.trim();
+        if ("2023".equals(s)) return "raw_ingest_2023";
+        if ("2024".equals(s)) return "raw_ingest_2024";
+        return "raw_ingest";
     }
 
 
@@ -141,12 +163,16 @@ public class PlayerJsonIngestService {
     }
 
     private Long insertRawIfNew(String source, Integer teamId, String season, String filename, String sha1, String payload) {
+        return insertRawIfNew(source, teamId, season, filename, sha1, payload, "raw_ingest");
+    }
+
+    private Long insertRawIfNew(String source, Integer teamId, String season, String filename, String sha1, String payload, String rawTable) {
         // Usamos RETURNING id para obtener el id insertado. Si ON CONFLICT DO NOTHING, no devuelve fila.
-    	String sql = ""
-    			  + "INSERT INTO raw_ingest (source, team_id, season, filename, payload_sha1, payload) "
-    			  + "VALUES (?, ?, ?, ?, ?, ?::jsonb) "
-    			  + "ON CONFLICT (payload_sha1) DO NOTHING "
-    			  + "RETURNING id";
+        String sql = ""
+                  + "INSERT INTO " + rawTable + " (source, team_id, season, filename, payload_sha1, payload) "
+                  + "VALUES (?, ?, ?, ?, ?, ?::jsonb) "
+                  + "ON CONFLICT (payload_sha1) DO NOTHING "
+                  + "RETURNING id";
 
         List<Long> ids = jdbc.query(sql,
                 ps -> {
@@ -164,9 +190,13 @@ public class PlayerJsonIngestService {
     }
 
     private void upsertPlayerMatchStatsFromRaw(Long rawId) {
-        final String sql = """
-        		WITH src AS (
-        				  SELECT payload FROM raw_ingest WHERE id = ?
+        upsertPlayerMatchStatsFromRaw(rawId, "raw_ingest");
+    }
+
+    private void upsertPlayerMatchStatsFromRaw(Long rawId, String rawTable) {
+        final String sql = ("""
+        				WITH src AS (
+        				  SELECT payload FROM __RAW_TABLE__ WHERE id = ?
         				),
         				players AS (
         				  SELECT jsonb_array_elements(payload->'response') AS item FROM src
@@ -264,7 +294,7 @@ public class PlayerJsonIngestService {
         				  fouls_comm    = EXCLUDED.fouls_comm,
         				  yc            = EXCLUDED.yc,
         				  rc            = EXCLUDED.rc;
-        		""";
+        		""").replace("__RAW_TABLE__", rawTable);
         try {
         	jdbc.update(sql, rawId);
         } catch (Exception e) {
@@ -272,7 +302,7 @@ public class PlayerJsonIngestService {
         	while (t.getCause() != null) t = t.getCause();
         	System.err.println("Error procesando: " + t.getMessage());
         }
-        
+
     }
 
     private static Integer safeInt(JsonNode n) {
@@ -347,6 +377,10 @@ public class PlayerJsonIngestService {
     }
     
     private Long processRawOnly(Path file) throws Exception {
+        return processRawOnly(file, "raw_ingest");
+    }
+
+    private Long processRawOnly(Path file, String rawTable) throws Exception {
         String jsonText = new String(Files.readAllBytes(file), StandardCharsets.UTF_8).trim();
         if (jsonText.isEmpty()) return null;
 
@@ -375,16 +409,36 @@ public class PlayerJsonIngestService {
         final String seasonF = season;
         final String filename = file.getFileName().toString();
 
-        return tx.execute(status -> insertRawIfNew("api-sports", teamIdF, seasonF, filename, sha1, jsonText));
+        return tx.execute(status -> insertRawIfNew("api-sports", teamIdF, seasonF, filename, sha1, jsonText, rawTable));
     }
-    
-    
+
+
+    /**
+     * Transforms all rows from the raw_ingest table for the given season into
+     * player_match_stats. Callable independently from the JSON download step.
+     */
+    public void transformFromRaw(String season) {
+        String rawTable = tableForSeason(season);
+        List<Long> allRawIds = jdbc.query(
+            "SELECT id FROM " + rawTable + " ORDER BY id",
+            (rs, rn) -> rs.getLong(1)
+        );
+        System.out.println("[TransformRaw] Season=" + season + " table=" + rawTable + " rows=" + allRawIds.size());
+        for (Long rid : allRawIds) {
+            transformOneRawWithRetry(rid, rawTable);
+        }
+    }
+
     private void transformOneRawWithRetry(Long rawId) {
+        transformOneRawWithRetry(rawId, "raw_ingest");
+    }
+
+    private void transformOneRawWithRetry(Long rawId, String rawTable) {
         final int MAX_RETRY = 3;
         int attempt = 0;
         while (true) {
             try {
-                tx.execute(s -> { upsertPlayerMatchStatsFromRaw(rawId); return null; });
+                tx.execute(s -> { upsertPlayerMatchStatsFromRaw(rawId, rawTable); return null; });
                 return; //OK
             } catch (Exception e) {
                 Throwable t = e;

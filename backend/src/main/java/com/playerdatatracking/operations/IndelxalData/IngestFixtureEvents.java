@@ -78,7 +78,7 @@ public class IngestFixtureEvents {
             if (!responseArray.isArray() || responseArray.size() == 0) {
                 System.out.println("[" + processed + "/" + total + "] Fixture " + fixtureId + ": sin eventos.");
                 pdClient.markFixtureEventsStored(fixtureId);
-                methods.sleep(200);
+                methods.sleep(180);
                 continue;
             }
 
@@ -98,7 +98,7 @@ public class IngestFixtureEvents {
             totalEvents += events.size();
             System.out.println("[" + processed + "/" + total + "] Fixture " + fixtureId + ": "
                     + events.size() + " eventos guardados. Acumulado: " + totalEvents);
-            methods.sleep(500);
+            methods.sleep(180);
         }
 
         System.out.println("Ingesta completada. Total eventos guardados: " + totalEvents);
@@ -112,6 +112,7 @@ public class IngestFixtureEvents {
         boolean rateLimited = methods.checkGoodCallGeneric(jsonBody);
         if (rateLimited) {
             System.out.println("[" + processed + "/" + total + "] Reintentando fixture " + fixtureId + " tras rate limit...");
+            methods.sleep(180);
             jsonBody = client.getFixtureEventsRaw(apiKey.getValor(), fixtureId);
         }
         return jsonBody;

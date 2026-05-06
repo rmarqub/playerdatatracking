@@ -79,6 +79,7 @@ public class UpdateClubsData {
 							responsePath = restClient.getClubs(queryParams, apiKey.getValor(), league.getName());
 							methods.checkGoodClubsCall(responsePath, queryParams, apiKey.getValor(), league.getName());
 							keyMethods.useKey(apiKey);
+							methods.sleep(180);
 						}
 						else {
 							throw new ApiKeyManagementException("error al intentar usar una key no disponible");

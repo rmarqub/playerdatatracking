@@ -22,6 +22,7 @@ import com.playerdatatracking.exceptions.file.NotFilledJsonFileResponse;
 import com.playerdatatracking.operations.apikeys.KeysManagement;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
+import com.playerdatatracking.common.Methods;
 
 @Component
 public class GetAllCountries {
@@ -35,6 +36,7 @@ public class GetAllCountries {
 	private KeysManagement keyMethods;
 	@Autowired
 	private Environment env;
+	
 
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -54,6 +56,7 @@ public class GetAllCountries {
 			if (keyMethods.checkReadiness(apiKey)) {
 				restClient.getCountriesInfo(apiKey.getValor());
 				keyMethods.useKey(apiKey);
+				Methods.sleep(180);
 			}
 			else {
 				throw new ApiKeyManagementException("error al intentar usar una key no disponible");

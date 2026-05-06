@@ -171,6 +171,7 @@ public class TransferCheckOfPlayers {
 	    		resp = apiClient.getTransfer(apiKey.getValor(), indexId);
 	    		m.checkGoodTransferCall(resp.body(), apiKey.getValor(), indexId);
 	    		keyMethods.useKey(apiKey);
+	    		m.sleep(180);
 	    	}
 	    	else
 				throw new ApiKeyManagementException("error al intentar usar una key no disponible");

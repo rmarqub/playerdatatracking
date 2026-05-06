@@ -159,14 +159,39 @@ cursor: not-allowed;
   width: 90%;
   max-height: 1100px;
   overflow-y: auto;
+  overflow-x: auto;
+}
+
+.season-group-title {
+  margin: 18px 0 6px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.03em;
+  border-left: 3px solid #CD853F;
+  padding-left: 8px;
 }
 
 .results-table-stats-table {
   width: 100%;
+  min-width: 1520px;
   text-align: center;
   border-collapse: collapse;
   border-spacing: 6px 8px;
-  table-layout: auto;
+  table-layout: fixed;
+}
+
+/* Competición and Equipo get more room; all stat cols share a fixed width */
+.results-table-stats-table th { width: 70px; }
+.results-table-stats-table th:nth-child(1) { width: 138px; } /* Competición */
+.results-table-stats-table th:nth-child(2) { width: 108px; } /* Equipo      */
+
+/* Clip overflowing text in both headers and data cells */
+.results-table-stats-table th,
+.results-table-stats-table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .player-found-row:nth-child(even) {
   background-color: #e3e3e3;
@@ -239,3 +264,15 @@ cursor: not-allowed;
 .results-table-stats-table th.th-basic:hover { background: #b87431; }
 .results-table-stats-table th.th-passing:hover { background: #276aa6; }
 .results-table-stats-table th.th-control:hover  { background: #668219; }
+
+/* Fila resumen TOTAL */
+.results-table-stats-table tbody tr.summary-row td {
+  background: #d4b483;
+  font-weight: 700;
+  color: #2b1a00;
+  border-top: 2px solid #9e6d2a;
+}
+.results-table-stats-table tbody tr.summary-row:hover td {
+  background: #c9a468;
+  box-shadow: inset 0 0 0 1px #9e6d2a;
+}

@@ -76,7 +76,7 @@ public class IngestFixturePlayerStats {
             if (!responseArray.isArray() || responseArray.size() == 0) {
                 System.out.println("[" + processed + "/" + total + "] Fixture " + fixtureId + ": sin player stats.");
                 pdClient.markFixtureStatsStored(fixtureId);
-                methods.sleep(200);
+                methods.sleep(180);
                 continue;
             }
 
@@ -122,6 +122,7 @@ public class IngestFixturePlayerStats {
         boolean rateLimited = methods.checkGoodCallGeneric(jsonBody);
         if (rateLimited) {
             System.out.println("[" + processed + "/" + total + "] Reintentando fixture " + fixtureId + " tras rate limit...");
+            methods.sleep(180);
             jsonBody = client.getFixturePlayerStatsRaw(apiKey.getValor(), fixtureId);
         }
         return jsonBody;

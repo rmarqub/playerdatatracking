@@ -80,7 +80,10 @@ public class UpdatePlayersData {
 		methods = new Methods();
 		List<Club> updatedClubs = new ArrayList<Club>();
 		if (request.getRestUpdate() != null && request.getRestUpdate().equals("true")) {
-			String actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+			String requestedSeason = request.getSeason();
+			String actualSeason = (requestedSeason != null && !requestedSeason.trim().isEmpty())
+					? requestedSeason.trim()
+					: pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
 			List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
 			List<Club> clubList = pdClient.getAllClubs();
 			if (clubList.size() > 0) {

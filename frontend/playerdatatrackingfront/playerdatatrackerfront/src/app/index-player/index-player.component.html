@@ -46,155 +46,177 @@
   <div *ngIf="errorBasic" class="error">{{ errorBasic }}</div>
 
   <ng-container *ngIf="basicStats && basicStats.length > 0">
-    <table class="results-table-stats-table">
-      <thead>
-        <tr>
-          <th class="player-info th-basic num" (click)="sortBasic('season')">Temporada
-              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('season')}">&#9650;</span>
-              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('season')}">&#9660;</span>
-          </th>
-          <th class="player-info th-basic num" (click)="sortBasic('leagueName')">
-            Competición
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('leagueName')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('leagueName')}">&#9660;</span>
-          </th>
-          <th class="player-info th-basic num" (click)="sortBasic('teamName')">
-            Equipo
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('teamName')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('teamName')}">&#9660;</span>
-          </th>
-          <th class="player-info th-basic num" (click)="sortBasic('minutes')">
-            Minutos
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('minutes')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('minutes')}">&#9660;</span>
-          </th>
-          <th class="player-info th-basic num" (click)="sortBasic('position')">
-            Posición
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('position')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('position')}">&#9660;</span>
-          </th>
-          <th class="player-info th-basic num" (click)="sortBasic('rating')">
-            Rating
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('rating')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('rating')}">&#9660;</span>
-          </th>
-          <th class="player-info th-offense num" (click)="sortBasic('goals')">
-            Goles
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('goals')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('goals')}">&#9660;</span>
-          </th>
-          <th class="player-info th-offense num" (click)="sortBasic('assists')">
-            Asistencias
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('assists')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('assists')}">&#9660;</span>
-          </th>
-          <th class="player-info th-offense num" (click)="sortBasic('shotsOn')">
-            Disparos a Puerta
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('shotsOn')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('shotsOn')}">&#9660;</span>
-          </th>
-          <th class="player-info th-offense num" (click)="sortBasic('shotsTotal')">
-            Disparos Totales
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('shotsTotal')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('shotsTotal')}">&#9660;</span>
-          </th>
-          <th class="player-info th-passing num" (click)="sortBasic('passesKey')">
-            Key Passes
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesKey')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesKey')}">&#9660;</span>
-          </th>
-          <th class="player-info th-passing num" (click)="sortBasic('passesAcc')">
-            Pases Acertados
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesAcc')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesAcc')}">&#9660;</span>
-          </th>
-          <th class="player-info th-passing num" (click)="sortBasic('passesTotal')">
-            Pases Totales
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesTotal')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesTotal')}">&#9660;</span>
-          </th>
-          <th class="player-info th-passing num" (click)="sortBasic('dribblesSuc')">
-            Regates Completados
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('dribblesSuc')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('dribblesSuc')}">&#9660;</span>
-          </th>
-          <th class="player-info th-passing num" (click)="sortBasic('dribblesAtt')">
-            Regates Intentados
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('dribblesAtt')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('dribblesAtt')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('interceptions')">
-            Intercepciones
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('interceptions')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('interceptions')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('duelsWon')">
-            Duelos ganados
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('duelsWon')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('duelsWon')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('duelsTotal')">
-            Duelos Totales
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('duelsTotal')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('duelsTotal')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('foulsDrawn')">
-            Faltas Recibidas
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('foulsDrawn')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('foulsDrawn')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('foulsComm')">
-            Faltas Realizadas
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('foulsComm')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('foulsComm')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('tacklesTotal')">
-            Tackles
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('tacklesTotal')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('tacklesTotal')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('yc')">
-            Amarillas
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('yc')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('yc')}">&#9660;</span>
-          </th>
-          <th class="player-info th-control num" (click)="sortBasic('rc')">
-            Rojas
-            <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('rc')}">&#9650;</span>
-            <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('rc')}">&#9660;</span>
-          </th>
-        </tr>
-      </thead>
+    <ng-container *ngFor="let group of statsBySeason">
+      <h4 class="season-group-title">Temporada {{ formatSeason(group.season) }}</h4>
+      <table class="results-table-stats-table">
+        <thead>
+          <tr>
+            <th class="player-info th-basic num" title="Competición" (click)="sortBasic('leagueName')">
+              Competición
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('leagueName')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('leagueName')}">&#9660;</span>
+            </th>
+            <th class="player-info th-basic num" title="Equipo" (click)="sortBasic('teamName')">
+              Equipo
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('teamName')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('teamName')}">&#9660;</span>
+            </th>
+            <th class="player-info th-basic num" title="Minutos jugados" (click)="sortBasic('minutes')">
+              Minutos
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('minutes')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('minutes')}">&#9660;</span>
+            </th>
+            <th class="player-info th-basic num" title="Posición" (click)="sortBasic('position')">
+              Posición
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('position')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('position')}">&#9660;</span>
+            </th>
+            <th class="player-info th-basic num" title="Rating medio de la temporada" (click)="sortBasic('rating')">
+              Rating
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('rating')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('rating')}">&#9660;</span>
+            </th>
+            <th class="player-info th-offense num" title="Goles marcados" (click)="sortBasic('goals')">
+              Goles
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('goals')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('goals')}">&#9660;</span>
+            </th>
+            <th class="player-info th-offense num" title="Asistencias" (click)="sortBasic('assists')">
+              Asistencias
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('assists')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('assists')}">&#9660;</span>
+            </th>
+            <th class="player-info th-offense num" title="Disparos a puerta" (click)="sortBasic('shotsOn')">
+              Disp. Puerta
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('shotsOn')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('shotsOn')}">&#9660;</span>
+            </th>
+            <th class="player-info th-offense num" title="Disparos totales" (click)="sortBasic('shotsTotal')">
+              Disp. Totales
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('shotsTotal')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('shotsTotal')}">&#9660;</span>
+            </th>
+            <th class="player-info th-passing num" title="Pases clave" (click)="sortBasic('passesKey')">
+              Key Passes
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesKey')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesKey')}">&#9660;</span>
+            </th>
+            <th class="player-info th-passing num" title="Porcentaje de pases acertados" (click)="sortBasic('passesAcc')">
+              Pases %
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesAcc')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesAcc')}">&#9660;</span>
+            </th>
+            <th class="player-info th-passing num" title="Pases totales" (click)="sortBasic('passesTotal')">
+              Pases Tot.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('passesTotal')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('passesTotal')}">&#9660;</span>
+            </th>
+            <th class="player-info th-passing num" title="Regates completados" (click)="sortBasic('dribblesSuc')">
+              Regates
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('dribblesSuc')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('dribblesSuc')}">&#9660;</span>
+            </th>
+            <th class="player-info th-passing num" title="Regates intentados" (click)="sortBasic('dribblesAtt')">
+              Reg. Int.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('dribblesAtt')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('dribblesAtt')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Intercepciones" (click)="sortBasic('interceptions')">
+              Interc.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('interceptions')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('interceptions')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Duelos ganados" (click)="sortBasic('duelsWon')">
+              Duelos G.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('duelsWon')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('duelsWon')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Duelos totales" (click)="sortBasic('duelsTotal')">
+              Duelos Tot.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('duelsTotal')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('duelsTotal')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Faltas recibidas" (click)="sortBasic('foulsDrawn')">
+              F. Rec.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('foulsDrawn')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('foulsDrawn')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Faltas cometidas" (click)="sortBasic('foulsComm')">
+              F. Com.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('foulsComm')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('foulsComm')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Tackles totales" (click)="sortBasic('tacklesTotal')">
+              Tackles
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('tacklesTotal')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('tacklesTotal')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Tarjetas amarillas" (click)="sortBasic('yc')">
+              Amar.
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('yc')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('yc')}">&#9660;</span>
+            </th>
+            <th class="player-info th-control num" title="Tarjetas rojas" (click)="sortBasic('rc')">
+              Rojas
+              <span class="sort-icon asc" [ngClass]="{'active': isBasicAsc('rc')}">&#9650;</span>
+              <span class="sort-icon desc" [ngClass]="{'active': isBasicDesc('rc')}">&#9660;</span>
+            </th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr class="player-found-row"
-            *ngFor="let r of sortedBasicStats(); trackBy: trackByBasicRow">
-          <td class="player-found-row-value">{{ r.season || '-' }}</td>
-          <td class="player-found-row-value">{{ r.leagueName || '-' }}</td>
-          <td class="player-found-row-value">{{ r.teamName || '-' }}</td>
-          <td class="player-found-row-value">{{ r.minutes ?? '0' }}</td>
-          <td class="player-found-row-value">{{ r.position || '-' }}</td>
-          <td class="player-found-row-value">{{ r.rating ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.goals ?? '0' }}</td>
-          <td class="player-found-row-value">{{ r.assists ?? '0' }}</td>
-          <td class="player-found-row-value">{{ r.shotsOn ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.shotsTotal ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.passesKey ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.passesAcc ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.passesTotal ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.dribblesSuc ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.dribblesAtt ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.interceptions ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.duelsWon ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.duelsTotal ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.foulsDrawn ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.foulsComm ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.tacklesTotal ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.yc ?? '-' }}</td>
-          <td class="player-found-row-value">{{ r.rc ?? '-' }}</td>
-        </tr>
-      </tbody>
-    </table>
+        <tbody>
+          <tr class="player-found-row"
+              *ngFor="let r of sortedBasicStats(group.rows); trackBy: trackByBasicRow">
+            <td class="player-found-row-value" [title]="r.leagueName || '-'">{{ r.leagueName || '-' }}</td>
+            <td class="player-found-row-value" [title]="r.teamName || '-'">{{ r.teamName || '-' }}</td>
+            <td class="player-found-row-value" [title]="r.minutes ?? '0'">{{ r.minutes ?? '0' }}</td>
+            <td class="player-found-row-value" [title]="r.position || '-'">{{ r.position || '-' }}</td>
+            <td class="player-found-row-value" [title]="r.rating ?? '-'">{{ r.rating ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.goals ?? '0'">{{ r.goals ?? '0' }}</td>
+            <td class="player-found-row-value" [title]="r.assists ?? '0'">{{ r.assists ?? '0' }}</td>
+            <td class="player-found-row-value" [title]="r.shotsOn ?? '-'">{{ r.shotsOn ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.shotsTotal ?? '-'">{{ r.shotsTotal ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.passesKey ?? '-'">{{ r.passesKey ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.passesAcc ?? '-'">{{ r.passesAcc ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.passesTotal ?? '-'">{{ r.passesTotal ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.dribblesSuc ?? '-'">{{ r.dribblesSuc ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.dribblesAtt ?? '-'">{{ r.dribblesAtt ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.interceptions ?? '-'">{{ r.interceptions ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.duelsWon ?? '-'">{{ r.duelsWon ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.duelsTotal ?? '-'">{{ r.duelsTotal ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.foulsDrawn ?? '-'">{{ r.foulsDrawn ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.foulsComm ?? '-'">{{ r.foulsComm ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.tacklesTotal ?? '-'">{{ r.tacklesTotal ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.yc ?? '-'">{{ r.yc ?? '-' }}</td>
+            <td class="player-found-row-value" [title]="r.rc ?? '-'">{{ r.rc ?? '-' }}</td>
+          </tr>
+          <tr class="player-found-row summary-row">
+            <td class="player-found-row-value" title="Total temporada">TOTAL</td>
+            <td class="player-found-row-value" title="-">-</td>
+            <td class="player-found-row-value" [title]="group.summary.minutes">{{ group.summary.minutes }}</td>
+            <td class="player-found-row-value" title="-">-</td>
+            <td class="player-found-row-value" [title]="group.summary.rating">{{ group.summary.rating }}</td>
+            <td class="player-found-row-value" [title]="group.summary.goals">{{ group.summary.goals }}</td>
+            <td class="player-found-row-value" [title]="group.summary.assists">{{ group.summary.assists }}</td>
+            <td class="player-found-row-value" [title]="group.summary.shotsOn">{{ group.summary.shotsOn }}</td>
+            <td class="player-found-row-value" [title]="group.summary.shotsTotal">{{ group.summary.shotsTotal }}</td>
+            <td class="player-found-row-value" [title]="group.summary.passesKey">{{ group.summary.passesKey }}</td>
+            <td class="player-found-row-value" [title]="group.summary.passesAcc">{{ group.summary.passesAcc }}</td>
+            <td class="player-found-row-value" [title]="group.summary.passesTotal">{{ group.summary.passesTotal }}</td>
+            <td class="player-found-row-value" [title]="group.summary.dribblesSuc">{{ group.summary.dribblesSuc }}</td>
+            <td class="player-found-row-value" [title]="group.summary.dribblesAtt">{{ group.summary.dribblesAtt }}</td>
+            <td class="player-found-row-value" [title]="group.summary.interceptions">{{ group.summary.interceptions }}</td>
+            <td class="player-found-row-value" [title]="group.summary.duelsWon">{{ group.summary.duelsWon }}</td>
+            <td class="player-found-row-value" [title]="group.summary.duelsTotal">{{ group.summary.duelsTotal }}</td>
+            <td class="player-found-row-value" [title]="group.summary.foulsDrawn">{{ group.summary.foulsDrawn }}</td>
+            <td class="player-found-row-value" [title]="group.summary.foulsComm">{{ group.summary.foulsComm }}</td>
+            <td class="player-found-row-value" [title]="group.summary.tacklesTotal">{{ group.summary.tacklesTotal }}</td>
+            <td class="player-found-row-value" [title]="group.summary.yc">{{ group.summary.yc }}</td>
+            <td class="player-found-row-value" [title]="group.summary.rc">{{ group.summary.rc }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
   </ng-container>
 
   <div *ngIf="basicStats && basicStats.length === 0">

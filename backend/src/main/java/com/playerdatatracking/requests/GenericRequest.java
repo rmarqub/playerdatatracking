@@ -36,6 +36,15 @@ public class GenericRequest {
     private MultipartFile photo;
     private String purgeBeforeRun;
     private List<Long> leagueIds;
+    private String season;
+
+    public String getSeason() {
+        return season;
+    }
+
+    public void setSeason(String season) {
+        this.season = season;
+    }
 
     public List<Long> getLeagueIds() {
         return leagueIds;

@@ -1,7 +1,6 @@
 # V1
 - Actualizar CIL a la hora de hacer un update de players.
-- Página de equipos con estadísticas clave de cada uno de ellos (diseño pendiente)
-- Datos de las dos ultimas temporadas.
+- Página de equipos con estadísticas clave de cada uno de ellos (diseño pendiente) e incluir referencia de foto en la bbdd.
 - Dias de descanso de los jugadores (hoy - ultimo dia jugado)
 - Carga de datos basicos desde Manual Data de indexal data.
 - Actualizar scripts de creacion de tablas.

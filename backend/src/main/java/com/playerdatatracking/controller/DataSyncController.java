@@ -13,6 +13,7 @@ import com.playerdatatracking.operations.IndelxalData.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.GetAllLeagues;
 import com.playerdatatracking.operations.IndelxalData.IngestRawData;
 import com.playerdatatracking.operations.IndelxalData.TransferCheckOfPlayers;
+import com.playerdatatracking.operations.IndelxalData.TransformRawToStats;
 import com.playerdatatracking.operations.IndelxalData.UpdateClubsData;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersData;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayersBySquads;
@@ -32,6 +33,8 @@ public class DataSyncController {
     private UpdatePlayersData operationUpdatePlayersData;
     @Autowired
     private IngestRawData operationIngestRawData;
+    @Autowired
+    private TransformRawToStats operationTransformRawToStats;
     @Autowired
     private TransferCheckOfPlayers operationTCP;
     @Autowired
@@ -118,6 +121,20 @@ public class DataSyncController {
         GenericResponse response = new GenericResponse<>();
         try {
             operationIngestRawData.ejecutar(request);
+            response.setCODE(Constants.CODE_OK);
+            response.setDescription("OK");
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/transformRawToStats")
+    public GenericResponse transformRawToStats(@RequestBody GenericRequest request) {
+        GenericResponse response = new GenericResponse<>();
+        try {
+            operationTransformRawToStats.ejecutar(request);
             response.setCODE(Constants.CODE_OK);
             response.setDescription("OK");
         } catch (Exception e) {

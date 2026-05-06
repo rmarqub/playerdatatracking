@@ -168,10 +168,58 @@ isBasicDesc(key: BasicKey): boolean {
   return this.basicSort.active === key && this.basicSort.dir === 'desc';
 }
 
-sortedBasicStats() {
-  if (!this.basicStats || !this.basicSort.active) {
-    return this.basicStats || [];
+get statsBySeason(): { season: string; rows: PlayerMatchRow[]; summary: any }[] {
+  if (!this.basicStats) return [];
+  const map = new Map<string, PlayerMatchRow[]>();
+  for (const r of this.basicStats) {
+    const key = r.season ?? '-';
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(r);
   }
+  return Array.from(map.entries())
+    .map(([season, rows]) => ({ season, rows, summary: this.computeSummary(rows) }))
+    .sort((a, b) => b.season.localeCompare(a.season));
+}
+
+private computeSummary(rows: PlayerMatchRow[]): any {
+  const sumOf = (key: keyof PlayerMatchRow): number =>
+    rows.reduce((acc, r) => acc + ((r[key] as number) ?? 0), 0);
+
+  const avgOf = (key: keyof PlayerMatchRow): string => {
+    const valid = rows.filter(r => r[key] !== null && r[key] !== undefined);
+    if (!valid.length) return '-';
+    const avg = valid.reduce((acc, r) => acc + (r[key] as number), 0) / valid.length;
+    return avg.toFixed(2);
+  };
+
+  return {
+    leagueName: 'TOTAL',
+    teamName: '-',
+    minutes:      sumOf('minutes'),
+    position:     '-',
+    rating:       avgOf('rating'),
+    goals:        sumOf('goals'),
+    assists:      sumOf('assists'),
+    shotsOn:      sumOf('shotsOn'),
+    shotsTotal:   sumOf('shotsTotal'),
+    passesKey:    sumOf('passesKey'),
+    passesAcc:    avgOf('passesAcc'),
+    passesTotal:  sumOf('passesTotal'),
+    dribblesSuc:  sumOf('dribblesSuc'),
+    dribblesAtt:  sumOf('dribblesAtt'),
+    interceptions:sumOf('interceptions'),
+    duelsWon:     sumOf('duelsWon'),
+    duelsTotal:   sumOf('duelsTotal'),
+    foulsDrawn:   sumOf('foulsDrawn'),
+    foulsComm:    sumOf('foulsComm'),
+    tacklesTotal: sumOf('tacklesTotal'),
+    yc:           sumOf('yc'),
+    rc:           sumOf('rc'),
+  };
+}
+
+sortedBasicStats(rows: PlayerMatchRow[]) {
+  if (!rows || !this.basicSort.active) return rows || [];
   const key = this.basicSort.active;
   const dir = this.basicSort.dir === 'asc' ? 1 : -1;
 
@@ -181,20 +229,18 @@ sortedBasicStats() {
       const n = Number(val);
       return Number.isNaN(n) ? null : n;
     }
-    // temporada tipo "2023/2024": comparamos como string minúscula
     return String(val).toLowerCase();
   };
 
-  const arr = [...this.basicStats];
+  const arr = [...rows];
   arr.sort((a: any, b: any) => {
     const va = coerce(a[key]);
     const vb = coerce(b[key]);
     if (va === null && vb === null) return 0;
-    if (va === null) return 1;  // nulos al final
+    if (va === null) return 1;
     if (vb === null) return -1;
     if (va < vb) return -1 * dir;
     if (va > vb) return 1 * dir;
-    // desempate estable: por minutos desc y luego por teamName
     const t = (Number(b.minutes) || 0) - (Number(a.minutes) || 0);
     if (t !== 0) return t;
     return String(a.teamName || '').localeCompare(String(b.teamName || ''));
@@ -203,9 +249,15 @@ sortedBasicStats() {
   return arr;
 }
 
-// trackBy para filas de stats (reduce re-render)
 trackByBasicRow(index: number, r: any): string {
   return `${r.season || ''}|${r.leagueName || ''}|${r.teamName || ''}|${r.minutes ?? ''}`;
+}
+
+formatSeason(season: string): string {
+  const year = parseInt(season, 10);
+  if (isNaN(year)) return season;
+  const next = (year + 1) % 100;
+  return `${year}/${next.toString().padStart(2, '0')}`;
 }
 
 }

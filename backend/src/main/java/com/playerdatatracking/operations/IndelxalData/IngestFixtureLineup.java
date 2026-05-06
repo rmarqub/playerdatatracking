@@ -75,7 +75,7 @@ public class IngestFixtureLineup {
             if (!responseArray.isArray() || responseArray.size() == 0) {
                 System.out.println("[" + processed + "/" + total + "] Fixture " + fixtureId + ": sin lineup.");
                 pdClient.markFixtureLineupStored(fixtureId);
-                methods.sleep(200);
+                methods.sleep(180);
                 continue;
             }
 
@@ -99,7 +99,7 @@ public class IngestFixtureLineup {
             totalLineups += lineupList.size();
             System.out.println("[" + processed + "/" + total + "] Fixture " + fixtureId + ": "
                     + lineupList.size() + " entradas de lineup guardadas. Acumulado: " + totalLineups);
-            methods.sleep(500);
+            methods.sleep(180);
         }
 
         System.out.println("Ingesta completada. Total entradas de lineup guardadas: " + totalLineups);
@@ -137,6 +137,7 @@ public class IngestFixtureLineup {
         boolean rateLimited = methods.checkGoodCallGeneric(jsonBody);
         if (rateLimited) {
             System.out.println("[" + processed + "/" + total + "] Reintentando fixture " + fixtureId + " tras rate limit...");
+            methods.sleep(180);
             jsonBody = client.getFixtureLineupsRaw(apiKey.getValor(), fixtureId);
         }
         return jsonBody;

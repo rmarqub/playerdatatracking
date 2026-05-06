@@ -15,6 +15,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.ConfigParams;
 import com.playerdatatracking.entities.indexaldata.Fixture;
@@ -71,6 +72,7 @@ public class IngestFixtures {
 
             String jsonBody = client.getFixturesByLeagueAndSeasonRaw(apiKey.getValor(), torneo.getId(), season);
             keyMethods.useKey(apiKey);
+            Methods.sleep(180);
 
             JsonNode root = objectMapper.readTree(jsonBody);
 

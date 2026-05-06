@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.apikeys.ApiFootballRequestException;
 import com.playerdatatracking.exceptions.apikeys.ApiKeyManagementException;
@@ -41,6 +42,7 @@ public class GetFixtureDetailFromApi {
 
         String jsonBody = client.getFixtureByIdRaw(apiKey.getValor(), request.getId());
         keyMethods.useKey(apiKey);
+        Methods.sleep(180);
 
         JsonNode root = objectMapper.readTree(jsonBody);
 

@@ -60,6 +60,7 @@ public class GetAllLeagues {
 			if (keyMethods.checkReadiness(apiKey)) {
 				restClient.getLeaguesInfo(apiKey.getValor());
 				keyMethods.useKey(apiKey);
+				Methods.sleep(180);
 			}
 			else {
 				throw new ApiKeyManagementException("error al intentar usar una key no disponible");
