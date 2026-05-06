@@ -1,23 +1,31 @@
-# LISTA DE TAREAS POR HACER BREVEMENTE DESCRITAS RELACIONADAS CON EL BACKEND Y FRONTEND
+# V1
 - Actualizar CIL a la hora de hacer un update de players.
-- Hablar con el tutor.
-- Actualizacion de datos de los jugadores con estadisticas de 2024.
-- Cambiar método de almacenado de jsons para agruparlos por ligas y que no aparezcan todos en subcarpetas por clubs.
+- Página de equipos con estadísticas clave de cada uno de ellos (diseño pendiente)
+- Datos de las dos ultimas temporadas.
+- Dias de descanso de los jugadores (hoy - ultimo dia jugado)
 - Carga de datos basicos desde Manual Data de indexal data.
 - Actualizar scripts de creacion de tablas.
 - YAML de operaciones de postman.
-- Capita de mantenibilidad: quitar endpoints del codigo, revisar posibles claves que se encuentren en el codigo y demás.
-- Realizar peticiones de postman con un logado necesario para limpiar el corsConfig de endpoint que deberian estar protegidos.
-- Unificar Metodo de CheckGoodCall
+- Unificar Metodo de CheckGoodCall.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
 - Mejorar filtros de busqueda para que busque por nombre + apellidos + nombre completo.
-- Añadir otra API como fuente de datos para añadir variabilidad y robustidad
-- Transfer view, donde se elimina el id de origen si está duplicado en player.
-- Esquemas de flujos y diseño de arquitectura y clases.
-- Pagina de management de datos de jugadores desde el front.
-- Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
 - Too Many Request Exception Handler mejorado y añadir tiempo de espera de 180ms en todas las operaciones que manden external calls.
-- Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
 - Modulo de testing escalable y estable.
-- Diseño de logica de usuario
+- Generar documentación y hacer un TFG sobre esto.
+
+#V2 PLANNING
+- Calcular ausencia de jugadores clave
+- H2H en la página de los partidos, ya estén por jugar o estén terminados.
+- Página de predictibilidad en los partidos que estén por jugar.
 - Modelo predictivo: Gradient Boosting (XGBoost/LightGBM), Capa interpretativa con Style clustering y SHAP values
+- Diseño de logica de usuario.
+- Pagina de management general.
+
+
+# MEJORAS VARIAS
+- Jugar con la variable restUpdate para añadir modularidad a las operaciones de update de los diferentes indexalData como está hecho en update clubs.
+- Capita de mantenibilidad: quitar endpoints del codigo, revisar posibles claves que se encuentren en el codigo y demás.
+- Realizar peticiones de postman con un logado necesario para limpiar el corsConfig de endpoint que deberian estar protegidos.
+- Añadir otra API como fuente de datos para añadir variabilidad y robustidad.
+- Esquemas de flujos y diseño de arquitectura y clases.
+- Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
