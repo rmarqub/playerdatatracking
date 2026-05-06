@@ -166,6 +166,7 @@
               <span class="status-badge" [class.live-badge]="isLive(f)" [class.ft-badge]="f.statusShort === 'FT'">
                 {{ getStatusLabel(f) }}
               </span>
+              <span class="odds-badge" *ngIf="f.statusShort === 'NS'">ODDS AVB</span>
             </td>
           </tr>
         </tbody>

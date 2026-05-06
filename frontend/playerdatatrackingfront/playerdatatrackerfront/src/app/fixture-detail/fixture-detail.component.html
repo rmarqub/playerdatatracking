@@ -14,7 +14,12 @@
 
   <ng-container *ngIf="!isLoading && fixture && !error">
 
-    <button class="btn-back" (click)="goBack()">← Volver</button>
+    <div class="action-row">
+      <button class="btn-back" (click)="goBack()">← Volver</button>
+      <button class="btn-h2h">Cargar H2H</button>
+      <button class="btn-predictions">Predicciones</button>
+      <button class="btn-analysis">Cargar Análisis</button>
+    </div>
 
     <!-- Match Header -->
     <div class="match-header">

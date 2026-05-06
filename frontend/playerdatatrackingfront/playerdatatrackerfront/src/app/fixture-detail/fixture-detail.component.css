@@ -39,11 +39,20 @@
   color: #c0392b;
 }
 
-/* ── Back button ──────────────────────────────────────────────────────────── */
+/* ── Action row ───────────────────────────────────────────────────────────── */
 
-.btn-back {
-  align-self: flex-start;
-  background-color: #f3b32b;
+.action-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-back,
+.btn-h2h,
+.btn-predictions,
+.btn-analysis {
   color: white;
   border: none;
   border-radius: 6px;
@@ -54,8 +63,22 @@
   transition: all 0.2s ease;
 }
 
+.btn-back       { background-color: #f3b32b; }
 .btn-back:hover { background-color: #d49a1d; }
-.btn-back:active { transform: translateY(1px); }
+
+.btn-h2h        { background-color: #2980b9; }
+.btn-h2h:hover  { background-color: #2471a3; }
+
+.btn-predictions       { background-color: #8e44ad; }
+.btn-predictions:hover { background-color: #7d3c98; }
+
+.btn-analysis       { background-color: #27ae60; }
+.btn-analysis:hover { background-color: #219a52; }
+
+.btn-back:active,
+.btn-h2h:active,
+.btn-predictions:active,
+.btn-analysis:active { transform: translateY(1px); }
 
 /* ── Section card ─────────────────────────────────────────────────────────── */
 

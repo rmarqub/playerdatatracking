@@ -38,6 +38,16 @@ export class SearchFixturesComponent implements OnInit {
     this.fixtureService.getStudiedLeagues().subscribe(leagues => {
       this.studiedLeagues = leagues;
     });
+    const saved = sessionStorage.getItem('searchFixturesState');
+    if (saved) {
+      try {
+        const state = JSON.parse(saved);
+        this.teamName = state.teamName ?? '';
+        this.selectedSearchLeagueIds = state.selectedSearchLeagueIds ?? [];
+        this.fixtures = state.fixtures ?? [];
+        this.searchPerformed = state.searchPerformed ?? false;
+      } catch {}
+    }
   }
 
   @HostListener('document:click', ['$event'])
@@ -186,6 +196,12 @@ export class SearchFixturesComponent implements OnInit {
 
   // ── Navigation ─────────────────────────────────────────────────────────────
   navigateToFixture(fixtureId: number, source?: string): void {
+    sessionStorage.setItem('searchFixturesState', JSON.stringify({
+      teamName: this.teamName,
+      selectedSearchLeagueIds: this.selectedSearchLeagueIds,
+      fixtures: this.fixtures,
+      searchPerformed: this.searchPerformed
+    }));
     const queryParams = source ? { source } : {};
     this.router.navigate(['/fixture', fixtureId], { queryParams });
   }
