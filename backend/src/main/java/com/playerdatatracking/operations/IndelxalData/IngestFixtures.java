@@ -46,10 +46,19 @@ public class IngestFixtures {
 
         boolean purge = Boolean.TRUE.equals(request.getPurgeBeforeRun());
 
-        ConfigParams seasonParam = pdClient.getParam("ACTUAL_SEASON");
-        if (seasonParam == null)
-            throw new IllegalArgumentException("No se encontró el parámetro ACTUAL_SEASON en config_params");
-        Integer season = Integer.parseInt(seasonParam.getValue());
+        Integer season;
+        String actualSeason = request.getSeason();
+		String requestedSeason = (actualSeason != null && !actualSeason.trim().isEmpty())
+				? actualSeason.trim()
+				: pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
+        if (requestedSeason != null && !requestedSeason.trim().isEmpty()) {
+            season = Integer.parseInt(requestedSeason.trim());
+        } else {
+            ConfigParams seasonParam = pdClient.getParam("ACTUAL_SEASON");
+            if (seasonParam == null)
+                throw new IllegalArgumentException("No se encontró el parámetro ACTUAL_SEASON en config_params");
+            season = Integer.parseInt(seasonParam.getValue());
+        }
 
         List<Torneo> studiedLeagues = pdClient.getStudiedLeagues();
         if (studiedLeagues == null || studiedLeagues.isEmpty())
