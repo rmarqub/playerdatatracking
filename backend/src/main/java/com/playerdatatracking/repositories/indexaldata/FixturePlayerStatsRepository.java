@@ -11,6 +11,7 @@ import com.playerdatatracking.entities.indexaldata.FixturePlayerStatsId;
 
 import java.util.List;
 import java.util.Optional;
+
  
 @Repository
 public interface FixturePlayerStatsRepository extends JpaRepository<FixturePlayerStats, FixturePlayerStatsId> {
@@ -54,4 +55,7 @@ public interface FixturePlayerStatsRepository extends JpaRepository<FixturePlaye
     List<FixturePlayerStats> findStartingLineup(@Param("fixtureId") Long fixtureId, @Param("teamId") Long teamId);
  
     void deleteByFixtureId(Long fixtureId);
+
+    @Query("SELECT s FROM FixturePlayerStats s JOIN s.fixture f WHERE s.playerId = :playerId AND f.statusShort = 'FT' AND s.minutesPlayed > 0 ORDER BY f.matchDate DESC LIMIT 1")
+    Optional<FixturePlayerStats> findLastAppearanceByPlayerId(@Param("playerId") Long playerId);
 }

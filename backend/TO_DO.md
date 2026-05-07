@@ -14,7 +14,6 @@
 
 #V2 PLANNING
 - Calcular ausencia de jugadores clave
-- H2H en la página de los partidos, ya estén por jugar o estén terminados.
 - Página de predictibilidad en los partidos que estén por jugar.
 - Modelo predictivo: Gradient Boosting (XGBoost/LightGBM), Capa interpretativa con Style clustering y SHAP values
 - Diseño de logica de usuario.
@@ -28,3 +27,18 @@
 - Añadir otra API como fuente de datos para añadir variabilidad y robustidad.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
+
+
+
+#implementacion
+
+Orden de implementación que recomendaría
+
+  1. Primero el SQL de diagnóstico — confirmar que tienes suficientes partidos con stats completos
+  2. Feature engineering en Python (script que lee de PostgreSQL y genera CSV/DataFrame de entrenamiento)
+  3. Entrenamiento + validación del modelo LightGBM con time-split
+  4. FastAPI endpoint /predict en data-api
+  5. Integración Spring Boot — operación GetMatchPrediction + endpoint
+  6. Tabla fixture_contextual_analysis + operación SaveContextualAnalysis
+  7. Fórmula de combinación (logit blend) en Spring Boot
+  8. Frontend — formulario + visualización de resultados combinados

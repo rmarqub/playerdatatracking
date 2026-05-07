@@ -26,7 +26,9 @@ import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
 import com.playerdatatracking.operations.IndelxalData.GetBasicStats;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
+import com.playerdatatracking.operations.IndelxalData.GetPlayerAbsenceDays;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
+import com.playerdatatracking.responses.PlayerAbsenceDays;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.requests.PlayerMatchRow;
@@ -47,6 +49,8 @@ public class IndexedPlayerController {
     private UpdatePlayer operationUpdatePlayer;
     @Autowired
     private GetBasicStats operationGetBasicStats;
+    @Autowired
+    private GetPlayerAbsenceDays operationGetPlayerAbsenceDays;
 
     @GetMapping("/search")
     public GenericResponse<ConvertedPlayer> searchPlayers(
@@ -115,6 +119,18 @@ public class IndexedPlayerController {
             response = operationGetBasicStats.ejecutar(indexId);
             response.setCODE(Constants.CODE_OK);
             response.setDescription("OK");
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/playerAbsenceDays")
+    public GenericResponse<PlayerAbsenceDays> getPlayerAbsenceDays(@RequestBody GenericRequest request) {
+        GenericResponse<PlayerAbsenceDays> response = new GenericResponse<>();
+        try {
+            response = operationGetPlayerAbsenceDays.ejecutar(request.getIndexId());
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
