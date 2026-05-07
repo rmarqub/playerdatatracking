@@ -165,6 +165,36 @@ export interface H2HFixtureSummary {
   bestPlayers: H2HBestPlayer[];
 }
 
+export interface MatchPredictionResult1x2 {
+  homeWin: number;
+  draw: number;
+  awayWin: number;
+  predicted: 'home_win' | 'draw' | 'away_win';
+  confidence: number;
+}
+
+export interface MatchPredictionBinary {
+  over?: number;
+  under?: number;
+  yes?: number;
+  no?: number;
+  predicted: string;
+}
+
+export interface MatchPrediction {
+  fixtureId: number;
+  homeTeam: string;
+  awayTeam: string;
+  league: string;
+  season: number;
+  matchDate: string;
+  status: string;
+  result1x2: MatchPredictionResult1x2;
+  overUnder25: MatchPredictionBinary;
+  btts: MatchPredictionBinary;
+  warnings: string[];
+}
+
 export interface H2HComparisonData {
   team1Id: number;
   team1Name: string | null;
@@ -337,6 +367,13 @@ export class FixtureService {
 
   getH2HComparison(fixtureId: number): Observable<H2HComparisonData | null> {
     return this.http.post<GenericResponse<H2HComparisonData>>(`${this.base}/h2hComparison`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
+    );
+  }
+
+  getMatchPrediction(fixtureId: number): Observable<MatchPrediction | null> {
+    return this.http.post<GenericResponse<MatchPrediction>>(`${this.base}/matchPrediction`, { id: fixtureId }).pipe(
       map(r => r.code === 0 ? (r.entity || null) : null),
       catchError(() => of(null))
     );

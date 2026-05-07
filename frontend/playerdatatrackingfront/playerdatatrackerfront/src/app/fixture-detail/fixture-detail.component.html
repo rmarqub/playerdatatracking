@@ -17,8 +17,12 @@
     <div class="action-row">
       <button class="btn-back" (click)="goBack()">← Volver</button>
       <button class="btn-h2h" (click)="toggleH2H()">{{ showH2H ? 'Ocultar H2H' : 'Cargar H2H' }}</button>
-      <button class="btn-predictions" *ngIf="!isFinished">Predicciones</button>
-      <button class="btn-analysis" *ngIf="!isFinished">Cargar Análisis</button>
+      <button class="btn-predictions" *ngIf="!isFinished" (click)="loadPrediction()">
+        {{ showPrediction ? 'Ocultar predicción' : 'Predicciones' }}
+      </button>
+      <button class="btn-analysis" *ngIf="!isFinished" (click)="toggleAnalysis()">
+        {{ showAnalysis ? 'Cerrar análisis' : 'Cargar Análisis' }}
+      </button>
     </div>
 
     <!-- Match Header -->
@@ -67,6 +71,358 @@
         <span class="meta-sep" *ngIf="fixture.referee">·</span>
         <span *ngIf="fixture.referee">Árbitro: {{ fixture.referee }}</span>
       </div>
+    </div>
+
+    <!-- Contextual Analysis Panel -->
+    <div class="section-card ctx-panel" *ngIf="showAnalysis">
+
+      <div class="ctx-header-row">
+        <h3 class="section-title" style="margin-bottom:0; border-bottom:none;">Análisis Contextual</h3>
+        <button class="ctx-reset-btn" (click)="resetAnalysisForm()">Restablecer</button>
+      </div>
+      <p class="ctx-subtitle">
+        Introduce factores cualitativos que el modelo estadístico no puede capturar.
+        Estos valores se usarán para ajustar las probabilidades del modelo.
+      </p>
+
+      <!-- Teams header -->
+      <div class="ctx-teams-row">
+        <div class="ctx-team-header home">{{ fixture!.homeTeamName }}</div>
+        <div class="ctx-spacer"></div>
+        <div class="ctx-team-header away">{{ fixture!.awayTeamName }}</div>
+      </div>
+
+      <!-- ── Forma actual ─────────────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.home.currentForm === v"
+              (click)="contextualForm.home.currentForm = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Forma actual</span>
+          <span class="ctx-metric-hint">Racha de resultados recientes</span>
+          <div class="ctx-axis-labels"><span>Mala racha</span><span>Excelente</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.away.currentForm === v"
+              (click)="contextualForm.away.currentForm = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Ambiente en estadio ──────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.home.stadiumAtmosphere === v"
+              (click)="contextualForm.home.stadiumAtmosphere = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Ambiente en el estadio</span>
+          <span class="ctx-metric-hint">Intensidad del apoyo del público</span>
+          <div class="ctx-axis-labels"><span>Frío / hostil</span><span>Eléctrico</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.away.stadiumAtmosphere === v"
+              (click)="contextualForm.away.stadiumAtmosphere = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Bloque defensivo ─────────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.home.defensiveBlock === v"
+              (click)="contextualForm.home.defensiveBlock = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Bloque defensivo</span>
+          <span class="ctx-metric-hint">Línea defensiva esperada</span>
+          <div class="ctx-axis-labels"><span>Bloque bajo</span><span>Presión alta</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.away.defensiveBlock === v"
+              (click)="contextualForm.away.defensiveBlock = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Ritmo ofensivo ───────────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.home.offensiveRhythm === v"
+              (click)="contextualForm.home.offensiveRhythm = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Ritmo ofensivo</span>
+          <span class="ctx-metric-hint">Estilo de ataque esperado</span>
+          <div class="ctx-axis-labels"><span>Posesión / Control</span><span>Transición rápida</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn"
+              [class.active]="contextualForm.away.offensiveRhythm === v"
+              (click)="contextualForm.away.offensiveRhythm = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Necesidades del equipo ───────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn ctx-scale-needs"
+              [class.active]="contextualForm.home.teamNeeds === v"
+              (click)="contextualForm.home.teamNeeds = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Necesidad de puntos</span>
+          <span class="ctx-metric-hint">Presión por resultados (descenso, título, Europa)</span>
+          <div class="ctx-axis-labels"><span>Sin presión</span><span>Urgencia máxima</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn ctx-scale-needs"
+              [class.active]="contextualForm.away.teamNeeds === v"
+              (click)="contextualForm.away.teamNeeds = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Balón parado ─────────────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale ctx-scale-3">
+            <button *ngFor="let v of scale3"
+              class="ctx-scale-btn ctx-scale-btn-lg"
+              [class.active]="contextualForm.home.setPieces === v"
+              (click)="contextualForm.home.setPieces = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Juego a balón parado</span>
+          <span class="ctx-metric-hint">Peligrosidad en córners, faltas y saques</span>
+          <div class="ctx-axis-labels"><span>Poco peligroso</span><span>Muy peligroso</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale ctx-scale-3">
+            <button *ngFor="let v of scale3"
+              class="ctx-scale-btn ctx-scale-btn-lg"
+              [class.active]="contextualForm.away.setPieces === v"
+              (click)="contextualForm.away.setPieces = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Fatiga ───────────────────────────────────────── -->
+      <div class="ctx-metric-row">
+        <div class="ctx-scale-side home">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn ctx-scale-fatigue"
+              [class.active]="contextualForm.home.fatigue === v"
+              (click)="contextualForm.home.fatigue = v">{{ v }}</button>
+          </div>
+        </div>
+        <div class="ctx-metric-center">
+          <span class="ctx-metric-name">Fatiga acumulada</span>
+          <span class="ctx-metric-hint">Carga de partidos recientes, viajes, rotaciones</span>
+          <div class="ctx-axis-labels"><span>Descansado</span><span>Muy cargado</span></div>
+        </div>
+        <div class="ctx-scale-side away">
+          <div class="ctx-scale">
+            <button *ngFor="let v of scale5"
+              class="ctx-scale-btn ctx-scale-fatigue"
+              [class.active]="contextualForm.away.fatigue === v"
+              (click)="contextualForm.away.fatigue = v">{{ v }}</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Bajas / No disponibles ───────────────────────── -->
+      <div class="ctx-unavailable-row">
+
+        <div class="ctx-unavailable-side">
+          <div class="ctx-unavailable-label">Bajas — {{ fixture!.homeTeamName }}</div>
+          <div class="ctx-chip-input-wrap">
+            <input class="ctx-chip-input"
+              type="text"
+              placeholder="Nombre del jugador..."
+              [(ngModel)]="contextualForm.home.unavailableInput"
+              (keydown)="onUnavailableKeydown($event, 'home')">
+            <button class="ctx-chip-add-btn" (click)="addUnavailablePlayer('home')">+</button>
+          </div>
+          <div class="ctx-chips" *ngIf="contextualForm.home.unavailablePlayers.length > 0">
+            <span class="ctx-chip" *ngFor="let p of contextualForm.home.unavailablePlayers; let i = index">
+              {{ p }}
+              <button class="ctx-chip-remove" (click)="removeUnavailablePlayer('home', i)">×</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="ctx-unavailable-side">
+          <div class="ctx-unavailable-label">Bajas — {{ fixture!.awayTeamName }}</div>
+          <div class="ctx-chip-input-wrap">
+            <input class="ctx-chip-input"
+              type="text"
+              placeholder="Nombre del jugador..."
+              [(ngModel)]="contextualForm.away.unavailableInput"
+              (keydown)="onUnavailableKeydown($event, 'away')">
+            <button class="ctx-chip-add-btn" (click)="addUnavailablePlayer('away')">+</button>
+          </div>
+          <div class="ctx-chips" *ngIf="contextualForm.away.unavailablePlayers.length > 0">
+            <span class="ctx-chip" *ngFor="let p of contextualForm.away.unavailablePlayers; let i = index">
+              {{ p }}
+              <button class="ctx-chip-remove" (click)="removeUnavailablePlayer('away', i)">×</button>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Notas del análisis ───────────────────────────── -->
+      <div class="ctx-notes-row">
+        <label class="ctx-notes-label">Notas del analista</label>
+        <textarea class="ctx-notes-input"
+          rows="3"
+          placeholder="Observaciones adicionales sobre el partido, contexto especial, clima, etc."
+          [(ngModel)]="contextualForm.notes"></textarea>
+      </div>
+
+      <!-- ── Acciones ─────────────────────────────────────── -->
+      <div class="ctx-actions-row">
+        <button class="ctx-save-btn">Guardar análisis</button>
+        <span class="ctx-save-hint">El análisis ajustará las probabilidades del modelo</span>
+      </div>
+
+    </div>
+
+    <!-- Prediction Panel -->
+    <div class="section-card prediction-panel" *ngIf="showPrediction">
+
+      <div class="pred-loading" *ngIf="predictionLoading">
+        <div class="spinner"></div>
+        <span>Calculando predicción...</span>
+      </div>
+
+      <div class="pred-error" *ngIf="predictionError && !predictionLoading">
+        ⚠ {{ predictionError }}
+      </div>
+
+      <ng-container *ngIf="prediction && !predictionLoading">
+
+        <h3 class="section-title" style="margin-bottom: 16px;">Predicción del Partido</h3>
+
+        <div class="pred-warnings" *ngIf="prediction.warnings?.length">
+          <span class="pred-warning-item" *ngFor="let w of prediction.warnings">⚠ {{ w }}</span>
+        </div>
+
+        <!-- 1X2 -->
+        <div class="pred-section">
+          <div class="pred-section-label">Resultado del partido</div>
+
+          <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'home_win'">
+            <span class="pred-team-label">{{ fixture!.homeTeamName }}</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-home" [style.width]="pct(prediction.result1x2?.homeWin)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(prediction.result1x2?.homeWin) }}</span>
+            <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'home_win'">✓</span>
+          </div>
+
+          <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'draw'">
+            <span class="pred-team-label">Empate</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-draw" [style.width]="pct(prediction.result1x2?.draw)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(prediction.result1x2?.draw) }}</span>
+            <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'draw'">✓</span>
+          </div>
+
+          <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'away_win'">
+            <span class="pred-team-label">{{ fixture!.awayTeamName }}</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-away" [style.width]="pct(prediction.result1x2?.awayWin)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(prediction.result1x2?.awayWin) }}</span>
+            <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'away_win'">✓</span>
+          </div>
+
+          <div class="pred-confidence">
+            Confianza del modelo:
+            <span class="pred-conf-badge" [ngClass]="confidenceClass(prediction.result1x2?.confidence)">
+              {{ confidenceLabel(prediction.result1x2?.confidence) }}
+            </span>
+          </div>
+        </div>
+
+        <!-- O/U y BTTS -->
+        <div class="pred-binary-row">
+
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">Goles en el partido</div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 2.5 goles</span>
+              <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.over) }}</span>
+              <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'under'">
+              <span class="pred-binary-label">Menos de 2.5 goles</span>
+              <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.under) }}</span>
+              <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'under'">✓</span>
+            </div>
+          </div>
+
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">Ambos equipos marcan</div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'yes'">
+              <span class="pred-binary-label">Sí marcan los dos</span>
+              <span class="pred-binary-pct">{{ pct(prediction.btts?.yes) }}</span>
+              <span class="pred-check" *ngIf="prediction.btts?.predicted === 'yes'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'no'">
+              <span class="pred-binary-label">No marcan los dos</span>
+              <span class="pred-binary-pct">{{ pct(prediction.btts?.no) }}</span>
+              <span class="pred-check" *ngIf="prediction.btts?.predicted === 'no'">✓</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="pred-disclaimer">
+          Predicción generada por modelo estadístico (LightGBM) entrenado con datos históricos.
+          No garantiza el resultado real del partido.
+        </p>
+
+      </ng-container>
     </div>
 
     <!-- H2H Panel -->

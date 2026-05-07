@@ -4,7 +4,7 @@ import { forkJoin } from 'rxjs';
 import {
   FixtureService, Fixture, FixtureEvent, ApiFixtureItem,
   FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry,
-  H2HFixtureSummary, H2HComparisonData
+  H2HFixtureSummary, H2HComparisonData, MatchPrediction
 } from '../services/fixture.service';
 
 @Component({
@@ -32,6 +32,17 @@ export class FixtureDetailComponent implements OnInit {
   showComparison: boolean = false;
   comparisonLoading: boolean = false;
   h2hComparison: H2HComparisonData | null = null;
+
+  showPrediction: boolean = false;
+  predictionLoading: boolean = false;
+  predictionError: string = '';
+  prediction: MatchPrediction | null = null;
+
+  showAnalysis: boolean = false;
+  contextualForm: ContextualAnalysisForm = defaultContextualForm();
+
+  readonly scale5 = [1, 2, 3, 4, 5];
+  readonly scale3 = [1, 2, 3];
 
   constructor(
     private route: ActivatedRoute,
@@ -69,6 +80,12 @@ export class FixtureDetailComponent implements OnInit {
     this.showComparison = false;
     this.comparisonLoading = false;
     this.h2hComparison = null;
+    this.showPrediction = false;
+    this.predictionLoading = false;
+    this.predictionError = '';
+    this.prediction = null;
+    this.showAnalysis = false;
+    this.contextualForm = defaultContextualForm();
   }
 
   private loadFixtureData(id: number): void {
@@ -456,4 +473,116 @@ export class FixtureDetailComponent implements OnInit {
   isHomeTeamEvent(event: FixtureEvent): boolean {
     return event.teamId === this.fixture?.homeTeamId;
   }
+
+  // ── Contextual Analysis ───────────────────────────────────────────────────
+
+  toggleAnalysis(): void {
+    this.showAnalysis = !this.showAnalysis;
+  }
+
+  addUnavailablePlayer(team: 'home' | 'away'): void {
+    const ctx = this.contextualForm[team];
+    const name = ctx.unavailableInput.trim();
+    if (!name || ctx.unavailablePlayers.includes(name)) return;
+    ctx.unavailablePlayers = [...ctx.unavailablePlayers, name];
+    ctx.unavailableInput = '';
+  }
+
+  removeUnavailablePlayer(team: 'home' | 'away', index: number): void {
+    const ctx = this.contextualForm[team];
+    ctx.unavailablePlayers = ctx.unavailablePlayers.filter((_, i) => i !== index);
+  }
+
+  onUnavailableKeydown(event: KeyboardEvent, team: 'home' | 'away'): void {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      this.addUnavailablePlayer(team);
+    }
+  }
+
+  resetAnalysisForm(): void {
+    this.contextualForm = defaultContextualForm();
+  }
+
+  // ── Prediction ────────────────────────────────────────────────────────────
+
+  loadPrediction(): void {
+    if (this.showPrediction) {
+      this.showPrediction = false;
+      return;
+    }
+    this.showPrediction = true;
+    if (this.prediction || this.predictionError) return;
+    this.predictionLoading = true;
+    const id = this.fixture?.id;
+    if (!id) { this.predictionLoading = false; return; }
+    this.fixtureService.getMatchPrediction(id).subscribe({
+      next: (data) => {
+        this.prediction = data;
+        this.predictionLoading = false;
+        if (!data) this.predictionError = 'No se pudo obtener la predicción.';
+      },
+      error: () => {
+        this.predictionError = 'Error al calcular la predicción. Asegúrate de que el servicio de predicción está activo (puerto 8001).';
+        this.predictionLoading = false;
+      }
+    });
+  }
+
+  pct(val: number | null | undefined): string {
+    if (val == null) return '-';
+    return `${(val * 100).toFixed(1)}%`;
+  }
+
+  confidenceLabel(conf: number | null | undefined): string {
+    if (conf == null) return '';
+    if (conf >= 0.18) return 'Alta';
+    if (conf >= 0.08) return 'Media';
+    return 'Baja';
+  }
+
+  confidenceClass(conf: number | null | undefined): string {
+    if (conf == null) return '';
+    if (conf >= 0.18) return 'conf-high';
+    if (conf >= 0.08) return 'conf-mid';
+    return 'conf-low';
+  }
+}
+
+// ── Contextual Analysis types ─────────────────────────────────────────────────
+
+export interface TeamContext {
+  currentForm: number;         // 1-5: racha reciente más allá de los datos estadísticos
+  stadiumAtmosphere: number;   // 1-5: apoyo del estadio (local) / impacto del ambiente (visitante)
+  defensiveBlock: number;      // 1-5: bloque bajo → presión alta
+  offensiveRhythm: number;     // 1-5: posesión/control → transición/vertical
+  teamNeeds: number;           // 1-5: sin urgencia → urgencia máxima (descenso, título)
+  setPieces: number;           // 1-3: peligrosidad a balón parado
+  fatigue: number;             // 1-5: descansado → muy cargado (acumulación de partidos)
+  unavailablePlayers: string[];
+  unavailableInput: string;
+}
+
+export interface ContextualAnalysisForm {
+  home: TeamContext;
+  away: TeamContext;
+  notes: string;
+}
+
+function defaultTeamContext(): TeamContext {
+  return {
+    currentForm: 3,
+    stadiumAtmosphere: 3,
+    defensiveBlock: 3,
+    offensiveRhythm: 3,
+    teamNeeds: 3,
+    setPieces: 2,
+    fatigue: 3,
+    unavailablePlayers: [],
+    unavailableInput: '',
+  };
+}
+
+function defaultContextualForm(): ContextualAnalysisForm {
+  return { home: defaultTeamContext(), away: defaultTeamContext(), notes: '' };
 }

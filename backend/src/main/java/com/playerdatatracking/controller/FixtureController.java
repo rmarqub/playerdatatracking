@@ -16,8 +16,10 @@ import com.playerdatatracking.operations.IndelxalData.GetFixtureById;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
 import com.playerdatatracking.operations.IndelxalData.GetH2HFixtures;
 import com.playerdatatracking.operations.IndelxalData.GetH2HComparison;
+import com.playerdatatracking.operations.IndelxalData.GetMatchPrediction;
 import com.playerdatatracking.responses.H2HFixtureSummary;
 import com.playerdatatracking.responses.H2HComparisonData;
+import com.playerdatatracking.responses.MatchPrediction;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureEventsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureTeamStatsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixturePlayerStatsByFixtureId;
@@ -71,6 +73,8 @@ public class FixtureController {
     private GetH2HFixtures operationGetH2HFixtures;
     @Autowired
     private GetH2HComparison operationGetH2HComparison;
+    @Autowired
+    private GetMatchPrediction operationGetMatchPrediction;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -269,6 +273,18 @@ public class FixtureController {
         GenericResponse<H2HComparisonData> response = new GenericResponse<>();
         try {
             response = operationGetH2HComparison.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/matchPrediction")
+    public GenericResponse<MatchPrediction> getMatchPrediction(@RequestBody GenericRequest request) {
+        GenericResponse<MatchPrediction> response = new GenericResponse<>();
+        try {
+            response = operationGetMatchPrediction.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
