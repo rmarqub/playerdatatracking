@@ -104,8 +104,8 @@
         </div>
         <div class="ctx-metric-center">
           <span class="ctx-metric-name">Forma actual</span>
-          <span class="ctx-metric-hint">Racha de resultados recientes</span>
-          <div class="ctx-axis-labels"><span>Mala racha</span><span>Excelente</span></div>
+          <span class="ctx-metric-hint">Sensaciones del equipo: físico, estado mental, nivel de juego general</span>
+          <div class="ctx-axis-labels"><span>Muy bajo</span><span>Muy alto</span></div>
         </div>
         <div class="ctx-scale-side away">
           <div class="ctx-scale">
@@ -271,39 +271,47 @@
       <div class="ctx-unavailable-row">
 
         <div class="ctx-unavailable-side">
-          <div class="ctx-unavailable-label">Bajas — {{ fixture!.homeTeamName }}</div>
-          <div class="ctx-chip-input-wrap">
-            <input class="ctx-chip-input"
-              type="text"
-              placeholder="Nombre del jugador..."
-              [(ngModel)]="contextualForm.home.unavailableInput"
-              (keydown)="onUnavailableKeydown($event, 'home')">
-            <button class="ctx-chip-add-btn" (click)="addUnavailablePlayer('home')">+</button>
-          </div>
-          <div class="ctx-chips" *ngIf="contextualForm.home.unavailablePlayers.length > 0">
-            <span class="ctx-chip" *ngFor="let p of contextualForm.home.unavailablePlayers; let i = index">
-              {{ p }}
-              <button class="ctx-chip-remove" (click)="removeUnavailablePlayer('home', i)">×</button>
+          <div class="ctx-unavailable-label">
+            Bajas — {{ fixture!.homeTeamName }}
+            <span class="ctx-unavailable-count" *ngIf="contextualForm.home.unavailablePlayerIds.length > 0">
+              ({{ contextualForm.home.unavailablePlayerIds.length }})
             </span>
           </div>
+          <div class="ctx-player-list" *ngIf="homeSquadPlayers.length > 0; else noSquadHome">
+            <label class="ctx-player-row"
+              *ngFor="let p of homeSquadPlayers"
+              [class.ctx-player-unavailable]="isUnavailable('home', p.playerId)">
+              <input type="checkbox"
+                [checked]="isUnavailable('home', p.playerId)"
+                (change)="toggleUnavailablePlayer('home', p.playerId)">
+              <span class="ctx-player-name">{{ p.playerName }}</span>
+            </label>
+          </div>
+          <ng-template #noSquadHome>
+            <p class="ctx-no-squad">No hay datos de plantilla disponibles</p>
+          </ng-template>
         </div>
 
         <div class="ctx-unavailable-side">
-          <div class="ctx-unavailable-label">Bajas — {{ fixture!.awayTeamName }}</div>
-          <div class="ctx-chip-input-wrap">
-            <input class="ctx-chip-input"
-              type="text"
-              placeholder="Nombre del jugador..."
-              [(ngModel)]="contextualForm.away.unavailableInput"
-              (keydown)="onUnavailableKeydown($event, 'away')">
-            <button class="ctx-chip-add-btn" (click)="addUnavailablePlayer('away')">+</button>
-          </div>
-          <div class="ctx-chips" *ngIf="contextualForm.away.unavailablePlayers.length > 0">
-            <span class="ctx-chip" *ngFor="let p of contextualForm.away.unavailablePlayers; let i = index">
-              {{ p }}
-              <button class="ctx-chip-remove" (click)="removeUnavailablePlayer('away', i)">×</button>
+          <div class="ctx-unavailable-label">
+            Bajas — {{ fixture!.awayTeamName }}
+            <span class="ctx-unavailable-count" *ngIf="contextualForm.away.unavailablePlayerIds.length > 0">
+              ({{ contextualForm.away.unavailablePlayerIds.length }})
             </span>
           </div>
+          <div class="ctx-player-list" *ngIf="awaySquadPlayers.length > 0; else noSquadAway">
+            <label class="ctx-player-row"
+              *ngFor="let p of awaySquadPlayers"
+              [class.ctx-player-unavailable]="isUnavailable('away', p.playerId)">
+              <input type="checkbox"
+                [checked]="isUnavailable('away', p.playerId)"
+                (change)="toggleUnavailablePlayer('away', p.playerId)">
+              <span class="ctx-player-name">{{ p.playerName }}</span>
+            </label>
+          </div>
+          <ng-template #noSquadAway>
+            <p class="ctx-no-squad">No hay datos de plantilla disponibles</p>
+          </ng-template>
         </div>
 
       </div>
@@ -432,85 +440,124 @@
     </div>
 
     <!-- Predicción con análisis contextual -->
-    <div class="section-card prediction-panel pred-contextual-panel" *ngIf="prediction && analysisSaved">
+    <div class="section-card prediction-panel pred-contextual-panel" *ngIf="showPrediction && analysisSaved">
 
       <h3 class="section-title" style="margin-bottom: 16px;">
         Predicción con Análisis Contextual
       </h3>
-      <p class="pred-contextual-note">
-        Los valores contextuales han sido guardados. En la próxima fase (v7) se aplicará
-        el ajuste logístico sobre las probabilidades del modelo.
-        De momento se muestran las mismas probabilidades como referencia.
-      </p>
 
-      <!-- 1X2 -->
-      <div class="pred-section">
-        <div class="pred-section-label">Resultado del partido</div>
+      <div class="pred-loading" *ngIf="contextualPredictionLoading">
+        <div class="spinner"></div>
+        <span>Calculando predicción contextual...</span>
+      </div>
 
-        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'home_win'">
-          <span class="pred-team-label">{{ fixture!.homeTeamName }}</span>
-          <div class="pred-bar-wrap">
-            <div class="pred-bar pred-bar-home" [style.width]="pct(prediction.result1x2?.homeWin)"></div>
-          </div>
-          <span class="pred-pct">{{ pct(prediction.result1x2?.homeWin) }}</span>
-          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'home_win'">✓</span>
+      <ng-container *ngIf="contextualPrediction && !contextualPredictionLoading">
+
+        <div class="pred-warnings" *ngIf="contextualPrediction.warnings?.length">
+          <span class="pred-warning-item" *ngFor="let w of contextualPrediction.warnings">⚠ {{ w }}</span>
         </div>
 
-        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'draw'">
-          <span class="pred-team-label">Empate</span>
-          <div class="pred-bar-wrap">
-            <div class="pred-bar pred-bar-draw" [style.width]="pct(prediction.result1x2?.draw)"></div>
-          </div>
-          <span class="pred-pct">{{ pct(prediction.result1x2?.draw) }}</span>
-          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'draw'">✓</span>
-        </div>
-
-        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'away_win'">
-          <span class="pred-team-label">{{ fixture!.awayTeamName }}</span>
-          <div class="pred-bar-wrap">
-            <div class="pred-bar pred-bar-away" [style.width]="pct(prediction.result1x2?.awayWin)"></div>
-          </div>
-          <span class="pred-pct">{{ pct(prediction.result1x2?.awayWin) }}</span>
-          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'away_win'">✓</span>
-        </div>
-
-        <div class="pred-confidence">
-          Confianza del modelo:
-          <span class="pred-conf-badge" [ngClass]="confidenceClass(prediction.result1x2?.confidence)">
-            {{ confidenceLabel(prediction.result1x2?.confidence) }}
+        <!-- Delta indicator -->
+        <div class="ctx-delta-row">
+          <span class="ctx-delta-label">Impacto del análisis (Δ logit):</span>
+          <span class="ctx-delta-value"
+            [class.delta-pos]="contextualPrediction.netDelta > 0.005"
+            [class.delta-neg]="contextualPrediction.netDelta < -0.005">
+            {{ contextualPrediction.netDelta > 0.005 ? '+' : '' }}{{ contextualPrediction.netDelta.toFixed(3) }}
+            <span class="ctx-delta-side" *ngIf="contextualPrediction.netDelta > 0.005">→ favorece {{ fixture!.homeTeamName }}</span>
+            <span class="ctx-delta-side" *ngIf="contextualPrediction.netDelta < -0.005">→ favorece {{ fixture!.awayTeamName }}</span>
+            <span class="ctx-delta-side" *ngIf="contextualPrediction.netDelta >= -0.005 && contextualPrediction.netDelta <= 0.005">→ sin variación significativa</span>
           </span>
         </div>
-      </div>
 
-      <!-- O/U y BTTS -->
-      <div class="pred-binary-row">
-        <div class="pred-binary-card">
-          <div class="pred-binary-title">Goles en el partido</div>
-          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'over'">
-            <span class="pred-binary-label">Más de 2.5 goles</span>
-            <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.over) }}</span>
-            <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'over'">✓</span>
+        <!-- 1X2 ajustado vs base -->
+        <div class="pred-section">
+          <div class="pred-section-label">Resultado del partido · Ajustado (base entre paréntesis)</div>
+
+          <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'home_win'">
+            <span class="pred-team-label">{{ fixture!.homeTeamName }}</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-home" [style.width]="pct(contextualPrediction.adjHomeWin)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(contextualPrediction.adjHomeWin) }}</span>
+            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseHomeWin) }})</span>
+            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjHomeWin > contextualPrediction.baseHomeWin + 0.003">▲</span>
+            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjHomeWin < contextualPrediction.baseHomeWin - 0.003">▼</span>
+            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'home_win'">✓</span>
           </div>
-          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'under'">
-            <span class="pred-binary-label">Menos de 2.5 goles</span>
-            <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.under) }}</span>
-            <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'under'">✓</span>
+
+          <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'draw'">
+            <span class="pred-team-label">Empate</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-draw" [style.width]="pct(contextualPrediction.adjDraw)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(contextualPrediction.adjDraw) }}</span>
+            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseDraw) }})</span>
+            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjDraw > contextualPrediction.baseDraw + 0.003">▲</span>
+            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjDraw < contextualPrediction.baseDraw - 0.003">▼</span>
+            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'draw'">✓</span>
+          </div>
+
+          <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'away_win'">
+            <span class="pred-team-label">{{ fixture!.awayTeamName }}</span>
+            <div class="pred-bar-wrap">
+              <div class="pred-bar pred-bar-away" [style.width]="pct(contextualPrediction.adjAwayWin)"></div>
+            </div>
+            <span class="pred-pct">{{ pct(contextualPrediction.adjAwayWin) }}</span>
+            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseAwayWin) }})</span>
+            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjAwayWin > contextualPrediction.baseAwayWin + 0.003">▲</span>
+            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjAwayWin < contextualPrediction.baseAwayWin - 0.003">▼</span>
+            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'away_win'">✓</span>
+          </div>
+
+          <div class="pred-confidence">
+            Confianza ajustada:
+            <span class="pred-conf-badge" [ngClass]="confidenceClass(contextualPrediction.adjConfidence)">
+              {{ confidenceLabel(contextualPrediction.adjConfidence) }}
+            </span>
           </div>
         </div>
-        <div class="pred-binary-card">
-          <div class="pred-binary-title">Ambos equipos marcan</div>
-          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'yes'">
-            <span class="pred-binary-label">Sí marcan los dos</span>
-            <span class="pred-binary-pct">{{ pct(prediction.btts?.yes) }}</span>
-            <span class="pred-check" *ngIf="prediction.btts?.predicted === 'yes'">✓</span>
+
+        <!-- O/U y BTTS (sin ajustar) -->
+        <div class="pred-binary-row">
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">Goles en el partido</div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.overUnder25?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 2.5 goles</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.overUnder25?.over) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.overUnder25?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.overUnder25?.predicted === 'under'">
+              <span class="pred-binary-label">Menos de 2.5 goles</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.overUnder25?.under) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.overUnder25?.predicted === 'under'">✓</span>
+            </div>
           </div>
-          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'no'">
-            <span class="pred-binary-label">No marcan los dos</span>
-            <span class="pred-binary-pct">{{ pct(prediction.btts?.no) }}</span>
-            <span class="pred-check" *ngIf="prediction.btts?.predicted === 'no'">✓</span>
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">Ambos equipos marcan</div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.btts?.predicted === 'yes'">
+              <span class="pred-binary-label">Sí marcan los dos</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.btts?.yes) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.btts?.predicted === 'yes'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.btts?.predicted === 'no'">
+              <span class="pred-binary-label">No marcan los dos</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.btts?.no) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.btts?.predicted === 'no'">✓</span>
+            </div>
           </div>
         </div>
-      </div>
+
+        <p class="pred-disclaimer">
+          Ajuste mediante mezcla logística (Phase 7a, pesos fijos).
+          O/U 2.5 y BTTS no se ajustan contextualmente.
+        </p>
+
+      </ng-container>
+
+      <p class="pred-contextual-note" *ngIf="!contextualPrediction && !contextualPredictionLoading">
+        Activa la predicción base para calcular el ajuste contextual.
+      </p>
 
     </div>
 

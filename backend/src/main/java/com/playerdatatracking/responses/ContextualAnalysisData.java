@@ -26,6 +26,9 @@ public class ContextualAnalysisData {
 
     private String notes;
     private String updatedAt;
+    private Float baseHomeWin;
+    private Float baseDraw;
+    private Float baseAwayWin;
 
     public Long getFixtureId()                          { return fixtureId; }
     public void setFixtureId(Long v)                    { fixtureId = v; }
@@ -68,4 +71,10 @@ public class ContextualAnalysisData {
     public void setNotes(String v)                      { notes = v; }
     public String getUpdatedAt()                        { return updatedAt; }
     public void setUpdatedAt(String v)                  { updatedAt = v; }
+    public Float getBaseHomeWin()                       { return baseHomeWin; }
+    public void setBaseHomeWin(Float v)                 { baseHomeWin = v; }
+    public Float getBaseDraw()                          { return baseDraw; }
+    public void setBaseDraw(Float v)                    { baseDraw = v; }
+    public Float getBaseAwayWin()                       { return baseAwayWin; }
+    public void setBaseAwayWin(Float v)                 { baseAwayWin = v; }
 }

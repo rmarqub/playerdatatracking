@@ -32,13 +32,5 @@
 
 #implementacion
 
-Orden de implementación que recomendaría
-
-  1. Primero el SQL de diagnóstico — confirmar que tienes suficientes partidos con stats completos
-  2. Feature engineering en Python (script que lee de PostgreSQL y genera CSV/DataFrame de entrenamiento)
-  3. Entrenamiento + validación del modelo LightGBM con time-split
-  4. FastAPI endpoint /predict en data-api
-  5. Integración Spring Boot — operación GetMatchPrediction + endpoint
-  6. Tabla fixture_contextual_analysis + operación SaveContextualAnalysis
-  7. Fórmula de combinación (logit blend) en Spring Boot
-  8. Frontend — formulario + visualización de resultados combinados
+Próximo paso obligatorio en Fase 7: antes de fijar estos pesos en producción, habría que validarlos con backtesting en los ~200-300 partidos del dataset donde ya tienes el resultado real y puedes comparar "predicción base" vs "predicción con análisis contextual simulado". Sin
+  ese paso, los pesos son educated guesses — razonables para empezar, pero necesitan calibración real.

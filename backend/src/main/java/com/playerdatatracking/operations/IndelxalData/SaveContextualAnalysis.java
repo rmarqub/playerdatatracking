@@ -54,6 +54,9 @@ public class SaveContextualAnalysis {
         entity.setAwayUnavailablePlayers(joinPlayers(req.getAwayUnavailablePlayers()));
 
         entity.setNotes(req.getNotes());
+        if (req.getBaseHomeWin() != null) entity.setBaseHomeWin(req.getBaseHomeWin());
+        if (req.getBaseDraw()    != null) entity.setBaseDraw(req.getBaseDraw());
+        if (req.getBaseAwayWin() != null) entity.setBaseAwayWin(req.getBaseAwayWin());
 
         FixtureContextualAnalysis saved = analysisRepository.save(entity);
 
@@ -95,6 +98,9 @@ public class SaveContextualAnalysis {
         d.setAwayUnavailablePlayers(splitPlayers(e.getAwayUnavailablePlayers()));
         d.setNotes(e.getNotes());
         d.setUpdatedAt(e.getUpdatedAt() != null ? e.getUpdatedAt().toString() : null);
+        d.setBaseHomeWin(e.getBaseHomeWin());
+        d.setBaseDraw(e.getBaseDraw());
+        d.setBaseAwayWin(e.getBaseAwayWin());
         return d;
     }
 }

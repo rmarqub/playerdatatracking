@@ -69,6 +69,9 @@ public class GetContextualAnalysis {
         d.setAwayUnavailablePlayers(splitPlayers(e.getAwayUnavailablePlayers()));
         d.setNotes(e.getNotes());
         d.setUpdatedAt(e.getUpdatedAt() != null ? e.getUpdatedAt().toString() : null);
+        d.setBaseHomeWin(e.getBaseHomeWin());
+        d.setBaseDraw(e.getBaseDraw());
+        d.setBaseAwayWin(e.getBaseAwayWin());
         return d;
     }
 }

@@ -28,6 +28,9 @@ public class ContextualAnalysisRequest {
     private List<String> awayUnavailablePlayers;
 
     private String notes;
+    private Float baseHomeWin;
+    private Float baseDraw;
+    private Float baseAwayWin;
 
     public Long getFixtureId()                          { return fixtureId; }
     public void setFixtureId(Long v)                    { fixtureId = v; }
@@ -68,4 +71,10 @@ public class ContextualAnalysisRequest {
 
     public String getNotes()                            { return notes; }
     public void setNotes(String v)                      { notes = v; }
+    public Float getBaseHomeWin()                       { return baseHomeWin; }
+    public void setBaseHomeWin(Float v)                 { baseHomeWin = v; }
+    public Float getBaseDraw()                          { return baseDraw; }
+    public void setBaseDraw(Float v)                    { baseDraw = v; }
+    public Float getBaseAwayWin()                       { return baseAwayWin; }
+    public void setBaseAwayWin(Float v)                 { baseAwayWin = v; }
 }

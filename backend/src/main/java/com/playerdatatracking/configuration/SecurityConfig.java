@@ -33,6 +33,7 @@ public class SecurityConfig {
     			.requestMatchers(HttpMethod.POST, "/ingestFixturePlayerStats").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtureLineup").permitAll()
     			.requestMatchers(HttpMethod.POST, "/playerAbsenceDays").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/analysisHistory").permitAll()
     			.requestMatchers(HttpMethod.POST, "/matchPrediction").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtureTeamStats").permitAll()
     			.requestMatchers(HttpMethod.POST, "/transformRawToStats").permitAll()

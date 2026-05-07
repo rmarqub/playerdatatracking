@@ -37,6 +37,9 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
 	
 	List<Player> findByTeamAndIndexId(Club team, Long indexId);
 
+	@Query("SELECT p FROM Player p WHERE p.team.id = :teamId ORDER BY p.fullname")
+	List<Player> findByTeamId(@Param("teamId") Long teamId);
+
 	Optional<Player> findFirstByIndexIdOrderByIdDesc(Long indexId);
 	
     @Query(value = """

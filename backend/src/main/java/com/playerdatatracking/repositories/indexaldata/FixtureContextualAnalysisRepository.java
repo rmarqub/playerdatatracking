@@ -19,4 +19,7 @@ public interface FixtureContextualAnalysisRepository
 
     @Query("SELECT a.fixtureId FROM FixtureContextualAnalysis a WHERE a.fixtureId IN :ids")
     List<Long> findFixtureIdsByFixtureIdIn(@Param("ids") Collection<Long> ids);
+
+    @Query("SELECT a FROM FixtureContextualAnalysis a WHERE a.baseHomeWin IS NOT NULL")
+    List<FixtureContextualAnalysis> findAllWithBaseSnapshot();
 }

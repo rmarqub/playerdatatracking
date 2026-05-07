@@ -19,10 +19,16 @@ import com.playerdatatracking.operations.IndelxalData.GetH2HComparison;
 import com.playerdatatracking.operations.IndelxalData.GetMatchPrediction;
 import com.playerdatatracking.operations.IndelxalData.SaveContextualAnalysis;
 import com.playerdatatracking.operations.IndelxalData.GetContextualAnalysis;
+import com.playerdatatracking.operations.IndelxalData.GetContextualMatchPrediction;
+import com.playerdatatracking.operations.IndelxalData.GetFixtureSquad;
+import com.playerdatatracking.operations.IndelxalData.GetAnalysisHistory;
+import com.playerdatatracking.responses.AnalysisHistoryData;
+import com.playerdatatracking.responses.ContextualMatchPrediction;
 import com.playerdatatracking.responses.H2HFixtureSummary;
 import com.playerdatatracking.responses.H2HComparisonData;
 import com.playerdatatracking.responses.MatchPrediction;
 import com.playerdatatracking.responses.ContextualAnalysisData;
+import com.playerdatatracking.responses.FixtureSquadData;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureEventsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureTeamStatsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixturePlayerStatsByFixtureId;
@@ -82,6 +88,12 @@ public class FixtureController {
     private SaveContextualAnalysis operationSaveContextualAnalysis;
     @Autowired
     private GetContextualAnalysis operationGetContextualAnalysis;
+    @Autowired
+    private GetFixtureSquad operationGetFixtureSquad;
+    @Autowired
+    private GetContextualMatchPrediction operationGetContextualMatchPrediction;
+    @Autowired
+    private GetAnalysisHistory operationGetAnalysisHistory;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -316,6 +328,42 @@ public class FixtureController {
         GenericResponse<ContextualAnalysisData> response = new GenericResponse<>();
         try {
             response = operationGetContextualAnalysis.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixtureSquad")
+    public GenericResponse<FixtureSquadData> getFixtureSquad(@RequestBody GenericRequest request) {
+        GenericResponse<FixtureSquadData> response = new GenericResponse<>();
+        try {
+            response = operationGetFixtureSquad.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/analysisHistory")
+    public GenericResponse<AnalysisHistoryData> getAnalysisHistory() {
+        GenericResponse<AnalysisHistoryData> response = new GenericResponse<>();
+        try {
+            response = operationGetAnalysisHistory.ejecutar();
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/contextualMatchPrediction")
+    public GenericResponse<ContextualMatchPrediction> getContextualMatchPrediction(@RequestBody GenericRequest request) {
+        GenericResponse<ContextualMatchPrediction> response = new GenericResponse<>();
+        try {
+            response = operationGetContextualMatchPrediction.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

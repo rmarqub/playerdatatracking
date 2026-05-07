@@ -71,6 +71,17 @@ public class FixtureContextualAnalysis {
     @Column(name = "notes", columnDefinition = "TEXT")
     private String notes;
 
+    // ---- Base model snapshot (stored at analysis time) -----------------------
+
+    @Column(name = "base_home_win")
+    private Float baseHomeWin;
+
+    @Column(name = "base_draw")
+    private Float baseDraw;
+
+    @Column(name = "base_away_win")
+    private Float baseAwayWin;
+
     @Column(name = "created_at", updatable = false)
     private OffsetDateTime createdAt;
 
@@ -131,6 +142,12 @@ public class FixtureContextualAnalysis {
 
     public String getNotes()                    { return notes; }
     public void setNotes(String v)              { notes = v; }
+    public Float getBaseHomeWin()               { return baseHomeWin; }
+    public void setBaseHomeWin(Float v)         { baseHomeWin = v; }
+    public Float getBaseDraw()                  { return baseDraw; }
+    public void setBaseDraw(Float v)            { baseDraw = v; }
+    public Float getBaseAwayWin()               { return baseAwayWin; }
+    public void setBaseAwayWin(Float v)         { baseAwayWin = v; }
     public OffsetDateTime getCreatedAt()        { return createdAt; }
     public OffsetDateTime getUpdatedAt()        { return updatedAt; }
 }

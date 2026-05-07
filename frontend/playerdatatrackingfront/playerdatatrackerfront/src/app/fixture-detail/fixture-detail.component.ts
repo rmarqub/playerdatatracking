@@ -4,7 +4,8 @@ import { forkJoin } from 'rxjs';
 import {
   FixtureService, Fixture, FixtureEvent, ApiFixtureItem,
   FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry,
-  H2HFixtureSummary, H2HComparisonData, MatchPrediction, ContextualAnalysisData
+  H2HFixtureSummary, H2HComparisonData, MatchPrediction,
+  ContextualAnalysisData, ContextualMatchPrediction, SquadPlayerEntry
 } from '../services/fixture.service';
 
 @Component({
@@ -43,6 +44,12 @@ export class FixtureDetailComponent implements OnInit {
   analysisSaveError: string = '';
   analysisSaved: boolean = false;
   contextualForm: ContextualAnalysisForm = defaultContextualForm();
+
+  contextualPrediction: ContextualMatchPrediction | null = null;
+  contextualPredictionLoading: boolean = false;
+
+  homeSquadPlayers: SquadPlayerEntry[] = [];
+  awaySquadPlayers: SquadPlayerEntry[] = [];
 
   readonly scale5 = [1, 2, 3, 4, 5];
   readonly scale3 = [1, 2, 3];
@@ -92,6 +99,10 @@ export class FixtureDetailComponent implements OnInit {
     this.analysisSaveError = '';
     this.analysisSaved = false;
     this.contextualForm = defaultContextualForm();
+    this.homeSquadPlayers = [];
+    this.awaySquadPlayers = [];
+    this.contextualPrediction = null;
+    this.contextualPredictionLoading = false;
   }
 
   private loadFixtureData(id: number): void {
@@ -119,9 +130,10 @@ export class FixtureDetailComponent implements OnInit {
         teamStats: this.fixtureService.getFixtureTeamStats(id),
         playerStats: this.fixtureService.getFixturePlayerStats(id),
         lineup: this.fixtureService.getFixtureLineup(id),
-        analysis: this.fixtureService.getContextualAnalysis(id)
+        analysis: this.fixtureService.getContextualAnalysis(id),
+        squad: this.fixtureService.getFixtureSquad(id)
       }).subscribe({
-        next: ({ fixture, events, teamStats, playerStats, lineup, analysis }) => {
+        next: ({ fixture, events, teamStats, playerStats, lineup, analysis, squad }) => {
           this.fixture = fixture;
           this.events = events.sort((a, b) => (a.timeElapsed ?? 0) - (b.timeElapsed ?? 0));
           this.dbTeamStats = teamStats;
@@ -129,6 +141,10 @@ export class FixtureDetailComponent implements OnInit {
           this.dbLineupEntries = lineup;
           this.isLoading = false;
           if (!fixture) this.error = 'No se encontraron datos para este partido.';
+          if (squad) {
+            this.homeSquadPlayers = squad.homePlayers ?? [];
+            this.awaySquadPlayers = squad.awayPlayers ?? [];
+          }
           if (analysis) this.applyAnalysisToForm(analysis);
         },
         error: () => {
@@ -490,28 +506,28 @@ export class FixtureDetailComponent implements OnInit {
 
   private applyAnalysisToForm(data: ContextualAnalysisData): void {
     this.analysisSaved = true;
+    const parseIds = (arr: string[]): number[] =>
+      (arr ?? []).filter(s => s.trim() !== '').map(s => Number(s.trim())).filter(n => !isNaN(n));
     this.contextualForm = {
       home: {
-        currentForm:         data.homeCurrentForm,
-        stadiumAtmosphere:   data.homeStadiumAtmosphere,
-        defensiveBlock:      data.homeDefensiveBlock,
-        offensiveRhythm:     data.homeOffensiveRhythm,
-        teamNeeds:           data.homeTeamNeeds,
-        setPieces:           data.homeSetPieces,
-        fatigue:             data.homeFatigue,
-        unavailablePlayers:  data.homeUnavailablePlayers ?? [],
-        unavailableInput:    '',
+        currentForm:            data.homeCurrentForm,
+        stadiumAtmosphere:      data.homeStadiumAtmosphere,
+        defensiveBlock:         data.homeDefensiveBlock,
+        offensiveRhythm:        data.homeOffensiveRhythm,
+        teamNeeds:              data.homeTeamNeeds,
+        setPieces:              data.homeSetPieces,
+        fatigue:                data.homeFatigue,
+        unavailablePlayerIds:   parseIds(data.homeUnavailablePlayers),
       },
       away: {
-        currentForm:         data.awayCurrentForm,
-        stadiumAtmosphere:   data.awayStadiumAtmosphere,
-        defensiveBlock:      data.awayDefensiveBlock,
-        offensiveRhythm:     data.awayOffensiveRhythm,
-        teamNeeds:           data.awayTeamNeeds,
-        setPieces:           data.awaySetPieces,
-        fatigue:             data.awayFatigue,
-        unavailablePlayers:  data.awayUnavailablePlayers ?? [],
-        unavailableInput:    '',
+        currentForm:            data.awayCurrentForm,
+        stadiumAtmosphere:      data.awayStadiumAtmosphere,
+        defensiveBlock:         data.awayDefensiveBlock,
+        offensiveRhythm:        data.awayOffensiveRhythm,
+        teamNeeds:              data.awayTeamNeeds,
+        setPieces:              data.awaySetPieces,
+        fatigue:                data.awayFatigue,
+        unavailablePlayerIds:   parseIds(data.awayUnavailablePlayers),
       },
       notes: data.notes ?? '',
     };
@@ -531,7 +547,7 @@ export class FixtureDetailComponent implements OnInit {
       homeTeamNeeds:          f.home.teamNeeds,
       homeSetPieces:          f.home.setPieces,
       homeFatigue:            f.home.fatigue,
-      homeUnavailablePlayers: f.home.unavailablePlayers,
+      homeUnavailablePlayers: f.home.unavailablePlayerIds.map(id => String(id)),
       awayCurrentForm:        f.away.currentForm,
       awayStadiumAtmosphere:  f.away.stadiumAtmosphere,
       awayDefensiveBlock:     f.away.defensiveBlock,
@@ -539,13 +555,19 @@ export class FixtureDetailComponent implements OnInit {
       awayTeamNeeds:          f.away.teamNeeds,
       awaySetPieces:          f.away.setPieces,
       awayFatigue:            f.away.fatigue,
-      awayUnavailablePlayers: f.away.unavailablePlayers,
+      awayUnavailablePlayers: f.away.unavailablePlayerIds.map(id => String(id)),
       notes:                  f.notes,
+      baseHomeWin:            this.prediction?.result1x2?.homeWin ?? null,
+      baseDraw:               this.prediction?.result1x2?.draw    ?? null,
+      baseAwayWin:            this.prediction?.result1x2?.awayWin ?? null,
     }).subscribe({
       next: (data) => {
         this.analysisLoading = false;
         if (data) {
           this.analysisSaved = true;
+          if (this.prediction) {
+            this.loadContextualPrediction();
+          }
         } else {
           this.analysisSaveError = 'Error al guardar el análisis.';
         }
@@ -557,24 +579,18 @@ export class FixtureDetailComponent implements OnInit {
     });
   }
 
-  addUnavailablePlayer(team: 'home' | 'away'): void {
-    const ctx = this.contextualForm[team];
-    const name = ctx.unavailableInput.trim();
-    if (!name || ctx.unavailablePlayers.includes(name)) return;
-    ctx.unavailablePlayers = [...ctx.unavailablePlayers, name];
-    ctx.unavailableInput = '';
-  }
-
-  removeUnavailablePlayer(team: 'home' | 'away', index: number): void {
-    const ctx = this.contextualForm[team];
-    ctx.unavailablePlayers = ctx.unavailablePlayers.filter((_, i) => i !== index);
-  }
-
-  onUnavailableKeydown(event: KeyboardEvent, team: 'home' | 'away'): void {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      this.addUnavailablePlayer(team);
+  toggleUnavailablePlayer(team: 'home' | 'away', playerId: number): void {
+    const ids = this.contextualForm[team].unavailablePlayerIds;
+    const idx = ids.indexOf(playerId);
+    if (idx >= 0) {
+      this.contextualForm[team].unavailablePlayerIds = ids.filter(id => id !== playerId);
+    } else {
+      this.contextualForm[team].unavailablePlayerIds = [...ids, playerId];
     }
+  }
+
+  isUnavailable(team: 'home' | 'away', playerId: number): boolean {
+    return this.contextualForm[team].unavailablePlayerIds.includes(playerId);
   }
 
   resetAnalysisForm(): void {
@@ -589,7 +605,12 @@ export class FixtureDetailComponent implements OnInit {
       return;
     }
     this.showPrediction = true;
-    if (this.prediction || this.predictionError) return;
+    if (this.prediction || this.predictionError) {
+      if (this.analysisSaved && !this.contextualPrediction && !this.contextualPredictionLoading) {
+        this.loadContextualPrediction();
+      }
+      return;
+    }
     this.predictionLoading = true;
     const id = this.fixture?.id;
     if (!id) { this.predictionLoading = false; return; }
@@ -597,11 +618,30 @@ export class FixtureDetailComponent implements OnInit {
       next: (data) => {
         this.prediction = data;
         this.predictionLoading = false;
-        if (!data) this.predictionError = 'No se pudo obtener la predicción.';
+        if (!data) {
+          this.predictionError = 'No se pudo obtener la predicción.';
+        } else if (this.analysisSaved) {
+          this.loadContextualPrediction();
+        }
       },
       error: () => {
         this.predictionError = 'Error al calcular la predicción. Asegúrate de que el servicio de predicción está activo (puerto 8001).';
         this.predictionLoading = false;
+      }
+    });
+  }
+
+  loadContextualPrediction(): void {
+    const id = this.fixture?.id;
+    if (!id) return;
+    this.contextualPredictionLoading = true;
+    this.fixtureService.getContextualMatchPrediction(id).subscribe({
+      next: (data) => {
+        this.contextualPrediction = data;
+        this.contextualPredictionLoading = false;
+      },
+      error: () => {
+        this.contextualPredictionLoading = false;
       }
     });
   }
@@ -629,15 +669,14 @@ export class FixtureDetailComponent implements OnInit {
 // ── Contextual Analysis types ─────────────────────────────────────────────────
 
 export interface TeamContext {
-  currentForm: number;         // 1-5: racha reciente más allá de los datos estadísticos
-  stadiumAtmosphere: number;   // 1-5: apoyo del estadio (local) / impacto del ambiente (visitante)
-  defensiveBlock: number;      // 1-5: bloque bajo → presión alta
-  offensiveRhythm: number;     // 1-5: posesión/control → transición/vertical
-  teamNeeds: number;           // 1-5: sin urgencia → urgencia máxima (descenso, título)
-  setPieces: number;           // 1-3: peligrosidad a balón parado
-  fatigue: number;             // 1-5: descansado → muy cargado (acumulación de partidos)
-  unavailablePlayers: string[];
-  unavailableInput: string;
+  currentForm: number;            // 1-5: sensaciones globales del equipo (físico, mental, nivel de juego)
+  stadiumAtmosphere: number;      // 1-5: intensidad del apoyo del público / multiplicador
+  defensiveBlock: number;         // 1-5: capacidad actual de encajar menos goles
+  offensiveRhythm: number;        // 1-5: capacidad actual de generar y marcar goles
+  teamNeeds: number;              // 1-5: presión por resultados (sin urgencia → urgencia máxima)
+  setPieces: number;              // 1-3: peligrosidad a balón parado
+  fatigue: number;                // 1-5: carga acumulada (descansado → muy cargado)
+  unavailablePlayerIds: number[]; // IDs de jugadores no disponibles
 }
 
 export interface ContextualAnalysisForm {
@@ -655,8 +694,7 @@ function defaultTeamContext(): TeamContext {
     teamNeeds: 3,
     setPieces: 2,
     fatigue: 3,
-    unavailablePlayers: [],
-    unavailableInput: '',
+    unavailablePlayerIds: [],
   };
 }
 
