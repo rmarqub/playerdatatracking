@@ -3,7 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import {
   FixtureService, Fixture, FixtureEvent, ApiFixtureItem,
-  FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry
+  FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry,
+  H2HFixtureSummary, H2HComparisonData
 } from '../services/fixture.service';
 
 @Component({
@@ -23,6 +24,15 @@ export class FixtureDetailComponent implements OnInit {
   dbPlayerStats: FixturePlayerStats[] = [];
   dbLineupEntries: FixtureLineupEntry[] = [];
 
+  showH2H: boolean = false;
+  h2hLoading: boolean = false;
+  h2hError: string = '';
+  h2hFixtures: H2HFixtureSummary[] = [];
+
+  showComparison: boolean = false;
+  comparisonLoading: boolean = false;
+  h2hComparison: H2HComparisonData | null = null;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -30,13 +40,38 @@ export class FixtureDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.source = this.route.snapshot.queryParamMap.get('source') ?? '';
-    if (!id) {
-      this.error = 'ID de partido no válido.';
-      this.isLoading = false;
-      return;
-    }
+    this.route.paramMap.subscribe(params => {
+      const id = Number(params.get('id'));
+      this.source = this.route.snapshot.queryParamMap.get('source') ?? '';
+      this.resetState();
+      if (!id) {
+        this.error = 'ID de partido no válido.';
+        this.isLoading = false;
+        return;
+      }
+      this.loadFixtureData(id);
+    });
+  }
+
+  private resetState(): void {
+    this.fixture = null;
+    this.events = [];
+    this.rawApiItem = null;
+    this.isLoading = true;
+    this.error = '';
+    this.dbTeamStats = [];
+    this.dbPlayerStats = [];
+    this.dbLineupEntries = [];
+    this.showH2H = false;
+    this.h2hLoading = false;
+    this.h2hError = '';
+    this.h2hFixtures = [];
+    this.showComparison = false;
+    this.comparisonLoading = false;
+    this.h2hComparison = null;
+  }
+
+  private loadFixtureData(id: number): void {
     if (this.source === 'api') {
       this.fixtureService.getFixtureDetailFromApi(id).subscribe({
         next: (item) => {
@@ -284,6 +319,94 @@ export class FixtureDetailComponent implements OnInit {
     return String(v);
   }
 
+  // ── H2H ──────────────────────────────────────────────────────────────────
+
+  toggleH2H(): void {
+    if (this.showH2H) {
+      this.showH2H = false;
+      return;
+    }
+    this.showH2H = true;
+    if (this.h2hFixtures.length > 0 || this.h2hError) return;
+    this.h2hLoading = true;
+    this.h2hError = '';
+    const id = this.fixture?.id;
+    if (!id) { this.h2hLoading = false; return; }
+    this.fixtureService.getH2HFixtures(id).subscribe({
+      next: (data) => {
+        this.h2hFixtures = data;
+        this.h2hLoading = false;
+      },
+      error: () => {
+        this.h2hError = 'Error al cargar los datos H2H.';
+        this.h2hLoading = false;
+      }
+    });
+  }
+
+  loadComparison(): void {
+    if (this.showComparison) {
+      this.showComparison = false;
+      return;
+    }
+    this.showComparison = true;
+    if (this.h2hComparison) return;
+    this.comparisonLoading = true;
+    const id = this.fixture?.id;
+    if (!id) { this.comparisonLoading = false; return; }
+    this.fixtureService.getH2HComparison(id).subscribe({
+      next: (data) => {
+        this.h2hComparison = data;
+        this.comparisonLoading = false;
+      },
+      error: () => {
+        this.comparisonLoading = false;
+      }
+    });
+  }
+
+  navigateToFixture(fixtureId: number): void {
+    this.router.navigate(['/fixture', fixtureId]);
+  }
+
+  h2hResultLabel(m: H2HFixtureSummary): string {
+    if (m.goalsHome == null || m.goalsAway == null) return '';
+    if (m.goalsHome > m.goalsAway) return 'home-win';
+    if (m.goalsAway > m.goalsHome) return 'away-win';
+    return 'draw';
+  }
+
+  formatH2HDate(dateStr: string | null): string {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    const day   = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year  = d.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+
+  comparisonRows(): Array<{ label: string; v1: number | null; v2: number | null }> {
+    const c = this.h2hComparison;
+    if (!c) return [];
+    return [
+      { label: 'Posesión media (%)',       v1: c.team1AvgPossession,   v2: c.team2AvgPossession   },
+      { label: 'Tiros por partido',         v1: c.team1AvgShots,        v2: c.team2AvgShots        },
+      { label: 'Tiros a puerta por partido',v1: c.team1AvgShotsOnTarget,v2: c.team2AvgShotsOnTarget},
+      { label: 'Córners por partido',       v1: c.team1AvgCorners,      v2: c.team2AvgCorners      },
+      { label: 'Faltas por partido',        v1: c.team1AvgFouls,        v2: c.team2AvgFouls        },
+      { label: 'Amarillas por partido',     v1: c.team1AvgYellowCards,  v2: c.team2AvgYellowCards  },
+      { label: 'xG por partido',            v1: c.team1AvgxG,           v2: c.team2AvgxG           },
+    ].filter(r => r.v1 != null || r.v2 != null);
+  }
+
+  getCompBarPct(v1: number | null, v2: number | null, side: 1 | 2): string {
+    const a = v1 != null ? Number(v1) : 0;
+    const b = v2 != null ? Number(v2) : 0;
+    const total = a + b;
+    if (total === 0) return '50%';
+    return side === 1 ? `${(a / total * 100).toFixed(0)}%` : `${(b / total * 100).toFixed(0)}%`;
+  }
+
   // ── Shared helpers ────────────────────────────────────────────────────────
 
   goBack(): void {
@@ -292,6 +415,10 @@ export class FixtureDetailComponent implements OnInit {
 
   get isLive(): boolean {
     return ['1H', 'HT', '2H', 'ET', 'BT', 'P', 'LIVE'].includes(this.fixture?.statusShort ?? '');
+  }
+
+  get isFinished(): boolean {
+    return this.fixture?.statusShort === 'FT';
   }
 
   get statusLabel(): string {

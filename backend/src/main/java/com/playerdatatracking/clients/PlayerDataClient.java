@@ -49,6 +49,10 @@ import com.playerdatatracking.repositories.indexaldata.TransferRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
 import com.playerdatatracking.requests.IndexTeamPair;
 import com.playerdatatracking.requests.PlayerMatchRow;
+import com.playerdatatracking.responses.H2HBestPlayer;
+import com.playerdatatracking.responses.H2HComparisonData;
+import com.playerdatatracking.responses.H2HFixtureSummary;
+import com.playerdatatracking.responses.H2HGoalScorer;
 
 import jakarta.transaction.Transactional;
 
@@ -903,6 +907,162 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+
+	@Transactional
+	public List<H2HFixtureSummary> getH2HFixtures(Long fixtureId) throws PlayerDataDBException {
+		try {
+			Fixture fixture = fixtureRepository.findById(fixtureId).orElse(null);
+			if (fixture == null) return new ArrayList<>();
+
+			Long team1 = fixture.getHomeTeamId();
+			Long team2 = fixture.getAwayTeamId();
+
+			List<Fixture> h2hList = fixtureRepository.findHeadToHead(team1, team2);
+			List<H2HFixtureSummary> result = new ArrayList<>();
+
+			for (Fixture f : h2hList) {
+				H2HFixtureSummary summary = new H2HFixtureSummary();
+				summary.setFixtureId(f.getId());
+				summary.setMatchDate(f.getMatchDate() != null ? f.getMatchDate().toString() : null);
+				summary.setSeason(f.getSeason());
+				summary.setLeagueName(f.getLeagueName());
+				summary.setRound(f.getRound());
+				summary.setHomeTeamId(f.getHomeTeamId());
+				summary.setHomeTeamName(f.getHomeTeamName());
+				summary.setAwayTeamId(f.getAwayTeamId());
+				summary.setAwayTeamName(f.getAwayTeamName());
+				summary.setGoalsHome(f.getGoalsHome());
+				summary.setGoalsAway(f.getGoalsAway());
+
+				List<FixtureEvent> goals = fixtureEventRepository.findGoalsByFixture(f.getId());
+				List<H2HGoalScorer> scorers = new ArrayList<>();
+				for (FixtureEvent ev : goals) {
+					H2HGoalScorer s = new H2HGoalScorer();
+					s.setPlayerId(ev.getPlayerId());
+					s.setPlayerName(ev.getPlayerName());
+					s.setTeamId(ev.getTeamId());
+					s.setMinute(ev.getTimeElapsed());
+					s.setMinuteExtra(ev.getTimeExtra());
+					s.setDetail(ev.getEventDetail());
+					scorers.add(s);
+				}
+				summary.setScorers(scorers);
+
+				List<FixturePlayerStats> playerStats = fixturePlayerStatsRepository.findByFixtureId(f.getId());
+				List<H2HBestPlayer> bestPlayers = new ArrayList<>();
+				for (long teamId : new long[]{f.getHomeTeamId(), f.getAwayTeamId()}) {
+					final long tid = teamId;
+					playerStats.stream()
+						.filter(ps -> ps.getTeamId() != null && ps.getTeamId() == tid && ps.getRating() != null)
+						.sorted((a, b) -> b.getRating().compareTo(a.getRating()))
+						.limit(2)
+						.forEach(ps -> {
+							H2HBestPlayer bp = new H2HBestPlayer();
+							bp.setPlayerId(ps.getPlayerId());
+							bp.setPlayerName(ps.getPlayerName());
+							bp.setTeamId(ps.getTeamId());
+							bp.setRating(ps.getRating().doubleValue());
+							bestPlayers.add(bp);
+						});
+				}
+				summary.setBestPlayers(bestPlayers);
+				result.add(summary);
+			}
+			return result;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public H2HComparisonData getH2HComparison(Long fixtureId) throws PlayerDataDBException {
+		try {
+			Fixture fixture = fixtureRepository.findById(fixtureId).orElse(null);
+			if (fixture == null) return null;
+
+			Long team1Id = fixture.getHomeTeamId();
+			Long team2Id = fixture.getAwayTeamId();
+
+			List<Fixture> h2hList = fixtureRepository.findHeadToHead(team1Id, team2Id);
+
+			H2HComparisonData data = new H2HComparisonData();
+			data.setTeam1Id(team1Id);
+			data.setTeam1Name(fixture.getHomeTeamName());
+			data.setTeam2Id(team2Id);
+			data.setTeam2Name(fixture.getAwayTeamName());
+			data.setTotalMatches(h2hList.size());
+
+			int wins1 = 0, wins2 = 0, draws = 0, goals1 = 0, goals2 = 0;
+			double sumPoss1 = 0, sumPoss2 = 0, sumShots1 = 0, sumShots2 = 0;
+			double sumShotsOn1 = 0, sumShotsOn2 = 0, sumCorners1 = 0, sumCorners2 = 0;
+			double sumFouls1 = 0, sumFouls2 = 0, sumYellow1 = 0, sumYellow2 = 0;
+			double sumxG1 = 0, sumxG2 = 0;
+			int statsCount = 0;
+
+			for (Fixture f : h2hList) {
+				boolean t1IsHome = f.getHomeTeamId().equals(team1Id);
+				int g1 = t1IsHome ? safeInt(f.getGoalsHome()) : safeInt(f.getGoalsAway());
+				int g2 = t1IsHome ? safeInt(f.getGoalsAway()) : safeInt(f.getGoalsHome());
+				goals1 += g1;
+				goals2 += g2;
+				if (g1 > g2) wins1++;
+				else if (g2 > g1) wins2++;
+				else draws++;
+
+				Optional<FixtureTeamStats> s1Opt = fixtureTeamStatsRepository.findByFixtureIdAndTeamId(f.getId(), team1Id);
+				Optional<FixtureTeamStats> s2Opt = fixtureTeamStatsRepository.findByFixtureIdAndTeamId(f.getId(), team2Id);
+				if (s1Opt.isPresent() && s2Opt.isPresent()) {
+					FixtureTeamStats s1 = s1Opt.get();
+					FixtureTeamStats s2 = s2Opt.get();
+					statsCount++;
+					sumPoss1   += safeDec(s1.getBallPossession());
+					sumPoss2   += safeDec(s2.getBallPossession());
+					sumShots1  += safeInt(s1.getShotsTotal());
+					sumShots2  += safeInt(s2.getShotsTotal());
+					sumShotsOn1 += safeInt(s1.getShotsOnGoal());
+					sumShotsOn2 += safeInt(s2.getShotsOnGoal());
+					sumCorners1 += safeInt(s1.getCornerKicks());
+					sumCorners2 += safeInt(s2.getCornerKicks());
+					sumFouls1  += safeInt(s1.getFouls());
+					sumFouls2  += safeInt(s2.getFouls());
+					sumYellow1 += safeInt(s1.getYellowCards());
+					sumYellow2 += safeInt(s2.getYellowCards());
+					sumxG1     += safeDec(s1.getExpectedGoals());
+					sumxG2     += safeDec(s2.getExpectedGoals());
+				}
+			}
+
+			data.setTeam1Wins(wins1);
+			data.setTeam2Wins(wins2);
+			data.setDraws(draws);
+			data.setTeam1Goals(goals1);
+			data.setTeam2Goals(goals2);
+
+			if (statsCount > 0) {
+				data.setTeam1AvgPossession(r2(sumPoss1 / statsCount));
+				data.setTeam2AvgPossession(r2(sumPoss2 / statsCount));
+				data.setTeam1AvgShots(r2(sumShots1 / statsCount));
+				data.setTeam2AvgShots(r2(sumShots2 / statsCount));
+				data.setTeam1AvgShotsOnTarget(r2(sumShotsOn1 / statsCount));
+				data.setTeam2AvgShotsOnTarget(r2(sumShotsOn2 / statsCount));
+				data.setTeam1AvgCorners(r2(sumCorners1 / statsCount));
+				data.setTeam2AvgCorners(r2(sumCorners2 / statsCount));
+				data.setTeam1AvgFouls(r2(sumFouls1 / statsCount));
+				data.setTeam2AvgFouls(r2(sumFouls2 / statsCount));
+				data.setTeam1AvgYellowCards(r2(sumYellow1 / statsCount));
+				data.setTeam2AvgYellowCards(r2(sumYellow2 / statsCount));
+				data.setTeam1AvgxG(r2(sumxG1 / statsCount));
+				data.setTeam2AvgxG(r2(sumxG2 / statsCount));
+			}
+			return data;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	private int safeInt(Integer v) { return v != null ? v : 0; }
+	private double safeDec(java.math.BigDecimal v) { return v != null ? v.doubleValue() : 0.0; }
+	private double r2(double v) { return Math.round(v * 100.0) / 100.0; }
 
 	@Transactional
 	public byte[] getPhoto(Long id) { return pRepository.findPhotoById(id); }

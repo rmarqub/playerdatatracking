@@ -133,6 +133,65 @@ export interface FixtureLineupEntry {
   substitute: boolean;
 }
 
+export interface H2HGoalScorer {
+  playerId: number | null;
+  playerName: string | null;
+  teamId: number | null;
+  minute: number | null;
+  minuteExtra: number | null;
+  detail: string | null;
+}
+
+export interface H2HBestPlayer {
+  playerId: number | null;
+  playerName: string | null;
+  teamId: number | null;
+  rating: number | null;
+}
+
+export interface H2HFixtureSummary {
+  fixtureId: number;
+  matchDate: string | null;
+  season: number | null;
+  leagueName: string | null;
+  round: string | null;
+  homeTeamId: number;
+  homeTeamName: string | null;
+  awayTeamId: number;
+  awayTeamName: string | null;
+  goalsHome: number | null;
+  goalsAway: number | null;
+  scorers: H2HGoalScorer[];
+  bestPlayers: H2HBestPlayer[];
+}
+
+export interface H2HComparisonData {
+  team1Id: number;
+  team1Name: string | null;
+  team2Id: number;
+  team2Name: string | null;
+  totalMatches: number;
+  team1Wins: number;
+  team2Wins: number;
+  draws: number;
+  team1Goals: number;
+  team2Goals: number;
+  team1AvgPossession: number | null;
+  team2AvgPossession: number | null;
+  team1AvgShots: number | null;
+  team2AvgShots: number | null;
+  team1AvgShotsOnTarget: number | null;
+  team2AvgShotsOnTarget: number | null;
+  team1AvgCorners: number | null;
+  team2AvgCorners: number | null;
+  team1AvgFouls: number | null;
+  team2AvgFouls: number | null;
+  team1AvgYellowCards: number | null;
+  team2AvgYellowCards: number | null;
+  team1AvgxG: number | null;
+  team2AvgxG: number | null;
+}
+
 export interface ApiFixtureStatus {
   long: string;
   short: string;
@@ -266,6 +325,20 @@ export class FixtureService {
     return this.http.post<GenericResponse<FixtureLineupEntry>>(`${this.base}/fixtureLineup`, { id: fixtureId }).pipe(
       map(r => r.code === 0 ? (r.entityList || []) : []),
       catchError(() => of([]))
+    );
+  }
+
+  getH2HFixtures(fixtureId: number): Observable<H2HFixtureSummary[]> {
+    return this.http.post<GenericResponse<H2HFixtureSummary>>(`${this.base}/h2hFixtures`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  getH2HComparison(fixtureId: number): Observable<H2HComparisonData | null> {
+    return this.http.post<GenericResponse<H2HComparisonData>>(`${this.base}/h2hComparison`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
     );
   }
 }

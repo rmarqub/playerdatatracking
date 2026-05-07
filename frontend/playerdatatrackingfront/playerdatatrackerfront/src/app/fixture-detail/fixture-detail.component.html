@@ -16,9 +16,9 @@
 
     <div class="action-row">
       <button class="btn-back" (click)="goBack()">← Volver</button>
-      <button class="btn-h2h">Cargar H2H</button>
-      <button class="btn-predictions">Predicciones</button>
-      <button class="btn-analysis">Cargar Análisis</button>
+      <button class="btn-h2h" (click)="toggleH2H()">{{ showH2H ? 'Ocultar H2H' : 'Cargar H2H' }}</button>
+      <button class="btn-predictions" *ngIf="!isFinished">Predicciones</button>
+      <button class="btn-analysis" *ngIf="!isFinished">Cargar Análisis</button>
     </div>
 
     <!-- Match Header -->
@@ -67,6 +67,132 @@
         <span class="meta-sep" *ngIf="fixture.referee">·</span>
         <span *ngIf="fixture.referee">Árbitro: {{ fixture.referee }}</span>
       </div>
+    </div>
+
+    <!-- H2H Panel -->
+    <div class="section-card h2h-panel" *ngIf="showH2H">
+
+      <!-- H2H Header -->
+      <div class="h2h-header">
+        <h3 class="section-title" style="margin-bottom:0; border-bottom:none;">
+          H2H · {{ fixture!.homeTeamName }} vs {{ fixture!.awayTeamName }}
+        </h3>
+        <button class="btn-comparison" (click)="loadComparison()">
+          {{ showComparison ? 'Ocultar comparativa' : 'Comparativa' }}
+        </button>
+      </div>
+
+      <!-- Comparison Panel -->
+      <div class="h2h-comparison" *ngIf="showComparison">
+        <div class="h2h-comp-loading" *ngIf="comparisonLoading">Cargando comparativa...</div>
+        <ng-container *ngIf="!comparisonLoading && h2hComparison">
+          <!-- Record -->
+          <div class="h2h-record">
+            <div class="h2h-record-col">
+              <span class="h2h-record-num wins">{{ h2hComparison.team1Wins }}</span>
+              <span class="h2h-record-label">Victorias</span>
+              <span class="h2h-record-team">{{ h2hComparison.team1Name }}</span>
+            </div>
+            <div class="h2h-record-col draws">
+              <span class="h2h-record-num">{{ h2hComparison.draws }}</span>
+              <span class="h2h-record-label">Empates</span>
+            </div>
+            <div class="h2h-record-col">
+              <span class="h2h-record-num wins">{{ h2hComparison.team2Wins }}</span>
+              <span class="h2h-record-label">Victorias</span>
+              <span class="h2h-record-team">{{ h2hComparison.team2Name }}</span>
+            </div>
+          </div>
+          <div class="h2h-goals-row">
+            <span class="h2h-goals-val">{{ h2hComparison.team1Goals }}</span>
+            <span class="h2h-goals-label">Goles totales</span>
+            <span class="h2h-goals-val">{{ h2hComparison.team2Goals }}</span>
+          </div>
+          <!-- Stats bars -->
+          <div class="h2h-comp-teams-header">
+            <span class="h2h-comp-team-name home">{{ h2hComparison.team1Name }}</span>
+            <span></span>
+            <span class="h2h-comp-team-name away">{{ h2hComparison.team2Name }}</span>
+          </div>
+          <div class="ts-row" *ngFor="let row of comparisonRows()">
+            <div class="ts-side home">
+              <span class="ts-val">{{ row.v1 != null ? row.v1 : '-' }}</span>
+              <div class="ts-track home">
+                <div class="ts-bar home" [style.width]="getCompBarPct(row.v1, row.v2, 1)"></div>
+              </div>
+            </div>
+            <span class="ts-label">{{ row.label }}</span>
+            <div class="ts-side away">
+              <div class="ts-track away">
+                <div class="ts-bar away" [style.width]="getCompBarPct(row.v1, row.v2, 2)"></div>
+              </div>
+              <span class="ts-val">{{ row.v2 != null ? row.v2 : '-' }}</span>
+            </div>
+          </div>
+          <div *ngIf="comparisonRows().length === 0" class="empty-msg">
+            No hay estadísticas detalladas disponibles para estos partidos.
+          </div>
+        </ng-container>
+      </div>
+
+      <!-- H2H Fixtures List -->
+      <div class="h2h-loading-msg" *ngIf="h2hLoading">Cargando partidos H2H...</div>
+      <div class="h2h-error-msg" *ngIf="h2hError">{{ h2hError }}</div>
+      <div class="empty-msg" *ngIf="!h2hLoading && !h2hError && h2hFixtures.length === 0">
+        No hay partidos H2H registrados entre estos equipos.
+      </div>
+
+      <div class="h2h-match-list">
+        <div class="h2h-match-card" *ngFor="let m of h2hFixtures" [ngClass]="h2hResultLabel(m)">
+
+          <!-- Meta -->
+          <div class="h2h-match-meta">
+            <span class="h2h-match-date">{{ formatH2HDate(m.matchDate) }}</span>
+            <span class="h2h-match-league" *ngIf="m.leagueName">{{ m.leagueName }}</span>
+            <span class="h2h-match-round" *ngIf="m.round">{{ m.round }}</span>
+            <span class="h2h-match-season" *ngIf="m.season">Temp. {{ m.season }}</span>
+          </div>
+
+          <!-- Score -->
+          <div class="h2h-match-score-row">
+            <span class="h2h-match-team home">{{ m.homeTeamName }}</span>
+            <span class="h2h-match-score">
+              {{ m.goalsHome ?? '-' }} – {{ m.goalsAway ?? '-' }}
+            </span>
+            <span class="h2h-match-team away">{{ m.awayTeamName }}</span>
+          </div>
+
+          <!-- Scorers -->
+          <div class="h2h-scorers" *ngIf="m.scorers && m.scorers.length > 0">
+            <span class="h2h-scorer-item" *ngFor="let s of m.scorers"
+              [class.scorer-home]="s.teamId === m.homeTeamId"
+              [class.scorer-away]="s.teamId === m.awayTeamId">
+              <span class="scorer-icon">
+                <ng-container *ngIf="s.detail && s.detail.includes('Own Goal')">⚽↩</ng-container>
+                <ng-container *ngIf="s.detail && s.detail.includes('Penalty') && !(s.detail.includes('Own Goal'))">⚽(P)</ng-container>
+                <ng-container *ngIf="!s.detail || (!s.detail.includes('Own Goal') && !s.detail.includes('Penalty'))">⚽</ng-container>
+              </span>
+              {{ s.minute }}<ng-container *ngIf="s.minuteExtra">+{{ s.minuteExtra }}</ng-container>'
+              {{ s.playerName ?? '—' }}
+            </span>
+          </div>
+
+          <!-- Best Players -->
+          <div class="h2h-best-players" *ngIf="m.bestPlayers && m.bestPlayers.length > 0">
+            <span class="h2h-best-label">Mejores:</span>
+            <span class="h2h-best-item" *ngFor="let p of m.bestPlayers"
+              [class.best-home]="p.teamId === m.homeTeamId"
+              [class.best-away]="p.teamId === m.awayTeamId">
+              ★ {{ p.playerName }} <span class="best-rating">{{ p.rating }}</span>
+            </span>
+          </div>
+
+          <!-- Link -->
+          <button class="btn-view-match" (click)="navigateToFixture(m.fixtureId)">Ver partido →</button>
+
+        </div>
+      </div>
+
     </div>
 
     <!-- Events Timeline -->

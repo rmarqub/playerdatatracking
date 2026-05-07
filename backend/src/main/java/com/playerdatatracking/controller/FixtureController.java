@@ -14,6 +14,10 @@ import com.playerdatatracking.entities.indexaldata.FixtureLineup;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureById;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureDetailFromApi;
+import com.playerdatatracking.operations.IndelxalData.GetH2HFixtures;
+import com.playerdatatracking.operations.IndelxalData.GetH2HComparison;
+import com.playerdatatracking.responses.H2HFixtureSummary;
+import com.playerdatatracking.responses.H2HComparisonData;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureEventsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureTeamStatsByFixtureId;
 import com.playerdatatracking.operations.IndelxalData.GetFixturePlayerStatsByFixtureId;
@@ -63,6 +67,10 @@ public class FixtureController {
     private GetFixturePlayerStatsByFixtureId operationGetFixturePlayerStatsByFixtureId;
     @Autowired
     private GetFixtureLineupByFixtureId operationGetFixtureLineupByFixtureId;
+    @Autowired
+    private GetH2HFixtures operationGetH2HFixtures;
+    @Autowired
+    private GetH2HComparison operationGetH2HComparison;
 
     @PostMapping("/liveFixtures")
     public GenericResponse<Fixture> getLiveFixtures() {
@@ -237,6 +245,30 @@ public class FixtureController {
         GenericResponse<FixtureLineup> response = new GenericResponse<>();
         try {
             response = operationGetFixtureLineupByFixtureId.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/h2hFixtures")
+    public GenericResponse<H2HFixtureSummary> getH2HFixtures(@RequestBody GenericRequest request) {
+        GenericResponse<H2HFixtureSummary> response = new GenericResponse<>();
+        try {
+            response = operationGetH2HFixtures.ejecutar(request);
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/h2hComparison")
+    public GenericResponse<H2HComparisonData> getH2HComparison(@RequestBody GenericRequest request) {
+        GenericResponse<H2HComparisonData> response = new GenericResponse<>();
+        try {
+            response = operationGetH2HComparison.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
