@@ -37,6 +37,10 @@ public class GenericRequest {
     private String purgeBeforeRun;
     private List<Long> leagueIds;
     private String season;
+    private ContextualAnalysisRequest contextualAnalysis;
+
+    public ContextualAnalysisRequest getContextualAnalysis() { return contextualAnalysis; }
+    public void setContextualAnalysis(ContextualAnalysisRequest v) { contextualAnalysis = v; }
 
     public String getSeason() {
         return season;

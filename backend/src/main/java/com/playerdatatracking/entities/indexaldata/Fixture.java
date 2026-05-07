@@ -134,6 +134,9 @@ public class Fixture {
     @OneToMany(mappedBy = "fixture", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<FixtureLineup> lineups = new ArrayList<>();
 
+    @Transient
+    private boolean hasAnalysis;
+
     @PrePersist
     protected void onCreate() {
         this.ingestedAt = OffsetDateTime.now();
@@ -456,5 +459,8 @@ public class Fixture {
 	public void setLineups(List<FixtureLineup> lineups) {
 		this.lineups = lineups;
 	}
+
+	public boolean isHasAnalysis() { return hasAnalysis; }
+	public void setHasAnalysis(boolean v) { hasAnalysis = v; }
 
 }

@@ -4,7 +4,7 @@ import { forkJoin } from 'rxjs';
 import {
   FixtureService, Fixture, FixtureEvent, ApiFixtureItem,
   FixtureTeamStats, FixturePlayerStats, FixtureLineupEntry,
-  H2HFixtureSummary, H2HComparisonData, MatchPrediction
+  H2HFixtureSummary, H2HComparisonData, MatchPrediction, ContextualAnalysisData
 } from '../services/fixture.service';
 
 @Component({
@@ -39,6 +39,9 @@ export class FixtureDetailComponent implements OnInit {
   prediction: MatchPrediction | null = null;
 
   showAnalysis: boolean = false;
+  analysisLoading: boolean = false;
+  analysisSaveError: string = '';
+  analysisSaved: boolean = false;
   contextualForm: ContextualAnalysisForm = defaultContextualForm();
 
   readonly scale5 = [1, 2, 3, 4, 5];
@@ -85,6 +88,9 @@ export class FixtureDetailComponent implements OnInit {
     this.predictionError = '';
     this.prediction = null;
     this.showAnalysis = false;
+    this.analysisLoading = false;
+    this.analysisSaveError = '';
+    this.analysisSaved = false;
     this.contextualForm = defaultContextualForm();
   }
 
@@ -112,9 +118,10 @@ export class FixtureDetailComponent implements OnInit {
         events: this.fixtureService.getFixtureEventsFromDb(id),
         teamStats: this.fixtureService.getFixtureTeamStats(id),
         playerStats: this.fixtureService.getFixturePlayerStats(id),
-        lineup: this.fixtureService.getFixtureLineup(id)
+        lineup: this.fixtureService.getFixtureLineup(id),
+        analysis: this.fixtureService.getContextualAnalysis(id)
       }).subscribe({
-        next: ({ fixture, events, teamStats, playerStats, lineup }) => {
+        next: ({ fixture, events, teamStats, playerStats, lineup, analysis }) => {
           this.fixture = fixture;
           this.events = events.sort((a, b) => (a.timeElapsed ?? 0) - (b.timeElapsed ?? 0));
           this.dbTeamStats = teamStats;
@@ -122,6 +129,7 @@ export class FixtureDetailComponent implements OnInit {
           this.dbLineupEntries = lineup;
           this.isLoading = false;
           if (!fixture) this.error = 'No se encontraron datos para este partido.';
+          if (analysis) this.applyAnalysisToForm(analysis);
         },
         error: () => {
           this.error = 'Error al cargar los datos del partido.';
@@ -478,6 +486,75 @@ export class FixtureDetailComponent implements OnInit {
 
   toggleAnalysis(): void {
     this.showAnalysis = !this.showAnalysis;
+  }
+
+  private applyAnalysisToForm(data: ContextualAnalysisData): void {
+    this.analysisSaved = true;
+    this.contextualForm = {
+      home: {
+        currentForm:         data.homeCurrentForm,
+        stadiumAtmosphere:   data.homeStadiumAtmosphere,
+        defensiveBlock:      data.homeDefensiveBlock,
+        offensiveRhythm:     data.homeOffensiveRhythm,
+        teamNeeds:           data.homeTeamNeeds,
+        setPieces:           data.homeSetPieces,
+        fatigue:             data.homeFatigue,
+        unavailablePlayers:  data.homeUnavailablePlayers ?? [],
+        unavailableInput:    '',
+      },
+      away: {
+        currentForm:         data.awayCurrentForm,
+        stadiumAtmosphere:   data.awayStadiumAtmosphere,
+        defensiveBlock:      data.awayDefensiveBlock,
+        offensiveRhythm:     data.awayOffensiveRhythm,
+        teamNeeds:           data.awayTeamNeeds,
+        setPieces:           data.awaySetPieces,
+        fatigue:             data.awayFatigue,
+        unavailablePlayers:  data.awayUnavailablePlayers ?? [],
+        unavailableInput:    '',
+      },
+      notes: data.notes ?? '',
+    };
+  }
+
+  saveAnalysis(): void {
+    const id = this.fixture?.id;
+    if (!id) return;
+    this.analysisLoading = true;
+    this.analysisSaveError = '';
+    const f = this.contextualForm;
+    this.fixtureService.saveContextualAnalysis(id, {
+      homeCurrentForm:        f.home.currentForm,
+      homeStadiumAtmosphere:  f.home.stadiumAtmosphere,
+      homeDefensiveBlock:     f.home.defensiveBlock,
+      homeOffensiveRhythm:    f.home.offensiveRhythm,
+      homeTeamNeeds:          f.home.teamNeeds,
+      homeSetPieces:          f.home.setPieces,
+      homeFatigue:            f.home.fatigue,
+      homeUnavailablePlayers: f.home.unavailablePlayers,
+      awayCurrentForm:        f.away.currentForm,
+      awayStadiumAtmosphere:  f.away.stadiumAtmosphere,
+      awayDefensiveBlock:     f.away.defensiveBlock,
+      awayOffensiveRhythm:    f.away.offensiveRhythm,
+      awayTeamNeeds:          f.away.teamNeeds,
+      awaySetPieces:          f.away.setPieces,
+      awayFatigue:            f.away.fatigue,
+      awayUnavailablePlayers: f.away.unavailablePlayers,
+      notes:                  f.notes,
+    }).subscribe({
+      next: (data) => {
+        this.analysisLoading = false;
+        if (data) {
+          this.analysisSaved = true;
+        } else {
+          this.analysisSaveError = 'Error al guardar el análisis.';
+        }
+      },
+      error: () => {
+        this.analysisLoading = false;
+        this.analysisSaveError = 'Error de conexión al guardar el análisis.';
+      }
+    });
   }
 
   addUnavailablePlayer(team: 'home' | 'away'): void {

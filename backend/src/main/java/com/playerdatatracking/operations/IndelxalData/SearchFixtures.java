@@ -2,6 +2,7 @@ package com.playerdatatracking.operations.IndelxalData;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
+import com.playerdatatracking.repositories.indexaldata.FixtureContextualAnalysisRepository;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 
@@ -20,6 +22,9 @@ public class SearchFixtures {
 
     @Autowired
     private PlayerDataClient pdClient;
+
+    @Autowired
+    private FixtureContextualAnalysisRepository analysisRepository;
 
     public GenericResponse<Fixture> ejecutar(GenericRequest request) throws Exception {
         GenericResponse<Fixture> response = new GenericResponse<>();
@@ -56,6 +61,13 @@ public class SearchFixtures {
             fixtures = pdClient.searchFixturesByTeamIds(teamIds);
         } else {
             fixtures = pdClient.searchFixturesByLeagueIds(leagueIntIds);
+        }
+
+        if (!fixtures.isEmpty()) {
+            List<Long> fixtureIds = fixtures.stream().map(Fixture::getId).collect(Collectors.toList());
+            Set<Long> analysisIds = new java.util.HashSet<>(
+                    analysisRepository.findFixtureIdsByFixtureIdIn(fixtureIds));
+            fixtures.forEach(f -> f.setHasAnalysis(analysisIds.contains(f.getId())));
         }
 
         response.setCODE(Constants.CODE_OK);

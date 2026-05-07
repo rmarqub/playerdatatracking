@@ -319,8 +319,14 @@
 
       <!-- ── Acciones ─────────────────────────────────────── -->
       <div class="ctx-actions-row">
-        <button class="ctx-save-btn">Guardar análisis</button>
-        <span class="ctx-save-hint">El análisis ajustará las probabilidades del modelo</span>
+        <button class="ctx-save-btn" (click)="saveAnalysis()" [disabled]="analysisLoading">
+          {{ analysisLoading ? 'Guardando...' : (analysisSaved ? 'Actualizar análisis' : 'Guardar análisis') }}
+        </button>
+        <span class="ctx-save-success" *ngIf="analysisSaved && !analysisLoading">✓ Análisis guardado</span>
+        <span class="ctx-save-error" *ngIf="analysisSaveError">{{ analysisSaveError }}</span>
+        <span class="ctx-save-hint" *ngIf="!analysisSaved && !analysisSaveError">
+          El análisis ajustará las probabilidades del modelo
+        </span>
       </div>
 
     </div>
@@ -423,6 +429,89 @@
         </p>
 
       </ng-container>
+    </div>
+
+    <!-- Predicción con análisis contextual -->
+    <div class="section-card prediction-panel pred-contextual-panel" *ngIf="prediction && analysisSaved">
+
+      <h3 class="section-title" style="margin-bottom: 16px;">
+        Predicción con Análisis Contextual
+      </h3>
+      <p class="pred-contextual-note">
+        Los valores contextuales han sido guardados. En la próxima fase (v7) se aplicará
+        el ajuste logístico sobre las probabilidades del modelo.
+        De momento se muestran las mismas probabilidades como referencia.
+      </p>
+
+      <!-- 1X2 -->
+      <div class="pred-section">
+        <div class="pred-section-label">Resultado del partido</div>
+
+        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'home_win'">
+          <span class="pred-team-label">{{ fixture!.homeTeamName }}</span>
+          <div class="pred-bar-wrap">
+            <div class="pred-bar pred-bar-home" [style.width]="pct(prediction.result1x2?.homeWin)"></div>
+          </div>
+          <span class="pred-pct">{{ pct(prediction.result1x2?.homeWin) }}</span>
+          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'home_win'">✓</span>
+        </div>
+
+        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'draw'">
+          <span class="pred-team-label">Empate</span>
+          <div class="pred-bar-wrap">
+            <div class="pred-bar pred-bar-draw" [style.width]="pct(prediction.result1x2?.draw)"></div>
+          </div>
+          <span class="pred-pct">{{ pct(prediction.result1x2?.draw) }}</span>
+          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'draw'">✓</span>
+        </div>
+
+        <div class="pred-outcome-row" [class.pred-winner]="prediction.result1x2?.predicted === 'away_win'">
+          <span class="pred-team-label">{{ fixture!.awayTeamName }}</span>
+          <div class="pred-bar-wrap">
+            <div class="pred-bar pred-bar-away" [style.width]="pct(prediction.result1x2?.awayWin)"></div>
+          </div>
+          <span class="pred-pct">{{ pct(prediction.result1x2?.awayWin) }}</span>
+          <span class="pred-check" *ngIf="prediction.result1x2?.predicted === 'away_win'">✓</span>
+        </div>
+
+        <div class="pred-confidence">
+          Confianza del modelo:
+          <span class="pred-conf-badge" [ngClass]="confidenceClass(prediction.result1x2?.confidence)">
+            {{ confidenceLabel(prediction.result1x2?.confidence) }}
+          </span>
+        </div>
+      </div>
+
+      <!-- O/U y BTTS -->
+      <div class="pred-binary-row">
+        <div class="pred-binary-card">
+          <div class="pred-binary-title">Goles en el partido</div>
+          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'over'">
+            <span class="pred-binary-label">Más de 2.5 goles</span>
+            <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.over) }}</span>
+            <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'over'">✓</span>
+          </div>
+          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'under'">
+            <span class="pred-binary-label">Menos de 2.5 goles</span>
+            <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.under) }}</span>
+            <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'under'">✓</span>
+          </div>
+        </div>
+        <div class="pred-binary-card">
+          <div class="pred-binary-title">Ambos equipos marcan</div>
+          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'yes'">
+            <span class="pred-binary-label">Sí marcan los dos</span>
+            <span class="pred-binary-pct">{{ pct(prediction.btts?.yes) }}</span>
+            <span class="pred-check" *ngIf="prediction.btts?.predicted === 'yes'">✓</span>
+          </div>
+          <div class="pred-binary-item" [class.pred-binary-winner]="prediction.btts?.predicted === 'no'">
+            <span class="pred-binary-label">No marcan los dos</span>
+            <span class="pred-binary-pct">{{ pct(prediction.btts?.no) }}</span>
+            <span class="pred-check" *ngIf="prediction.btts?.predicted === 'no'">✓</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- H2H Panel -->

@@ -328,11 +328,22 @@
   box-shadow: 0 2px 6px rgba(39,174,96,0.3);
   transition: background 0.2s;
 }
-.ctx-save-btn:hover { background: #219a52; }
+.ctx-save-btn:hover:not(:disabled) { background: #219a52; }
+.ctx-save-btn:disabled { opacity: 0.7; cursor: not-allowed; }
 .ctx-save-hint {
   font-size: 0.78rem;
   color: #aaa;
   font-style: italic;
+}
+.ctx-save-success {
+  font-size: 0.85rem;
+  color: #27ae60;
+  font-weight: 600;
+}
+.ctx-save-error {
+  font-size: 0.85rem;
+  color: #e74c3c;
+  font-weight: 600;
 }
 
 @media (max-width: 700px) {
@@ -495,6 +506,20 @@
   color: #aaa;
   text-align: center;
   margin: 0;
+  font-style: italic;
+}
+
+.pred-contextual-panel {
+  border-left: 4px solid #6c5ce7;
+}
+
+.pred-contextual-note {
+  font-size: 0.8rem;
+  color: #7c6ce7;
+  background: rgba(108, 92, 231, 0.07);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
   font-style: italic;
 }
 

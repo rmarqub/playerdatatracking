@@ -167,6 +167,7 @@
                 {{ getStatusLabel(f) }}
               </span>
               <span class="odds-badge" *ngIf="f.statusShort === 'NS'">ODDS AVB</span>
+              <span class="analysis-badge" *ngIf="f.hasAnalysis" title="Tiene análisis contextual guardado">ANL</span>
             </td>
           </tr>
         </tbody>

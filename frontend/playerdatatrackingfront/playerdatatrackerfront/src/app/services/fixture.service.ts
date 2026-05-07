@@ -36,6 +36,7 @@ export interface Fixture {
   referee: string | null;
   venueName: string | null;
   venueCity: string | null;
+  hasAnalysis?: boolean;
 }
 
 export interface FixtureEvent {
@@ -193,6 +194,28 @@ export interface MatchPrediction {
   overUnder25: MatchPredictionBinary;
   btts: MatchPredictionBinary;
   warnings: string[];
+}
+
+export interface ContextualAnalysisData {
+  fixtureId: number;
+  homeCurrentForm: number;
+  homeStadiumAtmosphere: number;
+  homeDefensiveBlock: number;
+  homeOffensiveRhythm: number;
+  homeTeamNeeds: number;
+  homeSetPieces: number;
+  homeFatigue: number;
+  homeUnavailablePlayers: string[];
+  awayCurrentForm: number;
+  awayStadiumAtmosphere: number;
+  awayDefensiveBlock: number;
+  awayOffensiveRhythm: number;
+  awayTeamNeeds: number;
+  awaySetPieces: number;
+  awayFatigue: number;
+  awayUnavailablePlayers: string[];
+  notes: string | null;
+  updatedAt: string | null;
 }
 
 export interface H2HComparisonData {
@@ -374,6 +397,29 @@ export class FixtureService {
 
   getMatchPrediction(fixtureId: number): Observable<MatchPrediction | null> {
     return this.http.post<GenericResponse<MatchPrediction>>(`${this.base}/matchPrediction`, { id: fixtureId }).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
+    );
+  }
+
+  saveContextualAnalysis(fixtureId: number, analysis: {
+    homeCurrentForm: number; homeStadiumAtmosphere: number; homeDefensiveBlock: number;
+    homeOffensiveRhythm: number; homeTeamNeeds: number; homeSetPieces: number; homeFatigue: number;
+    homeUnavailablePlayers: string[];
+    awayCurrentForm: number; awayStadiumAtmosphere: number; awayDefensiveBlock: number;
+    awayOffensiveRhythm: number; awayTeamNeeds: number; awaySetPieces: number; awayFatigue: number;
+    awayUnavailablePlayers: string[];
+    notes: string;
+  }): Observable<ContextualAnalysisData | null> {
+    const body = { contextualAnalysis: { fixtureId, ...analysis } };
+    return this.http.post<GenericResponse<ContextualAnalysisData>>(`${this.base}/saveContextualAnalysis`, body).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
+    );
+  }
+
+  getContextualAnalysis(fixtureId: number): Observable<ContextualAnalysisData | null> {
+    return this.http.post<GenericResponse<ContextualAnalysisData>>(`${this.base}/contextualAnalysis`, { id: fixtureId }).pipe(
       map(r => r.code === 0 ? (r.entity || null) : null),
       catchError(() => of(null))
     );
