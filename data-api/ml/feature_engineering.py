@@ -6,6 +6,8 @@ Genera un dataset de entrenamiento a partir de PostgreSQL con:
   - Split home/away performance
   - Días de descanso entre partidos
   - Estadísticas H2H de los últimos M enfrentamientos
+  - Rolling stats de jugadores titulares por equipo (rating, goles, pases clave, acciones def.)
+  - H2H de jugadores: rendimiento de los titulares en los últimos M enfrentamientos directos
   - Variables objetivo: result (1X2), over25, btts, total_goals
 
 Uso:
@@ -16,6 +18,7 @@ Uso:
 import argparse
 import sys
 from pathlib import Path
+from typing import Optional
 
 import numpy as np
 import pandas as pd
@@ -99,8 +102,49 @@ def load_team_stats(conn) -> pd.DataFrame:
     return pd.DataFrame([dict(r) for r in rows])
 
 
+def load_player_stats(conn) -> pd.DataFrame:
+    """
+    Carga stats individuales de jugadores para todos los partidos FT.
+    Incluye solo las columnas necesarias para el feature engineering.
+    """
+    query = """
+        SELECT
+            ps.fixture_id,
+            ps.team_id,
+            ps.player_id,
+            ps.position,
+            ps.substitute,
+            ps.minutes_played,
+            ps.rating::float         AS rating,
+            ps.goals_scored,
+            ps.assists,
+            ps.shots_on,
+            ps.passes_key,
+            ps.tackles_total,
+            ps.interceptions,
+            ps.duels_total,
+            ps.duels_won,
+            f.match_date,
+            f.home_team_id,
+            f.away_team_id
+        FROM fixture_player_stats ps
+        JOIN fixture f ON f.id = ps.fixture_id
+        WHERE f.status_short = 'FT'
+        ORDER BY f.match_date ASC
+    """
+    with conn.cursor() as cur:
+        cur.execute(query)
+        rows = cur.fetchall()
+    if not rows:
+        return pd.DataFrame()
+    df = pd.DataFrame([dict(r) for r in rows])
+    df["match_date"] = pd.to_datetime(df["match_date"], utc=True)
+    df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
+    return df
+
+
 # ---------------------------------------------------------------------------
-# Construcción del historial por equipo
+# Construcción del historial por equipo — team stats
 # ---------------------------------------------------------------------------
 
 def build_team_history(fixtures: pd.DataFrame, team_stats: pd.DataFrame) -> pd.DataFrame:
@@ -146,7 +190,68 @@ def build_team_history(fixtures: pd.DataFrame, team_stats: pd.DataFrame) -> pd.D
 
 
 # ---------------------------------------------------------------------------
-# Rolling features
+# Construcción del historial por equipo — player stats
+# ---------------------------------------------------------------------------
+
+PLAYER_ROLL_COLS = [
+    "avg_rating",
+    "goals_pstarted",
+    "key_passes_pstarted",
+    "def_actions_pstarted",
+    "duel_win_pct",
+]
+
+
+def build_team_player_history(player_stats: pd.DataFrame, fixtures: pd.DataFrame) -> pd.DataFrame:
+    """
+    Agrega stats de titulares (substitute=False) por (equipo, partido).
+    Devuelve una fila por (fixture_id, team_id) con métricas de calidad del once.
+    """
+    if player_stats.empty:
+        return pd.DataFrame()
+
+    starters = player_stats[player_stats["substitute"] == False].copy()
+
+    # Titulares de campo (excluye portero) para acciones defensivas
+    outfield = starters[starters["position"] != "G"].copy()
+    outfield["def_actions"] = outfield["tackles_total"].fillna(0) + outfield["interceptions"].fillna(0)
+
+    outfield_agg = outfield.groupby(["fixture_id", "team_id"]).agg(
+        sum_def_actions=("def_actions", "sum"),
+        n_outfield=("player_id", "count"),
+    ).reset_index()
+
+    starter_agg = starters.groupby(["fixture_id", "team_id"]).agg(
+        n_starters=("player_id", "count"),
+        avg_rating=("rating", "mean"),
+        sum_goals=("goals_scored", "sum"),
+        sum_key_passes=("passes_key", "sum"),
+        sum_duels_won=("duels_won", "sum"),
+        sum_duels_total=("duels_total", "sum"),
+    ).reset_index()
+
+    agg = starter_agg.merge(outfield_agg, on=["fixture_id", "team_id"], how="left")
+
+    agg["goals_pstarted"] = agg["sum_goals"] / agg["n_starters"]
+    agg["key_passes_pstarted"] = agg["sum_key_passes"] / agg["n_starters"]
+    agg["def_actions_pstarted"] = agg["sum_def_actions"] / agg["n_outfield"].replace(0, np.nan)
+    agg["duel_win_pct"] = agg["sum_duels_won"] / agg["sum_duels_total"].replace(0, np.nan)
+
+    # Datos insuficientes si hay menos de 6 titulares registrados
+    mask = agg["n_starters"] < 6
+    for col in PLAYER_ROLL_COLS:
+        agg.loc[mask, col] = np.nan
+
+    result = agg[["fixture_id", "team_id"] + PLAYER_ROLL_COLS].copy()
+
+    fixture_dates = fixtures[["id", "match_date"]].rename(columns={"id": "fixture_id"})
+    result = result.merge(fixture_dates, on="fixture_id", how="left")
+    result = result.sort_values(["team_id", "match_date"]).reset_index(drop=True)
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Rolling features — team stats
 # ---------------------------------------------------------------------------
 
 ROLL_COLS = [
@@ -253,7 +358,35 @@ def compute_season_form(fixtures: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# H2H features
+# Rolling features — player stats
+# ---------------------------------------------------------------------------
+
+def compute_rolling_player_features(player_history: pd.DataFrame, n: int) -> pd.DataFrame:
+    """
+    Rolling last-N sobre las métricas agregadas de titulares por equipo.
+    Produce: roll_player_{col}_last{n} por (fixture_id, team_id).
+    """
+    if player_history.empty:
+        return pd.DataFrame()
+
+    parts = []
+    for team_id, grp in player_history.groupby("team_id", sort=False):
+        grp = grp.sort_values("match_date").copy()
+        part = grp[["fixture_id", "team_id", "match_date"]].copy()
+        for col in PLAYER_ROLL_COLS:
+            if col in grp.columns:
+                part[f"roll_player_{col}_last{n}"] = _rolling_mean(
+                    grp[col].reset_index(drop=True), n
+                ).values
+        parts.append(part)
+
+    if not parts:
+        return pd.DataFrame()
+    return pd.concat(parts, ignore_index=True)
+
+
+# ---------------------------------------------------------------------------
+# H2H features — team stats
 # ---------------------------------------------------------------------------
 
 def compute_h2h_features(fixtures: pd.DataFrame, m: int) -> pd.DataFrame:
@@ -307,6 +440,82 @@ def compute_h2h_features(fixtures: pd.DataFrame, m: int) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# H2H features — player stats
+# ---------------------------------------------------------------------------
+
+def compute_h2h_player_features(
+    player_stats: pd.DataFrame,
+    fixtures: pd.DataFrame,
+    m: int,
+) -> pd.DataFrame:
+    """
+    Para cada partido, calcula el rendimiento histórico de los titulares de cada equipo
+    en los últimos M encuentros directos contra ese rival concreto.
+    Produce: h2h_home_avg_rating, h2h_away_avg_rating, h2h_home_goals_pstarted, h2h_away_goals_pstarted.
+    """
+    empty_row = {
+        "h2h_home_avg_rating":     np.nan,
+        "h2h_away_avg_rating":     np.nan,
+        "h2h_home_goals_pstarted": np.nan,
+        "h2h_away_goals_pstarted": np.nan,
+    }
+
+    if player_stats.empty:
+        records = [{"fixture_id": fid, **empty_row} for fid in fixtures["id"]]
+        return pd.DataFrame(records)
+
+    fixtures_sorted = fixtures.sort_values("match_date").reset_index(drop=True)
+    # Índice rápido: fixture_id → player stats de ese partido
+    ps_by_fixture = player_stats[player_stats["substitute"] == False].groupby("fixture_id")
+
+    records = []
+    for f in fixtures_sorted.itertuples(index=False):
+        home, away, date = f.home_team_id, f.away_team_id, f.match_date
+
+        mask = (
+            ((fixtures_sorted["home_team_id"] == home) & (fixtures_sorted["away_team_id"] == away)) |
+            ((fixtures_sorted["home_team_id"] == away) & (fixtures_sorted["away_team_id"] == home))
+        )
+        past_ids = (
+            fixtures_sorted[mask & (fixtures_sorted["match_date"] < date)]
+            .tail(m)["id"]
+            .tolist()
+        )
+
+        if not past_ids:
+            records.append({"fixture_id": f.id, **empty_row})
+            continue
+
+        past_frames = [ps_by_fixture.get_group(fid) for fid in past_ids if fid in ps_by_fixture.groups]
+        if not past_frames:
+            records.append({"fixture_id": f.id, **empty_row})
+            continue
+
+        past_player = pd.concat(past_frames, ignore_index=True)
+        home_ps = past_player[past_player["team_id"] == home]
+        away_ps = past_player[past_player["team_id"] == away]
+
+        def _safe_rating(df):
+            return float(df["rating"].mean()) if not df.empty and df["rating"].notna().any() else np.nan
+
+        def _safe_goals(df):
+            if df.empty:
+                return np.nan
+            n = len(df)
+            return float(df["goals_scored"].sum() / n) if n > 0 else np.nan
+
+        records.append({
+            "fixture_id":              f.id,
+            "h2h_home_avg_rating":     _safe_rating(home_ps),
+            "h2h_away_avg_rating":     _safe_rating(away_ps),
+            "h2h_home_goals_pstarted": _safe_goals(home_ps),
+            "h2h_away_goals_pstarted": _safe_goals(away_ps),
+        })
+
+    return pd.DataFrame(records)
+
+
+# ---------------------------------------------------------------------------
 # Ensamblado del dataset final
 # ---------------------------------------------------------------------------
 
@@ -338,6 +547,8 @@ def assemble_dataset(
     h2h: pd.DataFrame,
     season_form: pd.DataFrame,
     n: int,
+    player_rolling: Optional[pd.DataFrame] = None,
+    player_h2h: Optional[pd.DataFrame] = None,
 ) -> pd.DataFrame:
     base = build_targets(fixtures)
 
@@ -356,7 +567,6 @@ def assemble_dataset(
     away_roll = _suffix_roll_cols(away_roll, "away", exclude={"id", "away_team_id"})
 
     # Rolling venue-split — seleccionar solo las columnas del venue correspondiente
-    # para evitar que el pd.concat haya metido columnas _h_ en filas A y viceversa
     h_cols = [c for c in rolling_venue.columns if f"_h_last{n}" in c]
     a_cols = [c for c in rolling_venue.columns if f"_a_last{n}" in c]
 
@@ -368,12 +578,12 @@ def assemble_dataset(
         rolling_venue[rolling_venue["venue"] == "A"][["fixture_id", "team_id"] + a_cols].copy()
     ).rename(columns={"team_id": "away_team_id"})
 
-    # Days rest — copy() para no mutar el df base en ambos renombrados
+    # Days rest
     rest_norm = _fid(rest)
     home_rest = rest_norm.copy().rename(columns={"team_id": "home_team_id", "days_rest": "home_days_rest"})
     away_rest = rest_norm.copy().rename(columns={"team_id": "away_team_id", "days_rest": "away_days_rest"})
 
-    # Season form — separar home/away con renombrado explícito
+    # Season form
     sf = _fid(season_form)
     _sf_cols = {"season_ppg": "home_season_ppg", "season_gfpg": "home_season_gfpg",
                 "season_gapg": "home_season_gapg", "season_games": "home_season_games"}
@@ -396,11 +606,39 @@ def assemble_dataset(
         .merge(away_sf,     on=["id", "away_team_id"], how="left")
     )
 
-    # Renombrar fixture.id → fixture_id para claridad
+    # Player rolling features — separar home/away a partir del fixture
+    if player_rolling is not None and not player_rolling.empty:
+        player_roll_cols = [c for c in player_rolling.columns if c.startswith("roll_player_")]
+
+        fix_teams = fixtures[["id", "home_team_id", "away_team_id"]].rename(columns={"id": "fixture_id"})
+        pr_with_venue = player_rolling.merge(fix_teams, on="fixture_id", how="left")
+        pr_with_venue["venue"] = np.where(
+            pr_with_venue["team_id"] == pr_with_venue["home_team_id"], "H", "A"
+        )
+
+        home_pr = (
+            pr_with_venue[pr_with_venue["venue"] == "H"][["fixture_id", "team_id"] + player_roll_cols]
+            .rename(columns={"fixture_id": "id", "team_id": "home_team_id"})
+        )
+        home_pr = _suffix_roll_cols(home_pr, "home", exclude={"id", "home_team_id"})
+
+        away_pr = (
+            pr_with_venue[pr_with_venue["venue"] == "A"][["fixture_id", "team_id"] + player_roll_cols]
+            .rename(columns={"fixture_id": "id", "team_id": "away_team_id"})
+        )
+        away_pr = _suffix_roll_cols(away_pr, "away", exclude={"id", "away_team_id"})
+
+        df = df.merge(home_pr, on=["id", "home_team_id"], how="left")
+        df = df.merge(away_pr, on=["id", "away_team_id"], how="left")
+
+    # H2H player features
+    if player_h2h is not None and not player_h2h.empty:
+        df = df.merge(_fid(player_h2h), on="id", how="left")
+
+    # Renombrar fixture.id → fixture_id
     df = df.rename(columns={"id": "fixture_id"})
 
-    # Features diferenciales home-minus-away
-    # Capturan la ventaja relativa de forma mejor que las absolutas por separado
+    # Features diferenciales home-minus-away — team stats
     diff_pairs = [
         (f"home_roll_goals_for_last{n}",      f"away_roll_goals_for_last{n}",      "diff_goals_for"),
         (f"home_roll_goals_against_last{n}",  f"away_roll_goals_against_last{n}",  "diff_goals_against"),
@@ -413,7 +651,16 @@ def assemble_dataset(
         ("home_season_gfpg",                  "away_season_gfpg",                  "diff_season_gfpg"),
         ("home_season_gapg",                  "away_season_gapg",                  "diff_season_gapg"),
     ]
-    for col_h, col_a, name in diff_pairs:
+    # Features diferenciales — player stats
+    player_diff_pairs = [
+        (f"home_roll_player_avg_rating_last{n}",        f"away_roll_player_avg_rating_last{n}",        "diff_avg_rating"),
+        (f"home_roll_player_goals_pstarted_last{n}",    f"away_roll_player_goals_pstarted_last{n}",    "diff_goals_pstarted"),
+        (f"home_roll_player_key_passes_pstarted_last{n}", f"away_roll_player_key_passes_pstarted_last{n}", "diff_key_passes"),
+        (f"home_roll_player_def_actions_pstarted_last{n}", f"away_roll_player_def_actions_pstarted_last{n}", "diff_def_actions"),
+        ("h2h_home_avg_rating",     "h2h_away_avg_rating",     "h2h_diff_avg_rating"),
+    ]
+
+    for col_h, col_a, name in diff_pairs + player_diff_pairs:
         if col_h in df.columns and col_a in df.columns:
             df[name] = df[col_h] - df[col_a]
 
@@ -439,20 +686,26 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int) -> 
 
     print(f"\n  Completitud de features clave (nulos):")
     checks = {
-        f"home_roll_xg_for_last{n}":        "xG for (home)",
-        f"home_roll_shots_on_goal_last{n}":  "Shots on goal (home)",
-        f"home_roll_possession_last{n}":     "Possession (home)",
-        f"home_roll_goals_for_last{n}":      "Goals for (home)",
-        f"h2h_avg_goals":                    "H2H avg goals",
-        "home_days_rest":                    "Days rest (home)",
+        f"home_roll_xg_for_last{n}":                      "xG for (home)",
+        f"home_roll_shots_on_goal_last{n}":               "Shots on goal (home)",
+        f"home_roll_possession_last{n}":                  "Possession (home)",
+        f"home_roll_goals_for_last{n}":                   "Goals for (home)",
+        "h2h_avg_goals":                                  "H2H avg goals",
+        "home_days_rest":                                 "Days rest (home)",
+        f"home_roll_player_avg_rating_last{n}":           "Player avg rating (home)",
+        f"home_roll_player_goals_pstarted_last{n}":       "Player goals/starter (home)",
+        f"home_roll_player_key_passes_pstarted_last{n}":  "Key passes/starter (home)",
+        f"home_roll_player_def_actions_pstarted_last{n}": "Def actions/starter (home)",
+        f"home_roll_player_duel_win_pct_last{n}":         "Duel win % (home)",
+        "h2h_home_avg_rating":                            "H2H player rating (home)",
     }
     for col, label in checks.items():
         if col in dataset.columns:
             null_pct = dataset[col].isna().mean()
             flag = "  ⚠" if null_pct > 0.4 else "  ✓"
-            print(f"  {flag}  {label:<28} {null_pct:.1%} nulos")
+            print(f"  {flag}  {label:<40} {null_pct:.1%} nulos")
         else:
-            print(f"       {label:<28} columna no encontrada")
+            print(f"       {label:<40} columna no encontrada")
 
     print(f"{'='*55}\n")
 
@@ -469,6 +722,8 @@ def parse_args():
                    help=f"H2H lookback matches (default: {DEFAULT_H2H})")
     p.add_argument("--output",   type=Path, default=OUTPUT_FILE,
                    help=f"Output file path (default: {OUTPUT_FILE})")
+    p.add_argument("--no-player-stats", action="store_true",
+                   help="Omitir features de jugadores (más rápido, menos features)")
     return p.parse_args()
 
 
@@ -483,11 +738,34 @@ def main():
         print("Revisa DB_CONFIG al inicio del script.")
         sys.exit(1)
 
-    print("Cargando fixtures y estadísticas...")
+    print("Cargando fixtures y estadísticas de equipo...")
     fixtures   = load_fixtures(conn)
     team_stats = load_team_stats(conn)
-    conn.close()
     print(f"  → {len(fixtures)} fixtures FT  |  {len(team_stats)} registros team_stats")
+
+    player_rolling = None
+    player_h2h     = None
+
+    if not args.no_player_stats:
+        print("Cargando estadísticas de jugadores...")
+        player_stats = load_player_stats(conn)
+        print(f"  → {len(player_stats)} registros fixture_player_stats")
+
+        if not player_stats.empty:
+            print("Construyendo historial de jugadores por equipo...")
+            player_history = build_team_player_history(player_stats, fixtures)
+
+            print(f"Calculando rolling player last-{args.lookback}...")
+            player_rolling = compute_rolling_player_features(player_history, args.lookback)
+
+            print(f"Calculando H2H de jugadores last-{args.h2h}...")
+            player_h2h = compute_h2h_player_features(player_stats, fixtures, args.h2h)
+        else:
+            print("  ⚠ Sin datos de jugadores — se omitirán esas features")
+    else:
+        print("(Skipping player stats por --no-player-stats)")
+
+    conn.close()
 
     print(f"Construyendo historial por equipo...")
     history = build_team_history(fixtures, team_stats)
@@ -504,7 +782,10 @@ def main():
     season_form = compute_season_form(fixtures)
 
     print("Ensamblando dataset...")
-    dataset = assemble_dataset(fixtures, rolling, rolling_venue, rest, h2h, season_form, args.lookback)
+    dataset = assemble_dataset(
+        fixtures, rolling, rolling_venue, rest, h2h, season_form,
+        args.lookback, player_rolling, player_h2h,
+    )
 
     print_diagnostics(fixtures, dataset, args.lookback)
 

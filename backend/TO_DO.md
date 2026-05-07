@@ -32,5 +32,13 @@
 
 #implementacion
 
-Próximo paso obligatorio en Fase 7: antes de fijar estos pesos en producción, habría que validarlos con backtesting en los ~200-300 partidos del dataset donde ya tienes el resultado real y puedes comparar "predicción base" vs "predicción con análisis contextual simulado". Sin
-  ese paso, los pesos son educated guesses — razonables para empezar, pero necesitan calibración real.
+  Próximos pasos obligatorios
+
+  # 1. Regenerar el dataset (tardará más por las nuevas queries de jugadores)
+  python data-api/ml/feature_engineering.py
+
+  # 2. Reentrenar los modelos
+  python data-api/ml/train_model.py --test-seasons 2025
+
+  # 3. Reiniciar la API
+  uvicorn predict_api:app --host 0.0.0.0 --port 8001

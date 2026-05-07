@@ -52,6 +52,15 @@ ALL_ROLL_COLS = [
     "possession", "passes_pct", "corner_kicks", "saves",
 ]
 
+# Player rolling columns — must match PLAYER_ROLL_COLS in feature_engineering.py
+PLAYER_ROLL_COLS = [
+    "avg_rating",
+    "goals_pstarted",
+    "key_passes_pstarted",
+    "def_actions_pstarted",
+    "duel_win_pct",
+]
+
 
 # ---------------------------------------------------------------------------
 # Startup
@@ -95,7 +104,7 @@ def _infer_lookback(features: list[str]) -> int:
 
 
 # ---------------------------------------------------------------------------
-# Queries
+# Queries — team stats
 # ---------------------------------------------------------------------------
 
 def _query_fixture(conn, fixture_id: int) -> dict:
@@ -245,6 +254,117 @@ def _query_days_rest(conn, team_id: int, match_date: Any) -> float:
 
 
 # ---------------------------------------------------------------------------
+# Queries — player stats
+# ---------------------------------------------------------------------------
+
+def _query_team_player_form(conn, team_id: int, match_date: Any, n: int) -> dict:
+    """
+    Últimos N partidos FT del equipo con stats de titulares agregados.
+    Replica exactamente la lógica de build_team_player_history + compute_rolling_player_features.
+    """
+    with conn.cursor() as cur:
+        cur.execute("""
+            SELECT
+                f.id                                                    AS fixture_id,
+                AVG(ps.rating::float) FILTER (WHERE ps.substitute = false)
+                                                                        AS avg_rating,
+                SUM(ps.goals_scored) FILTER (WHERE ps.substitute = false)::float
+                    / NULLIF(COUNT(*) FILTER (WHERE ps.substitute = false), 0)
+                                                                        AS goals_pstarted,
+                SUM(ps.passes_key) FILTER (WHERE ps.substitute = false)::float
+                    / NULLIF(COUNT(*) FILTER (WHERE ps.substitute = false), 0)
+                                                                        AS key_passes_pstarted,
+                (COALESCE(SUM(ps.tackles_total)    FILTER (WHERE ps.substitute = false AND ps.position != 'G'), 0)
+                 + COALESCE(SUM(ps.interceptions)  FILTER (WHERE ps.substitute = false AND ps.position != 'G'), 0))::float
+                    / NULLIF(COUNT(*) FILTER (WHERE ps.substitute = false AND ps.position != 'G'), 0)
+                                                                        AS def_actions_pstarted,
+                SUM(ps.duels_won)   FILTER (WHERE ps.substitute = false)::float
+                    / NULLIF(SUM(ps.duels_total) FILTER (WHERE ps.substitute = false), 0)
+                                                                        AS duel_win_pct,
+                COUNT(*)            FILTER (WHERE ps.substitute = false) AS n_starters
+            FROM fixture f
+            JOIN fixture_player_stats ps ON ps.fixture_id = f.id AND ps.team_id = %(tid)s
+            WHERE f.status_short = 'FT'
+              AND f.match_date < %(dt)s
+            GROUP BY f.id, f.match_date
+            ORDER BY f.match_date DESC
+            LIMIT %(n)s
+        """, {"tid": team_id, "dt": match_date, "n": n})
+        rows = cur.fetchall()
+
+    empty = {f"roll_player_{col}_last{n}": np.nan for col in PLAYER_ROLL_COLS}
+    if not rows:
+        return empty
+
+    df = pd.DataFrame([dict(r) for r in rows])
+    # Descarta filas con menos de 6 titulares (datos insuficientes, igual que en entrenamiento)
+    df.loc[df["n_starters"] < 6, PLAYER_ROLL_COLS] = np.nan
+
+    result = {}
+    for col in PLAYER_ROLL_COLS:
+        if col in df.columns:
+            val = df[col].mean()
+            result[f"roll_player_{col}_last{n}"] = float(val) if not pd.isna(val) else np.nan
+        else:
+            result[f"roll_player_{col}_last{n}"] = np.nan
+    return result
+
+
+def _query_h2h_player_form(conn, home_id: int, away_id: int, match_date: Any, m: int) -> dict:
+    """
+    Rendimiento de los titulares de cada equipo en los últimos M enfrentamientos directos.
+    Replica la lógica de compute_h2h_player_features.
+    """
+    empty = {
+        "h2h_home_avg_rating":     np.nan,
+        "h2h_away_avg_rating":     np.nan,
+        "h2h_home_goals_pstarted": np.nan,
+        "h2h_away_goals_pstarted": np.nan,
+    }
+
+    with conn.cursor() as cur:
+        cur.execute("""
+            WITH h2h_fixtures AS (
+                SELECT id
+                FROM fixture
+                WHERE status_short = 'FT'
+                  AND ((home_team_id = %(h)s AND away_team_id = %(a)s)
+                    OR (home_team_id = %(a)s AND away_team_id = %(h)s))
+                  AND match_date < %(dt)s
+                ORDER BY match_date DESC
+                LIMIT %(m)s
+            )
+            SELECT
+                ps.team_id,
+                AVG(ps.rating::float) FILTER (WHERE ps.substitute = false)       AS avg_rating,
+                SUM(ps.goals_scored)  FILTER (WHERE ps.substitute = false)::float
+                    / NULLIF(COUNT(*) FILTER (WHERE ps.substitute = false), 0)   AS goals_pstarted
+            FROM fixture_player_stats ps
+            WHERE ps.fixture_id IN (SELECT id FROM h2h_fixtures)
+              AND ps.team_id IN (%(h)s, %(a)s)
+            GROUP BY ps.team_id
+        """, {"h": home_id, "a": away_id, "dt": match_date, "m": m})
+        rows = cur.fetchall()
+
+    if not rows:
+        return empty
+
+    result = dict(empty)
+    for row in rows:
+        r = dict(row)
+        tid = r["team_id"]
+        avg_r = float(r["avg_rating"]) if r["avg_rating"] is not None else np.nan
+        gps   = float(r["goals_pstarted"]) if r["goals_pstarted"] is not None else np.nan
+        if tid == home_id:
+            result["h2h_home_avg_rating"]     = avg_r
+            result["h2h_home_goals_pstarted"] = gps
+        elif tid == away_id:
+            result["h2h_away_avg_rating"]     = avg_r
+            result["h2h_away_goals_pstarted"] = gps
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Feature vector construction
 # ---------------------------------------------------------------------------
 
@@ -326,13 +446,26 @@ def build_feature_row(
         if away_sf["season_games"] == 0:
             warnings.append("El equipo visitante no tiene partidos previos en esta temporada — season form será NaN")
 
-        # ---- H2H ----
+        # ---- H2H team stats ----
         h2h = _query_h2h(conn, home_id, away_id, match_date, m)
         row.update(h2h)
         if h2h["h2h_count"] == 0:
             warnings.append("Sin historial H2H entre estos equipos — features H2H serán NaN")
 
-        # ---- Diff features ----
+        # ---- Player rolling features ----
+        home_player = _query_team_player_form(conn, home_id, match_date, n)
+        away_player = _query_team_player_form(conn, away_id, match_date, n)
+
+        for key, val in home_player.items():
+            row[f"home_{key}"] = val
+        for key, val in away_player.items():
+            row[f"away_{key}"] = val
+
+        # ---- H2H player features ----
+        h2h_player = _query_h2h_player_form(conn, home_id, away_id, match_date, m)
+        row.update(h2h_player)
+
+        # ---- Diff features — team stats ----
         diff_pairs = [
             (f"home_roll_goals_for_last{n}",     f"away_roll_goals_for_last{n}",     "diff_goals_for"),
             (f"home_roll_goals_against_last{n}", f"away_roll_goals_against_last{n}", "diff_goals_against"),
@@ -345,7 +478,16 @@ def build_feature_row(
             ("home_season_gfpg",                 "away_season_gfpg",                 "diff_season_gfpg"),
             ("home_season_gapg",                 "away_season_gapg",                 "diff_season_gapg"),
         ]
-        for col_h, col_a, name in diff_pairs:
+        # ---- Diff features — player stats ----
+        player_diff_pairs = [
+            (f"home_roll_player_avg_rating_last{n}",           f"away_roll_player_avg_rating_last{n}",           "diff_avg_rating"),
+            (f"home_roll_player_goals_pstarted_last{n}",       f"away_roll_player_goals_pstarted_last{n}",       "diff_goals_pstarted"),
+            (f"home_roll_player_key_passes_pstarted_last{n}",  f"away_roll_player_key_passes_pstarted_last{n}",  "diff_key_passes"),
+            (f"home_roll_player_def_actions_pstarted_last{n}", f"away_roll_player_def_actions_pstarted_last{n}", "diff_def_actions"),
+            ("h2h_home_avg_rating",                            "h2h_away_avg_rating",                            "h2h_diff_avg_rating"),
+        ]
+
+        for col_h, col_a, name in diff_pairs + player_diff_pairs:
             h_val = row.get(col_h)
             a_val = row.get(col_a)
             if (h_val is not None and a_val is not None
