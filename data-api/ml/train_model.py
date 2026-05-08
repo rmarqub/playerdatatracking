@@ -107,13 +107,13 @@ def encode_categoricals(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 LGBM_BASE = {
-    "n_estimators":      2000,
-    "learning_rate":     0.03,    # subimos ligeramente para que early stopping no pare demasiado pronto
-    "num_leaves":        40,
-    "min_child_samples": 30,
+    "n_estimators":      3000,
+    "learning_rate":     0.02,    # más lento → early stopping para en iteraciones más informativas
+    "num_leaves":        50,      # algo más de capacidad con ~100 features
+    "min_child_samples": 20,      # menos restrictivo → captura patrones más finos
     "subsample":         0.8,
     "subsample_freq":    1,
-    "colsample_bytree":  0.75,
+    "colsample_bytree":  0.70,
     "reg_alpha":         0.2,
     "reg_lambda":        0.4,
     "random_state":      42,
@@ -121,7 +121,15 @@ LGBM_BASE = {
     "verbose":           -1,
 }
 
-EARLY_STOPPING_ROUNDS = 100    # más paciencia — sin team_id el modelo necesita más iteraciones
+# Params específicos para modelos binarios (O/U, BTTS) — más simples para señal más débil
+LGBM_BINARY = {
+    **LGBM_BASE,
+    "num_leaves":        31,
+    "min_child_samples": 25,
+    "learning_rate":     0.015,   # más lento aún — BTTS tiene muy poco signal, necesita más iteraciones
+}
+
+EARLY_STOPPING_ROUNDS = 150    # más paciencia con lr más bajo
 
 
 def _cat_features_present(features: list[str]) -> list[str]:
@@ -174,7 +182,7 @@ def train_1x2(train: pd.DataFrame, features: list[str]) -> lgb.LGBMClassifier:
 
 def train_binary(train: pd.DataFrame, features: list[str], target: str) -> lgb.LGBMClassifier:
     model = lgb.LGBMClassifier(
-        **LGBM_BASE,
+        **LGBM_BINARY,
         objective="binary",
         metric="binary_logloss",
         is_unbalance=True,
