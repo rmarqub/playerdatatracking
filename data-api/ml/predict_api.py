@@ -464,6 +464,108 @@ def _query_team_lineup_continuity(conn, team_id: int, match_date: Any, n: int) -
     return {key: val}
 
 
+def _query_lineup_percentile_features(
+    conn, team_id: int, match_date: Any, league_id: int, season: int
+) -> dict:
+    """
+    Calcula features de percentil de alineación para el equipo en tiempo real.
+    Usa los titulares del partido más reciente como proxy del eleven esperado.
+    Fase A — sin impacto de ausencias (eso viene con la integración de unavailable_players).
+    """
+    empty = {
+        "avg_starter_rating_pct":  np.nan,
+        "avg_att_goal_pct":        np.nan,
+        "top_attacker_goal_pct":   np.nan,
+        "avg_att_kp_pct":          np.nan,
+        "avg_def_pct":             np.nan,
+    }
+
+    # Último partido jugado por el equipo
+    with conn.cursor() as cur:
+        cur.execute("""
+            SELECT f.id
+            FROM fixture f
+            WHERE (f.home_team_id = %s OR f.away_team_id = %s)
+              AND f.status_short = 'FT'
+              AND f.match_date < %s
+            ORDER BY f.match_date DESC
+            LIMIT 1
+        """, (team_id, team_id, match_date))
+        row = cur.fetchone()
+
+    if not row:
+        return empty
+
+    last_fixture_id = row["id"]
+
+    with conn.cursor() as cur:
+        cur.execute("""
+            SELECT player_id, position
+            FROM fixture_player_stats
+            WHERE fixture_id = %s AND team_id = %s AND substitute = false
+        """, (last_fixture_id, team_id))
+        starters = [(r["player_id"], r["position"]) for r in cur.fetchall()]
+
+    if not starters:
+        return empty
+
+    starter_ids = [s[0] for s in starters]
+    starter_pos = {s[0]: s[1] for s in starters}
+
+    # Percentiles de todos los jugadores en esa liga+temporada
+    with conn.cursor() as cur:
+        cur.execute("""
+            WITH season_stats AS (
+                SELECT
+                    ps.player_id,
+                    SUM(ps.goals_scored)   * 90.0 / NULLIF(SUM(ps.minutes_played), 0) AS goals_p90,
+                    SUM(ps.passes_key)     * 90.0 / NULLIF(SUM(ps.minutes_played), 0) AS kp_p90,
+                    (COALESCE(SUM(ps.tackles_total), 0) + COALESCE(SUM(ps.interceptions), 0))
+                        * 90.0 / NULLIF(SUM(ps.minutes_played), 0)                    AS def_p90,
+                    AVG(ps.rating::float)                                               AS avg_rating
+                FROM fixture_player_stats ps
+                JOIN fixture f ON f.id = ps.fixture_id
+                WHERE f.league_id = %s
+                  AND f.season    = %s
+                  AND f.status_short = 'FT'
+                  AND ps.minutes_played > 0
+                GROUP BY ps.player_id
+                HAVING SUM(ps.minutes_played) >= 90
+            )
+            SELECT
+                player_id,
+                PERCENT_RANK() OVER (ORDER BY goals_p90  NULLS FIRST) * 100 AS goals_p90_pct,
+                PERCENT_RANK() OVER (ORDER BY kp_p90     NULLS FIRST) * 100 AS kp_p90_pct,
+                PERCENT_RANK() OVER (ORDER BY def_p90    NULLS FIRST) * 100 AS def_p90_pct,
+                PERCENT_RANK() OVER (ORDER BY avg_rating NULLS FIRST) * 100 AS avg_rating_pct
+            FROM season_stats
+        """, (league_id, season))
+        all_pct = {r["player_id"]: dict(r) for r in cur.fetchall()}
+
+    ratings, att_goals, att_kp, def_pct = [], [], [], []
+    for pid, pos in starters:
+        p = all_pct.get(pid)
+        if not p:
+            continue
+        if p.get("avg_rating_pct") is not None:
+            ratings.append(p["avg_rating_pct"])
+        if pos in ("F", "M"):
+            if p.get("goals_p90_pct") is not None:
+                att_goals.append(p["goals_p90_pct"])
+            if p.get("kp_p90_pct") is not None:
+                att_kp.append(p["kp_p90_pct"])
+        if pos in ("D", "G") and p.get("def_p90_pct") is not None:
+            def_pct.append(p["def_p90_pct"])
+
+    return {
+        "avg_starter_rating_pct": float(np.mean(ratings))    if ratings    else np.nan,
+        "avg_att_goal_pct":       float(np.mean(att_goals))  if att_goals  else np.nan,
+        "top_attacker_goal_pct":  float(np.max(att_goals))   if att_goals  else np.nan,
+        "avg_att_kp_pct":         float(np.mean(att_kp))     if att_kp     else np.nan,
+        "avg_def_pct":            float(np.mean(def_pct))    if def_pct    else np.nan,
+    }
+
+
 def _query_h2h_player_form(conn, home_id: int, away_id: int, match_date: Any, m: int) -> dict:
     """
     Rendimiento de los titulares de cada equipo en los últimos M enfrentamientos directos.
@@ -637,6 +739,14 @@ def build_feature_row(
         h2h_player = _query_h2h_player_form(conn, home_id, away_id, match_date, m)
         row.update(h2h_player)
 
+        # ---- Lineup percentile features (Fase A) ----
+        home_pct = _query_lineup_percentile_features(conn, home_id, match_date, fix["league_id"], season)
+        away_pct = _query_lineup_percentile_features(conn, away_id, match_date, fix["league_id"], season)
+        for key, val in home_pct.items():
+            row[f"home_{key}"] = val
+        for key, val in away_pct.items():
+            row[f"away_{key}"] = val
+
         # ---- Diff features — team stats ----
         diff_pairs = [
             (f"home_roll_goals_for_last{n}",     f"away_roll_goals_for_last{n}",     "diff_goals_for"),
@@ -673,7 +783,14 @@ def build_feature_row(
             (f"home_ema_xg_for_span{n}",        f"away_ema_xg_for_span{n}",        "diff_ema_xg"),
         ]
 
-        for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs:
+        pct_diff_pairs = [
+            ("home_avg_att_goal_pct",       "away_avg_att_goal_pct",       "diff_att_goal_pct"),
+            ("home_top_attacker_goal_pct",  "away_top_attacker_goal_pct",  "diff_top_attacker_pct"),
+            ("home_avg_def_pct",            "away_avg_def_pct",            "diff_def_pct"),
+            ("home_avg_starter_rating_pct", "away_avg_starter_rating_pct", "diff_starter_rating_pct"),
+        ]
+
+        for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs + pct_diff_pairs:
             h_val = row.get(col_h)
             a_val = row.get(col_a)
             if (h_val is not None and a_val is not None

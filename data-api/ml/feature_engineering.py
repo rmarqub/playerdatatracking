@@ -677,6 +677,107 @@ def compute_h2h_player_features(
 
 
 # ---------------------------------------------------------------------------
+# Percentiles de jugadores por liga/temporada (Fase A)
+# ---------------------------------------------------------------------------
+
+def compute_player_season_percentiles(
+    player_stats: pd.DataFrame,
+    fixtures: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Calcula percentiles por jugador dentro de su liga+temporada.
+    Fase A: usa la temporada completa (sin corte temporal exacto).
+    Mínimo: 90 minutos jugados en esa liga/temporada.
+
+    Retorna: player_id, league_id, season, goals_p90_pct, assists_p90_pct,
+             kp_p90_pct, def_p90_pct, avg_rating_pct
+    """
+    if player_stats.empty:
+        return pd.DataFrame()
+
+    fix_meta = fixtures[["id", "league_id", "season"]].rename(columns={"id": "fixture_id"})
+    ps = player_stats.merge(fix_meta, on="fixture_id", how="left")
+    ps = ps[ps["minutes_played"].fillna(0) > 0].copy()
+
+    agg = ps.groupby(["player_id", "league_id", "season"]).agg(
+        total_minutes=("minutes_played",  "sum"),
+        total_goals=("goals_scored",       "sum"),
+        total_assists=("assists",          "sum"),
+        total_kp=("passes_key",            "sum"),
+        total_tackles=("tackles_total",    "sum"),
+        total_int=("interceptions",        "sum"),
+        avg_rating=("rating",              "mean"),
+    ).reset_index()
+
+    agg = agg[agg["total_minutes"] >= 90].copy()
+    agg["goals_p90"]  = agg["total_goals"]   * 90 / agg["total_minutes"]
+    agg["assists_p90"] = agg["total_assists"] * 90 / agg["total_minutes"]
+    agg["kp_p90"]     = agg["total_kp"]      * 90 / agg["total_minutes"]
+    agg["def_p90"]    = (agg["total_tackles"] + agg["total_int"]) * 90 / agg["total_minutes"]
+
+    for col, pct_col in [
+        ("goals_p90",  "goals_p90_pct"),
+        ("assists_p90","assists_p90_pct"),
+        ("kp_p90",     "kp_p90_pct"),
+        ("def_p90",    "def_p90_pct"),
+        ("avg_rating", "avg_rating_pct"),
+    ]:
+        agg[pct_col] = (
+            agg.groupby(["league_id", "season"])[col]
+            .rank(pct=True) * 100
+        )
+
+    return agg[["player_id", "league_id", "season",
+                "goals_p90_pct", "assists_p90_pct", "kp_p90_pct",
+                "def_p90_pct",   "avg_rating_pct"]].copy()
+
+
+def compute_lineup_percentile_features(
+    player_stats: pd.DataFrame,
+    percentiles: pd.DataFrame,
+    fixtures: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Para cada (fixture_id, team_id) calcula la calidad de la alineación real
+    usando los percentiles de liga/temporada de los titulares que efectivamente jugaron.
+
+    Features:
+      avg_starter_rating_pct  — percentil medio de rating de todos los titulares
+      avg_att_goal_pct        — percentil medio de goles/90 de atacantes+centros (F, M)
+      top_attacker_goal_pct   — percentil máximo de goles/90 entre los titulares (el mejor)
+      avg_def_pct             — percentil medio defensivo de D+G
+    """
+    if player_stats.empty or percentiles.empty:
+        return pd.DataFrame()
+
+    fix_meta = fixtures[["id", "league_id", "season"]].rename(columns={"id": "fixture_id"})
+    starters = player_stats[player_stats["substitute"] == False].copy()
+    starters = starters.merge(fix_meta,   on="fixture_id",                          how="left")
+    starters = starters.merge(percentiles, on=["player_id", "league_id", "season"], how="left")
+
+    att = starters[starters["position"].isin(["F", "M"])]
+    def_ = starters[starters["position"].isin(["D", "G"])]
+
+    overall = starters.groupby(["fixture_id", "team_id"]).agg(
+        avg_starter_rating_pct=("avg_rating_pct", "mean"),
+        top_attacker_goal_pct=("goals_p90_pct",   "max"),
+    ).reset_index()
+
+    att_agg = att.groupby(["fixture_id", "team_id"]).agg(
+        avg_att_goal_pct=("goals_p90_pct", "mean"),
+        avg_att_kp_pct=("kp_p90_pct",     "mean"),
+    ).reset_index()
+
+    def_agg = def_.groupby(["fixture_id", "team_id"]).agg(
+        avg_def_pct=("def_p90_pct", "mean"),
+    ).reset_index()
+
+    result = overall.merge(att_agg, on=["fixture_id", "team_id"], how="left")
+    result = result.merge(def_agg,  on=["fixture_id", "team_id"], how="left")
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Ensamblado del dataset final
 # ---------------------------------------------------------------------------
 
@@ -712,6 +813,7 @@ def assemble_dataset(
     player_h2h: Optional[pd.DataFrame] = None,
     ema: Optional[pd.DataFrame] = None,
     league_rates: Optional[pd.DataFrame] = None,
+    lineup_pct: Optional[pd.DataFrame] = None,
 ) -> pd.DataFrame:
     base = build_targets(fixtures)
 
@@ -818,6 +920,23 @@ def assemble_dataset(
     if league_rates is not None and not league_rates.empty:
         df = df.merge(_fid(league_rates), on="id", how="left")
 
+    # Percentiles de alineación — split home/away (igual que season_form)
+    if lineup_pct is not None and not lineup_pct.empty:
+        pct_cols = [c for c in lineup_pct.columns if c not in ("fixture_id", "team_id")]
+
+        home_pct = (
+            _fid(lineup_pct).rename(columns={"team_id": "home_team_id"})
+        )
+        home_pct = _suffix_roll_cols(home_pct, "home", exclude={"id", "home_team_id"})
+
+        away_pct = (
+            _fid(lineup_pct).rename(columns={"team_id": "away_team_id"})
+        )
+        away_pct = _suffix_roll_cols(away_pct, "away", exclude={"id", "away_team_id"})
+
+        df = df.merge(home_pct, on=["id", "home_team_id"], how="left")
+        df = df.merge(away_pct, on=["id", "away_team_id"], how="left")
+
     # Renombrar fixture.id → fixture_id
     df = df.rename(columns={"id": "fixture_id"})
 
@@ -858,7 +977,15 @@ def assemble_dataset(
         (f"home_ema_xg_for_span{n}",         f"away_ema_xg_for_span{n}",         "diff_ema_xg"),
     ]
 
-    for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs:
+    # Features diferenciales — percentiles de alineación
+    pct_diff_pairs = [
+        ("home_avg_att_goal_pct",         "away_avg_att_goal_pct",         "diff_att_goal_pct"),
+        ("home_top_attacker_goal_pct",    "away_top_attacker_goal_pct",    "diff_top_attacker_pct"),
+        ("home_avg_def_pct",              "away_avg_def_pct",              "diff_def_pct"),
+        ("home_avg_starter_rating_pct",   "away_avg_starter_rating_pct",   "diff_starter_rating_pct"),
+    ]
+
+    for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs + pct_diff_pairs:
         if col_h in df.columns and col_a in df.columns:
             df[name] = df[col_h] - df[col_a]
 
@@ -901,6 +1028,10 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int) -> 
         f"home_ema_goals_for_span{n}":                    "EMA goals for (home)",
         "league_home_win_rate":                           "League home win rate",
         "league_avg_goals":                               "League avg goals",
+        "home_avg_att_goal_pct":                          "Att goal percentile (home)",
+        "home_top_attacker_goal_pct":                     "Top attacker percentile (home)",
+        "home_avg_def_pct":                               "Def percentile (home)",
+        "home_avg_starter_rating_pct":                    "Starter rating percentile (home)",
     }
     for col, label in checks.items():
         if col in dataset.columns:
@@ -948,6 +1079,7 @@ def main():
 
     player_rolling = None
     player_h2h     = None
+    lineup_pct     = None
 
     if not args.no_player_stats:
         print("Cargando estadísticas de jugadores...")
@@ -963,6 +1095,13 @@ def main():
 
             print(f"Calculando H2H de jugadores last-{args.h2h}...")
             player_h2h = compute_h2h_player_features(player_stats, fixtures, args.h2h)
+
+            print("Calculando percentiles de jugadores por liga/temporada...")
+            percentiles = compute_player_season_percentiles(player_stats, fixtures)
+            print(f"  → {len(percentiles)} registros jugador/liga/temporada con percentil")
+
+            print("Calculando features de calidad de alineación (percentiles)...")
+            lineup_pct = compute_lineup_percentile_features(player_stats, percentiles, fixtures)
         else:
             print("  ⚠ Sin datos de jugadores — se omitirán esas features")
     else:
@@ -993,7 +1132,7 @@ def main():
     print("Ensamblando dataset...")
     dataset = assemble_dataset(
         fixtures, rolling, rolling_venue, rest, h2h, season_form,
-        args.lookback, player_rolling, player_h2h, ema, league_rates,
+        args.lookback, player_rolling, player_h2h, ema, league_rates, lineup_pct,
     )
 
     print_diagnostics(fixtures, dataset, args.lookback)
