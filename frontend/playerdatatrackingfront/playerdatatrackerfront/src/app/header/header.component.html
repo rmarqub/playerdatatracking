@@ -3,5 +3,15 @@
     <button class="toggle-button btn-back" (click)="goBack()">⬅</button>
     <img *ngIf="!isHomePage" src="assets/images/home-icon.png" alt="Home" (click)="navigateToHome()" class="home-icon"/>
   </div>
-  <button *ngIf="!isLoginPage" class="btn-logout" (click)="logout()"> Logout </button>
+
+  <div class="header-right">
+    <button class="btn-theme" (click)="theme.toggle()" [title]="theme.isDark ? 'Modo claro' : 'Modo nocturno'">
+      <span class="theme-icon" [class.is-dark]="theme.isDark">
+        <span class="sun-rays"></span>
+        <span class="orb"></span>
+      </span>
+      <span class="theme-label">{{ theme.isDark ? 'Claro' : 'Noche' }}</span>
+    </button>
+    <button *ngIf="!isLoginPage" class="btn-logout" (click)="logout()">Logout</button>
+  </div>
 </div>

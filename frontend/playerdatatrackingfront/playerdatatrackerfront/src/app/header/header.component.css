@@ -1,31 +1,8 @@
-
-.home-icon{
+.home-icon {
   cursor: pointer;
   margin: 1%;
   height: 20px;
   width: 20px;
-}
-
-
-
-
-
-.btn-logout:active{
-  transform: translateY(1px);
-  background-color: rgb(184, 14, 14);
-}
-
-.btn-logout:hover {
-  background-color: rgb(184, 14, 14); /* Color de fondo al pasar el ratón */
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
-}
-
-.btn-logout:hover:active{
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-}
-
-.btn-logout:hover:enabled {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -35,39 +12,107 @@
   background-color: #CD853F;
   height: 60px;
   padding: 0 10px;
+  transition: background-color 0.35s ease;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 10px; /* separación entre flecha y home */
+  gap: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn-back {
-  background-color: #CD853F;
-  color: black;
+  background-color: transparent;
+  color: #1a1a1a;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   font-size: 14px;
   border-radius: 5px;
+  transition: color 0.2s;
 }
 
 .btn-back:hover {
-  color: grey;
+  color: #555;
 }
 
+/* ── Dark mode toggle ─────────────────────────────────────────────────────── */
 
-.home-icon {
+.btn-theme {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 5px 12px 5px 8px;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  white-space: nowrap;
 }
+
+.btn-theme:hover {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+/* The icon: a small circle that morphs between sun and moon */
+.theme-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.orb {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #1a1a1a;
+  transition: background 0.35s ease, transform 0.35s ease, clip-path 0.4s ease;
+  clip-path: circle(50%);
+}
+
+/* Sun rays — 8 dots around the orb, visible in light mode */
+.sun-rays {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: transparent;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  box-shadow:
+    0 -6px 0 1.5px #1a1a1a,
+    0  6px 0 1.5px #1a1a1a,
+   -6px 0  0 1.5px #1a1a1a,
+    6px 0  0 1.5px #1a1a1a;
+}
+
+/* In dark mode: hide rays, morph orb into crescent */
+.is-dark .sun-rays {
+  opacity: 0;
+}
+
+.is-dark .orb {
+  background: #f0e68c;
+  clip-path: circle(50% at 62% 50%);
+}
+
+.theme-label {
+  line-height: 1;
+}
+
+/* ── Logout ───────────────────────────────────────────────────────────────── */
 
 .btn-logout {
-  display: flex;
-  margin-left:90%;
-  float: right;
   background-color: rgb(241 57 57);
   color: black;
   border: none;
@@ -80,3 +125,39 @@
   transition: all 0.3s ease;
 }
 
+.btn-logout:hover {
+  background-color: rgb(184, 14, 14);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-logout:hover:active {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-logout:active {
+  transform: translateY(1px);
+  background-color: rgb(184, 14, 14);
+}
+
+/* When page is in dark mode, adjust header and button appearances */
+:host-context(body.dark-mode) .header {
+  background-color: #7a4f24;
+}
+
+:host-context(body.dark-mode) .btn-back {
+  color: #e2e8f0;
+}
+
+:host-context(body.dark-mode) .btn-back:hover {
+  color: #a0aec0;
+}
+
+:host-context(body.dark-mode) .btn-theme {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+}
+
+:host-context(body.dark-mode) .btn-theme:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -1,54 +1,358 @@
-/* You can add global styles to this file, and also import other style files */
+/* ── Base ────────────────────────────────────────────────────────────────── */
 hr {
-  border: none; /* Elimina el borde por defecto */
-  height: 1px; /* Establece el grosor de la línea */
-  background-color: #A9A9A9; /* Color gris */
-  margin: 20px 0; /* Opcional: Espaciado arriba y abajo */
+  border: none;
+  height: 1px;
+  background-color: #A9A9A9;
+  margin: 20px 0;
 }
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
+
+/* ── Toast notifications ─────────────────────────────────────────────────── */
+
 .toast-top-right {
   position: fixed;
-  top: 70px; /* Ajusta esto según la altura de tu header */
+  top: 70px;
   right: 12px;
-  z-index: 9999; /* Asegúrate de que las notificaciones estén en frente de otros elementos */
+  z-index: 9999;
 }
 
 .toast-success {
-  background-color: #28a745 !important; /* Verde para éxito */
-  padding: 16px !important; /* Padding dentro de la notificación */
-  font-family: 'Roboto', sans-serif !important; /* Fuente Roboto */
-  color: white !important; /* Texto blanco */
+  background-color: #28a745 !important;
+  padding: 16px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: white !important;
   margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 .toast-error {
-  background-color: #dc3545 !important; /* Rojo para error */
-  padding: 16px !important; /* Padding dentro de la notificación */
-  font-family: 'Roboto', sans-serif !important; /* Fuente Roboto */
-  color: white !important; /* Texto blanco */
+  background-color: #dc3545 !important;
+  padding: 16px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: white !important;
   max-width: 60%;
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-.toast{
+
+.toast {
   z-index: 9999;
-  padding: 16px !important; /* Padding dentro de la notificación */
-  font-family: 'Roboto', sans-serif !important; /* Fuente Roboto */
-  color: white !important; /* Texto blanco */
+  padding: 16px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: white !important;
 }
+
 .toast-close-button {
-  background: transparent !important; /* Elimina el fondo de la cruz */
-  border: none !important; /* Elimina cualquier borde */
-  color: white !important; /* Asegura que la cruz sea visible */
-  opacity: 1 !important; /* Totalmente visible */
-  font-size: 1.2em; /* Ajusta el tamaño si es necesario */
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  opacity: 1 !important;
+  font-size: 1.2em;
 }
+
 .toast-close-button:hover {
   cursor: pointer;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK MODE — applied via body.dark-mode class
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Smooth transitions on all meaningful elements */
+body, .panel, .section-card, .match-header, .live-card, .fixture-row,
+.filter-dropdown, .filter-btn, .filter-option, .search-input, .search-select,
+.detail-page, .action-row, .loading-overlay, .h2h-card, .pred-panel,
+.ctx-panel, .ctx-metric-row, .ctx-scale-btn, .history-table td,
+.history-table th, .history-stat, .manage-db-section {
+  transition: background-color 0.35s ease, color 0.25s ease,
+              border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* ── Body ─────────────────────────────────────────────────────────────────── */
+
+body.dark-mode {
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+/* ── Panels (search-fixtures, manage-db) ──────────────────────────────────── */
+
+body.dark-mode .panel {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .panel-title {
+  color: #e6edf3 !important;
+}
+
+/* ── Fixtures table ───────────────────────────────────────────────────────── */
+
+body.dark-mode .fixture-row {
+  background-color: #1c2128 !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .fixture-row:nth-child(even) {
+  background-color: #21262d !important;
+}
+
+body.dark-mode .fixture-row:hover {
+  background-color: #2d333b !important;
+}
+
+body.dark-mode .fixture-row td {
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .fixtures-table th {
+  border-color: #5a3010 !important;
+  border-bottom-color: #5a3010 !important;
+}
+
+/* ── Live cards ───────────────────────────────────────────────────────────── */
+
+body.dark-mode .live-card {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+}
+
+body.dark-mode .live-card:hover {
+  border-color: #e05c2a !important;
+}
+
+body.dark-mode .live-card-league {
+  color: #8b949e !important;
+  border-bottom-color: #30363d !important;
+}
+
+body.dark-mode .team-name-live {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .live-card-venue {
+  color: #656d76 !important;
+  border-top-color: #30363d !important;
+}
+
+/* ── Filter dropdowns ─────────────────────────────────────────────────────── */
+
+body.dark-mode .filter-btn {
+  background: #1c2128 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .filter-btn-active {
+  background: #2d1f15 !important;
+  border-color: #e05c2a !important;
+  color: #e05c2a !important;
+}
+
+body.dark-mode .filter-dropdown {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .filter-option {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .filter-option:hover {
+  background: #21262d !important;
+}
+
+body.dark-mode .filter-clear-btn {
+  border-color: #30363d !important;
+  color: #8b949e !important;
+  background: transparent !important;
+}
+
+body.dark-mode .filter-count-label {
+  color: #8b949e !important;
+}
+
+/* ── Search inputs ────────────────────────────────────────────────────────── */
+
+body.dark-mode .search-input,
+body.dark-mode .search-select {
+  background-color: #1c2128 !important;
+  color: #e6edf3 !important;
+  border-color: #30363d !important;
+}
+
+body.dark-mode .search-input::placeholder {
+  color: #656d76 !important;
+}
+
+/* ── Status / odds badges ─────────────────────────────────────────────────── */
+
+body.dark-mode .status-badge {
+  background-color: #2d333b !important;
+  color: #8b949e !important;
+}
+
+/* ── Fixture detail — section cards ──────────────────────────────────────── */
+
+body.dark-mode .section-card {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .section-title {
+  color: #e6edf3 !important;
+  border-bottom-color: #30363d !important;
+}
+
+body.dark-mode .match-header {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .header-team-name {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .header-league-name,
+body.dark-mode .header-league-round {
+  color: #8b949e !important;
+}
+
+body.dark-mode .header-meta {
+  color: #656d76 !important;
+}
+
+body.dark-mode .header-score {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .header-ht,
+body.dark-mode .header-et,
+body.dark-mode .header-pen {
+  color: #8b949e !important;
+}
+
+/* ── Fixture detail — contextual analysis ────────────────────────────────── */
+
+body.dark-mode .ctx-panel {
+  border-top-color: #27ae60 !important;
+}
+
+body.dark-mode .ctx-teams-row {
+  border-bottom-color: #30363d !important;
+}
+
+body.dark-mode .ctx-metric-row {
+  border-bottom-color: #21262d !important;
+}
+
+body.dark-mode .ctx-spacer {
+  color: #656d76 !important;
+}
+
+body.dark-mode .ctx-subtitle {
+  color: #8b949e !important;
+}
+
+body.dark-mode .ctx-scale-btn {
+  background: #1c2128 !important;
+  border-color: #30363d !important;
+  color: #8b949e !important;
+}
+
+body.dark-mode .ctx-reset-btn {
+  border-color: #30363d !important;
+  color: #8b949e !important;
+  background: transparent !important;
+}
+
+body.dark-mode .ctx-reset-btn:hover {
+  border-color: #8b949e !important;
+  color: #e6edf3 !important;
+}
+
+/* ── Fixture detail — prediction panels ──────────────────────────────────── */
+
+body.dark-mode .pred-panel {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .pred-label {
+  color: #8b949e !important;
+}
+
+/* ── Fixture detail — stats tables ───────────────────────────────────────── */
+
+body.dark-mode .stats-table th,
+body.dark-mode .stats-table td {
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .stats-table tr:nth-child(even) td {
+  background-color: #1c2128 !important;
+}
+
+body.dark-mode .stat-bar-bg {
+  background: #30363d !important;
+}
+
+/* ── Fixture detail — H2H cards ──────────────────────────────────────────── */
+
+body.dark-mode .h2h-card {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .h2h-date,
+body.dark-mode .h2h-league {
+  color: #8b949e !important;
+}
+
+/* ── Unavailable players / squad lists ───────────────────────────────────── */
+
+body.dark-mode .squad-player {
+  background: #1c2128 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .squad-player.unavailable {
+  background: #2d1f1f !important;
+  border-color: #7c2626 !important;
+}
+
+/* ── Action row buttons (fixture-detail) — keep their own colors ─────────── */
+/* No override needed — they're already colored */
+
+/* ── General text elements ────────────────────────────────────────────────── */
+
+body.dark-mode .empty-msg,
+body.dark-mode .error-msg {
+  color: #8b949e !important;
+}
+
+body.dark-mode .loading-overlay {
+  color: #8b949e !important;
+}
+
+body.dark-mode .spinner {
+  border-color: #30363d !important;
+  border-top-color: #f3b32b !important;
 }
