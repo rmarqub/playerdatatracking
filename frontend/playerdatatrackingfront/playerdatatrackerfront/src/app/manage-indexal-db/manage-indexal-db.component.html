@@ -1,6 +1,7 @@
 <div class="manage-db-container">
   <h2 class="manage-db-title">Gestión de base de datos</h2>
 
+  <!-- Regenerar análisis contextuales -->
   <div class="manage-db-section">
     <h3 class="manage-db-section-title">Modelo predictivo</h3>
     <p class="manage-db-section-desc">
@@ -21,4 +22,136 @@
       {{ regenerateMessage }}
     </p>
   </div>
+
+  <!-- Historial de análisis -->
+  <div class="manage-db-section">
+    <h3 class="manage-db-section-title">Historial de análisis contextual</h3>
+    <p class="manage-db-section-desc">
+      Revisa los partidos con análisis almacenado y el estado actual de las ponderaciones del modelo contextual.
+      Si hay suficientes partidos finalizados (mínimo 10), se ejecuta la calibración automáticamente.
+    </p>
+    <button
+      class="manage-db-btn manage-db-btn--history"
+      [disabled]="historyLoading"
+      (click)="loadAnalysisHistory()">
+      <span *ngIf="!historyLoading">Revisar historial</span>
+      <span *ngIf="historyLoading">Cargando...</span>
+    </button>
+
+    <p *ngIf="historyError" class="manage-db-result manage-db-result--error">{{ historyError }}</p>
+
+    <ng-container *ngIf="historyData as h">
+
+      <!-- Resumen global -->
+      <div class="history-summary">
+        <div class="history-stat">
+          <span class="history-stat-label">Análisis totales</span>
+          <span class="history-stat-value">{{ h.totalAnalysed }}</span>
+        </div>
+        <div class="history-stat">
+          <span class="history-stat-label">Evaluables (FT)</span>
+          <span class="history-stat-value">{{ h.processedAnalyses }}</span>
+        </div>
+        <div class="history-stat">
+          <span class="history-stat-label">Aciertos (label)</span>
+          <span class="history-stat-value">{{ h.correctPredictions }}</span>
+        </div>
+        <div class="history-stat">
+          <span class="history-stat-label">Precisión label</span>
+          <span class="history-stat-value">{{ h.accuracyRate | number:'1.1-1' }}%</span>
+        </div>
+        <div class="history-stat">
+          <span class="history-stat-label">Brier medio</span>
+          <span class="history-stat-value">{{ h.avgBrierScore | number:'1.3-3' }}</span>
+        </div>
+        <div class="history-stat">
+          <span class="history-stat-label">Log-loss medio</span>
+          <span class="history-stat-value">{{ h.avgLogLoss | number:'1.3-3' }}</span>
+        </div>
+      </div>
+
+      <!-- Mensaje de calibración -->
+      <div class="history-calib-msg"
+           [class.history-calib-msg--ok]="h.weightsUpdated"
+           [class.history-calib-msg--info]="!h.weightsUpdated">
+        {{ h.calibrationMessage }}
+      </div>
+
+      <!-- Ponderaciones actuales -->
+      <div class="history-weights" *ngIf="h.currentWeights as w">
+        <span class="history-weights-title">Ponderaciones activas</span>
+        <div class="history-weights-grid">
+          <span class="weight-chip">Forma <strong>{{ w.wForma | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Necesidad <strong>{{ w.wNeeds | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Defensa <strong>{{ w.wDef | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Ataque <strong>{{ w.wOff | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Fatiga <strong>{{ w.wFatigue | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Balón parado <strong>{{ w.wSetPieces | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">Atmósfera <strong>{{ w.wAtm | number:'1.3-3' }}</strong></span>
+          <span class="weight-chip">No disponibles <strong>{{ w.wUnavail | number:'1.3-3' }}</strong></span>
+        </div>
+        <span class="history-weights-meta" *ngIf="w.fromDb">
+          Calibradas el {{ w.calibrationDate }} · {{ w.nSamples }} muestras
+        </span>
+        <span class="history-weights-meta" *ngIf="!w.fromDb">Valores por defecto (sin calibración)</span>
+      </div>
+
+      <!-- Tabla de partidos -->
+      <div class="history-table-wrap" *ngIf="h.matchResults.length > 0">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Partido</th>
+              <th>Resultado</th>
+              <th>Base H/D/V</th>
+              <th>Ajust. H/D/V</th>
+              <th>Delta</th>
+              <th>Label</th>
+              <th>Delta útil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let m of h.matchResults">
+              <td class="match-name">
+                <span>{{ m.homeTeamName }}</span>
+                <span class="match-score">{{ m.goalsHome }} - {{ m.goalsAway }}</span>
+                <span>{{ m.awayTeamName }}</span>
+              </td>
+              <td>
+                <span class="result-pill result-pill--{{ m.actualResult }}">
+                  {{ resultLabel(m.actualResult) }}
+                </span>
+              </td>
+              <td class="probs">
+                {{ pct(m.baseHomeWin) }} / {{ pct(m.baseDraw) }} / {{ pct(m.baseAwayWin) }}
+              </td>
+              <td class="probs">
+                {{ pct(m.adjHomeWin) }} / {{ pct(m.adjDraw) }} / {{ pct(m.adjAwayWin) }}
+              </td>
+              <td class="delta" [class.delta--pos]="m.netDelta > 0" [class.delta--neg]="m.netDelta < 0">
+                {{ m.netDelta > 0 ? '+' : '' }}{{ m.netDelta | number:'1.3-3' }}
+              </td>
+              <td>
+                <span class="badge" [class.badge--ok]="m.correct" [class.badge--fail]="!m.correct">
+                  {{ m.correct ? 'Sí' : 'No' }}
+                </span>
+              </td>
+              <td>
+                <span class="badge" [class.badge--ok]="m.deltaHelpful" [class.badge--neutral]="!m.deltaHelpful">
+                  {{ m.deltaHelpful ? 'Sí' : 'No' }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="manage-db-result manage-db-result--ok"
+         *ngIf="h.processedAnalyses === 0">
+        No hay partidos finalizados con análisis almacenado aún.
+      </p>
+
+    </ng-container>
+  </div>
+
 </div>

@@ -17,10 +17,10 @@
     <div class="action-row">
       <button class="btn-back" (click)="goBack()">← Volver</button>
       <button class="btn-h2h" (click)="toggleH2H()">{{ showH2H ? 'Ocultar H2H' : 'Cargar H2H' }}</button>
-      <button class="btn-predictions" *ngIf="!isFinished" (click)="loadPrediction()">
+      <button class="btn-predictions" (click)="loadPrediction()">
         {{ showPrediction ? 'Ocultar predicción' : 'Predicciones' }}
       </button>
-      <button class="btn-analysis" *ngIf="!isFinished" (click)="toggleAnalysis()">
+      <button class="btn-analysis" (click)="toggleAnalysis()">
         {{ showAnalysis ? 'Cerrar análisis' : 'Cargar Análisis' }}
       </button>
     </div>

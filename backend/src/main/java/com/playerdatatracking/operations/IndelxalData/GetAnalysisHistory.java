@@ -118,6 +118,9 @@ public class GetAnalysisHistory {
 
             boolean isCorrect     = adjPred.equals(actual);
             boolean isBaseCorrect = basePred.equals(actual);
+            double pActualBase = "home_win".equals(actual) ? bH : "draw".equals(actual) ? bD : bA;
+            double pActualAdj  = "home_win".equals(actual) ? adj[0] : "draw".equals(actual) ? adj[1] : adj[2];
+            boolean deltaHelpful = pActualAdj > pActualBase;
             if (isCorrect) correct++; else incorrect++;
 
             double brier   = brierScore(adj[0], adj[1], adj[2], actual);
@@ -143,6 +146,7 @@ public class GetAnalysisHistory {
             r.setNetDelta(round(delta));
             r.setCorrect(isCorrect);
             r.setBaseCorrect(isBaseCorrect);
+            r.setDeltaHelpful(deltaHelpful);
             r.setBrierScore(round(brier));
             r.setLogLoss(round(logLoss));
             results.add(r);

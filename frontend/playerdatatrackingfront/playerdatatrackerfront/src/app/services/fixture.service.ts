@@ -325,6 +325,59 @@ export interface ApiFixtureItem {
   players: any[];
 }
 
+export interface ContextualWeightsSnapshot {
+  wForma: number | null;
+  wNeeds: number | null;
+  wDef: number | null;
+  wOff: number | null;
+  wFatigue: number | null;
+  wSetPieces: number | null;
+  wAtm: number | null;
+  wUnavail: number | null;
+  calibrationDate: string | null;
+  nSamples: number | null;
+  notes: string | null;
+  fromDb: boolean;
+}
+
+export interface AnalysisMatchResult {
+  fixtureId: number;
+  homeTeamName: string;
+  awayTeamName: string;
+  matchDate: string | null;
+  goalsHome: number | null;
+  goalsAway: number | null;
+  actualResult: string;
+  baseHomeWin: number;
+  baseDraw: number;
+  baseAwayWin: number;
+  adjHomeWin: number;
+  adjDraw: number;
+  adjAwayWin: number;
+  adjPredicted: string;
+  netDelta: number;
+  correct: boolean;
+  baseCorrect: boolean;
+  deltaHelpful: boolean;
+  brierScore: number | null;
+  logLoss: number | null;
+}
+
+export interface AnalysisHistoryData {
+  totalAnalysed: number;
+  processedAnalyses: number;
+  correctPredictions: number;
+  incorrectPredictions: number;
+  accuracyRate: number;
+  avgBrierScore: number;
+  avgLogLoss: number;
+  calibrationRun: boolean;
+  weightsUpdated: boolean;
+  calibrationMessage: string;
+  currentWeights: ContextualWeightsSnapshot;
+  matchResults: AnalysisMatchResult[];
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -478,6 +531,20 @@ export class FixtureService {
     return this.http.post<GenericResponse<string>>(`${this.base}/regenerateContextualAnalyses`, {}).pipe(
       map(r => ({ ok: r.code === 0, message: r.description || '' })),
       catchError(() => of({ ok: false, message: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  getFixturesWithAnalysis(): Observable<Fixture[]> {
+    return this.http.post<GenericResponse<Fixture>>(`${this.base}/fixturesWithAnalysis`, {}).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  getAnalysisHistory(): Observable<AnalysisHistoryData | null> {
+    return this.http.post<GenericResponse<AnalysisHistoryData>>(`${this.base}/analysisHistory`, {}).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
     );
   }
 }

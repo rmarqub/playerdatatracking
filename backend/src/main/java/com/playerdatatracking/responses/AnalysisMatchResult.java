@@ -23,6 +23,7 @@ public class AnalysisMatchResult {
     private Double  netDelta;
     private boolean correct;
     private boolean baseCorrect;
+    private boolean deltaHelpful; // adj probability for actual outcome > base probability
 
     private Double  brierScore;      // per-match Brier (adjusted probs)
     private Double  logLoss;         // per-match log-loss (adjusted probs)
@@ -61,6 +62,8 @@ public class AnalysisMatchResult {
     public void    setCorrect(boolean v)        { correct = v; }
     public boolean isBaseCorrect()              { return baseCorrect; }
     public void    setBaseCorrect(boolean v)    { baseCorrect = v; }
+    public boolean isDeltaHelpful()             { return deltaHelpful; }
+    public void    setDeltaHelpful(boolean v)   { deltaHelpful = v; }
     public Double  getBrierScore()              { return brierScore; }
     public void    setBrierScore(Double v)      { brierScore = v; }
     public Double  getLogLoss()                 { return logLoss; }

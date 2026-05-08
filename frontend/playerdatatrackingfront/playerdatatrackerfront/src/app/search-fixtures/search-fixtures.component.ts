@@ -16,6 +16,7 @@ export class SearchFixturesComponent implements OnInit {
   studiedLeagues: Torneo[] = [];
   fixtures: Fixture[] = [];
   isLoadingSearch: boolean = false;
+  isLoadingAnalysisSearch: boolean = false;
   searchPerformed: boolean = false;
 
   // ── Live API ───────────────────────────────────────────────────────────────
@@ -189,6 +190,23 @@ export class SearchFixturesComponent implements OnInit {
       error: () => {
         this.fixtures = [];
         this.isLoadingSearch = false;
+        this.searchPerformed = true;
+      }
+    });
+  }
+
+  searchWithAnalysis(): void {
+    this.isLoadingAnalysisSearch = true;
+    this.searchPerformed = false;
+    this.fixtureService.getFixturesWithAnalysis().subscribe({
+      next: fixtures => {
+        this.fixtures = fixtures;
+        this.isLoadingAnalysisSearch = false;
+        this.searchPerformed = true;
+      },
+      error: () => {
+        this.fixtures = [];
+        this.isLoadingAnalysisSearch = false;
         this.searchPerformed = true;
       }
     });

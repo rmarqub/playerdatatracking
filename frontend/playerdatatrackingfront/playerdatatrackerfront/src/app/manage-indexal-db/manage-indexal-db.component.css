@@ -1,5 +1,5 @@
 .manage-db-container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
@@ -65,6 +65,14 @@
   cursor: not-allowed;
 }
 
+.manage-db-btn--history {
+  background: #6c5ce7;
+}
+
+.manage-db-btn--history:hover:not(:disabled) {
+  background: #5a4bd1;
+}
+
 .manage-db-result {
   margin-top: 0.75rem;
   font-size: 0.85rem;
@@ -83,3 +91,200 @@
   color: #fc8181;
   border: 1px solid #822727;
 }
+
+/* ── History summary ────────────────────────────────────────────────────── */
+
+.history-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1.25rem;
+}
+
+.history-stat {
+  background: #2d3748;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+}
+
+.history-stat-label {
+  font-size: 0.72rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.history-stat-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+/* ── Calibration message ────────────────────────────────────────────────── */
+
+.history-calib-msg {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 5px;
+  word-break: break-word;
+}
+
+.history-calib-msg--ok {
+  background: #1c3b2a;
+  color: #68d391;
+  border: 1px solid #276749;
+}
+
+.history-calib-msg--info {
+  background: #2a2d3e;
+  color: #a0aec0;
+  border: 1px solid #3d4255;
+}
+
+/* ── Weights ────────────────────────────────────────────────────────────── */
+
+.history-weights {
+  margin-top: 1rem;
+  background: #252d3d;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+}
+
+.history-weights-title {
+  display: block;
+  font-size: 0.75rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+}
+
+.history-weights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.weight-chip {
+  background: #2d3748;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+.weight-chip strong {
+  color: #e2e8f0;
+  margin-left: 4px;
+}
+
+.history-weights-meta {
+  display: block;
+  font-size: 0.75rem;
+  color: #4a5568;
+  margin-top: 0.5rem;
+}
+
+/* ── Match table ────────────────────────────────────────────────────────── */
+
+.history-table-wrap {
+  margin-top: 1.25rem;
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.history-table th {
+  background: #252d3d;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom: 1px solid #2d3748;
+  white-space: nowrap;
+}
+
+.history-table td {
+  padding: 8px 10px;
+  text-align: center;
+  color: #cbd5e0;
+  border-bottom: 1px solid #252d3d;
+  vertical-align: middle;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tr:hover td {
+  background: #252d3d;
+}
+
+.match-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.8rem;
+  text-align: left !important;
+  white-space: nowrap;
+}
+
+.match-score {
+  font-weight: 700;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+}
+
+.probs {
+  font-size: 0.78rem;
+  color: #a0aec0;
+  white-space: nowrap;
+}
+
+.delta {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.delta--pos { color: #68d391; }
+.delta--neg { color: #fc8181; }
+
+/* Result pill */
+.result-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.73rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.result-pill--home_win { background: #2b4c7e; color: #90cdf4; }
+.result-pill--away_win { background: #4a1d52; color: #d6bcfa; }
+.result-pill--draw     { background: #3d3a1e; color: #f6e05e; }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.badge--ok      { background: #1c3b2a; color: #68d391; }
+.badge--fail    { background: #3b1c1c; color: #fc8181; }
+.badge--neutral { background: #2d3748; color: #718096; }

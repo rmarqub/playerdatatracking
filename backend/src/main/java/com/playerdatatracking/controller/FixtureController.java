@@ -21,6 +21,7 @@ import com.playerdatatracking.operations.IndelxalData.SaveContextualAnalysis;
 import com.playerdatatracking.operations.IndelxalData.GetContextualAnalysis;
 import com.playerdatatracking.operations.IndelxalData.GetContextualMatchPrediction;
 import com.playerdatatracking.operations.IndelxalData.GetFixtureSquad;
+import com.playerdatatracking.operations.IndelxalData.GetFixturesWithAnalysis;
 import com.playerdatatracking.operations.IndelxalData.GetAnalysisHistory;
 import com.playerdatatracking.operations.IndelxalData.RegenerateContextualAnalyses;
 import com.playerdatatracking.responses.AnalysisHistoryData;
@@ -91,6 +92,8 @@ public class FixtureController {
     private GetContextualAnalysis operationGetContextualAnalysis;
     @Autowired
     private GetFixtureSquad operationGetFixtureSquad;
+    @Autowired
+    private GetFixturesWithAnalysis operationGetFixturesWithAnalysis;
     @Autowired
     private GetContextualMatchPrediction operationGetContextualMatchPrediction;
     @Autowired
@@ -367,6 +370,18 @@ public class FixtureController {
         GenericResponse<String> response = new GenericResponse<>();
         try {
             response = operationRegenerateContextualAnalyses.ejecutar();
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/fixturesWithAnalysis")
+    public GenericResponse<Fixture> getFixturesWithAnalysis(@RequestBody GenericRequest request) {
+        GenericResponse<Fixture> response = new GenericResponse<>();
+        try {
+            response = operationGetFixturesWithAnalysis.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

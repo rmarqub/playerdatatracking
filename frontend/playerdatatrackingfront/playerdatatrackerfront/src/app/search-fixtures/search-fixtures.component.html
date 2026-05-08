@@ -131,8 +131,15 @@
       <button
         class="action-button search-button"
         (click)="searchFixtures()"
-        [disabled]="isLoadingSearch || !canSearch">
+        [disabled]="isLoadingSearch || isLoadingAnalysisSearch || !canSearch">
         {{ isLoadingSearch ? 'Buscando...' : 'Buscar' }}
+      </button>
+
+      <button
+        class="action-button analysis-search-button"
+        (click)="searchWithAnalysis()"
+        [disabled]="isLoadingSearch || isLoadingAnalysisSearch">
+        {{ isLoadingAnalysisSearch ? 'Buscando...' : 'Con análisis' }}
       </button>
     </div>
 
