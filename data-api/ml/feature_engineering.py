@@ -680,92 +680,145 @@ def compute_h2h_player_features(
 # Percentiles de jugadores por liga/temporada (Fase A)
 # ---------------------------------------------------------------------------
 
-def compute_player_season_percentiles(
+def compute_player_season_percentiles_temporal(
     player_stats: pd.DataFrame,
     fixtures: pd.DataFrame,
+    min_minutes: int = 90,
 ) -> pd.DataFrame:
     """
-    Calcula percentiles por jugador dentro de su liga+temporada.
-    Fase A: usa la temporada completa (sin corte temporal exacto).
-    Mínimo: 90 minutos jugados en esa liga/temporada.
+    Percentiles temporales sin leakage.
 
-    Retorna: player_id, league_id, season, goals_p90_pct, assists_p90_pct,
-             kp_p90_pct, def_p90_pct, avg_rating_pct
+    Para cada fixture F en fecha D, calcula el rango percentil de cada jugador
+    usando SOLO partidos jugados antes de D en la misma liga+temporada.
+    Fixtures del mismo día usan el mismo snapshot (sus datos no están incluidos).
+
+    Retorna: fixture_id, player_id, goals_p90_pct, kp_p90_pct, def_p90_pct, avg_rating_pct
     """
     if player_stats.empty:
         return pd.DataFrame()
 
-    fix_meta = fixtures[["id", "league_id", "season"]].rename(columns={"id": "fixture_id"})
+    # player_stats ya trae match_date del JOIN en load_player_stats()
+    # — solo necesitamos league_id y season de fixtures
+    fix_meta = (
+        fixtures[["id", "league_id", "season"]]
+        .rename(columns={"id": "fixture_id"})
+    )
     ps = player_stats.merge(fix_meta, on="fixture_id", how="left")
     ps = ps[ps["minutes_played"].fillna(0) > 0].copy()
+    ps["match_date"]   = pd.to_datetime(ps["match_date"], utc=True)
+    ps["rating_float"] = pd.to_numeric(ps["rating"], errors="coerce")
 
-    agg = ps.groupby(["player_id", "league_id", "season"]).agg(
-        total_minutes=("minutes_played",  "sum"),
-        total_goals=("goals_scored",       "sum"),
-        total_assists=("assists",          "sum"),
-        total_kp=("passes_key",            "sum"),
-        total_tackles=("tackles_total",    "sum"),
-        total_int=("interceptions",        "sum"),
-        avg_rating=("rating",              "mean"),
-    ).reset_index()
+    results = []
 
-    agg = agg[agg["total_minutes"] >= 90].copy()
-    agg["goals_p90"]  = agg["total_goals"]   * 90 / agg["total_minutes"]
-    agg["assists_p90"] = agg["total_assists"] * 90 / agg["total_minutes"]
-    agg["kp_p90"]     = agg["total_kp"]      * 90 / agg["total_minutes"]
-    agg["def_p90"]    = (agg["total_tackles"] + agg["total_int"]) * 90 / agg["total_minutes"]
+    for (league_id, season), lg in ps.groupby(["league_id", "season"]):
+        lg = lg.sort_values("match_date")
 
-    for col, pct_col in [
-        ("goals_p90",  "goals_p90_pct"),
-        ("assists_p90","assists_p90_pct"),
-        ("kp_p90",     "kp_p90_pct"),
-        ("def_p90",    "def_p90_pct"),
-        ("avg_rating", "avg_rating_pct"),
-    ]:
-        agg[pct_col] = (
-            agg.groupby(["league_id", "season"])[col]
-            .rank(pct=True) * 100
+        # Agrupar por fecha: todos los fixtures del mismo día usan el mismo snapshot
+        date_groups = (
+            lg[["fixture_id", "match_date"]]
+            .drop_duplicates("fixture_id")
+            .groupby("match_date")["fixture_id"].apply(list)
+            .reset_index()
+            .sort_values("match_date")
         )
 
-    return agg[["player_id", "league_id", "season",
-                "goals_p90_pct", "assists_p90_pct", "kp_p90_pct",
-                "def_p90_pct",   "avg_rating_pct"]].copy()
+        cum: dict = {}  # player_id → acumulado de stats
+
+        for _, drow in date_groups.iterrows():
+            fdate = drow["match_date"]
+            fids  = drow["fixture_id"]
+
+            # snapshot ANTES de los fixtures de este día
+            if cum:
+                snap_rows = [
+                    {
+                        "player_id":     pid,
+                        "total_minutes": d["minutes"],
+                        "total_goals":   d["goals"],
+                        "total_kp":      d["kp"],
+                        "total_def":     d["tackles"] + d["int_"],
+                        "avg_rating":    d["sum_r"] / d["n_r"] if d["n_r"] > 0 else np.nan,
+                    }
+                    for pid, d in cum.items()
+                    if d["minutes"] >= min_minutes
+                ]
+
+                if len(snap_rows) >= 2:
+                    snap = pd.DataFrame(snap_rows)
+                    snap["goals_p90"] = snap["total_goals"] * 90.0 / snap["total_minutes"]
+                    snap["kp_p90"]    = snap["total_kp"]    * 90.0 / snap["total_minutes"]
+                    snap["def_p90"]   = snap["total_def"]   * 90.0 / snap["total_minutes"]
+                    for raw, pct_col in [
+                        ("goals_p90",  "goals_p90_pct"),
+                        ("kp_p90",     "kp_p90_pct"),
+                        ("def_p90",    "def_p90_pct"),
+                        ("avg_rating", "avg_rating_pct"),
+                    ]:
+                        snap[pct_col] = snap[raw].rank(pct=True) * 100
+
+                    pct_cols = snap[["player_id", "goals_p90_pct", "kp_p90_pct",
+                                     "def_p90_pct", "avg_rating_pct"]]
+                    for fid in fids:
+                        fid_snap = pct_cols.copy()
+                        fid_snap["fixture_id"] = fid
+                        results.append(fid_snap)
+
+            # actualizar acumulado con los datos de los fixtures de este día
+            date_data = lg[lg["fixture_id"].isin(fids)]
+            for _, prow in date_data.iterrows():
+                pid = int(prow["player_id"])
+                if pid not in cum:
+                    cum[pid] = {"minutes": 0, "goals": 0, "kp": 0,
+                                "tackles": 0, "int_": 0, "sum_r": 0.0, "n_r": 0}
+                _si = lambda v: 0 if v is None or (isinstance(v, float) and np.isnan(v)) else int(v)
+                cum[pid]["minutes"]  += _si(prow.get("minutes_played"))
+                cum[pid]["goals"]    += _si(prow.get("goals_scored"))
+                cum[pid]["kp"]       += _si(prow.get("passes_key"))
+                cum[pid]["tackles"]  += _si(prow.get("tackles_total"))
+                cum[pid]["int_"]     += _si(prow.get("interceptions"))
+                r = prow.get("rating_float")
+                if r is not None and not pd.isna(r):
+                    cum[pid]["sum_r"] += float(r)
+                    cum[pid]["n_r"]   += 1
+
+    if not results:
+        return pd.DataFrame()
+    return pd.concat(results, ignore_index=True)
 
 
 def compute_lineup_percentile_features(
     player_stats: pd.DataFrame,
-    percentiles: pd.DataFrame,
+    temporal_percentiles: pd.DataFrame,
     fixtures: pd.DataFrame,
 ) -> pd.DataFrame:
     """
-    Para cada (fixture_id, team_id) calcula la calidad de la alineación real
-    usando los percentiles de liga/temporada de los titulares que efectivamente jugaron.
+    Para cada (fixture_id, team_id) agrega los percentiles temporales de los titulares.
+    Join sobre (fixture_id, player_id) — sin leakage por construcción.
 
     Features:
       avg_starter_rating_pct  — percentil medio de rating de todos los titulares
-      avg_att_goal_pct        — percentil medio de goles/90 de atacantes+centros (F, M)
-      top_attacker_goal_pct   — percentil máximo de goles/90 entre los titulares (el mejor)
+      avg_att_goal_pct        — percentil medio de goles/90 de F+M
+      top_attacker_goal_pct   — máximo percentil de goles/90 (el mejor atacante)
+      avg_att_kp_pct          — percentil medio de pases clave de F+M
       avg_def_pct             — percentil medio defensivo de D+G
     """
-    if player_stats.empty or percentiles.empty:
+    if player_stats.empty or temporal_percentiles.empty:
         return pd.DataFrame()
 
-    fix_meta = fixtures[["id", "league_id", "season"]].rename(columns={"id": "fixture_id"})
     starters = player_stats[player_stats["substitute"] == False].copy()
-    starters = starters.merge(fix_meta,   on="fixture_id",                          how="left")
-    starters = starters.merge(percentiles, on=["player_id", "league_id", "season"], how="left")
+    starters = starters.merge(temporal_percentiles, on=["fixture_id", "player_id"], how="left")
 
-    att = starters[starters["position"].isin(["F", "M"])]
+    att  = starters[starters["position"].isin(["F", "M"])]
     def_ = starters[starters["position"].isin(["D", "G"])]
 
     overall = starters.groupby(["fixture_id", "team_id"]).agg(
         avg_starter_rating_pct=("avg_rating_pct", "mean"),
-        top_attacker_goal_pct=("goals_p90_pct",   "max"),
+        top_attacker_goal_pct =("goals_p90_pct",  "max"),
     ).reset_index()
 
     att_agg = att.groupby(["fixture_id", "team_id"]).agg(
         avg_att_goal_pct=("goals_p90_pct", "mean"),
-        avg_att_kp_pct=("kp_p90_pct",     "mean"),
+        avg_att_kp_pct  =("kp_p90_pct",   "mean"),
     ).reset_index()
 
     def_agg = def_.groupby(["fixture_id", "team_id"]).agg(
@@ -940,6 +993,18 @@ def assemble_dataset(
     # Renombrar fixture.id → fixture_id
     df = df.rename(columns={"id": "fixture_id"})
 
+    # Features de balance — señal para empates (cuán igualado está el partido)
+    xg_h = f"home_roll_xg_for_last{n}"
+    xg_a = f"away_roll_xg_for_last{n}"
+    if xg_h in df.columns and xg_a in df.columns:
+        xg_sum = df[xg_h] + df[xg_a] + 1e-6
+        df["xg_balance"] = 1.0 - (df[xg_h] - df[xg_a]).abs() / xg_sum
+
+    if "home_season_ppg" in df.columns and "away_season_ppg" in df.columns:
+        ppg_max = df[["home_season_ppg", "away_season_ppg"]].max(axis=1)
+        ppg_min = df[["home_season_ppg", "away_season_ppg"]].min(axis=1)
+        df["ppg_balance"] = ppg_min / (ppg_max + 1e-6)
+
     # Features diferenciales home-minus-away — team stats
     diff_pairs = [
         (f"home_roll_goals_for_last{n}",      f"away_roll_goals_for_last{n}",      "diff_goals_for"),
@@ -1096,12 +1161,12 @@ def main():
             print(f"Calculando H2H de jugadores last-{args.h2h}...")
             player_h2h = compute_h2h_player_features(player_stats, fixtures, args.h2h)
 
-            print("Calculando percentiles de jugadores por liga/temporada...")
-            percentiles = compute_player_season_percentiles(player_stats, fixtures)
-            print(f"  → {len(percentiles)} registros jugador/liga/temporada con percentil")
+            print("Calculando percentiles temporales de jugadores (sin leakage)...")
+            temporal_pct = compute_player_season_percentiles_temporal(player_stats, fixtures)
+            print(f"  → {len(temporal_pct)} snapshots fixture×jugador")
 
-            print("Calculando features de calidad de alineación (percentiles)...")
-            lineup_pct = compute_lineup_percentile_features(player_stats, percentiles, fixtures)
+            print("Calculando features de calidad de alineación (percentiles temporales)...")
+            lineup_pct = compute_lineup_percentile_features(player_stats, temporal_pct, fixtures)
         else:
             print("  ⚠ Sin datos de jugadores — se omitirán esas features")
     else:

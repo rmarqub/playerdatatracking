@@ -470,6 +470,8 @@ def _query_lineup_percentile_features(
     """
     Calcula features de percentil de alineación para el equipo en tiempo real.
     Usa los titulares del partido más reciente como proxy del eleven esperado.
+    Usa estadísticas de season-1 (temporada anterior) para evitar leakage temporal:
+    los percentiles de la temporada en curso se irían computando con datos futuros.
     Fase A — sin impacto de ausencias (eso viene con la integración de unavailable_players).
     """
     empty = {
@@ -512,34 +514,19 @@ def _query_lineup_percentile_features(
     starter_ids = [s[0] for s in starters]
     starter_pos = {s[0]: s[1] for s in starters}
 
-    # Percentiles de todos los jugadores en esa liga+temporada
+    # Lookup en tabla pre-computada: snapshot más reciente antes del partido
+    # (poblar con compute_percentiles.py antes de usar la API)
     with conn.cursor() as cur:
         cur.execute("""
-            WITH season_stats AS (
-                SELECT
-                    ps.player_id,
-                    SUM(ps.goals_scored)   * 90.0 / NULLIF(SUM(ps.minutes_played), 0) AS goals_p90,
-                    SUM(ps.passes_key)     * 90.0 / NULLIF(SUM(ps.minutes_played), 0) AS kp_p90,
-                    (COALESCE(SUM(ps.tackles_total), 0) + COALESCE(SUM(ps.interceptions), 0))
-                        * 90.0 / NULLIF(SUM(ps.minutes_played), 0)                    AS def_p90,
-                    AVG(ps.rating::float)                                               AS avg_rating
-                FROM fixture_player_stats ps
-                JOIN fixture f ON f.id = ps.fixture_id
-                WHERE f.league_id = %s
-                  AND f.season    = %s
-                  AND f.status_short = 'FT'
-                  AND ps.minutes_played > 0
-                GROUP BY ps.player_id
-                HAVING SUM(ps.minutes_played) >= 90
-            )
-            SELECT
-                player_id,
-                PERCENT_RANK() OVER (ORDER BY goals_p90  NULLS FIRST) * 100 AS goals_p90_pct,
-                PERCENT_RANK() OVER (ORDER BY kp_p90     NULLS FIRST) * 100 AS kp_p90_pct,
-                PERCENT_RANK() OVER (ORDER BY def_p90    NULLS FIRST) * 100 AS def_p90_pct,
-                PERCENT_RANK() OVER (ORDER BY avg_rating NULLS FIRST) * 100 AS avg_rating_pct
-            FROM season_stats
-        """, (league_id, season))
+            SELECT DISTINCT ON (player_id)
+                player_id, goals_p90_pct, kp_p90_pct, def_p90_pct, avg_rating_pct
+            FROM player_season_percentiles
+            WHERE player_id = ANY(%s)
+              AND league_id  = %s
+              AND season     = %s
+              AND as_of_date <= %s
+            ORDER BY player_id, as_of_date DESC
+        """, (starter_ids, league_id, season, match_date))
         all_pct = {r["player_id"]: dict(r) for r in cur.fetchall()}
 
     ratings, att_goals, att_kp, def_pct = [], [], [], []
@@ -746,6 +733,23 @@ def build_feature_row(
             row[f"home_{key}"] = val
         for key, val in away_pct.items():
             row[f"away_{key}"] = val
+
+        # ---- Balance features (señal para empates) ----
+        xg_h = row.get(f"home_roll_xg_for_last{n}")
+        xg_a = row.get(f"away_roll_xg_for_last{n}")
+        if xg_h is not None and xg_a is not None and not pd.isna(xg_h) and not pd.isna(xg_a):
+            row["xg_balance"] = 1.0 - abs(xg_h - xg_a) / (xg_h + xg_a + 1e-6)
+        else:
+            row["xg_balance"] = np.nan
+
+        ppg_h = row.get("home_season_ppg")
+        ppg_a = row.get("away_season_ppg")
+        if ppg_h is not None and ppg_a is not None and not pd.isna(ppg_h) and not pd.isna(ppg_a):
+            ppg_max = max(ppg_h, ppg_a)
+            ppg_min = min(ppg_h, ppg_a)
+            row["ppg_balance"] = ppg_min / (ppg_max + 1e-6)
+        else:
+            row["ppg_balance"] = np.nan
 
         # ---- Diff features — team stats ----
         diff_pairs = [

@@ -121,12 +121,15 @@ LGBM_BASE = {
     "verbose":           -1,
 }
 
-# Params específicos para modelos binarios (O/U, BTTS) — más simples para señal más débil
+# Params específicos para modelos binarios (O/U, BTTS) — fuerte regularización para señal débil
 LGBM_BINARY = {
     **LGBM_BASE,
-    "num_leaves":        31,
-    "min_child_samples": 25,
-    "learning_rate":     0.015,   # más lento aún — BTTS tiene muy poco signal, necesita más iteraciones
+    "num_leaves":        20,
+    "min_child_samples": 50,
+    "learning_rate":     0.01,
+    "colsample_bytree":  0.55,
+    "reg_alpha":         0.5,
+    "reg_lambda":        1.0,
 }
 
 EARLY_STOPPING_ROUNDS = 150    # más paciencia con lr más bajo
@@ -174,7 +177,7 @@ def train_1x2(train: pd.DataFrame, features: list[str]) -> lgb.LGBMClassifier:
         **LGBM_BASE,
         objective="multiclass",
         num_class=3,
-        class_weight={0: 1.0, 1: 1.8, 2: 1.2},  # boost empates — son los más difíciles
+        class_weight=None,  # sin boost: diagnóstico Brier mostró que el boost 1.8 sobreestima draws
         metric="multi_logloss",
     )
     return _fit_with_early_stopping(model, train, features, "result")
@@ -185,7 +188,6 @@ def train_binary(train: pd.DataFrame, features: list[str], target: str) -> lgb.L
         **LGBM_BINARY,
         objective="binary",
         metric="binary_logloss",
-        is_unbalance=True,
     )
     return _fit_with_early_stopping(model, train, features, target)
 
@@ -194,9 +196,15 @@ def train_binary(train: pd.DataFrame, features: list[str], target: str) -> lgb.L
 # Evaluación
 # ---------------------------------------------------------------------------
 
-def evaluate_1x2(model: lgb.LGBMClassifier, test: pd.DataFrame, features: list[str]) -> None:
-    X = test[features]
-    y = test["result"].values
+def evaluate_1x2(
+    model: lgb.LGBMClassifier,
+    data: pd.DataFrame,
+    features: list[str],
+    split_label: str = "Test",
+) -> float:
+    """Evalúa el modelo 1X2. Devuelve el RPS para comparar train vs test."""
+    X = data[features]
+    y = data["result"].values
     probs = model.predict_proba(X)
     preds = np.argmax(probs, axis=1)
 
@@ -205,36 +213,59 @@ def evaluate_1x2(model: lgb.LGBMClassifier, test: pd.DataFrame, features: list[s
     rps          = rps_score(y, probs)
     baseline_rps = rps_score(y, np.tile([1/3, 1/3, 1/3], (len(y), 1)))
 
-    print(f"\n  Modelo 1X2")
+    print(f"\n  Modelo 1X2 [{split_label} — {len(data)} partidos]")
     print(f"    Accuracy:          {acc:.3f}  (baseline aleatorio ≈ 0.333)")
     print(f"    Log Loss:          {ll:.4f}")
-    print(f"    RPS:               {rps:.4f}  (baseline = {baseline_rps:.4f})")
-    print(f"    RPS mejora:        {(baseline_rps - rps) / baseline_rps:.1%} sobre aleatorio")
-    _print_confusion(y, preds)
+    print(f"    RPS:               {rps:.4f}  (baseline = {baseline_rps:.4f} | mejora: {(baseline_rps - rps) / baseline_rps:.1%})")
+
+    # Brier y calibración por clase
+    class_labels = ["Local win", "Empate   ", "Away win "]
+    print(f"\n    Calibración y Brier por clase:")
+    print(f"    {'':12}  {'Freq.real':>10}  {'Prob.media':>10}  {'Brier':>7}  {'Brier base':>10}")
+    for i, lbl in enumerate(class_labels):
+        y_bin      = (y == i).astype(float)
+        freq_real  = y_bin.mean()
+        prob_media = probs[:, i].mean()
+        brier      = brier_score_loss(y_bin, probs[:, i])
+        brier_base = freq_real * (1 - freq_real)
+        marker     = "  ← peor calibrado" if brier > max(brier_score_loss((y == j).astype(float), probs[:, j]) for j in range(3) if j != i) else ""
+        print(f"      {lbl}   {freq_real:>9.1%}  {prob_media:>10.1%}  {brier:>7.4f}  {brier_base:>10.4f}{marker}")
+
+    if split_label == "Test":
+        _print_confusion(y, preds)
+
+    return rps
 
 
 def evaluate_binary(
     model: lgb.LGBMClassifier,
-    test: pd.DataFrame,
+    data: pd.DataFrame,
     features: list[str],
     target: str,
     label: str,
-) -> None:
-    X = test[features]
-    y = test[target].values
+    split_label: str = "Test",
+) -> float:
+    """Evalúa un modelo binario. Devuelve AUC para comparar train vs test."""
+    X = data[features]
+    y = data[target].values
     probs = model.predict_proba(X)[:, 1]
     preds = (probs >= 0.5).astype(int)
 
-    acc   = accuracy_score(y, preds)
-    auc   = roc_auc_score(y, probs)
-    brier = brier_score_loss(y, probs)
-    ll    = log_loss(y, probs)
+    acc        = accuracy_score(y, preds)
+    auc        = roc_auc_score(y, probs)
+    brier      = brier_score_loss(y, probs)
+    ll         = log_loss(y, probs)
+    freq_real  = y.mean()
+    prob_media = probs.mean()
 
-    print(f"\n  Modelo {label}")
+    print(f"\n  Modelo {label} [{split_label} — {len(data)} partidos]")
     print(f"    Accuracy:          {acc:.3f}")
     print(f"    AUC-ROC:           {auc:.4f}  (aleatorio = 0.500)")
-    print(f"    Brier Score:       {brier:.4f}  (0 = perfecto, 0.25 = aleatorio)")
+    print(f"    Brier Score:       {brier:.4f}  (base = {freq_real*(1-freq_real):.4f})")
     print(f"    Log Loss:          {ll:.4f}")
+    print(f"    Calibración:       freq.real={freq_real:.1%}  prob.media={prob_media:.1%}")
+
+    return auc
 
 
 def _print_confusion(y_true, y_pred):
@@ -313,20 +344,30 @@ def main():
 
     print("\n[1/3] Entrenando modelo 1X2...")
     m1x2 = train_1x2(train, features)
-    evaluate_1x2(m1x2, test, features)
+    rps_tr = evaluate_1x2(m1x2, train, features, split_label="Train")
+    rps_te = evaluate_1x2(m1x2, test,  features, split_label="Test")
+    overfit_gap = rps_tr - rps_te
+    print(f"\n    Overfitting check (RPS):  Train={rps_tr:.4f}  Test={rps_te:.4f}  gap={overfit_gap:+.4f}"
+          + ("  ⚠ posible overfitting" if overfit_gap < -0.015 else "  ✓ OK"))
     print_top_features(m1x2, features)
     save_model(m1x2, "lgbm_1x2", {**meta_base, "target": "result", "classes": [0, 1, 2]})
 
     print("\n[2/3] Entrenando modelo Over/Under 2.5...")
     mou = train_binary(train, features, "over25")
-    evaluate_binary(mou, test, features, "over25", "Over/Under 2.5")
+    auc_ou_tr = evaluate_binary(mou, train, features, "over25", "Over/Under 2.5", split_label="Train")
+    auc_ou_te = evaluate_binary(mou, test,  features, "over25", "Over/Under 2.5", split_label="Test")
+    print(f"\n    Overfitting check (AUC):  Train={auc_ou_tr:.4f}  Test={auc_ou_te:.4f}  gap={auc_ou_tr - auc_ou_te:+.4f}"
+          + ("  ⚠ posible overfitting" if auc_ou_tr - auc_ou_te > 0.04 else "  ✓ OK"))
     print_top_features(mou, features, n=10)
     save_model(mou, "lgbm_ou25", {**meta_base, "target": "over25"})
 
     if not args.skip_btts:
         print("\n[3/3] Entrenando modelo BTTS...")
         mbtts = train_binary(train, features, "btts")
-        evaluate_binary(mbtts, test, features, "btts", "BTTS")
+        auc_bt_tr = evaluate_binary(mbtts, train, features, "btts", "BTTS", split_label="Train")
+        auc_bt_te = evaluate_binary(mbtts, test,  features, "btts", "BTTS", split_label="Test")
+        print(f"\n    Overfitting check (AUC):  Train={auc_bt_tr:.4f}  Test={auc_bt_te:.4f}  gap={auc_bt_tr - auc_bt_te:+.4f}"
+              + ("  ⚠ posible overfitting" if auc_bt_tr - auc_bt_te > 0.04 else "  ✓ OK"))
         print_top_features(mbtts, features, n=10)
         save_model(mbtts, "lgbm_btts", {**meta_base, "target": "btts"})
 
