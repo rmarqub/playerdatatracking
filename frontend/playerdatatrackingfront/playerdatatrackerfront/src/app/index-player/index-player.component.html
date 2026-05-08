@@ -2,6 +2,9 @@
   <!--<button class="toggle-button btn-update"> Actualizar jugador</button>-->
   <button class="toggle-button btn-fbref"> Cargar datos fbref </button>
   <button class="toggle-button btn-apifoot" (click)="onLoadBasicStats()"> Cargar datos basicos </button>
+  <button class="toggle-button btn-percentiles" (click)="onLoadPercentiles()">
+    {{ showPercentilePanel ? 'Ocultar percentiles' : 'Ver percentiles' }}
+  </button>
 </div>
 
 <div class="basic-info-container">
@@ -36,6 +39,34 @@
   </div>
   <div class="btn-favorite-container">
     <button class="toggle-button btn-favorite" (click)="toggleFavorite()">{{ isFavorite ? '★' : '☆' }}</button>
+  </div>
+</div>
+
+<!-- ── Percentile panel ────────────────────────────── -->
+<div *ngIf="percentileLoading" class="pct-loading">Cargando percentiles…</div>
+<div *ngIf="percentileError" class="pct-error">{{ percentileError }}</div>
+
+<div class="percentile-panel section-card" *ngIf="showPercentilePanel">
+  <div class="pct-panel-header">
+    <div class="pct-controls">
+      <select class="pct-season-select search-select" [(ngModel)]="selectedPercentileSeason" (change)="onPercentileSeasonChange()">
+        <option *ngFor="let s of availableSeasons" [value]="s">{{ formatSeason(s) }}</option>
+      </select>
+      <div class="pct-scope-btns">
+        <button class="pct-scope-btn" [class.active]="percentileScope === 'global'" (click)="onPercentileScopeChange('global')">Global</button>
+        <button class="pct-scope-btn" [class.active]="percentileScope === 'league'" (click)="onPercentileScopeChange('league')">Liga</button>
+      </div>
+    </div>
+    <button class="btn-compare-nav" (click)="goToCompare()">Comparar jugadores ↗</button>
+  </div>
+
+  <div *ngIf="noPercentileData" class="pct-empty">
+    Sin datos para <strong>{{ percentileScope === 'global' ? 'Global' : 'Liga' }}</strong>
+    temporada <strong>{{ formatSeason(selectedPercentileSeason) }}</strong>.
+  </div>
+
+  <div class="pct-chart-wrap">
+    <canvas #radarCanvas class="radar-canvas"></canvas>
   </div>
 </div>
 

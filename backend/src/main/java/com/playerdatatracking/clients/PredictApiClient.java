@@ -23,6 +23,20 @@ public class PredictApiClient {
     @Value("${predict.api.url:http://localhost:8001}")
     private String apiUrl;
 
+    public void computePlayerPercentiles(String season) {
+        try {
+            String url = apiUrl + "/compute-player-percentiles"
+                    + (season != null && !season.isBlank() ? "?season=" + season : "");
+            HttpRequest request = HttpRequest.newBuilder(URI.create(url))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.noBody())
+                    .build();
+            HTTP.send(request, HttpResponse.BodyHandlers.discarding());
+        } catch (Exception e) {
+            System.err.println("[PredictApiClient] computePlayerPercentiles falló (no bloqueante): " + e.getMessage());
+        }
+    }
+
     public void refreshPercentiles() {
         try {
             HttpRequest request = HttpRequest.newBuilder(URI.create(apiUrl + "/refresh-percentiles"))

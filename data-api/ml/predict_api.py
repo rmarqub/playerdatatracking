@@ -22,6 +22,7 @@ import numpy as np
 import pandas as pd
 import psycopg2
 import compute_percentiles as _compute_pct
+import compute_player_percentiles as _compute_pp
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from psycopg2.extras import RealDictCursor
 from pydantic import BaseModel
@@ -824,6 +825,15 @@ def build_feature_row(
 # Endpoints
 # ---------------------------------------------------------------------------
 
+def _run_compute_player_percentiles(season: str | None = None) -> None:
+    """Calcula percentiles de jugadores desde player_match_stats en segundo plano."""
+    try:
+        n = _compute_pp.run(season=season)
+        print(f"[compute-player-percentiles] {n} filas insertadas/actualizadas")
+    except Exception as exc:
+        print(f"[compute-player-percentiles] ERROR: {exc}")
+
+
 def _run_incremental_percentiles() -> None:
     """Ejecuta compute_percentiles --incremental en segundo plano."""
     try:
@@ -846,6 +856,12 @@ def health():
         "status":        "ok",
         "models_loaded": list(MODELS.keys()),
     }
+
+
+@app.post("/compute-player-percentiles", status_code=202)
+def compute_player_percentiles(background_tasks: BackgroundTasks, season: str | None = None):
+    background_tasks.add_task(_run_compute_player_percentiles, season)
+    return {"status": "accepted", "message": "Cálculo de percentiles de jugadores iniciado en segundo plano"}
 
 
 @app.post("/refresh-percentiles", status_code=202)

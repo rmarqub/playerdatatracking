@@ -1,0 +1,291 @@
+.compare-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ── Header ─────────────────────────────────────────────────────── */
+
+.compare-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.compare-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.compare-global-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cmp-season-select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.cmp-scope-btns {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cmp-scope-btn {
+  background: #f9f9f9;
+  border: none;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.82rem;
+  color: #555;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cmp-scope-btn:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.cmp-scope-btn.active {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+/* ── Slots grid ─────────────────────────────────────────────────── */
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .slots-grid { grid-template-columns: 1fr; }
+}
+
+.slot-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.slot-card.slot-filled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slot-accent {
+  height: 4px;
+  width: 100%;
+}
+
+.slot-body {
+  padding: 12px;
+}
+
+.slot-player-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  min-height: 24px;
+}
+
+.slot-player-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+.slot-empty-label {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.slot-clear-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #888;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.slot-clear-btn:hover {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+/* ── Search ─────────────────────────────────────────────────────── */
+
+.slot-search-wrap {
+  position: relative;
+}
+
+.slot-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  background: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.slot-input:focus {
+  border-color: #6c5ce7;
+  outline: none;
+  background: #fff;
+}
+
+.slot-dropdown {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.slot-result {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.slot-result:hover {
+  background: #f0f0f0;
+}
+
+.slot-loading {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ── Chart area ─────────────────────────────────────────────────── */
+
+.chart-area {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-data-msg {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.compare-canvas {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── Dark mode ──────────────────────────────────────────────────── */
+
+:host-context(body.dark-mode) .compare-header,
+:host-context(body.dark-mode) .slot-card,
+:host-context(body.dark-mode) .chart-area {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .compare-title,
+:host-context(body.dark-mode) .slot-player-name {
+  color: #e6edf3 !important;
+}
+
+:host-context(body.dark-mode) .slot-empty-label,
+:host-context(body.dark-mode) .slot-loading,
+:host-context(body.dark-mode) .no-data-msg {
+  color: #656d76 !important;
+}
+
+:host-context(body.dark-mode) .slot-input,
+:host-context(body.dark-mode) .cmp-season-select {
+  background: #1c2128 !important;
+  color: #e6edf3 !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .slot-dropdown {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+:host-context(body.dark-mode) .slot-result {
+  color: #e6edf3 !important;
+}
+
+:host-context(body.dark-mode) .slot-result:hover {
+  background: #21262d !important;
+}
+
+:host-context(body.dark-mode) .cmp-scope-btns {
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .cmp-scope-btn {
+  background: #1c2128 !important;
+  color: #8b949e !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .cmp-scope-btn.active {
+  background: #6c5ce7 !important;
+  color: #fff !important;
+}
+
+:host-context(body.dark-mode) .slot-clear-btn {
+  color: #8b949e !important;
+  border-color: #30363d !important;
+}

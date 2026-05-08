@@ -24,13 +24,15 @@ import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
+import com.playerdatatracking.entities.indexaldata.PlayerPercentile;
+import com.playerdatatracking.operations.IndelxalData.GeneratePlayerPercentiles;
 import com.playerdatatracking.operations.IndelxalData.GetBasicStats;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.GetPlayerAbsenceDays;
+import com.playerdatatracking.operations.IndelxalData.GetPlayerPercentiles;
 import com.playerdatatracking.operations.IndelxalData.UpdatePlayer;
 import com.playerdatatracking.responses.PlayerAbsenceDays;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
-import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.requests.PlayerMatchRow;
 import com.playerdatatracking.requests.SearchPlayersRequest;
 import com.playerdatatracking.responses.GenericResponse;
@@ -51,6 +53,10 @@ public class IndexedPlayerController {
     private GetBasicStats operationGetBasicStats;
     @Autowired
     private GetPlayerAbsenceDays operationGetPlayerAbsenceDays;
+    @Autowired
+    private GeneratePlayerPercentiles operationGeneratePlayerPercentiles;
+    @Autowired
+    private GetPlayerPercentiles operationGetPlayerPercentiles;
 
     @GetMapping("/search")
     public GenericResponse<ConvertedPlayer> searchPlayers(
@@ -131,6 +137,30 @@ public class IndexedPlayerController {
         GenericResponse<PlayerAbsenceDays> response = new GenericResponse<>();
         try {
             response = operationGetPlayerAbsenceDays.ejecutar(request.getIndexId());
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/generatePlayerPercentiles")
+    public GenericResponse<String> generatePlayerPercentiles(@RequestBody GenericRequest request) {
+        GenericResponse<String> response = new GenericResponse<>();
+        try {
+            response = operationGeneratePlayerPercentiles.ejecutar(request.getSeason());
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/getPlayerPercentiles")
+    public GenericResponse<PlayerPercentile> getPlayerPercentiles(@RequestBody GenericRequest request) {
+        GenericResponse<PlayerPercentile> response = new GenericResponse<>();
+        try {
+            response = operationGetPlayerPercentiles.ejecutar(request.getIndexId(), request.getSeason());
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

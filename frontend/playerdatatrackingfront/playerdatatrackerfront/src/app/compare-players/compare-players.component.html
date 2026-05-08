@@ -1,0 +1,69 @@
+<div class="compare-page">
+
+  <!-- Header -->
+  <div class="compare-header section-card">
+    <h2 class="compare-title">Comparar jugadores</h2>
+
+    <div class="compare-global-controls">
+      <select class="cmp-season-select search-select" [(ngModel)]="selectedSeason" (change)="onSeasonChange()">
+        <option value="">Todas las temporadas</option>
+        <option *ngFor="let s of availableSeasons" [value]="s">{{ formatSeason(s) }}</option>
+      </select>
+
+      <div class="cmp-scope-btns">
+        <button class="cmp-scope-btn" [class.active]="scope === 'global'" (click)="setScope('global')">Global</button>
+        <button class="cmp-scope-btn" [class.active]="scope === 'league'" (click)="setScope('league')">Liga</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 player slots -->
+  <div class="slots-grid">
+    <div *ngFor="let slot of slots; let i = index"
+         class="slot-card"
+         [class.slot-filled]="slot.selected">
+
+      <div class="slot-accent" [style.background]="SLOT_COLORS[i].border"></div>
+
+      <div class="slot-body">
+        <div class="slot-player-info" *ngIf="slot.selected">
+          <span class="slot-player-name">{{ slot.selected.fullname }}</span>
+          <button class="slot-clear-btn" (click)="clearSlot(i)" title="Quitar jugador">×</button>
+        </div>
+        <div class="slot-player-info" *ngIf="!slot.selected">
+          <span class="slot-empty-label">Jugador {{ i + 1 }}</span>
+        </div>
+
+        <div class="slot-search-wrap">
+          <input class="slot-input search-input"
+                 [formControl]="slot.control"
+                 placeholder="Buscar por nombre…"
+                 (focus)="slot.showDropdown = slot.results.length > 0"
+                 (blur)="onBlur(i)" />
+
+          <div class="slot-dropdown" *ngIf="slot.showDropdown && slot.results.length > 0">
+            <div class="slot-result"
+                 *ngFor="let p of slot.results"
+                 (mousedown)="selectPlayer(i, p)">
+              {{ p.fullname }}
+            </div>
+          </div>
+        </div>
+
+        <div class="slot-loading" *ngIf="slot.loading">Cargando percentiles…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart area -->
+  <div class="chart-area section-card">
+    <div *ngIf="!hasAnyData" class="no-data-msg">
+      Busca y selecciona jugadores para ver la comparativa de percentiles.
+    </div>
+    <div *ngIf="hasAnyData && availableSeasons.length > 0 && !selectedSeason" class="no-data-msg">
+      Selecciona una temporada para mostrar el gráfico.
+    </div>
+    <canvas #compareCanvas *ngIf="hasAnyData" class="compare-canvas"></canvas>
+  </div>
+
+</div>

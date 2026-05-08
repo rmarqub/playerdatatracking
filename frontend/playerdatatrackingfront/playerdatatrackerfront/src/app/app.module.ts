@@ -26,6 +26,7 @@ import { UpdateTrackedPlayerComponent } from './update-tracked-player/update-tra
 import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
 import { FixtureDetailComponent } from './fixture-detail/fixture-detail.component';
 import { PlayerNotFoundComponent } from './player-not-found/player-not-found.component';
+import { ComparePlayersComponent } from './compare-players/compare-players.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PlayerNotFoundComponent } from './player-not-found/player-not-found.com
     UpdateTrackedPlayerComponent,
     SearchFixturesComponent,
     FixtureDetailComponent,
-    PlayerNotFoundComponent
+    PlayerNotFoundComponent,
+    ComparePlayersComponent
   ],
   imports: [
     BrowserAnimationsModule,

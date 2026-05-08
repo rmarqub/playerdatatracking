@@ -15,6 +15,7 @@ import { RegisterComponent } from './features/register/register.component';
 import { SearchFixturesComponent } from './search-fixtures/search-fixtures.component';
 import { FixtureDetailComponent } from './fixture-detail/fixture-detail.component';
 import { PlayerNotFoundComponent } from './player-not-found/player-not-found.component';
+import { ComparePlayersComponent } from './compare-players/compare-players.component';
 
 const appRoutes : Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const appRoutes : Routes = [
   { path: 'searchFixtures', component: SearchFixturesComponent, canActivate: [AuthGuard] },
   { path: 'fixture/:id', component: FixtureDetailComponent, canActivate: [AuthGuard] },
   { path: 'player-not-found', component: PlayerNotFoundComponent, canActivate: [AuthGuard] },
+  { path: 'compare-players', component: ComparePlayersComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '' }
 ]
 

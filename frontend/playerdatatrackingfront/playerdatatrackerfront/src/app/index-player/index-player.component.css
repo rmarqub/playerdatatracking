@@ -1,3 +1,146 @@
+/* ── Percentile button ──────────────────────────────────────────── */
+.btn-percentiles {
+  background-color: #6c5ce7;
+}
+.btn-percentiles:hover:enabled {
+  background-color: #5a4bd1;
+}
+
+/* ── Percentile panel ───────────────────────────────────────────── */
+.percentile-panel {
+  margin: 16px 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.pct-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pct-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pct-season-select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.pct-scope-btns {
+  display: flex;
+  gap: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.pct-scope-btn {
+  background: #f9f9f9;
+  border: none;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.82rem;
+  color: #555;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pct-scope-btn:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.pct-scope-btn.active {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.btn-compare-nav {
+  background: #CD853F;
+  color: #fff;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-compare-nav:hover {
+  background: #b06b2e;
+}
+
+.pct-empty {
+  text-align: center;
+  color: #888;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.pct-loading, .pct-error {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.pct-error { color: #dc3545; }
+
+.pct-chart-wrap {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.radar-canvas {
+  display: block;
+  width: 100%;
+}
+
+/* ── Dark mode — percentile panel ───────────────────────────────── */
+:host-context(body.dark-mode) .percentile-panel {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .pct-season-select {
+  background: #1c2128 !important;
+  color: #e6edf3 !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .pct-scope-btn {
+  background: #1c2128 !important;
+  color: #8b949e !important;
+  border-color: #30363d !important;
+}
+
+:host-context(body.dark-mode) .pct-scope-btn.active {
+  background: #6c5ce7 !important;
+  color: #fff !important;
+}
+
+:host-context(body.dark-mode) .pct-scope-btns {
+  border-color: #30363d !important;
+}
+
+/* ── Base ── */
 .player-detail-container {
   display: flex;
   flex-direction: column;
