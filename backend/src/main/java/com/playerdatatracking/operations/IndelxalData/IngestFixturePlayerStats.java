@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.playerdatatracking.clients.ApiFootballClient;
 import com.playerdatatracking.clients.PlayerDataClient;
+import com.playerdatatracking.clients.PredictApiClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Club;
@@ -29,6 +30,9 @@ public class IngestFixturePlayerStats {
 
     @Autowired
     private PlayerDataClient pdClient;
+
+    @Autowired
+    private PredictApiClient predictApiClient;
 
     @Autowired
     private KeysManagement keyMethods;
@@ -112,6 +116,7 @@ public class IngestFixturePlayerStats {
         }
 
         System.out.println("Ingesta completada. Total player stats guardadas: " + totalStats);
+        predictApiClient.refreshPercentiles();
         response.setCODE(Constants.CODE_OK);
         response.setDescription("Ingestadas " + totalStats + " player stats de " + processed + " fixtures procesados");
         return response;

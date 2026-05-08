@@ -32,13 +32,16 @@
 
 #implementacion
 
-  Próximos pasos obligatorios
+	!!!!!!!!!!!AÑADIR COMPUTE_PERCENTILES.PY AL FLUJO DE ACTUALIZACION DE DATOS.
+  Plan de acción por orden de impacto
 
-  # 1. Regenerar el dataset (tardará más por las nuevas queries de jugadores)
-  python data-api/ml/feature_engineering.py
+  1. Fijar el leakage de percentiles — resolverá la mayor parte del gap train/test. Ya lo teníamos planeado, ahora tenemos evidencia numérica de por qué urge.
 
-  # 2. Reentrenar los modelos
-  python data-api/ml/train_model.py --test-seasons 2025
+  2. Quitar el boost de empate — reducir class_weight de empate de 1.8 a 1.0 (sin peso) y ver si la calibración mejora. Ahora mismo perjudica activamente.
 
-  # 3. Reiniciar la API
-  uvicorn predict_api:app --host 0.0.0.0 --port 8001
+  3. Más regularización para O/U y BTTS — después de fijar el leakage, si el gap persiste:
+  - reg_alpha: 0.2 → 0.5, reg_lambda: 0.4 → 0.8
+  - min_child_samples: 25 → 40
+  - num_leaves: 31 → 25
+
+  4. Calibración post-entreno (opcional, después de lo anterior) — CalibratedClassifierCV de sklearn con isotonic regression corregiría el sesgo sistemático en probabilidades sin reentrenar.

@@ -21,7 +21,8 @@ from typing import Any, Optional
 import numpy as np
 import pandas as pd
 import psycopg2
-from fastapi import FastAPI, HTTPException
+import compute_percentiles as _compute_pct
+from fastapi import BackgroundTasks, FastAPI, HTTPException
 from psycopg2.extras import RealDictCursor
 from pydantic import BaseModel
 
@@ -823,12 +824,34 @@ def build_feature_row(
 # Endpoints
 # ---------------------------------------------------------------------------
 
+def _run_incremental_percentiles() -> None:
+    """Ejecuta compute_percentiles --incremental en segundo plano."""
+    try:
+        conn = _compute_pct.get_connection()
+        _compute_pct.ensure_table(conn)
+        processed = _compute_pct.load_processed_dates(conn)
+        fixtures = _compute_pct.load_fixtures(conn)
+        player_stats = _compute_pct.load_player_stats(conn)
+        pct_df = _compute_pct.compute_temporal_percentiles(fixtures, player_stats, processed)
+        n = _compute_pct.upsert_to_db(conn, pct_df)
+        conn.close()
+        print(f"[refresh-percentiles] {n} filas insertadas/actualizadas")
+    except Exception as exc:
+        print(f"[refresh-percentiles] ERROR: {exc}")
+
+
 @app.get("/health")
 def health():
     return {
         "status":        "ok",
         "models_loaded": list(MODELS.keys()),
     }
+
+
+@app.post("/refresh-percentiles", status_code=202)
+def refresh_percentiles(background_tasks: BackgroundTasks):
+    background_tasks.add_task(_run_incremental_percentiles)
+    return {"status": "accepted", "message": "Actualización de percentiles iniciada en segundo plano"}
 
 
 @app.post("/predict")

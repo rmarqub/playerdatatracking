@@ -451,6 +451,10 @@
         <span>Calculando predicción contextual...</span>
       </div>
 
+      <div class="pred-error" *ngIf="contextualPredictionError && !contextualPredictionLoading">
+        ⚠ {{ contextualPredictionError }}
+      </div>
+
       <ng-container *ngIf="contextualPrediction && !contextualPredictionLoading">
 
         <div class="pred-warnings" *ngIf="contextualPrediction.warnings?.length">
@@ -472,18 +476,22 @@
 
         <!-- 1X2 ajustado vs base -->
         <div class="pred-section">
-          <div class="pred-section-label">Resultado del partido · Ajustado (base entre paréntesis)</div>
+          <div class="pred-section-label">Resultado del partido · Ajustado vs. base</div>
 
           <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'home_win'">
             <span class="pred-team-label">{{ fixture!.homeTeamName }}</span>
             <div class="pred-bar-wrap">
               <div class="pred-bar pred-bar-home" [style.width]="pct(contextualPrediction.adjHomeWin)"></div>
             </div>
-            <span class="pred-pct">{{ pct(contextualPrediction.adjHomeWin) }}</span>
-            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseHomeWin) }})</span>
-            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjHomeWin > contextualPrediction.baseHomeWin + 0.003">▲</span>
-            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjHomeWin < contextualPrediction.baseHomeWin - 0.003">▼</span>
-            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'home_win'">✓</span>
+            <div class="pred-pct-wrap">
+              <div class="pred-pct-main">
+                <span class="pred-pct">{{ pct(contextualPrediction.adjHomeWin) }}</span>
+                <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjHomeWin > contextualPrediction.baseHomeWin + 0.003">▲</span>
+                <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjHomeWin < contextualPrediction.baseHomeWin - 0.003">▼</span>
+                <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'home_win'">✓</span>
+              </div>
+              <span class="pred-ctx-base">{{ pct(contextualPrediction.baseHomeWin) }}</span>
+            </div>
           </div>
 
           <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'draw'">
@@ -491,11 +499,15 @@
             <div class="pred-bar-wrap">
               <div class="pred-bar pred-bar-draw" [style.width]="pct(contextualPrediction.adjDraw)"></div>
             </div>
-            <span class="pred-pct">{{ pct(contextualPrediction.adjDraw) }}</span>
-            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseDraw) }})</span>
-            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjDraw > contextualPrediction.baseDraw + 0.003">▲</span>
-            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjDraw < contextualPrediction.baseDraw - 0.003">▼</span>
-            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'draw'">✓</span>
+            <div class="pred-pct-wrap">
+              <div class="pred-pct-main">
+                <span class="pred-pct">{{ pct(contextualPrediction.adjDraw) }}</span>
+                <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjDraw > contextualPrediction.baseDraw + 0.003">▲</span>
+                <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjDraw < contextualPrediction.baseDraw - 0.003">▼</span>
+                <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'draw'">✓</span>
+              </div>
+              <span class="pred-ctx-base">{{ pct(contextualPrediction.baseDraw) }}</span>
+            </div>
           </div>
 
           <div class="pred-outcome-row" [class.pred-winner]="contextualPrediction.adjPredicted === 'away_win'">
@@ -503,11 +515,15 @@
             <div class="pred-bar-wrap">
               <div class="pred-bar pred-bar-away" [style.width]="pct(contextualPrediction.adjAwayWin)"></div>
             </div>
-            <span class="pred-pct">{{ pct(contextualPrediction.adjAwayWin) }}</span>
-            <span class="pred-ctx-base">({{ pct(contextualPrediction.baseAwayWin) }})</span>
-            <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjAwayWin > contextualPrediction.baseAwayWin + 0.003">▲</span>
-            <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjAwayWin < contextualPrediction.baseAwayWin - 0.003">▼</span>
-            <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'away_win'">✓</span>
+            <div class="pred-pct-wrap">
+              <div class="pred-pct-main">
+                <span class="pred-pct">{{ pct(contextualPrediction.adjAwayWin) }}</span>
+                <span class="pred-ctx-arrow delta-up" *ngIf="contextualPrediction.adjAwayWin > contextualPrediction.baseAwayWin + 0.003">▲</span>
+                <span class="pred-ctx-arrow delta-down" *ngIf="contextualPrediction.adjAwayWin < contextualPrediction.baseAwayWin - 0.003">▼</span>
+                <span class="pred-check" *ngIf="contextualPrediction.adjPredicted === 'away_win'">✓</span>
+              </div>
+              <span class="pred-ctx-base">{{ pct(contextualPrediction.baseAwayWin) }}</span>
+            </div>
           </div>
 
           <div class="pred-confidence">

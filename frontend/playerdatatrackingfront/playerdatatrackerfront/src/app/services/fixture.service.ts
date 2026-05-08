@@ -473,4 +473,11 @@ export class FixtureService {
       catchError(() => of(null))
     );
   }
+
+  regenerateContextualAnalyses(): Observable<{ ok: boolean; message: string }> {
+    return this.http.post<GenericResponse<string>>(`${this.base}/regenerateContextualAnalyses`, {}).pipe(
+      map(r => ({ ok: r.code === 0, message: r.description || '' })),
+      catchError(() => of({ ok: false, message: 'Error de conexión con el servidor' }))
+    );
+  }
 }

@@ -1,1 +1,24 @@
-<p>manage-indexal-db works!</p>
+<div class="manage-db-container">
+  <h2 class="manage-db-title">Gestión de base de datos</h2>
+
+  <div class="manage-db-section">
+    <h3 class="manage-db-section-title">Modelo predictivo</h3>
+    <p class="manage-db-section-desc">
+      Recalcula las probabilidades base de todos los análisis contextuales almacenados usando la versión
+      actual del modelo. Ejecutar tras actualizar el modelo con <code>train_model.py</code>.
+    </p>
+    <button
+      class="manage-db-btn"
+      [disabled]="regenerating"
+      (click)="regenerateAnalyses()">
+      <span *ngIf="!regenerating">Regenerar análisis contextuales</span>
+      <span *ngIf="regenerating">Regenerando...</span>
+    </button>
+    <p *ngIf="regenerateMessage"
+       class="manage-db-result"
+       [class.manage-db-result--ok]="!regenerateError"
+       [class.manage-db-result--error]="regenerateError">
+      {{ regenerateMessage }}
+    </p>
+  </div>
+</div>

@@ -18,6 +18,7 @@ public class ContextualWeightConfig {
     @Column(name = "w_fatigue")    private Double wFatigue;
     @Column(name = "w_set_pieces") private Double wSetPieces;
     @Column(name = "w_atm")        private Double wAtm;
+    @Column(name = "w_unavail")    private Double wUnavail;
 
     @Column(name = "calibration_date") private LocalDate calibrationDate;
     @Column(name = "n_samples")        private Integer nSamples;
@@ -38,6 +39,8 @@ public class ContextualWeightConfig {
     public void    setWSetPieces(Double v)      { wSetPieces = v; }
     public Double  getWAtm()                    { return wAtm; }
     public void    setWAtm(Double v)            { wAtm = v; }
+    public Double  getWUnavail()                { return wUnavail; }
+    public void    setWUnavail(Double v)        { wUnavail = v; }
     public LocalDate getCalibrationDate()       { return calibrationDate; }
     public void    setCalibrationDate(LocalDate v) { calibrationDate = v; }
     public Integer getNSamples()                { return nSamples; }

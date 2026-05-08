@@ -23,6 +23,18 @@ public class PredictApiClient {
     @Value("${predict.api.url:http://localhost:8001}")
     private String apiUrl;
 
+    public void refreshPercentiles() {
+        try {
+            HttpRequest request = HttpRequest.newBuilder(URI.create(apiUrl + "/refresh-percentiles"))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.noBody())
+                    .build();
+            HTTP.send(request, HttpResponse.BodyHandlers.discarding());
+        } catch (Exception e) {
+            System.err.println("[PredictApiClient] refreshPercentiles falló (no bloqueante): " + e.getMessage());
+        }
+    }
+
     public MatchPrediction predict(Long fixtureId) throws Exception {
         String body = "{\"fixture_id\":" + fixtureId + "}";
 

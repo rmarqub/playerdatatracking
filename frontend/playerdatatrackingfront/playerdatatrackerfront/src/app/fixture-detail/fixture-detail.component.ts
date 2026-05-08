@@ -47,6 +47,7 @@ export class FixtureDetailComponent implements OnInit {
 
   contextualPrediction: ContextualMatchPrediction | null = null;
   contextualPredictionLoading: boolean = false;
+  contextualPredictionError: string = '';
 
   homeSquadPlayers: SquadPlayerEntry[] = [];
   awaySquadPlayers: SquadPlayerEntry[] = [];
@@ -103,6 +104,7 @@ export class FixtureDetailComponent implements OnInit {
     this.awaySquadPlayers = [];
     this.contextualPrediction = null;
     this.contextualPredictionLoading = false;
+    this.contextualPredictionError = '';
   }
 
   private loadFixtureData(id: number): void {
@@ -565,9 +567,7 @@ export class FixtureDetailComponent implements OnInit {
         this.analysisLoading = false;
         if (data) {
           this.analysisSaved = true;
-          if (this.prediction) {
-            this.loadContextualPrediction();
-          }
+          this.loadContextualPrediction();
         } else {
           this.analysisSaveError = 'Error al guardar el análisis.';
         }
@@ -635,12 +635,18 @@ export class FixtureDetailComponent implements OnInit {
     const id = this.fixture?.id;
     if (!id) return;
     this.contextualPredictionLoading = true;
+    this.contextualPredictionError = '';
     this.fixtureService.getContextualMatchPrediction(id).subscribe({
       next: (data) => {
-        this.contextualPrediction = data;
+        if (data) {
+          this.contextualPrediction = data;
+        } else {
+          this.contextualPredictionError = 'No se pudo calcular la predicción contextual. Comprueba que el servicio de predicción está activo.';
+        }
         this.contextualPredictionLoading = false;
       },
       error: () => {
+        this.contextualPredictionError = 'Error de conexión al calcular la predicción contextual.';
         this.contextualPredictionLoading = false;
       }
     });

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,13 @@ public class GetAnalysisHistory {
     private static final double W_FATIGUE = 0.06;
     private static final double W_SET     = 0.06;
     private static final double W_ATM     = 0.03;
+    private static final double W_UNAVAIL = 0.10;
+
+    // Percentile assumed for players not in player_season_percentiles
+    private static final double DEFAULT_PLAYER_PCT = 65.0;
+
+    // Statuses that mean the match is fully over and has a result
+    private static final Set<String> FINISHED = Set.of("FT", "AET", "PEN", "AWD");
 
     private static final int    MIN_SAMPLES  = 10;
     private static final int    MAX_ITER     = 500;
@@ -52,7 +60,7 @@ public class GetAnalysisHistory {
     }
 
     private static class TrainRow {
-        final double[] deltas; // length 7
+        final double[] deltas; // length 8: 7 contextual + 1 unavailable signal
         final double   logH, logD, logA;
         final int      label;  // 0=home_win 1=draw 2=away_win
         TrainRow(double[] deltas, double logH, double logD, double logA, int label) {
@@ -76,7 +84,7 @@ public class GetAnalysisHistory {
                         .map(FixtureContextualAnalysis::getFixtureId)
                         .collect(Collectors.toList()))
                 .stream()
-                .filter(f -> "FT".equals(f.getStatusShort()) && f.getGoalsHome() != null)
+                .filter(f -> FINISHED.contains(f.getStatusShort()))
                 .collect(Collectors.toMap(Fixture::getId, f -> f));
 
         // 3 ── Run Java-native calibration
@@ -95,6 +103,7 @@ public class GetAnalysisHistory {
         for (FixtureContextualAnalysis a : withSnapshot) {
             Fixture f = fixtureMap.get(a.getFixtureId());
             if (f == null) continue;
+            if (f.getGoalsHome() == null || f.getGoalsAway() == null) continue;
 
             String actual = actualResult(f.getGoalsHome(), f.getGoalsAway());
 
@@ -179,11 +188,12 @@ public class GetAnalysisHistory {
 
     private CalibResult calibrateInJava(List<FixtureContextualAnalysis> withSnapshot,
                                         Map<Long, Fixture> fixtureMap) {
-        // Build training rows from FT matches with base snapshot
+        // Build training rows from finished matches with base snapshot
         List<TrainRow> rows = new ArrayList<>();
         for (FixtureContextualAnalysis a : withSnapshot) {
             Fixture f = fixtureMap.get(a.getFixtureId());
             if (f == null) continue;
+            if (f.getGoalsHome() == null || f.getGoalsAway() == null) continue;
             if (a.getBaseHomeWin() == null || a.getBaseDraw() == null || a.getBaseAwayWin() == null) continue;
 
             double[] deltas = new double[]{
@@ -193,18 +203,16 @@ public class GetAnalysisHistory {
                 diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm()),
                 diff(a.getAwayFatigue(),           a.getHomeFatigue()),
                 diff(a.getHomeSetPieces(),         a.getAwaySetPieces()),
-                diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere())
+                diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere()),
+                unavailableSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers())
             };
 
             double bH = clamp(a.getBaseHomeWin());
             double bD = clamp(a.getBaseDraw());
             double bA = clamp(a.getBaseAwayWin());
 
-            int label;
             int gh = f.getGoalsHome(), ga = f.getGoalsAway();
-            if (gh > ga) label = 0;
-            else if (ga > gh) label = 2;
-            else label = 1;
+            int label = gh > ga ? 0 : ga > gh ? 2 : 1;
 
             rows.add(new TrainRow(deltas, Math.log(bH), Math.log(bD), Math.log(bA), label));
         }
@@ -216,15 +224,15 @@ public class GetAnalysisHistory {
         }
 
         // Gradient descent — weights start at current fallback values
-        double[] w = new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM};
+        double[] w = new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL};
 
         for (int iter = 0; iter < MAX_ITER; iter++) {
-            double[] grad = new double[7];
+            double[] grad = new double[8];
 
             for (TrainRow row : rows) {
                 // net delta = w · deltas
                 double delta = 0;
-                for (int i = 0; i < 7; i++) delta += w[i] * row.deltas[i];
+                for (int i = 0; i < 8; i++) delta += w[i] * row.deltas[i];
 
                 double[] logits = new double[]{row.logH + delta, row.logD, row.logA - delta};
                 double[] probs  = softmax(logits);
@@ -234,34 +242,35 @@ public class GetAnalysisHistory {
                 double iA = row.label == 2 ? 1.0 : 0.0;
                 double dLdDelta = (probs[0] - iH) - (probs[2] - iA);
 
-                for (int i = 0; i < 7; i++) {
+                for (int i = 0; i < 8; i++) {
                     grad[i] += dLdDelta * row.deltas[i];
                 }
             }
 
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < 8; i++) {
                 grad[i] = grad[i] / n + L2_LAMBDA * w[i];  // L2 regularization
                 w[i] -= LEARN_RATE * grad[i];
             }
         }
 
         // Save to DB
-        String[] names = {"w_forma","w_needs","w_def","w_off","w_fatigue","w_set_pieces","w_atm"};
+        String[] names = {"w_forma","w_needs","w_def","w_off","w_fatigue","w_set_pieces","w_atm","w_unavail"};
         ContextualWeightConfig cfg = new ContextualWeightConfig();
-        cfg.setWForma(   round4(w[0]));
-        cfg.setWNeeds(   round4(w[1]));
-        cfg.setWDef(     round4(w[2]));
-        cfg.setWOff(     round4(w[3]));
-        cfg.setWFatigue( round4(w[4]));
+        cfg.setWForma(    round4(w[0]));
+        cfg.setWNeeds(    round4(w[1]));
+        cfg.setWDef(      round4(w[2]));
+        cfg.setWOff(      round4(w[3]));
+        cfg.setWFatigue(  round4(w[4]));
         cfg.setWSetPieces(round4(w[5]));
-        cfg.setWAtm(     round4(w[6]));
+        cfg.setWAtm(      round4(w[6]));
+        cfg.setWUnavail(  round4(w[7]));
         cfg.setCalibrationDate(LocalDate.now());
         cfg.setNSamples(n);
         cfg.setNotes("Calibración Java nativa - " + LocalDate.now() + " - " + n + " muestras");
         weightConfigRepository.save(cfg);
 
         StringBuilder sb = new StringBuilder("Calibración completada (" + n + " muestras):");
-        for (int i = 0; i < 7; i++) sb.append(" ").append(names[i]).append("=").append(round4(w[i]));
+        for (int i = 0; i < 8; i++) sb.append(" ").append(names[i]).append("=").append(round4(w[i]));
         return new CalibResult(true, sb.toString());
     }
 
@@ -285,15 +294,16 @@ public class GetAnalysisHistory {
             nvl(w.getWOff(),      W_OFF),
             nvl(w.getWFatigue(),  W_FATIGUE),
             nvl(w.getWSetPieces(),W_SET),
-            nvl(w.getWAtm(),      W_ATM)
-        }).orElse(new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM});
+            nvl(w.getWAtm(),      W_ATM),
+            nvl(w.getWUnavail(),  W_UNAVAIL)
+        }).orElse(new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL});
     }
 
     private ContextualWeightsSnapshot toSnapshot(Optional<ContextualWeightConfig> opt, double[] w) {
         ContextualWeightsSnapshot s = new ContextualWeightsSnapshot();
-        s.setWForma(w[0]);   s.setWNeeds(w[1]);  s.setWDef(w[2]);
-        s.setWOff(w[3]);     s.setWFatigue(w[4]); s.setWSetPieces(w[5]);
-        s.setWAtm(w[6]);
+        s.setWForma(w[0]);    s.setWNeeds(w[1]);    s.setWDef(w[2]);
+        s.setWOff(w[3]);      s.setWFatigue(w[4]);  s.setWSetPieces(w[5]);
+        s.setWAtm(w[6]);      s.setWUnavail(w[7]);
         s.setFromDb(opt.isPresent());
         opt.ifPresent(cfg -> {
             s.setCalibrationDate(cfg.getCalibrationDate() != null ? cfg.getCalibrationDate().toString() : null);
@@ -312,7 +322,8 @@ public class GetAnalysisHistory {
              + w[3] * diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
              + w[4] * diff(a.getAwayFatigue(),           a.getHomeFatigue())
              + w[5] * diff(a.getHomeSetPieces(),         a.getAwaySetPieces())
-             + w[6] * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+             + w[6] * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere())
+             + w[7] * unavailableSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers());
     }
 
     private double diff(Integer home, Integer away) {
@@ -363,6 +374,27 @@ public class GetAnalysisHistory {
         if ("home_win".equals(actual)) return -Math.log(Math.max(pH, eps));
         if ("draw".equals(actual))     return -Math.log(Math.max(pD, eps));
         return                                -Math.log(Math.max(pA, eps));
+    }
+
+    // ── Unavailable signal (mirrors GetContextualMatchPrediction) ──────────────
+
+    // Signal = Σ(pct_away - 50)/100  −  Σ(pct_home - 50)/100
+    // Uses DEFAULT_PLAYER_PCT (65) for all players; no DB lookup needed at calibration time.
+    private double unavailableSignal(String homeCsv, String awayCsv) {
+        int homeCount = parseCsvIds(homeCsv).size();
+        int awayCount = parseCsvIds(awayCsv).size();
+        if (homeCount == 0 && awayCount == 0) return 0.0;
+        double unitImpact = (DEFAULT_PLAYER_PCT - 50.0) / 100.0;
+        return (awayCount - homeCount) * unitImpact;
+    }
+
+    private List<Long> parseCsvIds(String csv) {
+        if (csv == null || csv.isBlank()) return List.of();
+        List<Long> ids = new ArrayList<>();
+        for (String s : csv.split(",")) {
+            try { ids.add(Long.parseLong(s.trim())); } catch (NumberFormatException ignored) {}
+        }
+        return ids;
     }
 
     // ── Helpers ────────────────────────────────────────────────────────────────

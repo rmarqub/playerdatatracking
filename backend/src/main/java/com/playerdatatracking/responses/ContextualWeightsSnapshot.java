@@ -9,6 +9,7 @@ public class ContextualWeightsSnapshot {
     private Double  wFatigue;
     private Double  wSetPieces;
     private Double  wAtm;
+    private Double  wUnavail;
     private String  calibrationDate;
     private Integer nSamples;
     private String  notes;
@@ -28,6 +29,8 @@ public class ContextualWeightsSnapshot {
     public void    setWSetPieces(Double v){ wSetPieces = v; }
     public Double  getWAtm()              { return wAtm; }
     public void    setWAtm(Double v)      { wAtm = v; }
+    public Double  getWUnavail()          { return wUnavail; }
+    public void    setWUnavail(Double v)  { wUnavail = v; }
     public String  getCalibrationDate()   { return calibrationDate; }
     public void    setCalibrationDate(String v) { calibrationDate = v; }
     public Integer getNSamples()          { return nSamples; }
