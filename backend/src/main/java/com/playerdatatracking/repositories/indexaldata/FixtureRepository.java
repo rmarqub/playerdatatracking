@@ -89,7 +89,7 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
     @Modifying
     void deleteByLeagueIdAndSeason(Integer leagueId, Integer season);
 
-    @Modifying
+    @Modifying(clearAutomatically = true)
     @Transactional
     @Query("""
         UPDATE Fixture f SET
@@ -107,7 +107,8 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
             f.scoreEtAway    = :scoreEtAway,
             f.scorePenHome   = :scorePenHome,
             f.scorePenAway   = :scorePenAway,
-            f.referee        = :referee
+            f.referee        = :referee,
+            f.updatedAt      = :updatedAt
         WHERE f.id = :id
         """)
     void updateStatusAndScore(
@@ -126,7 +127,8 @@ public interface FixtureRepository extends JpaRepository<Fixture, Long>{
         @Param("scoreEtAway")  Integer scoreEtAway,
         @Param("scorePenHome") Integer scorePenHome,
         @Param("scorePenAway") Integer scorePenAway,
-        @Param("referee")      String referee
+        @Param("referee")      String referee,
+        @Param("updatedAt")    java.time.OffsetDateTime updatedAt
     );
 
     @Query("SELECT f.id FROM Fixture f WHERE f.statusShort <> 'NS' ORDER BY f.id ASC")

@@ -1,12 +1,15 @@
 package com.playerdatatracking.operations.IndelxalData;
 
 import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -32,6 +35,9 @@ import com.playerdatatracking.responses.GenericResponse;
 @Component
 public class IngestFixtures {
 
+    private static final Logger log = LoggerFactory.getLogger(IngestFixtures.class);
+    private static final DateTimeFormatter DATE_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
     @Autowired
     private PlayerDataClient pdClient;
 
@@ -44,7 +50,7 @@ public class IngestFixtures {
         GenericResponse<Fixture> response = new GenericResponse<>();
         ApiFootballClient client = new ApiFootballClient();
 
-        boolean purge = Boolean.TRUE.equals(request.getPurgeBeforeRun());
+        boolean purge = "true".equalsIgnoreCase(request.getPurgeBeforeRun());
 
         Integer season;
         String actualSeason = request.getSeason();
@@ -73,8 +79,14 @@ public class IngestFixtures {
         int totalIngested = 0;
         Set<Long> ensuredClubs = new HashSet<>();
 
+        log.info("=== IngestFixtures START — temporada {} | ligas: {} | purge: {} ===",
+                season, studiedLeagues.size(), purge);
+
         for (Torneo torneo : studiedLeagues) {
             Integer leagueId = torneo.getId().intValue();
+            String leagueName = torneo.getName() != null ? torneo.getName() : String.valueOf(leagueId);
+
+            log.info("--- Liga {} ({}) ---", leagueId, leagueName);
 
             if (purge)
                 pdClient.deleteFixturesByLeagueAndSeason(leagueId, season);
@@ -90,7 +102,10 @@ public class IngestFixtures {
                 throw new ApiFootballRequestException("API devolvió errores para liga " + leagueId + ": " + errors.toString());
 
             JsonNode responseArray = root.path("response");
-            if (!responseArray.isArray()) continue;
+            if (!responseArray.isArray()) {
+                log.warn("Liga {} — respuesta de API no es array, se omite", leagueId);
+                continue;
+            }
 
             List<Fixture> leagueFixtures = new ArrayList<>();
             for (JsonNode item : responseArray) {
@@ -104,7 +119,11 @@ public class IngestFixtures {
                 leagueFixtures.add(f);
             }
 
+            log.info("Liga {} — {} fixtures recibidos de la API", leagueId, leagueFixtures.size());
+
             if (purge) {
+                log.info("Liga {} — modo PURGE: insertando {} fixtures", leagueId, leagueFixtures.size());
+                logFixtures("  INSERT", leagueFixtures);
                 pdClient.saveAllFixtures(leagueFixtures);
             } else {
                 Set<Long> existingIds = new HashSet<>(pdClient.getExistingFixtureIds(leagueId, season));
@@ -115,13 +134,27 @@ public class IngestFixtures {
                     .filter(f -> existingIds.contains(f.getId()))
                     .collect(Collectors.toList());
 
-                if (!toInsert.isEmpty())
+                log.info("Liga {} — toInsert: {} | toUpdate: {}", leagueId, toInsert.size(), toUpdate.size());
+
+                if (!toInsert.isEmpty()) {
+                    log.info("Liga {} — fixtures a INSERTAR:", leagueId);
+                    logFixtures("  +INSERT", toInsert);
                     pdClient.saveAllFixtures(toInsert);
-                for (Fixture f : toUpdate)
-                    pdClient.updateFixtureStatus(f);
+                }
+
+                if (!toUpdate.isEmpty()) {
+                    log.info("Liga {} — fixtures a ACTUALIZAR:", leagueId);
+                    logFixtures("  ~UPDATE", toUpdate);
+                    for (Fixture f : toUpdate)
+                        pdClient.updateFixtureStatus(f);
+                }
             }
             totalIngested += leagueFixtures.size();
+            log.info("Liga {} — completada. Total acumulado: {} fixtures", leagueId, totalIngested);
         }
+
+        log.info("=== IngestFixtures END — {} fixtures procesados en {} ligas ===",
+                totalIngested, studiedLeagues.size());
 
         response.setCODE(Constants.CODE_OK);
         response.setDescription("Ingestados " + totalIngested + " partidos de " + studiedLeagues.size() + " ligas (temporada " + season + ")");
@@ -206,6 +239,18 @@ public class IngestFixtures {
             return (pais != null) ? pais.getId().intValue() : 0;
         } catch (Exception e) {
             return 0;
+        }
+    }
+
+    private void logFixtures(String prefix, List<Fixture> fixtures) {
+        for (Fixture f : fixtures) {
+            String date = f.getMatchDate() != null ? f.getMatchDate().format(DATE_FMT) : "fecha?";
+            String score = (f.getGoalsHome() != null && f.getGoalsAway() != null)
+                    ? " [" + f.getGoalsHome() + "-" + f.getGoalsAway() + "]"
+                    : "";
+            log.info("{} id={} | {} vs {} | {} | status={}{}", prefix,
+                    f.getId(), f.getHomeTeamName(), f.getAwayTeamName(),
+                    date, f.getStatusShort(), score);
         }
     }
 

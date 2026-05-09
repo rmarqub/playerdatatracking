@@ -120,7 +120,8 @@ public class GetAnalysisHistory {
             boolean isBaseCorrect = basePred.equals(actual);
             double pActualBase = "home_win".equals(actual) ? bH : "draw".equals(actual) ? bD : bA;
             double pActualAdj  = "home_win".equals(actual) ? adj[0] : "draw".equals(actual) ? adj[1] : adj[2];
-            boolean deltaHelpful = pActualAdj > pActualBase;
+            boolean deltaChangedToCorrect = !basePred.equals(actual) && adjPred.equals(actual);
+            boolean deltaHelpful = pActualAdj > pActualBase || deltaChangedToCorrect;
             if (isCorrect) correct++; else incorrect++;
 
             double brier   = brierScore(adj[0], adj[1], adj[2], actual);

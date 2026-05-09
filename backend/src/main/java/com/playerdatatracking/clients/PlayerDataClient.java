@@ -637,7 +637,8 @@ public class PlayerDataClient {
 				f.getScoreFtHome(), f.getScoreFtAway(),
 				f.getScoreEtHome(), f.getScoreEtAway(),
 				f.getScorePenHome(), f.getScorePenAway(),
-				f.getReferee()
+				f.getReferee(),
+				java.time.OffsetDateTime.now()
 			);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
