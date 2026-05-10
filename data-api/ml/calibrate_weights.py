@@ -44,7 +44,7 @@ DB_CONFIG = dict(
     password="admin",
 )
 
-MIN_SAMPLES = 10
+MIN_SAMPLES = 30
 
 FACTOR_COLS = [
     ("home_current_form",       "away_current_form"),
