@@ -5,7 +5,7 @@
 -- Dumped from database version 16.3
 -- Dumped by pg_dump version 16.3
 
--- Started on 2026-05-07 14:14:02
+-- Started on 2026-05-10 12:23:48
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -29,7 +29,7 @@ CREATE SCHEMA public;
 ALTER SCHEMA public OWNER TO pg_database_owner;
 
 --
--- TOC entry 5086 (class 0 OID 0)
+-- TOC entry 5141 (class 0 OID 0)
 -- Dependencies: 5
 -- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: pg_database_owner
 --
@@ -38,7 +38,7 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 
 
 --
--- TOC entry 300 (class 1255 OID 109495)
+-- TOC entry 307 (class 1255 OID 109495)
 -- Name: j_int(text); Type: FUNCTION; Schema: public; Owner: postgres
 --
 
@@ -52,7 +52,7 @@ $_$;
 ALTER FUNCTION public.j_int(x text) OWNER TO postgres;
 
 --
--- TOC entry 299 (class 1255 OID 109496)
+-- TOC entry 306 (class 1255 OID 109496)
 -- Name: j_num(text); Type: FUNCTION; Schema: public; Owner: postgres
 --
 
@@ -110,7 +110,7 @@ CREATE SEQUENCE public.api_football_keys_id_seq
 ALTER SEQUENCE public.api_football_keys_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5087 (class 0 OID 0)
+-- TOC entry 5142 (class 0 OID 0)
 -- Dependencies: 222
 -- Name: api_football_keys_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -148,7 +148,7 @@ CREATE SEQUENCE public.api_services_id_service_seq
 ALTER SEQUENCE public.api_services_id_service_seq OWNER TO postgres;
 
 --
--- TOC entry 5088 (class 0 OID 0)
+-- TOC entry 5143 (class 0 OID 0)
 -- Dependencies: 224
 -- Name: api_services_id_service_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -187,7 +187,7 @@ CREATE SEQUENCE public.app_user_id_seq
 ALTER SEQUENCE public.app_user_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5089 (class 0 OID 0)
+-- TOC entry 5144 (class 0 OID 0)
 -- Dependencies: 241
 -- Name: app_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -241,7 +241,7 @@ CREATE SEQUENCE public.club_in_league_id_seq
 ALTER SEQUENCE public.club_in_league_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5090 (class 0 OID 0)
+-- TOC entry 5145 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: club_in_league_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -280,12 +280,60 @@ CREATE SEQUENCE public.config_params_id_seq
 ALTER SEQUENCE public.config_params_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5091 (class 0 OID 0)
+-- TOC entry 5146 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: config_params_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.config_params_id_seq OWNED BY public.config_params.id;
+
+
+--
+-- TOC entry 266 (class 1259 OID 264364)
+-- Name: contextual_weight_config; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.contextual_weight_config (
+    id bigint NOT NULL,
+    w_forma double precision DEFAULT 0.12 NOT NULL,
+    w_needs double precision DEFAULT 0.10 NOT NULL,
+    w_def double precision DEFAULT 0.07 NOT NULL,
+    w_off double precision DEFAULT 0.07 NOT NULL,
+    w_fatigue double precision DEFAULT 0.06 NOT NULL,
+    w_set_pieces double precision DEFAULT 0.06 NOT NULL,
+    w_atm double precision DEFAULT 0.03 NOT NULL,
+    calibration_date date,
+    n_samples integer,
+    notes character varying(255),
+    w_unavail double precision
+);
+
+
+ALTER TABLE public.contextual_weight_config OWNER TO postgres;
+
+--
+-- TOC entry 265 (class 1259 OID 264363)
+-- Name: contextual_weight_config_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.contextual_weight_config_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.contextual_weight_config_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5147 (class 0 OID 0)
+-- Dependencies: 265
+-- Name: contextual_weight_config_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.contextual_weight_config_id_seq OWNED BY public.contextual_weight_config.id;
 
 
 --
@@ -319,7 +367,7 @@ CREATE SEQUENCE public.dupped_players_id_seq
 ALTER SEQUENCE public.dupped_players_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5092 (class 0 OID 0)
+-- TOC entry 5148 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: dupped_players_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -364,10 +412,6 @@ CREATE TABLE public.fixture (
     score_pen_away integer,
     ingested_at timestamp with time zone DEFAULT now() NOT NULL,
     updated_at timestamp with time zone DEFAULT now() NOT NULL,
-    eventsstored boolean DEFAULT false,
-    matchstored boolean DEFAULT false,
-    lineupstored boolean DEFAULT false,
-    statsstored boolean DEFAULT false,
     events_stored boolean,
     lineup_stored boolean,
     match_stored boolean,
@@ -376,6 +420,65 @@ CREATE TABLE public.fixture (
 
 
 ALTER TABLE public.fixture OWNER TO postgres;
+
+--
+-- TOC entry 264 (class 1259 OID 264209)
+-- Name: fixture_contextual_analysis; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.fixture_contextual_analysis (
+    id bigint NOT NULL,
+    fixture_id bigint NOT NULL,
+    home_current_form integer DEFAULT 3 NOT NULL,
+    home_stadium_atmosphere integer DEFAULT 3 NOT NULL,
+    home_defensive_block integer DEFAULT 3 NOT NULL,
+    home_offensive_rhythm integer DEFAULT 3 NOT NULL,
+    home_team_needs integer DEFAULT 3 NOT NULL,
+    home_set_pieces integer DEFAULT 2 NOT NULL,
+    home_fatigue integer DEFAULT 3 NOT NULL,
+    home_unavailable_players text,
+    away_current_form integer DEFAULT 3 NOT NULL,
+    away_stadium_atmosphere integer DEFAULT 3 NOT NULL,
+    away_defensive_block integer DEFAULT 3 NOT NULL,
+    away_offensive_rhythm integer DEFAULT 3 NOT NULL,
+    away_team_needs integer DEFAULT 3 NOT NULL,
+    away_set_pieces integer DEFAULT 2 NOT NULL,
+    away_fatigue integer DEFAULT 3 NOT NULL,
+    away_unavailable_players text,
+    notes text,
+    created_at timestamp with time zone DEFAULT now(),
+    updated_at timestamp with time zone DEFAULT now(),
+    base_home_win real,
+    base_draw real,
+    base_away_win real
+);
+
+
+ALTER TABLE public.fixture_contextual_analysis OWNER TO postgres;
+
+--
+-- TOC entry 263 (class 1259 OID 264208)
+-- Name: fixture_contextual_analysis_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.fixture_contextual_analysis_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.fixture_contextual_analysis_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 5149 (class 0 OID 0)
+-- Dependencies: 263
+-- Name: fixture_contextual_analysis_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.fixture_contextual_analysis_id_seq OWNED BY public.fixture_contextual_analysis.id;
+
 
 --
 -- TOC entry 253 (class 1259 OID 227862)
@@ -575,7 +678,7 @@ CREATE SEQUENCE public.manual_tracked_data_id_seq
 ALTER SEQUENCE public.manual_tracked_data_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5093 (class 0 OID 0)
+-- TOC entry 5150 (class 0 OID 0)
 -- Dependencies: 218
 -- Name: manual_tracked_data_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -614,7 +717,7 @@ CREATE SEQUENCE public.pais_id_seq
 ALTER SEQUENCE public.pais_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5094 (class 0 OID 0)
+-- TOC entry 5151 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: pais_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -707,6 +810,52 @@ CREATE TABLE public.player_match_stats (
 ALTER TABLE public.player_match_stats OWNER TO postgres;
 
 --
+-- TOC entry 269 (class 1259 OID 264404)
+-- Name: player_percentiles; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.player_percentiles (
+    id bigint NOT NULL,
+    computed_at timestamp(6) without time zone,
+    index_id bigint,
+    league_id integer NOT NULL,
+    pct_assists_p90 integer,
+    pct_dribbles_success integer,
+    pct_duels_won integer,
+    pct_fouls_drawn_p90 integer,
+    pct_goals_p90 integer,
+    pct_interceptions_p90 integer,
+    pct_minutes integer,
+    pct_pass_accuracy integer,
+    pct_passes_key_p90 integer,
+    pct_passes_total_p90 integer,
+    pct_rating integer,
+    pct_shots_on_p90 integer,
+    pct_shots_total_p90 integer,
+    pct_tackles_p90 integer,
+    player_id bigint NOT NULL,
+    season character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.player_percentiles OWNER TO postgres;
+
+--
+-- TOC entry 268 (class 1259 OID 264403)
+-- Name: player_percentiles_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+ALTER TABLE public.player_percentiles ALTER COLUMN id ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME public.player_percentiles_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
 -- TOC entry 220 (class 1259 OID 16421)
 -- Name: player_qualities; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -737,13 +886,32 @@ CREATE SEQUENCE public.player_qualities_id_seq
 ALTER SEQUENCE public.player_qualities_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5095 (class 0 OID 0)
+-- TOC entry 5152 (class 0 OID 0)
 -- Dependencies: 221
 -- Name: player_qualities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.player_qualities_id_seq OWNED BY public.player_qualities.id;
 
+
+--
+-- TOC entry 267 (class 1259 OID 264397)
+-- Name: player_season_percentiles; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.player_season_percentiles (
+    player_id integer NOT NULL,
+    league_id integer NOT NULL,
+    season integer NOT NULL,
+    as_of_date timestamp with time zone NOT NULL,
+    goals_p90_pct double precision,
+    kp_p90_pct double precision,
+    def_p90_pct double precision,
+    avg_rating_pct double precision
+);
+
+
+ALTER TABLE public.player_season_percentiles OWNER TO postgres;
 
 --
 -- TOC entry 244 (class 1259 OID 106598)
@@ -799,7 +967,7 @@ CREATE SEQUENCE public.raw_ingest_2023_id_seq
 ALTER SEQUENCE public.raw_ingest_2023_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5096 (class 0 OID 0)
+-- TOC entry 5153 (class 0 OID 0)
 -- Dependencies: 259
 -- Name: raw_ingest_2023_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -842,7 +1010,7 @@ CREATE SEQUENCE public.raw_ingest_2024_id_seq
 ALTER SEQUENCE public.raw_ingest_2024_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5097 (class 0 OID 0)
+-- TOC entry 5154 (class 0 OID 0)
 -- Dependencies: 261
 -- Name: raw_ingest_2024_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -866,7 +1034,7 @@ CREATE SEQUENCE public.raw_ingest_id_seq
 ALTER SEQUENCE public.raw_ingest_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5098 (class 0 OID 0)
+-- TOC entry 5155 (class 0 OID 0)
 -- Dependencies: 243
 -- Name: raw_ingest_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -904,7 +1072,7 @@ CREATE SEQUENCE public.squad_id_seq
 ALTER SEQUENCE public.squad_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5099 (class 0 OID 0)
+-- TOC entry 5156 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: squad_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -942,7 +1110,7 @@ CREATE SEQUENCE public.tipo_torneo_id_seq
 ALTER SEQUENCE public.tipo_torneo_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5100 (class 0 OID 0)
+-- TOC entry 5157 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: tipo_torneo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -980,7 +1148,7 @@ CREATE SEQUENCE public.tipo_transfer_id_seq
 ALTER SEQUENCE public.tipo_transfer_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5101 (class 0 OID 0)
+-- TOC entry 5158 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: tipo_transfer_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -1024,7 +1192,7 @@ CREATE SEQUENCE public.torneo_fbrefid_seq
 ALTER SEQUENCE public.torneo_fbrefid_seq OWNER TO postgres;
 
 --
--- TOC entry 5102 (class 0 OID 0)
+-- TOC entry 5159 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: torneo_fbrefid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -1065,7 +1233,7 @@ CREATE SEQUENCE public.transfer_id_seq
 ALTER SEQUENCE public.transfer_id_seq OWNER TO postgres;
 
 --
--- TOC entry 5103 (class 0 OID 0)
+-- TOC entry 5160 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: transfer_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -1074,7 +1242,7 @@ ALTER SEQUENCE public.transfer_id_seq OWNED BY public.transfer.id;
 
 
 --
--- TOC entry 4792 (class 2604 OID 41005)
+-- TOC entry 4811 (class 2604 OID 41005)
 -- Name: api_football_keys id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1082,7 +1250,7 @@ ALTER TABLE ONLY public.api_football_keys ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 4795 (class 2604 OID 41029)
+-- TOC entry 4814 (class 2604 OID 41029)
 -- Name: api_services id_service; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1090,7 +1258,7 @@ ALTER TABLE ONLY public.api_services ALTER COLUMN id_service SET DEFAULT nextval
 
 
 --
--- TOC entry 4804 (class 2604 OID 82101)
+-- TOC entry 4823 (class 2604 OID 82101)
 -- Name: app_user id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1098,7 +1266,7 @@ ALTER TABLE ONLY public.app_user ALTER COLUMN id SET DEFAULT nextval('public.app
 
 
 --
--- TOC entry 4803 (class 2604 OID 81995)
+-- TOC entry 4822 (class 2604 OID 81995)
 -- Name: club_in_league id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1106,7 +1274,7 @@ ALTER TABLE ONLY public.club_in_league ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 4802 (class 2604 OID 73775)
+-- TOC entry 4821 (class 2604 OID 73775)
 -- Name: config_params id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1114,7 +1282,15 @@ ALTER TABLE ONLY public.config_params ALTER COLUMN id SET DEFAULT nextval('publi
 
 
 --
--- TOC entry 4810 (class 2604 OID 172361)
+-- TOC entry 4858 (class 2604 OID 264379)
+-- Name: contextual_weight_config id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.contextual_weight_config ALTER COLUMN id SET DEFAULT nextval('public.contextual_weight_config_id_seq'::regclass);
+
+
+--
+-- TOC entry 4829 (class 2604 OID 172361)
 -- Name: dupped_players id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1122,7 +1298,15 @@ ALTER TABLE ONLY public.dupped_players ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 4790 (class 2604 OID 16429)
+-- TOC entry 4841 (class 2604 OID 264212)
+-- Name: fixture_contextual_analysis id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fixture_contextual_analysis ALTER COLUMN id SET DEFAULT nextval('public.fixture_contextual_analysis_id_seq'::regclass);
+
+
+--
+-- TOC entry 4809 (class 2604 OID 16429)
 -- Name: manual_tracked_player id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1130,7 +1314,7 @@ ALTER TABLE ONLY public.manual_tracked_player ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 4796 (class 2604 OID 49208)
+-- TOC entry 4815 (class 2604 OID 49208)
 -- Name: pais id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1138,7 +1322,7 @@ ALTER TABLE ONLY public.pais ALTER COLUMN id SET DEFAULT nextval('public.pais_id
 
 
 --
--- TOC entry 4791 (class 2604 OID 16456)
+-- TOC entry 4810 (class 2604 OID 16456)
 -- Name: player_qualities id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1146,7 +1330,7 @@ ALTER TABLE ONLY public.player_qualities ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 4806 (class 2604 OID 106601)
+-- TOC entry 4825 (class 2604 OID 106601)
 -- Name: raw_ingest id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1154,7 +1338,7 @@ ALTER TABLE ONLY public.raw_ingest ALTER COLUMN id SET DEFAULT nextval('public.r
 
 
 --
--- TOC entry 4822 (class 2604 OID 256313)
+-- TOC entry 4837 (class 2604 OID 256313)
 -- Name: raw_ingest_2023 id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1162,7 +1346,7 @@ ALTER TABLE ONLY public.raw_ingest_2023 ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 4824 (class 2604 OID 256326)
+-- TOC entry 4839 (class 2604 OID 256326)
 -- Name: raw_ingest_2024 id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1170,7 +1354,7 @@ ALTER TABLE ONLY public.raw_ingest_2024 ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 4809 (class 2604 OID 172352)
+-- TOC entry 4828 (class 2604 OID 172352)
 -- Name: squad id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1178,7 +1362,7 @@ ALTER TABLE ONLY public.squad ALTER COLUMN id SET DEFAULT nextval('public.squad_
 
 
 --
--- TOC entry 4797 (class 2604 OID 49215)
+-- TOC entry 4816 (class 2604 OID 49215)
 -- Name: tipo_torneo id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1186,7 +1370,7 @@ ALTER TABLE ONLY public.tipo_torneo ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 4798 (class 2604 OID 49222)
+-- TOC entry 4817 (class 2604 OID 49222)
 -- Name: tipo_transfer id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1194,7 +1378,7 @@ ALTER TABLE ONLY public.tipo_transfer ALTER COLUMN id SET DEFAULT nextval('publi
 
 
 --
--- TOC entry 4799 (class 2604 OID 49229)
+-- TOC entry 4818 (class 2604 OID 49229)
 -- Name: torneo fbrefid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1202,7 +1386,7 @@ ALTER TABLE ONLY public.torneo ALTER COLUMN fbrefid SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 4808 (class 2604 OID 172340)
+-- TOC entry 4827 (class 2604 OID 172340)
 -- Name: transfer id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -1210,7 +1394,7 @@ ALTER TABLE ONLY public.transfer ALTER COLUMN id SET DEFAULT nextval('public.tra
 
 
 --
--- TOC entry 4837 (class 2606 OID 41007)
+-- TOC entry 4877 (class 2606 OID 41007)
 -- Name: api_football_keys api_football_keys_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1219,7 +1403,7 @@ ALTER TABLE ONLY public.api_football_keys
 
 
 --
--- TOC entry 4840 (class 2606 OID 41031)
+-- TOC entry 4880 (class 2606 OID 41031)
 -- Name: api_services api_services_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1228,7 +1412,7 @@ ALTER TABLE ONLY public.api_services
 
 
 --
--- TOC entry 4860 (class 2606 OID 82104)
+-- TOC entry 4900 (class 2606 OID 82104)
 -- Name: app_user app_user_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1237,7 +1421,7 @@ ALTER TABLE ONLY public.app_user
 
 
 --
--- TOC entry 4862 (class 2606 OID 82106)
+-- TOC entry 4902 (class 2606 OID 82106)
 -- Name: app_user app_user_username_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1246,7 +1430,7 @@ ALTER TABLE ONLY public.app_user
 
 
 --
--- TOC entry 4858 (class 2606 OID 81997)
+-- TOC entry 4898 (class 2606 OID 81997)
 -- Name: club_in_league club_in_league_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1255,7 +1439,7 @@ ALTER TABLE ONLY public.club_in_league
 
 
 --
--- TOC entry 4850 (class 2606 OID 49246)
+-- TOC entry 4890 (class 2606 OID 49246)
 -- Name: club club_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1264,7 +1448,7 @@ ALTER TABLE ONLY public.club
 
 
 --
--- TOC entry 4856 (class 2606 OID 73777)
+-- TOC entry 4896 (class 2606 OID 73777)
 -- Name: config_params config_params_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1273,7 +1457,16 @@ ALTER TABLE ONLY public.config_params
 
 
 --
--- TOC entry 4883 (class 2606 OID 172363)
+-- TOC entry 4964 (class 2606 OID 264381)
+-- Name: contextual_weight_config contextual_weight_config_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.contextual_weight_config
+    ADD CONSTRAINT contextual_weight_config_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 4923 (class 2606 OID 172363)
 -- Name: dupped_players dupped_players_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1282,7 +1475,25 @@ ALTER TABLE ONLY public.dupped_players
 
 
 --
--- TOC entry 4893 (class 2606 OID 227870)
+-- TOC entry 4959 (class 2606 OID 264234)
+-- Name: fixture_contextual_analysis fixture_contextual_analysis_fixture_id_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fixture_contextual_analysis
+    ADD CONSTRAINT fixture_contextual_analysis_fixture_id_key UNIQUE (fixture_id);
+
+
+--
+-- TOC entry 4961 (class 2606 OID 264232)
+-- Name: fixture_contextual_analysis fixture_contextual_analysis_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fixture_contextual_analysis
+    ADD CONSTRAINT fixture_contextual_analysis_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 4933 (class 2606 OID 227870)
 -- Name: fixture_event fixture_event_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1291,7 +1502,7 @@ ALTER TABLE ONLY public.fixture_event
 
 
 --
--- TOC entry 4910 (class 2606 OID 228172)
+-- TOC entry 4950 (class 2606 OID 228172)
 -- Name: fixture_lineup fixture_lineup_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1300,7 +1511,7 @@ ALTER TABLE ONLY public.fixture_lineup
 
 
 --
--- TOC entry 4885 (class 2606 OID 227845)
+-- TOC entry 4925 (class 2606 OID 227845)
 -- Name: fixture fixture_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1309,7 +1520,7 @@ ALTER TABLE ONLY public.fixture
 
 
 --
--- TOC entry 4903 (class 2606 OID 227920)
+-- TOC entry 4943 (class 2606 OID 227920)
 -- Name: fixture_player_stats fixture_player_stats_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1318,7 +1529,7 @@ ALTER TABLE ONLY public.fixture_player_stats
 
 
 --
--- TOC entry 4899 (class 2606 OID 227889)
+-- TOC entry 4939 (class 2606 OID 227889)
 -- Name: fixture_team_stats fixture_team_stats_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1327,7 +1538,7 @@ ALTER TABLE ONLY public.fixture_team_stats
 
 
 --
--- TOC entry 4827 (class 2606 OID 16431)
+-- TOC entry 4867 (class 2606 OID 16431)
 -- Name: manual_tracked_player manual_tracked_data_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1336,7 +1547,7 @@ ALTER TABLE ONLY public.manual_tracked_player
 
 
 --
--- TOC entry 4842 (class 2606 OID 49210)
+-- TOC entry 4882 (class 2606 OID 49210)
 -- Name: pais pais_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1345,7 +1556,7 @@ ALTER TABLE ONLY public.pais
 
 
 --
--- TOC entry 4873 (class 2606 OID 263951)
+-- TOC entry 4913 (class 2606 OID 263951)
 -- Name: player_match_stats player_match_stats_uq; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1354,7 +1565,16 @@ ALTER TABLE ONLY public.player_match_stats
 
 
 --
--- TOC entry 4854 (class 2606 OID 49273)
+-- TOC entry 4971 (class 2606 OID 264408)
+-- Name: player_percentiles player_percentiles_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.player_percentiles
+    ADD CONSTRAINT player_percentiles_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 4894 (class 2606 OID 49273)
 -- Name: player player_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1363,7 +1583,7 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 4835 (class 2606 OID 16458)
+-- TOC entry 4875 (class 2606 OID 16458)
 -- Name: player_qualities player_qualities_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1372,7 +1592,16 @@ ALTER TABLE ONLY public.player_qualities
 
 
 --
--- TOC entry 4867 (class 2606 OID 106606)
+-- TOC entry 4967 (class 2606 OID 264401)
+-- Name: player_season_percentiles player_season_percentiles_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.player_season_percentiles
+    ADD CONSTRAINT player_season_percentiles_pkey PRIMARY KEY (player_id, league_id, season, as_of_date);
+
+
+--
+-- TOC entry 4907 (class 2606 OID 106606)
 -- Name: raw_ingest raw_ingest_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1381,7 +1610,7 @@ ALTER TABLE ONLY public.raw_ingest
 
 
 --
--- TOC entry 4913 (class 2606 OID 256318)
+-- TOC entry 4953 (class 2606 OID 256318)
 -- Name: raw_ingest_2023 raw_ingest_pkey_23; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1390,7 +1619,7 @@ ALTER TABLE ONLY public.raw_ingest_2023
 
 
 --
--- TOC entry 4916 (class 2606 OID 256331)
+-- TOC entry 4956 (class 2606 OID 256331)
 -- Name: raw_ingest_2024 raw_ingest_pkey_24; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1399,7 +1628,7 @@ ALTER TABLE ONLY public.raw_ingest_2024
 
 
 --
--- TOC entry 4881 (class 2606 OID 172356)
+-- TOC entry 4921 (class 2606 OID 172356)
 -- Name: squad squad_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1408,7 +1637,7 @@ ALTER TABLE ONLY public.squad
 
 
 --
--- TOC entry 4844 (class 2606 OID 49217)
+-- TOC entry 4884 (class 2606 OID 49217)
 -- Name: tipo_torneo tipo_torneo_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1417,7 +1646,7 @@ ALTER TABLE ONLY public.tipo_torneo
 
 
 --
--- TOC entry 4846 (class 2606 OID 49224)
+-- TOC entry 4886 (class 2606 OID 49224)
 -- Name: tipo_transfer tipo_transfer_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1426,7 +1655,7 @@ ALTER TABLE ONLY public.tipo_transfer
 
 
 --
--- TOC entry 4848 (class 2606 OID 49231)
+-- TOC entry 4888 (class 2606 OID 49231)
 -- Name: torneo torneo_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1435,7 +1664,7 @@ ALTER TABLE ONLY public.torneo
 
 
 --
--- TOC entry 4879 (class 2606 OID 172342)
+-- TOC entry 4919 (class 2606 OID 172342)
 -- Name: transfer transfer_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1444,7 +1673,7 @@ ALTER TABLE ONLY public.transfer
 
 
 --
--- TOC entry 4829 (class 2606 OID 16447)
+-- TOC entry 4869 (class 2606 OID 16447)
 -- Name: manual_tracked_player uk83r8jckpgnch8asi2lxqec55u; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1453,7 +1682,7 @@ ALTER TABLE ONLY public.manual_tracked_player
 
 
 --
--- TOC entry 4831 (class 2606 OID 16445)
+-- TOC entry 4871 (class 2606 OID 16445)
 -- Name: manual_tracked_player ukir9985ps18y6788r096vgq39j; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1462,7 +1691,7 @@ ALTER TABLE ONLY public.manual_tracked_player
 
 
 --
--- TOC entry 4833 (class 2606 OID 82113)
+-- TOC entry 4873 (class 2606 OID 82113)
 -- Name: manual_tracked_player uq_manual_nombre_user; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1471,7 +1700,7 @@ ALTER TABLE ONLY public.manual_tracked_player
 
 
 --
--- TOC entry 4838 (class 1259 OID 24643)
+-- TOC entry 4878 (class 1259 OID 24643)
 -- Name: idx_api_football_keys_id_service; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1479,7 +1708,15 @@ CREATE INDEX idx_api_football_keys_id_service ON public.api_football_keys USING 
 
 
 --
--- TOC entry 4894 (class 1259 OID 227881)
+-- TOC entry 4962 (class 1259 OID 264235)
+-- Name: idx_fca_fixture_id; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX idx_fca_fixture_id ON public.fixture_contextual_analysis USING btree (fixture_id);
+
+
+--
+-- TOC entry 4934 (class 1259 OID 227881)
 -- Name: idx_fevent_fixture; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1487,7 +1724,7 @@ CREATE INDEX idx_fevent_fixture ON public.fixture_event USING btree (fixture_id)
 
 
 --
--- TOC entry 4895 (class 1259 OID 227882)
+-- TOC entry 4935 (class 1259 OID 227882)
 -- Name: idx_fevent_player; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1495,7 +1732,7 @@ CREATE INDEX idx_fevent_player ON public.fixture_event USING btree (player_id);
 
 
 --
--- TOC entry 4896 (class 1259 OID 227884)
+-- TOC entry 4936 (class 1259 OID 227884)
 -- Name: idx_fevent_team; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1503,7 +1740,7 @@ CREATE INDEX idx_fevent_team ON public.fixture_event USING btree (team_id);
 
 
 --
--- TOC entry 4897 (class 1259 OID 227883)
+-- TOC entry 4937 (class 1259 OID 227883)
 -- Name: idx_fevent_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1511,7 +1748,7 @@ CREATE INDEX idx_fevent_type ON public.fixture_event USING btree (event_type);
 
 
 --
--- TOC entry 4886 (class 1259 OID 227860)
+-- TOC entry 4926 (class 1259 OID 227860)
 -- Name: idx_fixture_away_team; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1519,7 +1756,7 @@ CREATE INDEX idx_fixture_away_team ON public.fixture USING btree (away_team_id);
 
 
 --
--- TOC entry 4887 (class 1259 OID 227857)
+-- TOC entry 4927 (class 1259 OID 227857)
 -- Name: idx_fixture_date; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1527,7 +1764,7 @@ CREATE INDEX idx_fixture_date ON public.fixture USING btree (match_date);
 
 
 --
--- TOC entry 4888 (class 1259 OID 227859)
+-- TOC entry 4928 (class 1259 OID 227859)
 -- Name: idx_fixture_home_team; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1535,7 +1772,7 @@ CREATE INDEX idx_fixture_home_team ON public.fixture USING btree (home_team_id);
 
 
 --
--- TOC entry 4889 (class 1259 OID 227861)
+-- TOC entry 4929 (class 1259 OID 227861)
 -- Name: idx_fixture_league_date; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1543,7 +1780,7 @@ CREATE INDEX idx_fixture_league_date ON public.fixture USING btree (league_id, m
 
 
 --
--- TOC entry 4890 (class 1259 OID 227856)
+-- TOC entry 4930 (class 1259 OID 227856)
 -- Name: idx_fixture_league_season; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1551,7 +1788,7 @@ CREATE INDEX idx_fixture_league_season ON public.fixture USING btree (league_id,
 
 
 --
--- TOC entry 4911 (class 1259 OID 228178)
+-- TOC entry 4951 (class 1259 OID 228178)
 -- Name: idx_fixture_lineup_fixture_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1559,7 +1796,7 @@ CREATE INDEX idx_fixture_lineup_fixture_id ON public.fixture_lineup USING btree 
 
 
 --
--- TOC entry 4891 (class 1259 OID 227858)
+-- TOC entry 4931 (class 1259 OID 227858)
 -- Name: idx_fixture_status; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1567,7 +1804,7 @@ CREATE INDEX idx_fixture_status ON public.fixture USING btree (status_short);
 
 
 --
--- TOC entry 4904 (class 1259 OID 227933)
+-- TOC entry 4944 (class 1259 OID 227933)
 -- Name: idx_fps_fixture; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1575,7 +1812,7 @@ CREATE INDEX idx_fps_fixture ON public.fixture_player_stats USING btree (fixture
 
 
 --
--- TOC entry 4905 (class 1259 OID 227931)
+-- TOC entry 4945 (class 1259 OID 227931)
 -- Name: idx_fps_player; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1583,7 +1820,7 @@ CREATE INDEX idx_fps_player ON public.fixture_player_stats USING btree (player_i
 
 
 --
--- TOC entry 4906 (class 1259 OID 227935)
+-- TOC entry 4946 (class 1259 OID 227935)
 -- Name: idx_fps_player_fixture; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1591,7 +1828,7 @@ CREATE INDEX idx_fps_player_fixture ON public.fixture_player_stats USING btree (
 
 
 --
--- TOC entry 4907 (class 1259 OID 227934)
+-- TOC entry 4947 (class 1259 OID 227934)
 -- Name: idx_fps_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1599,7 +1836,7 @@ CREATE INDEX idx_fps_position ON public.fixture_player_stats USING btree ("posit
 
 
 --
--- TOC entry 4908 (class 1259 OID 227932)
+-- TOC entry 4948 (class 1259 OID 227932)
 -- Name: idx_fps_team; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1607,7 +1844,7 @@ CREATE INDEX idx_fps_team ON public.fixture_player_stats USING btree (team_id);
 
 
 --
--- TOC entry 4900 (class 1259 OID 227901)
+-- TOC entry 4940 (class 1259 OID 227901)
 -- Name: idx_fts_fixture; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1615,7 +1852,7 @@ CREATE INDEX idx_fts_fixture ON public.fixture_team_stats USING btree (fixture_i
 
 
 --
--- TOC entry 4901 (class 1259 OID 227900)
+-- TOC entry 4941 (class 1259 OID 227900)
 -- Name: idx_fts_team; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1623,7 +1860,7 @@ CREATE INDEX idx_fts_team ON public.fixture_team_stats USING btree (team_id);
 
 
 --
--- TOC entry 4851 (class 1259 OID 82062)
+-- TOC entry 4891 (class 1259 OID 82062)
 -- Name: idx_player_index_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1631,7 +1868,7 @@ CREATE INDEX idx_player_index_id ON public.player USING btree (index_id);
 
 
 --
--- TOC entry 4852 (class 1259 OID 82061)
+-- TOC entry 4892 (class 1259 OID 82061)
 -- Name: idx_player_search; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1639,7 +1876,31 @@ CREATE INDEX idx_player_search ON public.player USING btree (firstname, lastname
 
 
 --
--- TOC entry 4874 (class 1259 OID 106616)
+-- TOC entry 4968 (class 1259 OID 264409)
+-- Name: idx_pp_index_id; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX idx_pp_index_id ON public.player_percentiles USING btree (index_id, season);
+
+
+--
+-- TOC entry 4969 (class 1259 OID 264410)
+-- Name: idx_pp_player_season; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX idx_pp_player_season ON public.player_percentiles USING btree (player_id, season);
+
+
+--
+-- TOC entry 4965 (class 1259 OID 264402)
+-- Name: idx_psp_lookup; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX idx_psp_lookup ON public.player_season_percentiles USING btree (player_id, league_id, season, as_of_date DESC);
+
+
+--
+-- TOC entry 4914 (class 1259 OID 106616)
 -- Name: pms_idx_league_season; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1647,7 +1908,7 @@ CREATE INDEX pms_idx_league_season ON public.player_match_stats USING btree (lea
 
 
 --
--- TOC entry 4875 (class 1259 OID 106617)
+-- TOC entry 4915 (class 1259 OID 106617)
 -- Name: pms_idx_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1655,7 +1916,7 @@ CREATE INDEX pms_idx_position ON public.player_match_stats USING btree ("positio
 
 
 --
--- TOC entry 4876 (class 1259 OID 106657)
+-- TOC entry 4916 (class 1259 OID 106657)
 -- Name: pms_idx_team_pos; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1663,7 +1924,7 @@ CREATE INDEX pms_idx_team_pos ON public.player_match_stats USING btree (team_id,
 
 
 --
--- TOC entry 4877 (class 1259 OID 106615)
+-- TOC entry 4917 (class 1259 OID 106615)
 -- Name: pms_idx_team_season; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1671,7 +1932,7 @@ CREATE INDEX pms_idx_team_season ON public.player_match_stats USING btree (team_
 
 
 --
--- TOC entry 4863 (class 1259 OID 106607)
+-- TOC entry 4903 (class 1259 OID 106607)
 -- Name: raw_ingest_dedupe; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1679,7 +1940,7 @@ CREATE UNIQUE INDEX raw_ingest_dedupe ON public.raw_ingest USING btree (source, 
 
 
 --
--- TOC entry 4864 (class 1259 OID 256319)
+-- TOC entry 4904 (class 1259 OID 256319)
 -- Name: raw_ingest_dedupe_23; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1687,7 +1948,7 @@ CREATE UNIQUE INDEX raw_ingest_dedupe_23 ON public.raw_ingest USING btree (sourc
 
 
 --
--- TOC entry 4865 (class 1259 OID 256332)
+-- TOC entry 4905 (class 1259 OID 256332)
 -- Name: raw_ingest_dedupe_24; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1695,7 +1956,7 @@ CREATE UNIQUE INDEX raw_ingest_dedupe_24 ON public.raw_ingest USING btree (sourc
 
 
 --
--- TOC entry 4868 (class 1259 OID 106658)
+-- TOC entry 4908 (class 1259 OID 106658)
 -- Name: raw_payload_gin; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1703,7 +1964,7 @@ CREATE INDEX raw_payload_gin ON public.raw_ingest USING gin (payload jsonb_path_
 
 
 --
--- TOC entry 4869 (class 1259 OID 256320)
+-- TOC entry 4909 (class 1259 OID 256320)
 -- Name: raw_payload_gin_23; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1711,7 +1972,7 @@ CREATE INDEX raw_payload_gin_23 ON public.raw_ingest USING gin (payload jsonb_pa
 
 
 --
--- TOC entry 4870 (class 1259 OID 256333)
+-- TOC entry 4910 (class 1259 OID 256333)
 -- Name: raw_payload_gin_24; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1719,7 +1980,15 @@ CREATE INDEX raw_payload_gin_24 ON public.raw_ingest USING gin (payload jsonb_pa
 
 
 --
--- TOC entry 4871 (class 1259 OID 109511)
+-- TOC entry 4972 (class 1259 OID 264411)
+-- Name: uq_player_percentiles; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX uq_player_percentiles ON public.player_percentiles USING btree (player_id, league_id, season);
+
+
+--
+-- TOC entry 4911 (class 1259 OID 109511)
 -- Name: ux_raw_ingest_payload_sha1; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1727,7 +1996,7 @@ CREATE UNIQUE INDEX ux_raw_ingest_payload_sha1 ON public.raw_ingest USING btree 
 
 
 --
--- TOC entry 4914 (class 1259 OID 256321)
+-- TOC entry 4954 (class 1259 OID 256321)
 -- Name: ux_raw_ingest_payload_sha1_23; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1735,7 +2004,7 @@ CREATE UNIQUE INDEX ux_raw_ingest_payload_sha1_23 ON public.raw_ingest_2023 USIN
 
 
 --
--- TOC entry 4917 (class 1259 OID 256334)
+-- TOC entry 4957 (class 1259 OID 256334)
 -- Name: ux_raw_ingest_payload_sha1_24; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1743,7 +2012,7 @@ CREATE UNIQUE INDEX ux_raw_ingest_payload_sha1_24 ON public.raw_ingest_2024 USIN
 
 
 --
--- TOC entry 4923 (class 2606 OID 49247)
+-- TOC entry 4978 (class 2606 OID 49247)
 -- Name: club club_pais_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1752,7 +2021,7 @@ ALTER TABLE ONLY public.club
 
 
 --
--- TOC entry 4937 (class 2606 OID 228173)
+-- TOC entry 4992 (class 2606 OID 228173)
 -- Name: fixture_lineup fixture_lineup_fixture_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1761,7 +2030,7 @@ ALTER TABLE ONLY public.fixture_lineup
 
 
 --
--- TOC entry 4920 (class 2606 OID 41032)
+-- TOC entry 4975 (class 2606 OID 41032)
 -- Name: api_football_keys fk_api_football_keys_id_service; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1770,7 +2039,7 @@ ALTER TABLE ONLY public.api_football_keys
 
 
 --
--- TOC entry 4926 (class 2606 OID 81984)
+-- TOC entry 4981 (class 2606 OID 81984)
 -- Name: club_in_league fk_club; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1779,7 +2048,7 @@ ALTER TABLE ONLY public.club_in_league
 
 
 --
--- TOC entry 4931 (class 2606 OID 227871)
+-- TOC entry 4986 (class 2606 OID 227871)
 -- Name: fixture_event fk_event_fixture; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1788,7 +2057,7 @@ ALTER TABLE ONLY public.fixture_event
 
 
 --
--- TOC entry 4932 (class 2606 OID 227876)
+-- TOC entry 4987 (class 2606 OID 227876)
 -- Name: fixture_event fk_event_team; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1797,7 +2066,7 @@ ALTER TABLE ONLY public.fixture_event
 
 
 --
--- TOC entry 4929 (class 2606 OID 227851)
+-- TOC entry 4984 (class 2606 OID 227851)
 -- Name: fixture fk_fixture_away_club; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1806,7 +2075,7 @@ ALTER TABLE ONLY public.fixture
 
 
 --
--- TOC entry 4930 (class 2606 OID 227846)
+-- TOC entry 4985 (class 2606 OID 227846)
 -- Name: fixture fk_fixture_home_club; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1815,7 +2084,7 @@ ALTER TABLE ONLY public.fixture
 
 
 --
--- TOC entry 4935 (class 2606 OID 227921)
+-- TOC entry 4990 (class 2606 OID 227921)
 -- Name: fixture_player_stats fk_fps_fixture; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1824,7 +2093,7 @@ ALTER TABLE ONLY public.fixture_player_stats
 
 
 --
--- TOC entry 4936 (class 2606 OID 227926)
+-- TOC entry 4991 (class 2606 OID 227926)
 -- Name: fixture_player_stats fk_fps_team; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1833,7 +2102,7 @@ ALTER TABLE ONLY public.fixture_player_stats
 
 
 --
--- TOC entry 4933 (class 2606 OID 227890)
+-- TOC entry 4988 (class 2606 OID 227890)
 -- Name: fixture_team_stats fk_fts_fixture; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1842,7 +2111,7 @@ ALTER TABLE ONLY public.fixture_team_stats
 
 
 --
--- TOC entry 4934 (class 2606 OID 227895)
+-- TOC entry 4989 (class 2606 OID 227895)
 -- Name: fixture_team_stats fk_fts_team; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1851,7 +2120,7 @@ ALTER TABLE ONLY public.fixture_team_stats
 
 
 --
--- TOC entry 4918 (class 2606 OID 82107)
+-- TOC entry 4973 (class 2606 OID 82107)
 -- Name: manual_tracked_player fk_manual_user; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1860,7 +2129,7 @@ ALTER TABLE ONLY public.manual_tracked_player
 
 
 --
--- TOC entry 4927 (class 2606 OID 81989)
+-- TOC entry 4982 (class 2606 OID 81989)
 -- Name: club_in_league fk_torneo; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1869,7 +2138,7 @@ ALTER TABLE ONLY public.club_in_league
 
 
 --
--- TOC entry 4928 (class 2606 OID 172343)
+-- TOC entry 4983 (class 2606 OID 172343)
 -- Name: transfer fk_transfer_kind; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1878,7 +2147,7 @@ ALTER TABLE ONLY public.transfer
 
 
 --
--- TOC entry 4924 (class 2606 OID 49274)
+-- TOC entry 4979 (class 2606 OID 49274)
 -- Name: player player_nacionalidad_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1887,7 +2156,7 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 4919 (class 2606 OID 16432)
+-- TOC entry 4974 (class 2606 OID 16432)
 -- Name: player_qualities player_qualities_player_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1896,7 +2165,7 @@ ALTER TABLE ONLY public.player_qualities
 
 
 --
--- TOC entry 4925 (class 2606 OID 49279)
+-- TOC entry 4980 (class 2606 OID 49279)
 -- Name: player player_team_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1905,7 +2174,7 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 4921 (class 2606 OID 49237)
+-- TOC entry 4976 (class 2606 OID 49237)
 -- Name: torneo torneo_pais_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1914,7 +2183,7 @@ ALTER TABLE ONLY public.torneo
 
 
 --
--- TOC entry 4922 (class 2606 OID 49232)
+-- TOC entry 4977 (class 2606 OID 49232)
 -- Name: torneo torneo_tipo_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1922,7 +2191,7 @@ ALTER TABLE ONLY public.torneo
     ADD CONSTRAINT torneo_tipo_fkey FOREIGN KEY (tipo) REFERENCES public.tipo_torneo(id);
 
 
--- Completed on 2026-05-07 14:14:03
+-- Completed on 2026-05-10 12:23:48
 
 --
 -- PostgreSQL database dump complete

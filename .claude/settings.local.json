@@ -19,7 +19,12 @@
       "Bash(npx tsc *)",
       "Bash(dir C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml *)",
       "Bash(npm install *)",
-      "Bash(node -e \"require\\('chart.js'\\); console.log\\('chart.js ok'\\)\")"
+      "Bash(node -e \"require\\('chart.js'\\); console.log\\('chart.js ok'\\)\")",
+      "Bash(xargs grep -l \"getPlayerPercentiles\\\\|player_percentiles\")",
+      "Bash(psql *)",
+      "Bash(sqlcmd -S localhost -U postgres -d playerdata)",
+      "Bash(python -m py_compile compute_percentiles.py)",
+      "Bash(xargs grep -l \"player_percentiles\\\\|player_season_percentiles\")"
     ]
   }
 }

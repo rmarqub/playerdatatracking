@@ -39,6 +39,7 @@ public class SecurityConfig {
     			.requestMatchers(HttpMethod.POST, "/generatePlayerPercentiles").permitAll()
     			.requestMatchers(HttpMethod.POST, "/getPlayerPercentiles").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtureTeamStats").permitAll()
+    			.requestMatchers(HttpMethod.POST, "/generatePlayerPercentilesFrontend").permitAll()
     			.requestMatchers(HttpMethod.POST, "/transformRawToStats").permitAll()
     			.requestMatchers(HttpMethod.POST, "/ingestFixtures").permitAll()
     			.requestMatchers(HttpMethod.POST, "/updateTransferedPlayers").permitAll()//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

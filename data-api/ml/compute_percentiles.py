@@ -1,9 +1,12 @@
 """
-Pre-computa percentiles temporales de jugadores y los persiste en PostgreSQL.
+Pre-computa percentiles temporales PARA EL MODELO PREDICTIVO INCREMENTAL.
 
 La tabla `player_season_percentiles` almacena, para cada (player_id, league_id,
 season, as_of_date), el rango percentil del jugador calculado con SOLO los
 partidos anteriores a as_of_date en esa liga+temporada.
+
+IMPORTANTE: Esta es la ÚNICA tabla que se llena aquí.
+Los percentiles para el FRONTEND se calculan aparte en GeneratePlayerPercentilesFrontend.java
 
 Esto elimina el leakage del modelo y convierte la consulta de predicción en
 un lookup O(log n) en lugar de una CTE de ventana sobre miles de filas.
@@ -139,7 +142,7 @@ def compute_temporal_percentiles(
     Antes de cada jornada, calcula PERCENT_RANK de todos los jugadores con
     suficientes minutos acumulados hasta ese momento.
 
-    Retorna: player_id, league_id, season, as_of_date, *_p90_pct
+    Retorna: player_id, league_id, season, as_of_date, goals_p90_pct, kp_p90_pct, def_p90_pct, avg_rating_pct
     """
     ps = player_stats.merge(
         fixtures[["fixture_id", "league_id", "season", "match_date"]],

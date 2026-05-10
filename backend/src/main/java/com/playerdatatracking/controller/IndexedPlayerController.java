@@ -26,6 +26,7 @@ import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
 import com.playerdatatracking.entities.indexaldata.PlayerPercentile;
 import com.playerdatatracking.operations.IndelxalData.GeneratePlayerPercentiles;
+import com.playerdatatracking.operations.IndelxalData.GeneratePlayerPercentilesFrontend;
 import com.playerdatatracking.operations.IndelxalData.GetBasicStats;
 import com.playerdatatracking.operations.IndelxalData.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.GetPlayerAbsenceDays;
@@ -55,6 +56,8 @@ public class IndexedPlayerController {
     private GetPlayerAbsenceDays operationGetPlayerAbsenceDays;
     @Autowired
     private GeneratePlayerPercentiles operationGeneratePlayerPercentiles;
+    @Autowired
+    private GeneratePlayerPercentilesFrontend operationGeneratePlayerPercentilesFrontend;
     @Autowired
     private GetPlayerPercentiles operationGetPlayerPercentiles;
 
@@ -149,6 +152,18 @@ public class IndexedPlayerController {
         GenericResponse<String> response = new GenericResponse<>();
         try {
             response = operationGeneratePlayerPercentiles.ejecutar(request.getSeason());
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/generatePlayerPercentilesFrontend")
+    public GenericResponse<String> generatePlayerPercentilesFrontend(@RequestBody GenericRequest request) {
+        GenericResponse<String> response = new GenericResponse<>();
+        try {
+            response = operationGeneratePlayerPercentilesFrontend.ejecutar(request.getSeason());
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
