@@ -1,5 +1,4 @@
 # V1
-- arreglar percentiles: logica parcialmente correcta, no todos los jugadores muestran sus percentiles aunque la logica del front es correcta. Es un tema de BBDD/backend
 - Actualizar CIL a la hora de hacer un update de players.
 - Página de equipos con estadísticas clave de cada uno de ellos (diseño pendiente) e incluir referencia de foto en la bbdd.
 - Carga de datos basicos desde Manual Data de indexal data.
@@ -11,11 +10,13 @@
 - Generar documentación y hacer un TFG sobre esto.
 
 #V2 PLANNING
+- Separar live fixtures en dos subcuadros: studied leagues y el resto
 - Diseño de logica de usuario.
 - Pagina de management general, que permita manejar ligas estudiadas.
 
 
 # MEJORAS VARIAS
+- revisar inserción de player_percentiles en /updatePlayerData
 - unificar estilos de la pagina principal
 - revisar modo noche para que sea mas legible y correcto con algunos cuadros embebidos mostrandose en blanco cuando deberían ser negros, y textos ilegibles al cambiarse a blanco.
 - Capita de mantenibilidad: quitar endpoints del codigo, revisar posibles claves que se encuentren en el codigo y demás.
@@ -27,9 +28,6 @@
 
 
 # MODELO
-
-	!!!!!!!!!!!AÑADIR COMPUTE_PERCENTILES.PY AL FLUJO DE ACTUALIZACION DE DATOS.
-  Plan de acción por orden de impacto
 
 
 
