@@ -11,6 +11,7 @@ export interface PlayerPercentile {
   indexId: number;
   /** 0 = global (todos los jugadores de la temporada), N = liga específica */
   leagueId: number;
+  leagueName?: string;
   season: string;
   pctMinutes: number | null;
   pctRating: number | null;

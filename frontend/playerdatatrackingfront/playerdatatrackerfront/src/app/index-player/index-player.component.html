@@ -56,6 +56,14 @@
         <button class="pct-scope-btn" [class.active]="percentileScope === 'global'" (click)="onPercentileScopeChange('global')">Global</button>
         <button class="pct-scope-btn" [class.active]="percentileScope === 'league'" (click)="onPercentileScopeChange('league')">Liga</button>
       </div>
+        <select *ngIf="percentileScope === 'league'"
+          class="pct-league-select search-select"
+          [(ngModel)]="selectedPercentileLeagueId"
+          (change)="onPercentileLeagueChange()">
+          <option *ngFor="let l of availablePercentileLeagues" [ngValue]="l.leagueId">
+            {{ l.leagueName }}
+          </option>
+        </select>
     </div>
     <button class="btn-compare-nav" (click)="goToCompare()">Comparar jugadores ↗</button>
   </div>

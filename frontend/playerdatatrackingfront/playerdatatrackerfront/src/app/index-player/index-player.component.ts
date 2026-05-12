@@ -43,7 +43,8 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
   showBasicStats = false;
   loadingBasic = false;
   errorBasic: string | null = null;
-
+  selectedPercentileLeagueId: number | null = null;
+  availablePercentileLeagues: { leagueId: number; leagueName: string }[] = [];
   basicSort: { active: BasicKey | null; dir: 'asc' | 'desc' } = { active: null, dir: 'asc' };
   private numericBasicKeys = new Set<BasicKey>([
     'minutes', 'rating', 'goals', 'assists', 'shotsOn', 'shotsTotal',
@@ -124,10 +125,12 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
     this.statsService.getPlayerPercentiles(this.player.indexId).subscribe({
       next: rows => {
         this.allPercentiles = rows;
+
         const seasons = [...new Set(rows.map(r => r.season))].sort((a, b) => b.localeCompare(a));
         this.availableSeasons = seasons;
         this.selectedPercentileSeason = seasons[0] ?? '';
         this.percentileScope = 'global';
+        this.refreshAvailablePercentileLeagues();
         this.percentileLoading = false;
         this.showPercentilePanel = true;
         this.needsChartInit = true;
@@ -143,6 +146,11 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
 
   onPercentileScopeChange(scope: 'global' | 'league'): void {
     this.percentileScope = scope;
+
+      if (scope === 'league') {
+        this.refreshAvailablePercentileLeagues();
+      }
+
     this.renderChart();
   }
 
@@ -153,11 +161,43 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
   }
 
   get currentPercentileRow(): PlayerPercentile | null {
+    if (!this.selectedPercentileSeason) return null;
+
+    if (this.percentileScope === 'global') {
+      return this.allPercentiles.find(
+        r => r.season === this.selectedPercentileSeason && r.leagueId === 0
+      ) ?? null;
+    }
+
+    if (this.selectedPercentileLeagueId == null) return null;
+
     return this.allPercentiles.find(
       r => r.season === this.selectedPercentileSeason &&
-           (this.percentileScope === 'global' ? r.leagueId === 0 : r.leagueId !== 0)
+          r.leagueId === this.selectedPercentileLeagueId
     ) ?? null;
   }
+
+  private refreshAvailablePercentileLeagues(): void {
+  const map = new Map<number, string>();
+
+  for (const row of this.allPercentiles) {
+    if (row.season !== this.selectedPercentileSeason) continue;
+    if (row.leagueId === 0) continue;
+
+    map.set(row.leagueId, row.leagueName || `Liga ${row.leagueId}`);
+  }
+
+  this.availablePercentileLeagues = Array.from(map.entries())
+    .map(([leagueId, leagueName]) => ({ leagueId, leagueName }))
+    .sort((a, b) => a.leagueName.localeCompare(b.leagueName));
+
+  if (
+    this.selectedPercentileLeagueId == null ||
+    !this.availablePercentileLeagues.some(l => l.leagueId === this.selectedPercentileLeagueId)
+  ) {
+    this.selectedPercentileLeagueId = this.availablePercentileLeagues[0]?.leagueId ?? null;
+  }
+}
 
   get noPercentileData(): boolean {
     return this.showPercentilePanel && !this.percentileLoading && !this.currentPercentileRow;
@@ -336,5 +376,9 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
     const year = parseInt(season, 10);
     if (isNaN(year)) return season;
     return `${year}/${((year + 1) % 100).toString().padStart(2, '0')}`;
+  }
+
+  onPercentileLeagueChange(): void {
+    this.renderChart();
   }
 }

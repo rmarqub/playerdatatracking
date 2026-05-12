@@ -23,6 +23,7 @@
 - percentiles por posición, ajustable desde el front para mostrarlo de forma correcta
 - añadir en el front capacidad para mostrar percentiles de una liga concreta, actualmente bien almacenada en bbdd.
 - en comparativa de percentiles, añadir boton de percentiles por posicion y eliminar filtro por liga.
+- arreglar bug al ocultar percentiles, no vuelve a cargarlos si le pido que los vuelva a mostrar.
 
 # MODELO
 - al regenerar el analisis contextual segun la aplicacion del modelo base hay que revisar dos cosas: 1o, que actualice unicamente los analisis contextuales de partidos que estén por jugar. 2o,

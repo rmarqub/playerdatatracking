@@ -24,6 +24,7 @@ import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.entities.indexaldata.ConvertedPlayer;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.entities.indexaldata.PlayerPhotoData;
+import com.playerdatatracking.entities.indexaldata.DTO.PlayerPercentileDTO;
 import com.playerdatatracking.entities.indexaldata.PlayerPercentile;
 import com.playerdatatracking.operations.IndelxalData.GeneratePlayerPercentiles;
 import com.playerdatatracking.operations.IndelxalData.GeneratePlayerPercentilesFrontend;
@@ -172,8 +173,8 @@ public class IndexedPlayerController {
     }
 
     @PostMapping("/getPlayerPercentiles")
-    public GenericResponse<PlayerPercentile> getPlayerPercentiles(@RequestBody GenericRequest request) {
-        GenericResponse<PlayerPercentile> response = new GenericResponse<>();
+    public GenericResponse<PlayerPercentileDTO> getPlayerPercentiles(@RequestBody GenericRequest request) {
+        GenericResponse<PlayerPercentileDTO> response = new GenericResponse<>();
         try {
             response = operationGetPlayerPercentiles.ejecutar(request.getIndexId(), request.getSeason());
         } catch (Exception e) {
