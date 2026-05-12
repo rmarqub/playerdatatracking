@@ -10,7 +10,13 @@ public class FixtureContextualAnalysis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
+    @JoinColumn(
+            name = "fixture_id",
+            referencedColumnName = "id",
+            insertable = false,
+            updatable = false
+        )
     @Column(name = "fixture_id", nullable = false, unique = true)
     private Long fixtureId;
 

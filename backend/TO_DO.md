@@ -12,7 +12,7 @@
 - Diseño de logica de usuario.
 - Pagina de management general, que permita manejar ligas estudiadas.
 - Modulo de testing escalable y estable.
-- filtro de busqueda dejugadores por percentiles.
+- filtro de busqueda de jugadores por percentiles.
 
 
 
@@ -21,8 +21,8 @@
 - arreglar bug de muerte al cargar estadisticas y percentiles en el mismo workflow
 - Comprobar que la logica de percentiles para el front y percentiles para el modelo es correcta y está separada.
 - percentiles por posición, ajustable desde el front para mostrarlo de forma correcta
-- añadir en el front capacidad para mostrar percentiles de una liga concreta, actualmente bien almacenada en bbdd.
-- en comparativa de percentiles, añadir boton de percentiles por posicion y eliminar filtro por liga.
+- añadir en el front capacidad para mostrar percentiles de una liga concreta en /comparePlayers, actualmente bien almacenada en bbdd.
+- en comparativa de percentiles, añadir boton de percentiles por posicion.
 - arreglar bug al ocultar percentiles, no vuelve a cargarlos si le pido que los vuelva a mostrar.
 
 # MODELO

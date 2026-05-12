@@ -22,4 +22,7 @@ public interface FixtureContextualAnalysisRepository
 
     @Query("SELECT a FROM FixtureContextualAnalysis a WHERE a.baseHomeWin IS NOT NULL")
     List<FixtureContextualAnalysis> findAllWithBaseSnapshot();
+    
+    @Query(value = "SELECT a.* FROM fixture_contextual_analysis a INNER JOIN fixture f ON f.id = a.fixture_id WHERE f.status_short = 'NS' AND a.base_home_win IS NOT NULL", nativeQuery = true)
+    List<FixtureContextualAnalysis> findAllWithBaseSnapshotAndFixtureNotStarted();
 }

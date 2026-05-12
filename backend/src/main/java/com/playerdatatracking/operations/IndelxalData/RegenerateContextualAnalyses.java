@@ -22,7 +22,7 @@ public class RegenerateContextualAnalyses {
     private PredictApiClient predictApiClient;
 
     public GenericResponse<String> ejecutar() {
-        List<FixtureContextualAnalysis> analyses = analysisRepository.findAllWithBaseSnapshot();
+        List<FixtureContextualAnalysis> analyses = analysisRepository.findAllWithBaseSnapshotAndFixtureNotStarted();
 
         int updated = 0;
         int failed  = 0;
