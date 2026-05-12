@@ -16,8 +16,10 @@ import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.clients.PredictApiClient;
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.entities.indexaldata.ContextualWeightConfig;
 import com.playerdatatracking.entities.indexaldata.FixtureContextualAnalysis;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
+import com.playerdatatracking.repositories.indexaldata.ContextualWeightConfigRepository;
 import com.playerdatatracking.repositories.indexaldata.FixtureContextualAnalysisRepository;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.ContextualMatchPrediction;
@@ -27,20 +29,13 @@ import com.playerdatatracking.responses.MatchPrediction;
 @Component
 public class GetContextualMatchPrediction {
 
-    // ---- Phase 7a hardcoded weights (logit-space per 1-point deviation) ------
-    private static final double W_FORMA   = 0.12;
-    private static final double W_NEEDS   = 0.10;
-    private static final double W_DEF     = 0.07;
-    private static final double W_OFF     = 0.07;
-    private static final double W_FATIGUE = 0.06; // applied inverted: high fatigue hurts
-    private static final double W_SET     = 0.06;
-    private static final double W_ATM     = 0.03;
-    // Weight per unavailable player: scaled by (avg_rating_pct - 50) / 100
-    private static final double W_UNAVAIL = 0.10;
 
     @Autowired
     private PredictApiClient predictApiClient;
 
+    @Autowired
+    private ContextualWeightConfigRepository weightConfigRepository;
+    
     @Autowired
     private FixtureContextualAnalysisRepository analysisRepository;
 
@@ -108,9 +103,16 @@ public class GetContextualMatchPrediction {
             result.setAdjConfidence(confidence(bH, bD, bA));
         } else {
             FixtureContextualAnalysis a = optAnalysis.get();
-            double delta = computeDelta(a)
-                    + computeUnavailableImpact(request.getId(),
-                            a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers());
+            
+            ContextualWeightConfig weights = getActiveWeights();
+            
+            double delta = computeDelta(a, weights)
+                    + computeUnavailableImpact(
+                            request.getId(),
+                            a.getHomeUnavailablePlayers(),
+                            a.getAwayUnavailablePlayers(),
+                            weights
+                    );
 
             double[] adj = applyBlend(bH, bD, bA, delta);
             result.setAnalysisFound(true);
@@ -134,23 +136,32 @@ public class GetContextualMatchPrediction {
     // 65 → above-average player: each absence contributes (65-50)/100 = 0.15 to their team's impact.
     private static final double DEFAULT_PLAYER_PCT = 65.0;
 
-    private double computeUnavailableImpact(Long fixtureId, String homeCsv, String awayCsv) {
+    private double computeUnavailableImpact(
+            Long fixtureId,
+            String homeCsv,
+            String awayCsv,
+            ContextualWeightConfig weights
+    ) {
         List<Long> homeIds = parseCsvIds(homeCsv);
         List<Long> awayIds = parseCsvIds(awayCsv);
-        if (homeIds.isEmpty() && awayIds.isEmpty()) return 0.0;
 
-        // Best-effort: enrich with actual percentiles; fall back to DEFAULT_PLAYER_PCT
+        if (homeIds.isEmpty() && awayIds.isEmpty()) {
+            return 0.0;
+        }
+
         Map<Long, Double> pcts = tryQueryPercentiles(fixtureId, homeIds, awayIds);
 
         double homeImpact = homeIds.stream()
                 .mapToDouble(id -> (pcts.getOrDefault(id, DEFAULT_PLAYER_PCT) - 50.0) / 100.0)
                 .sum();
+
         double awayImpact = awayIds.stream()
                 .mapToDouble(id -> (pcts.getOrDefault(id, DEFAULT_PLAYER_PCT) - 50.0) / 100.0)
                 .sum();
 
-        // Positive delta → favors home; away missing stars → positive, home missing stars → negative
-        return W_UNAVAIL * (awayImpact - homeImpact);
+        double wUnavail = safe(weights.getWUnavail(), 0.10);
+
+        return wUnavail * (awayImpact - homeImpact);
     }
 
     private Map<Long, Double> tryQueryPercentiles(Long fixtureId, List<Long> homeIds, List<Long> awayIds) {
@@ -218,16 +229,31 @@ public class GetContextualMatchPrediction {
 
     // ---- Blend logic ---------------------------------------------------------
 
-    private double computeDelta(FixtureContextualAnalysis a) {
-        return W_FORMA   * diff(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
-             + W_NEEDS   * diff(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
-             + W_DEF     * diff(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
-             + W_OFF     * diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
-             + W_FATIGUE * diff(a.getAwayFatigue(),           a.getHomeFatigue())   // inverted
-             + W_SET     * diff(a.getHomeSetPieces(),         a.getAwaySetPieces())
-             + W_ATM     * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
-    }
+    private double computeDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
+        return safe(w.getWForma(), 0.12)
+                * diff(a.getHomeCurrentForm(), a.getAwayCurrentForm())
 
+             + safe(w.getWNeeds(), 0.10)
+                * diff(a.getHomeTeamNeeds(), a.getAwayTeamNeeds())
+
+             + safe(w.getWDef(), 0.07)
+                * diff(a.getHomeDefensiveBlock(), a.getAwayDefensiveBlock())
+
+             + safe(w.getWOff(), 0.07)
+                * diff(a.getHomeOffensiveRhythm(), a.getAwayOffensiveRhythm())
+
+             + safe(w.getWFatigue(), 0.06)
+                * diff(a.getAwayFatigue(), a.getHomeFatigue())
+
+             + safe(w.getWSetPieces(), 0.06)
+                * diff(a.getHomeSetPieces(), a.getAwaySetPieces())
+
+             + safe(w.getWAtm(), 0.03)
+                * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+    }
+    private double safe(Double value, double defaultValue) {
+        return value != null ? value : defaultValue;
+    }
     private double diff(Integer home, Integer away) {
         return (home != null ? home : 3) - (away != null ? away : 3);
     }
@@ -261,5 +287,25 @@ public class GetContextualMatchPrediction {
         double[] s = {h, d, a};
         java.util.Arrays.sort(s);
         return s[2] - s[1];
+    }
+    
+    private ContextualWeightConfig getActiveWeights() {
+        return weightConfigRepository.findTopByOrderByIdDesc()
+                .orElseGet(this::getDefaultWeights);
+    }
+    
+    private ContextualWeightConfig getDefaultWeights() {
+        ContextualWeightConfig cfg = new ContextualWeightConfig();
+
+        cfg.setWForma(0.12);
+        cfg.setWNeeds(0.10);
+        cfg.setWDef(0.07);
+        cfg.setWOff(0.07);
+        cfg.setWFatigue(0.06);
+        cfg.setWSetPieces(0.06);
+        cfg.setWAtm(0.03);
+        cfg.setWUnavail(0.10);
+
+        return cfg;
     }
 }

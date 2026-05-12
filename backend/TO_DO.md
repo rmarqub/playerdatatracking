@@ -26,7 +26,7 @@
 - arreglar bug al ocultar percentiles, no vuelve a cargarlos si le pido que los vuelva a mostrar.
 
 # MODELO
-- al regenerar el analisis contextual segun la aplicacion del modelo base hay que revisar dos cosas: 1o, que actualice unicamente los analisis contextuales de partidos que estén por jugar. 2o,
+- Aparentemente se regenera el analisis a partir del modelo basico sin tener en cuenta lo contextual, este flujo habria que revisarlo para matizarlo mejor.
 
 
   3. Más regularización para O/U y BTTS — después de fijar el leakage, si el gap persiste:
