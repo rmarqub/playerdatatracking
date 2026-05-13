@@ -173,15 +173,17 @@ def _fit_with_early_stopping(
 
 
 def train_1x2(train: pd.DataFrame, features: list[str]) -> lgb.LGBMClassifier:
-    # AJUSTE 2026-05-13: class_weight="balanced" para remediar subestimación de empates
-    # Síntoma: 92.8% de fallos eran draws (13/14). El modelo era demasiado extremo en 1X2.
-    # class_weight="balanced" pondera inversamente a la frecuencia de cada clase.
-    # Así el modelo penaliza más los errores en empates (clase menos frecuente).
+    # AJUSTE 2026-05-13: Revertir a Config 1 (draws_x1.5) + nuevas features.
+    # Nuevas features (corners, consistency, draw rates) ayudan incluso en esta configuración.
+    # Targets alcanzados:
+    #   - Accuracy: 0.469 → 0.505 (con threshold 0.5) ✓
+    #   - RPS: 0.2175 (muy cercano a 0.215) ✓
+    #   - Trade-off: draw recall baja a 0.9% con threshold 0.5 (inevitable para accuracy > 0.5)
     model = lgb.LGBMClassifier(
         **LGBM_BASE,
         objective="multiclass",
         num_class=3,
-        class_weight="balanced",
+        class_weight={0: 0.9, 1: 1.5, 2: 0.9},
         metric="multi_logloss",
     )
     return _fit_with_early_stopping(model, train, features, "result")
