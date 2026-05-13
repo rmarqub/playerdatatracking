@@ -109,13 +109,13 @@ def encode_categoricals(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
 LGBM_BASE = {
     "n_estimators":      3000,
     "learning_rate":     0.02,    # más lento → early stopping para en iteraciones más informativas
-    "num_leaves":        50,      # algo más de capacidad con ~100 features
-    "min_child_samples": 20,      # menos restrictivo → captura patrones más finos
+    "num_leaves":        35,      # ↓ reducido de 50 para evitar overfitting extremo en 1X2
+    "min_child_samples": 30,      # ↑ aumentado de 20 para hojas menos específicas (reduce sesgo H/A)
     "subsample":         0.8,
     "subsample_freq":    1,
-    "colsample_bytree":  0.70,
-    "reg_alpha":         0.2,
-    "reg_lambda":        0.4,
+    "colsample_bytree":  0.60,    # ↓ reducido de 0.70 para menos features por árbol (más conservador)
+    "reg_alpha":         0.5,     # ↑ aumentado de 0.2 para L1 regularization (reduce complejidad)
+    "reg_lambda":        0.8,     # ↑ aumentado de 0.4 para L2 regularization (reduce extremos)
     "random_state":      42,
     "n_jobs":            -1,
     "verbose":           -1,
@@ -173,11 +173,15 @@ def _fit_with_early_stopping(
 
 
 def train_1x2(train: pd.DataFrame, features: list[str]) -> lgb.LGBMClassifier:
+    # AJUSTE 2026-05-13: class_weight="balanced" para remediar subestimación de empates
+    # Síntoma: 92.8% de fallos eran draws (13/14). El modelo era demasiado extremo en 1X2.
+    # class_weight="balanced" pondera inversamente a la frecuencia de cada clase.
+    # Así el modelo penaliza más los errores en empates (clase menos frecuente).
     model = lgb.LGBMClassifier(
         **LGBM_BASE,
         objective="multiclass",
         num_class=3,
-        class_weight=None,  # sin boost: diagnóstico Brier mostró que el boost 1.8 sobreestima draws
+        class_weight="balanced",
         metric="multi_logloss",
     )
     return _fit_with_early_stopping(model, train, features, "result")
@@ -276,6 +280,20 @@ def _print_confusion(y_true, y_pred):
         row   = [sum((y_true == i) & (y_pred == j)) for j in range(3)]
         total = sum(y_true == i)
         print(f"    {lbl:>8} " + "  ".join(f"{v:>7}" for v in row) + f"   ({total} total)")
+
+    # DIAGNÓSTICO ESPECÍFICO: Análisis de empates (clase 1)
+    draws_real = sum(y_true == 1)
+    draws_pred = sum(y_pred == 1)
+    draws_correct = sum((y_true == 1) & (y_pred == 1))
+    if draws_real > 0:
+        draw_recall = draws_correct / draws_real
+        print(f"\n    📊 ANÁLISIS DE EMPATES (clase 1):")
+        print(f"       Empates reales:     {draws_real}")
+        print(f"       Empates predichos:  {draws_pred}")
+        print(f"       Empates acertados:  {draws_correct}")
+        print(f"       Recall (recall=correct/real): {draw_recall:.1%}")
+        if draw_recall < 0.4:
+            print(f"       ⚠️  CRÍTICO: Modelo subestima empates. Considera incrementar class_weight.")
 
 
 def print_top_features(model: lgb.LGBMClassifier, features: list[str], n: int = 15) -> None:

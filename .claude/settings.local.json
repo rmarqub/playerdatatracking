@@ -31,7 +31,11 @@
       "Bash(start *)",
       "Bash(taskkill /PID 24112 /F)",
       "PowerShell(Stop-Process *)",
-      "PowerShell(Get-Process *)"
+      "PowerShell(Get-Process *)",
+      "Bash(python -m py_compile feature_engineering.py)",
+      "Bash(python feature_engineering.py)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; python feature_engineering.py 2>&1 | Out-String)",
+      "PowerShell(Tee-Object *)"
     ]
   }
 }

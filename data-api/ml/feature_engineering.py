@@ -8,7 +8,12 @@ Genera un dataset de entrenamiento a partir de PostgreSQL con:
   - Estadísticas H2H de los últimos M enfrentamientos
   - Rolling stats de jugadores titulares por equipo (rating, goles, pases clave, acciones def.)
   - H2H de jugadores: rendimiento de los titulares en los últimos M enfrentamientos directos
+  - Percentiles temporales de jugadores (calculados al vuelo, sin leakage)
   - Variables objetivo: result (1X2), over25, btts, total_goals
+
+Nota: Los percentiles temporales se calculan directamente en memoria desde fixture_player_stats.
+Nota 2: La tabla player_season_percentiles existe para predicciones contextuales del backend
+        (GetContextualMatchPrediction.java), pero NO se usa en el entrenamiento del modelo.
 
 Uso:
     python feature_engineering.py
@@ -91,7 +96,8 @@ def load_team_stats(conn) -> pd.DataFrame:
             ts.yellow_cards,
             ts.red_cards,
             ts.expected_goals,
-            ts.goalkeeper_saves
+            ts.goalkeeper_saves,
+            ts.shots_inside_box
         FROM fixture_team_stats ts
         JOIN fixture f ON f.id = ts.fixture_id
         WHERE f.status_short = 'FT'
@@ -188,9 +194,22 @@ def build_team_history(fixtures: pd.DataFrame, team_stats: pd.DataFrame) -> pd.D
                 "passes_pct":    ts.get("passes_pct"),
                 "corner_kicks":  ts.get("corner_kicks"),
                 "saves":         ts.get("goalkeeper_saves"),
+                # Nuevas columnas para eficiencia y disciplina
+                "shots_inside_box": ts.get("shots_inside_box"),
+                "fouls":            ts.get("fouls"),
+                "yellow_cards":     ts.get("yellow_cards"),
+                "corners_against":  rival_ts.get("corner_kicks"),
             })
 
     df = pd.DataFrame(records)
+
+    # Ratios derivados — calculados vectorizados para evitar división en el bucle
+    shots_total_safe = df["shots_total"].replace(0, np.nan)
+    df["shooting_accuracy"]     = df["shots_on_goal"] / shots_total_safe
+    df["shots_inside_box_rate"] = df["shots_inside_box"] / shots_total_safe
+    df["corner_ratio"]          = df["corner_kicks"] / (df["corner_kicks"] + df["corners_against"] + 1e-6)
+    df["fouls_per_shot"]        = df["fouls"] / shots_total_safe
+
     df = df.sort_values(["team_id", "match_date"]).reset_index(drop=True)
     return df
 
@@ -353,6 +372,10 @@ ROLL_COLS = [
     "scored", "clean_sheet",
     "xg_for", "xg_against", "shots_on_goal", "shots_total",
     "possession", "passes_pct", "corner_kicks", "saves",
+    # Nuevas columnas — Eficiencia, disciplina, corners
+    "shooting_accuracy", "shots_inside_box_rate",
+    "corners_against", "corner_ratio",
+    "fouls_per_shot", "yellow_cards", "fouls",
 ]
 
 # Columnas usadas para EMA (subconjunto de ROLL_COLS — las más informativas para recencia)
@@ -451,6 +474,75 @@ def compute_season_form(fixtures: pd.DataFrame) -> pd.DataFrame:
 
         parts.append(grp[["fixture_id", "team_id", "season_ppg", "season_gfpg",
                            "season_gapg", "season_games"]])
+
+    return pd.concat(parts, ignore_index=True)
+
+
+# ---------------------------------------------------------------------------
+# Draw tendency features — propensión histórica a empates
+# ---------------------------------------------------------------------------
+
+def compute_season_draw_features(fixtures: pd.DataFrame) -> pd.DataFrame:
+    """
+    Para cada equipo en cada partido calcula, con datos PREVIOS de esa misma temporada:
+      - season_draw_rate: fracción de partidos que terminaron en empate
+
+    Señal clave para detectar equipos propensos a empatar. Usa shift(1) para evitar leakage.
+    """
+    records = []
+    for f in fixtures.itertuples(index=False):
+        for team_id, g_for, g_against in [
+            (f.home_team_id, f.goals_home, f.goals_away),
+            (f.away_team_id, f.goals_away, f.goals_home),
+        ]:
+            drew = 1 if g_for == g_against else 0
+            records.append({
+                "fixture_id": f.id,
+                "team_id":    team_id,
+                "season":     f.season,
+                "match_date": f.match_date,
+                "drew":       drew,
+            })
+
+    df = pd.DataFrame(records).sort_values(["team_id", "season", "match_date"])
+
+    parts = []
+    for (team_id, season), grp in df.groupby(["team_id", "season"], sort=False):
+        grp = grp.sort_values("match_date").copy()
+        s_drew = grp["drew"].shift(1)
+        games  = s_drew.notna().cumsum()
+
+        grp["season_draw_rate"] = s_drew.cumsum() / games.replace(0, np.nan)
+
+        parts.append(grp[["fixture_id", "team_id", "season_draw_rate"]])
+
+    return pd.concat(parts, ignore_index=True)
+
+
+# ---------------------------------------------------------------------------
+# Consistency features — predictabilidad de equipos (rolling std dev)
+# ---------------------------------------------------------------------------
+
+def compute_consistency_features(history: pd.DataFrame, n: int) -> pd.DataFrame:
+    """
+    Rolling std dev de goals_for y goals_against por equipo.
+    Alta varianza → equipo impredecible → señal para el clasificador.
+
+    Usa shift(1) igual que _rolling_mean() para evitar leakage.
+    Genera: roll_std_goals_for_lastN, roll_std_goals_against_lastN
+    """
+    parts = []
+    for team_id, grp in history.groupby("team_id", sort=False):
+        grp = grp.sort_values("match_date")
+        part = grp[["fixture_id", "team_id", "venue", "match_date"]].copy()
+
+        for col in ["goals_for", "goals_against"]:
+            shifted = grp[col].reset_index(drop=True).shift(1)
+            part[f"roll_std_{col}_last{n}"] = (
+                shifted.rolling(n, min_periods=2).std().values
+            )
+
+        parts.append(part)
 
     return pd.concat(parts, ignore_index=True)
 
@@ -677,7 +769,7 @@ def compute_h2h_player_features(
 
 
 # ---------------------------------------------------------------------------
-# Percentiles de jugadores por liga/temporada (Fase A)
+# Percentiles de jugadores por liga/temporada — Desde BD (sin recálculo)
 # ---------------------------------------------------------------------------
 
 def compute_player_season_percentiles_temporal(
@@ -686,13 +778,18 @@ def compute_player_season_percentiles_temporal(
     min_minutes: int = 90,
 ) -> pd.DataFrame:
     """
-    Percentiles temporales sin leakage.
+    Calcula percentiles temporales en memoria (sin leakage).
 
     Para cada fixture F en fecha D, calcula el rango percentil de cada jugador
-    usando SOLO partidos jugados antes de D en la misma liga+temporada.
+    usando SOLO partidos anteriores a D en la misma liga+temporada.
     Fixtures del mismo día usan el mismo snapshot (sus datos no están incluidos).
 
     Retorna: fixture_id, player_id, goals_p90_pct, kp_p90_pct, def_p90_pct, avg_rating_pct
+
+    NOTA: Revertido a cálculo en memoria (en lugar de SQL directo) porque:
+    - Versión anterior funcionaba sin problemas de memoria
+    - Tabla player_season_percentiles requiere espacio temporal excesivo en PostgreSQL
+    - Se mantiene player_season_percentiles SOLO para predicciones contextuales (backend)
     """
     if player_stats.empty:
         return pd.DataFrame()
@@ -713,7 +810,7 @@ def compute_player_season_percentiles_temporal(
     for (league_id, season), lg in ps.groupby(["league_id", "season"]):
         lg = lg.sort_values("match_date")
 
-        # Agrupar por fecha: todos los fixtures del mismo día usan el mismo snapshot
+        # Agrupar por fecha — todos los fixtures del mismo día usan el mismo snapshot
         date_groups = (
             lg[["fixture_id", "match_date"]]
             .drop_duplicates("fixture_id")
@@ -788,12 +885,11 @@ def compute_player_season_percentiles_temporal(
 
 def compute_lineup_percentile_features(
     player_stats: pd.DataFrame,
-    temporal_percentiles: pd.DataFrame,
-    fixtures: pd.DataFrame,
+    aligned_percentiles: pd.DataFrame,
 ) -> pd.DataFrame:
     """
     Para cada (fixture_id, team_id) agrega los percentiles temporales de los titulares.
-    Join sobre (fixture_id, player_id) — sin leakage por construcción.
+    Los percentiles vienen del cálculo temporal en memoria (sin leakage).
 
     Features:
       avg_starter_rating_pct  — percentil medio de rating de todos los titulares
@@ -802,11 +898,11 @@ def compute_lineup_percentile_features(
       avg_att_kp_pct          — percentil medio de pases clave de F+M
       avg_def_pct             — percentil medio defensivo de D+G
     """
-    if player_stats.empty or temporal_percentiles.empty:
+    if player_stats.empty or aligned_percentiles.empty:
         return pd.DataFrame()
 
     starters = player_stats[player_stats["substitute"] == False].copy()
-    starters = starters.merge(temporal_percentiles, on=["fixture_id", "player_id"], how="left")
+    starters = starters.merge(aligned_percentiles, on=["fixture_id", "player_id"], how="left")
 
     att  = starters[starters["position"].isin(["F", "M"])]
     def_ = starters[starters["position"].isin(["D", "G"])]
@@ -867,6 +963,8 @@ def assemble_dataset(
     ema: Optional[pd.DataFrame] = None,
     league_rates: Optional[pd.DataFrame] = None,
     lineup_pct: Optional[pd.DataFrame] = None,
+    draw_features: Optional[pd.DataFrame] = None,
+    consistency: Optional[pd.DataFrame] = None,
 ) -> pd.DataFrame:
     base = build_targets(fixtures)
 
@@ -923,6 +1021,34 @@ def assemble_dataset(
         .merge(home_sf,     on=["id", "home_team_id"], how="left")
         .merge(away_sf,     on=["id", "away_team_id"], how="left")
     )
+
+    # Draw tendency features — split home/away
+    if draw_features is not None and not draw_features.empty:
+        df_draw = _fid(draw_features)
+        home_draw = df_draw.copy().rename(columns={
+            "team_id": "home_team_id",
+            "season_draw_rate": "home_season_draw_rate",
+        })
+        away_draw = df_draw.copy().rename(columns={
+            "team_id": "away_team_id",
+            "season_draw_rate": "away_season_draw_rate",
+        })
+        df = df.merge(home_draw, on=["id", "home_team_id"], how="left")
+        df = df.merge(away_draw, on=["id", "away_team_id"], how="left")
+
+    # Consistency features — rolling std dev split home/away por venue
+    if consistency is not None and not consistency.empty:
+        home_cons = consistency[consistency["venue"] == "H"].drop(columns=["venue", "match_date"])
+        away_cons = consistency[consistency["venue"] == "A"].drop(columns=["venue", "match_date"])
+
+        home_cons = _fid(home_cons).rename(columns={"team_id": "home_team_id"})
+        home_cons = _suffix_roll_cols(home_cons, "home", exclude={"id", "home_team_id"})
+
+        away_cons = _fid(away_cons).rename(columns={"team_id": "away_team_id"})
+        away_cons = _suffix_roll_cols(away_cons, "away", exclude={"id", "away_team_id"})
+
+        df = df.merge(home_cons, on=["id", "home_team_id"], how="left")
+        df = df.merge(away_cons, on=["id", "away_team_id"], how="left")
 
     # Player rolling features — separar home/away a partir del fixture
     if player_rolling is not None and not player_rolling.empty:
@@ -1005,6 +1131,13 @@ def assemble_dataset(
         ppg_min = df[["home_season_ppg", "away_season_ppg"]].min(axis=1)
         df["ppg_balance"] = ppg_min / (ppg_max + 1e-6)
 
+    # Draw tendency index — cuán parecidas son las tasas de empate de los dos equipos
+    # Valores cercanos a 1 indican que ambos empatan con frecuencia similar → partido equilibrado
+    if "home_season_draw_rate" in df.columns and "away_season_draw_rate" in df.columns:
+        min_dr = df[["home_season_draw_rate", "away_season_draw_rate"]].min(axis=1)
+        max_dr = df[["home_season_draw_rate", "away_season_draw_rate"]].max(axis=1)
+        df["draw_tendency_index"] = min_dr / (max_dr + 1e-6)
+
     # Features diferenciales home-minus-away — team stats
     diff_pairs = [
         (f"home_roll_goals_for_last{n}",      f"away_roll_goals_for_last{n}",      "diff_goals_for"),
@@ -1018,6 +1151,14 @@ def assemble_dataset(
         ("home_season_ppg",                   "away_season_ppg",                   "diff_season_ppg"),
         ("home_season_gfpg",                  "away_season_gfpg",                  "diff_season_gfpg"),
         ("home_season_gapg",                  "away_season_gapg",                  "diff_season_gapg"),
+        # Nuevas diferenciales — corners, disciplina, eficiencia
+        (f"home_roll_corner_kicks_last{n}",          f"away_roll_corner_kicks_last{n}",          "diff_corners"),
+        (f"home_roll_corners_against_last{n}",       f"away_roll_corners_against_last{n}",       "diff_corners_against"),
+        (f"home_roll_corner_ratio_last{n}",          f"away_roll_corner_ratio_last{n}",          "corner_dominance_diff"),
+        (f"home_roll_yellow_cards_last{n}",          f"away_roll_yellow_cards_last{n}",          "diff_yellow_cards"),
+        (f"home_roll_fouls_per_shot_last{n}",        f"away_roll_fouls_per_shot_last{n}",        "diff_fouls_per_shot"),
+        (f"home_roll_shooting_accuracy_last{n}",     f"away_roll_shooting_accuracy_last{n}",     "diff_shooting_accuracy"),
+        (f"home_roll_shots_inside_box_rate_last{n}", f"away_roll_shots_inside_box_rate_last{n}", "diff_shots_inside_box_rate"),
     ]
     # Features diferenciales — player stats
     player_diff_pairs = [
@@ -1050,7 +1191,19 @@ def assemble_dataset(
         ("home_avg_starter_rating_pct",   "away_avg_starter_rating_pct",   "diff_starter_rating_pct"),
     ]
 
-    for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs + pct_diff_pairs:
+    # Features diferenciales — draw tendency y consistency
+    draw_cons_diff_pairs = []
+    if "home_season_draw_rate" in df.columns and "away_season_draw_rate" in df.columns:
+        draw_cons_diff_pairs.append(
+            ("home_season_draw_rate", "away_season_draw_rate", "draw_tendency_diff")
+        )
+    for col in ["goals_for", "goals_against"]:
+        h_col = f"home_roll_std_{col}_last{n}"
+        a_col = f"away_roll_std_{col}_last{n}"
+        if h_col in df.columns and a_col in df.columns:
+            draw_cons_diff_pairs.append((h_col, a_col, f"consistency_diff_{col}"))
+
+    for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs + pct_diff_pairs + draw_cons_diff_pairs:
         if col_h in df.columns and col_a in df.columns:
             df[name] = df[col_h] - df[col_a]
 
@@ -1061,7 +1214,8 @@ def assemble_dataset(
 # Diagnóstico de completitud
 # ---------------------------------------------------------------------------
 
-def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int) -> None:
+def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int,
+                      aligned_pct: pd.DataFrame = None) -> None:
     print(f"\n{'='*55}")
     print(f"  Fixtures FT totales:           {len(fixtures):>7}")
     print(f"  Filas en dataset entrenamiento: {len(dataset):>7}")
@@ -1073,6 +1227,17 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int) -> 
           f"2(A):{(dataset['result']==2).mean():.1%}")
     print(f"    over25  — {dataset['over25'].mean():.1%} positivos")
     print(f"    btts    — {dataset['btts'].mean():.1%} positivos")
+
+    # NUEVO: Cobertura de percentiles de jugadores
+    if aligned_pct is not None and not aligned_pct.empty:
+        pct_fixture_count = aligned_pct["fixture_id"].nunique()
+        pct_coverage = pct_fixture_count / len(fixtures) * 100
+        pct_player_count = len(aligned_pct)
+        print(f"\n  📊 Cobertura de percentiles de jugadores:")
+        print(f"    Fixtures con percentiles:  {pct_fixture_count:>7} / {len(fixtures)} ({pct_coverage:.1f}%)")
+        print(f"    Total (fixture, player):   {pct_player_count:>7} alineamientos")
+        if pct_coverage < 80:
+            print(f"    ⚠ Cobertura baja: algunos fixtures no tienen percentiles")
 
     print(f"\n  Completitud de features clave (nulos):")
     checks = {
@@ -1097,6 +1262,13 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int) -> 
         "home_top_attacker_goal_pct":                     "Top attacker percentile (home)",
         "home_avg_def_pct":                               "Def percentile (home)",
         "home_avg_starter_rating_pct":                    "Starter rating percentile (home)",
+        f"home_roll_shooting_accuracy_last{n}":          "Shooting accuracy (home)",
+        f"home_roll_corner_ratio_last{n}":               "Corner ratio (home)",
+        f"home_roll_corners_against_last{n}":            "Corners against (home)",
+        f"home_roll_yellow_cards_last{n}":               "Yellow cards (home)",
+        "home_season_draw_rate":                         "Draw rate (home)",
+        f"home_roll_std_goals_for_last{n}":              "Goals for std dev (home)",
+        f"home_roll_std_goals_against_last{n}":          "Goals against std dev (home)",
     }
     for col, label in checks.items():
         if col in dataset.columns:
@@ -1145,6 +1317,7 @@ def main():
     player_rolling = None
     player_h2h     = None
     lineup_pct     = None
+    aligned_pct    = None  # para diagnostics de cobertura de percentiles
 
     if not args.no_player_stats:
         print("Cargando estadísticas de jugadores...")
@@ -1152,6 +1325,15 @@ def main():
         print(f"  → {len(player_stats)} registros fixture_player_stats")
 
         if not player_stats.empty:
+            print("Calculando percentiles temporales de jugadores (sin leakage)...")
+            temporal_pct = compute_player_season_percentiles_temporal(player_stats, fixtures)
+            print(f"  → {len(temporal_pct)} snapshots fixture×jugador")
+            aligned_pct = temporal_pct
+        else:
+            aligned_pct = None
+
+        if not player_stats.empty and aligned_pct is not None and not aligned_pct.empty:
+
             print("Construyendo historial de jugadores por equipo...")
             player_history = build_team_player_history(player_stats, fixtures)
 
@@ -1161,14 +1343,13 @@ def main():
             print(f"Calculando H2H de jugadores last-{args.h2h}...")
             player_h2h = compute_h2h_player_features(player_stats, fixtures, args.h2h)
 
-            print("Calculando percentiles temporales de jugadores (sin leakage)...")
-            temporal_pct = compute_player_season_percentiles_temporal(player_stats, fixtures)
-            print(f"  → {len(temporal_pct)} snapshots fixture×jugador")
-
-            print("Calculando features de calidad de alineación (percentiles temporales)...")
-            lineup_pct = compute_lineup_percentile_features(player_stats, temporal_pct, fixtures)
+            print("Calculando features de calidad de alineación (percentiles calculados)...")
+            lineup_pct = compute_lineup_percentile_features(player_stats, aligned_pct)
         else:
-            print("  ⚠ Sin datos de jugadores — se omitirán esas features")
+            print("  ⚠ Sin percentiles temporales — se omitirán features de percentiles")
+            lineup_pct = None
+            player_rolling = None
+            player_h2h = None
     else:
         print("(Skipping player stats por --no-player-stats)")
 
@@ -1188,6 +1369,12 @@ def main():
     print("Calculando forma de temporada (season PPG/GPG)...")
     season_form = compute_season_form(fixtures)
 
+    print("Calculando draw tendency features (season draw rate)...")
+    draw_features = compute_season_draw_features(fixtures)
+
+    print(f"Calculando consistency features (rolling std, last-{args.lookback})...")
+    consistency = compute_consistency_features(history, args.lookback)
+
     print(f"Calculando EMA (span={args.lookback})...")
     ema = compute_ema_features(history, args.lookback)
 
@@ -1198,9 +1385,11 @@ def main():
     dataset = assemble_dataset(
         fixtures, rolling, rolling_venue, rest, h2h, season_form,
         args.lookback, player_rolling, player_h2h, ema, league_rates, lineup_pct,
+        draw_features=draw_features,
+        consistency=consistency,
     )
 
-    print_diagnostics(fixtures, dataset, args.lookback)
+    print_diagnostics(fixtures, dataset, args.lookback, aligned_pct)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     dataset.to_parquet(args.output, index=False)
