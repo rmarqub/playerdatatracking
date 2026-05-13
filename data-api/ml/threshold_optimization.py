@@ -17,12 +17,76 @@ import pickle
 import sys
 import warnings
 from pathlib import Path
+from typing import Optional
 
 import numpy as np
 import pandas as pd
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, log_loss
 
 warnings.filterwarnings("ignore", category=UserWarning)
+
+
+# ---------------------------------------------------------------------------
+# CalibratedLGBM — necesario para deserializar modelos guardados por train_model_v2/v3
+# ---------------------------------------------------------------------------
+
+def _softmax_from_probs(probs: np.ndarray, temperature: float) -> np.ndarray:
+    probs = np.clip(probs, 1e-12, 1.0)
+    logits = np.log(probs) / max(float(temperature), 1e-6)
+    logits = logits - logits.max(axis=1, keepdims=True)
+    exp = np.exp(logits)
+    return exp / exp.sum(axis=1, keepdims=True)
+
+
+def _sigmoid_from_probs(probs: np.ndarray, temperature: float) -> np.ndarray:
+    probs = np.clip(probs, 1e-12, 1 - 1e-12)
+    logits = np.log(probs / (1 - probs)) / max(float(temperature), 1e-6)
+    return 1.0 / (1.0 + np.exp(-logits))
+
+
+def _normalize_rows(probs: np.ndarray) -> np.ndarray:
+    probs = np.clip(probs, 1e-12, 1.0)
+    return probs / probs.sum(axis=1, keepdims=True)
+
+
+class CalibratedLGBM:
+    def __init__(self, model, task: str, temperature: float = 1.0,
+                 class_weight: Optional[dict] = None, positive_weight: Optional[float] = None):
+        self.model = model
+        self.task = task
+        self.temperature = float(temperature)
+        self.class_weight = class_weight or {}
+        self.positive_weight = positive_weight
+        self.best_iteration_ = getattr(model, "best_iteration_", None)
+        self.feature_importances_ = getattr(model, "feature_importances_", None)
+
+    def _prior_correct_multiclass(self, probs: np.ndarray) -> np.ndarray:
+        if not self.class_weight:
+            return _normalize_rows(probs)
+        weights = np.array([self.class_weight.get(i, 1.0) for i in range(probs.shape[1])], dtype=float)
+        return _normalize_rows(probs / np.clip(weights, 1e-12, None))
+
+    def _prior_correct_binary(self, p: np.ndarray) -> np.ndarray:
+        if not self.positive_weight or self.positive_weight <= 0:
+            return np.clip(p, 1e-12, 1 - 1e-12)
+        odds = p / np.clip(1 - p, 1e-12, None)
+        corrected_odds = odds / self.positive_weight
+        return corrected_odds / (1 + corrected_odds)
+
+    def predict_proba(self, X):
+        raw = self.model.predict_proba(X)
+        if self.task == "multiclass":
+            corrected = self._prior_correct_multiclass(raw)
+            return _softmax_from_probs(corrected, self.temperature)
+        p1 = self._prior_correct_binary(raw[:, 1])
+        p1 = _sigmoid_from_probs(p1, self.temperature)
+        return np.column_stack([1 - p1, p1])
+
+    def predict(self, X):
+        probs = self.predict_proba(X)
+        if self.task == "multiclass":
+            return np.argmax(probs, axis=1)
+        return (probs[:, 1] >= 0.5).astype(int)
 
 INPUT_FILE = Path(__file__).parent / "training_data.parquet"
 MODELS_DIR = Path(__file__).parent / "models"
@@ -136,10 +200,26 @@ def parse_args():
                    help="Ruta del modelo guardado")
     p.add_argument("--test-seasons", type=int, nargs="+", default=[2025])
     p.add_argument("--thresholds", type=float, nargs="+",
-                   default=[0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60],
+                   default=[0.18, 0.22, 0.25, 0.28, 0.30, 0.32, 0.35, 0.38, 0.40, 0.45, 0.50, 0.55, 0.60],
                    help="Thresholds de empate a probar")
+    p.add_argument("--objective", choices=["accuracy", "balanced", "draw_f1"], default="balanced",
+                   help="Criterio para elegir threshold. balanced penaliza destruir el empate.")
     return p.parse_args()
 
+
+
+def threshold_score(metrics: dict, objective: str) -> float:
+    """Score interno para elegir threshold sin mirar solo accuracy."""
+    if objective == "accuracy":
+        return metrics["accuracy"]
+    draw_f1 = metrics["metrics_by_class"]["Draw"]["f1"]
+    if objective == "draw_f1":
+        return draw_f1
+    # Balance: accuracy principal, pero evita soluciones que ignoran o sobrepredicen masivamente el empate.
+    local_f1 = metrics["metrics_by_class"]["Local"]["f1"]
+    away_f1 = metrics["metrics_by_class"]["Away"]["f1"]
+    macro_f1 = (local_f1 + draw_f1 + away_f1) / 3
+    return 0.65 * metrics["accuracy"] + 0.35 * macro_f1
 
 def main():
     args = parse_args()
@@ -152,11 +232,16 @@ def main():
     with open(args.model_path, "rb") as f:
         model_data = pickle.load(f)
     model = model_data["model"]
-    print(f"  ✓ Modelo cargado (config: {model_data.get('metadata', {}).get('config_name', 'desconocida')})")
+    metadata = model_data.get("metadata", {})
+    print(f"  ✓ Modelo cargado (config: {metadata.get('config_name', 'desconocida')})")
 
     print(f"\nCargando dataset: {args.input}")
     df = load_dataset(args.input)
-    features = [c for c in df.columns if c not in NON_FEATURES]
+    features = metadata.get("features") or [c for c in df.columns if c not in NON_FEATURES]
+    missing = [c for c in features if c not in df.columns]
+    if missing:
+        print(f"ERROR: el dataset no contiene {len(missing)} features usadas por el modelo. Ejemplo: {missing[:5]}")
+        sys.exit(1)
     print(f"  → {len(df)} partidos  |  {len(features)} features")
 
     train, test = time_split(df, args.test_seasons)
@@ -178,10 +263,11 @@ def main():
     print(f"\n{'='*90}")
     print(f"ANÁLISIS DE THRESHOLD PARA EMPATE")
     print(f"{'='*90}")
-    print(f"{'Threshold':<12} {'Accuracy':<12} {'RPS':<10} {'DrawRecall':<12} {'DrawCorr':<12} {'Precision D':<12}")
-    print("-" * 90)
+    print(f"{'Threshold':<12} {'Accuracy':<12} {'RPS':<10} {'DrawRecall':<12} {'DrawCorr':<12} {'Precision D':<12} {'Score':<10}")
+    print("-" * 100)
 
     results = {}
+    best_score = -1.0
     best_accuracy = 0.0
     best_threshold = 0.5
     best_metrics = None
@@ -197,20 +283,24 @@ def main():
         draws_correct = metrics["draws_correct"]
         precision_draw = metrics["metrics_by_class"]["Draw"]["precision"]
 
+        score = threshold_score(metrics, args.objective)
         marker = ""
-        if acc > best_accuracy:
+        if score > best_score:
+            best_score = score
             best_accuracy = acc
             best_threshold = threshold
             best_metrics = metrics
-            marker = " ← MEJOR ACCURACY"
+            marker = " ← MEJOR SCORE"
 
         print(f"{threshold:<12.2f} {acc:<12.3f} {rps:<10.4f} {draw_recall:<12.1%} "
-              f"{draws_correct:<12} {precision_draw:<12.1%}{marker}")
+              f"{draws_correct:<12} {precision_draw:<12.1%} {score:<10.4f}{marker}")
 
     # Detalle del mejor threshold
     print(f"\n{'='*90}")
     print(f"MEJOR THRESHOLD: {best_threshold:.2f}")
     print(f"{'='*90}")
+    print(f"  Objetivo usado:        {args.objective}")
+    print(f"  Score interno:         {best_score:.4f}")
     print(f"  Accuracy:              {best_metrics['accuracy']:.3f}")
     print(f"  RPS:                   {best_metrics['rps']:.4f}")
     print(f"  Draw Recall:           {best_metrics['draw_recall']:.1%}")
@@ -235,7 +325,7 @@ def main():
         print(f"✓ El threshold por defecto (0.5) es óptimo.")
     else:
         print(f"⚠ Cambiar threshold de empate a {best_threshold:.2f}")
-        print(f"  Esto mejorará accuracy a {best_metrics['accuracy']:.3f} (+{improvement:+.3f})")
+        print(f"  Esto deja accuracy en {best_metrics['accuracy']:.3f} ({improvement:+.3f} vs threshold 0.5)")
         print(f"\n  Para aplicar en train_model.py:")
         print(f"    def predict_with_threshold(probs, threshold={best_threshold}):")
         print(f"        # ... implementación ...")

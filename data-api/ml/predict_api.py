@@ -14,6 +14,7 @@ Uso:
 
 import pickle
 import re
+import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Any, Optional
@@ -21,11 +22,25 @@ from typing import Any, Optional
 import numpy as np
 import pandas as pd
 import psycopg2
-import compute_percentiles as _compute_pct
+import compute_season_percentiles as _compute_pct
 import compute_player_percentiles as _compute_pp
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from psycopg2.extras import RealDictCursor
 from pydantic import BaseModel
+from train_model import CalibratedLGBM
+
+
+class PatchedUnpickler(pickle.Unpickler):
+    def find_class(self, module: str, name: str):
+        if name == "CalibratedLGBM":
+            return CalibratedLGBM
+        return super().find_class(module, name)
+
+
+def _load_model(path: Path) -> dict:
+    """Carga modelo pickle con soporte para CalibratedLGBM."""
+    with open(path, "rb") as f:
+        return PatchedUnpickler(f).load()
 
 # ---------------------------------------------------------------------------
 # Config
@@ -86,8 +101,7 @@ async def lifespan(app: FastAPI):
         path = MODELS_DIR / f"{name}.pkl"
         if not path.exists():
             raise RuntimeError(f"Modelo no encontrado: {path}. Ejecuta train_model.py primero.")
-        with open(path, "rb") as f:
-            MODELS[name] = pickle.load(f)
+        MODELS[name] = _load_model(path)
     print(f"Modelos cargados: {list(MODELS)}")
     yield
 
