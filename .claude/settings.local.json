@@ -35,7 +35,21 @@
       "Bash(python -m py_compile feature_engineering.py)",
       "Bash(python feature_engineering.py)",
       "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; python feature_engineering.py 2>&1 | Out-String)",
-      "PowerShell(Tee-Object *)"
+      "PowerShell(Tee-Object *)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; python threshold_optimization.py --test-seasons 2025 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; python threshold_optimization.py --model-path models/lgbm_1x2_stacking.pkl --test-seasons 2025 --thresholds 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 2>&1)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python feature_engineering.py 2>&1 | Select-Object -First 100)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python train_model.py --test-seasons 2025 2>&1)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python threshold_optimization.py --thresholds 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 2>&1)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python train_model.py --test-seasons 2025 2>&1 | Select-Object -First 150)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python threshold_optimization.py --thresholds 0.25 0.30 0.35 0.40 0.45 0.50 0.55 2>&1)",
+      "PowerShell(cd \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\data-api\\\\ml\"; $env:PYTHONIOENCODING=\"utf-8\"; python train_model.py --test-seasons 2025 2>&1 | Select-Object -First 80)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: Option B Feature Engineering + draws_x1.5 baseline *)",
+      "Bash(awk '{print $9, \"\\(\" $5 \"\\)\"}')",
+      "Bash(git commit -m 'docs: Comprehensive ML Pipeline Documentation *)",
+      "Bash(git commit -m 'docs: Quick reference guide in Spanish \\(GUIA_RAPIDA.md\\) *)",
+      "Bash(git commit -m 'docs: Add comprehensive INDEX for ML Pipeline documentation *)"
     ]
   }
 }
