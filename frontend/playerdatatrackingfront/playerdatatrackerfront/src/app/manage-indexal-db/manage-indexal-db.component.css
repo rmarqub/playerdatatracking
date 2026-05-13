@@ -73,6 +73,16 @@
   background: #5a4bd1;
 }
 
+.manage-db-btn--small {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  background: #48bb78;
+}
+
+.manage-db-btn--small:hover:not(:disabled) {
+  background: #38a169;
+}
+
 .manage-db-result {
   margin-top: 0.75rem;
   font-size: 0.85rem;
@@ -157,13 +167,20 @@
   padding: 0.85rem 1rem;
 }
 
+.history-weights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
 .history-weights-title {
   display: block;
   font-size: 0.75rem;
   color: #718096;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.6rem;
 }
 
 .history-weights-grid {
@@ -288,3 +305,51 @@
 .badge--ok      { background: #1c3b2a; color: #68d391; }
 .badge--fail    { background: #3b1c1c; color: #fc8181; }
 .badge--neutral { background: #2d3748; color: #718096; }
+
+/* ── Pagination ────────────────────────────────────────────────────────── */
+
+.history-pagination-info {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-bottom: 0.75rem;
+  text-align: right;
+}
+
+.history-pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #2d3748;
+}
+
+.pagination-btn {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #2b6cb0;
+}
+
+.pagination-btn:disabled {
+  background: #4a5568;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagination-info {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  min-width: 120px;
+  text-align: center;
+}

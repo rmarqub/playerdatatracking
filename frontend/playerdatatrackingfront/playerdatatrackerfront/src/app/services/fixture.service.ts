@@ -547,4 +547,11 @@ export class FixtureService {
       catchError(() => of(null))
     );
   }
+
+  updateContextualDeltas(): Observable<{ ok: boolean; entity: string }> {
+    return this.http.post<GenericResponse<string>>(`${this.base}/updateContextualDeltas`, {}).pipe(
+      map(r => ({ ok: r.code === 0, entity: r.entity || r.description || '' })),
+      catchError(() => of({ ok: false, entity: 'Error de conexión con el servidor' }))
+    );
+  }
 }

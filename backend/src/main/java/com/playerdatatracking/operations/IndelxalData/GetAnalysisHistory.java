@@ -26,7 +26,6 @@ import com.playerdatatracking.responses.GenericResponse;
 @Component
 public class GetAnalysisHistory {
 
-    // Phase 7a hardcoded fallback weights
     private static final double W_FORMA   = 0.12;
     private static final double W_NEEDS   = 0.10;
     private static final double W_DEF     = 0.07;
@@ -36,37 +35,14 @@ public class GetAnalysisHistory {
     private static final double W_ATM     = 0.03;
     private static final double W_UNAVAIL = 0.10;
 
-    // Percentile assumed for players not in player_season_percentiles
     private static final double DEFAULT_PLAYER_PCT = 65.0;
 
-    // Statuses that mean the match is fully over and has a result
     private static final Set<String> FINISHED = Set.of("FT", "AET", "PEN", "AWD");
-
-    private static final int    MIN_SAMPLES  = 10;
-    private static final int    MAX_ITER     = 500;
-    private static final double LEARN_RATE   = 0.005;
-    private static final double L2_LAMBDA    = 0.1;
 
     @Autowired private FixtureContextualAnalysisRepository analysisRepository;
     @Autowired private FixtureRepository                   fixtureRepository;
     @Autowired private ContextualWeightConfigRepository    weightConfigRepository;
 
-    // ── Inner types ────────────────────────────────────────────────────────────
-
-    private static class CalibResult {
-        final boolean updated;
-        final String  message;
-        CalibResult(boolean updated, String message) { this.updated = updated; this.message = message; }
-    }
-
-    private static class TrainRow {
-        final double[] deltas; // length 8: 7 contextual + 1 unavailable signal
-        final double   logH, logD, logA;
-        final int      label;  // 0=home_win 1=draw 2=away_win
-        TrainRow(double[] deltas, double logH, double logD, double logA, int label) {
-            this.deltas = deltas; this.logH = logH; this.logD = logD; this.logA = logA; this.label = label;
-        }
-    }
 
     // ── Main entry point ───────────────────────────────────────────────────────
 
@@ -87,15 +63,12 @@ public class GetAnalysisHistory {
                 .filter(f -> FINISHED.contains(f.getStatusShort()))
                 .collect(Collectors.toMap(Fixture::getId, f -> f));
 
-        // 3 ── Run Java-native calibration
-        CalibResult calib = calibrateInJava(withSnapshot, fixtureMap);
+        // 3 ── Load current weights (no calibration)
+        Optional<ContextualWeightConfig> currentOpt = weightConfigRepository.findTopByOrderByIdDesc();
+        double[] weights = resolveWeights(currentOpt);
+        ContextualWeightsSnapshot snap = toSnapshot(currentOpt, weights);
 
-        // 4 ── Load weights AFTER calibration
-        Optional<ContextualWeightConfig> afterOpt = weightConfigRepository.findTopByOrderByIdDesc();
-        double[] weights = resolveWeights(afterOpt);
-        ContextualWeightsSnapshot snap = toSnapshot(afterOpt, weights);
-
-        // 5 ── Compute per-match metrics
+        // 4 ── Compute per-match metrics
         List<AnalysisMatchResult> results = new ArrayList<>();
         int correct = 0, incorrect = 0;
         double sumBrier = 0, sumLogLoss = 0;
@@ -168,7 +141,7 @@ public class GetAnalysisHistory {
             return b2.compareTo(a2);
         });
 
-        // 6 ── Assemble response
+        // 5 ── Assemble response
         AnalysisHistoryData data = new AnalysisHistoryData();
         data.setTotalAnalysed((int) totalAnalysed);
         data.setProcessedAnalyses(processed);
@@ -177,9 +150,9 @@ public class GetAnalysisHistory {
         data.setAccuracyRate(round(accuracy));
         data.setAvgBrierScore(round(avgBrier));
         data.setAvgLogLoss(round(avgLogLoss));
-        data.setCalibrationRun(calib.updated || calib.message.startsWith("Calibración"));
-        data.setWeightsUpdated(calib.updated);
-        data.setCalibrationMessage(calib.message);
+        data.setCalibrationRun(false);
+        data.setWeightsUpdated(false);
+        data.setCalibrationMessage("Sin calibración ejecutada");
         data.setCurrentWeights(snap);
         data.setMatchResults(results);
 
@@ -189,105 +162,6 @@ public class GetAnalysisHistory {
         return response;
     }
 
-    // ── Java-native calibration ────────────────────────────────────────────────
-
-    private CalibResult calibrateInJava(List<FixtureContextualAnalysis> withSnapshot,
-                                        Map<Long, Fixture> fixtureMap) {
-        // Build training rows from finished matches with base snapshot
-        List<TrainRow> rows = new ArrayList<>();
-        for (FixtureContextualAnalysis a : withSnapshot) {
-            Fixture f = fixtureMap.get(a.getFixtureId());
-            if (f == null) continue;
-            if (f.getGoalsHome() == null || f.getGoalsAway() == null) continue;
-            if (a.getBaseHomeWin() == null || a.getBaseDraw() == null || a.getBaseAwayWin() == null) continue;
-
-            double[] deltas = new double[]{
-                diff(a.getHomeCurrentForm(),       a.getAwayCurrentForm()),
-                diff(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds()),
-                diff(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock()),
-                diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm()),
-                diff(a.getAwayFatigue(),           a.getHomeFatigue()),
-                diff(a.getHomeSetPieces(),         a.getAwaySetPieces()),
-                diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere()),
-                unavailableSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers())
-            };
-
-            double bH = clamp(a.getBaseHomeWin());
-            double bD = clamp(a.getBaseDraw());
-            double bA = clamp(a.getBaseAwayWin());
-
-            int gh = f.getGoalsHome(), ga = f.getGoalsAway();
-            int label = gh > ga ? 0 : ga > gh ? 2 : 1;
-
-            rows.add(new TrainRow(deltas, Math.log(bH), Math.log(bD), Math.log(bA), label));
-        }
-
-        int n = rows.size();
-        if (n < MIN_SAMPLES) {
-            return new CalibResult(false,
-                "Calibración omitida: se necesitan al menos " + MIN_SAMPLES + " partidos completados con snapshot (hay " + n + ").");
-        }
-
-        // Gradient descent — weights start at current fallback values
-        double[] w = new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL};
-
-        for (int iter = 0; iter < MAX_ITER; iter++) {
-            double[] grad = new double[8];
-
-            for (TrainRow row : rows) {
-                // net delta = w · deltas
-                double delta = 0;
-                for (int i = 0; i < 8; i++) delta += w[i] * row.deltas[i];
-
-                double[] logits = new double[]{row.logH + delta, row.logD, row.logA - delta};
-                double[] probs  = softmax(logits);
-
-                // dL/d_delta = (p_H - I_H) - (p_A - I_A)
-                double iH = row.label == 0 ? 1.0 : 0.0;
-                double iA = row.label == 2 ? 1.0 : 0.0;
-                double dLdDelta = (probs[0] - iH) - (probs[2] - iA);
-
-                for (int i = 0; i < 8; i++) {
-                    grad[i] += dLdDelta * row.deltas[i];
-                }
-            }
-
-            for (int i = 0; i < 8; i++) {
-                grad[i] = grad[i] / n + L2_LAMBDA * w[i];  // L2 regularization
-                w[i] -= LEARN_RATE * grad[i];
-            }
-        }
-
-        // Save to DB
-        String[] names = {"w_forma","w_needs","w_def","w_off","w_fatigue","w_set_pieces","w_atm","w_unavail"};
-        ContextualWeightConfig cfg = new ContextualWeightConfig();
-        cfg.setWForma(    round4(w[0]));
-        cfg.setWNeeds(    round4(w[1]));
-        cfg.setWDef(      round4(w[2]));
-        cfg.setWOff(      round4(w[3]));
-        cfg.setWFatigue(  round4(w[4]));
-        cfg.setWSetPieces(round4(w[5]));
-        cfg.setWAtm(      round4(w[6]));
-        cfg.setWUnavail(  round4(w[7]));
-        cfg.setCalibrationDate(LocalDate.now());
-        cfg.setNSamples(n);
-        cfg.setNotes("Calibración Java nativa - " + LocalDate.now() + " - " + n + " muestras");
-        weightConfigRepository.save(cfg);
-
-        StringBuilder sb = new StringBuilder("Calibración completada (" + n + " muestras):");
-        for (int i = 0; i < 8; i++) sb.append(" ").append(names[i]).append("=").append(round4(w[i]));
-        return new CalibResult(true, sb.toString());
-    }
-
-    private double[] softmax(double[] logits) {
-        double maxL = logits[0];
-        for (double v : logits) if (v > maxL) maxL = v;
-        double sum = 0;
-        double[] out = new double[logits.length];
-        for (int i = 0; i < logits.length; i++) { out[i] = Math.exp(logits[i] - maxL); sum += out[i]; }
-        for (int i = 0; i < out.length; i++) out[i] /= sum;
-        return out;
-    }
 
     // ── Weights ────────────────────────────────────────────────────────────────
 

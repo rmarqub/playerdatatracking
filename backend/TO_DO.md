@@ -26,7 +26,7 @@
 - arreglar bug al ocultar percentiles, no vuelve a cargarlos si le pido que los vuelva a mostrar.
 
 # MODELO
-- Aparentemente se regenera el analisis a partir del modelo basico sin tener en cuenta lo contextual, este flujo habria que revisarlo para matizarlo mejor.
+- Aparentemente se regenera el analisis a partir del modelo basico sin tener en cuenta lo contextual, hay que preguntarle a Claude para que lo revise.
 
 
   3. Más regularización para O/U y BTTS — después de fijar el leakage, si el gap persiste:

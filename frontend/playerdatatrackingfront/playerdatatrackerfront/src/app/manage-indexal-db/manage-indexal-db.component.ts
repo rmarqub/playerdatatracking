@@ -17,6 +17,15 @@ export class ManageIndexalDbComponent {
   historyData: AnalysisHistoryData | null = null;
   historyLoaded = false;
 
+  updatingDeltas = false;
+  deltasUpdateMessage: string | null = null;
+  deltasUpdateError = false;
+  deltasUpdated = false;
+
+  currentPage = 1;
+  itemsPerPage = 20;
+  Math = Math;
+
   constructor(private fixtureService: FixtureService) {}
 
   regenerateAnalyses(): void {
@@ -42,6 +51,8 @@ export class ManageIndexalDbComponent {
     this.historyLoading = true;
     this.historyError = null;
     this.historyData = null;
+    this.deltasUpdated = false;
+    this.currentPage = 1;
     this.fixtureService.getAnalysisHistory().subscribe({
       next: (data) => {
         this.historyLoading = false;
@@ -58,6 +69,50 @@ export class ManageIndexalDbComponent {
         this.historyError = 'Error de conexión con el servidor.';
       }
     });
+  }
+
+  updateContextualDeltas(): void {
+    this.updatingDeltas = true;
+    this.deltasUpdateMessage = null;
+    this.deltasUpdateError = false;
+    this.deltasUpdated = false;
+
+    this.fixtureService.updateContextualDeltas().subscribe({
+      next: (result) => {
+        this.updatingDeltas = false;
+        this.deltasUpdated = true;
+        this.deltasUpdateMessage = result.entity || 'Deltas actualizadas correctamente';
+        this.deltasUpdateError = !result.ok;
+        if (!this.deltasUpdateError) {
+          this.loadAnalysisHistory();
+        }
+      },
+      error: () => {
+        this.updatingDeltas = false;
+        this.deltasUpdated = true;
+        this.deltasUpdateError = true;
+        this.deltasUpdateMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  getPaginatedResults() {
+    if (!this.historyData?.matchResults) return [];
+    const start = (this.currentPage - 1) * this.itemsPerPage;
+    const end = start + this.itemsPerPage;
+    return this.historyData.matchResults.slice(start, end);
+  }
+
+  getTotalPages(): number {
+    if (!this.historyData?.matchResults) return 0;
+    return Math.ceil(this.historyData.matchResults.length / this.itemsPerPage);
+  }
+
+  goToPage(page: number): void {
+    const totalPages = this.getTotalPages();
+    if (page >= 1 && page <= totalPages) {
+      this.currentPage = page;
+    }
   }
 
   pct(v: number | null | undefined): string {
