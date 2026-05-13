@@ -4,7 +4,7 @@ import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.Torneo;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
-import com.playerdatatracking.operations.IndelxalData.GetStudiedLeagues;
+import com.playerdatatracking.operations.IndelxalData.indexal.GetStudiedLeagues;
 import com.playerdatatracking.responses.GenericResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

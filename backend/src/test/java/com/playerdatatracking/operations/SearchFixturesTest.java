@@ -5,7 +5,7 @@ import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
-import com.playerdatatracking.operations.IndelxalData.SearchFixtures;
+import com.playerdatatracking.operations.IndelxalData.indexal.SearchFixtures;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
 import org.junit.jupiter.api.Test;

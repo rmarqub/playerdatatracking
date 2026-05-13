@@ -4,7 +4,7 @@ import com.playerdatatracking.clients.PlayerDataClient;
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.Fixture;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
-import com.playerdatatracking.operations.IndelxalData.GetLiveFixtures;
+import com.playerdatatracking.operations.IndelxalData.fixture.GetLiveFixtures;
 import com.playerdatatracking.responses.GenericResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

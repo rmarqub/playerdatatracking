@@ -4,7 +4,6 @@
 - YAML de operaciones de postman.
 - Esquemas de flujos y diseño de arquitectura y clases.
 - Actualización del git para mostrar que la fase 2 ha sido terminada.
-- Mejorar filtros de busqueda para que busque por nombre + apellidos + nombre completo.
 - Realizar peticiones de postman con un logado necesario para limpiar el corsConfig de endpoint que deberian estar protegidos.
 - Generar documentación y hacer un TFG sobre esto.
 

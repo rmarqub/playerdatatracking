@@ -24,7 +24,8 @@
       "Bash(psql *)",
       "Bash(sqlcmd -S localhost -U postgres -d playerdata)",
       "Bash(python -m py_compile compute_percentiles.py)",
-      "Bash(xargs grep -l \"player_percentiles\\\\|player_season_percentiles\")"
+      "Bash(xargs grep -l \"player_percentiles\\\\|player_season_percentiles\")",
+      "Bash(Select-Object -Property FullName)"
     ]
   }
 }
