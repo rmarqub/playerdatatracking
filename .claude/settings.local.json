@@ -25,7 +25,13 @@
       "Bash(sqlcmd -S localhost -U postgres -d playerdata)",
       "Bash(python -m py_compile compute_percentiles.py)",
       "Bash(xargs grep -l \"player_percentiles\\\\|player_season_percentiles\")",
-      "Bash(Select-Object -Property FullName)"
+      "Bash(Select-Object -Property FullName)",
+      "Bash(npm start *)",
+      "Bash(npx ng *)",
+      "Bash(start *)",
+      "Bash(taskkill /PID 24112 /F)",
+      "PowerShell(Stop-Process *)",
+      "PowerShell(Get-Process *)"
     ]
   }
 }

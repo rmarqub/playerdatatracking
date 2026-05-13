@@ -1,7 +1,8 @@
 
-import { Component, OnInit, OnDestroy, AfterViewChecked, ChangeDetectorRef, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewChecked, ChangeDetectorRef, ChangeDetectionStrategy, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Subscription, Subject } from 'rxjs';
+import { takeUntil, switchMap } from 'rxjs/operators';
 import { PlayerService } from '../services/player-service.service';
 import { PlayerStatsService, PlayerPercentile } from '../services/player-stats.service';
 import { PlayerMatchRow } from '../entitites/player-stats';
@@ -32,13 +33,15 @@ type BasicKey =
 @Component({
   selector: 'app-index-player',
   templateUrl: './index-player.component.html',
-  styleUrls: ['./index-player.component.css']
+  styleUrls: ['./index-player.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked {
   player: any = null;
   isFavorite = false;
   basicStats: PlayerMatchRow[] | null = null;
   private sub?: Subscription;
+  private destroy$ = new Subject<void>();
   photoSrc = 'assets/images/standard-pic.jpg';
   showBasicStats = false;
   loadingBasic = false;
@@ -52,6 +55,10 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
     'interceptions', 'duelsWon', 'duelsTotal', 'foulsDrawn', 'foulsComm',
     'tacklesTotal', 'yc', 'rc'
   ]);
+
+  // ── Load triggers ────────────────────────────────────────────────
+  private loadBasicStats$ = new Subject<number>();
+  private loadPercentiles$ = new Subject<number>();
 
   // ── Percentile panel ────────────────────────────────────────────
   @ViewChild('radarCanvas') radarCanvasRef?: ElementRef<HTMLCanvasElement>;
@@ -88,6 +95,50 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
         error: err => console.error('Error obteniendo jugador:', err)
       });
     });
+
+    this.loadBasicStats$
+      .pipe(
+        switchMap(indexId => this.statsService.getBasicStats(indexId)),
+        takeUntil(this.destroy$)
+      )
+      .subscribe({
+        next: rows => {
+          this.basicStats = rows;
+          this.showBasicStats = true;
+          this.loadingBasic = false;
+          this.cdr.markForCheck();
+        },
+        error: () => {
+          this.errorBasic = 'No se pudo cargar la data básica.';
+          this.loadingBasic = false;
+          this.cdr.markForCheck();
+        }
+      });
+
+    this.loadPercentiles$
+      .pipe(
+        switchMap(indexId => this.statsService.getPlayerPercentiles(indexId)),
+        takeUntil(this.destroy$)
+      )
+      .subscribe({
+        next: rows => {
+          this.allPercentiles = rows;
+          const seasons = [...new Set(rows.map(r => r.season))].sort((a, b) => b.localeCompare(a));
+          this.availableSeasons = seasons;
+          this.selectedPercentileSeason = seasons[0] ?? '';
+          this.percentileScope = 'global';
+          this.refreshAvailablePercentileLeagues();
+          this.percentileLoading = false;
+          this.showPercentilePanel = true;
+          this.needsChartInit = true;
+          this.cdr.markForCheck();
+        },
+        error: () => {
+          this.percentileError = 'No se pudieron cargar los percentiles.';
+          this.percentileLoading = false;
+          this.cdr.markForCheck();
+        }
+      });
   }
 
   ngAfterViewChecked(): void {
@@ -99,6 +150,10 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
 
   ngOnDestroy(): void {
     this.sub?.unsubscribe();
+    this.destroy$.next();
+    this.destroy$.complete();
+    this.loadBasicStats$.complete();
+    this.loadPercentiles$.complete();
     this.radarChart?.destroy();
   }
 
@@ -108,41 +163,36 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
     if (!this.player?.indexId) { this.errorBasic = 'No se encontró el index_id del jugador.'; return; }
     this.loadingBasic = true;
     this.errorBasic = null;
-    this.statsService.getBasicStats(this.player.indexId).subscribe({
-      next: rows => { this.basicStats = rows; this.showBasicStats = true; this.loadingBasic = false; },
-      error: () => { this.errorBasic = 'No se pudo cargar la data básica.'; this.loadingBasic = false; }
-    });
+    this.loadBasicStats$.next(this.player.indexId);
   }
 
   // ── Percentile panel ─────────────────────────────────────────────
 
   onLoadPercentiles(): void {
     if (!this.player?.indexId) { this.percentileError = 'No se encontró el index_id del jugador.'; return; }
-    if (this.showPercentilePanel) { this.showPercentilePanel = false; return; }
+
+    if (this.showPercentilePanel) {
+      this.showPercentilePanel = false;
+      this.cdr.markForCheck();
+      return;
+    }
+
+    if (this.allPercentiles.length > 0) {
+      this.showPercentilePanel = true;
+      this.needsChartInit = true;
+      this.cdr.markForCheck();
+      return;
+    }
 
     this.percentileLoading = true;
     this.percentileError = null;
-    this.statsService.getPlayerPercentiles(this.player.indexId).subscribe({
-      next: rows => {
-        this.allPercentiles = rows;
-
-        const seasons = [...new Set(rows.map(r => r.season))].sort((a, b) => b.localeCompare(a));
-        this.availableSeasons = seasons;
-        this.selectedPercentileSeason = seasons[0] ?? '';
-        this.percentileScope = 'global';
-        this.refreshAvailablePercentileLeagues();
-        this.percentileLoading = false;
-        this.showPercentilePanel = true;
-        this.needsChartInit = true;
-      },
-      error: () => {
-        this.percentileError = 'No se pudieron cargar los percentiles.';
-        this.percentileLoading = false;
-      }
-    });
+    this.loadPercentiles$.next(this.player.indexId);
   }
 
-  onPercentileSeasonChange(): void { this.renderChart(); }
+  onPercentileSeasonChange(): void {
+    this.renderChart();
+    this.cdr.markForCheck();
+  }
 
   onPercentileScopeChange(scope: 'global' | 'league'): void {
     this.percentileScope = scope;
@@ -152,6 +202,7 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
       }
 
     this.renderChart();
+    this.cdr.markForCheck();
   }
 
   goToCompare(): void {
@@ -212,6 +263,11 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
       this.radarChart?.destroy();
       this.radarChart = null;
       return;
+    }
+
+    if (this.radarChart && (this.radarChart as any).canvas !== canvas) {
+      this.radarChart.destroy();
+      this.radarChart = null;
     }
 
     const values = this.extractValues(row);
@@ -380,5 +436,6 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
 
   onPercentileLeagueChange(): void {
     this.renderChart();
+    this.cdr.markForCheck();
   }
 }
