@@ -103,20 +103,23 @@ public class GetContextualMatchPrediction {
             result.setAdjConfidence(confidence(bH, bD, bA));
         } else {
             FixtureContextualAnalysis a = optAnalysis.get();
-            
-            ContextualWeightConfig weights = getActiveWeights();
-            
-            double delta = computeDelta(a, weights)
-                    + computeUnavailableImpact(
-                            request.getId(),
-                            a.getHomeUnavailablePlayers(),
-                            a.getAwayUnavailablePlayers(),
-                            weights
-                    );
 
-            double[] adj = applyBlend(bH, bD, bA, delta);
+            ContextualWeightConfig weights = getActiveWeights();
+
+            // HA delta: shifts logit(home) up and logit(away) down (or vice versa)
+            double[] unavailImpacts = computeUnavailableImpacts(
+                    request.getId(),
+                    a.getHomeUnavailablePlayers(),
+                    a.getAwayUnavailablePlayers(),
+                    weights);
+            double deltaHA = computeHaDelta(a, weights) + unavailImpacts[0];
+
+            // Draw delta: shifts logit(draw) independently
+            double deltaD = computeDrawDelta(a, weights) + unavailImpacts[1];
+
+            double[] adj = applyBlend(bH, bD, bA, deltaHA, deltaD);
             result.setAnalysisFound(true);
-            result.setNetDelta(delta);
+            result.setNetDelta(deltaHA);     // netDelta still refers to HA axis
             result.setAdjHomeWin(adj[0]);
             result.setAdjDraw(adj[1]);
             result.setAdjAwayWin(adj[2]);
@@ -136,7 +139,12 @@ public class GetContextualMatchPrediction {
     // 65 → above-average player: each absence contributes (65-50)/100 = 0.15 to their team's impact.
     private static final double DEFAULT_PLAYER_PCT = 65.0;
 
-    private double computeUnavailableImpact(
+    /**
+     * Returns [haImpact, drawImpact].
+     * haImpact   = wUnavail  * (awayImpact − homeImpact)   — HA axis (as before)
+     * drawImpact = wUnavailD * (awayImpact + homeImpact)   — Draw axis (total absences)
+     */
+    private double[] computeUnavailableImpacts(
             Long fixtureId,
             String homeCsv,
             String awayCsv,
@@ -146,7 +154,7 @@ public class GetContextualMatchPrediction {
         List<Long> awayIds = parseCsvIds(awayCsv);
 
         if (homeIds.isEmpty() && awayIds.isEmpty()) {
-            return 0.0;
+            return new double[]{0.0, 0.0};
         }
 
         Map<Long, Double> pcts = tryQueryPercentiles(fixtureId, homeIds, awayIds);
@@ -159,9 +167,10 @@ public class GetContextualMatchPrediction {
                 .mapToDouble(id -> (pcts.getOrDefault(id, DEFAULT_PLAYER_PCT) - 50.0) / 100.0)
                 .sum();
 
-        double wUnavail = safe(weights.getWUnavail(), 0.10);
+        double haImpact   = safe(weights.getWUnavail(),  0.10) * (awayImpact - homeImpact);
+        double drawImpact = safe(weights.getWUnavailD(), 0.0)  * (awayImpact + homeImpact);
 
-        return wUnavail * (awayImpact - homeImpact);
+        return new double[]{haImpact, drawImpact};
     }
 
     private Map<Long, Double> tryQueryPercentiles(Long fixtureId, List<Long> homeIds, List<Long> awayIds) {
@@ -229,43 +238,58 @@ public class GetContextualMatchPrediction {
 
     // ---- Blend logic ---------------------------------------------------------
 
-    private double computeDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
-        return safe(w.getWForma(), 0.12)
-                * diff(a.getHomeCurrentForm(), a.getAwayCurrentForm())
-
-             + safe(w.getWNeeds(), 0.10)
-                * diff(a.getHomeTeamNeeds(), a.getAwayTeamNeeds())
-
-             + safe(w.getWDef(), 0.07)
-                * diff(a.getHomeDefensiveBlock(), a.getAwayDefensiveBlock())
-
-             + safe(w.getWOff(), 0.07)
-                * diff(a.getHomeOffensiveRhythm(), a.getAwayOffensiveRhythm())
-
-             + safe(w.getWFatigue(), 0.06)
-                * diff(a.getAwayFatigue(), a.getHomeFatigue())
-
-             + safe(w.getWSetPieces(), 0.06)
-                * diff(a.getHomeSetPieces(), a.getAwaySetPieces())
-
-             + safe(w.getWAtm(), 0.03)
-                * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+    /** HA delta: shifts mass between home and away. */
+    private double computeHaDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
+        return safe(w.getWForma(),    0.12) * diff(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
+             + safe(w.getWNeeds(),    0.10) * diff(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
+             + safe(w.getWDef(),      0.07) * diff(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
+             + safe(w.getWOff(),      0.07) * diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
+             + safe(w.getWFatigue(),  0.06) * diff(a.getAwayFatigue(),           a.getHomeFatigue())
+             + safe(w.getWSetPieces(),0.06) * diff(a.getHomeSetPieces(),         a.getAwaySetPieces())
+             + safe(w.getWAtm(),      0.03) * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
     }
+
+    /** Draw delta: shifts logit(draw) independently of the HA balance. */
+    private double computeDrawDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
+        return safe(w.getWFormaD(),     0.0) * drawAvg(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
+             + safe(w.getWNeedsD(),     0.0) * drawAvg(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
+             + safe(w.getWDefD(),       0.0) * drawAvg(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
+             + safe(w.getWOffD(),       0.0) * drawAvg(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
+             + safe(w.getWFatigueD(),   0.0) * drawAvg(a.getHomeFatigue(),           a.getAwayFatigue())
+             + safe(w.getWSetPiecesD(), 0.0) * drawAvg(a.getHomeSetPieces(),         a.getAwaySetPieces())
+             + safe(w.getWAtmD(),       0.0) * drawAvg(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+        // wUnavailD contribution is handled by computeUnavailableImpacts()
+    }
+
     private double safe(Double value, double defaultValue) {
         return value != null ? value : defaultValue;
     }
+
     private double diff(Integer home, Integer away) {
-        return (home != null ? home : 3) - (away != null ? away : 3);
+        return nvl(home) - nvl(away);
     }
 
-    private double[] applyBlend(double bH, double bD, double bA, double delta) {
+    /** Centered average: (avg − 3), range [−2, +2]. */
+    private double drawAvg(Integer home, Integer away) {
+        return (nvl(home) + nvl(away)) / 2.0 - 3.0;
+    }
+
+    private double nvl(Integer v) { return v != null ? v : 3.0; }
+
+    /**
+     * 2D blend:
+     *   logit(home) += deltaHA
+     *   logit(draw) += deltaD     ← now independently adjusted
+     *   logit(away) -= deltaHA
+     */
+    private double[] applyBlend(double bH, double bD, double bA, double deltaHA, double deltaD) {
         bH = Math.max(0.001, Math.min(0.999, bH));
         bD = Math.max(0.001, Math.min(0.999, bD));
         bA = Math.max(0.001, Math.min(0.999, bA));
 
-        double logH = Math.log(bH) + delta;
-        double logD = Math.log(bD);          // draw not shifted by team asymmetry
-        double logA = Math.log(bA) - delta;
+        double logH = Math.log(bH) + deltaHA;
+        double logD = Math.log(bD) + deltaD;
+        double logA = Math.log(bA) - deltaHA;
 
         double maxLog = Math.max(logH, Math.max(logD, logA));
         double sumExp = Math.exp(logH - maxLog) + Math.exp(logD - maxLog) + Math.exp(logA - maxLog);
@@ -297,14 +321,13 @@ public class GetContextualMatchPrediction {
     private ContextualWeightConfig getDefaultWeights() {
         ContextualWeightConfig cfg = new ContextualWeightConfig();
 
-        cfg.setWForma(0.12);
-        cfg.setWNeeds(0.10);
-        cfg.setWDef(0.07);
-        cfg.setWOff(0.07);
-        cfg.setWFatigue(0.06);
-        cfg.setWSetPieces(0.06);
-        cfg.setWAtm(0.03);
-        cfg.setWUnavail(0.10);
+        cfg.setWForma(0.12);    cfg.setWNeeds(0.10);    cfg.setWDef(0.07);
+        cfg.setWOff(0.07);      cfg.setWFatigue(0.06);  cfg.setWSetPieces(0.06);
+        cfg.setWAtm(0.03);      cfg.setWUnavail(0.10);
+
+        cfg.setWFormaD(0.0);    cfg.setWNeedsD(0.0);    cfg.setWDefD(0.0);
+        cfg.setWOffD(0.0);      cfg.setWFatigueD(0.0);  cfg.setWSetPiecesD(0.0);
+        cfg.setWAtmD(0.0);      cfg.setWUnavailD(0.0);
 
         return cfg;
     }

@@ -334,6 +334,7 @@ export interface ApiFixtureItem {
 }
 
 export interface ContextualWeightsSnapshot {
+  // Home-Away asymmetry weights
   wForma: number | null;
   wNeeds: number | null;
   wDef: number | null;
@@ -342,6 +343,15 @@ export interface ContextualWeightsSnapshot {
   wSetPieces: number | null;
   wAtm: number | null;
   wUnavail: number | null;
+  // Draw-affinity weights
+  wFormaD: number | null;
+  wNeedsD: number | null;
+  wDefD: number | null;
+  wOffD: number | null;
+  wFatigueD: number | null;
+  wSetPiecesD: number | null;
+  wAtmD: number | null;
+  wUnavailD: number | null;
   calibrationDate: string | null;
   nSamples: number | null;
   notes: string | null;

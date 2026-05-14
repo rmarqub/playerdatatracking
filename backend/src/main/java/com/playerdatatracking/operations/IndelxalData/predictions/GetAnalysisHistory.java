@@ -84,8 +84,10 @@ public class GetAnalysisHistory {
             double bD = clamp(a.getBaseDraw());
             double bA = clamp(a.getBaseAwayWin());
 
-            double delta    = computeDelta(a, weights);
-            double[] adj    = applyBlend(bH, bD, bA, delta);
+            double deltaHA  = computeHaDelta(a, weights);
+            double deltaD   = computeDrawDelta(a, weights);
+            double[] adj    = applyBlend(bH, bD, bA, deltaHA, deltaD);
+            double delta    = deltaHA;
             String adjPred  = classify(adj[0], adj[1], adj[2]);
             String basePred = classify(bH, bD, bA);
 
@@ -165,24 +167,35 @@ public class GetAnalysisHistory {
 
     // ── Weights ────────────────────────────────────────────────────────────────
 
+    /** Returns [wHA[8], wD[8]] as a flat array of 16 values. */
     private double[] resolveWeights(Optional<ContextualWeightConfig> opt) {
         return opt.map(w -> new double[]{
-            nvl(w.getWForma(),    W_FORMA),
-            nvl(w.getWNeeds(),    W_NEEDS),
-            nvl(w.getWDef(),      W_DEF),
-            nvl(w.getWOff(),      W_OFF),
-            nvl(w.getWFatigue(),  W_FATIGUE),
-            nvl(w.getWSetPieces(),W_SET),
-            nvl(w.getWAtm(),      W_ATM),
-            nvl(w.getWUnavail(),  W_UNAVAIL)
-        }).orElse(new double[]{W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL});
+            // HA axis [0-7]
+            nvl(w.getWForma(),     W_FORMA),   nvl(w.getWNeeds(),    W_NEEDS),
+            nvl(w.getWDef(),       W_DEF),     nvl(w.getWOff(),      W_OFF),
+            nvl(w.getWFatigue(),   W_FATIGUE), nvl(w.getWSetPieces(),W_SET),
+            nvl(w.getWAtm(),       W_ATM),     nvl(w.getWUnavail(),  W_UNAVAIL),
+            // Draw axis [8-15]
+            nvl(w.getWFormaD(),    0.0),       nvl(w.getWNeedsD(),   0.0),
+            nvl(w.getWDefD(),      0.0),       nvl(w.getWOffD(),     0.0),
+            nvl(w.getWFatigueD(),  0.0),       nvl(w.getWSetPiecesD(),0.0),
+            nvl(w.getWAtmD(),      0.0),       nvl(w.getWUnavailD(), 0.0)
+        }).orElse(new double[]{
+            W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+        });
     }
 
     private ContextualWeightsSnapshot toSnapshot(Optional<ContextualWeightConfig> opt, double[] w) {
         ContextualWeightsSnapshot s = new ContextualWeightsSnapshot();
-        s.setWForma(w[0]);    s.setWNeeds(w[1]);    s.setWDef(w[2]);
-        s.setWOff(w[3]);      s.setWFatigue(w[4]);  s.setWSetPieces(w[5]);
-        s.setWAtm(w[6]);      s.setWUnavail(w[7]);
+        // HA
+        s.setWForma(w[0]);     s.setWNeeds(w[1]);     s.setWDef(w[2]);
+        s.setWOff(w[3]);       s.setWFatigue(w[4]);   s.setWSetPieces(w[5]);
+        s.setWAtm(w[6]);       s.setWUnavail(w[7]);
+        // Draw
+        s.setWFormaD(w[8]);    s.setWNeedsD(w[9]);    s.setWDefD(w[10]);
+        s.setWOffD(w[11]);     s.setWFatigueD(w[12]); s.setWSetPiecesD(w[13]);
+        s.setWAtmD(w[14]);     s.setWUnavailD(w[15]);
         s.setFromDb(opt.isPresent());
         opt.ifPresent(cfg -> {
             s.setCalibrationDate(cfg.getCalibrationDate() != null ? cfg.getCalibrationDate().toString() : null);
@@ -194,7 +207,8 @@ public class GetAnalysisHistory {
 
     // ── Blend logic (mirrors GetContextualMatchPrediction) ─────────────────────
 
-    private double computeDelta(FixtureContextualAnalysis a, double[] w) {
+    /** w is a 16-element flat array: [wHA(0-7), wD(8-15)]. */
+    private double computeHaDelta(FixtureContextualAnalysis a, double[] w) {
         return w[0] * diff(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
              + w[1] * diff(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
              + w[2] * diff(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
@@ -202,22 +216,39 @@ public class GetAnalysisHistory {
              + w[4] * diff(a.getAwayFatigue(),           a.getHomeFatigue())
              + w[5] * diff(a.getHomeSetPieces(),         a.getAwaySetPieces())
              + w[6] * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere())
-             + w[7] * unavailableSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers());
+             + w[7] * unavailHaSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers());
+    }
+
+    private double computeDrawDelta(FixtureContextualAnalysis a, double[] w) {
+        return w[8]  * drawAvg(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
+             + w[9]  * drawAvg(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
+             + w[10] * drawAvg(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
+             + w[11] * drawAvg(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
+             + w[12] * drawAvg(a.getHomeFatigue(),           a.getAwayFatigue())
+             + w[13] * drawAvg(a.getHomeSetPieces(),         a.getAwaySetPieces())
+             + w[14] * drawAvg(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere())
+             + w[15] * unavailDrawSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers());
     }
 
     private double diff(Integer home, Integer away) {
-        return (home != null ? home : 3) - (away != null ? away : 3);
+        return nvlInt(home) - nvlInt(away);
     }
+
+    private double drawAvg(Integer home, Integer away) {
+        return (nvlInt(home) + nvlInt(away)) / 2.0 - 3.0;
+    }
+
+    private double nvlInt(Integer v) { return v != null ? v : 3.0; }
 
     private double clamp(Float p) {
         if (p == null) return 0.334;
         return Math.max(0.001, Math.min(0.999, p));
     }
 
-    private double[] applyBlend(double bH, double bD, double bA, double delta) {
-        double logH = Math.log(bH) + delta;
-        double logD = Math.log(bD);
-        double logA = Math.log(bA) - delta;
+    private double[] applyBlend(double bH, double bD, double bA, double deltaHA, double deltaD) {
+        double logH = Math.log(bH) + deltaHA;
+        double logD = Math.log(bD) + deltaD;
+        double logA = Math.log(bA) - deltaHA;
         double maxLog = Math.max(logH, Math.max(logD, logA));
         double sum = Math.exp(logH - maxLog) + Math.exp(logD - maxLog) + Math.exp(logA - maxLog);
         return new double[]{
@@ -255,25 +286,30 @@ public class GetAnalysisHistory {
         return                                -Math.log(Math.max(pA, eps));
     }
 
-    // ── Unavailable signal (mirrors GetContextualMatchPrediction) ──────────────
+    // ── Unavailable signals (mirrors UpdateContextualDeltas feature engineering) ─
 
-    // Signal = Σ(pct_away - 50)/100  −  Σ(pct_home - 50)/100
-    // Uses DEFAULT_PLAYER_PCT (65) for all players; no DB lookup needed at calibration time.
-    private double unavailableSignal(String homeCsv, String awayCsv) {
-        int homeCount = parseCsvIds(homeCsv).size();
-        int awayCount = parseCsvIds(awayCsv).size();
+    private double unavailHaSignal(String homeCsv, String awayCsv) {
+        int homeCount = countIds(homeCsv);
+        int awayCount = countIds(awayCsv);
         if (homeCount == 0 && awayCount == 0) return 0.0;
-        double unitImpact = (DEFAULT_PLAYER_PCT - 50.0) / 100.0;
-        return (awayCount - homeCount) * unitImpact;
+        double unit = (DEFAULT_PLAYER_PCT - 50.0) / 100.0;
+        return (awayCount - homeCount) * unit;
     }
 
-    private List<Long> parseCsvIds(String csv) {
-        if (csv == null || csv.isBlank()) return List.of();
-        List<Long> ids = new ArrayList<>();
+    private double unavailDrawSignal(String homeCsv, String awayCsv) {
+        int total = countIds(homeCsv) + countIds(awayCsv);
+        if (total == 0) return 0.0;
+        double unit = (DEFAULT_PLAYER_PCT - 50.0) / 100.0;
+        return total * unit;
+    }
+
+    private int countIds(String csv) {
+        if (csv == null || csv.isBlank()) return 0;
+        int count = 0;
         for (String s : csv.split(",")) {
-            try { ids.add(Long.parseLong(s.trim())); } catch (NumberFormatException ignored) {}
+            try { Long.parseLong(s.trim()); count++; } catch (NumberFormatException ignored) {}
         }
-        return ids;
+        return count;
     }
 
     // ── Helpers ────────────────────────────────────────────────────────────────
