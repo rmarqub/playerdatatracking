@@ -1,5 +1,14 @@
 import { Component } from '@angular/core';
+import { lastValueFrom } from 'rxjs';
 import { FixtureService, AnalysisHistoryData } from '../services/fixture.service';
+
+type StepStatus = 'pending' | 'running' | 'ok' | 'error';
+
+interface FixtureStep {
+  label: string;
+  status: StepStatus;
+  message: string | null;
+}
 
 @Component({
   selector: 'app-manage-indexal-db',
@@ -8,15 +17,88 @@ import { FixtureService, AnalysisHistoryData } from '../services/fixture.service
 })
 export class ManageIndexalDbComponent {
 
+  sectionsOpen: { [key: string]: boolean } = {
+    countries: false,
+    leagues: false,
+    clubs: false,
+    players: false,
+    fixtures: false,
+    predictions: false
+  };
+
+  // Countries - getCountries
+  countriesLoading = false;
+  countriesUpdate = false;
+  countriesMessage: string | null = null;
+  countriesError = false;
+
+  // Countries - updateCountries
+  updateCountriesLoading = false;
+  updateCountriesMessage: string | null = null;
+  updateCountriesError = false;
+
+  // Leagues - getLeagues
+  leaguesLoading = false;
+  leaguesUpdate = false;
+  leaguesMessage: string | null = null;
+  leaguesError = false;
+
+  // Leagues - updateLeagues
+  updateLeaguesLoading = false;
+  updateLeaguesMessage: string | null = null;
+  updateLeaguesError = false;
+
+  // Clubs - updateClubsInfo
+  clubsLoading = false;
+  clubsUpdate = false;
+  clubsRestUpdate = false;
+  clubsMessage: string | null = null;
+  clubsError = false;
+
+  // Players - ingestión secuencial
+  playerSeason = '2024';
+  playerThreads = 3;
+  playerPurge = false;
+  playerRunning = false;
+  playerSteps: FixtureStep[] = this.buildPlayerSteps();
+
+  private buildPlayerSteps(): FixtureStep[] {
+    return [
+      { label: 'Actualizar jugadores',      status: 'pending', message: null },
+      { label: 'Actualizar por plantillas', status: 'pending', message: null },
+      { label: 'Actualizar transferidos',   status: 'pending', message: null },
+      { label: 'Ingerir datos brutos',      status: 'pending', message: null },
+    ];
+  }
+
+  // Fixtures - ingestión secuencial
+  fixturePurge = false;
+  fixtureSeason = '2024';
+  fixtureRunning = false;
+  fixtureSteps: FixtureStep[] = this.buildFixtureSteps();
+
+  private buildFixtureSteps(): FixtureStep[] {
+    return [
+      { label: 'Ingest Fixtures',      status: 'pending', message: null },
+      { label: 'Ingest Events',        status: 'pending', message: null },
+      { label: 'Ingest Player Stats',  status: 'pending', message: null },
+      { label: 'Ingest Team Stats',    status: 'pending', message: null },
+      { label: 'Ingest Lineup',        status: 'pending', message: null },
+    ];
+  }
+
+  // Predictions - regenerar análisis
   regenerating = false;
   regenerateMessage: string | null = null;
   regenerateError = false;
 
+  // Predictions - historial
   historyLoading = false;
   historyError: string | null = null;
   historyData: AnalysisHistoryData | null = null;
   historyLoaded = false;
 
+  // Predictions - deltas
   updatingDeltas = false;
   deltasUpdateMessage: string | null = null;
   deltasUpdateError = false;
@@ -28,11 +110,161 @@ export class ManageIndexalDbComponent {
 
   constructor(private fixtureService: FixtureService) {}
 
+  toggleSection(section: string): void {
+    this.sectionsOpen[section] = !this.sectionsOpen[section];
+  }
+
+  fetchCountries(): void {
+    this.countriesLoading = true;
+    this.countriesMessage = null;
+    this.countriesError = false;
+    this.fixtureService.getCountries(this.countriesUpdate).subscribe({
+      next: (result) => {
+        this.countriesLoading = false;
+        this.countriesMessage = result.description;
+        this.countriesError = !result.ok;
+      },
+      error: () => {
+        this.countriesLoading = false;
+        this.countriesError = true;
+        this.countriesMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  updateCountriesDb(): void {
+    this.updateCountriesLoading = true;
+    this.updateCountriesMessage = null;
+    this.updateCountriesError = false;
+    this.fixtureService.updateCountriesFromJson().subscribe({
+      next: (result) => {
+        this.updateCountriesLoading = false;
+        this.updateCountriesMessage = result.description;
+        this.updateCountriesError = !result.ok;
+      },
+      error: () => {
+        this.updateCountriesLoading = false;
+        this.updateCountriesError = true;
+        this.updateCountriesMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  fetchLeagues(): void {
+    this.leaguesLoading = true;
+    this.leaguesMessage = null;
+    this.leaguesError = false;
+    this.fixtureService.getLeagues(this.leaguesUpdate).subscribe({
+      next: (result) => {
+        this.leaguesLoading = false;
+        this.leaguesMessage = result.description;
+        this.leaguesError = !result.ok;
+      },
+      error: () => {
+        this.leaguesLoading = false;
+        this.leaguesError = true;
+        this.leaguesMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  updateLeaguesDb(): void {
+    this.updateLeaguesLoading = true;
+    this.updateLeaguesMessage = null;
+    this.updateLeaguesError = false;
+    this.fixtureService.updateLeagues().subscribe({
+      next: (result) => {
+        this.updateLeaguesLoading = false;
+        this.updateLeaguesMessage = result.description;
+        this.updateLeaguesError = !result.ok;
+      },
+      error: () => {
+        this.updateLeaguesLoading = false;
+        this.updateLeaguesError = true;
+        this.updateLeaguesMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  updateClubsInfo(): void {
+    this.clubsLoading = true;
+    this.clubsMessage = null;
+    this.clubsError = false;
+    this.fixtureService.updateClubsInfo(this.clubsUpdate, this.clubsRestUpdate).subscribe({
+      next: (result) => {
+        this.clubsLoading = false;
+        this.clubsMessage = result.description;
+        this.clubsError = !result.ok;
+      },
+      error: () => {
+        this.clubsLoading = false;
+        this.clubsError = true;
+        this.clubsMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  async runPlayerIngest(): Promise<void> {
+    this.playerRunning = true;
+    this.playerSteps = this.buildPlayerSteps();
+
+    const calls = [
+      () => this.fixtureService.updatePlayers(this.playerSeason),
+      () => this.fixtureService.updatePlayerBySquads(),
+      () => this.fixtureService.updateTransferedPlayers(),
+      () => this.fixtureService.ingestRawData(this.playerSeason, this.playerThreads, this.playerPurge),
+    ];
+
+    for (let i = 0; i < calls.length; i++) {
+      this.playerSteps[i].status = 'running';
+      try {
+        const result = await lastValueFrom(calls[i]());
+        this.playerSteps[i].status = result.ok ? 'ok' : 'error';
+        this.playerSteps[i].message = result.description;
+        if (!result.ok) break;
+      } catch {
+        this.playerSteps[i].status = 'error';
+        this.playerSteps[i].message = 'Error de conexión con el servidor';
+        break;
+      }
+    }
+
+    this.playerRunning = false;
+  }
+
+  async runFixtureIngest(): Promise<void> {
+    this.fixtureRunning = true;
+    this.fixtureSteps = this.buildFixtureSteps();
+
+    const calls = [
+      () => this.fixtureService.ingestFixtures(this.fixturePurge, this.fixtureSeason),
+      () => this.fixtureService.ingestFixtureEvents(this.fixturePurge, this.fixtureSeason),
+      () => this.fixtureService.ingestFixturePlayerStats(this.fixturePurge, this.fixtureSeason),
+      () => this.fixtureService.ingestFixtureTeamStats(this.fixturePurge, this.fixtureSeason),
+      () => this.fixtureService.ingestFixtureLineup(this.fixturePurge, this.fixtureSeason),
+    ];
+
+    for (let i = 0; i < calls.length; i++) {
+      this.fixtureSteps[i].status = 'running';
+      try {
+        const result = await lastValueFrom(calls[i]());
+        this.fixtureSteps[i].status = result.ok ? 'ok' : 'error';
+        this.fixtureSteps[i].message = result.description;
+        if (!result.ok) break;
+      } catch {
+        this.fixtureSteps[i].status = 'error';
+        this.fixtureSteps[i].message = 'Error de conexión con el servidor';
+        break;
+      }
+    }
+
+    this.fixtureRunning = false;
+  }
+
   regenerateAnalyses(): void {
     this.regenerating = true;
     this.regenerateMessage = null;
     this.regenerateError = false;
-
     this.fixtureService.regenerateContextualAnalyses().subscribe({
       next: (result) => {
         this.regenerating = false;
@@ -76,7 +308,6 @@ export class ManageIndexalDbComponent {
     this.deltasUpdateMessage = null;
     this.deltasUpdateError = false;
     this.deltasUpdated = false;
-
     this.fixtureService.updateContextualDeltas().subscribe({
       next: (result) => {
         this.updatingDeltas = false;

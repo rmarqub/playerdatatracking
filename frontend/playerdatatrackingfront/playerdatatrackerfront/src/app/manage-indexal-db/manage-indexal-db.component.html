@@ -1,187 +1,438 @@
 <div class="manage-db-container">
   <h2 class="manage-db-title">Gestión de base de datos</h2>
 
-  <!-- Regenerar análisis contextuales -->
-  <div class="manage-db-section">
-    <h3 class="manage-db-section-title">Modelo predictivo</h3>
-    <p class="manage-db-section-desc">
-      Recalcula las probabilidades base de todos los análisis contextuales almacenados usando la versión
-      actual del modelo. Ejecutar tras actualizar el modelo con <code>train_model.py</code>.
-    </p>
-    <button
-      class="manage-db-btn"
-      [disabled]="regenerating"
-      (click)="regenerateAnalyses()">
-      <span *ngIf="!regenerating">Regenerar análisis contextuales</span>
-      <span *ngIf="regenerating">Regenerando...</span>
+  <!-- ═══ COUNTRIES ═══════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('countries')">
+      <span class="accordion-label">Countries</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['countries']">▼</span>
     </button>
-    <p *ngIf="regenerateMessage"
-       class="manage-db-result"
-       [class.manage-db-result--ok]="!regenerateError"
-       [class.manage-db-result--error]="regenerateError">
-      {{ regenerateMessage }}
-    </p>
+    <div class="accordion-body" *ngIf="sectionsOpen['countries']">
+
+      <!-- Obtener países -->
+      <div class="operation-card">
+        <h4 class="operation-title">Obtener países</h4>
+        <p class="operation-desc">
+          Llama a la API de football para obtener la lista de países y la guarda como JSON.
+          Si "Guardar en BD" está activo, también persiste los datos en la base de datos.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="countriesUpdate" />
+            <span>Guardar en BD (update)</span>
+          </label>
+        </div>
+        <button class="manage-db-btn" [disabled]="countriesLoading" (click)="fetchCountries()">
+          <span *ngIf="!countriesLoading">Ejecutar</span>
+          <span *ngIf="countriesLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="countriesMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!countriesError"
+           [class.manage-db-result--error]="countriesError">
+          {{ countriesMessage }}
+        </p>
+      </div>
+
+      <!-- Actualizar países en BD -->
+      <div class="operation-card">
+        <h4 class="operation-title">Actualizar países en BD</h4>
+        <p class="operation-desc">
+          Procesa el JSON de países almacenado localmente y persiste los datos en la base de datos,
+          reemplazando los registros existentes.
+        </p>
+        <button class="manage-db-btn" [disabled]="updateCountriesLoading" (click)="updateCountriesDb()">
+          <span *ngIf="!updateCountriesLoading">Ejecutar</span>
+          <span *ngIf="updateCountriesLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="updateCountriesMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!updateCountriesError"
+           [class.manage-db-result--error]="updateCountriesError">
+          {{ updateCountriesMessage }}
+        </p>
+      </div>
+
+    </div>
   </div>
 
-  <!-- Historial de análisis -->
-  <div class="manage-db-section">
-    <h3 class="manage-db-section-title">Historial de análisis contextual</h3>
-    <p class="manage-db-section-desc">
-      Revisa los partidos con análisis almacenado y el estado actual de las ponderaciones del modelo contextual.
-      Si hay suficientes partidos finalizados (mínimo 10), se ejecuta la calibración automáticamente.
-    </p>
-    <button
-      class="manage-db-btn manage-db-btn--history"
-      [disabled]="historyLoading"
-      (click)="loadAnalysisHistory()">
-      <span *ngIf="!historyLoading">Revisar historial</span>
-      <span *ngIf="historyLoading">Cargando...</span>
+  <!-- ═══ LEAGUES ══════════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('leagues')">
+      <span class="accordion-label">Leagues</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['leagues']">▼</span>
     </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['leagues']">
 
-    <p *ngIf="historyError" class="manage-db-result manage-db-result--error">{{ historyError }}</p>
+      <!-- Obtener ligas -->
+      <div class="operation-card">
+        <h4 class="operation-title">Obtener ligas</h4>
+        <p class="operation-desc">
+          Llama a la API de football para obtener las ligas disponibles.
+          Si "Guardar en BD" está activo, también persiste los datos.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="leaguesUpdate" />
+            <span>Guardar en BD (update)</span>
+          </label>
+        </div>
+        <button class="manage-db-btn" [disabled]="leaguesLoading" (click)="fetchLeagues()">
+          <span *ngIf="!leaguesLoading">Ejecutar</span>
+          <span *ngIf="leaguesLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="leaguesMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!leaguesError"
+           [class.manage-db-result--error]="leaguesError">
+          {{ leaguesMessage }}
+        </p>
+      </div>
 
-    <ng-container *ngIf="historyData as h">
+      <!-- Actualizar ligas en BD -->
+      <div class="operation-card">
+        <h4 class="operation-title">Actualizar ligas en BD</h4>
+        <p class="operation-desc">
+          Procesa el JSON de ligas almacenado localmente y persiste los datos en la base de datos,
+          reemplazando los registros existentes.
+        </p>
+        <button class="manage-db-btn" [disabled]="updateLeaguesLoading" (click)="updateLeaguesDb()">
+          <span *ngIf="!updateLeaguesLoading">Ejecutar</span>
+          <span *ngIf="updateLeaguesLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="updateLeaguesMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!updateLeaguesError"
+           [class.manage-db-result--error]="updateLeaguesError">
+          {{ updateLeaguesMessage }}
+        </p>
+      </div>
 
-      <!-- Resumen global -->
-      <div class="history-summary">
-        <div class="history-stat">
-          <span class="history-stat-label">Análisis totales</span>
-          <span class="history-stat-value">{{ h.totalAnalysed }}</span>
+    </div>
+  </div>
+
+  <!-- ═══ CLUBS ════════════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('clubs')">
+      <span class="accordion-label">Clubs</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['clubs']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['clubs']">
+
+      <!-- Actualizar info de clubes -->
+      <div class="operation-card">
+        <h4 class="operation-title">Actualizar info de clubes</h4>
+        <p class="operation-desc">
+          Actualiza la información de los clubes en la base de datos.
+          <strong>update</strong>: guarda los datos recibidos de la API.
+          <strong>restUpdate</strong>: fuerza una nueva llamada a la API antes de persistir.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="clubsUpdate" />
+            <span>update</span>
+          </label>
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="clubsRestUpdate" />
+            <span>restUpdate</span>
+          </label>
         </div>
-        <div class="history-stat">
-          <span class="history-stat-label">Evaluables (FT)</span>
-          <span class="history-stat-value">{{ h.processedAnalyses }}</span>
+        <button class="manage-db-btn" [disabled]="clubsLoading" (click)="updateClubsInfo()">
+          <span *ngIf="!clubsLoading">Ejecutar</span>
+          <span *ngIf="clubsLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="clubsMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!clubsError"
+           [class.manage-db-result--error]="clubsError">
+          {{ clubsMessage }}
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PLAYERS ══════════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('players')">
+      <span class="accordion-label">Players</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['players']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['players']">
+
+      <div class="operation-card">
+        <h4 class="operation-title">Ingestión completa de jugadores</h4>
+        <p class="operation-desc">
+          Ejecuta en orden 4 operaciones: actualiza los jugadores desde la API (update y restUpdate
+          siempre activos), actualiza transferidos, actualiza por plantillas e ingiere los datos brutos.
+          Si un paso falla, la secuencia se detiene.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-text-row">
+            <span>Temporada</span>
+            <input type="text" [(ngModel)]="playerSeason" class="input-field" placeholder="ej. 2024" />
+          </label>
+          <label class="input-text-row">
+            <span>Threads</span>
+            <input type="number" [(ngModel)]="playerThreads" class="input-field input-field--short"
+                   min="1" max="5" step="1" />
+          </label>
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="playerPurge" />
+            <span>Purgar antes de ejecutar (purgeBeforeRun)</span>
+          </label>
         </div>
-        <div class="history-stat">
-          <span class="history-stat-label">Aciertos (label)</span>
-          <span class="history-stat-value">{{ h.correctPredictions }}</span>
+        <div class="operation-note">
+          <span>update</span> y <span>restUpdate</span> se envían siempre como <code>true</code> en el paso 1.
         </div>
-        <div class="history-stat">
-          <span class="history-stat-label">Precisión label</span>
-          <span class="history-stat-value">{{ h.accuracyRate | number:'1.1-1' }}%</span>
-        </div>
-        <div class="history-stat">
-          <span class="history-stat-label">Brier medio</span>
-          <span class="history-stat-value">{{ h.avgBrierScore | number:'1.3-3' }}</span>
-        </div>
-        <div class="history-stat">
-          <span class="history-stat-label">Log-loss medio</span>
-          <span class="history-stat-value">{{ h.avgLogLoss | number:'1.3-3' }}</span>
+        <button class="manage-db-btn" [disabled]="playerRunning" (click)="runPlayerIngest()">
+          <span *ngIf="!playerRunning">Lanzar ingestión</span>
+          <span *ngIf="playerRunning">Ejecutando...</span>
+        </button>
+
+        <!-- Tracker de pasos -->
+        <div class="fixture-steps" *ngIf="playerRunning || playerSteps[0].status !== 'pending'">
+          <div *ngFor="let step of playerSteps"
+               class="fixture-step fixture-step--{{ step.status }}">
+            <span class="fixture-step-icon">
+              <ng-container [ngSwitch]="step.status">
+                <span *ngSwitchCase="'pending'">⏸</span>
+                <span *ngSwitchCase="'running'">⏳</span>
+                <span *ngSwitchCase="'ok'">✅</span>
+                <span *ngSwitchCase="'error'">✗</span>
+              </ng-container>
+            </span>
+            <span class="fixture-step-label">{{ step.label }}</span>
+            <span class="fixture-step-msg" *ngIf="step.message">{{ step.message }}</span>
+          </div>
         </div>
       </div>
 
-      <!-- Ponderaciones actuales -->
-      <div class="history-weights" *ngIf="h.currentWeights as w">
-        <div class="history-weights-header">
-          <span class="history-weights-title">Ponderaciones activas</span>
-          <button
-            class="manage-db-btn manage-db-btn--small"
-            [disabled]="updatingDeltas"
-            (click)="updateContextualDeltas()">
-            <span *ngIf="!updatingDeltas">Actualizar deltas</span>
-            <span *ngIf="updatingDeltas">Actualizando...</span>
-          </button>
-        </div>
-        <div class="history-weights-grid">
-          <span class="weight-chip">Forma <strong>{{ w.wForma | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Necesidad <strong>{{ w.wNeeds | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Defensa <strong>{{ w.wDef | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Ataque <strong>{{ w.wOff | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Fatiga <strong>{{ w.wFatigue | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Balón parado <strong>{{ w.wSetPieces | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">Atmósfera <strong>{{ w.wAtm | number:'1.3-3' }}</strong></span>
-          <span class="weight-chip">No disponibles <strong>{{ w.wUnavail | number:'1.3-3' }}</strong></span>
-        </div>
-        <span class="history-weights-meta" *ngIf="w.fromDb">
-          Calibradas el {{ w.calibrationDate }} · {{ w.nSamples }} muestras
-        </span>
-        <span class="history-weights-meta" *ngIf="!w.fromDb">Valores por defecto (sin calibración)</span>
-      </div>
+    </div>
+  </div>
 
-      <!-- Mensaje de actualización de deltas -->
-      <div class="history-calib-msg"
-           *ngIf="deltasUpdated"
-           [class.history-calib-msg--ok]="!deltasUpdateError"
-           [class.history-calib-msg--error]="deltasUpdateError">
-        {{ deltasUpdateMessage }}
-      </div>
+  <!-- ═══ FIXTURES ═════════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('fixtures')">
+      <span class="accordion-label">Fixtures</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['fixtures']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['fixtures']">
 
-      <!-- Tabla de partidos con paginación -->
-      <div class="history-table-wrap" *ngIf="h.matchResults.length > 0">
-        <div class="history-pagination-info">
-          <span>Mostrando {{ (currentPage - 1) * itemsPerPage + 1 }} - {{ Math.min(currentPage * itemsPerPage, h.matchResults.length) }} de {{ h.matchResults.length }} partidos</span>
+      <!-- Ingestión completa -->
+      <div class="operation-card">
+        <h4 class="operation-title">Ingestión completa de fixtures</h4>
+        <p class="operation-desc">
+          Ejecuta en orden las 5 operaciones de ingestión: fixtures, events, player stats, team stats y lineup.
+          Si un paso falla, la secuencia se detiene en ese punto.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-check-row">
+            <input type="checkbox" [(ngModel)]="fixturePurge" />
+            <span>Purgar antes de ejecutar (purgeBeforeRun)</span>
+          </label>
+          <label class="input-text-row">
+            <span>Temporada</span>
+            <input type="text" [(ngModel)]="fixtureSeason" class="input-field" placeholder="ej. 2024" />
+          </label>
         </div>
-        <table class="history-table">
-          <thead>
-            <tr>
-              <th>Partido</th>
-              <th>Resultado</th>
-              <th>Base H/D/V</th>
-              <th>Ajust. H/D/V</th>
-              <th>Delta</th>
-              <th>Label</th>
-              <th>Delta útil</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let m of getPaginatedResults()">
-              <td class="match-name">
-                <span>{{ m.homeTeamName }}</span>
-                <span class="match-score">{{ m.goalsHome }} - {{ m.goalsAway }}</span>
-                <span>{{ m.awayTeamName }}</span>
-              </td>
-              <td>
-                <span class="result-pill result-pill--{{ m.actualResult }}">
-                  {{ resultLabel(m.actualResult) }}
-                </span>
-              </td>
-              <td class="probs">
-                {{ pct(m.baseHomeWin) }} / {{ pct(m.baseDraw) }} / {{ pct(m.baseAwayWin) }}
-              </td>
-              <td class="probs">
-                {{ pct(m.adjHomeWin) }} / {{ pct(m.adjDraw) }} / {{ pct(m.adjAwayWin) }}
-              </td>
-              <td class="delta" [class.delta--pos]="m.netDelta > 0" [class.delta--neg]="m.netDelta < 0">
-                {{ m.netDelta > 0 ? '+' : '' }}{{ m.netDelta | number:'1.3-3' }}
-              </td>
-              <td>
-                <span class="badge" [class.badge--ok]="m.correct" [class.badge--fail]="!m.correct">
-                  {{ m.correct ? 'Sí' : 'No' }}
-                </span>
-              </td>
-              <td>
-                <span class="badge" [class.badge--ok]="m.deltaHelpful" [class.badge--neutral]="!m.deltaHelpful">
-                  {{ m.deltaHelpful ? 'Sí' : 'No' }}
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <button class="manage-db-btn" [disabled]="fixtureRunning" (click)="runFixtureIngest()">
+          <span *ngIf="!fixtureRunning">Lanzar ingestión</span>
+          <span *ngIf="fixtureRunning">Ejecutando...</span>
+        </button>
 
-        <!-- Controles de paginación -->
-        <div class="history-pagination-controls" *ngIf="getTotalPages() > 1">
-          <button class="pagination-btn"
-                  [disabled]="currentPage === 1"
-                  (click)="goToPage(currentPage - 1)">
-            ← Anterior
-          </button>
-          <span class="pagination-info">
-            Página {{ currentPage }} de {{ getTotalPages() }}
-          </span>
-          <button class="pagination-btn"
-                  [disabled]="currentPage === getTotalPages()"
-                  (click)="goToPage(currentPage + 1)">
-            Siguiente →
-          </button>
+        <!-- Tracker de pasos -->
+        <div class="fixture-steps" *ngIf="fixtureRunning || fixtureSteps[0].status !== 'pending'">
+          <div *ngFor="let step of fixtureSteps"
+               class="fixture-step fixture-step--{{ step.status }}">
+            <span class="fixture-step-icon">
+              <ng-container [ngSwitch]="step.status">
+                <span *ngSwitchCase="'pending'">⏸</span>
+                <span *ngSwitchCase="'running'">⏳</span>
+                <span *ngSwitchCase="'ok'">✅</span>
+                <span *ngSwitchCase="'error'">✗</span>
+              </ng-container>
+            </span>
+            <span class="fixture-step-label">{{ step.label }}</span>
+            <span class="fixture-step-msg" *ngIf="step.message">{{ step.message }}</span>
+          </div>
         </div>
       </div>
 
-      <p class="manage-db-result manage-db-result--ok"
-         *ngIf="h.processedAnalyses === 0">
-        No hay partidos finalizados con análisis almacenado aún.
-      </p>
+    </div>
+  </div>
 
-    </ng-container>
+  <!-- ═══ PREDICTIONS ══════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('predictions')">
+      <span class="accordion-label">Predictions</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['predictions']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['predictions']">
+
+      <!-- Regenerar análisis contextuales -->
+      <div class="operation-card">
+        <h4 class="operation-title">Regenerar análisis contextuales</h4>
+        <p class="operation-desc">
+          Recalcula las probabilidades base de todos los análisis contextuales almacenados usando la
+          versión actual del modelo. Ejecutar tras actualizar el modelo con <code>train_model.py</code>.
+        </p>
+        <button class="manage-db-btn" [disabled]="regenerating" (click)="regenerateAnalyses()">
+          <span *ngIf="!regenerating">Ejecutar</span>
+          <span *ngIf="regenerating">Regenerando...</span>
+        </button>
+        <p *ngIf="regenerateMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!regenerateError"
+           [class.manage-db-result--error]="regenerateError">
+          {{ regenerateMessage }}
+        </p>
+      </div>
+
+      <!-- Historial de análisis contextual -->
+      <div class="operation-card">
+        <h4 class="operation-title">Historial de análisis contextual</h4>
+        <p class="operation-desc">
+          Revisa los partidos con análisis almacenado y el estado actual de las ponderaciones del modelo
+          contextual. Si hay suficientes partidos finalizados (mínimo 10), se ejecuta la calibración
+          automáticamente.
+        </p>
+        <button class="manage-db-btn manage-db-btn--history" [disabled]="historyLoading" (click)="loadAnalysisHistory()">
+          <span *ngIf="!historyLoading">Revisar historial</span>
+          <span *ngIf="historyLoading">Cargando...</span>
+        </button>
+
+        <p *ngIf="historyError" class="manage-db-result manage-db-result--error">{{ historyError }}</p>
+
+        <ng-container *ngIf="historyData as h">
+
+          <!-- Resumen global -->
+          <div class="history-summary">
+            <div class="history-stat">
+              <span class="history-stat-label">Análisis totales</span>
+              <span class="history-stat-value">{{ h.totalAnalysed }}</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">Evaluables (FT)</span>
+              <span class="history-stat-value">{{ h.processedAnalyses }}</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">Aciertos (label)</span>
+              <span class="history-stat-value">{{ h.correctPredictions }}</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">Precisión label</span>
+              <span class="history-stat-value">{{ h.accuracyRate | number:'1.1-1' }}%</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">Brier medio</span>
+              <span class="history-stat-value">{{ h.avgBrierScore | number:'1.3-3' }}</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">Log-loss medio</span>
+              <span class="history-stat-value">{{ h.avgLogLoss | number:'1.3-3' }}</span>
+            </div>
+          </div>
+
+          <!-- Ponderaciones actuales -->
+          <div class="history-weights" *ngIf="h.currentWeights as w">
+            <div class="history-weights-header">
+              <span class="history-weights-title">Ponderaciones activas</span>
+              <button class="manage-db-btn manage-db-btn--small" [disabled]="updatingDeltas" (click)="updateContextualDeltas()">
+                <span *ngIf="!updatingDeltas">Actualizar deltas</span>
+                <span *ngIf="updatingDeltas">Actualizando...</span>
+              </button>
+            </div>
+            <div class="history-weights-grid">
+              <span class="weight-chip">Forma <strong>{{ w.wForma | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Necesidad <strong>{{ w.wNeeds | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Defensa <strong>{{ w.wDef | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Ataque <strong>{{ w.wOff | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Fatiga <strong>{{ w.wFatigue | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Balón parado <strong>{{ w.wSetPieces | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Atmósfera <strong>{{ w.wAtm | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">No disponibles <strong>{{ w.wUnavail | number:'1.3-3' }}</strong></span>
+            </div>
+            <span class="history-weights-meta" *ngIf="w.fromDb">
+              Calibradas el {{ w.calibrationDate }} · {{ w.nSamples }} muestras
+            </span>
+            <span class="history-weights-meta" *ngIf="!w.fromDb">Valores por defecto (sin calibración)</span>
+          </div>
+
+          <!-- Mensaje de actualización de deltas -->
+          <div class="history-calib-msg"
+               *ngIf="deltasUpdated"
+               [class.history-calib-msg--ok]="!deltasUpdateError"
+               [class.history-calib-msg--error]="deltasUpdateError">
+            {{ deltasUpdateMessage }}
+          </div>
+
+          <!-- Tabla de partidos con paginación -->
+          <div class="history-table-wrap" *ngIf="h.matchResults.length > 0">
+            <div class="history-pagination-info">
+              <span>Mostrando {{ (currentPage - 1) * itemsPerPage + 1 }} - {{ Math.min(currentPage * itemsPerPage, h.matchResults.length) }} de {{ h.matchResults.length }} partidos</span>
+            </div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>Partido</th>
+                  <th>Resultado</th>
+                  <th>Base H/D/V</th>
+                  <th>Ajust. H/D/V</th>
+                  <th>Delta</th>
+                  <th>Label</th>
+                  <th>Delta útil</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let m of getPaginatedResults()">
+                  <td class="match-name">
+                    <span>{{ m.homeTeamName }}</span>
+                    <span class="match-score">{{ m.goalsHome }} - {{ m.goalsAway }}</span>
+                    <span>{{ m.awayTeamName }}</span>
+                  </td>
+                  <td>
+                    <span class="result-pill result-pill--{{ m.actualResult }}">
+                      {{ resultLabel(m.actualResult) }}
+                    </span>
+                  </td>
+                  <td class="probs">
+                    {{ pct(m.baseHomeWin) }} / {{ pct(m.baseDraw) }} / {{ pct(m.baseAwayWin) }}
+                  </td>
+                  <td class="probs">
+                    {{ pct(m.adjHomeWin) }} / {{ pct(m.adjDraw) }} / {{ pct(m.adjAwayWin) }}
+                  </td>
+                  <td class="delta" [class.delta--pos]="m.netDelta > 0" [class.delta--neg]="m.netDelta < 0">
+                    {{ m.netDelta > 0 ? '+' : '' }}{{ m.netDelta | number:'1.3-3' }}
+                  </td>
+                  <td>
+                    <span class="badge" [class.badge--ok]="m.correct" [class.badge--fail]="!m.correct">
+                      {{ m.correct ? 'Sí' : 'No' }}
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge" [class.badge--ok]="m.deltaHelpful" [class.badge--neutral]="!m.deltaHelpful">
+                      {{ m.deltaHelpful ? 'Sí' : 'No' }}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Controles de paginación -->
+            <div class="history-pagination-controls" *ngIf="getTotalPages() > 1">
+              <button class="pagination-btn" [disabled]="currentPage === 1" (click)="goToPage(currentPage - 1)">
+                ← Anterior
+              </button>
+              <span class="pagination-info">Página {{ currentPage }} de {{ getTotalPages() }}</span>
+              <button class="pagination-btn" [disabled]="currentPage === getTotalPages()" (click)="goToPage(currentPage + 1)">
+                Siguiente →
+              </button>
+            </div>
+          </div>
+
+          <p class="manage-db-result manage-db-result--ok" *ngIf="h.processedAnalyses === 0">
+            No hay partidos finalizados con análisis almacenado aún.
+          </p>
+
+        </ng-container>
+      </div>
+
+    </div>
   </div>
 
 </div>

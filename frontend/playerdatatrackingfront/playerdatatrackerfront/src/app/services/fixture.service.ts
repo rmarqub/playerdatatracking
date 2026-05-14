@@ -554,4 +554,102 @@ export class FixtureService {
       catchError(() => of({ ok: false, entity: 'Error de conexión con el servidor' }))
     );
   }
+
+  getCountries(update: boolean): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/countries`, { update: String(update) }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updateCountriesFromJson(): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateCountries`, {}).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  getLeagues(update: boolean): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/leagues`, { update: String(update) }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updateLeagues(): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateLeagues`, {}).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updateClubsInfo(update: boolean, restUpdate: boolean): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateClubsInfo`, { update: String(update), restUpdate: String(restUpdate) }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updatePlayers(season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updatePlayers`, { update: 'true', restUpdate: 'true', season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updateTransferedPlayers(): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateTransferedPlayers`, {}).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updatePlayerBySquads(): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updatePlayerBySquads`, {}).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestRawData(season: string, threads: number, purge: boolean): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestRawData`, { season, threads, purgeBeforeRun: String(purge) }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestFixtures(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtures`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestFixtureEvents(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtureEvents`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestFixturePlayerStats(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixturePlayerStats`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestFixtureTeamStats(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtureTeamStats`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  ingestFixtureLineup(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtureLineup`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
 }

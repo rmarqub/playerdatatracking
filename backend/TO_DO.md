@@ -40,7 +40,6 @@
 
 
 # MEJORAS VARIAS
-- HAIKU: unificar estilos de la pagina principal
 - SONNET: Capita de mantenibilidad: quitar endpoints del codigo, revisar posibles claves que se encuentren en el codigo y demás.
 - --: Añadir otra API como fuente de datos para añadir variabilidad y robustidad.
 - SONNET: Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.

@@ -1,67 +1,105 @@
-.home-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 1%;
-    background-color: #f0f0f0; /* Fondo gris claro que contrasta con el blanco y los botones */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    border: 1px solid #ccc; /* Borde gris claro */
-
-}
-.operation-button{
-    display:flex;
-    margin-top:1%;
-    margin-bottom:1%;
-
-    background-color: #A9A9A9;
-    color: white; /* Color del texto */
-    font-size: 1.5rem; /* Tamaño de la fuente */
-    padding: 15px 30px; /* Tamaño del botón */
-    border: none;
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra del botón */
-    transition: all 0.3s ease; /* Transición suave para los efectos */
+.home-container {
+  margin: 2% 20%;
+  padding: 32px 28px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.tracked-button{
-  display:flex;
-  margin-top:1%;
-  margin-bottom:1%;
-  color: white; /* Color del texto */
-  font-size: 1.5rem; /* Tamaño de la fuente */
-  padding: 15px 30px; /* Tamaño del botón */
-  border: none;
-  border-radius: 5px; /* Bordes redondeados opcionales */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra del botón */
-  transition: all 0.3s ease; /* Transición suave para los efectos */
-  background-color: #f3b32b;
+/* ── Hero section ─────────────────────────────────────────────────────────── */
+
+.home-hero {
+  text-align: center;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #ddd;
 }
 
-.operation-button:hover {
-  background-color: #8f8f8f; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
-}
-.operation-button:active {
-  background-color: #7f7f7f; /* Color de fondo al hacer clic */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más cercana */
-  transform: translateY(2px); /* Simulación de movimiento hacia abajo */
+.home-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
 }
 
-.tracked-button:hover:enabled {
-  background-color:  #d49a1d; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+.home-subtitle {
+  font-size: 0.92rem;
+  color: #777;
+  margin: 0;
+  line-height: 1.55;
 }
 
-.tracked-button:active {
-  background-color: #d49a1d; /* Color de fondo al hacer clic */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más cercana */
-  transform: translateY(2px); /* Simulación de movimiento hacia abajo */
+/* ── Nav cards ────────────────────────────────────────────────────────────── */
+
+.home-nav-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.nav-card:hover {
+  border-color: #f3b32b;
+  box-shadow: 4px 4px 12px rgba(243, 179, 43, 0.2);
+  transform: translateY(-2px);
+}
+
+.nav-card:active { transform: translateY(0); }
+
+.nav-card-accent {
+  width: 4px;
+  height: 46px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.nav-card-accent--gray  { background: #A9A9A9; }
+.nav-card-accent--amber { background: #f3b32b; }
+
+.nav-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.nav-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.nav-card-desc {
+  font-size: 0.82rem;
+  color: #888;
+  line-height: 1.45;
+}
+
+.nav-card-arrow {
+  font-size: 1.6rem;
+  color: #ccc;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.nav-card:hover .nav-card-arrow {
+  color: #f3b32b;
+  transform: translateX(3px);
 }
