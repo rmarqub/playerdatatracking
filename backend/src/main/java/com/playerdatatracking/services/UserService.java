@@ -54,11 +54,10 @@ public class UserService {
         if (opt.isEmpty()) return null;
 
         AppUser u = opt.get();
-        boolean ok = encoder.matches(rawPassword, u.getPasswordHash());
-        if (!ok)
-            System.out.println("not logged succesfully, but proceding anyway");
+        if (!encoder.matches(rawPassword, u.getPasswordHash())) return null;
 
-        return Map.of("id", u.getId(), "username", u.getUsername(), "roles", List.of("USER"));
+        String role = (u.getRole() != null && !u.getRole().isBlank()) ? u.getRole() : "user";
+        return Map.of("id", u.getId(), "username", u.getUsername(), "roles", List.of(role));
     }
 
     public List<AppUser> getAllUsers() {

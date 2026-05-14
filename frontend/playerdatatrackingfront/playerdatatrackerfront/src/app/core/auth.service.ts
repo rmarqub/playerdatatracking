@@ -6,8 +6,13 @@ import { BehaviorSubject, Observable, of, from } from 'rxjs';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
 
 export interface User {
+  id?: number;
   username: string;
   roles: string[];
+}
+
+export function isAdmin(user: User | null): boolean {
+  return user?.roles?.includes('admin') ?? false;
 }
 
 export interface UserInfo {

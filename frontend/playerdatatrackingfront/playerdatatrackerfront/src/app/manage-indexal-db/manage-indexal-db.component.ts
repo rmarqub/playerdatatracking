@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
 import { FixtureService, AnalysisHistoryData } from '../services/fixture.service';
+import { AuthService, isAdmin } from '../core/auth.service';
 
 type StepStatus = 'pending' | 'running' | 'ok' | 'error';
 
@@ -15,7 +16,9 @@ interface FixtureStep {
   templateUrl: './manage-indexal-db.component.html',
   styleUrls: ['./manage-indexal-db.component.css']
 })
-export class ManageIndexalDbComponent {
+export class ManageIndexalDbComponent implements OnInit {
+
+  isAdmin = false;
 
   sectionsOpen: { [key: string]: boolean } = {
     users: false,
@@ -109,7 +112,14 @@ export class ManageIndexalDbComponent {
   itemsPerPage = 20;
   Math = Math;
 
-  constructor(private fixtureService: FixtureService) {}
+  constructor(private fixtureService: FixtureService, private authService: AuthService) {}
+
+  ngOnInit(): void {
+    this.authService.me().subscribe({
+      next: (user) => { this.isAdmin = isAdmin(user); },
+      error: () => { this.isAdmin = false; }
+    });
+  }
 
   openLeagueManagement(): void {
     window.open('/leagueManagement', '_blank');

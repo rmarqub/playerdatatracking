@@ -2,7 +2,7 @@
   <h2 class="manage-db-title">Gestión de base de datos</h2>
 
   <!-- ═══ USERS ════════════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('users')">
       <span class="accordion-label">Usuarios</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['users']">▼</span>
@@ -24,7 +24,7 @@
   </div>
 
   <!-- ═══ COUNTRIES ═══════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('countries')">
       <span class="accordion-label">Countries</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['countries']">▼</span>
@@ -95,53 +95,55 @@
         </button>
       </div>
 
-      <!-- Obtener ligas -->
-      <div class="operation-card">
-        <h4 class="operation-title">Obtener ligas</h4>
-        <p class="operation-desc">
-          Llama a la API de football para obtener las ligas disponibles.
-          Si "Guardar en BD" está activo, también persiste los datos.
-        </p>
-        <div class="operation-inputs">
-          <label class="input-check-row">
-            <input type="checkbox" [(ngModel)]="leaguesUpdate" />
-            <span>Guardar en BD (update)</span>
-          </label>
+      <!-- Obtener ligas — solo admin -->
+      <ng-container *ngIf="isAdmin">
+        <div class="operation-card">
+          <h4 class="operation-title">Obtener ligas</h4>
+          <p class="operation-desc">
+            Llama a la API de football para obtener las ligas disponibles.
+            Si "Guardar en BD" está activo, también persiste los datos.
+          </p>
+          <div class="operation-inputs">
+            <label class="input-check-row">
+              <input type="checkbox" [(ngModel)]="leaguesUpdate" />
+              <span>Guardar en BD (update)</span>
+            </label>
+          </div>
+          <button class="manage-db-btn" [disabled]="leaguesLoading" (click)="fetchLeagues()">
+            <span *ngIf="!leaguesLoading">Ejecutar</span>
+            <span *ngIf="leaguesLoading">Ejecutando...</span>
+          </button>
+          <p *ngIf="leaguesMessage" class="manage-db-result"
+             [class.manage-db-result--ok]="!leaguesError"
+             [class.manage-db-result--error]="leaguesError">
+            {{ leaguesMessage }}
+          </p>
         </div>
-        <button class="manage-db-btn" [disabled]="leaguesLoading" (click)="fetchLeagues()">
-          <span *ngIf="!leaguesLoading">Ejecutar</span>
-          <span *ngIf="leaguesLoading">Ejecutando...</span>
-        </button>
-        <p *ngIf="leaguesMessage" class="manage-db-result"
-           [class.manage-db-result--ok]="!leaguesError"
-           [class.manage-db-result--error]="leaguesError">
-          {{ leaguesMessage }}
-        </p>
-      </div>
 
-      <!-- Actualizar ligas en BD -->
-      <div class="operation-card">
-        <h4 class="operation-title">Actualizar ligas en BD</h4>
-        <p class="operation-desc">
-          Procesa el JSON de ligas almacenado localmente y persiste los datos en la base de datos,
-          reemplazando los registros existentes.
-        </p>
-        <button class="manage-db-btn" [disabled]="updateLeaguesLoading" (click)="updateLeaguesDb()">
-          <span *ngIf="!updateLeaguesLoading">Ejecutar</span>
-          <span *ngIf="updateLeaguesLoading">Ejecutando...</span>
-        </button>
-        <p *ngIf="updateLeaguesMessage" class="manage-db-result"
-           [class.manage-db-result--ok]="!updateLeaguesError"
-           [class.manage-db-result--error]="updateLeaguesError">
-          {{ updateLeaguesMessage }}
-        </p>
-      </div>
+        <!-- Actualizar ligas en BD -->
+        <div class="operation-card">
+          <h4 class="operation-title">Actualizar ligas en BD</h4>
+          <p class="operation-desc">
+            Procesa el JSON de ligas almacenado localmente y persiste los datos en la base de datos,
+            reemplazando los registros existentes.
+          </p>
+          <button class="manage-db-btn" [disabled]="updateLeaguesLoading" (click)="updateLeaguesDb()">
+            <span *ngIf="!updateLeaguesLoading">Ejecutar</span>
+            <span *ngIf="updateLeaguesLoading">Ejecutando...</span>
+          </button>
+          <p *ngIf="updateLeaguesMessage" class="manage-db-result"
+             [class.manage-db-result--ok]="!updateLeaguesError"
+             [class.manage-db-result--error]="updateLeaguesError">
+            {{ updateLeaguesMessage }}
+          </p>
+        </div>
+      </ng-container>
 
     </div>
   </div>
 
   <!-- ═══ CLUBS ════════════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('clubs')">
       <span class="accordion-label">Clubs</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['clubs']">▼</span>
@@ -181,7 +183,7 @@
   </div>
 
   <!-- ═══ PLAYERS ══════════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('players')">
       <span class="accordion-label">Players</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['players']">▼</span>
@@ -240,7 +242,7 @@
   </div>
 
   <!-- ═══ FIXTURES ═════════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('fixtures')">
       <span class="accordion-label">Fixtures</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['fixtures']">▼</span>
@@ -291,7 +293,7 @@
   </div>
 
   <!-- ═══ PREDICTIONS ══════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('predictions')">
       <span class="accordion-label">Predictions</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['predictions']">▼</span>
