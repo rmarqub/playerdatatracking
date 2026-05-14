@@ -289,6 +289,107 @@ body.dark-mode .ctx-reset-btn:hover {
   color: #e6edf3 !important;
 }
 
+/* Hover y active de los botones de escala — deben sobreescribir la regla base */
+body.dark-mode .ctx-scale-btn:hover {
+  border-color: #27ae60 !important;
+  color: #27ae60 !important;
+  background: #1c2128 !important;
+}
+
+body.dark-mode .ctx-scale-btn.active {
+  background: #27ae60 !important;
+  border-color: #27ae60 !important;
+  color: white !important;
+}
+
+body.dark-mode .ctx-scale-needs:hover {
+  border-color: #e67e22 !important;
+  color: #e67e22 !important;
+}
+
+body.dark-mode .ctx-scale-needs.active {
+  background: #e67e22 !important;
+  border-color: #e67e22 !important;
+  color: white !important;
+}
+
+body.dark-mode .ctx-scale-fatigue:hover {
+  border-color: #c0392b !important;
+  color: #c0392b !important;
+}
+
+body.dark-mode .ctx-scale-fatigue.active {
+  background: #c0392b !important;
+  border-color: #c0392b !important;
+  color: white !important;
+}
+
+body.dark-mode .ctx-team-header {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .ctx-metric-name {
+  color: #c9d1d9 !important;
+}
+
+body.dark-mode .ctx-metric-hint {
+  color: #656d76 !important;
+}
+
+body.dark-mode .ctx-axis-labels {
+  color: #484f58 !important;
+}
+
+body.dark-mode .ctx-unavailable-row {
+  border-top-color: #30363d !important;
+}
+
+body.dark-mode .ctx-unavailable-label {
+  color: #8b949e !important;
+}
+
+body.dark-mode .ctx-player-row {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .ctx-player-row:hover {
+  background: #21262d !important;
+}
+
+body.dark-mode .ctx-no-squad {
+  color: #656d76 !important;
+}
+
+body.dark-mode .ctx-notes-label {
+  color: #8b949e !important;
+}
+
+body.dark-mode .ctx-notes-input {
+  background: #1c2128 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .ctx-notes-input:focus {
+  border-color: #27ae60 !important;
+}
+
+body.dark-mode .ctx-notes-input::placeholder {
+  color: #656d76 !important;
+}
+
+body.dark-mode .ctx-actions-row {
+  border-top-color: #30363d !important;
+}
+
+body.dark-mode .ctx-save-hint {
+  color: #656d76 !important;
+}
+
+body.dark-mode .ctx-delta-label {
+  color: #8b949e !important;
+}
+
 /* ── Fixture detail — prediction panels ──────────────────────────────────── */
 
 body.dark-mode .pred-panel {

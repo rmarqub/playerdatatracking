@@ -133,6 +133,16 @@ export class SearchFixturesComponent implements OnInit {
     });
   }
 
+  get filteredStudiedLiveFixtures(): ApiFixtureItem[] {
+    const studiedIds = new Set(this.studiedLeagues.map(l => l.id));
+    return this.filteredLiveFixtures.filter(f => studiedIds.has(f.league.id));
+  }
+
+  get filteredOtherLiveFixtures(): ApiFixtureItem[] {
+    const studiedIds = new Set(this.studiedLeagues.map(l => l.id));
+    return this.filteredLiveFixtures.filter(f => !studiedIds.has(f.league.id));
+  }
+
   get hasActiveFilters(): boolean {
     return this.selectedCountries.size > 0 || this.selectedLeagues.size > 0;
   }

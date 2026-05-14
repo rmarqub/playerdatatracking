@@ -387,16 +387,26 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
 
   private computeSummary(rows: PlayerMatchRow[]): any {
     const sumOf = (key: keyof PlayerMatchRow) => rows.reduce((acc, r) => acc + ((r[key] as number) ?? 0), 0);
-    const avgOf = (key: keyof PlayerMatchRow): string => {
-      const valid = rows.filter(r => r[key] !== null && r[key] !== undefined);
+
+    const weightedAvgOf = (key: keyof PlayerMatchRow, weightKey: keyof PlayerMatchRow): string => {
+      const valid = rows.filter(r =>
+        r[key] !== null && r[key] !== undefined &&
+        r[weightKey] !== null && r[weightKey] !== undefined && (r[weightKey] as number) > 0
+      );
       if (!valid.length) return '-';
-      return (valid.reduce((acc, r) => acc + (r[key] as number), 0) / valid.length).toFixed(2);
+      const totalWeight = valid.reduce((acc, r) => acc + (r[weightKey] as number), 0);
+      if (totalWeight === 0) return '-';
+      const weighted = valid.reduce((acc, r) => acc + (r[key] as number) * (r[weightKey] as number), 0);
+      return (weighted / totalWeight).toFixed(2);
     };
+
     return {
       leagueName: 'TOTAL', teamName: '-',
-      minutes: sumOf('minutes'), position: '-', rating: avgOf('rating'),
+      minutes: sumOf('minutes'), position: '-',
+      rating: weightedAvgOf('rating', 'minutes'),
       goals: sumOf('goals'), assists: sumOf('assists'), shotsOn: sumOf('shotsOn'),
-      shotsTotal: sumOf('shotsTotal'), passesKey: sumOf('passesKey'), passesAcc: avgOf('passesAcc'),
+      shotsTotal: sumOf('shotsTotal'), passesKey: sumOf('passesKey'),
+      passesAcc: weightedAvgOf('passesAcc', 'passesTotal'),
       passesTotal: sumOf('passesTotal'), dribblesSuc: sumOf('dribblesSuc'), dribblesAtt: sumOf('dribblesAtt'),
       interceptions: sumOf('interceptions'), duelsWon: sumOf('duelsWon'), duelsTotal: sumOf('duelsTotal'),
       foulsDrawn: sumOf('foulsDrawn'), foulsComm: sumOf('foulsComm'), tacklesTotal: sumOf('tacklesTotal'),
