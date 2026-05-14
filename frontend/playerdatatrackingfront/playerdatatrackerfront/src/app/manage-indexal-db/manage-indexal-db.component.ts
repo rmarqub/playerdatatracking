@@ -18,6 +18,7 @@ interface FixtureStep {
 export class ManageIndexalDbComponent {
 
   sectionsOpen: { [key: string]: boolean } = {
+    users: false,
     countries: false,
     leagues: false,
     clubs: false,
@@ -109,6 +110,14 @@ export class ManageIndexalDbComponent {
   Math = Math;
 
   constructor(private fixtureService: FixtureService) {}
+
+  openLeagueManagement(): void {
+    window.open('/leagueManagement', '_blank');
+  }
+
+  openUserManagement(): void {
+    window.open('/userManagement', '_blank');
+  }
 
   toggleSection(section: string): void {
     this.sectionsOpen[section] = !this.sectionsOpen[section];

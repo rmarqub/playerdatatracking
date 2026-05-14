@@ -1,0 +1,279 @@
+.um-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ─── Encabezado ─────────────────────────────────────────────────────── */
+.um-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.um-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.um-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.um-subtitle {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* ─── Botones ─────────────────────────────────────────────────────────── */
+.um-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.um-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.um-btn--add {
+  background: #3182ce;
+  color: #fff;
+}
+
+.um-btn--add:hover {
+  background: #2b6cb0;
+}
+
+.um-btn--save {
+  background: #48bb78;
+  color: #fff;
+}
+
+.um-btn--save:hover:not(:disabled) {
+  background: #38a169;
+}
+
+.um-btn--cancel {
+  background: #2d3748;
+  color: #a0aec0;
+}
+
+.um-btn--cancel:hover {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+
+/* ─── Formulario ────────────────────────────────────────────────────── */
+.um-form-card {
+  background: #1e2533;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.um-form-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a0aec0;
+  margin: 0 0 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.um-field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.um-label {
+  font-size: 0.82rem;
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+.um-input,
+.um-select {
+  background: #151c2b;
+  color: #e2e8f0;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.875rem;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+}
+
+.um-input:focus,
+.um-select:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+.um-input--invalid {
+  border-color: #fc8181;
+}
+
+.um-field-error {
+  font-size: 0.78rem;
+  color: #fc8181;
+}
+
+.um-msg {
+  font-size: 0.875rem;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.um-msg--ok {
+  background: #1c4532;
+  color: #68d391;
+  border: 1px solid #276749;
+}
+
+.um-msg--error {
+  background: #3b1a1a;
+  color: #fc8181;
+  border: 1px solid #742a2a;
+}
+
+.um-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* ─── Loading / Error ────────────────────────────────────────────────── */
+.um-loading,
+.um-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+  color: #718096;
+}
+
+.um-error { color: #fc8181; }
+
+/* ─── Tabla ──────────────────────────────────────────────────────────── */
+.um-table-wrap {
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.um-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.um-th {
+  background: #151c2b;
+  color: #a0aec0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #2d3748;
+}
+
+.um-th--id { width: 60px; }
+.um-th--role { width: 100px; }
+.um-th--pwd { width: 220px; }
+
+.um-row {
+  border-bottom: 1px solid #1e2533;
+}
+
+.um-row:last-child { border-bottom: none; }
+.um-row:hover { background: #1a2030; }
+
+.um-td {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.875rem;
+  color: #cbd5e0;
+}
+
+.um-td--id { color: #718096; }
+.um-td--user { font-weight: 500; color: #e2e8f0; }
+
+/* ─── Badge de rol ──────────────────────────────────────────────────── */
+.um-role-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.um-role-badge--admin {
+  background: #553c9a;
+  color: #e9d8fd;
+}
+
+.um-role-badge--user {
+  background: #2a4365;
+  color: #bee3f8;
+}
+
+/* ─── Contraseña ─────────────────────────────────────────────────────── */
+.um-td--pwd {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.um-pwd-text {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #e2e8f0;
+  letter-spacing: 0.05em;
+}
+
+.um-pwd-toggle {
+  background: #2d3748;
+  color: #a0aec0;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.um-pwd-toggle:hover {
+  background: #3d4a5e;
+  color: #e2e8f0;
+}
+
+.um-pwd-unknown {
+  color: #4a5568;
+}
+
+/* ─── Empty state ────────────────────────────────────────────────────── */
+.um-empty {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,74 @@
+<div class="lm-page">
+
+  <!-- ─── Encabezado ──────────────────────────────────────────────────── -->
+  <div class="lm-header">
+    <div class="lm-header-left">
+      <h2 class="lm-title">Gestión de ligas</h2>
+      <span class="lm-subtitle" *ngIf="!loading">
+        {{ studiedCount() }} / {{ leagues.length }} marcadas como estudiadas
+      </span>
+    </div>
+    <div class="lm-header-right">
+      <button class="lm-btn lm-btn--save" [disabled]="saving || loading" (click)="saveStudied()">
+        <span *ngIf="!saving">Guardar cambios</span>
+        <span *ngIf="saving">Guardando...</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mensaje de guardado -->
+  <div *ngIf="saveMsg" class="lm-save-msg"
+       [class.lm-save-msg--ok]="!saveError"
+       [class.lm-save-msg--error]="saveError">
+    {{ saveMsg }}
+  </div>
+
+  <!-- ─── Filtro por país ──────────────────────────────────────────────── -->
+  <div class="lm-filters" *ngIf="!loading && !errorMsg">
+    <div class="lm-filter-group">
+      <label class="lm-filter-label">Filtrar por país</label>
+      <select class="lm-select" [(ngModel)]="countryFilter">
+        <option value="">Todos los países</option>
+        <option *ngFor="let c of availableCountries" [value]="c">{{ c }}</option>
+      </select>
+    </div>
+    <span class="lm-filter-count">
+      Mostrando {{ filteredLeagues.length }} liga{{ filteredLeagues.length !== 1 ? 's' : '' }}
+    </span>
+  </div>
+
+  <!-- ─── Estado de carga / error ─────────────────────────────────────── -->
+  <div class="lm-loading" *ngIf="loading">Cargando ligas...</div>
+  <div class="lm-error" *ngIf="errorMsg">{{ errorMsg }}</div>
+
+  <!-- ─── Tabla de ligas ───────────────────────────────────────────────── -->
+  <div class="lm-table-wrap" *ngIf="!loading && !errorMsg">
+    <table class="lm-table">
+      <thead>
+        <tr>
+          <th class="lm-th lm-th--studied">Estudiada</th>
+          <th class="lm-th lm-th--name">Liga</th>
+          <th class="lm-th lm-th--country">País</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let league of filteredLeagues"
+            class="lm-row"
+            [class.lm-row--studied]="league.studied"
+            (click)="toggleStudied(league)">
+          <td class="lm-td lm-td--studied">
+            <span class="lm-toggle" [class.lm-toggle--on]="league.studied">
+              {{ league.studied ? '✓' : '' }}
+            </span>
+          </td>
+          <td class="lm-td lm-td--name">{{ league.name }}</td>
+          <td class="lm-td lm-td--country">{{ league.paisName ?? '—' }}</td>
+        </tr>
+        <tr *ngIf="filteredLeagues.length === 0">
+          <td colspan="3" class="lm-empty">No hay ligas para el filtro seleccionado.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

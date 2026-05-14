@@ -1,0 +1,239 @@
+.lm-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ─── Encabezado ─────────────────────────────────────────────────────── */
+.lm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.lm-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.lm-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.lm-subtitle {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.lm-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ─── Botones ─────────────────────────────────────────────────────────── */
+.lm-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.lm-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.lm-btn--save {
+  background: #48bb78;
+  color: #fff;
+}
+
+.lm-btn--save:hover:not(:disabled) {
+  background: #38a169;
+}
+
+/* ─── Mensaje de guardado ─────────────────────────────────────────────── */
+.lm-save-msg {
+  font-size: 0.875rem;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.lm-save-msg--ok {
+  background: #1c4532;
+  color: #68d391;
+  border: 1px solid #276749;
+}
+
+.lm-save-msg--error {
+  background: #3b1a1a;
+  color: #fc8181;
+  border: 1px solid #742a2a;
+}
+
+/* ─── Filtros ────────────────────────────────────────────────────────── */
+.lm-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.lm-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lm-filter-label {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  white-space: nowrap;
+}
+
+.lm-select {
+  background: #1e2533;
+  color: #e2e8f0;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.lm-select:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+.lm-filter-count {
+  font-size: 0.82rem;
+  color: #718096;
+  margin-left: auto;
+}
+
+/* ─── Loading / Error ────────────────────────────────────────────────── */
+.lm-loading,
+.lm-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+  color: #718096;
+}
+
+.lm-error {
+  color: #fc8181;
+}
+
+/* ─── Tabla ──────────────────────────────────────────────────────────── */
+.lm-table-wrap {
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lm-th {
+  background: #151c2b;
+  color: #a0aec0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #2d3748;
+}
+
+.lm-th--studied {
+  width: 80px;
+  text-align: center;
+}
+
+.lm-row {
+  cursor: pointer;
+  transition: background 0.1s;
+  border-bottom: 1px solid #1e2533;
+}
+
+.lm-row:last-child {
+  border-bottom: none;
+}
+
+.lm-row:hover {
+  background: #1e2533;
+}
+
+.lm-row--studied {
+  background: #0f2318;
+}
+
+.lm-row--studied:hover {
+  background: #163320;
+}
+
+.lm-td {
+  padding: 0.55rem 0.9rem;
+  font-size: 0.875rem;
+  color: #cbd5e0;
+}
+
+.lm-td--studied {
+  text-align: center;
+}
+
+.lm-td--name {
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.lm-td--country {
+  color: #718096;
+}
+
+/* ─── Toggle ────────────────────────────────────────────────────────── */
+.lm-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 2px solid #2d3748;
+  background: #151c2b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #68d391;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.lm-toggle--on {
+  border-color: #48bb78;
+  background: #276749;
+}
+
+/* ─── Empty state ────────────────────────────────────────────────────── */
+.lm-empty {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+  font-size: 0.9rem;
+}

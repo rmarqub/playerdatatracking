@@ -9,7 +9,6 @@
 
 # V2 PLANNING
 - HAIKU: Diseño de logica de usuario.
-- SONNET: Pagina de management general, que permita manejar ligas estudiadas.
 - SONNET: Modulo de testing escalable y estable.
 - SONNET: filtro de busqueda de jugadores por percentiles.
 

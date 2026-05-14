@@ -466,6 +466,33 @@ public class PlayerDataClient {
 	}
 	
 	@Transactional
+	public List<Torneo> getAllTorneos() throws PlayerDataDBException {
+		try {
+			return trRepository.findAll();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Pais> getAllPaises() throws PlayerDataDBException {
+		try {
+			return ctRepository.findAll();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void saveAllTorneos(List<Torneo> torneos) throws PlayerDataDBException {
+		try {
+			trRepository.saveAll(torneos);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
 	public Club saveClub(Club club) throws PlayerDataDBException {
 		try {
 			Club savedClub = clubRepository.save(club);

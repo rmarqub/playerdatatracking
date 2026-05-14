@@ -59,6 +59,14 @@ export interface Torneo {
   studied: boolean;
 }
 
+export interface TorneoInfo {
+  id: number;
+  name: string;
+  studied: boolean;
+  paisId: number | null;
+  paisName: string | null;
+}
+
 export interface FixtureTeamStats {
   teamId: number;
   shotsOnGoal: number | null;
@@ -578,6 +586,20 @@ export class FixtureService {
 
   updateLeagues(): Observable<{ ok: boolean; description: string }> {
     return this.http.post<GenericResponse<any>>(`${this.base}/updateLeagues`, {}).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  getAllLeaguesForManagement(): Observable<TorneoInfo[]> {
+    return this.http.post<GenericResponse<TorneoInfo>>(`${this.base}/allLeagues`, {}).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  updateStudiedLeagues(studiedIds: number[]): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateStudiedLeagues`, { leagueIds: studiedIds }).pipe(
       map(r => ({ ok: r.code === 0, description: r.description || '' })),
       catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
     );

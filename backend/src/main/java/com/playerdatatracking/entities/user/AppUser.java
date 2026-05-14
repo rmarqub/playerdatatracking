@@ -1,6 +1,5 @@
 package com.playerdatatracking.entities.user;
 
-//AppUser.java
 import jakarta.persistence.*;
 
 @Entity
@@ -16,29 +15,24 @@ public class AppUser {
 	@Column(name = "password_hash", nullable = false, length = 100)
 	private String passwordHash;
 
-	public Long getId() {
-		return id;
-	}
+	@Column(nullable = false, length = 20)
+	private String role = "user";
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+	@Column(name = "password_encrypted", length = 300)
+	private String passwordEncrypted;
 
-	public String getUsername() {
-		return username;
-	}
+	public Long getId() { return id; }
+	public void setId(Long id) { this.id = id; }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+	public String getUsername() { return username; }
+	public void setUsername(String username) { this.username = username; }
 
-	public String getPasswordHash() {
-		return passwordHash;
-	}
+	public String getPasswordHash() { return passwordHash; }
+	public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
 
-	public void setPasswordHash(String passwordHash) {
-		this.passwordHash = passwordHash;
-	}
+	public String getRole() { return role; }
+	public void setRole(String role) { this.role = role; }
 
-	
+	public String getPasswordEncrypted() { return passwordEncrypted; }
+	public void setPasswordEncrypted(String passwordEncrypted) { this.passwordEncrypted = passwordEncrypted; }
 }

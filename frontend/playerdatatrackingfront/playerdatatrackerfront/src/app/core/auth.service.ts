@@ -10,6 +10,13 @@ export interface User {
   roles: string[];
 }
 
+export interface UserInfo {
+  id: number;
+  username: string;
+  role: string;
+  password: string | null;
+}
+
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private base = environment.apiUrl;
@@ -56,14 +63,33 @@ export class AuthService {
     );
   }
 
-  register(username: string, password: string) {
+  register(username: string, password: string, role: string = 'user') {
     return this.ensurePubKey().pipe(
       switchMap(() => from(this.crypto.encryptPassword(password))),
       switchMap((pwdB64) =>
         this.http.post(`${this.base}/auth/register`, {
           username,
           pwd: pwdB64,
-          kid: this.crypto.getKid()
+          kid: this.crypto.getKid(),
+          role
+        }, { withCredentials: true })
+      )
+    );
+  }
+
+  getUsers(): Observable<UserInfo[]> {
+    return this.http.get<UserInfo[]>(`${this.base}/auth/users`, { withCredentials: true });
+  }
+
+  createUser(username: string, password: string, role: string): Observable<any> {
+    return this.ensurePubKey().pipe(
+      switchMap(() => from(this.crypto.encryptPassword(password))),
+      switchMap((pwdB64) =>
+        this.http.post(`${this.base}/auth/register`, {
+          username,
+          pwd: pwdB64,
+          kid: this.crypto.getKid(),
+          role
         }, { withCredentials: true })
       )
     );

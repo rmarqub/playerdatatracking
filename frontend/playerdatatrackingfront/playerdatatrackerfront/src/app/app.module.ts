@@ -27,6 +27,8 @@ import { SearchFixturesComponent } from './search-fixtures/search-fixtures.compo
 import { FixtureDetailComponent } from './fixture-detail/fixture-detail.component';
 import { PlayerNotFoundComponent } from './player-not-found/player-not-found.component';
 import { ComparePlayersComponent } from './compare-players/compare-players.component';
+import { LeagueManagementComponent } from './league-management/league-management.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { ComparePlayersComponent } from './compare-players/compare-players.compo
     SearchFixturesComponent,
     FixtureDetailComponent,
     PlayerNotFoundComponent,
-    ComparePlayersComponent
+    ComparePlayersComponent,
+    LeagueManagementComponent,
+    UserManagementComponent
   ],
   imports: [
     BrowserAnimationsModule,

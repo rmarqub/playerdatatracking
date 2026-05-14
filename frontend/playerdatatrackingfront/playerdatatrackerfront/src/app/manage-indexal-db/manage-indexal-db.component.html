@@ -1,6 +1,28 @@
 <div class="manage-db-container">
   <h2 class="manage-db-title">Gestión de base de datos</h2>
 
+  <!-- ═══ USERS ════════════════════════════════════════════════════════════ -->
+  <div class="accordion-section">
+    <button class="accordion-header" (click)="toggleSection('users')">
+      <span class="accordion-label">Usuarios</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['users']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['users']">
+
+      <div class="operation-card">
+        <h4 class="operation-title">Gestión de usuarios</h4>
+        <p class="operation-desc">
+          Abre una página para ver todos los usuarios de la aplicación, sus roles y contraseñas,
+          y permite registrar nuevos usuarios con rol específico.
+        </p>
+        <button class="manage-db-btn manage-db-btn--users" (click)="openUserManagement()">
+          Gestionar usuarios
+        </button>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ═══ COUNTRIES ═══════════════════════════════════════════════════════ -->
   <div class="accordion-section">
     <button class="accordion-header" (click)="toggleSection('countries')">
@@ -61,6 +83,17 @@
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['leagues']">▼</span>
     </button>
     <div class="accordion-body" *ngIf="sectionsOpen['leagues']">
+
+      <!-- Gestionar ligas estudiadas -->
+      <div class="operation-card">
+        <h4 class="operation-title">Ligas estudiadas</h4>
+        <p class="operation-desc">
+          Abre una página para ver todas las ligas almacenadas, marcar cuáles se desean estudiar y guardar los cambios.
+        </p>
+        <button class="manage-db-btn manage-db-btn--league" (click)="openLeagueManagement()">
+          Ver y gestionar ligas
+        </button>
+      </div>
 
       <!-- Obtener ligas -->
       <div class="operation-card">

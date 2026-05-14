@@ -11,14 +11,17 @@ import com.playerdatatracking.entities.indexaldata.Club;
 import com.playerdatatracking.entities.indexaldata.Player;
 import com.playerdatatracking.operations.IndelxalData.indexal.GetAllCountries;
 import com.playerdatatracking.operations.IndelxalData.indexal.GetAllLeagues;
+import com.playerdatatracking.operations.IndelxalData.indexal.GetAllTorneos;
 import com.playerdatatracking.operations.IndelxalData.indexal.IngestRawData;
 import com.playerdatatracking.operations.IndelxalData.indexal.TransferCheckOfPlayers;
 import com.playerdatatracking.operations.IndelxalData.indexal.TransformRawToStats;
 import com.playerdatatracking.operations.IndelxalData.indexal.UpdateClubsData;
 import com.playerdatatracking.operations.IndelxalData.indexal.UpdatePlayersBySquads;
+import com.playerdatatracking.operations.IndelxalData.indexal.UpdateStudiedLeagues;
 import com.playerdatatracking.operations.IndelxalData.player.UpdatePlayersData;
 import com.playerdatatracking.requests.GenericRequest;
 import com.playerdatatracking.responses.GenericResponse;
+import com.playerdatatracking.responses.TorneoInfo;
 
 @RestController
 public class DataSyncController {
@@ -27,6 +30,10 @@ public class DataSyncController {
     private GetAllLeagues operationGetAllLeagues;
     @Autowired
     private GetAllCountries operationGetCountries;
+    @Autowired
+    private GetAllTorneos operationGetAllTorneos;
+    @Autowired
+    private UpdateStudiedLeagues operationUpdateStudiedLeagues;
     @Autowired
     private UpdateClubsData operationUpdateClubsData;
     @Autowired
@@ -161,6 +168,30 @@ public class DataSyncController {
         GenericResponse response = new GenericResponse();
         try {
             response = operationUPS.ejecutar();
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/allLeagues")
+    public GenericResponse<TorneoInfo> getAllLeagues() {
+        GenericResponse<TorneoInfo> response = new GenericResponse<>();
+        try {
+            response = operationGetAllTorneos.ejecutar();
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/updateStudiedLeagues")
+    public GenericResponse<String> updateStudiedLeagues(@RequestBody GenericRequest request) {
+        GenericResponse<String> response = new GenericResponse<>();
+        try {
+            response = operationUpdateStudiedLeagues.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

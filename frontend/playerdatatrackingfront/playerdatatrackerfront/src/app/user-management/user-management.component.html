@@ -1,0 +1,110 @@
+<div class="um-page">
+
+  <!-- ─── Encabezado ──────────────────────────────────────────────────── -->
+  <div class="um-header">
+    <div class="um-header-left">
+      <h2 class="um-title">Gestión de usuarios</h2>
+      <span class="um-subtitle" *ngIf="!loading">{{ users.length }} usuario{{ users.length !== 1 ? 's' : '' }} registrado{{ users.length !== 1 ? 's' : '' }}</span>
+    </div>
+    <button class="um-btn um-btn--add" (click)="openForm()" *ngIf="!showForm">
+      + Registrar usuario
+    </button>
+  </div>
+
+  <!-- ─── Formulario de registro ──────────────────────────────────────── -->
+  <div class="um-form-card" *ngIf="showForm">
+    <h3 class="um-form-title">Nuevo usuario</h3>
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm()" novalidate>
+
+      <div class="um-field">
+        <label class="um-label">Usuario</label>
+        <input type="text" formControlName="username" class="um-input"
+               [class.um-input--invalid]="registerForm.get('username')!.invalid && registerForm.get('username')!.touched"
+               placeholder="Mínimo 3 caracteres" autocomplete="off" />
+        <small class="um-field-error" *ngIf="registerForm.get('username')!.invalid && registerForm.get('username')!.touched">
+          Mínimo 3 caracteres.
+        </small>
+      </div>
+
+      <div class="um-field">
+        <label class="um-label">Contraseña</label>
+        <input type="password" formControlName="password" class="um-input"
+               [class.um-input--invalid]="registerForm.get('password')!.invalid && registerForm.get('password')!.touched"
+               placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+        <small class="um-field-error" *ngIf="registerForm.get('password')!.invalid && registerForm.get('password')!.touched">
+          Mínimo 8 caracteres.
+        </small>
+      </div>
+
+      <div class="um-field">
+        <label class="um-label">Confirmar contraseña</label>
+        <input type="password" formControlName="confirm" class="um-input"
+               [class.um-input--invalid]="registerForm.errors?.['mismatch'] && registerForm.get('confirm')!.touched"
+               autocomplete="new-password" />
+        <small class="um-field-error" *ngIf="registerForm.errors?.['mismatch'] && registerForm.get('confirm')!.touched">
+          Las contraseñas no coinciden.
+        </small>
+      </div>
+
+      <div class="um-field">
+        <label class="um-label">Rol</label>
+        <select formControlName="role" class="um-select">
+          <option value="user">Usuario</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <div *ngIf="formError" class="um-msg um-msg--error">{{ formError }}</div>
+      <div *ngIf="formSuccess" class="um-msg um-msg--ok">{{ formSuccess }}</div>
+
+      <div class="um-form-actions">
+        <button type="submit" class="um-btn um-btn--save" [disabled]="registerForm.invalid || formLoading">
+          {{ formLoading ? 'Creando...' : 'Crear usuario' }}
+        </button>
+        <button type="button" class="um-btn um-btn--cancel" (click)="closeForm()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ─── Estado de carga / error ─────────────────────────────────────── -->
+  <div class="um-loading" *ngIf="loading">Cargando usuarios...</div>
+  <div class="um-error" *ngIf="errorMsg">{{ errorMsg }}</div>
+
+  <!-- ─── Tabla de usuarios ────────────────────────────────────────────── -->
+  <div class="um-table-wrap" *ngIf="!loading && !errorMsg">
+    <table class="um-table">
+      <thead>
+        <tr>
+          <th class="um-th um-th--id">ID</th>
+          <th class="um-th um-th--user">Usuario</th>
+          <th class="um-th um-th--role">Rol</th>
+          <th class="um-th um-th--pwd">Contraseña</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of users" class="um-row">
+          <td class="um-td um-td--id">{{ u.id }}</td>
+          <td class="um-td um-td--user">{{ u.username }}</td>
+          <td class="um-td um-td--role">
+            <span class="um-role-badge um-role-badge--{{ u.role }}">{{ roleLabel(u.role) }}</span>
+          </td>
+          <td class="um-td um-td--pwd">
+            <ng-container *ngIf="u.password; else noPwd">
+              <span class="um-pwd-text">{{ isPasswordVisible(u.id) ? u.password : '••••••••' }}</span>
+              <button class="um-pwd-toggle" (click)="togglePasswordVisibility(u.id)">
+                {{ isPasswordVisible(u.id) ? 'Ocultar' : 'Ver' }}
+              </button>
+            </ng-container>
+            <ng-template #noPwd>
+              <span class="um-pwd-unknown">—</span>
+            </ng-template>
+          </td>
+        </tr>
+        <tr *ngIf="users.length === 0">
+          <td colspan="4" class="um-empty">No hay usuarios registrados.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
