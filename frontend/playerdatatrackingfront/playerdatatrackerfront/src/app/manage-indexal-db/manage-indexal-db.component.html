@@ -200,7 +200,7 @@
         <div class="operation-inputs">
           <label class="input-text-row">
             <span>Temporada</span>
-            <input type="text" [(ngModel)]="playerSeason" class="input-field" placeholder="ej. 2024" />
+            <input type="text" [(ngModel)]="playerSeason" class="input-field" placeholder="ej. 2025" />
           </label>
           <label class="input-text-row">
             <span>Threads</span>
@@ -380,7 +380,7 @@
               <span class="weight-chip">Fatiga <strong>{{ w.wFatigue | number:'1.3-3' }}</strong></span>
               <span class="weight-chip">Balón parado <strong>{{ w.wSetPieces | number:'1.3-3' }}</strong></span>
               <span class="weight-chip">Atmósfera <strong>{{ w.wAtm | number:'1.3-3' }}</strong></span>
-              <span class="weight-chip">No disponibles <strong>{{ w.wUnavail | number:'1.3-3' }}</strong></span>
+              <span class="weight-chip">Jugadores no disponibles <strong>{{ w.wUnavail | number:'1.3-3' }}</strong></span>
             </div>
             <span class="history-weights-meta" *ngIf="w.fromDb">
               Calibradas el {{ w.calibrationDate }} · {{ w.nSamples }} muestras

@@ -77,7 +77,7 @@ export class ManageIndexalDbComponent implements OnInit {
 
   // Fixtures - ingestión secuencial
   fixturePurge = false;
-  fixtureSeason = '2024';
+  fixtureSeason = '2025';
   fixtureRunning = false;
   fixtureSteps: FixtureStep[] = this.buildFixtureSteps();
 
@@ -298,11 +298,13 @@ export class ManageIndexalDbComponent implements OnInit {
     });
   }
 
-  loadAnalysisHistory(): void {
+  loadAnalysisHistory(preserveState = false): void {
     this.historyLoading = true;
     this.historyError = null;
-    this.historyData = null;
-    this.deltasUpdated = false;
+    if (!preserveState) {
+      this.historyData = null;
+      this.deltasUpdated = false;
+    }
     this.currentPage = 1;
     this.fixtureService.getAnalysisHistory().subscribe({
       next: (data) => {
@@ -334,7 +336,7 @@ export class ManageIndexalDbComponent implements OnInit {
         this.deltasUpdateMessage = result.entity || 'Deltas actualizadas correctamente';
         this.deltasUpdateError = !result.ok;
         if (!this.deltasUpdateError) {
-          this.loadAnalysisHistory();
+          this.loadAnalysisHistory(true);
         }
       },
       error: () => {

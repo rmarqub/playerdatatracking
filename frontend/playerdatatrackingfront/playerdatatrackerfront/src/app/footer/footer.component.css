@@ -2,4 +2,10 @@
   display: block;
   background-color: #CD853F;
   height: 60px;
+  transition: background-color 0.35s ease;
+}
+
+:host-context(body.dark-mode) {
+  background-color: #1c2128;
+  border-top: 1px solid #30363d;
 }

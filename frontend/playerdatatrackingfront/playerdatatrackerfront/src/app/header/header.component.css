@@ -47,28 +47,28 @@
 .btn-theme {
   display: flex;
   align-items: center;
-  gap: 7px;
-  background: rgba(0, 0, 0, 0.18);
-  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 5px 12px 5px 8px;
+  padding: 3px 9px 3px 6px;
   cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
   transition: background 0.25s, border-color 0.25s, color 0.25s;
   white-space: nowrap;
 }
 
 .btn-theme:hover {
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.20);
 }
 
 /* The icon: a small circle that morphs between sun and moon */
 .theme-icon {
   position: relative;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
 }
 
@@ -76,24 +76,24 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.65);
   transition: background 0.35s ease, transform 0.35s ease, clip-path 0.4s ease;
   clip-path: circle(50%);
 }
 
-/* Sun rays — 8 dots around the orb, visible in light mode */
+/* Sun rays — 4 dots around the orb, visible in light mode */
 .sun-rays {
   position: absolute;
-  inset: -4px;
+  inset: -3px;
   border-radius: 50%;
   background: transparent;
   transition: opacity 0.3s ease;
   opacity: 1;
   box-shadow:
-    0 -6px 0 1.5px #1a1a1a,
-    0  6px 0 1.5px #1a1a1a,
-   -6px 0  0 1.5px #1a1a1a,
-    6px 0  0 1.5px #1a1a1a;
+    0 -5px 0 1px rgba(0, 0, 0, 0.65),
+    0  5px 0 1px rgba(0, 0, 0, 0.65),
+   -5px 0  0 1px rgba(0, 0, 0, 0.65),
+    5px 0  0 1px rgba(0, 0, 0, 0.65);
 }
 
 /* In dark mode: hide rays, morph orb into crescent */
@@ -141,23 +141,25 @@
 
 /* When page is in dark mode, adjust header and button appearances */
 :host-context(body.dark-mode) .header {
-  background-color: #7a4f24;
+  background-color: #1c2128;
+  border-bottom: 1px solid #30363d;
 }
 
 :host-context(body.dark-mode) .btn-back {
-  color: #e2e8f0;
+  color: #c9d1d9;
+  background-color: transparent !important;
 }
 
 :host-context(body.dark-mode) .btn-back:hover {
-  color: #a0aec0;
+  color: #8b949e;
 }
 
 :host-context(body.dark-mode) .btn-theme {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #c9d1d9;
 }
 
 :host-context(body.dark-mode) .btn-theme:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.18);
 }

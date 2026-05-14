@@ -782,3 +782,188 @@ body.dark-mode .results-table-stats-table tbody tr.summary-row td {
 body.dark-mode .season-group-title {
   color: #e6edf3 !important;
 }
+
+/* ── Login page ──────────────────────────────────────────────────────────── */
+
+body.dark-mode .login-page {
+  background: #0d1117 !important;
+}
+
+body.dark-mode .login-card {
+  background-color: #161b22 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .login-title {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .login-page label {
+  color: #c9d1d9 !important;
+}
+
+body.dark-mode .input {
+  background: #1c2128 !important;
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .input::placeholder {
+  color: #656d76 !important;
+}
+
+body.dark-mode .alert-error {
+  background: #2d1f1f !important;
+  border-color: #7c2626 !important;
+  color: #e07060 !important;
+}
+
+/* ── Live fixtures — puntuación de tarjetas y filas en vivo ──────────────── */
+
+body.dark-mode .live-score {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .score-sep {
+  color: #8b949e !important;
+}
+
+body.dark-mode .team-name-live.winner {
+  color: #4caf50 !important;
+}
+
+body.dark-mode .live-row {
+  background-color: #2d1e0f !important;
+}
+
+body.dark-mode .live-row:hover {
+  background-color: #3d2a15 !important;
+}
+
+/* ── Fixture detail — porcentajes de predicción ──────────────────────────── */
+
+body.dark-mode .pred-pct {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .pred-check {
+  color: #b57bee !important;
+}
+
+body.dark-mode .pred-outcome-row.pred-winner {
+  background: rgba(142, 68, 173, 0.22) !important;
+}
+
+body.dark-mode .pred-binary-item.pred-binary-winner {
+  background: rgba(142, 68, 173, 0.22) !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .pred-binary-pct {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .pred-section-label,
+body.dark-mode .pred-binary-title {
+  color: #8b949e !important;
+}
+
+body.dark-mode .pred-confidence {
+  color: #8b949e !important;
+}
+
+body.dark-mode .conf-high {
+  background: #1e3a28 !important;
+  color: #4caf50 !important;
+}
+
+body.dark-mode .conf-mid {
+  background: #3a2e10 !important;
+  color: #f3b32b !important;
+}
+
+body.dark-mode .conf-low {
+  background: #3a1515 !important;
+  color: #ef5350 !important;
+}
+
+body.dark-mode .pred-contextual-note {
+  color: #a89cee !important;
+  background: rgba(108, 92, 231, 0.15) !important;
+}
+
+body.dark-mode .ctx-delta-row {
+  background: rgba(108, 92, 231, 0.15) !important;
+}
+
+body.dark-mode .ctx-delta-value {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .ctx-delta-side {
+  color: #8b949e !important;
+}
+
+body.dark-mode .pred-disclaimer {
+  color: #656d76 !important;
+}
+
+body.dark-mode .pred-warning-item {
+  background: #2d2010 !important;
+  border-left-color: #f3b32b !important;
+  color: #c8973d !important;
+}
+
+/* ── Manual data — tabla de jugadores ────────────────────────────────────── */
+
+body.dark-mode .manual-data-table {
+  border-color: #30363d !important;
+}
+
+body.dark-mode .manual-data-row {
+  background-color: #1c2128 !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .manual-data-row:nth-child(even) {
+  background-color: #21262d !important;
+}
+
+body.dark-mode .manual-data-row-value,
+body.dark-mode .manual-data-row-name-value {
+  border-color: #30363d !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .manual-data-row-name-value:hover {
+  background-color: #2d333b !important;
+}
+
+/* ── Botones de acción en dark mode — versiones apagadas ─────────────────── */
+
+/* Search-fixtures: Buscar / Live / Análisis */
+body.dark-mode .search-button              { background-color: #7c5a18 !important; }
+body.dark-mode .search-button:hover:enabled { background-color: #9a7020 !important; }
+body.dark-mode .search-button:disabled      { background-color: #4a3610 !important; }
+
+body.dark-mode .live-button                { background-color: #7a3518 !important; }
+body.dark-mode .live-button:hover:enabled  { background-color: #9a4520 !important; }
+body.dark-mode .live-button:disabled       { background-color: #4a2010 !important; }
+
+body.dark-mode .analysis-search-button              { background-color: #1d4f8a !important; }
+body.dark-mode .analysis-search-button:hover:enabled { background-color: #265fa0 !important; }
+body.dark-mode .analysis-search-button:disabled      { background-color: #122f54 !important; }
+
+/* Fixture-detail: Volver / H2H / Predicciones / Análisis contextual */
+body.dark-mode .action-row .btn-back              { background-color: #7c5a18 !important; }
+body.dark-mode .action-row .btn-back:hover        { background-color: #9a7020 !important; }
+
+body.dark-mode .btn-h2h              { background-color: #1d4f8a !important; }
+body.dark-mode .btn-h2h:hover        { background-color: #265fa0 !important; }
+
+body.dark-mode .btn-predictions      { background-color: #5c2d7a !important; }
+body.dark-mode .btn-predictions:hover { background-color: #703590 !important; }
+
+body.dark-mode .btn-analysis         { background-color: #1a6b3c !important; }
+body.dark-mode .btn-analysis:hover   { background-color: #218a4d !important; }
