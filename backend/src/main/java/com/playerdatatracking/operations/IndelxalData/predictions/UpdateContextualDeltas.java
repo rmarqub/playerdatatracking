@@ -128,16 +128,16 @@ public class UpdateContextualDeltas {
                 unavailHaSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers())
             };
 
-            // Draw-affinity features: centered averages (range −2 to +2)
-            // Positive = both teams high on this factor; negative = both low
+            // Draw-affinity features: equality signal (range −2 to +2)
+            // Positive = ambos equipos iguales en este factor; negativo = muy dispares
             double[] drawFeats = new double[]{
-                drawAvg(a.getHomeCurrentForm(),       a.getAwayCurrentForm()),
-                drawAvg(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds()),
-                drawAvg(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock()),
-                drawAvg(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm()),
-                drawAvg(a.getHomeFatigue(),           a.getAwayFatigue()),
-                drawAvg(a.getHomeSetPieces(),         a.getAwaySetPieces()),
-                drawAvg(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere()),
+                drawBalance(a.getHomeCurrentForm(),       a.getAwayCurrentForm()),
+                drawBalance(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds()),
+                drawBalance(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock()),
+                drawBalance(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm()),
+                drawBalance(a.getHomeFatigue(),           a.getAwayFatigue()),
+                drawBalance(a.getHomeSetPieces(),         a.getAwaySetPieces()),
+                drawBalance(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere()),
                 unavailDrawSignal(a.getHomeUnavailablePlayers(), a.getAwayUnavailablePlayers())
             };
 
@@ -211,14 +211,16 @@ public class UpdateContextualDeltas {
         ContextualWeightConfig cfg = new ContextualWeightConfig();
 
         cfg.setWForma(    round4(wHA[0])); cfg.setWNeeds(    round4(wHA[1]));
-        cfg.setWDef(      round4(wHA[2])); cfg.setWOff(      round4(wHA[3]));
+        // w_def y w_off deben ser >= 0: más bloque/ritmo local → ventaja local
+        cfg.setWDef(      round4(Math.max(0.0, wHA[2]))); cfg.setWOff(round4(Math.max(0.0, wHA[3])));
         cfg.setWFatigue(  round4(wHA[4])); cfg.setWSetPieces(round4(wHA[5]));
         cfg.setWAtm(      round4(Math.max(0.0, wHA[6]))); cfg.setWUnavail(  round4(wHA[7]));
 
-        cfg.setWFormaD(    round4(wD[0])); cfg.setWNeedsD(    round4(wD[1]));
-        cfg.setWDefD(      round4(wD[2])); cfg.setWOffD(      round4(wD[3]));
-        cfg.setWFatigueD(  round4(wD[4])); cfg.setWSetPiecesD(round4(wD[5]));
-        cfg.setWAtmD(      round4(Math.max(0.0, wD[6]))); cfg.setWUnavailD(  round4(wD[7]));
+        // todos los _d deben ser >= 0: igualdad en el factor → más empate (drawBalance +2 cuando iguales)
+        cfg.setWFormaD(    round4(Math.max(0.0, wD[0]))); cfg.setWNeedsD(    round4(Math.max(0.0, wD[1])));
+        cfg.setWDefD(      round4(Math.max(0.0, wD[2]))); cfg.setWOffD(      round4(Math.max(0.0, wD[3])));
+        cfg.setWFatigueD(  round4(Math.max(0.0, wD[4]))); cfg.setWSetPiecesD(round4(Math.max(0.0, wD[5])));
+        cfg.setWAtmD(      round4(Math.max(0.0, wD[6]))); cfg.setWUnavailD(  round4(Math.max(0.0, wD[7])));
 
         cfg.setCalibrationDate(LocalDate.now());
         cfg.setNSamples(n);
@@ -242,12 +244,13 @@ public class UpdateContextualDeltas {
     }
 
     /**
-     * Draw-affinity feature: centered average.
-     * Returns (avg − 3), range [−2, +2].
-     * Positive when both teams are above neutral; negative when both below.
+     * Draw-affinity feature: equality signal.
+     * Returns 2 − |home − away|, range [−2, +2].
+     * +2 = equipos idénticos en este factor; −2 = máxima diferencia posible (1 vs 5).
+     * Con pesos >= 0, igualdad sube el empate; disparidad lo baja.
      */
-    private double drawAvg(Integer home, Integer away) {
-        return (nvl(home) + nvl(away)) / 2.0 - 3.0;
+    private double drawBalance(Integer home, Integer away) {
+        return 2.0 - Math.abs(nvl(home) - nvl(away));
     }
 
     private double nvl(Integer v) { return v != null ? v : 3.0; }

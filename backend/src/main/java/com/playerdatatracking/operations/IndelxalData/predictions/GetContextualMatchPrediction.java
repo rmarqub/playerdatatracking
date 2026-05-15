@@ -242,22 +242,25 @@ public class GetContextualMatchPrediction {
     private double computeHaDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
         return safe(w.getWForma(),    0.12) * diff(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
              + safe(w.getWNeeds(),    0.10) * diff(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
-             + safe(w.getWDef(),      0.07) * diff(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
-             + safe(w.getWOff(),      0.07) * diff(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
+             // floor en 0: más bloque/ritmo local nunca puede penalizar al equipo local
+             + Math.max(0.0, safe(w.getWDef(), 0.07)) * diff(a.getHomeDefensiveBlock(),  a.getAwayDefensiveBlock())
+             + Math.max(0.0, safe(w.getWOff(), 0.07)) * diff(a.getHomeOffensiveRhythm(), a.getAwayOffensiveRhythm())
              + safe(w.getWFatigue(),  0.06) * diff(a.getAwayFatigue(),           a.getHomeFatigue())
              + safe(w.getWSetPieces(),0.06) * diff(a.getHomeSetPieces(),         a.getAwaySetPieces())
-             + safe(w.getWAtm(),      0.03) * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+             + Math.max(0.0, safe(w.getWAtm(), 0.03)) * diff(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
     }
 
     /** Draw delta: shifts logit(draw) independently of the HA balance. */
     private double computeDrawDelta(FixtureContextualAnalysis a, ContextualWeightConfig w) {
-        return safe(w.getWFormaD(),     0.0) * drawAvg(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
-             + safe(w.getWNeedsD(),     0.0) * drawAvg(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
-             + safe(w.getWDefD(),       0.0) * drawAvg(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
-             + safe(w.getWOffD(),       0.0) * drawAvg(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
-             + safe(w.getWFatigueD(),   0.0) * drawAvg(a.getHomeFatigue(),           a.getAwayFatigue())
-             + safe(w.getWSetPiecesD(), 0.0) * drawAvg(a.getHomeSetPieces(),         a.getAwaySetPieces())
-             + safe(w.getWAtmD(),       0.0) * drawAvg(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
+        // Todos los _d >= 0: drawBalance es positivo cuando equipos son iguales en ese factor,
+        // negativo cuando muy dispares → igualdad sube empate, disparidad lo baja.
+        return Math.max(0.0, safe(w.getWFormaD(),     0.0)) * drawBalance(a.getHomeCurrentForm(),       a.getAwayCurrentForm())
+             + Math.max(0.0, safe(w.getWNeedsD(),     0.0)) * drawBalance(a.getHomeTeamNeeds(),         a.getAwayTeamNeeds())
+             + Math.max(0.0, safe(w.getWDefD(),        0.0)) * drawBalance(a.getHomeDefensiveBlock(),    a.getAwayDefensiveBlock())
+             + Math.max(0.0, safe(w.getWOffD(),        0.0)) * drawBalance(a.getHomeOffensiveRhythm(),   a.getAwayOffensiveRhythm())
+             + Math.max(0.0, safe(w.getWFatigueD(),   0.0)) * drawBalance(a.getHomeFatigue(),           a.getAwayFatigue())
+             + Math.max(0.0, safe(w.getWSetPiecesD(), 0.0)) * drawBalance(a.getHomeSetPieces(),         a.getAwaySetPieces())
+             + Math.max(0.0, safe(w.getWAtmD(),        0.0)) * drawBalance(a.getHomeStadiumAtmosphere(), a.getAwayStadiumAtmosphere());
         // wUnavailD contribution is handled by computeUnavailableImpacts()
     }
 
@@ -269,9 +272,13 @@ public class GetContextualMatchPrediction {
         return nvl(home) - nvl(away);
     }
 
-    /** Centered average: (avg − 3), range [−2, +2]. */
-    private double drawAvg(Integer home, Integer away) {
-        return (nvl(home) + nvl(away)) / 2.0 - 3.0;
+    /**
+     * Draw-affinity feature: equality signal.
+     * Returns 2 − |home − away|, range [−2, +2].
+     * +2 = equipos idénticos; −2 = diferencia máxima (1 vs 5).
+     */
+    private double drawBalance(Integer home, Integer away) {
+        return 2.0 - Math.abs(nvl(home) - nvl(away));
     }
 
     private double nvl(Integer v) { return v != null ? v : 3.0; }
