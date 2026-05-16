@@ -22,6 +22,7 @@ from typing import Any, Optional
 import numpy as np
 import pandas as pd
 import psycopg2
+from scipy.stats import poisson as scipy_poisson
 import compute_season_percentiles as _compute_pct
 import compute_player_percentiles as _compute_pp
 from fastapi import BackgroundTasks, FastAPI, HTTPException
@@ -56,7 +57,8 @@ DB_CONFIG = {
 
 MODELS_DIR = Path(__file__).parent / "models"
 
-# Populated at startup; keys: "lgbm_1x2", "lgbm_ou25", "lgbm_btts"
+# Populated at startup; keys: "lgbm_1x2", "lgbm_ou25", "lgbm_btts",
+#   "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"
 MODELS: dict[str, dict] = {}
 
 # Venue-split columns — must match what feature_engineering.py produces
@@ -68,6 +70,10 @@ ALL_ROLL_COLS = [
     "scored", "clean_sheet",
     "xg_for", "xg_against", "shots_on_goal", "shots_total",
     "possession", "passes_pct", "corner_kicks", "saves",
+    "shooting_accuracy", "shots_inside_box_rate",
+    "corners_against", "corner_ratio",
+    "fouls_per_shot", "yellow_cards", "fouls",
+    "btts", "ou25", "ou15",
 ]
 
 # EMA columns — must match EMA_COLS in feature_engineering.py
@@ -97,7 +103,8 @@ PLAYER_ROLL_COLS = [
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    for name in ("lgbm_1x2", "lgbm_ou25", "lgbm_btts"):
+    for name in ("lgbm_1x2", "lgbm_ou25", "lgbm_btts",
+                 "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"):
         path = MODELS_DIR / f"{name}.pkl"
         if not path.exists():
             raise RuntimeError(f"Modelo no encontrado: {path}. Ejecuta train_model.py primero.")
@@ -172,12 +179,16 @@ def _query_team_matches(
             CASE WHEN f.home_team_id = %(tid)s THEN f.goals_away ELSE f.goals_home END AS goals_against,
             ts.shots_on_goal,
             ts.shots_total,
-            ts.ball_possession    AS possession,
+            ts.ball_possession      AS possession,
             ts.passes_pct,
             ts.corner_kicks,
-            ts.goalkeeper_saves   AS saves,
-            ts.expected_goals     AS xg_for,
-            ts_rival.expected_goals AS xg_against
+            ts.goalkeeper_saves     AS saves,
+            ts.expected_goals       AS xg_for,
+            ts.shots_inside_box,
+            ts.fouls,
+            ts.yellow_cards,
+            ts_rival.expected_goals AS xg_against,
+            ts_rival.corner_kicks   AS corners_against
         FROM fixture f
         LEFT JOIN fixture_team_stats ts
                ON ts.fixture_id = f.id AND ts.team_id = %(tid)s
@@ -204,6 +215,15 @@ def _query_team_matches(
     df["lost"]        = (df["goals_for"] < df["goals_against"]).astype(float)
     df["scored"]      = (df["goals_for"] > 0).astype(float)
     df["clean_sheet"] = (df["goals_against"] == 0).astype(float)
+    df["btts"]        = ((df["goals_for"] > 0) & (df["goals_against"] > 0)).astype(float)
+    df["ou25"]        = ((df["goals_for"] + df["goals_against"]) > 2.5).astype(float)
+    df["ou15"]        = ((df["goals_for"] + df["goals_against"]) > 1.5).astype(float)
+    shots_total_safe       = df["shots_total"].replace(0, np.nan)
+    df["shooting_accuracy"]     = df["shots_on_goal"] / shots_total_safe
+    df["shots_inside_box_rate"] = df["shots_inside_box"] / shots_total_safe
+    df["fouls_per_shot"]        = df["fouls"] / shots_total_safe
+    corners_total = df["corner_kicks"].fillna(0) + df["corners_against"].fillna(0)
+    df["corner_ratio"]          = df["corner_kicks"] / (corners_total + 1e-6)
     return df
 
 
@@ -299,9 +319,11 @@ def _query_league_rates(conn, league_id: int, match_date: Any) -> dict:
     with conn.cursor() as cur:
         cur.execute("""
             SELECT
-                AVG(CASE WHEN goals_home > goals_away THEN 1.0 ELSE 0.0 END) AS league_home_win_rate,
-                AVG(goals_home + goals_away)                                   AS league_avg_goals,
-                AVG(CASE WHEN goals_home + goals_away > 2.5 THEN 1.0 ELSE 0.0 END) AS league_over25_rate,
+                AVG(CASE WHEN goals_home > goals_away THEN 1.0 ELSE 0.0 END)          AS league_home_win_rate,
+                AVG(goals_home + goals_away)                                             AS league_avg_goals,
+                AVG(CASE WHEN goals_home + goals_away > 2.5 THEN 1.0 ELSE 0.0 END)    AS league_over25_rate,
+                AVG(CASE WHEN goals_home + goals_away > 1.5 THEN 1.0 ELSE 0.0 END)    AS league_over15_rate,
+                AVG(CASE WHEN goals_home > 0 AND goals_away > 0 THEN 1.0 ELSE 0.0 END) AS league_btts_rate,
                 COUNT(*) AS match_count
             FROM fixture
             WHERE status_short = 'FT'
@@ -311,12 +333,20 @@ def _query_league_rates(conn, league_id: int, match_date: Any) -> dict:
         row = cur.fetchone()
 
     if not row or not row["match_count"] or row["match_count"] < 10:
-        return {"league_home_win_rate": np.nan, "league_avg_goals": np.nan, "league_over25_rate": np.nan}
+        return {
+            "league_home_win_rate": np.nan, "league_avg_goals": np.nan,
+            "league_over25_rate": np.nan, "league_over15_rate": np.nan, "league_btts_rate": np.nan,
+        }
+
+    def _f(v):
+        return float(v) if v is not None else np.nan
 
     return {
-        "league_home_win_rate": float(row["league_home_win_rate"]) if row["league_home_win_rate"] is not None else np.nan,
-        "league_avg_goals":     float(row["league_avg_goals"])     if row["league_avg_goals"]     is not None else np.nan,
-        "league_over25_rate":   float(row["league_over25_rate"])   if row["league_over25_rate"]   is not None else np.nan,
+        "league_home_win_rate": _f(row["league_home_win_rate"]),
+        "league_avg_goals":     _f(row["league_avg_goals"]),
+        "league_over25_rate":   _f(row["league_over25_rate"]),
+        "league_over15_rate":   _f(row["league_over15_rate"]),
+        "league_btts_rate":     _f(row["league_btts_rate"]),
     }
 
 
@@ -637,15 +667,26 @@ def _rolling_mean(df: pd.DataFrame, cols: list[str]) -> dict:
     return result
 
 
+def _align_features(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
+    """Alinea df al schema exacto de un modelo (añade NaN para features ausentes)."""
+    for col in features:
+        if col not in df.columns:
+            df[col] = np.nan
+    for col in ("league_id", "season"):
+        if col in df.columns and col in features:
+            df[col] = df[col].astype("category")
+    return df[features]
+
+
 def build_feature_row(
     fixture_id: int,
-    features: list[str],
     n: int,
     m: int,
 ) -> tuple[pd.DataFrame, list[str], dict]:
     """
-    Construye la fila de features para un partido y la alinea con el schema
-    de entrenamiento. Devuelve (df_1row, warnings, fixture_info).
+    Construye la fila de features para un partido con todas las columnas disponibles.
+    Devuelve (df_all_cols, warnings, fixture_info).
+    Usa _align_features(df, model_features) para filtrar al schema de cada modelo.
     """
     warnings: list[str] = []
     conn = _get_conn()
@@ -750,6 +791,14 @@ def build_feature_row(
         for key, val in away_pct.items():
             row[f"away_{key}"] = val
 
+        # ---- Combined & diff — corners ----
+        ck_h = row.get(f"home_roll_corner_kicks_last{n}")
+        ck_a = row.get(f"away_roll_corner_kicks_last{n}")
+        if ck_h is not None and ck_a is not None and not pd.isna(ck_h) and not pd.isna(ck_a):
+            row["combined_corners"] = ck_h + ck_a
+        else:
+            row["combined_corners"] = np.nan
+
         # ---- Balance features (señal para empates) ----
         xg_h = row.get(f"home_roll_xg_for_last{n}")
         xg_a = row.get(f"away_roll_xg_for_last{n}")
@@ -769,17 +818,20 @@ def build_feature_row(
 
         # ---- Diff features — team stats ----
         diff_pairs = [
-            (f"home_roll_goals_for_last{n}",     f"away_roll_goals_for_last{n}",     "diff_goals_for"),
-            (f"home_roll_goals_against_last{n}", f"away_roll_goals_against_last{n}", "diff_goals_against"),
-            (f"home_roll_won_last{n}",           f"away_roll_won_last{n}",           "diff_wins"),
-            (f"home_roll_shots_on_goal_last{n}", f"away_roll_shots_on_goal_last{n}", "diff_shots_on_goal"),
-            (f"home_roll_possession_last{n}",    f"away_roll_possession_last{n}",    "diff_possession"),
-            (f"home_roll_passes_pct_last{n}",    f"away_roll_passes_pct_last{n}",    "diff_passes_pct"),
-            (f"home_roll_xg_for_last{n}",         f"away_roll_xg_for_last{n}",         "diff_xg"),
-            (f"home_roll_xg_against_last{n}",    f"away_roll_xg_against_last{n}",    "diff_xga"),
-            ("home_season_ppg",                  "away_season_ppg",                  "diff_season_ppg"),
-            ("home_season_gfpg",                 "away_season_gfpg",                 "diff_season_gfpg"),
-            ("home_season_gapg",                 "away_season_gapg",                 "diff_season_gapg"),
+            (f"home_roll_goals_for_last{n}",       f"away_roll_goals_for_last{n}",       "diff_goals_for"),
+            (f"home_roll_goals_against_last{n}",   f"away_roll_goals_against_last{n}",   "diff_goals_against"),
+            (f"home_roll_won_last{n}",             f"away_roll_won_last{n}",             "diff_wins"),
+            (f"home_roll_shots_on_goal_last{n}",   f"away_roll_shots_on_goal_last{n}",   "diff_shots_on_goal"),
+            (f"home_roll_possession_last{n}",      f"away_roll_possession_last{n}",      "diff_possession"),
+            (f"home_roll_passes_pct_last{n}",      f"away_roll_passes_pct_last{n}",      "diff_passes_pct"),
+            (f"home_roll_xg_for_last{n}",          f"away_roll_xg_for_last{n}",          "diff_xg"),
+            (f"home_roll_xg_against_last{n}",      f"away_roll_xg_against_last{n}",      "diff_xga"),
+            ("home_season_ppg",                    "away_season_ppg",                    "diff_season_ppg"),
+            ("home_season_gfpg",                   "away_season_gfpg",                   "diff_season_gfpg"),
+            ("home_season_gapg",                   "away_season_gapg",                   "diff_season_gapg"),
+            (f"home_roll_corner_kicks_last{n}",    f"away_roll_corner_kicks_last{n}",    "diff_corners"),
+            (f"home_roll_corners_against_last{n}", f"away_roll_corners_against_last{n}", "diff_corners_against"),
+            (f"home_roll_corner_ratio_last{n}",    f"away_roll_corner_ratio_last{n}",    "corner_dominance_diff"),
         ]
         # ---- Diff features — player stats ----
         player_diff_pairs = [
@@ -822,17 +874,8 @@ def build_feature_row(
     finally:
         conn.close()
 
-    # Alinear al schema exacto de entrenamiento
     df = pd.DataFrame([row])
-    for col in features:
-        if col not in df.columns:
-            df[col] = np.nan
-
-    for col in ("league_id", "season"):
-        if col in df.columns:
-            df[col] = df[col].astype("category")
-
-    return df[features], warnings, fix
+    return df, warnings, fix
 
 
 # ---------------------------------------------------------------------------
@@ -886,29 +929,43 @@ def refresh_percentiles(background_tasks: BackgroundTasks):
 
 @app.post("/predict")
 def predict(req: PredictRequest):
-    features = MODELS["lgbm_1x2"]["metadata"]["features"]
-    n = _infer_lookback(features)
+    # Inferir ventana lookback desde el modelo 1x2 (referencia)
+    n = _infer_lookback(MODELS["lgbm_1x2"]["metadata"]["features"])
     m = 5  # H2H lookback
 
-    df, warnings, fix = build_feature_row(req.fixture_id, features, n, m)
+    df_all, warnings, fix = build_feature_row(req.fixture_id, n, m)
 
-    # 1X2
-    model_1x2  = MODELS["lgbm_1x2"]["model"]
-    probs_1x2  = model_1x2.predict_proba(df)[0]
+    def _proba(model_name: str) -> np.ndarray:
+        meta = MODELS[model_name]
+        df_m = _align_features(df_all.copy(), meta["metadata"]["features"])
+        return meta["model"].predict_proba(df_m)[0]
+
+    # ── 1X2 ──────────────────────────────────────────────────────────────────
+    probs_1x2  = _proba("lgbm_1x2")
     pred_1x2   = int(np.argmax(probs_1x2))
     label_map  = {0: "home_win", 1: "draw", 2: "away_win"}
     sorted_p   = sorted(probs_1x2, reverse=True)
     confidence = round(float(sorted_p[0] - sorted_p[1]), 4)
 
-    # Over/Under 2.5
-    model_ou  = MODELS["lgbm_ou25"]["model"]
-    probs_ou  = model_ou.predict_proba(df)[0]
-    pred_over = bool(probs_ou[1] >= 0.5)
+    # ── Over/Under 2.5 ───────────────────────────────────────────────────────
+    probs_ou25 = _proba("lgbm_ou25")
 
-    # BTTS
-    model_btts = MODELS["lgbm_btts"]["model"]
-    probs_btts = model_btts.predict_proba(df)[0]
-    pred_btts  = bool(probs_btts[1] >= 0.5)
+    # ── BTTS ─────────────────────────────────────────────────────────────────
+    probs_btts = _proba("lgbm_btts")
+
+    # ── Over 0.5 / 1.5 / 3.5 ────────────────────────────────────────────────
+    probs_over05 = _proba("lgbm_over05")
+    probs_over15 = _proba("lgbm_over15")
+    probs_over35 = _proba("lgbm_over35")
+
+    # ── Córners (Poisson) ─────────────────────────────────────────────────────
+    corners_meta = MODELS["lgbm_corners_lambda"]
+    df_corners   = _align_features(df_all.copy(), corners_meta["metadata"]["features"])
+    lam          = float(corners_meta["model"].predict_lambda(df_corners)[0])
+    corner_probs = {
+        f"over_{t}": round(float(1.0 - scipy_poisson.cdf(t, lam)), 4)
+        for t in range(3, 11)
+    }
 
     return {
         "fixture_id": req.fixture_id,
@@ -925,15 +982,36 @@ def predict(req: PredictRequest):
             "predicted":  label_map[pred_1x2],
             "confidence": confidence,
         },
-        "over_under_25": {
-            "over":      round(float(probs_ou[1]), 4),
-            "under":     round(float(probs_ou[0]), 4),
-            "predicted": "over" if pred_over else "under",
+        "goals": {
+            "over_05": {
+                "over":      round(float(probs_over05[1]), 4),
+                "under":     round(float(probs_over05[0]), 4),
+                "predicted": "over" if probs_over05[1] >= 0.5 else "under",
+            },
+            "over_15": {
+                "over":      round(float(probs_over15[1]), 4),
+                "under":     round(float(probs_over15[0]), 4),
+                "predicted": "over" if probs_over15[1] >= 0.5 else "under",
+            },
+            "over_25": {
+                "over":      round(float(probs_ou25[1]), 4),
+                "under":     round(float(probs_ou25[0]), 4),
+                "predicted": "over" if probs_ou25[1] >= 0.5 else "under",
+            },
+            "over_35": {
+                "over":      round(float(probs_over35[1]), 4),
+                "under":     round(float(probs_over35[0]), 4),
+                "predicted": "over" if probs_over35[1] >= 0.5 else "under",
+            },
         },
         "btts": {
             "yes":       round(float(probs_btts[1]), 4),
             "no":        round(float(probs_btts[0]), 4),
-            "predicted": "yes" if pred_btts else "no",
+            "predicted": "yes" if probs_btts[1] >= 0.5 else "no",
+        },
+        "corners": {
+            "expected_total": round(lam, 2),
+            **corner_probs,
         },
         "warnings": warnings,
     }

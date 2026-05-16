@@ -41,7 +41,7 @@ NON_FEATURES = {
     "fixture_id", "league_name", "match_date",
     "home_team_name", "away_team_name",
     "goals_home", "goals_away",
-    "result", "over25", "over15", "over35", "btts", "total_goals",
+    "result", "over05", "over15", "over25", "over35", "btts", "total_goals", "total_corners",
     "home_team_id", "away_team_id",
     "season",
 }
@@ -65,6 +65,41 @@ DRAW_PINNED_FEATURES = [
     "both_draw_prone",
     "draw_rate_diff_recent",
     "both_teams_recent_draw_rate",
+]
+
+# Features críticas para Over/Under — protegidas en selección para modelos OU
+OU_PINNED_FEATURES = [
+    "combined_xg", "defensive_porosity", "total_season_goal_rate", "goal_threat_product",
+    "league_avg_goals", "league_over25_rate", "league_over15_rate", "league_btts_rate",
+    "home_roll_xg_for_last5", "away_roll_xg_for_last5",
+    "home_roll_xg_against_last5", "away_roll_xg_against_last5",
+    "home_roll_ou25_last5", "away_roll_ou25_last5",
+    "home_roll_ou15_last5", "away_roll_ou15_last5",
+    "home_season_gfpg", "away_season_gfpg", "home_season_gapg", "away_season_gapg",
+    "diff_xg", "diff_xga",
+]
+
+# Features críticas para BTTS — protegidas en selección para modelos BTTS
+BTTS_PINNED_FEATURES = [
+    "both_teams_score_rate", "clean_sheet_clash",
+    "home_roll_scored_last5", "away_roll_scored_last5",
+    "home_roll_clean_sheet_last5", "away_roll_clean_sheet_last5",
+    "home_roll_btts_last5", "away_roll_btts_last5",
+    "league_btts_rate",
+    "home_roll_xg_for_last5", "away_roll_xg_against_last5",
+    "home_roll_xg_against_last5", "away_roll_xg_for_last5",
+    "home_season_gfpg", "away_season_gfpg",
+]
+
+# Features críticas para córners — protegidas para el regresor Poisson
+CORNERS_PINNED_FEATURES = [
+    "combined_corners",
+    "home_roll_corner_kicks_last5", "away_roll_corner_kicks_last5",
+    "home_roll_corners_against_last5", "away_roll_corners_against_last5",
+    "home_roll_corner_ratio_last5", "away_roll_corner_ratio_last5",
+    "diff_corners", "diff_corners_against", "corner_dominance_diff",
+    "home_roll_possession_last5", "away_roll_possession_last5",
+    "diff_possession",
 ]
 
 
@@ -104,7 +139,8 @@ def _normalize_rows(probs: np.ndarray) -> np.ndarray:
 
 
 class CalibratedLGBM:
-    """Wrapper picklable: corrección de prior para class_weight + temperature scaling."""
+    """Wrapper picklable: corrección de prior para class_weight + temperature scaling.
+    task puede ser: 'multiclass', 'binary', 'poisson_regressor'."""
 
     def __init__(self, model, task: str, temperature: float = 1.0,
                  class_weight: Optional[dict] = None, positive_weight: Optional[float] = None):
@@ -143,6 +179,12 @@ class CalibratedLGBM:
         if self.task == "multiclass":
             return np.argmax(probs, axis=1)
         return (probs[:, 1] >= 0.5).astype(int)
+
+    def predict_lambda(self, X) -> np.ndarray:
+        """Para regresor Poisson: devuelve lambda (valor esperado). Solo task='poisson_regressor'."""
+        if self.task != "poisson_regressor":
+            raise ValueError("predict_lambda solo disponible para task='poisson_regressor'")
+        return np.maximum(self.model.predict(X), 0.0)  # lambda >= 0
 
 
 # ---------------------------------------------------------------------------
@@ -235,16 +277,18 @@ def _select_top_n(train: pd.DataFrame, features: list[str], target: str,
 
 
 def select_top_features(train: pd.DataFrame, features: list[str], target: str,
-                        max_features: int, task: str) -> list[str]:
+                        max_features: int, task: str,
+                        pinned_extra: list[str] | None = None) -> list[str]:
     """
-    Selección de features con pinning de draw features.
+    Selección de features con pinning por modelo.
     Si max_features=0 devuelve todas las features sin selección.
-    Si max_features>0, protege DRAW_PINNED_FEATURES y selecciona el resto del cupo.
+    Si max_features>0, protege DRAW_PINNED_FEATURES + pinned_extra y selecciona el resto.
     """
     if not max_features or len(features) <= max_features:
         return features
 
-    pinned   = [f for f in DRAW_PINNED_FEATURES if f in features]
+    all_pinned = list(dict.fromkeys(DRAW_PINNED_FEATURES + (pinned_extra or [])))
+    pinned   = [f for f in all_pinned if f in features]
     general  = [f for f in features if f not in set(pinned)]
     n_general = max(max_features - len(pinned), 10)
     selected_general = _select_top_n(train, general, target, n_general, task)
@@ -279,6 +323,16 @@ LGBM_BINARY = {
     "colsample_bytree":  0.45,
     "reg_alpha":         1.5,
     "reg_lambda":        3.0,
+}
+
+LGBM_REGRESSOR = {
+    **LGBM_BASE,
+    "num_leaves":        16,
+    "min_child_samples": 100,
+    "learning_rate":     0.012,
+    "colsample_bytree":  0.50,
+    "reg_alpha":         1.0,
+    "reg_lambda":        2.0,
 }
 
 EARLY_STOPPING_ROUNDS = 180
@@ -341,6 +395,34 @@ def train_1x2(train: pd.DataFrame, features: list[str]) -> CalibratedLGBM:
     return CalibratedLGBM(model, task="multiclass", temperature=temp, class_weight=cw)
 
 
+def train_poisson_regressor(train: pd.DataFrame, features: list[str], target: str) -> CalibratedLGBM:
+    """Regresor LightGBM con objetivo Poisson para predecir el número esperado de córners."""
+    train_clean = train.dropna(subset=[target])
+    if len(train_clean) < 50:
+        raise ValueError(f"Solo {len(train_clean)} filas con {target} no-nulo. Mínimo 50.")
+    val_idx   = int(len(train_clean) * 0.85)
+    tr        = train_clean.iloc[:val_idx]
+    val       = train_clean.iloc[val_idx:]
+    cat_feats = _cat_features_present(features)
+
+    model = lgb.LGBMRegressor(
+        **LGBM_REGRESSOR,
+        objective="poisson",
+        metric="poisson",
+    )
+    model.fit(
+        tr[features], tr[target],
+        eval_set=[(val[features], val[target])],
+        categorical_feature=cat_feats if cat_feats else "auto",
+        callbacks=[
+            lgb.early_stopping(EARLY_STOPPING_ROUNDS, verbose=False),
+            lgb.log_evaluation(period=200),
+        ],
+    )
+    print(f"    Best iteration: {model.best_iteration_}")
+    return CalibratedLGBM(model, task="poisson_regressor")
+
+
 def train_binary(train: pd.DataFrame, features: list[str], target: str) -> CalibratedLGBM:
     y   = train[target].values
     pos = max(float(np.sum(y == 1)), 1.0)
@@ -394,6 +476,26 @@ def evaluate_1x2(model: CalibratedLGBM, data: pd.DataFrame, features: list[str],
     if split_label == "Test":
         _print_confusion(y, preds)
     return rps
+
+
+def evaluate_regression(model: CalibratedLGBM, data: pd.DataFrame, features: list[str],
+                        target: str, label: str, split_label: str = "Test") -> float:
+    data_clean = data.dropna(subset=[target])
+    if data_clean.empty:
+        print(f"\n  Modelo {label} [{split_label}] — sin datos con {target} no-nulo")
+        return float("nan")
+    X    = data_clean[features]
+    y    = data_clean[target].values
+    pred = model.predict_lambda(X)
+    mae  = float(np.mean(np.abs(pred - y)))
+    rmse = float(np.sqrt(np.mean((pred - y) ** 2)))
+    bias = float(np.mean(pred - y))
+    print(f"\n  Modelo {label} [{split_label} — {len(data_clean)} partidos]")
+    print(f"    MAE:       {mae:.3f}  córners")
+    print(f"    RMSE:      {rmse:.3f}  córners")
+    print(f"    Bias:      {bias:+.3f}  (+ = sobreestima)")
+    print(f"    λ media:   {pred.mean():.2f}  |  real media: {y.mean():.2f}")
+    return mae
 
 
 def evaluate_binary(model: CalibratedLGBM, data: pd.DataFrame, features: list[str],
@@ -489,9 +591,10 @@ def parse_args():
 
 
 def _prepare_features(df: pd.DataFrame, train: pd.DataFrame, base_features: list[str],
-                      args, target: str, task: str) -> list[str]:
+                      args, target: str, task: str,
+                      pinned_extra: list[str] | None = None) -> list[str]:
     pruned   = prune_features(train, base_features, max_null=args.max_null)
-    selected = select_top_features(train, pruned, target, args.max_features, task)
+    selected = select_top_features(train, pruned, target, args.max_features, task, pinned_extra=pinned_extra)
     return selected
 
 
@@ -523,51 +626,118 @@ def main():
         "max_features":    args.max_features,
         "drop_league_id":  args.drop_league_id,
         "max_null":        args.max_null,
-        "config_name":     "v3_all_features_draw_pinned",
+        "config_name":     "v4_multi_market",
     }
 
     print(f"\n{'='*55}")
 
-    print("\n[1/3] Entrenando modelo 1X2...")
+    # ── 1/7: 1X2 ──────────────────────────────────────────────────────────────
+    print("\n[1/7] Entrenando modelo 1X2...")
     features_1x2 = _prepare_features(df, train, base_features, args, "result", "multiclass")
     if len(features_1x2) != len(base_features):
         print(f"    Feature selection: {len(base_features)} → {len(features_1x2)} features")
-    m1x2     = train_1x2(train, features_1x2)
-    rps_tr   = evaluate_1x2(m1x2, train, features_1x2, split_label="Train")
-    rps_te   = evaluate_1x2(m1x2, test,  features_1x2, split_label="Test")
-    overfit  = rps_tr - rps_te
+    m1x2    = train_1x2(train, features_1x2)
+    rps_tr  = evaluate_1x2(m1x2, train, features_1x2, split_label="Train")
+    rps_te  = evaluate_1x2(m1x2, test,  features_1x2, split_label="Test")
+    overfit = rps_tr - rps_te
     print(f"\n    Overfitting check (RPS):  Train={rps_tr:.4f}  Test={rps_te:.4f}  gap={overfit:+.4f}"
           + ("  ⚠ posible overfitting" if overfit < -0.015 else "  ✓ OK"))
     print_top_features(m1x2, features_1x2)
     save_model(m1x2, "lgbm_1x2", {**meta_base, "features": features_1x2, "target": "result", "classes": [0, 1, 2]})
 
-    print("\n[2/3] Entrenando modelo Over/Under 2.5...")
-    features_ou  = _prepare_features(df, train, base_features, args, "over25", "binary")
+    # ── 2/7: Over/Under 2.5 ────────────────────────────────────────────────────
+    print("\n[2/7] Entrenando modelo Over/Under 2.5...")
+    features_ou = _prepare_features(df, train, base_features, args, "over25", "binary", pinned_extra=OU_PINNED_FEATURES)
     if len(features_ou) != len(base_features):
         print(f"    Feature selection: {len(base_features)} → {len(features_ou)} features")
-    mou          = train_binary(train, features_ou, "over25")
-    auc_ou_tr    = evaluate_binary(mou, train, features_ou, "over25", "Over/Under 2.5", split_label="Train")
-    auc_ou_te    = evaluate_binary(mou, test,  features_ou, "over25", "Over/Under 2.5", split_label="Test")
+    mou        = train_binary(train, features_ou, "over25")
+    auc_ou_tr  = evaluate_binary(mou, train, features_ou, "over25", "Over/Under 2.5", split_label="Train")
+    auc_ou_te  = evaluate_binary(mou, test,  features_ou, "over25", "Over/Under 2.5", split_label="Test")
     print(f"\n    Overfitting check (AUC):  Train={auc_ou_tr:.4f}  Test={auc_ou_te:.4f}  gap={auc_ou_tr - auc_ou_te:+.4f}"
           + ("  ⚠ posible overfitting" if auc_ou_tr - auc_ou_te > 0.04 else "  ✓ OK"))
     print_top_features(mou, features_ou, n=10)
     save_model(mou, "lgbm_ou25", {**meta_base, "features": features_ou, "target": "over25"})
 
+    # ── 3/7: BTTS ──────────────────────────────────────────────────────────────
     if not args.skip_btts:
-        print("\n[3/3] Entrenando modelo BTTS...")
-        features_btts = _prepare_features(df, train, base_features, args, "btts", "binary")
+        print("\n[3/7] Entrenando modelo BTTS...")
+        features_btts = _prepare_features(df, train, base_features, args, "btts", "binary", pinned_extra=BTTS_PINNED_FEATURES)
         if len(features_btts) != len(base_features):
             print(f"    Feature selection: {len(base_features)} → {len(features_btts)} features")
-        mbtts         = train_binary(train, features_btts, "btts")
-        auc_bt_tr     = evaluate_binary(mbtts, train, features_btts, "btts", "BTTS", split_label="Train")
-        auc_bt_te     = evaluate_binary(mbtts, test,  features_btts, "btts", "BTTS", split_label="Test")
+        mbtts      = train_binary(train, features_btts, "btts")
+        auc_bt_tr  = evaluate_binary(mbtts, train, features_btts, "btts", "BTTS", split_label="Train")
+        auc_bt_te  = evaluate_binary(mbtts, test,  features_btts, "btts", "BTTS", split_label="Test")
         print(f"\n    Overfitting check (AUC):  Train={auc_bt_tr:.4f}  Test={auc_bt_te:.4f}  gap={auc_bt_tr - auc_bt_te:+.4f}"
               + ("  ⚠ posible overfitting" if auc_bt_tr - auc_bt_te > 0.04 else "  ✓ OK"))
         print_top_features(mbtts, features_btts, n=10)
         save_model(mbtts, "lgbm_btts", {**meta_base, "features": features_btts, "target": "btts"})
 
+    # ── 4/7: Over 0.5 ─────────────────────────────────────────────────────────
+    if "over05" in df.columns:
+        print("\n[4/7] Entrenando modelo Over 0.5...")
+        features_ou05 = _prepare_features(df, train, base_features, args, "over05", "binary", pinned_extra=OU_PINNED_FEATURES)
+        mou05         = train_binary(train, features_ou05, "over05")
+        auc_05_tr     = evaluate_binary(mou05, train, features_ou05, "over05", "Over 0.5", split_label="Train")
+        auc_05_te     = evaluate_binary(mou05, test,  features_ou05, "over05", "Over 0.5", split_label="Test")
+        print(f"\n    Overfitting check (AUC):  Train={auc_05_tr:.4f}  Test={auc_05_te:.4f}  gap={auc_05_tr - auc_05_te:+.4f}"
+              + ("  ⚠" if auc_05_tr - auc_05_te > 0.04 else "  ✓ OK"))
+        save_model(mou05, "lgbm_over05", {**meta_base, "features": features_ou05, "target": "over05"})
+    else:
+        print("\n[4/7] Over 0.5 — target no encontrado en dataset, omitiendo.")
+
+    # ── 5/7: Over 1.5 ─────────────────────────────────────────────────────────
+    if "over15" in df.columns:
+        print("\n[5/7] Entrenando modelo Over 1.5...")
+        features_ou15 = _prepare_features(df, train, base_features, args, "over15", "binary", pinned_extra=OU_PINNED_FEATURES)
+        mou15         = train_binary(train, features_ou15, "over15")
+        auc_15_tr     = evaluate_binary(mou15, train, features_ou15, "over15", "Over 1.5", split_label="Train")
+        auc_15_te     = evaluate_binary(mou15, test,  features_ou15, "over15", "Over 1.5", split_label="Test")
+        print(f"\n    Overfitting check (AUC):  Train={auc_15_tr:.4f}  Test={auc_15_te:.4f}  gap={auc_15_tr - auc_15_te:+.4f}"
+              + ("  ⚠" if auc_15_tr - auc_15_te > 0.04 else "  ✓ OK"))
+        print_top_features(mou15, features_ou15, n=8)
+        save_model(mou15, "lgbm_over15", {**meta_base, "features": features_ou15, "target": "over15"})
+    else:
+        print("\n[5/7] Over 1.5 — target no encontrado en dataset, omitiendo.")
+
+    # ── 6/7: Over 3.5 ─────────────────────────────────────────────────────────
+    if "over35" in df.columns:
+        print("\n[6/7] Entrenando modelo Over 3.5...")
+        features_ou35 = _prepare_features(df, train, base_features, args, "over35", "binary", pinned_extra=OU_PINNED_FEATURES)
+        mou35         = train_binary(train, features_ou35, "over35")
+        auc_35_tr     = evaluate_binary(mou35, train, features_ou35, "over35", "Over 3.5", split_label="Train")
+        auc_35_te     = evaluate_binary(mou35, test,  features_ou35, "over35", "Over 3.5", split_label="Test")
+        print(f"\n    Overfitting check (AUC):  Train={auc_35_tr:.4f}  Test={auc_35_te:.4f}  gap={auc_35_tr - auc_35_te:+.4f}"
+              + ("  ⚠" if auc_35_tr - auc_35_te > 0.04 else "  ✓ OK"))
+        print_top_features(mou35, features_ou35, n=8)
+        save_model(mou35, "lgbm_over35", {**meta_base, "features": features_ou35, "target": "over35"})
+    else:
+        print("\n[6/7] Over 3.5 — target no encontrado en dataset, omitiendo.")
+
+    # ── 7/7: Córners (Poisson regressor) ──────────────────────────────────────
+    if "total_corners" in df.columns and df["total_corners"].notna().sum() >= 50:
+        print("\n[7/7] Entrenando regresor Poisson de córners...")
+        features_cr = _prepare_features(df, train, base_features, args, "total_corners", "binary",
+                                        pinned_extra=CORNERS_PINNED_FEATURES)
+        try:
+            mcr       = train_poisson_regressor(train, features_cr, "total_corners")
+            mae_cr_tr = evaluate_regression(mcr, train, features_cr, "total_corners", "Corners λ", split_label="Train")
+            mae_cr_te = evaluate_regression(mcr, test,  features_cr, "total_corners", "Corners λ", split_label="Test")
+            print(f"\n    Overfitting check (MAE):  Train={mae_cr_tr:.3f}  Test={mae_cr_te:.3f}  gap={mae_cr_tr - mae_cr_te:+.3f}"
+                  + ("  ⚠" if abs(mae_cr_tr - mae_cr_te) > 0.5 else "  ✓ OK"))
+            print_top_features(mcr, features_cr, n=10)
+            save_model(mcr, "lgbm_corners_lambda", {**meta_base, "features": features_cr, "target": "total_corners", "model_type": "poisson_regressor"})
+        except ValueError as e:
+            print(f"    ⚠ {e} — omitiendo modelo de córners.")
+    else:
+        print("\n[7/7] total_corners — columna no encontrada o insuficientes datos, omitiendo regresor de córners.")
+
     print(f"\n{'='*55}")
-    print("Completado. Siguiente paso → threshold_optimization_v2.py (apunta a models/lgbm_1x2.pkl)")
+    print("Completado. Modelos guardados:")
+    for name in ["lgbm_1x2", "lgbm_ou25", "lgbm_btts", "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"]:
+        path = MODELS_DIR / f"{name}.pkl"
+        status = "✓" if path.exists() else "✗ no generado"
+        print(f"  {status}  {path.name}")
+    print("\nSiguiente paso → threshold_optimization.py (apunta a models/lgbm_1x2.pkl)")
 
 
 if __name__ == "__main__":

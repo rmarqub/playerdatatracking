@@ -17,6 +17,10 @@
 - `models/lgbm_1x2.pkl` ← Principal (1X2 result)
 - `models/lgbm_ou25.pkl` ← Over/Under 2.5
 - `models/lgbm_btts.pkl` ← Both Teams To Score
+- `models/lgbm_over05.pkl` ← Over 0.5 goles
+- `models/lgbm_over15.pkl` ← Over 1.5 goles
+- `models/lgbm_over35.pkl` ← Over 3.5 goles
+- `models/lgbm_corners_lambda.pkl` ← λ Poisson para córners totales
 
 **Uso:**
 ```bash

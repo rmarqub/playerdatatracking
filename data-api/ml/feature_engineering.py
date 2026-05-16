@@ -127,6 +127,9 @@ def build_team_history(fixtures: pd.DataFrame, team_stats: pd.DataFrame) -> pd.D
                 "lost":              1 if g_for < g_against else 0,
                 "scored":            1 if g_for > 0 else 0,
                 "clean_sheet":       1 if g_against == 0 else 0,
+                "btts":              1 if (g_for > 0 and g_against > 0) else 0,
+                "ou25":              1 if (g_for + g_against) > 2.5 else 0,
+                "ou15":              1 if (g_for + g_against) > 1.5 else 0,
                 "xg_for":            ts.get("expected_goals"),
                 "xg_against":        rival_ts.get("expected_goals"),
                 "shots_on_goal":     ts.get("shots_on_goal"),
@@ -266,6 +269,7 @@ ROLL_COLS = [
     "shooting_accuracy", "shots_inside_box_rate",
     "corners_against", "corner_ratio",
     "fouls_per_shot", "yellow_cards", "fouls",
+    "btts", "ou25", "ou15",  # tasa histórica de mercados por equipo
 ]
 
 EMA_COLS = ["goals_for", "goals_against", "won", "scored", "clean_sheet", "xg_for", "xg_against", "shots_on_goal"]
@@ -420,6 +424,7 @@ def compute_league_rates(fixtures: pd.DataFrame) -> pd.DataFrame:
     fs["away_win_flag"]  = (fs["goals_home"] < fs["goals_away"]).astype(float)
     fs["total_goals_f"]  = fs["goals_home"] + fs["goals_away"]
     fs["over25_flag"]    = (fs["total_goals_f"] > 2.5).astype(float)
+    fs["over15_flag"]    = (fs["total_goals_f"] > 1.5).astype(float)
     fs["btts_flag"]      = ((fs["goals_home"] > 0) & (fs["goals_away"] > 0)).astype(float)
 
     parts = []
@@ -431,10 +436,11 @@ def compute_league_rates(fixtures: pd.DataFrame) -> pd.DataFrame:
         grp["league_away_win_rate"] = grp["away_win_flag"].shift(1).expanding().mean()
         grp["league_avg_goals"]     = grp["total_goals_f"].shift(1).expanding().mean()
         grp["league_over25_rate"]   = grp["over25_flag"].shift(1).expanding().mean()
+        grp["league_over15_rate"]   = grp["over15_flag"].shift(1).expanding().mean()
         grp["league_btts_rate"]     = grp["btts_flag"].shift(1).expanding().mean()
         league_cols = [
             "league_home_win_rate", "league_draw_rate", "league_away_win_rate",
-            "league_avg_goals", "league_over25_rate", "league_btts_rate",
+            "league_avg_goals", "league_over25_rate", "league_over15_rate", "league_btts_rate",
         ]
         for col in league_cols:
             grp.loc[count < 10, col] = np.nan
@@ -662,18 +668,28 @@ def compute_lineup_percentile_features(
     return result
 
 
-def build_targets(fixtures: pd.DataFrame) -> pd.DataFrame:
+def build_targets(fixtures: pd.DataFrame, team_stats: pd.DataFrame | None = None) -> pd.DataFrame:
     df = fixtures.copy()
     df["result"] = np.where(
         df["goals_home"] > df["goals_away"], 0,
         np.where(df["goals_home"] == df["goals_away"], 1, 2)
     )
     total = df["goals_home"] + df["goals_away"]
-    df["over25"] = (total > 2.5).astype(int)
+    df["over05"] = (total > 0.5).astype(int)
     df["over15"] = (total > 1.5).astype(int)
+    df["over25"] = (total > 2.5).astype(int)
     df["over35"] = (total > 3.5).astype(int)
     df["btts"]   = ((df["goals_home"] > 0) & (df["goals_away"] > 0)).astype(int)
     df["total_goals"] = total
+    # total_corners: suma de córners de ambos equipos por partido (requiere team_stats)
+    if team_stats is not None and not team_stats.empty:
+        tc = (
+            team_stats.groupby("fixture_id")["corner_kicks"]
+            .sum()
+            .reset_index()
+            .rename(columns={"corner_kicks": "total_corners"})
+        )
+        df = df.merge(tc, left_on="id", right_on="fixture_id", how="left").drop(columns=["fixture_id"], errors="ignore")
     return df
 
 
@@ -698,8 +714,9 @@ def assemble_dataset(
     draw_features: Optional[pd.DataFrame] = None,
     consistency: Optional[pd.DataFrame] = None,
     league_season_draw_rate: Optional[pd.DataFrame] = None,
+    team_stats: Optional[pd.DataFrame] = None,
 ) -> pd.DataFrame:
-    base = build_targets(fixtures)
+    base = build_targets(fixtures, team_stats=team_stats)
 
     def _fid(df: pd.DataFrame) -> pd.DataFrame:
         return df.rename(columns={"fixture_id": "id"}) if "fixture_id" in df.columns else df
@@ -868,6 +885,11 @@ def assemble_dataset(
     if xga_h in df.columns and xga_a in df.columns:
         df["defensive_porosity"] = df[xga_h] + df[xga_a]
 
+    ck_h = f"home_roll_corner_kicks_last{n}"
+    ck_a = f"away_roll_corner_kicks_last{n}"
+    if ck_h in df.columns and ck_a in df.columns:
+        df["combined_corners"] = df[ck_h] + df[ck_a]
+
     if "home_season_gfpg" in df.columns and "away_season_gfpg" in df.columns:
         df["total_season_goal_rate"] = df["home_season_gfpg"] + df["away_season_gfpg"]
         # Multiplicativo: alta cuando ambos equipos atacan, baja si uno es defensivo
@@ -958,8 +980,14 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int,
     print(f"    result  — 0(H):{(dataset['result']==0).mean():.1%}  "
           f"1(D):{(dataset['result']==1).mean():.1%}  "
           f"2(A):{(dataset['result']==2).mean():.1%}")
+    print(f"    over05  — {dataset['over05'].mean():.1%} positivos" if "over05" in dataset.columns else "    over05  — columna no encontrada")
+    print(f"    over15  — {dataset['over15'].mean():.1%} positivos" if "over15" in dataset.columns else "    over15  — columna no encontrada")
     print(f"    over25  — {dataset['over25'].mean():.1%} positivos")
+    print(f"    over35  — {dataset['over35'].mean():.1%} positivos" if "over35" in dataset.columns else "    over35  — columna no encontrada")
     print(f"    btts    — {dataset['btts'].mean():.1%} positivos")
+    if "total_corners" in dataset.columns:
+        tc = dataset["total_corners"].dropna()
+        print(f"    total_corners — media {tc.mean():.1f}  |  nulos {dataset['total_corners'].isna().mean():.1%}")
 
     if aligned_pct is not None and not aligned_pct.empty:
         pct_fixture_count = aligned_pct["fixture_id"].nunique()
@@ -1098,6 +1126,7 @@ def main():
         draw_features=draw_features,
         consistency=consistency,
         league_season_draw_rate=league_season_draw_rate,
+        team_stats=team_stats,
     )
 
     print_diagnostics(fixtures, dataset, args.lookback, aligned_pct)

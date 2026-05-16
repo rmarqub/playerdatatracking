@@ -8,7 +8,6 @@
 - HAIKU: Generar documentación y hacer un TFG sobre esto.
 
 # V2 PLANNING
-- HAIKU: Diseño de logica de usuario.
 - SONNET: Modulo de testing escalable y estable.
 - SONNET: filtro de busqueda de jugadores por percentiles.
 
@@ -22,10 +21,21 @@
 - HAIKU: en comparativa de percentiles, añadir boton de percentiles por posicion y eliminar la comparativa por liga.
 
 # MODELO
-- HAIKU: Aparentemente se regenera el analisis a partir del modelo basico sin tener en cuenta lo contextual, hay que preguntarle a Claude para que lo revise.
-- SONNET: mas estadisticas al cargar la pagina: corners, posibles goleadores, posibles jugadores destacados.
-- SONNET: con O/U y BTTS, ademas de regularizarlo y mejorarlo, se deben cargar estadísticas para probabilidades de +1gol, 0 goles, Qué equipo marcará, etc.
 - SONNET/HAIKU: predict-api y GetContextualMatchPrediction utilizan percentiles_season y no percentiles_player, hay que corregir esto.
+
+ Resumen de prioridad de implementación
+
+  ┌─────────────────────────────────────────┬────────────────────────────────────────────────────────────┬────────────────────────────────────────────────┬────────┐
+  │                 Mejora                  │                          Esfuerzo                          │                Impacto esperado                │ Riesgo │
+  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
+  │ Over 0.5/1.5/3.5                        │ Muy bajo — solo añadir targets a train_model.py            │ Alto — targets ya definidos                    │ Mínimo │
+  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
+  │ BTTS/OU con pinning + rolling features  │ Medio — cambios en feature_engineering.py y train_model.py │ Alto en calibración                            │ Bajo   │
+  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
+  │ Córners (Poisson regressor)             │ Medio — nuevo modelo + nueva query en predict_api.py       │ Moderado — inherentemente difícil              │ Bajo   │
+  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
+  │ Goleadores probable (Poisson analítico) │ Medio — nueva función en predict_api.py, sin modelo        │ Moderado — limitado por ausencia de alineación │ Bajo   │
+  └─────────────────────────────────────────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────┴────────┘
 
 # MUNDIAL / TEMPORADA 2026
 - SONNET: agregar compatibilidad entre paises y clubes. Gestionar la ingesta de datos del mundial.

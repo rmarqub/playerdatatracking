@@ -1,18 +1,24 @@
 # Features del Modelo Predictivo — Referencia Completa
 
-El módulo predictivo (`data-api/ml/`) entrena tres modelos LightGBM independientes sobre un dataset de partidos de fútbol. Este documento describe cada feature: su definición, cómo se calcula, para qué sirve y cómo influye en las predicciones.
+El módulo predictivo (`data-api/ml/`) entrena siete modelos LightGBM independientes sobre un dataset de partidos de fútbol. Este documento describe cada feature: su definición, cómo se calcula, para qué sirve y cómo influye en las predicciones.
 
 ---
 
 ## Arquitectura de predicción
 
-| Modelo | Target | Tipo |
-|--------|--------|------|
-| `lgbm_1x2` | Resultado: Victoria Local (0), Empate (1), Victoria Visitante (2) | Multiclase |
-| `lgbm_ou25` | Over/Under 2.5 goles | Binario |
-| `lgbm_btts` | Ambos Equipos Anotan (BTTS) | Binario |
+| Modelo | Target | Tipo | Config |
+|--------|--------|------|--------|
+| `lgbm_1x2` | Resultado: Victoria Local (0), Empate (1), Victoria Visitante (2) | Multiclase | `LGBM_BASE` |
+| `lgbm_ou25` | Over/Under 2.5 goles | Binario | `LGBM_BINARY` |
+| `lgbm_btts` | Ambos Equipos Anotan (BTTS) | Binario | `LGBM_BINARY` |
+| `lgbm_over05` | Al menos 1 gol en el partido | Binario | `LGBM_BINARY` |
+| `lgbm_over15` | Al menos 2 goles en el partido | Binario | `LGBM_BINARY` |
+| `lgbm_over35` | Más de 3 goles en el partido | Binario | `LGBM_BINARY` |
+| `lgbm_corners_lambda` | Córners totales esperados (λ Poisson) | Regresor Poisson | `LGBM_REGRESSOR` |
 
-Los tres modelos consumen el mismo dataset de features, pero cada uno aprende cuáles son relevantes para su objetivo específico.
+Los siete modelos comparten el mismo dataset de features, pero cada uno usa un subconjunto protegido (`*_PINNED_FEATURES`) y aprende cuáles son relevantes para su objetivo.
+
+Los modelos de goles (over_X) se entrenan sobre la señal de mercados histórica: el regresor de córners estima λ y luego aplica la distribución Poisson para calcular P(>N) para N=3..10, garantizando monotonía matemática.
 
 ---
 
@@ -49,10 +55,14 @@ Cada columna base genera dos features: `home_roll_<col>_last5` y `away_roll_<col
 | `saves` | Paradas del portero |
 | `shooting_accuracy` | `shots_on_goal / shots_total` |
 | `shots_inside_box_rate` | `shots_inside_box / shots_total` |
-| `corner_ratio` | Ratio córners propios vs totales |
+| `corners_against` | Córners concedidos (del rival) |
+| `corner_ratio` | `corner_kicks / (corner_kicks + corners_against)` — dominio de córners |
 | `fouls_per_shot` | Faltas cometidas por tiro a puerta rival |
 | `yellow_cards` | Tarjetas amarillas |
 | `fouls` | Faltas cometidas |
+| `btts` | Ambos equipos anotaron (0/1) — tasa histórica del equipo |
+| `ou25` | Partido terminó Over 2.5 (0/1) — tasa histórica |
+| `ou15` | Partido terminó Over 1.5 (0/1) — tasa histórica |
 
 **Cómo usa el modelo:** estas features capturan el **estado de forma reciente**. Un equipo con `home_roll_goals_for_last5 = 2.4` ha promediado 2.4 goles en casa en sus últimos 5 partidos. LightGBM las usa tanto individualmente como en combinación con las del rival.
 
@@ -152,8 +162,9 @@ Prefijos: `home_ema_*` y `away_ema_*`.
 | `goal_threat_product` | `gfpg_home × gfpg_away` | Señal multiplicativa: alta si ambos equipos atacan bien |
 | `both_teams_score_rate` | `scored_home × scored_away` | Probabilidad conjunta de que ambos anoten (para BTTS) |
 | `clean_sheet_clash` | `cs_home × cs_away` | Probabilidad conjunta de portería a cero (contra-BTTS) |
+| `combined_corners` | `home_roll_corner_kicks + away_roll_corner_kicks` | Total de córners esperados — señal principal del regresor Poisson |
 
-**Cómo usa el modelo:** fundamentales para `lgbm_ou25` y `lgbm_btts`. Un partido con `combined_xg` alto apunta a Over 2.5; `both_teams_score_rate` alto apunta a BTTS.
+**Cómo usa el modelo:** fundamentales para `lgbm_ou25`, `lgbm_btts` y los modelos over_X. Un partido con `combined_xg` alto apunta a Over 2.5; `both_teams_score_rate` alto apunta a BTTS. `combined_corners` es la feature principal del regresor Poisson de córners.
 
 ---
 
@@ -345,6 +356,7 @@ Prefijos: `home_roll_<feature>_last5` y `away_roll_<feature>_last5`.
 | `league_away_win_rate` | % históricas victorias visitantes en esta liga |
 | `league_avg_goals` | Promedio goles por partido en esta liga |
 | `league_over25_rate` | % partidos con Over 2.5 en esta liga |
+| `league_over15_rate` | % partidos con Over 1.5 en esta liga |
 | `league_btts_rate` | % partidos con BTTS en esta liga |
 
 **Cómo usa el modelo:** establecen el **contexto de la competición**. Una liga con `league_draw_rate = 0.35` es más propensa a empates que una con 0.20. El modelo ajusta su predicción respecto a la normalidad de esa liga.
@@ -434,10 +446,11 @@ Ajusta las probabilidades brutas para deshacer el sesgo introducido por los clas
 
 ---
 
-## 15. Protección de Features (Draw-Pinned)
+## 15. Protección de Features (Pinned Features por Modelo)
 
-El selector de features elimina automáticamente features irrelevantes. Las siguientes 14 features están **explícitamente protegidas** y nunca se eliminan, porque son las únicas señales del modelo para detectar empates:
+El selector de features elimina automáticamente features irrelevantes. Cada modelo tiene un conjunto de features **explícitamente protegidas** que nunca se eliminan porque son señales clave para su objetivo:
 
+### `lgbm_1x2` — Draw-Pinned (14 features)
 ```
 season_draw_rate          league_draw_rate
 league_season_draw_rate   team_draw_vs_league
@@ -446,6 +459,45 @@ both_draw_prone           draw_rate_diff_recent
 both_teams_recent_draw_rate  match_balance_index
 xg_balance                ppg_balance
 h2h_draws                 both_teams_recent_draw_rate
+```
+
+### `lgbm_ou25`, `lgbm_over05`, `lgbm_over15`, `lgbm_over35` — OU-Pinned
+```
+combined_xg               defensive_porosity
+total_season_goal_rate    goal_threat_product
+league_avg_goals          league_over25_rate
+league_over15_rate        league_btts_rate
+home_roll_xg_for_last5    away_roll_xg_for_last5
+home_roll_xg_against_last5  away_roll_xg_against_last5
+home_roll_ou25_last5      away_roll_ou25_last5
+home_roll_ou15_last5      away_roll_ou15_last5
+home_season_gfpg          away_season_gfpg
+home_season_gapg          away_season_gapg
+diff_xg                   diff_xga
+```
+
+### `lgbm_btts` — BTTS-Pinned
+```
+both_teams_score_rate     clean_sheet_clash
+home_roll_scored_last5    away_roll_scored_last5
+home_roll_clean_sheet_last5  away_roll_clean_sheet_last5
+home_roll_btts_last5      away_roll_btts_last5
+league_btts_rate
+home_roll_xg_for_last5    away_roll_xg_against_last5
+home_roll_xg_against_last5  away_roll_xg_for_last5
+home_season_gfpg          away_season_gfpg
+```
+
+### `lgbm_corners_lambda` — Corners-Pinned
+```
+combined_corners
+home_roll_corner_kicks_last5    away_roll_corner_kicks_last5
+home_roll_corners_against_last5 away_roll_corners_against_last5
+home_roll_corner_ratio_last5    away_roll_corner_ratio_last5
+diff_corners                    diff_corners_against
+corner_dominance_diff
+home_roll_possession_last5      away_roll_possession_last5
+diff_possession
 ```
 
 ---
@@ -463,21 +515,24 @@ Antes de entrenar, se eliminan automáticamente:
 
 ## 17. Resumen por Objetivo de Predicción
 
-| Feature Category | 1x2 | Over/Under 2.5 | BTTS |
-|---|---|---|---|
-| Rolling generales | Alta importancia | Media | Media |
-| Rolling por localía | Alta | Baja | Baja |
-| EMA | Alta | Media | Media |
-| Season form | Alta | Media | Baja |
-| Draw features | **Críticas** | N/A | N/A |
-| Goals features | Media | **Críticas** | **Críticas** |
-| Balance features | Alta (empate) | Media | Media |
-| Diferenciales | Alta | Media | Media |
-| Player rolling | Alta | Media | Media |
-| Percentiles | Media | Baja | Baja |
-| H2H | Media | Media | Media |
-| Liga | Media | Alta | Alta |
-| Rest | Baja | Baja | Baja |
+| Feature Category | 1x2 | OU 2.5 | BTTS | Over 0.5/1.5/3.5 | Córners λ |
+|---|---|---|---|---|---|
+| Rolling generales | Alta | Media | Media | Media | Baja |
+| Rolling por localía | Alta | Baja | Baja | Baja | Baja |
+| Rolling btts/ou25/ou15 | N/A | **Crítica** | **Crítica** | **Crítica** | N/A |
+| Rolling corner_kicks | Baja | Baja | N/A | N/A | **Crítica** |
+| EMA | Alta | Media | Media | Media | Baja |
+| Season form | Alta | Media | Baja | Media | Baja |
+| Draw features | **Críticas** | N/A | N/A | N/A | N/A |
+| Goals features (combined_xg, etc.) | Media | **Críticas** | **Críticas** | **Críticas** | Baja |
+| Corners features (combined_corners, etc.) | Baja | N/A | N/A | N/A | **Críticas** |
+| Balance features | Alta (empate) | Media | Media | Media | Baja |
+| Diferenciales | Alta | Media | Media | Media | Media |
+| Player rolling | Alta | Media | Media | Media | Baja |
+| Percentiles | Media | Baja | Baja | Baja | N/A |
+| H2H | Media | Media | Media | Media | Baja |
+| Liga | Media | Alta | Alta | Alta | Baja |
+| Rest | Baja | Baja | Baja | Baja | Baja |
 
 ---
 
@@ -495,4 +550,4 @@ El objetivo del modelo es minimizar el RPS, no maximizar accuracy, porque se bus
 ---
 
 *Generado desde: `data-api/ml/feature_engineering.py`, `train_model.py`, `predict_api.py`*  
-*Versión del modelo: v3 — config `v3_all_features_draw_pinned`*
+*Versión del modelo: v4 — config `v4_multi_market` — 7 modelos (1x2 + OU 0.5/1.5/2.5/3.5 + BTTS + Córners λ)*

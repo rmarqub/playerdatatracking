@@ -54,10 +54,11 @@
 
 ```
 train_model.py
-├─ Configuración: draws_x1.5 + 15 nuevas features
-├─ Accuracy: 0.469 (argmax) / 0.505 (threshold 0.5) ✓
-├─ RPS: 0.2175 ✓
-├─ Draw Recall: 34.4% ✓
+├─ Configuración: v4_multi_market — 7 modelos
+├─ 1x2: Accuracy 0.505 (threshold 0.5), RPS 0.2175, Draw Recall 34.4% ✓
+├─ OU / BTTS: LightGBM binario con features de mercado pinned
+├─ Over 0.5 / 1.5 / 3.5: LightGBM binario con OU_PINNED_FEATURES
+├─ Córners: Regresor Poisson (λ) → P(>N) garantiza monotonía
 └─ Status: ✅ Verificado y optimizado
 ```
 
@@ -181,9 +182,13 @@ python train_model_experiments.py --test-seasons 2025 --save-best
 ```
 training_data.parquet     (Dataset)
 models/
-├── lgbm_1x2.pkl         (Modelo principal 1X2)
-├── lgbm_ou25.pkl        (Over/Under 2.5)
-└── lgbm_btts.pkl        (Both Teams To Score)
+├── lgbm_1x2.pkl              (Modelo principal 1X2)
+├── lgbm_ou25.pkl             (Over/Under 2.5)
+├── lgbm_btts.pkl             (Both Teams To Score)
+├── lgbm_over05.pkl           (Over 0.5 goles)
+├── lgbm_over15.pkl           (Over 1.5 goles)
+├── lgbm_over35.pkl           (Over 3.5 goles)
+└── lgbm_corners_lambda.pkl   (λ Poisson — córners totales)
 ```
 
 ### Archivos Históricos (Investigación)
@@ -282,7 +287,7 @@ Si tienes dudas, consulta:
 
 ---
 
-**Última Actualización:** 2026-05-13  
+**Última Actualización:** 2026-05-15  
 **Status:** ✅ Documentación completa  
-**Versión Óptima:** train_model.py (draws_x1.5 config)
+**Versión Óptima:** train_model.py (v4_multi_market — 7 modelos)
 
