@@ -100,6 +100,7 @@ CORNERS_PINNED_FEATURES = [
     "diff_corners", "diff_corners_against", "corner_dominance_diff",
     "home_roll_possession_last5", "away_roll_possession_last5",
     "diff_possession",
+    "league_avg_corners",
 ]
 
 
@@ -318,11 +319,11 @@ LGBM_BASE = {
 LGBM_BINARY = {
     **LGBM_BASE,
     "num_leaves":        12,
-    "min_child_samples": 120,
+    "min_child_samples": 160,
     "learning_rate":     0.012,
     "colsample_bytree":  0.45,
     "reg_alpha":         1.5,
-    "reg_lambda":        3.0,
+    "reg_lambda":        4.5,
 }
 
 LGBM_REGRESSOR = {
@@ -672,22 +673,9 @@ def main():
         print_top_features(mbtts, features_btts, n=10)
         save_model(mbtts, "lgbm_btts", {**meta_base, "features": features_btts, "target": "btts"})
 
-    # ── 4/7: Over 0.5 ─────────────────────────────────────────────────────────
-    if "over05" in df.columns:
-        print("\n[4/7] Entrenando modelo Over 0.5...")
-        features_ou05 = _prepare_features(df, train, base_features, args, "over05", "binary", pinned_extra=OU_PINNED_FEATURES)
-        mou05         = train_binary(train, features_ou05, "over05")
-        auc_05_tr     = evaluate_binary(mou05, train, features_ou05, "over05", "Over 0.5", split_label="Train")
-        auc_05_te     = evaluate_binary(mou05, test,  features_ou05, "over05", "Over 0.5", split_label="Test")
-        print(f"\n    Overfitting check (AUC):  Train={auc_05_tr:.4f}  Test={auc_05_te:.4f}  gap={auc_05_tr - auc_05_te:+.4f}"
-              + ("  ⚠" if auc_05_tr - auc_05_te > 0.04 else "  ✓ OK"))
-        save_model(mou05, "lgbm_over05", {**meta_base, "features": features_ou05, "target": "over05"})
-    else:
-        print("\n[4/7] Over 0.5 — target no encontrado en dataset, omitiendo.")
-
-    # ── 5/7: Over 1.5 ─────────────────────────────────────────────────────────
+    # ── 4/6: Over 1.5 ─────────────────────────────────────────────────────────
     if "over15" in df.columns:
-        print("\n[5/7] Entrenando modelo Over 1.5...")
+        print("\n[4/6] Entrenando modelo Over 1.5...")
         features_ou15 = _prepare_features(df, train, base_features, args, "over15", "binary", pinned_extra=OU_PINNED_FEATURES)
         mou15         = train_binary(train, features_ou15, "over15")
         auc_15_tr     = evaluate_binary(mou15, train, features_ou15, "over15", "Over 1.5", split_label="Train")
@@ -697,11 +685,11 @@ def main():
         print_top_features(mou15, features_ou15, n=8)
         save_model(mou15, "lgbm_over15", {**meta_base, "features": features_ou15, "target": "over15"})
     else:
-        print("\n[5/7] Over 1.5 — target no encontrado en dataset, omitiendo.")
+        print("\n[4/6] Over 1.5 — target no encontrado en dataset, omitiendo.")
 
-    # ── 6/7: Over 3.5 ─────────────────────────────────────────────────────────
+    # ── 5/6: Over 3.5 ─────────────────────────────────────────────────────────
     if "over35" in df.columns:
-        print("\n[6/7] Entrenando modelo Over 3.5...")
+        print("\n[5/6] Entrenando modelo Over 3.5...")
         features_ou35 = _prepare_features(df, train, base_features, args, "over35", "binary", pinned_extra=OU_PINNED_FEATURES)
         mou35         = train_binary(train, features_ou35, "over35")
         auc_35_tr     = evaluate_binary(mou35, train, features_ou35, "over35", "Over 3.5", split_label="Train")
@@ -711,11 +699,11 @@ def main():
         print_top_features(mou35, features_ou35, n=8)
         save_model(mou35, "lgbm_over35", {**meta_base, "features": features_ou35, "target": "over35"})
     else:
-        print("\n[6/7] Over 3.5 — target no encontrado en dataset, omitiendo.")
+        print("\n[5/6] Over 3.5 — target no encontrado en dataset, omitiendo.")
 
-    # ── 7/7: Córners (Poisson regressor) ──────────────────────────────────────
+    # ── 6/6: Córners (Poisson regressor) ──────────────────────────────────────
     if "total_corners" in df.columns and df["total_corners"].notna().sum() >= 50:
-        print("\n[7/7] Entrenando regresor Poisson de córners...")
+        print("\n[6/6] Entrenando regresor Poisson de córners...")
         features_cr = _prepare_features(df, train, base_features, args, "total_corners", "binary",
                                         pinned_extra=CORNERS_PINNED_FEATURES)
         try:
@@ -733,7 +721,7 @@ def main():
 
     print(f"\n{'='*55}")
     print("Completado. Modelos guardados:")
-    for name in ["lgbm_1x2", "lgbm_ou25", "lgbm_btts", "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"]:
+    for name in ["lgbm_1x2", "lgbm_ou25", "lgbm_btts", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"]:
         path = MODELS_DIR / f"{name}.pkl"
         status = "✓" if path.exists() else "✗ no generado"
         print(f"  {status}  {path.name}")

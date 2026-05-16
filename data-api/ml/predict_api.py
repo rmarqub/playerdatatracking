@@ -58,7 +58,7 @@ DB_CONFIG = {
 MODELS_DIR = Path(__file__).parent / "models"
 
 # Populated at startup; keys: "lgbm_1x2", "lgbm_ou25", "lgbm_btts",
-#   "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"
+#   "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"
 MODELS: dict[str, dict] = {}
 
 # Venue-split columns — must match what feature_engineering.py produces
@@ -104,7 +104,7 @@ PLAYER_ROLL_COLS = [
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     for name in ("lgbm_1x2", "lgbm_ou25", "lgbm_btts",
-                 "lgbm_over05", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"):
+                 "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"):
         path = MODELS_DIR / f"{name}.pkl"
         if not path.exists():
             raise RuntimeError(f"Modelo no encontrado: {path}. Ejecuta train_model.py primero.")
@@ -319,23 +319,31 @@ def _query_league_rates(conn, league_id: int, match_date: Any) -> dict:
     with conn.cursor() as cur:
         cur.execute("""
             SELECT
-                AVG(CASE WHEN goals_home > goals_away THEN 1.0 ELSE 0.0 END)          AS league_home_win_rate,
-                AVG(goals_home + goals_away)                                             AS league_avg_goals,
-                AVG(CASE WHEN goals_home + goals_away > 2.5 THEN 1.0 ELSE 0.0 END)    AS league_over25_rate,
-                AVG(CASE WHEN goals_home + goals_away > 1.5 THEN 1.0 ELSE 0.0 END)    AS league_over15_rate,
-                AVG(CASE WHEN goals_home > 0 AND goals_away > 0 THEN 1.0 ELSE 0.0 END) AS league_btts_rate,
+                AVG(CASE WHEN f.goals_home > f.goals_away THEN 1.0 ELSE 0.0 END)          AS league_home_win_rate,
+                AVG(f.goals_home + f.goals_away)                                             AS league_avg_goals,
+                AVG(CASE WHEN f.goals_home + f.goals_away > 2.5 THEN 1.0 ELSE 0.0 END)    AS league_over25_rate,
+                AVG(CASE WHEN f.goals_home + f.goals_away > 1.5 THEN 1.0 ELSE 0.0 END)    AS league_over15_rate,
+                AVG(CASE WHEN f.goals_home > 0 AND f.goals_away > 0 THEN 1.0 ELSE 0.0 END) AS league_btts_rate,
+                AVG(ck.total_ck)                                                             AS league_avg_corners,
                 COUNT(*) AS match_count
-            FROM fixture
-            WHERE status_short = 'FT'
-              AND league_id = %(lid)s
-              AND match_date < %(dt)s
+            FROM fixture f
+            LEFT JOIN (
+                SELECT fixture_id, SUM(corner_kicks) AS total_ck
+                FROM fixture_team_stats
+                WHERE corner_kicks IS NOT NULL
+                GROUP BY fixture_id
+            ) ck ON ck.fixture_id = f.id
+            WHERE f.status_short = 'FT'
+              AND f.league_id = %(lid)s
+              AND f.match_date < %(dt)s
         """, {"lid": league_id, "dt": match_date})
         row = cur.fetchone()
 
     if not row or not row["match_count"] or row["match_count"] < 10:
         return {
             "league_home_win_rate": np.nan, "league_avg_goals": np.nan,
-            "league_over25_rate": np.nan, "league_over15_rate": np.nan, "league_btts_rate": np.nan,
+            "league_over25_rate": np.nan, "league_over15_rate": np.nan,
+            "league_btts_rate": np.nan, "league_avg_corners": np.nan,
         }
 
     def _f(v):
@@ -347,6 +355,7 @@ def _query_league_rates(conn, league_id: int, match_date: Any) -> dict:
         "league_over25_rate":   _f(row["league_over25_rate"]),
         "league_over15_rate":   _f(row["league_over15_rate"]),
         "league_btts_rate":     _f(row["league_btts_rate"]),
+        "league_avg_corners":   _f(row["league_avg_corners"]),
     }
 
 
@@ -953,8 +962,7 @@ def predict(req: PredictRequest):
     # ── BTTS ─────────────────────────────────────────────────────────────────
     probs_btts = _proba("lgbm_btts")
 
-    # ── Over 0.5 / 1.5 / 3.5 ────────────────────────────────────────────────
-    probs_over05 = _proba("lgbm_over05")
+    # ── Over 1.5 / 3.5 ──────────────────────────────────────────────────────
     probs_over15 = _proba("lgbm_over15")
     probs_over35 = _proba("lgbm_over35")
 
@@ -983,11 +991,6 @@ def predict(req: PredictRequest):
             "confidence": confidence,
         },
         "goals": {
-            "over_05": {
-                "over":      round(float(probs_over05[1]), 4),
-                "under":     round(float(probs_over05[0]), 4),
-                "predicted": "over" if probs_over05[1] >= 0.5 else "under",
-            },
             "over_15": {
                 "over":      round(float(probs_over15[1]), 4),
                 "under":     round(float(probs_over15[0]), 4),

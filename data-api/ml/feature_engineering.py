@@ -417,7 +417,7 @@ def compute_ema_features(history: pd.DataFrame, span: int) -> pd.DataFrame:
     return pd.concat(parts, ignore_index=True)
 
 
-def compute_league_rates(fixtures: pd.DataFrame) -> pd.DataFrame:
+def compute_league_rates(fixtures: pd.DataFrame, team_stats: pd.DataFrame | None = None) -> pd.DataFrame:
     fs = fixtures.sort_values("match_date").reset_index(drop=True).copy()
     fs["home_win_flag"]  = (fs["goals_home"] > fs["goals_away"]).astype(float)
     fs["draw_flag"]      = (fs["goals_home"] == fs["goals_away"]).astype(float)
@@ -426,6 +426,17 @@ def compute_league_rates(fixtures: pd.DataFrame) -> pd.DataFrame:
     fs["over25_flag"]    = (fs["total_goals_f"] > 2.5).astype(float)
     fs["over15_flag"]    = (fs["total_goals_f"] > 1.5).astype(float)
     fs["btts_flag"]      = ((fs["goals_home"] > 0) & (fs["goals_away"] > 0)).astype(float)
+
+    if team_stats is not None and not team_stats.empty and "corner_kicks" in team_stats.columns:
+        tc = (
+            team_stats.groupby("fixture_id")["corner_kicks"]
+            .sum()
+            .reset_index()
+            .rename(columns={"corner_kicks": "total_corners_match"})
+        )
+        fs = fs.merge(tc, left_on="id", right_on="fixture_id", how="left").drop(columns=["fixture_id"], errors="ignore")
+    else:
+        fs["total_corners_match"] = np.nan
 
     parts = []
     for league_id, grp in fs.groupby("league_id", sort=False):
@@ -438,9 +449,11 @@ def compute_league_rates(fixtures: pd.DataFrame) -> pd.DataFrame:
         grp["league_over25_rate"]   = grp["over25_flag"].shift(1).expanding().mean()
         grp["league_over15_rate"]   = grp["over15_flag"].shift(1).expanding().mean()
         grp["league_btts_rate"]     = grp["btts_flag"].shift(1).expanding().mean()
+        grp["league_avg_corners"]   = grp["total_corners_match"].shift(1).expanding().mean()
         league_cols = [
             "league_home_win_rate", "league_draw_rate", "league_away_win_rate",
-            "league_avg_goals", "league_over25_rate", "league_over15_rate", "league_btts_rate",
+            "league_avg_goals", "league_over25_rate", "league_over15_rate",
+            "league_btts_rate", "league_avg_corners",
         ]
         for col in league_cols:
             grp.loc[count < 10, col] = np.nan
@@ -1007,6 +1020,7 @@ def print_diagnostics(fixtures: pd.DataFrame, dataset: pd.DataFrame, n: int,
         "league_draw_rate":                         "League draw rate",
         "league_avg_goals":                         "League avg goals",
         "league_btts_rate":                         "League BTTS rate",
+        "league_avg_corners":                       "League avg corners (v4)",
         "home_season_draw_rate":                    "Draw rate (home)",
         "away_season_draw_rate":                    "Draw rate (away)",
         "league_season_draw_rate":                  "League season draw rate (v3)",
@@ -1117,7 +1131,7 @@ def main():
     ema = compute_ema_features(history, args.lookback)
 
     print("Calculando league base rates...")
-    league_rates = compute_league_rates(fixtures)
+    league_rates = compute_league_rates(fixtures, team_stats=team_stats)
 
     print("Ensamblando dataset...")
     dataset = assemble_dataset(
