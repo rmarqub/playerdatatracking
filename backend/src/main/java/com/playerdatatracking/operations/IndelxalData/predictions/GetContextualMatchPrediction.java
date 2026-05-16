@@ -69,8 +69,9 @@ public class GetContextualMatchPrediction {
         if (base != null) {
             result.setHomeTeam(base.getHomeTeam());
             result.setAwayTeam(base.getAwayTeam());
-            result.setOverUnder25(base.getOverUnder25());
+            result.setGoals(base.getGoals());
             result.setBtts(base.getBtts());
+            result.setCorners(base.getCorners());
             result.setWarnings(base.getWarnings());
             MatchPrediction.Result1x2 r = base.getResult1x2();
             bH = r != null && r.getHomeWin() != null ? r.getHomeWin() : 0.334;

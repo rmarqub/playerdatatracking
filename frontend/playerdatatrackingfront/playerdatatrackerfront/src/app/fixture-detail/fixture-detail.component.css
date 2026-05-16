@@ -467,14 +467,16 @@
 .conf-mid   { background: #fef9e7; color: #b7950b; }
 .conf-low   { background: #fadbd8; color: #a93226; }
 
-/* Binary cards (O/U + BTTS) */
+/* Binary cards (Goles · BTTS · Córners) */
 .pred-binary-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
   margin-bottom: 16px;
+  align-items: start;
 }
-@media (max-width: 600px) { .pred-binary-row { grid-template-columns: 1fr; } }
+@media (max-width: 800px) { .pred-binary-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .pred-binary-row { grid-template-columns: 1fr; } }
 
 .pred-binary-card {
   background: white;
@@ -490,16 +492,29 @@
   letter-spacing: 0.06em;
   color: #888;
   margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pred-lambda {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: #aaa;
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
 }
 
 .pred-binary-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 8px;
+  padding: 5px 8px;
   border-radius: 6px;
   margin-bottom: 4px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #444;
 }
 .pred-binary-item.pred-binary-winner {

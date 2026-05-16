@@ -24,8 +24,9 @@ public class ContextualMatchPrediction {
     private Double adjConfidence;  // max - second-highest adjusted prob
 
     // ---- Unchanged from base -------------------------------------------------
-    private MatchPrediction.OverUnder25 overUnder25;
-    private MatchPrediction.Btts        btts;
+    private MatchPrediction.Goals   goals;
+    private MatchPrediction.Btts    btts;
+    private MatchPrediction.Corners corners;
 
     private List<String> warnings;
 
@@ -56,10 +57,12 @@ public class ContextualMatchPrediction {
     public void    setAdjPredicted(String v)           { adjPredicted = v; }
     public Double  getAdjConfidence()                  { return adjConfidence; }
     public void    setAdjConfidence(Double v)          { adjConfidence = v; }
-    public MatchPrediction.OverUnder25 getOverUnder25(){ return overUnder25; }
-    public void setOverUnder25(MatchPrediction.OverUnder25 v){ overUnder25 = v; }
-    public MatchPrediction.Btts getBtts()              { return btts; }
-    public void setBtts(MatchPrediction.Btts v)        { btts = v; }
+    public MatchPrediction.Goals   getGoals()          { return goals; }
+    public void    setGoals(MatchPrediction.Goals v)   { goals = v; }
+    public MatchPrediction.Btts    getBtts()           { return btts; }
+    public void    setBtts(MatchPrediction.Btts v)     { btts = v; }
+    public MatchPrediction.Corners getCorners()        { return corners; }
+    public void    setCorners(MatchPrediction.Corners v){ corners = v; }
     public List<String> getWarnings()                  { return warnings; }
     public void setWarnings(List<String> v)            { warnings = v; }
 }

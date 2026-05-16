@@ -398,20 +398,33 @@
           </div>
         </div>
 
-        <!-- O/U y BTTS -->
+        <!-- Goles · BTTS · Córners -->
         <div class="pred-binary-row">
 
           <div class="pred-binary-card">
-            <div class="pred-binary-title">Goles en el partido</div>
-            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'over'">
-              <span class="pred-binary-label">Más de 2.5 goles</span>
-              <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.over) }}</span>
-              <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'over'">✓</span>
+            <div class="pred-binary-title">
+              Goles en el partido
+              <span class="pred-lambda" *ngIf="prediction.goals?.expectedTotal">λ = {{ prediction.goals.expectedTotal }}</span>
             </div>
-            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.overUnder25?.predicted === 'under'">
-              <span class="pred-binary-label">Menos de 2.5 goles</span>
-              <span class="pred-binary-pct">{{ pct(prediction.overUnder25?.under) }}</span>
-              <span class="pred-check" *ngIf="prediction.overUnder25?.predicted === 'under'">✓</span>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.goals?.over05?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 0.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.goals?.over05?.over) }}</span>
+              <span class="pred-check" *ngIf="prediction.goals?.over05?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.goals?.over15?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 1.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.goals?.over15?.over) }}</span>
+              <span class="pred-check" *ngIf="prediction.goals?.over15?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.goals?.over25?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 2.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.goals?.over25?.over) }}</span>
+              <span class="pred-check" *ngIf="prediction.goals?.over25?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="prediction.goals?.over35?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 3.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.goals?.over35?.over) }}</span>
+              <span class="pred-check" *ngIf="prediction.goals?.over35?.predicted === 'over'">✓</span>
             </div>
           </div>
 
@@ -426,6 +439,33 @@
               <span class="pred-binary-label">No marcan los dos</span>
               <span class="pred-binary-pct">{{ pct(prediction.btts?.no) }}</span>
               <span class="pred-check" *ngIf="prediction.btts?.predicted === 'no'">✓</span>
+            </div>
+          </div>
+
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">
+              Córners totales
+              <span class="pred-lambda" *ngIf="prediction.corners?.expectedTotal">λ = {{ prediction.corners.expectedTotal }}</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(prediction.corners?.over7 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 7.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.corners?.over7) }}</span>
+              <span class="pred-check" *ngIf="(prediction.corners?.over7 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(prediction.corners?.over8 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 8.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.corners?.over8) }}</span>
+              <span class="pred-check" *ngIf="(prediction.corners?.over8 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(prediction.corners?.over9 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 9.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.corners?.over9) }}</span>
+              <span class="pred-check" *ngIf="(prediction.corners?.over9 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(prediction.corners?.over10 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 10.5</span>
+              <span class="pred-binary-pct">{{ pct(prediction.corners?.over10) }}</span>
+              <span class="pred-check" *ngIf="(prediction.corners?.over10 ?? 0) > 0.5">✓</span>
             </div>
           </div>
 
@@ -534,19 +574,32 @@
           </div>
         </div>
 
-        <!-- O/U y BTTS (sin ajustar) -->
+        <!-- Goles · BTTS · Córners (sin ajuste contextual) -->
         <div class="pred-binary-row">
           <div class="pred-binary-card">
-            <div class="pred-binary-title">Goles en el partido</div>
-            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.overUnder25?.predicted === 'over'">
-              <span class="pred-binary-label">Más de 2.5 goles</span>
-              <span class="pred-binary-pct">{{ pct(contextualPrediction.overUnder25?.over) }}</span>
-              <span class="pred-check" *ngIf="contextualPrediction.overUnder25?.predicted === 'over'">✓</span>
+            <div class="pred-binary-title">
+              Goles en el partido
+              <span class="pred-lambda" *ngIf="contextualPrediction.goals?.expectedTotal">λ = {{ contextualPrediction.goals.expectedTotal }}</span>
             </div>
-            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.overUnder25?.predicted === 'under'">
-              <span class="pred-binary-label">Menos de 2.5 goles</span>
-              <span class="pred-binary-pct">{{ pct(contextualPrediction.overUnder25?.under) }}</span>
-              <span class="pred-check" *ngIf="contextualPrediction.overUnder25?.predicted === 'under'">✓</span>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.goals?.over05?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 0.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.goals?.over05?.over) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.goals?.over05?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.goals?.over15?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 1.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.goals?.over15?.over) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.goals?.over15?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.goals?.over25?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 2.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.goals?.over25?.over) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.goals?.over25?.predicted === 'over'">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="contextualPrediction.goals?.over35?.predicted === 'over'">
+              <span class="pred-binary-label">Más de 3.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.goals?.over35?.over) }}</span>
+              <span class="pred-check" *ngIf="contextualPrediction.goals?.over35?.predicted === 'over'">✓</span>
             </div>
           </div>
           <div class="pred-binary-card">
@@ -562,11 +615,37 @@
               <span class="pred-check" *ngIf="contextualPrediction.btts?.predicted === 'no'">✓</span>
             </div>
           </div>
+          <div class="pred-binary-card">
+            <div class="pred-binary-title">
+              Córners totales
+              <span class="pred-lambda" *ngIf="contextualPrediction.corners?.expectedTotal">λ = {{ contextualPrediction.corners.expectedTotal }}</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(contextualPrediction.corners?.over7 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 7.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.corners?.over7) }}</span>
+              <span class="pred-check" *ngIf="(contextualPrediction.corners?.over7 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(contextualPrediction.corners?.over8 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 8.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.corners?.over8) }}</span>
+              <span class="pred-check" *ngIf="(contextualPrediction.corners?.over8 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(contextualPrediction.corners?.over9 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 9.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.corners?.over9) }}</span>
+              <span class="pred-check" *ngIf="(contextualPrediction.corners?.over9 ?? 0) > 0.5">✓</span>
+            </div>
+            <div class="pred-binary-item" [class.pred-binary-winner]="(contextualPrediction.corners?.over10 ?? 0) > 0.5">
+              <span class="pred-binary-label">Más de 10.5</span>
+              <span class="pred-binary-pct">{{ pct(contextualPrediction.corners?.over10) }}</span>
+              <span class="pred-check" *ngIf="(contextualPrediction.corners?.over10 ?? 0) > 0.5">✓</span>
+            </div>
+          </div>
         </div>
 
         <p class="pred-disclaimer">
-          Ajuste mediante mezcla logística (Phase 7a, pesos fijos).
-          O/U 2.5 y BTTS no se ajustan contextualmente.
+          Ajuste mediante mezcla logística (pesos configurables).
+          Goles, BTTS y Córners se muestran sin ajuste contextual.
         </p>
 
       </ng-container>

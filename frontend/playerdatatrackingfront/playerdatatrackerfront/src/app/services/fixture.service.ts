@@ -183,11 +183,35 @@ export interface MatchPredictionResult1x2 {
 }
 
 export interface MatchPredictionBinary {
-  over?: number;
-  under?: number;
   yes?: number;
   no?: number;
   predicted: string;
+}
+
+export interface MatchPredictionGoalLine {
+  over: number;
+  under: number;
+  predicted: string;
+}
+
+export interface MatchPredictionGoals {
+  expectedTotal: number;
+  over05: MatchPredictionGoalLine;
+  over15: MatchPredictionGoalLine;
+  over25: MatchPredictionGoalLine;
+  over35: MatchPredictionGoalLine;
+}
+
+export interface MatchPredictionCorners {
+  expectedTotal: number;
+  over3: number;
+  over4: number;
+  over5: number;
+  over6: number;
+  over7: number;
+  over8: number;
+  over9: number;
+  over10: number;
 }
 
 export interface MatchPrediction {
@@ -199,8 +223,9 @@ export interface MatchPrediction {
   matchDate: string;
   status: string;
   result1x2: MatchPredictionResult1x2;
-  overUnder25: MatchPredictionBinary;
+  goals: MatchPredictionGoals;
   btts: MatchPredictionBinary;
+  corners: MatchPredictionCorners;
   warnings: string[];
 }
 
@@ -253,8 +278,9 @@ export interface ContextualMatchPrediction {
   adjAwayWin: number;
   adjPredicted: 'home_win' | 'draw' | 'away_win';
   adjConfidence: number;
-  overUnder25: MatchPredictionBinary;
+  goals: MatchPredictionGoals;
   btts: MatchPredictionBinary;
+  corners: MatchPredictionCorners;
   warnings: string[];
 }
 

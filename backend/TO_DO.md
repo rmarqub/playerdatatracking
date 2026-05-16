@@ -25,18 +25,8 @@
 
  Resumen de prioridad de implementación
 
-  ┌─────────────────────────────────────────┬────────────────────────────────────────────────────────────┬────────────────────────────────────────────────┬────────┐
-  │                 Mejora                  │                          Esfuerzo                          │                Impacto esperado                │ Riesgo │
-  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
-  │ Over 0.5/1.5/3.5                        │ Muy bajo — solo añadir targets a train_model.py            │ Alto — targets ya definidos                    │ Mínimo │
-  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
-  │ BTTS/OU con pinning + rolling features  │ Medio — cambios en feature_engineering.py y train_model.py │ Alto en calibración                            │ Bajo   │
-  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
-  │ Córners (Poisson regressor)             │ Medio — nuevo modelo + nueva query en predict_api.py       │ Moderado — inherentemente difícil              │ Bajo   │
-  ├─────────────────────────────────────────┼────────────────────────────────────────────────────────────┼────────────────────────────────────────────────┼────────┤
-  │ Goleadores probable (Poisson analítico) │ Medio — nueva función en predict_api.py, sin modelo        │ Moderado — limitado por ausencia de alineación │ Bajo   │
-  └─────────────────────────────────────────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────┴────────┘
-
+- AUC 0.5356 con gap de overfitting de +0.0985 es el modelo más débil. Con la regularización actual (min_child_samples=160, reg_lambda=4.5) el gap no se redujo. L as opciones serían: aumentar más la regularización del binario, añadir features cruzadas ofensiva×defensiva
+  explícitas, o directamente eliminar el mercado BTTS del pipeline si no aporta valor diferencial en producción.
 # MUNDIAL / TEMPORADA 2026
 - SONNET: agregar compatibilidad entre paises y clubes. Gestionar la ingesta de datos del mundial.
 - HAIKU: revisar funcionalidad para la temporada 2026.

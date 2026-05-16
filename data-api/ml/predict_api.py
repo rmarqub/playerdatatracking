@@ -57,8 +57,7 @@ DB_CONFIG = {
 
 MODELS_DIR = Path(__file__).parent / "models"
 
-# Populated at startup; keys: "lgbm_1x2", "lgbm_ou25", "lgbm_btts",
-#   "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"
+# Populated at startup; keys: "lgbm_1x2", "lgbm_btts", "lgbm_goals_lambda", "lgbm_corners_lambda"
 MODELS: dict[str, dict] = {}
 
 # Venue-split columns — must match what feature_engineering.py produces
@@ -103,8 +102,7 @@ PLAYER_ROLL_COLS = [
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    for name in ("lgbm_1x2", "lgbm_ou25", "lgbm_btts",
-                 "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"):
+    for name in ("lgbm_1x2", "lgbm_btts", "lgbm_goals_lambda", "lgbm_corners_lambda"):
         path = MODELS_DIR / f"{name}.pkl"
         if not path.exists():
             raise RuntimeError(f"Modelo no encontrado: {path}. Ejecuta train_model.py primero.")
@@ -956,22 +954,22 @@ def predict(req: PredictRequest):
     sorted_p   = sorted(probs_1x2, reverse=True)
     confidence = round(float(sorted_p[0] - sorted_p[1]), 4)
 
-    # ── Over/Under 2.5 ───────────────────────────────────────────────────────
-    probs_ou25 = _proba("lgbm_ou25")
-
     # ── BTTS ─────────────────────────────────────────────────────────────────
     probs_btts = _proba("lgbm_btts")
 
-    # ── Over 1.5 / 3.5 ──────────────────────────────────────────────────────
-    probs_over15 = _proba("lgbm_over15")
-    probs_over35 = _proba("lgbm_over35")
+    # ── Goles totales (Poisson) — deriva over_05/15/25/35 con monotonía garantizada
+    goals_meta = MODELS["lgbm_goals_lambda"]
+    df_goals   = _align_features(df_all.copy(), goals_meta["metadata"]["features"])
+    lam_goals  = float(goals_meta["model"].predict_lambda(df_goals)[0])
+    # k=0 → P(X>0.5), k=1 → P(X>1.5), k=2 → P(X>2.5), k=3 → P(X>3.5)
+    _gp = {k: round(float(1.0 - scipy_poisson.cdf(k, lam_goals)), 4) for k in range(4)}
 
     # ── Córners (Poisson) ─────────────────────────────────────────────────────
     corners_meta = MODELS["lgbm_corners_lambda"]
     df_corners   = _align_features(df_all.copy(), corners_meta["metadata"]["features"])
-    lam          = float(corners_meta["model"].predict_lambda(df_corners)[0])
+    lam_corners  = float(corners_meta["model"].predict_lambda(df_corners)[0])
     corner_probs = {
-        f"over_{t}": round(float(1.0 - scipy_poisson.cdf(t, lam)), 4)
+        f"over_{t}": round(float(1.0 - scipy_poisson.cdf(t, lam_corners)), 4)
         for t in range(3, 11)
     }
 
@@ -991,21 +989,11 @@ def predict(req: PredictRequest):
             "confidence": confidence,
         },
         "goals": {
-            "over_15": {
-                "over":      round(float(probs_over15[1]), 4),
-                "under":     round(float(probs_over15[0]), 4),
-                "predicted": "over" if probs_over15[1] >= 0.5 else "under",
-            },
-            "over_25": {
-                "over":      round(float(probs_ou25[1]), 4),
-                "under":     round(float(probs_ou25[0]), 4),
-                "predicted": "over" if probs_ou25[1] >= 0.5 else "under",
-            },
-            "over_35": {
-                "over":      round(float(probs_over35[1]), 4),
-                "under":     round(float(probs_over35[0]), 4),
-                "predicted": "over" if probs_over35[1] >= 0.5 else "under",
-            },
+            "expected_total": round(lam_goals, 2),
+            "over_05": {"over": _gp[0], "under": round(1 - _gp[0], 4), "predicted": "over" if _gp[0] >= 0.5 else "under"},
+            "over_15": {"over": _gp[1], "under": round(1 - _gp[1], 4), "predicted": "over" if _gp[1] >= 0.5 else "under"},
+            "over_25": {"over": _gp[2], "under": round(1 - _gp[2], 4), "predicted": "over" if _gp[2] >= 0.5 else "under"},
+            "over_35": {"over": _gp[3], "under": round(1 - _gp[3], 4), "predicted": "over" if _gp[3] >= 0.5 else "under"},
         },
         "btts": {
             "yes":       round(float(probs_btts[1]), 4),
@@ -1013,7 +1001,7 @@ def predict(req: PredictRequest):
             "predicted": "yes" if probs_btts[1] >= 0.5 else "no",
         },
         "corners": {
-            "expected_total": round(lam, 2),
+            "expected_total": round(lam_corners, 2),
             **corner_probs,
         },
         "warnings": warnings,

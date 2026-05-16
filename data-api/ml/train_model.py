@@ -25,6 +25,7 @@ from typing import Optional
 import lightgbm as lgb
 import numpy as np
 import pandas as pd
+from scipy.stats import poisson as scipy_poisson
 from sklearn.metrics import (
     accuracy_score,
     log_loss,
@@ -67,16 +68,20 @@ DRAW_PINNED_FEATURES = [
     "both_teams_recent_draw_rate",
 ]
 
-# Features críticas para Over/Under — protegidas en selección para modelos OU
-OU_PINNED_FEATURES = [
+# Features críticas para el regresor Poisson de goles totales
+GOALS_PINNED_FEATURES = [
     "combined_xg", "defensive_porosity", "total_season_goal_rate", "goal_threat_product",
     "league_avg_goals", "league_over25_rate", "league_over15_rate", "league_btts_rate",
     "home_roll_xg_for_last5", "away_roll_xg_for_last5",
     "home_roll_xg_against_last5", "away_roll_xg_against_last5",
     "home_roll_ou25_last5", "away_roll_ou25_last5",
     "home_roll_ou15_last5", "away_roll_ou15_last5",
+    "home_roll_goals_for_last5", "away_roll_goals_for_last5",
+    "home_roll_goals_against_last5", "away_roll_goals_against_last5",
+    "roll_goals_for_h_last5", "roll_goals_against_h_last5",
     "home_season_gfpg", "away_season_gfpg", "home_season_gapg", "away_season_gapg",
     "diff_xg", "diff_xga",
+    "diff_goals_for", "diff_goals_against",
 ]
 
 # Features críticas para BTTS — protegidas en selección para modelos BTTS
@@ -382,7 +387,7 @@ def _find_best_temperature_binary(model, val: pd.DataFrame, features: list[str],
 
 def train_1x2(train: pd.DataFrame, features: list[str]) -> CalibratedLGBM:
     # v3: peso 1.22 para empate — sube discriminación sin sobredisparar probabilidades
-    cw = {0: 1.0, 1: 1.22, 2: 1.0}
+    cw = {0: 1.0, 1: 1.30, 2: 1.0}
     model = lgb.LGBMClassifier(
         **LGBM_BASE,
         objective="multiclass",
@@ -496,6 +501,35 @@ def evaluate_regression(model: CalibratedLGBM, data: pd.DataFrame, features: lis
     print(f"    RMSE:      {rmse:.3f}  córners")
     print(f"    Bias:      {bias:+.3f}  (+ = sobreestima)")
     print(f"    λ media:   {pred.mean():.2f}  |  real media: {y.mean():.2f}")
+    return mae
+
+
+def evaluate_goals_poisson(model: CalibratedLGBM, data: pd.DataFrame, features: list[str],
+                           split_label: str = "Test") -> float:
+    """Evalúa el regresor Poisson de goles: MAE/RMSE + AUC derivado por umbral."""
+    data_clean = data.dropna(subset=["total_goals"])
+    if data_clean.empty:
+        print(f"\n  Modelo Goals λ [{split_label}] — sin datos con total_goals no-nulo")
+        return float("nan")
+    X    = data_clean[features]
+    y    = data_clean["total_goals"].values
+    lam  = model.predict_lambda(X)
+    mae  = float(np.mean(np.abs(lam - y)))
+    rmse = float(np.sqrt(np.mean((lam - y) ** 2)))
+    bias = float(np.mean(lam - y))
+    print(f"\n  Modelo Goals λ [{split_label} — {len(data_clean)} partidos]")
+    print(f"    MAE:       {mae:.3f}  goles")
+    print(f"    RMSE:      {rmse:.3f}  goles")
+    print(f"    Bias:      {bias:+.3f}  (+ = sobreestima)")
+    print(f"    λ media:   {lam.mean():.2f}  |  real media: {y.mean():.2f}")
+    print(f"\n    Derivados Poisson (monotonía garantizada):")
+    print(f"    {'Mercado':<10}  {'AUC':>7}  {'Brier':>7}  {'Freq.real':>10}  {'Prob.media':>10}")
+    for k, label in [(0, "Over 0.5"), (1, "Over 1.5"), (2, "Over 2.5"), (3, "Over 3.5")]:
+        p_over = 1.0 - scipy_poisson.cdf(k, lam)
+        y_bin  = (y > k + 0.5).astype(int)
+        auc    = roc_auc_score(y_bin, p_over) if 0 < y_bin.sum() < len(y_bin) else float("nan")
+        brier  = brier_score_loss(y_bin, p_over)
+        print(f"    {label:<10}  {auc:>7.4f}  {brier:>7.4f}  {y_bin.mean():>9.1%}  {p_over.mean():>10.1%}")
     return mae
 
 
@@ -632,8 +666,8 @@ def main():
 
     print(f"\n{'='*55}")
 
-    # ── 1/7: 1X2 ──────────────────────────────────────────────────────────────
-    print("\n[1/7] Entrenando modelo 1X2...")
+    # ── 1/4: 1X2 ──────────────────────────────────────────────────────────────
+    print("\n[1/4] Entrenando modelo 1X2...")
     features_1x2 = _prepare_features(df, train, base_features, args, "result", "multiclass")
     if len(features_1x2) != len(base_features):
         print(f"    Feature selection: {len(base_features)} → {len(features_1x2)} features")
@@ -646,22 +680,9 @@ def main():
     print_top_features(m1x2, features_1x2)
     save_model(m1x2, "lgbm_1x2", {**meta_base, "features": features_1x2, "target": "result", "classes": [0, 1, 2]})
 
-    # ── 2/7: Over/Under 2.5 ────────────────────────────────────────────────────
-    print("\n[2/7] Entrenando modelo Over/Under 2.5...")
-    features_ou = _prepare_features(df, train, base_features, args, "over25", "binary", pinned_extra=OU_PINNED_FEATURES)
-    if len(features_ou) != len(base_features):
-        print(f"    Feature selection: {len(base_features)} → {len(features_ou)} features")
-    mou        = train_binary(train, features_ou, "over25")
-    auc_ou_tr  = evaluate_binary(mou, train, features_ou, "over25", "Over/Under 2.5", split_label="Train")
-    auc_ou_te  = evaluate_binary(mou, test,  features_ou, "over25", "Over/Under 2.5", split_label="Test")
-    print(f"\n    Overfitting check (AUC):  Train={auc_ou_tr:.4f}  Test={auc_ou_te:.4f}  gap={auc_ou_tr - auc_ou_te:+.4f}"
-          + ("  ⚠ posible overfitting" if auc_ou_tr - auc_ou_te > 0.04 else "  ✓ OK"))
-    print_top_features(mou, features_ou, n=10)
-    save_model(mou, "lgbm_ou25", {**meta_base, "features": features_ou, "target": "over25"})
-
-    # ── 3/7: BTTS ──────────────────────────────────────────────────────────────
+    # ── 2/4: BTTS ──────────────────────────────────────────────────────────────
     if not args.skip_btts:
-        print("\n[3/7] Entrenando modelo BTTS...")
+        print("\n[2/4] Entrenando modelo BTTS...")
         features_btts = _prepare_features(df, train, base_features, args, "btts", "binary", pinned_extra=BTTS_PINNED_FEATURES)
         if len(features_btts) != len(base_features):
             print(f"    Feature selection: {len(base_features)} → {len(features_btts)} features")
@@ -673,37 +694,29 @@ def main():
         print_top_features(mbtts, features_btts, n=10)
         save_model(mbtts, "lgbm_btts", {**meta_base, "features": features_btts, "target": "btts"})
 
-    # ── 4/6: Over 1.5 ─────────────────────────────────────────────────────────
-    if "over15" in df.columns:
-        print("\n[4/6] Entrenando modelo Over 1.5...")
-        features_ou15 = _prepare_features(df, train, base_features, args, "over15", "binary", pinned_extra=OU_PINNED_FEATURES)
-        mou15         = train_binary(train, features_ou15, "over15")
-        auc_15_tr     = evaluate_binary(mou15, train, features_ou15, "over15", "Over 1.5", split_label="Train")
-        auc_15_te     = evaluate_binary(mou15, test,  features_ou15, "over15", "Over 1.5", split_label="Test")
-        print(f"\n    Overfitting check (AUC):  Train={auc_15_tr:.4f}  Test={auc_15_te:.4f}  gap={auc_15_tr - auc_15_te:+.4f}"
-              + ("  ⚠" if auc_15_tr - auc_15_te > 0.04 else "  ✓ OK"))
-        print_top_features(mou15, features_ou15, n=8)
-        save_model(mou15, "lgbm_over15", {**meta_base, "features": features_ou15, "target": "over15"})
+    # ── 3/4: Goles totales (Poisson regressor) ────────────────────────────────
+    # Sustituye los 3 clasificadores binarios (ou25, over15, over35).
+    # λ → P(>k) via scipy_poisson.cdf garantiza monotonía entre umbrales.
+    if "total_goals" in df.columns and df["total_goals"].notna().sum() >= 50:
+        print("\n[3/4] Entrenando regresor Poisson de goles...")
+        features_gl = _prepare_features(df, train, base_features, args, "total_goals", "binary",
+                                        pinned_extra=GOALS_PINNED_FEATURES)
+        try:
+            mgl        = train_poisson_regressor(train, features_gl, "total_goals")
+            mae_gl_tr  = evaluate_goals_poisson(mgl, train, features_gl, split_label="Train")
+            mae_gl_te  = evaluate_goals_poisson(mgl, test,  features_gl, split_label="Test")
+            print(f"\n    Overfitting check (MAE):  Train={mae_gl_tr:.3f}  Test={mae_gl_te:.3f}  gap={mae_gl_tr - mae_gl_te:+.3f}"
+                  + ("  ⚠" if abs(mae_gl_tr - mae_gl_te) > 0.3 else "  ✓ OK"))
+            print_top_features(mgl, features_gl, n=10)
+            save_model(mgl, "lgbm_goals_lambda", {**meta_base, "features": features_gl, "target": "total_goals", "model_type": "poisson_regressor"})
+        except ValueError as e:
+            print(f"    ⚠ {e} — omitiendo regresor de goles.")
     else:
-        print("\n[4/6] Over 1.5 — target no encontrado en dataset, omitiendo.")
+        print("\n[3/4] total_goals — columna no encontrada o insuficientes datos, omitiendo regresor de goles.")
 
-    # ── 5/6: Over 3.5 ─────────────────────────────────────────────────────────
-    if "over35" in df.columns:
-        print("\n[5/6] Entrenando modelo Over 3.5...")
-        features_ou35 = _prepare_features(df, train, base_features, args, "over35", "binary", pinned_extra=OU_PINNED_FEATURES)
-        mou35         = train_binary(train, features_ou35, "over35")
-        auc_35_tr     = evaluate_binary(mou35, train, features_ou35, "over35", "Over 3.5", split_label="Train")
-        auc_35_te     = evaluate_binary(mou35, test,  features_ou35, "over35", "Over 3.5", split_label="Test")
-        print(f"\n    Overfitting check (AUC):  Train={auc_35_tr:.4f}  Test={auc_35_te:.4f}  gap={auc_35_tr - auc_35_te:+.4f}"
-              + ("  ⚠" if auc_35_tr - auc_35_te > 0.04 else "  ✓ OK"))
-        print_top_features(mou35, features_ou35, n=8)
-        save_model(mou35, "lgbm_over35", {**meta_base, "features": features_ou35, "target": "over35"})
-    else:
-        print("\n[5/6] Over 3.5 — target no encontrado en dataset, omitiendo.")
-
-    # ── 6/6: Córners (Poisson regressor) ──────────────────────────────────────
+    # ── 4/4: Córners (Poisson regressor) ──────────────────────────────────────
     if "total_corners" in df.columns and df["total_corners"].notna().sum() >= 50:
-        print("\n[6/6] Entrenando regresor Poisson de córners...")
+        print("\n[4/4] Entrenando regresor Poisson de córners...")
         features_cr = _prepare_features(df, train, base_features, args, "total_corners", "binary",
                                         pinned_extra=CORNERS_PINNED_FEATURES)
         try:
@@ -717,11 +730,11 @@ def main():
         except ValueError as e:
             print(f"    ⚠ {e} — omitiendo modelo de córners.")
     else:
-        print("\n[7/7] total_corners — columna no encontrada o insuficientes datos, omitiendo regresor de córners.")
+        print("\n[4/4] total_corners — columna no encontrada o insuficientes datos, omitiendo regresor de córners.")
 
     print(f"\n{'='*55}")
     print("Completado. Modelos guardados:")
-    for name in ["lgbm_1x2", "lgbm_ou25", "lgbm_btts", "lgbm_over15", "lgbm_over35", "lgbm_corners_lambda"]:
+    for name in ["lgbm_1x2", "lgbm_btts", "lgbm_goals_lambda", "lgbm_corners_lambda"]:
         path = MODELS_DIR / f"{name}.pkl"
         status = "✓" if path.exists() else "✗ no generado"
         print(f"  {status}  {path.name}")

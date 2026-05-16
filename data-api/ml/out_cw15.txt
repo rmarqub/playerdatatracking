@@ -1,0 +1,189 @@
+Cargando dataset: C:\Users\Rodri\Desktop\playerdatatracking\data-api\ml\training_data.parquet
+  → 19188 partidos  |  203 features
+  → Train: 12867 partidos  |  Test: 6321 partidos
+
+=======================================================
+
+[1/4] Entrenando modelo 1X2...
+    Feature selection: 203 → 178 features
+[200]	valid_0's multi_logloss: 1.03212
+    Best iteration: 197
+    Calibration temperature: 0.90
+
+  Modelo 1X2 [Train — 12867 partidos]
+    Accuracy:          0.560  (baseline aleatorio ≈ 0.333)
+    Log Loss:          0.9215
+    RPS:               0.1942  (baseline = 0.2388 | mejora: 18.6%)
+
+    Calibración y Brier por clase:
+                   Freq.real  Prob.media    Brier  Brier base
+      Local win       44.5%       45.8%   0.2064      0.2469  ← peor calibrado
+      Empate          23.4%       22.3%   0.1598      0.1793
+      Away win        32.1%       31.9%   0.1821      0.2181
+
+  Modelo 1X2 [Test — 6321 partidos]
+    Accuracy:          0.502  (baseline aleatorio ≈ 0.333)
+    Log Loss:          1.0056
+    RPS:               0.2156  (baseline = 0.2397 | mejora: 10.0%)
+
+    Calibración y Brier por clase:
+                   Freq.real  Prob.media    Brier  Brier base
+      Local win       45.2%       45.4%   0.2290      0.2477  ← peor calibrado
+      Empate          22.9%       22.8%   0.1727      0.1764
+      Away win        31.9%       31.8%   0.2022      0.2172
+
+    Matriz de confusión (filas=real, cols=pred):
+               Local   Empate   Visit.
+       Local    2327       29      504   (2860 total)
+      Empate    1007       14      425   (1446 total)
+      Visit.    1161       21      833   (2015 total)
+
+    📊 ANÁLISIS DE EMPATES (clase 1):
+       Empates reales:     1446
+       Empates predichos:  64
+       Empates acertados:  14
+       Recall (recall=correct/real): 1.0%
+       ⚠️  CRÍTICO: Modelo subestima empates. Considera incrementar class_weight.
+
+    Overfitting check (RPS):  Train=0.1942  Test=0.2156  gap=-0.0213  ⚠ posible overfitting
+
+  Top 15 features por importancia:
+    league_id                                            ████████████████████
+    diff_starter_rating_pct                              ██████
+    corner_dominance_diff                                ██████
+    diff_season_gfpg                                     ██████
+    diff_season_ppg                                      █████
+    diff_passes_pct                                      █████
+    home_days_rest                                       █████
+    diff_season_gapg                                     █████
+    team_draw_vs_league                                  ████
+    league_draw_rate                                     ████
+    league_season_draw_rate                              ████
+    home_avg_att_kp_pct                                  ████
+    away_avg_att_kp_pct                                  ████
+    league_away_win_rate                                 ████
+    home_top_attacker_goal_pct                           ███
+  → Guardado: C:\Users\Rodri\Desktop\playerdatatracking\data-api\ml\models\lgbm_1x2.pkl
+
+[2/4] Entrenando modelo BTTS...
+    Feature selection: 203 → 178 features
+[200]	valid_0's binary_logloss: 0.689567
+    Best iteration: 79
+    Calibration temperature: 0.90
+
+  Modelo BTTS [Train — 12867 partidos]
+    Accuracy:          0.570
+    AUC-ROC:           0.6341  (aleatorio = 0.500)
+    Brier Score:       0.2428  (base = 0.2490)
+    Log Loss:          0.6786
+    Calibración:       freq.real=53.2%  prob.media=54.1%
+
+  Modelo BTTS [Test — 6321 partidos]
+    Accuracy:          0.539
+    AUC-ROC:           0.5356  (aleatorio = 0.500)
+    Brier Score:       0.2479  (base = 0.2488)
+    Log Loss:          0.6889
+    Calibración:       freq.real=53.4%  prob.media=53.8%
+
+    Overfitting check (AUC):  Train=0.6341  Test=0.5356  gap=+0.0985  ⚠ posible overfitting
+
+  Top 10 features por importancia:
+    league_id                                            ████████████████████
+    league_btts_rate                                     ████████████
+    total_season_goal_rate                               ████████████
+    away_roll_fouls_per_shot_last5                       ██████████
+    away_season_gapg                                     ██████████
+    home_roll_btts_last5                                 ██████████
+    away_avg_att_goal_pct                                ██████████
+    away_roll_passes_pct_last5                           █████████
+    home_season_gapg                                     █████████
+    away_roll_player_avg_rating_f_last5                  ████████
+  → Guardado: C:\Users\Rodri\Desktop\playerdatatracking\data-api\ml\models\lgbm_btts.pkl
+
+[3/4] Entrenando regresor Poisson de goles...
+[200]	valid_0's poisson: 0.0294887
+[400]	valid_0's poisson: 0.0269403
+[600]	valid_0's poisson: 0.0261671
+[800]	valid_0's poisson: 0.025986
+    Best iteration: 772
+
+  Modelo Goals λ [Train — 12867 partidos]
+    MAE:       1.268  goles
+    RMSE:      1.584  goles
+    Bias:      +0.007  (+ = sobreestima)
+    λ media:   2.84  |  real media: 2.83
+
+    Derivados Poisson (monotonía garantizada):
+    Mercado         AUC    Brier   Freq.real  Prob.media
+    Over 0.5     0.7224   0.0576      93.6%       93.7%
+    Over 1.5     0.6852   0.1686      76.4%       76.7%
+    Over 2.5     0.6902   0.2262      54.0%       53.4%
+    Over 3.5     0.7147   0.1954      31.8%       31.7%
+
+  Modelo Goals λ [Test — 6321 partidos]
+    MAE:       1.338  goles
+    RMSE:      1.683  goles
+    Bias:      -0.050  (+ = sobreestima)
+    λ media:   2.80  |  real media: 2.85
+
+    Derivados Poisson (monotonía garantizada):
+    Mercado         AUC    Brier   Freq.real  Prob.media
+    Over 0.5     0.6097   0.0572      93.9%       93.5%
+    Over 1.5     0.5855   0.1758      76.7%       76.2%
+    Over 2.5     0.5852   0.2430      54.7%       52.6%
+    Over 3.5     0.6039   0.2103      31.7%       30.8%
+
+    Overfitting check (MAE):  Train=1.268  Test=1.338  gap=-0.071  ✓ OK
+
+  Top 10 features por importancia:
+    league_id                                            ████████████████████
+    home_roll_passes_pct_last5                           █████
+    away_season_gapg                                     █████
+    home_roll_fouls_last5                                ████
+    home_roll_fouls_per_shot_last5                       ████
+    away_roll_passes_pct_last5                           ████
+    home_roll_possession_last5                           ████
+    home_avg_att_kp_pct                                  ███
+    consistency_diff_goals_for                           ███
+    home_avg_starter_rating_pct                          ███
+  → Guardado: C:\Users\Rodri\Desktop\playerdatatracking\data-api\ml\models\lgbm_goals_lambda.pkl
+
+[4/4] Entrenando regresor Poisson de córners...
+[200]	valid_0's poisson: -11.7921
+    Best iteration: 127
+
+  Modelo Corners λ [Train — 10586 partidos]
+    MAE:       2.728  córners
+    RMSE:      3.425  córners
+    Bias:      +0.036  (+ = sobreestima)
+    λ media:   9.70  |  real media: 9.66
+
+  Modelo Corners λ [Test — 5074 partidos]
+    MAE:       2.771  córners
+    RMSE:      3.497  córners
+    Bias:      +0.169  (+ = sobreestima)
+    λ media:   9.68  |  real media: 9.51
+
+    Overfitting check (MAE):  Train=2.728  Test=2.771  gap=-0.043  ✓ OK
+
+  Top 10 features por importancia:
+    league_id                                            ████████████████████
+    league_avg_corners                                   ███████████
+    league_home_win_rate                                 ███████████
+    home_roll_fouls_per_shot_last5                       ███████
+    league_avg_goals                                     █████
+    home_ema_shots_on_goal_span5                         █████
+    combined_corners                                     █████
+    away_season_gapg                                     █████
+    away_ema_clean_sheet_span5                           █████
+    league_over25_rate                                   █████
+  → Guardado: C:\Users\Rodri\Desktop\playerdatatracking\data-api\ml\models\lgbm_corners_lambda.pkl
+
+=======================================================
+Completado. Modelos guardados:
+  ✓  lgbm_1x2.pkl
+  ✓  lgbm_btts.pkl
+  ✓  lgbm_goals_lambda.pkl
+  ✓  lgbm_corners_lambda.pkl
+
+Siguiente paso → threshold_optimization.py (apunta a models/lgbm_1x2.pkl)
