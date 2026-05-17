@@ -38,9 +38,12 @@ public class GenericRequest {
     private List<Long> leagueIds;
     private String season;
     private ContextualAnalysisRequest contextualAnalysis;
+    private String scope;
 
     public ContextualAnalysisRequest getContextualAnalysis() { return contextualAnalysis; }
     public void setContextualAnalysis(ContextualAnalysisRequest v) { contextualAnalysis = v; }
+    public String getScope() { return scope; }
+    public void setScope(String v) { scope = v; }
 
     public String getSeason() {
         return season;

@@ -53,6 +53,7 @@ export class AuthService {
         pwd: pwdB64,
         kid: this.crypto.getKid()
       }, { withCredentials: true })),
+      switchMap(() => this.ensureFreshUser()),
       map(() => true)
     );
   }

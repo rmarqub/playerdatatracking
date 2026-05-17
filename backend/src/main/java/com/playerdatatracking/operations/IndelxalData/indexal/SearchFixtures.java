@@ -26,7 +26,7 @@ public class SearchFixtures {
     @Autowired
     private FixtureContextualAnalysisRepository analysisRepository;
 
-    public GenericResponse<Fixture> ejecutar(GenericRequest request) throws Exception {
+    public GenericResponse<Fixture> ejecutar(GenericRequest request, Long userId) throws Exception {
         GenericResponse<Fixture> response = new GenericResponse<>();
 
         String nombre = request.getNombre() != null ? request.getNombre().trim() : null;
@@ -63,10 +63,10 @@ public class SearchFixtures {
             fixtures = pdClient.searchFixturesByLeagueIds(leagueIntIds);
         }
 
-        if (!fixtures.isEmpty()) {
+        if (!fixtures.isEmpty() && userId != null) {
             List<Long> fixtureIds = fixtures.stream().map(Fixture::getId).collect(Collectors.toList());
             Set<Long> analysisIds = new java.util.HashSet<>(
-                    analysisRepository.findFixtureIdsByFixtureIdIn(fixtureIds));
+                    analysisRepository.findFixtureIdsByFixtureIdInAndUserId(fixtureIds, userId));
             fixtures.forEach(f -> f.setHasAnalysis(analysisIds.contains(f.getId())));
         }
 

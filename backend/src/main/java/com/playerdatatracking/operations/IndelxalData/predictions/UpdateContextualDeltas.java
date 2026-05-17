@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -79,10 +80,12 @@ public class UpdateContextualDeltas {
 
     // ── Public entry point ────────────────────────────────────────────────────
 
-    public GenericResponse<String> ejecutar() {
+    public GenericResponse<String> ejecutar(Long userId) {
         GenericResponse<String> response = new GenericResponse<>();
         try {
-            List<FixtureContextualAnalysis> withSnapshot = analysisRepository.findAllWithBaseSnapshot();
+            List<FixtureContextualAnalysis> withSnapshot = userId != null
+                    ? analysisRepository.findAllWithBaseSnapshotByUserId(userId)
+                    : java.util.Collections.emptyList();
 
             Map<Long, Fixture> fixtureMap = fixtureRepository
                     .findAllById(withSnapshot.stream()
@@ -92,7 +95,7 @@ public class UpdateContextualDeltas {
                     .filter(f -> FINISHED.contains(f.getStatusShort()))
                     .collect(Collectors.toMap(Fixture::getId, f -> f));
 
-            CalibResult calib = calibrate(withSnapshot, fixtureMap);
+            CalibResult calib = calibrate(withSnapshot, fixtureMap, userId);
             response.setCODE(Constants.CODE_OK);
             response.setDescription(calib.message);
             response.setEntity(calib.message);
@@ -107,7 +110,7 @@ public class UpdateContextualDeltas {
     // ── Calibration: 2D gradient descent (HA + Draw axes) ────────────────────
 
     private CalibResult calibrate(List<FixtureContextualAnalysis> withSnapshot,
-                                  Map<Long, Fixture> fixtureMap) {
+                                  Map<Long, Fixture> fixtureMap, Long userId) {
         List<TrainRow> rows = new ArrayList<>();
 
         for (FixtureContextualAnalysis a : withSnapshot) {
@@ -163,8 +166,18 @@ public class UpdateContextualDeltas {
         double[] wHA = {W_FORMA, W_NEEDS, W_DEF, W_OFF, W_FATIGUE, W_SET, W_ATM, W_UNAVAIL};
         double[] wD  = {WD_FORMA, WD_NEEDS, WD_DEF, WD_OFF, WD_FATIGUE, WD_SET, WD_ATM, WD_UNAVAIL};
 
-        // Warm-start: inherit previous draw weights if they exist
-        weightConfigRepository.findTopByOrderByIdDesc().ifPresent(prev -> {
+        // Warm-start: inherit this user's current weights if they exist
+        Optional<ContextualWeightConfig> userCfgOpt = userId != null
+                ? weightConfigRepository.findByUserId(userId)
+                : java.util.Optional.empty();
+
+        userCfgOpt.ifPresent(prev -> {
+            if (prev.getWForma() != null) {
+                wHA[0] = prev.getWForma();   wHA[1] = prev.getWNeeds();
+                wHA[2] = prev.getWDef();     wHA[3] = prev.getWOff();
+                wHA[4] = prev.getWFatigue(); wHA[5] = prev.getWSetPieces();
+                wHA[6] = prev.getWAtm();     wHA[7] = prev.getWUnavail();
+            }
             if (prev.getWFormaD() != null) {
                 wD[0] = prev.getWFormaD();   wD[1] = prev.getWNeedsD();
                 wD[2] = prev.getWDefD();     wD[3] = prev.getWOffD();
@@ -207,8 +220,9 @@ public class UpdateContextualDeltas {
             }
         }
 
-        // ── Persist ──────────────────────────────────────────────────────────
-        ContextualWeightConfig cfg = new ContextualWeightConfig();
+        // ── Persist (update existing user record or create new) ───────────────
+        ContextualWeightConfig cfg = userCfgOpt.orElseGet(ContextualWeightConfig::new);
+        if (userId != null) cfg.setUserId(userId);
 
         cfg.setWForma(    round4(wHA[0])); cfg.setWNeeds(    round4(wHA[1]));
         // w_def y w_off deben ser >= 0: más bloque/ritmo local → ventaja local

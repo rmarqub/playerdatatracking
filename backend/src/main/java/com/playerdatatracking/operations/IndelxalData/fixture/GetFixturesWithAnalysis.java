@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.common.Constants;
 import com.playerdatatracking.entities.indexaldata.Fixture;
+import com.playerdatatracking.entities.indexaldata.FixtureContextualAnalysis;
 import com.playerdatatracking.repositories.indexaldata.FixtureContextualAnalysisRepository;
 import com.playerdatatracking.repositories.indexaldata.FixtureRepository;
 import com.playerdatatracking.requests.GenericRequest;
@@ -20,11 +21,15 @@ public class GetFixturesWithAnalysis {
     @Autowired private FixtureContextualAnalysisRepository analysisRepository;
     @Autowired private FixtureRepository                   fixtureRepository;
 
-    public GenericResponse<Fixture> ejecutar(GenericRequest request) throws Exception {
+    public GenericResponse<Fixture> ejecutar(GenericRequest request, Long userId) throws Exception {
         GenericResponse<Fixture> response = new GenericResponse<>();
 
-        List<Long> fixtureIds = analysisRepository.findAll().stream()
-                .map(a -> a.getFixtureId())
+        List<FixtureContextualAnalysis> analyses = userId != null
+                ? analysisRepository.findByUserId(userId)
+                : Collections.emptyList();
+
+        List<Long> fixtureIds = analyses.stream()
+                .map(FixtureContextualAnalysis::getFixtureId)
                 .collect(Collectors.toList());
 
         if (fixtureIds.isEmpty()) {

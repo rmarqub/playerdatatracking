@@ -1,9 +1,14 @@
 package com.playerdatatracking.controller;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 import com.playerdatatracking.common.Methods;
 import com.playerdatatracking.entities.indexaldata.Fixture;
@@ -129,10 +134,10 @@ public class FixtureController {
     }
 
     @PostMapping("/searchFixtures")
-    public GenericResponse<Fixture> searchFixtures(@RequestBody GenericRequest request) {
+    public GenericResponse<Fixture> searchFixtures(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<Fixture> response = new GenericResponse<>();
         try {
-            response = operationSearchFixtures.ejecutar(request);
+            response = operationSearchFixtures.ejecutar(request, currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -321,10 +326,10 @@ public class FixtureController {
     }
 
     @PostMapping("/saveContextualAnalysis")
-    public GenericResponse<ContextualAnalysisData> saveContextualAnalysis(@RequestBody GenericRequest request) {
+    public GenericResponse<ContextualAnalysisData> saveContextualAnalysis(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<ContextualAnalysisData> response = new GenericResponse<>();
         try {
-            response = operationSaveContextualAnalysis.ejecutar(request);
+            response = operationSaveContextualAnalysis.ejecutar(request, currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -333,10 +338,10 @@ public class FixtureController {
     }
 
     @PostMapping("/contextualAnalysis")
-    public GenericResponse<ContextualAnalysisData> getContextualAnalysis(@RequestBody GenericRequest request) {
+    public GenericResponse<ContextualAnalysisData> getContextualAnalysis(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<ContextualAnalysisData> response = new GenericResponse<>();
         try {
-            response = operationGetContextualAnalysis.ejecutar(request);
+            response = operationGetContextualAnalysis.ejecutar(request, currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -357,10 +362,10 @@ public class FixtureController {
     }
 
     @PostMapping("/analysisHistory")
-    public GenericResponse<AnalysisHistoryData> getAnalysisHistory() {
+    public GenericResponse<AnalysisHistoryData> getAnalysisHistory(HttpServletRequest httpRequest) {
         GenericResponse<AnalysisHistoryData> response = new GenericResponse<>();
         try {
-            response = operationGetAnalysisHistory.ejecutar();
+            response = operationGetAnalysisHistory.ejecutar(currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -369,10 +374,10 @@ public class FixtureController {
     }
 
     @PostMapping("/updateContextualDeltas")
-    public GenericResponse<String> updateContextualDeltas() {
+    public GenericResponse<String> updateContextualDeltas(HttpServletRequest httpRequest) {
         GenericResponse<String> response = new GenericResponse<>();
         try {
-            response = operationUpdateContextualDeltas.ejecutar();
+            response = operationUpdateContextualDeltas.ejecutar(currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -381,10 +386,10 @@ public class FixtureController {
     }
 
     @PostMapping("/regenerateContextualAnalyses")
-    public GenericResponse<String> regenerateContextualAnalyses() {
+    public GenericResponse<String> regenerateContextualAnalyses(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<String> response = new GenericResponse<>();
         try {
-            response = operationRegenerateContextualAnalyses.ejecutar();
+            response = operationRegenerateContextualAnalyses.ejecutar(currentUserId(httpRequest), request.getScope());
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -393,10 +398,10 @@ public class FixtureController {
     }
 
     @PostMapping("/fixturesWithAnalysis")
-    public GenericResponse<Fixture> getFixturesWithAnalysis(@RequestBody GenericRequest request) {
+    public GenericResponse<Fixture> getFixturesWithAnalysis(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<Fixture> response = new GenericResponse<>();
         try {
-            response = operationGetFixturesWithAnalysis.ejecutar(request);
+            response = operationGetFixturesWithAnalysis.ejecutar(request, currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
@@ -405,14 +410,28 @@ public class FixtureController {
     }
 
     @PostMapping("/contextualMatchPrediction")
-    public GenericResponse<ContextualMatchPrediction> getContextualMatchPrediction(@RequestBody GenericRequest request) {
+    public GenericResponse<ContextualMatchPrediction> getContextualMatchPrediction(@RequestBody GenericRequest request, HttpServletRequest httpRequest) {
         GenericResponse<ContextualMatchPrediction> response = new GenericResponse<>();
         try {
-            response = operationGetContextualMatchPrediction.ejecutar(request);
+            response = operationGetContextualMatchPrediction.ejecutar(request, currentUserId(httpRequest));
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
         }
         return response;
+    }
+
+    @SuppressWarnings("unchecked")
+    private Long currentUserId(HttpServletRequest req) {
+        HttpSession session = req.getSession(false);
+        if (session == null) return null;
+        Object user = session.getAttribute("USER");
+        if (user instanceof Map<?, ?> u) {
+            Object id = u.get("id");
+            if (id instanceof Long)    return (Long) id;
+            if (id instanceof Integer) return ((Integer) id).longValue();
+            if (id instanceof Number)  return ((Number) id).longValue();
+        }
+        return null;
     }
 }

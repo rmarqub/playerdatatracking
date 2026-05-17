@@ -20,7 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.playerdatatracking.common.crypto.AESCrypto;
 import com.playerdatatracking.common.crypto.CryptoRSAService;
 import com.playerdatatracking.common.crypto.RsaKeyProvider;
+import com.playerdatatracking.entities.indexaldata.ContextualWeightConfig;
 import com.playerdatatracking.entities.user.AppUser;
+import com.playerdatatracking.repositories.indexaldata.ContextualWeightConfigRepository;
 import com.playerdatatracking.responses.UserInfo;
 import com.playerdatatracking.services.UserService;
 
@@ -35,12 +37,15 @@ public class LoginController {
     private final UserService users;
     private final CryptoRSAService crypto;
     private final AESCrypto aesCrypto;
+    private final ContextualWeightConfigRepository weightConfigRepository;
 
-    public LoginController(RsaKeyProvider keys, UserService users, CryptoRSAService crypto, AESCrypto aesCrypto) {
+    public LoginController(RsaKeyProvider keys, UserService users, CryptoRSAService crypto, AESCrypto aesCrypto,
+                           ContextualWeightConfigRepository weightConfigRepository) {
         this.keys = keys;
         this.users = users;
         this.crypto = crypto;
         this.aesCrypto = aesCrypto;
+        this.weightConfigRepository = weightConfigRepository;
     }
 
     @PostMapping("/login")
@@ -59,7 +64,13 @@ public class LoginController {
             HttpSession session = request.getSession(true);
             session.setAttribute("USER", claims);
 
-            var authorities = List.of(new SimpleGrantedAuthority("ROLE_USER"));
+            @SuppressWarnings("unchecked")
+            List<String> userRoles = (List<String>) claims.get("roles");
+            var authorities = (userRoles != null && !userRoles.isEmpty())
+                    ? userRoles.stream()
+                        .map(r -> new SimpleGrantedAuthority("ROLE_" + r.toUpperCase()))
+                        .collect(java.util.stream.Collectors.toList())
+                    : List.of(new SimpleGrantedAuthority("ROLE_USER"));
             var auth = new UsernamePasswordAuthenticationToken(claims.get("username"), null, authorities);
 
             SecurityContext sc = SecurityContextHolder.createEmptyContext();
@@ -89,13 +100,39 @@ public class LoginController {
                 return ResponseEntity.badRequest().body(Map.of("ok", false, "error", "weak_password"));
             }
 
-            users.register(username, rawPassword, role);
+            AppUser newUser = users.register(username, rawPassword, role);
+            initWeightConfigForUser(newUser.getId());
             return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("ok", true));
 
         } catch (IllegalArgumentException dup) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of("ok", false, "error", "user_exists"));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("ok", false, "error", "crypto_error"));
+        }
+    }
+
+    private void initWeightConfigForUser(Long userId) {
+        try {
+            if (weightConfigRepository.findByUserId(userId).isPresent()) return;
+
+            ContextualWeightConfig mother = weightConfigRepository.findById(1L).orElse(null);
+            ContextualWeightConfig cfg = new ContextualWeightConfig();
+            cfg.setUserId(userId);
+
+            if (mother != null) {
+                cfg.setWForma(mother.getWForma());         cfg.setWNeeds(mother.getWNeeds());
+                cfg.setWDef(mother.getWDef());             cfg.setWOff(mother.getWOff());
+                cfg.setWFatigue(mother.getWFatigue());     cfg.setWSetPieces(mother.getWSetPieces());
+                cfg.setWAtm(mother.getWAtm());             cfg.setWUnavail(mother.getWUnavail());
+                cfg.setWFormaD(mother.getWFormaD());       cfg.setWNeedsD(mother.getWNeedsD());
+                cfg.setWDefD(mother.getWDefD());           cfg.setWOffD(mother.getWOffD());
+                cfg.setWFatigueD(mother.getWFatigueD());   cfg.setWSetPiecesD(mother.getWSetPiecesD());
+                cfg.setWAtmD(mother.getWAtmD());           cfg.setWUnavailD(mother.getWUnavailD());
+                cfg.setNotes("Deltas iniciales (copia de base)");
+            }
+            weightConfigRepository.save(cfg);
+        } catch (Exception e) {
+            System.err.println("[LoginController] No se pudo inicializar deltas para usuario " + userId + ": " + e.getMessage());
         }
     }
 

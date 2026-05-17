@@ -11,6 +11,9 @@ public class ContextualWeightConfig {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "user_id", nullable = false, unique = true)
+    private Long userId;
+
     // ── Home-Away asymmetry weights ──────────────────────────────────────────
     @Column(name = "w_forma")      private Double wForma;
     @Column(name = "w_needs")      private Double wNeeds;
@@ -37,6 +40,9 @@ public class ContextualWeightConfig {
 
     // ── HA getters/setters ───────────────────────────────────────────────────
     public Long    getId()                         { return id; }
+    public void    setId(Long v)                   { id = v; }
+    public Long    getUserId()                     { return userId; }
+    public void    setUserId(Long v)               { userId = v; }
     public Double  getWForma()                     { return wForma; }
     public void    setWForma(Double v)             { wForma = v; }
     public Double  getWNeeds()                     { return wNeeds; }

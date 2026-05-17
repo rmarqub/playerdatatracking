@@ -13,16 +13,23 @@ import com.playerdatatracking.entities.indexaldata.FixtureContextualAnalysis;
 public interface FixtureContextualAnalysisRepository
         extends JpaRepository<FixtureContextualAnalysis, Long> {
 
-    Optional<FixtureContextualAnalysis> findByFixtureId(Long fixtureId);
+    Optional<FixtureContextualAnalysis> findByFixtureIdAndUserId(Long fixtureId, Long userId);
 
-    boolean existsByFixtureId(Long fixtureId);
+    boolean existsByFixtureIdAndUserId(Long fixtureId, Long userId);
 
-    @Query("SELECT a.fixtureId FROM FixtureContextualAnalysis a WHERE a.fixtureId IN :ids")
-    List<Long> findFixtureIdsByFixtureIdIn(@Param("ids") Collection<Long> ids);
+    List<FixtureContextualAnalysis> findByUserId(Long userId);
 
-    @Query("SELECT a FROM FixtureContextualAnalysis a WHERE a.baseHomeWin IS NOT NULL")
-    List<FixtureContextualAnalysis> findAllWithBaseSnapshot();
-    
-    @Query(value = "SELECT a.* FROM fixture_contextual_analysis a INNER JOIN fixture f ON f.id = a.fixture_id WHERE f.status_short = 'NS' AND a.base_home_win IS NOT NULL", nativeQuery = true)
-    List<FixtureContextualAnalysis> findAllWithBaseSnapshotAndFixtureNotStarted();
+    long countByUserId(Long userId);
+
+    @Query("SELECT a.fixtureId FROM FixtureContextualAnalysis a WHERE a.fixtureId IN :ids AND a.userId = :userId")
+    List<Long> findFixtureIdsByFixtureIdInAndUserId(@Param("ids") Collection<Long> ids, @Param("userId") Long userId);
+
+    @Query("SELECT a FROM FixtureContextualAnalysis a WHERE a.baseHomeWin IS NOT NULL AND a.userId = :userId")
+    List<FixtureContextualAnalysis> findAllWithBaseSnapshotByUserId(@Param("userId") Long userId);
+
+    @Query(value = "SELECT a.* FROM fixture_contextual_analysis a INNER JOIN fixture f ON f.id = a.fixture_id WHERE f.status_short = 'NS' AND a.base_home_win IS NOT NULL AND a.user_id = :userId", nativeQuery = true)
+    List<FixtureContextualAnalysis> findAllWithBaseSnapshotAndFixtureNotStartedByUserId(@Param("userId") Long userId);
+
+    @Query(value = "SELECT a.* FROM fixture_contextual_analysis a INNER JOIN fixture f ON f.id = a.fixture_id WHERE f.status_short IN ('FT','AET','PEN','AWD') AND a.base_home_win IS NOT NULL AND a.user_id = :userId", nativeQuery = true)
+    List<FixtureContextualAnalysis> findAllWithBaseSnapshotAndFixtureFinishedByUserId(@Param("userId") Long userId);
 }

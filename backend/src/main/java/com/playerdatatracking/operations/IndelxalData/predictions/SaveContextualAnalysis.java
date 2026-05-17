@@ -9,8 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.common.Constants;
+import com.playerdatatracking.entities.indexaldata.ContextualWeightConfig;
 import com.playerdatatracking.entities.indexaldata.FixtureContextualAnalysis;
 import com.playerdatatracking.exceptions.operations.PlayerInputException;
+import com.playerdatatracking.repositories.indexaldata.ContextualWeightConfigRepository;
 import com.playerdatatracking.repositories.indexaldata.FixtureContextualAnalysisRepository;
 import com.playerdatatracking.requests.ContextualAnalysisRequest;
 import com.playerdatatracking.requests.GenericRequest;
@@ -20,20 +22,24 @@ import com.playerdatatracking.responses.GenericResponse;
 @Component
 public class SaveContextualAnalysis {
 
-    @Autowired
-    private FixtureContextualAnalysisRepository analysisRepository;
+    @Autowired private FixtureContextualAnalysisRepository analysisRepository;
+    @Autowired private ContextualWeightConfigRepository    weightConfigRepository;
+    @Autowired private ContextualBlend                     blend;
 
-    public GenericResponse<ContextualAnalysisData> ejecutar(GenericRequest request) throws Exception {
+    public GenericResponse<ContextualAnalysisData> ejecutar(GenericRequest request, Long userId) throws Exception {
         GenericResponse<ContextualAnalysisData> response = new GenericResponse<>();
 
         ContextualAnalysisRequest req = request.getContextualAnalysis();
         if (req == null || req.getFixtureId() == null)
             throw new PlayerInputException("Se requiere el id del partido en el análisis contextual");
+        if (userId == null)
+            throw new PlayerInputException("Se requiere usuario autenticado para guardar el análisis");
 
-        Optional<FixtureContextualAnalysis> existing = analysisRepository.findByFixtureId(req.getFixtureId());
+        Optional<FixtureContextualAnalysis> existing = analysisRepository.findByFixtureIdAndUserId(req.getFixtureId(), userId);
         FixtureContextualAnalysis entity = existing.orElseGet(FixtureContextualAnalysis::new);
 
         entity.setFixtureId(req.getFixtureId());
+        entity.setUserId(userId);
 
         if (req.getHomeCurrentForm()       != null) entity.setHomeCurrentForm(req.getHomeCurrentForm());
         if (req.getHomeStadiumAtmosphere() != null) entity.setHomeStadiumAtmosphere(req.getHomeStadiumAtmosphere());
@@ -58,6 +64,15 @@ public class SaveContextualAnalysis {
         if (req.getBaseDraw()    != null) entity.setBaseDraw(req.getBaseDraw());
         if (req.getBaseAwayWin() != null) entity.setBaseAwayWin(req.getBaseAwayWin());
 
+        // Snapshot adjusted predictions with user weights at this exact moment
+        ContextualWeightConfig weights = resolveWeights(userId);
+        double[] adj = blend.computeAdj(entity.getFixtureId(), entity, weights);
+        if (adj != null) {
+            entity.setAdjHomeWin((float) adj[0]);
+            entity.setAdjDraw((float) adj[1]);
+            entity.setAdjAwayWin((float) adj[2]);
+        }
+
         FixtureContextualAnalysis saved = analysisRepository.save(entity);
 
         ContextualAnalysisData data = toData(saved);
@@ -65,6 +80,11 @@ public class SaveContextualAnalysis {
         response.setDescription("OK");
         response.setEntity(data);
         return response;
+    }
+
+    private ContextualWeightConfig resolveWeights(Long userId) {
+        if (userId == null) return blend.defaultWeights();
+        return weightConfigRepository.findByUserId(userId).orElseGet(blend::defaultWeights);
     }
 
     private String joinPlayers(List<String> players) {

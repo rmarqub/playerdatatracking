@@ -22,13 +22,15 @@ public class GetContextualAnalysis {
     @Autowired
     private FixtureContextualAnalysisRepository analysisRepository;
 
-    public GenericResponse<ContextualAnalysisData> ejecutar(GenericRequest request) throws Exception {
+    public GenericResponse<ContextualAnalysisData> ejecutar(GenericRequest request, Long userId) throws Exception {
         GenericResponse<ContextualAnalysisData> response = new GenericResponse<>();
 
         if (request.getId() == null)
             throw new PlayerInputException("Se requiere el id del partido");
 
-        Optional<FixtureContextualAnalysis> opt = analysisRepository.findByFixtureId(request.getId());
+        Optional<FixtureContextualAnalysis> opt = userId != null
+                ? analysisRepository.findByFixtureIdAndUserId(request.getId(), userId)
+                : Optional.empty();
 
         if (opt.isEmpty()) {
             response.setCODE(Constants.CODE_OK);

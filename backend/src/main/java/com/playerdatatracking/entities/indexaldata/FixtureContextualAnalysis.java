@@ -4,21 +4,30 @@ import jakarta.persistence.*;
 import java.time.OffsetDateTime;
 
 @Entity
-@Table(name = "fixture_contextual_analysis")
+@Table(
+    name = "fixture_contextual_analysis",
+    uniqueConstraints = @UniqueConstraint(
+        name = "uq_fca_fixture_user",
+        columnNames = {"fixture_id", "user_id"}
+    )
+)
 public class FixtureContextualAnalysis {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @JoinColumn(
             name = "fixture_id",
             referencedColumnName = "id",
             insertable = false,
             updatable = false
         )
-    @Column(name = "fixture_id", nullable = false, unique = true)
+    @Column(name = "fixture_id", nullable = false)
     private Long fixtureId;
+
+    @Column(name = "user_id", nullable = false)
+    private Long userId;
 
     // ---- Home metrics --------------------------------------------------------
 
@@ -88,6 +97,17 @@ public class FixtureContextualAnalysis {
     @Column(name = "base_away_win")
     private Float baseAwayWin;
 
+    // ---- Adjusted predictions snapshot (stored at save time with weights of that moment) ---
+
+    @Column(name = "adj_home_win")
+    private Float adjHomeWin;
+
+    @Column(name = "adj_draw")
+    private Float adjDraw;
+
+    @Column(name = "adj_away_win")
+    private Float adjAwayWin;
+
     @Column(name = "created_at", updatable = false)
     private OffsetDateTime createdAt;
 
@@ -111,6 +131,8 @@ public class FixtureContextualAnalysis {
     public void setId(Long v)                   { id = v; }
     public Long getFixtureId()                  { return fixtureId; }
     public void setFixtureId(Long v)            { fixtureId = v; }
+    public Long getUserId()                     { return userId; }
+    public void setUserId(Long v)               { userId = v; }
 
     public Integer getHomeCurrentForm()         { return homeCurrentForm; }
     public void setHomeCurrentForm(Integer v)   { homeCurrentForm = v; }
@@ -154,6 +176,12 @@ public class FixtureContextualAnalysis {
     public void setBaseDraw(Float v)            { baseDraw = v; }
     public Float getBaseAwayWin()               { return baseAwayWin; }
     public void setBaseAwayWin(Float v)         { baseAwayWin = v; }
+    public Float getAdjHomeWin()               { return adjHomeWin; }
+    public void setAdjHomeWin(Float v)         { adjHomeWin = v; }
+    public Float getAdjDraw()                  { return adjDraw; }
+    public void setAdjDraw(Float v)            { adjDraw = v; }
+    public Float getAdjAwayWin()               { return adjAwayWin; }
+    public void setAdjAwayWin(Float v)         { adjAwayWin = v; }
     public OffsetDateTime getCreatedAt()        { return createdAt; }
     public OffsetDateTime getUpdatedAt()        { return updatedAt; }
 }

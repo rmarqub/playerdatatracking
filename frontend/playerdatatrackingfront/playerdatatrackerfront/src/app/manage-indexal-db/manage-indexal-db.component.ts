@@ -280,11 +280,11 @@ export class ManageIndexalDbComponent implements OnInit {
     this.fixtureRunning = false;
   }
 
-  regenerateAnalyses(): void {
+  regenerateAnalyses(scope: 'not_started' | 'finished' | 'all'): void {
     this.regenerating = true;
     this.regenerateMessage = null;
     this.regenerateError = false;
-    this.fixtureService.regenerateContextualAnalyses().subscribe({
+    this.fixtureService.regenerateContextualAnalyses(scope).subscribe({
       next: (result) => {
         this.regenerating = false;
         this.regenerateMessage = result.message;
