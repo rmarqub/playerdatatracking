@@ -367,6 +367,16 @@ export class ManageIndexalDbComponent implements OnInit {
     }
   }
 
+  getDeltaHelpfulCount(): number {
+    return this.historyData?.matchResults?.filter(m => m.deltaHelpful).length ?? 0;
+  }
+
+  getDeltaHelpfulRate(): number {
+    const total = this.historyData?.processedAnalyses ?? 0;
+    if (total === 0) return 0;
+    return (this.getDeltaHelpfulCount() / total) * 100;
+  }
+
   pct(v: number | null | undefined): string {
     if (v == null) return '-';
     return `${(v * 100).toFixed(1)}%`;

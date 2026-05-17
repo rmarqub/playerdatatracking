@@ -350,8 +350,16 @@
               <span class="history-stat-value">{{ h.correctPredictions }}</span>
             </div>
             <div class="history-stat">
+              <span class="history-stat-label">Delta útil</span>
+              <span class="history-stat-value">{{ getDeltaHelpfulCount() }}</span>
+            </div>
+            <div class="history-stat">
               <span class="history-stat-label">Precisión label</span>
               <span class="history-stat-value">{{ h.accuracyRate | number:'1.1-1' }}%</span>
+            </div>
+            <div class="history-stat">
+              <span class="history-stat-label">% Delta útil</span>
+              <span class="history-stat-value">{{ getDeltaHelpfulRate() | number:'1.1-1' }}%</span>
             </div>
             <div class="history-stat">
               <span class="history-stat-label">Brier medio</span>
@@ -426,6 +434,7 @@
                   <th>Delta</th>
                   <th>Label</th>
                   <th>Delta útil</th>
+                  <th>Ver</th>
                 </tr>
               </thead>
               <tbody>
@@ -458,6 +467,9 @@
                     <span class="badge" [class.badge--ok]="m.deltaHelpful" [class.badge--neutral]="!m.deltaHelpful">
                       {{ m.deltaHelpful ? 'Sí' : 'No' }}
                     </span>
+                  </td>
+                  <td>
+                    <a class="fixture-link" [routerLink]="['/fixture', m.fixtureId]">Ver</a>
                   </td>
                 </tr>
               </tbody>
