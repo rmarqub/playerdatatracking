@@ -47,13 +47,7 @@ def _load_model(path: Path) -> dict:
 # Config
 # ---------------------------------------------------------------------------
 
-DB_CONFIG = {
-    "host":     "localhost",
-    "port":     5432,
-    "dbname":   "playerdata",
-    "user":     "postgres",
-    "password": "admin",
-}
+from db_config import DB_CONFIG
 
 MODELS_DIR = Path(__file__).parent / "models"
 

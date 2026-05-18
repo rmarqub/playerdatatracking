@@ -65,7 +65,7 @@ export class AddPlayerComponent {
 
     // Hacer la petición POST
     console.log('payload a enviar', this.newPlayer);
-    this.http.post<any>('http://localhost:8080/player', this.newPlayer, { withCredentials: true }).subscribe(
+    this.http.post<any>(`${environment.apiUrl}/player`, this.newPlayer, { withCredentials: true }).subscribe(
       (response) => {
         console.log(response.description);
         if (response.code === 0) {

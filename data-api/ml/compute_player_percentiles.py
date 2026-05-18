@@ -40,13 +40,7 @@ from psycopg2.extras import RealDictCursor, execute_values
 # Configuración
 # ---------------------------------------------------------------------------
 
-DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "playerdata",
-    "user": "postgres",
-    "password": "admin",
-}
+from db_config import DB_CONFIG
 
 # Según el DDL compartido, la tabla real de estadísticas partido/jugador es esta.
 STATS_TABLE = "fixture_player_stats"

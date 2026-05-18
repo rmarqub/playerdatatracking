@@ -33,16 +33,7 @@ os.environ["PYTHONIOENCODING"] = "utf-8"
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-# ---------------------------------------------------------------------------
-# DB connection — adjust to match your application.properties
-# ---------------------------------------------------------------------------
-DB_CONFIG = dict(
-    host="localhost",
-    port=5432,
-    dbname="playerdatatracking",
-    user="postgres",
-    password="admin",
-)
+from db_config import DB_CONFIG
 
 MIN_SAMPLES = 30
 

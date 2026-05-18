@@ -14,4 +14,6 @@ public interface PlayerPercentileRepository extends JpaRepository<PlayerPercenti
     List<PlayerPercentile> findByIndexIdAndSeason(Long indexId, String season);
 
     List<PlayerPercentile> findByPlayerIdAndSeason(Long playerId, String season);
+
+    List<PlayerPercentile> findAllBySeason(String season);
 }

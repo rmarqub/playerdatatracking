@@ -40,7 +40,6 @@ public class GeneratePlayerPercentilesFrontend {
         }
     }
 
-    @Transactional
     protected int calculateAndPersistPercentiles(String seasonFilter) {
         String whereClause = (seasonFilter != null && !seasonFilter.isBlank())
                 ? "WHERE CAST(f.season AS VARCHAR) = '" + seasonFilter + "'"
@@ -71,7 +70,7 @@ public class GeneratePlayerPercentilesFrontend {
                     COALESCE(SUM(ps.fouls_drawn), 0)::FLOAT as total_fouls_drawn
                 FROM fixture_player_stats ps
                 JOIN fixture f ON f.id = ps.fixture_id
-                JOIN player p ON p.id = ps.player_id
+                JOIN player p ON p.index_id = ps.player_id
                 """ + whereClause + """
                 AND f.status_short = 'FT'
                 AND ps.minutes_played > 0
@@ -143,8 +142,92 @@ public class GeneratePlayerPercentilesFrontend {
             }
         }
 
-        // Guardar o actualizar los percentiles
+        // Calcular percentiles globales (league_id = 0): unir todas las ligas por jugador/temporada
+        Map<String, PlayerStatsSnapshot> globalMap = new HashMap<>();
+        for (List<PlayerStatsSnapshot> leagueSnapshots : groupedByLeagueSeason.values()) {
+            for (PlayerStatsSnapshot s : leagueSnapshots) {
+                String key = s.playerId + "_" + s.season;
+                PlayerStatsSnapshot g = globalMap.get(key);
+                if (g == null) {
+                    globalMap.put(key, new PlayerStatsSnapshot(
+                            s.playerId, s.indexId, 0, s.season,
+                            s.totalMinutes, s.avgRating, s.totalGoals, s.totalAssists,
+                            s.totalShots, s.totalShotsOn, s.totalPasses, s.totalPassesKey,
+                            s.avgPassAccuracy, s.totalTackles, s.totalInterceptions,
+                            s.totalDuelsWon, s.totalDribblesSuc, s.totalFoulsDrawn));
+                } else {
+                    float newMinutes = g.totalMinutes + s.totalMinutes;
+                    float newPasses  = g.totalPasses  + s.totalPasses;
+                    g.avgRating       = newMinutes > 0 ? (g.avgRating * g.totalMinutes + s.avgRating * s.totalMinutes) / newMinutes : 0f;
+                    g.avgPassAccuracy = newPasses  > 0 ? (g.avgPassAccuracy * g.totalPasses + s.avgPassAccuracy * s.totalPasses) / newPasses : 0f;
+                    g.totalMinutes       = newMinutes;
+                    g.totalGoals        += s.totalGoals;
+                    g.totalAssists      += s.totalAssists;
+                    g.totalShots        += s.totalShots;
+                    g.totalShotsOn      += s.totalShotsOn;
+                    g.totalPasses        = newPasses;
+                    g.totalPassesKey    += s.totalPassesKey;
+                    g.totalTackles      += s.totalTackles;
+                    g.totalInterceptions += s.totalInterceptions;
+                    g.totalDuelsWon     += s.totalDuelsWon;
+                    g.totalDribblesSuc  += s.totalDribblesSuc;
+                    g.totalFoulsDrawn   += s.totalFoulsDrawn;
+                }
+            }
+        }
+
+        Map<String, List<PlayerStatsSnapshot>> globalBySeason = new HashMap<>();
+        for (PlayerStatsSnapshot g : globalMap.values()) {
+            globalBySeason.computeIfAbsent(g.season, k -> new ArrayList<>()).add(g);
+        }
+
+        for (List<PlayerStatsSnapshot> seasonSnapshots : globalBySeason.values()) {
+            calculatePercentiles(seasonSnapshots);
+            for (PlayerStatsSnapshot snapshot : seasonSnapshots) {
+                PlayerPercentile pp = new PlayerPercentile();
+                pp.setPlayerId(snapshot.playerId);
+                pp.setIndexId(snapshot.indexId);
+                pp.setLeagueId(0);
+                pp.setSeason(snapshot.season);
+                pp.setPctMinutes(snapshot.pctMinutes);
+                pp.setPctRating(snapshot.pctRating);
+                pp.setPctGoalsP90(snapshot.pctGoalsP90);
+                pp.setPctAssistsP90(snapshot.pctAssistsP90);
+                pp.setPctShotsTotalP90(snapshot.pctShotsTotalP90);
+                pp.setPctShotsOnP90(snapshot.pctShotsOnP90);
+                pp.setPctPassesTotalP90(snapshot.pctPassesTotalP90);
+                pp.setPctPassesKeyP90(snapshot.pctPassesKeyP90);
+                pp.setPctPassAccuracy(snapshot.pctPassAccuracy);
+                pp.setPctTacklesP90(snapshot.pctTacklesP90);
+                pp.setPctInterceptionsP90(snapshot.pctInterceptionsP90);
+                pp.setPctDuelsWon(snapshot.pctDuelsWon);
+                pp.setPctDribblesSuccess(snapshot.pctDribblesSuccess);
+                pp.setPctFoulsDrawnP90(snapshot.pctFoulsDrawnP90);
+                pp.setComputedAt(new Timestamp(System.currentTimeMillis()));
+                percentilesToSave.add(pp);
+            }
+        }
+
+        // UPSERT: si el trio (player, league, season) ya existe, asignar el ID para que JPA haga UPDATE
         if (!percentilesToSave.isEmpty()) {
+            Set<String> affectedSeasons = percentilesToSave.stream()
+                    .map(PlayerPercentile::getSeason)
+                    .collect(Collectors.toSet());
+
+            Map<String, Long> existingIds = new HashMap<>();
+            for (String s : affectedSeasons) {
+                for (PlayerPercentile ex : percentileRepository.findAllBySeason(s)) {
+                    existingIds.put(ex.getPlayerId() + "_" + ex.getLeagueId() + "_" + ex.getSeason(), ex.getId());
+                }
+            }
+
+            for (PlayerPercentile pp : percentilesToSave) {
+                Long existingId = existingIds.get(pp.getPlayerId() + "_" + pp.getLeagueId() + "_" + pp.getSeason());
+                if (existingId != null) {
+                    pp.setId(existingId);
+                }
+            }
+
             percentileRepository.saveAll(percentilesToSave);
         }
 

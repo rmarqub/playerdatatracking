@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
 import { catchError, map } from 'rxjs/operators';
+import { environment } from 'src/enviroment/environment';
 
 interface GenericResponse<T> {
   code: number;
@@ -16,10 +17,10 @@ interface GenericResponse<T> {
   providedIn: 'root'
 })
 export class PlayerService {
-  private base = 'http://localhost:8080';
-  private apiUrlManualP = 'http://localhost:8080/player';
-  private apiUrlIndexalP = 'http://localhost:8080/search';
-  private apiUrlIndxPlayer = 'http://localhost:8080/searchPlayer';
+  private base = environment.apiUrl;
+  private apiUrlManualP = `${environment.apiUrl}/player`;
+  private apiUrlIndexalP = `${environment.apiUrl}/search`;
+  private apiUrlIndxPlayer = `${environment.apiUrl}/searchPlayer`;
 
   constructor(private http: HttpClient) { }
 

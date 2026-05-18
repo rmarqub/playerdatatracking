@@ -1,0 +1,34 @@
+# ============================================================
+# PLANTILLA DE CONFIGURACIÓN — copia este archivo como
+# application.properties y ajusta los valores.
+# ============================================================
+
+# --- Base de datos PostgreSQL ---
+spring.datasource.url=jdbc:postgresql://localhost:5432/playerdata
+spring.datasource.username=postgres
+spring.datasource.password=TU_PASSWORD_AQUI
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# --- JPA / Hibernate ---
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# --- Sesiones (almacenadas en PostgreSQL, sin necesidad de Redis) ---
+spring.session.store-type=jdbc
+spring.session.jdbc.initialize-schema=always
+spring.session.timeout=30m
+
+# --- Archivos ---
+spring.servlet.multipart.max-file-size=6MB
+spring.servlet.multipart.max-request-size=6MB
+
+# --- Clave secreta de API (no compartir) ---
+apikeys.secret=TU_CLAVE_SECRETA_AQUI
+
+# --- URL de la API de predicción Python ---
+predict.api.url=http://localhost:8001
+
+# --- Directorios de datos (rutas relativas al JAR) ---
+players.json.directory=src/main/resources/json/apiFotball/players/
+leagues.json.directory=src/main/resources/json/apiFotball/leagues/

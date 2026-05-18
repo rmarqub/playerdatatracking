@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
 import { PlayerService } from '../services/player-service.service';
 import { Router } from '@angular/router';
+import { environment } from 'src/enviroment/environment';
 
 @Component({
   selector: 'app-player-detail',
@@ -54,8 +55,6 @@ export class PlayerDetailComponent implements OnInit {
   }
 
   getPlayerPhotoUrl(player: any): string {
-    const base = 'http://localhost:8080';
-    console.log(base + '/players/' + `${player}` + '/photo');
-    return `${base}/players/${player}/photo`;
+    return `${environment.apiUrl}/players/${player}/photo`;
   }
 }

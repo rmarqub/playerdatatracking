@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { PlayerMatchRow } from '../entitites/player-stats';
 import { GenericResponse } from '../entitites/GenericResponse';
 import { catchError, map } from 'rxjs/operators';
+import { environment } from 'src/enviroment/environment';
 
 export interface PlayerPercentile {
   id: number;
@@ -32,7 +33,7 @@ export interface PlayerPercentile {
 
 @Injectable({ providedIn: 'root' })
 export class PlayerStatsService {
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 

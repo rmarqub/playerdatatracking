@@ -56,7 +56,11 @@
       "Bash(echo \"exit:$?\")",
       "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" clean package -DskipTests -q 2>&1 | Select-Object -Last 25)",
       "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" compile -q 2>&1 | Select-Object -Last 15)",
-      "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" compile -q 2>&1 | Select-Object -Last 10)"
+      "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" compile -q 2>&1 | Select-Object -Last 10)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table)",
+      "PowerShell(Get-ChildItem -Recurse -Path \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\src\" -Directory | Select-Object FullName | ForEach-Object { $_.FullName -replace [regex]::Escape\\(\"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\\"\\), \"\" })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\" -Depth 2 -Recurse | Where-Object { $_.Extension -eq \".md\" -or $_.Extension -eq \".txt\" } | Select-Object FullName)"
     ]
   }
 }

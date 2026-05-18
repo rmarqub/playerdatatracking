@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ManualTrackedPlayer } from 'src/app/entitites/manual-tracker-player';
 import { Router } from '@angular/router';
+import { environment } from 'src/enviroment/environment';
 
 @Component({
   selector: 'app-delete-player',
@@ -17,7 +18,7 @@ export class DeletePlayerComponent {
   constructor(private http: HttpClient, private router : Router) { }
 
   deletePlayer(player: ManualTrackedPlayer) {
-    this.http.delete(`http://localhost:8080/player`, { body: { nombre: player.nombre } })
+    this.http.delete(`${environment.apiUrl}/player`, { body: { nombre: player.nombre } })
       .subscribe((response: any) => {
         if (response.code === 0) {
           console.log('operation description: ', response.description);

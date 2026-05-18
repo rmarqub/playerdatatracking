@@ -7,6 +7,7 @@ import { PlayerService } from '../services/player-service.service';
 import { PlayerStatsService, PlayerPercentile } from '../services/player-stats.service';
 import { PlayerMatchRow } from '../entitites/player-stats';
 import Chart from 'chart.js/auto';
+import { environment } from 'src/enviroment/environment';
 
 const fmtDate = new Intl.DateTimeFormat('es-ES', {
   timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit'
@@ -343,7 +344,7 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
   }
 
   buildPhotoUrl(id: number, v?: string): string {
-    return `http://localhost:8080/players/${id}/photo`;
+    return `${environment.apiUrl}/players/${id}/photo`;
   }
 
   onImgError(ev: Event): void {

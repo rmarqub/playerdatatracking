@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { environment } from 'src/enviroment/environment';
 
 interface GenericResponse<T> {
   code: number;
@@ -426,7 +427,7 @@ export interface AnalysisHistoryData {
   providedIn: 'root'
 })
 export class FixtureService {
-  private base = 'http://localhost:8080';
+  private base = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
@@ -721,6 +722,20 @@ export class FixtureService {
   ingestFixtureLineup(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
     return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtureLineup`, { purgeBeforeRun: String(purge), season }).pipe(
       map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  generatePlayerPercentilesApi(season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<string>>(`${this.base}/generatePlayerPercentiles`, { season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  generatePlayerPercentilesFrontend(season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<string>>(`${this.base}/generatePlayerPercentilesFrontend`, { season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || r.entity || '' })),
       catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
     );
   }

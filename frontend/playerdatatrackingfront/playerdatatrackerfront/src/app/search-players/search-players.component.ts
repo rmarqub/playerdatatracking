@@ -4,6 +4,7 @@ import { PlayerService } from '../services/player-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { environment } from 'src/enviroment/environment';
 
 @Component({
   selector: 'app-search-players',
@@ -30,9 +31,7 @@ export class SearchPlayersComponent {
 
 
   getPlayerPhotoUrl(player: any): string {
-    const base = 'http://localhost:8080';
-    const v = player.photoUpdatedAt || player.lastUpdated || '';
-    return `${base}/players/${player.id}/photo`;
+    return `${environment.apiUrl}/players/${player.id}/photo`;
   }
 
 

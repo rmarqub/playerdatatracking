@@ -25,13 +25,7 @@ import pandas as pd
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "playerdata",
-    "user": "postgres",
-    "password": "admin",
-}
+from db_config import DB_CONFIG
 
 DEFAULT_LOOKBACK = 5
 DEFAULT_H2H      = 5

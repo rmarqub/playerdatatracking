@@ -26,13 +26,7 @@ import pandas as pd
 import psycopg2
 from psycopg2.extras import RealDictCursor, execute_values
 
-DB_CONFIG = {
-    "host":     "localhost",
-    "port":     5432,
-    "dbname":   "playerdata",
-    "user":     "postgres",
-    "password": "admin",
-}
+from db_config import DB_CONFIG
 
 MIN_MINUTES = 90
 BATCH_SIZE  = 5_000  # filas por INSERT

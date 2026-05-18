@@ -26,6 +26,7 @@ export class ManageIndexalDbComponent implements OnInit {
     leagues: false,
     clubs: false,
     players: false,
+    percentiles: false,
     fixtures: false,
     predictions: false
   };
@@ -91,6 +92,18 @@ export class ManageIndexalDbComponent implements OnInit {
       { label: 'Ingest Lineup',        status: 'pending', message: null },
     ];
   }
+
+  // Percentiles - via API externa
+  percentilesApiSeason = '2025';
+  percentilesApiLoading = false;
+  percentilesApiMessage: string | null = null;
+  percentilesApiError = false;
+
+  // Percentiles - frontend (BD directa)
+  percentilesFrontendSeason = '2025';
+  percentilesFrontendLoading = false;
+  percentilesFrontendMessage: string | null = null;
+  percentilesFrontendError = false;
 
   // Predictions - regenerar análisis
   regenerating = false;
@@ -280,6 +293,42 @@ export class ManageIndexalDbComponent implements OnInit {
     }
 
     this.fixtureRunning = false;
+  }
+
+  generatePercentilesApi(): void {
+    this.percentilesApiLoading = true;
+    this.percentilesApiMessage = null;
+    this.percentilesApiError = false;
+    this.fixtureService.generatePlayerPercentilesApi(this.percentilesApiSeason).subscribe({
+      next: (result) => {
+        this.percentilesApiLoading = false;
+        this.percentilesApiMessage = result.description;
+        this.percentilesApiError = !result.ok;
+      },
+      error: () => {
+        this.percentilesApiLoading = false;
+        this.percentilesApiError = true;
+        this.percentilesApiMessage = 'Error de conexión con el servidor';
+      }
+    });
+  }
+
+  generatePercentilesFrontend(): void {
+    this.percentilesFrontendLoading = true;
+    this.percentilesFrontendMessage = null;
+    this.percentilesFrontendError = false;
+    this.fixtureService.generatePlayerPercentilesFrontend(this.percentilesFrontendSeason).subscribe({
+      next: (result) => {
+        this.percentilesFrontendLoading = false;
+        this.percentilesFrontendMessage = result.description;
+        this.percentilesFrontendError = !result.ok;
+      },
+      error: () => {
+        this.percentilesFrontendLoading = false;
+        this.percentilesFrontendError = true;
+        this.percentilesFrontendMessage = 'Error de conexión con el servidor';
+      }
+    });
   }
 
   regenerateAnalyses(scope: 'not_started' | 'finished' | 'all'): void {

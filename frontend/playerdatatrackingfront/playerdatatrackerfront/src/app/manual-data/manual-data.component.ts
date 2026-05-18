@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { DeletePlayerComponent } from './delete-player/delete-player.component';
+import { environment } from 'src/enviroment/environment';
 
 @Component({
   selector: 'app-manual-data',
@@ -22,7 +23,7 @@ export class ManualDataComponent {
   isDeleteMode: boolean = false;
 
   fetchPlayers(){
-    this.http.get('http://localhost:8080/players')
+    this.http.get(`${environment.apiUrl}/players`)
     .subscribe((response: any) => {
     if (response.code === 0) {
       this.players = response.entityList;

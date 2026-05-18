@@ -245,6 +245,66 @@
     </div>
   </div>
 
+  <!-- ═══ PERCENTILES ═════════════════════════════════════════════════════ -->
+  <div class="accordion-section" *ngIf="isAdmin">
+    <button class="accordion-header" (click)="toggleSection('percentiles')">
+      <span class="accordion-label">Percentiles</span>
+      <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['percentiles']">▼</span>
+    </button>
+    <div class="accordion-body" *ngIf="sectionsOpen['percentiles']">
+
+      <!-- Generar percentiles vía API externa -->
+      <div class="operation-card">
+        <h4 class="operation-title">Generar percentiles (histórico para el modelo)</h4>
+        <p class="operation-desc">
+          Lanza el cálculo de percentiles de jugadores en segundo plano a través del servicio de predicciones.
+          La operación es asíncrona; el backend confirma el inicio sin esperar el resultado final.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-text-row">
+            <span>Temporada</span>
+            <input type="text" [(ngModel)]="percentilesApiSeason" class="input-field" placeholder="ej. 2025" />
+          </label>
+        </div>
+        <button class="manage-db-btn" [disabled]="percentilesApiLoading" (click)="generatePercentilesApi()">
+          <span *ngIf="!percentilesApiLoading">Ejecutar</span>
+          <span *ngIf="percentilesApiLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="percentilesApiMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!percentilesApiError"
+           [class.manage-db-result--error]="percentilesApiError">
+          {{ percentilesApiMessage }}
+        </p>
+      </div>
+
+      <!-- Generar percentiles directamente en BD -->
+      <div class="operation-card">
+        <h4 class="operation-title">Generar percentiles (estadísticas)</h4>
+        <p class="operation-desc">
+          Calcula los percentiles de jugadores por liga y temporada y los persiste directamente en la base de datos
+          (<code>player_percentiles</code>). Si el registro para el trío jugador/liga/temporada ya existe, se actualiza.
+          Ejecutar después de actualizar las estadísticas de jugadores.
+        </p>
+        <div class="operation-inputs">
+          <label class="input-text-row">
+            <span>Temporada</span>
+            <input type="text" [(ngModel)]="percentilesFrontendSeason" class="input-field" placeholder="ej. 2025" />
+          </label>
+        </div>
+        <button class="manage-db-btn" [disabled]="percentilesFrontendLoading" (click)="generatePercentilesFrontend()">
+          <span *ngIf="!percentilesFrontendLoading">Ejecutar</span>
+          <span *ngIf="percentilesFrontendLoading">Ejecutando...</span>
+        </button>
+        <p *ngIf="percentilesFrontendMessage" class="manage-db-result"
+           [class.manage-db-result--ok]="!percentilesFrontendError"
+           [class.manage-db-result--error]="percentilesFrontendError">
+          {{ percentilesFrontendMessage }}
+        </p>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ═══ FIXTURES ═════════════════════════════════════════════════════════ -->
   <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('fixtures')">
