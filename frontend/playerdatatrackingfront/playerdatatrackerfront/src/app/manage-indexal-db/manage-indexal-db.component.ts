@@ -68,10 +68,11 @@ export class ManageIndexalDbComponent implements OnInit {
 
   private buildPlayerSteps(): FixtureStep[] {
     return [
-      { label: 'Actualizar jugadores',      status: 'pending', message: null },
-      { label: 'Actualizar por plantillas', status: 'pending', message: null },
-      { label: 'Actualizar transferidos',   status: 'pending', message: null },
-      { label: 'Ingerir datos brutos',      status: 'pending', message: null },
+      { label: 'Descargar JSONs de la API',      status: 'pending', message: null },
+      { label: 'Ingerir estadísticas (raw)',      status: 'pending', message: null },
+      { label: 'Guardar jugadores en BD',         status: 'pending', message: null },
+      { label: 'Actualizar por plantillas',       status: 'pending', message: null },
+      { label: 'Actualizar transferidos',         status: 'pending', message: null },
     ];
   }
 
@@ -228,10 +229,11 @@ export class ManageIndexalDbComponent implements OnInit {
     this.playerSteps = this.buildPlayerSteps();
 
     const calls = [
-      () => this.fixtureService.updatePlayers(this.playerSeason),
+      () => this.fixtureService.updatePlayersDownload(this.playerSeason),
+      () => this.fixtureService.ingestRawData(this.playerSeason, this.playerThreads, this.playerPurge),
+      () => this.fixtureService.updatePlayersProcess(this.playerSeason),
       () => this.fixtureService.updatePlayerBySquads(),
       () => this.fixtureService.updateTransferedPlayers(),
-      () => this.fixtureService.ingestRawData(this.playerSeason, this.playerThreads, this.playerPurge),
     ];
 
     for (let i = 0; i < calls.length; i++) {

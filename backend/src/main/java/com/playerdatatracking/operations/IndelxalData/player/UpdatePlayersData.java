@@ -12,6 +12,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.sql.Timestamp;
@@ -23,6 +27,7 @@ import java.net.http.HttpResponse;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
@@ -55,16 +60,22 @@ public class UpdatePlayersData {
 	private KeysManagement keyMethods;
 	@Autowired
 	private Environment env;
-	String directoryPath = "src/main/resources/json/apiFotball/players/";
-	String leaguesPath = "src/main/resources/json/apiFotball/leagues/";
+
+	@Value("${players.json.directory:src/main/resources/json/apiFotball/players/}")
+	private String directoryPath;
+	@Value("${leagues.json.directory:src/main/resources/json/apiFotball/leagues/}")
+	private String leaguesPath;
+
 	String excludedLeague = "leagues.json";
 	private static final HttpClient HTTP = HttpClient.newBuilder().followRedirects(HttpClient.Redirect.NORMAL).build();
 	private static final long MAX_BYTES = 5L * 1024 * 1024;
-	private static final String DEFAULT_CT = "image/png";
+	private static final ObjectMapper objectMapper = new ObjectMapper();
 	private static final DateTimeFormatter LOG_TS = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 	private GenericResponse<Player> response = new GenericResponse();
 	private Methods methods;
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+	private record ImageResult(byte[] bytes, String contentType) {}
 
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -73,7 +84,6 @@ public class UpdatePlayersData {
 	public void setEnv(Environment env) {
 		this.env = env;
 	}
-
 
 	public GenericResponse<Player> ejecutar(GenericRequest request) throws Exception {
 		restClient = new ApiFootballClient();
@@ -137,151 +147,203 @@ public class UpdatePlayersData {
 			Files.createDirectories(logDir);
 			Path logPath = logDir.resolve("players_update_" + ts + ".txt");
 
-			List<Path> directories = Files.list(Paths.get(directoryPath)).filter(Files::isDirectory).collect(Collectors.toList());
-			if (directories == null || directories.isEmpty())
+			List<Path> directories = Files.list(Paths.get(directoryPath))
+					.filter(Files::isDirectory)
+					.collect(Collectors.toList());
+			if (directories.isEmpty())
 				throw new NotCreatedJsonFileResponse("No hay archivos de jugadores disponibles para realizar la carga de datos");
 
-			ObjectMapper objectMapper = new ObjectMapper();
+			// Pre-cargar mapa de nacionalidades una sola vez en lugar de una query por jugador
+			Map<String, Integer> countryMap = new HashMap<>();
+			for (Pais p : pdClient.getAllPaises()) {
+				if (p.getName() != null) countryMap.put(p.getName(), p.getId());
+			}
 
-			for (Path directory : directories) {
-				List<Path> fileList;
-				try (Stream<Path> files = Files.list(directory)) {
-					fileList = files.filter(Files::isRegularFile).collect(Collectors.toList());
-				}
-				for (Path path : fileList) {
-					String filePath = path.toString();
-					System.out.println("  Archivo: " + filePath);
-					log(logPath, "Leyendo archivo: " + filePath);
-					try {
-						File file = path.toFile();
-						if (!file.exists())
-							throw new NotCreatedJsonFileResponse("error al crear un json de respuesta, el archivo no ha sido creado o no se ha guardado correctamente");
-						if (file.length() == 0)
-							throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
+			// Cargar imagen estándar una sola vez en lugar de hacerlo por jugador
+			byte[] standardImage = null;
+			final String standardCt = "image/jpeg";
+			try (InputStream in = getClass().getResourceAsStream("/images/standard-pic.jpg")) {
+				if (in != null) standardImage = in.readAllBytes();
+				else log(logPath, "No se encontró la imagen estándar en resources/images/standard-pic.jpg");
+			} catch (Exception e) {
+				log(logPath, "Error cargando imagen estándar: " + e.getMessage());
+			}
 
-						String rawContent = Files.readString(path, StandardCharsets.UTF_8);
-						JsonNode root = objectMapper.readTree(sanitizeJson(rawContent));
-						log(logPath, "JSON leido correctamente: " + filePath);
+			ExecutorService imagePool = Executors.newFixedThreadPool(8);
+			try {
+				for (Path directory : directories) {
+					List<Path> fileList;
+					try (Stream<Path> files = Files.list(directory)) {
+						fileList = files.filter(Files::isRegularFile).collect(Collectors.toList());
+					}
 
-						if (jsonResponseHasErrors(root, filePath)) {
-							log(logPath, "JSON con errores en campo errors: " + filePath);
-							continue;
-						}
+					// Jugadores existentes del equipo cargados en bulk (lazy, al ver el primer teamId válido)
+					Map<Long, Player> existingByIndexId = null;
+					List<Player> toSave = new ArrayList<>();
+					List<CompletableFuture<Void>> imageFutures = new ArrayList<>();
 
-						String steamId = root.path("parameters").path("team").asText();
-						JsonNode responseNode = root.path("response");
-						for (JsonNode node : responseNode) {
-							String playerName = node.path("player").path("name").asText("desconocido");
-							try {
-								JsonNode playerNode = node.path("player");
-								System.out.println(playerName);
+					for (Path path : fileList) {
+						String filePath = path.toString();
+						System.out.println("  Archivo: " + filePath);
+						log(logPath, "Leyendo archivo: " + filePath);
+						try {
+							File file = path.toFile();
+							if (!file.exists())
+								throw new NotCreatedJsonFileResponse("error al crear un json de respuesta, el archivo no ha sido creado o no se ha guardado correctamente");
+							if (file.length() == 0)
+								throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
 
-								long indexId = playerNode.path("id").asLong();
-								long teamId = Integer.toUnsignedLong(Integer.parseInt(steamId));
+							String rawContent = Files.readString(path, StandardCharsets.UTF_8);
+							JsonNode root = objectMapper.readTree(sanitizeJson(rawContent));
+							log(logPath, "JSON leido correctamente: " + filePath);
 
-								List<Player> existing = pdClient.getPlayerByIndexIdAndTeam(teamId, indexId);
-								boolean isUpdate = existing != null && !existing.isEmpty();
-								Player player = isUpdate ? existing.get(0) : new Player();
+							if (jsonResponseHasErrors(root, filePath)) {
+								log(logPath, "JSON con errores en campo errors: " + filePath);
+								continue;
+							}
 
-								player.setIndexId(indexId);
-								player.setTeam(teamId);
-								player.setFirstname(playerNode.path("firstname").asText());
-								player.setLastname(playerNode.path("lastname").asText());
-								player.setFullname(playerNode.path("name").asText());
-								player.setAge(playerNode.path("age").asInt());
-								player.setInjured(playerNode.path("injured").asBoolean());
+							String steamId = root.path("parameters").path("team").asText();
+							long teamId = Integer.toUnsignedLong(Integer.parseInt(steamId));
 
-								String height = playerNode.path("height").asText();
-								if (height != null && !height.equals("null")) {
-									try {
-										if (height.endsWith("cm")) height = height.substring(0, height.length() - 3);
-										player.setHeight(Integer.parseInt(height.trim()));
-									} catch (NumberFormatException e) {
-										log(logPath, "No se pudo interpretar altura del jugador " + playerName + ": '" + height + "'");
-									}
+							// Primera vez que vemos un teamId válido: cargamos todos los jugadores existentes del equipo de una sola vez
+							if (existingByIndexId == null) {
+								existingByIndexId = new HashMap<>();
+								for (Player p : pdClient.getPlayersByTeamId(teamId)) {
+									if (p.getIndexId() != null) existingByIndexId.put(p.getIndexId(), p);
 								}
-								String weight = playerNode.path("weight").asText();
-								if (weight != null && !weight.equals("null")) {
-									try {
-										if (weight.endsWith("kg")) weight = weight.substring(0, weight.length() - 3);
-										player.setWeight(Integer.parseInt(weight.trim()));
-									} catch (NumberFormatException e) {
-										log(logPath, "No se pudo interpretar peso del jugador " + playerName + ": '" + weight + "'");
-									}
-								}
+							}
 
-								String photoUrl = playerNode.path("photo").asText(null);
+							JsonNode responseNode = root.path("response");
+							for (JsonNode node : responseNode) {
+								String playerName = node.path("player").path("name").asText("desconocido");
 								try {
-									byte[] imageBytes = null;
-									String contentType = null;
-									if (photoUrl != null && !photoUrl.isBlank()) {
-										imageBytes = downloadImage(photoUrl);
-										contentType = lastContentType != null ? lastContentType : "image/png";
-									}
-									if (imageBytes == null || imageBytes.length == 0) {
-										try (InputStream in = getClass().getResourceAsStream("/images/standard-pic.jpg")) {
-											if (in != null) {
-												imageBytes = in.readAllBytes();
-												contentType = "image/jpeg";
-											} else {
-												log(logPath, "No se encontro la imagen estandar para el jugador " + playerName);
-												System.err.println("⚠️ No se encontró la imagen estándar en resources/images/standard-pic.jpg");
-											}
+									JsonNode playerNode = node.path("player");
+									System.out.println(playerName);
+
+									long indexId = playerNode.path("id").asLong();
+									Player player = existingByIndexId.getOrDefault(indexId, new Player());
+
+									player.setIndexId(indexId);
+									player.setTeam(teamId);
+									player.setFirstname(playerNode.path("firstname").asText());
+									player.setLastname(playerNode.path("lastname").asText());
+									player.setFullname(playerNode.path("name").asText());
+									player.setAge(playerNode.path("age").asInt());
+									player.setInjured(playerNode.path("injured").asBoolean());
+
+									String height = playerNode.path("height").asText();
+									if (height != null && !height.equals("null")) {
+										try {
+											if (height.endsWith("cm")) height = height.substring(0, height.length() - 3);
+											player.setHeight(Integer.parseInt(height.trim()));
+										} catch (NumberFormatException e) {
+											log(logPath, "No se pudo interpretar altura del jugador " + playerName + ": '" + height + "'");
 										}
 									}
-									if (imageBytes != null && imageBytes.length > 0) {
-										player.setPhoto(imageBytes);
-										player.setPhotoContentType(contentType);
-										player.setPhotoUpdatedAt(LocalDateTime.now());
+									String weight = playerNode.path("weight").asText();
+									if (weight != null && !weight.equals("null")) {
+										try {
+											if (weight.endsWith("kg")) weight = weight.substring(0, weight.length() - 3);
+											player.setWeight(Integer.parseInt(weight.trim()));
+										} catch (NumberFormatException e) {
+											log(logPath, "No se pudo interpretar peso del jugador " + playerName + ": '" + weight + "'");
+										}
 									}
+
+									// Lookup en el mapa pre-cargado en lugar de una query a la BBDD por jugador
+									String nationality = playerNode.path("nationality").asText();
+									Integer countryId = countryMap.get(nationality);
+									if (countryId != null) player.setNacionalidad(countryId);
+
+									JsonNode birthNode = playerNode.path("birth");
+									String birthString = birthNode.path("date").asText();
+									if (birthString != null && !birthString.equals("null") && !birthString.isBlank()) {
+										try {
+											player.setBirth(LocalDate.parse(birthString, formatter));
+										} catch (Exception e) {
+											log(logPath, "No se pudo interpretar fecha de nacimiento del jugador " + playerName + ": '" + birthString + "'");
+										}
+									}
+									player.setLastUpdated(new Timestamp(System.currentTimeMillis()));
+
+									// Descarga de imagen enviada al pool de hilos para ejecutarse en paralelo
+									String photoUrl = playerNode.path("photo").asText(null);
+									final byte[] fallback = standardImage;
+									CompletableFuture<Void> imgFuture = CompletableFuture.runAsync(() -> {
+										try {
+											byte[] imageBytes = null;
+											String contentType = null;
+											if (photoUrl != null && !photoUrl.isBlank()) {
+												ImageResult img = downloadImageWithType(photoUrl);
+												if (img != null) {
+													imageBytes = img.bytes();
+													contentType = img.contentType();
+												}
+											}
+											if (imageBytes == null || imageBytes.length == 0) {
+												imageBytes = fallback;
+												contentType = standardCt;
+											}
+											if (imageBytes != null && imageBytes.length > 0) {
+												player.setPhoto(imageBytes);
+												player.setPhotoContentType(contentType);
+												player.setPhotoUpdatedAt(LocalDateTime.now());
+											}
+										} catch (Exception e) {
+											log(logPath, "Error procesando foto del jugador " + playerName + ": " + e.getMessage());
+										}
+									}, imagePool);
+									imageFutures.add(imgFuture);
+									toSave.add(player);
+
 								} catch (Exception e) {
-									log(logPath, "Error procesando foto del jugador " + playerName + ": " + e.getMessage());
-									System.err.println("⚠️ Error procesando la foto: " + e.getMessage());
+									log(logPath, "ERROR al procesar jugador " + playerName + ": " + e.getMessage());
+									System.err.println("ERROR al procesar jugador " + playerName + ": " + e.getMessage());
 								}
-
-								JsonNode birthNode = playerNode.path("birth");
-								String birthString = birthNode.path("date").asText();
-								if (birthString != null && !birthString.equals("null")) {
-									try {
-										LocalDate date = LocalDate.parse(birthString, formatter);
-										player.setBirth(date);
-									} catch (Exception e) {
-										log(logPath, "No se pudo interpretar fecha de nacimiento del jugador " + playerName + ": '" + birthString + "'");
-									}
-								}
-								Pais p = pdClient.findCountry(playerNode.path("nationality").asText());
-								if (p != null) player.setNacionalidad(p.getId());
-								player.setLastUpdated(new Timestamp(System.currentTimeMillis()));
-
-								Player saved = pdClient.saveIndexedPlayer(player);
-								String action = isUpdate ? "updated" : "saved";
-								log(logPath, "Player " + action + ": " + saved.getId() + ", " + saved.getFullname());
-								System.out.println("Player " + action + ": " + saved.getId() + ", " + saved.getFullname());
-							} catch (Exception e) {
-								log(logPath, "ERROR al procesar jugador " + playerName + ": " + e.getMessage());
-								System.err.println("ERROR al procesar jugador " + playerName + ": " + e.getMessage());
 							}
+						} catch (Exception e) {
+							log(logPath, "ERROR procesando archivo " + filePath + ": " + e.getMessage());
+							System.err.println("Error procesando archivo " + filePath + ": " + e.getMessage());
 						}
-					} catch (Exception e) {
-						log(logPath, "ERROR procesando archivo " + filePath + ": " + e.getMessage());
-						System.err.println("Error procesando archivo " + filePath + ": " + e.getMessage());
-					} finally {
+					}
+
+					// Esperar a que terminen todas las descargas de imágenes del directorio antes de guardar
+					if (!imageFutures.isEmpty()) {
+						CompletableFuture.allOf(imageFutures.toArray(new CompletableFuture[0])).join();
+					}
+
+					// Guardar en lote todos los jugadores del equipo (1 operación en lugar de N)
+					if (!toSave.isEmpty()) {
+						try {
+							pdClient.saveAllIndexedPlayers(toSave);
+							log(logPath, "Guardados " + toSave.size() + " jugadores del directorio " + directory.getFileName());
+							System.out.println("Guardados en batch: " + toSave.size() + " jugadores de " + directory.getFileName());
+						} catch (Exception e) {
+							log(logPath, "ERROR en batch save del directorio " + directory.getFileName() + ": " + e.getMessage());
+							System.err.println("ERROR en batch save: " + e.getMessage());
+						}
+					}
+
+					// Eliminar archivos procesados y directorio
+					for (Path path : fileList) {
 						try {
 							Files.deleteIfExists(path);
-							System.out.println("Archivo eliminado: " + filePath);
+							System.out.println("Archivo eliminado: " + path);
 						} catch (Exception ex) {
-							System.err.println("No se pudo eliminar el archivo: " + filePath);
+							System.err.println("No se pudo eliminar el archivo: " + path);
 						}
 					}
-				}
-				try (Stream<Path> remaining = Files.list(directory)) {
-					if (remaining.findAny().isEmpty()) {
-						Files.delete(directory);
-						System.out.println("Directorio eliminado: " + directory);
+					try (Stream<Path> remaining = Files.list(directory)) {
+						if (remaining.findAny().isEmpty()) {
+							Files.delete(directory);
+							System.out.println("Directorio eliminado: " + directory);
+						}
+					} catch (Exception e) {
+						System.err.println("No se pudo eliminar el directorio: " + directory);
 					}
-				} catch (Exception e) {
-					System.err.println("No se pudo eliminar el directorio: " + directory);
 				}
+			} finally {
+				imagePool.shutdown();
 			}
 		}
 		response.setCODE(Constants.CODE_OK);
@@ -315,9 +377,7 @@ public class UpdatePlayersData {
 		}
 	}
 
-	private String lastContentType = null;
-
-	private byte[] downloadImage(String url) throws Exception {
+	private ImageResult downloadImageWithType(String url) throws Exception {
 		HttpRequest req = HttpRequest.newBuilder()
 				.uri(URI.create(url))
 				.GET()
@@ -327,7 +387,7 @@ public class UpdatePlayersData {
 
 		if (res.statusCode() != 200) return null;
 
-		lastContentType = res.headers().firstValue("Content-Type").orElse(null);
+		String contentType = res.headers().firstValue("Content-Type").orElse("image/png");
 
 		long contentLength = res.headers().firstValue("Content-Length")
 				.map(Long::parseLong).orElse(-1L);
@@ -336,6 +396,6 @@ public class UpdatePlayersData {
 		byte[] body = res.body();
 		if (body != null && body.length > MAX_BYTES) return null;
 
-		return body;
+		return new ImageResult(body != null ? body : new byte[0], contentType);
 	}
 }

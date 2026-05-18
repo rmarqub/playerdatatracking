@@ -576,6 +576,24 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+
+	@Transactional
+	public List<Player> saveAllIndexedPlayers(List<Player> players) throws PlayerDataDBException {
+		try {
+			return pRepository.saveAll(players);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Player> getPlayersByTeamId(Long teamId) throws PlayerDataDBException {
+		try {
+			return pRepository.findByTeamId(teamId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	
 	public List<Player> searchPlayers(String playerName, String teamName) {
         if (playerName != null && !playerName.isEmpty()) {

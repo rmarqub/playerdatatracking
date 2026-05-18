@@ -53,7 +53,10 @@
       "Bash(Select-Object Name)",
       "Bash(grep -i \"\\\\.java$\")",
       "Bash(python train_model.py --test-seasons 2025)",
-      "Bash(echo \"exit:$?\")"
+      "Bash(echo \"exit:$?\")",
+      "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" clean package -DskipTests -q 2>&1 | Select-Object -Last 25)",
+      "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" compile -q 2>&1 | Select-Object -Last 15)",
+      "PowerShell(& \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\mvnw.cmd\" -f \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\pom.xml\" compile -q 2>&1 | Select-Object -Last 10)"
     ]
   }
 }

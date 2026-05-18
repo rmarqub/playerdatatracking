@@ -1,6 +1,7 @@
 package com.playerdatatracking.operations.IndelxalData.indexal;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.playerdatatracking.clients.PlayerDataClient;
@@ -17,8 +18,11 @@ public class IngestRawData {
 	@Autowired
 	private PlayerDataClient pdClient;
 
+	@Value("${players.json.directory:src/main/resources/json/apiFotball/players/}")
+	private String directoryPath;
+
 	public void ejecutar(GenericRequest request) throws Exception {
-		String root = "src/main/resources/json/apiFotball/players";
+		String root = directoryPath;
 		boolean purgeBeforeRun = false;
 
 		if (request.getPurgeBeforeRun().equalsIgnoreCase("true"))

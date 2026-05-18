@@ -77,7 +77,7 @@
   </div>
 
   <!-- ═══ LEAGUES ══════════════════════════════════════════════════════════ -->
-  <div class="accordion-section">
+  <div class="accordion-section" *ngIf="isAdmin">
     <button class="accordion-header" (click)="toggleSection('leagues')">
       <span class="accordion-label">Leagues</span>
       <span class="accordion-arrow" [class.accordion-arrow--open]="sectionsOpen['leagues']">▼</span>
@@ -193,10 +193,14 @@
       <div class="operation-card">
         <h4 class="operation-title">Ingestión completa de jugadores</h4>
         <p class="operation-desc">
-          Ejecuta en orden 4 operaciones: actualiza los jugadores desde la API (update y restUpdate
-          siempre activos), actualiza transferidos, actualiza por plantillas e ingiere los datos brutos.
+          Ejecuta en orden 5 operaciones: descarga JSONs de la API, ingiere estadísticas brutas,
+          guarda los jugadores en BD, actualiza por plantillas y actualiza transferidos.
           Si un paso falla, la secuencia se detiene.
         </p>
+        <div class="operation-warning">
+          Esta operación puede tardar entre <strong>15 y 30 minutos</strong> en completarse.
+          No cierres la página mientras esté en ejecución.
+        </div>
         <div class="operation-inputs">
           <label class="input-text-row">
             <span>Temporada</span>

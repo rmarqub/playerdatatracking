@@ -17,6 +17,7 @@ export class LeagueManagementComponent implements OnInit {
 
   countryFilter = '';
   availableCountries: string[] = [];
+  showOnlyStudied = false;
 
   constructor(private fixtureService: FixtureService) {}
 
@@ -43,10 +44,14 @@ export class LeagueManagementComponent implements OnInit {
   }
 
   get filteredLeagues(): TorneoInfo[] {
-    if (!this.countryFilter) return this.leagues;
-    return this.leagues.filter(l =>
-      (l.paisName ?? 'Sin país') === this.countryFilter
-    );
+    let result = this.leagues;
+    if (this.countryFilter) {
+      result = result.filter(l => (l.paisName ?? 'Sin país') === this.countryFilter);
+    }
+    if (this.showOnlyStudied) {
+      result = result.filter(l => l.studied);
+    }
+    return result;
   }
 
   toggleStudied(league: TorneoInfo): void {

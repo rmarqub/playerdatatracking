@@ -156,6 +156,7 @@ public class UpdatePlayersBySquads {
                 .header("x-apisports-key", apiKey.getValor())
                 .build();
 
+		Methods.sleep(180);
         try {
         	HttpResponse<String> resp = null;
         	if (keyMethods.checkReadiness(apiKey)) {
@@ -165,6 +166,7 @@ public class UpdatePlayersBySquads {
 	    		if (repeat) {
 	    			resp = http.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
 		    		keyMethods.useKey(apiKey);
+		    		Methods.sleep(180);
 	    		}
 	    	}
 	    	else

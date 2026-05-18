@@ -655,6 +655,20 @@ export class FixtureService {
     );
   }
 
+  updatePlayersDownload(season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updatePlayers`, { restUpdate: 'true', season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  updatePlayersProcess(season: string): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updatePlayers`, { update: 'true', season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
   updateTransferedPlayers(): Observable<{ ok: boolean; description: string }> {
     return this.http.post<GenericResponse<any>>(`${this.base}/updateTransferedPlayers`, {}).pipe(
       map(r => ({ ok: r.code === 0, description: r.description || '' })),
