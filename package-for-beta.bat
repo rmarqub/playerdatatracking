@@ -48,7 +48,7 @@ xcopy /s /q "%FRONTEND_DIR%\dist\playerdatatrackerfront\*" "%BACKEND_DIR%\src\ma
 REM --- 3. Compilar backend Spring Boot (JAR con frontend incluido) ---
 echo [3/4] Compilando backend Spring Boot...
 cd %BACKEND_DIR%
-call mvnw clean package -DskipTests -q
+call mvnw clean package -Dmaven.test.skip=true -q
 if %ERRORLEVEL% neq 0 (
     echo [ERROR] Fallo la compilacion del backend.
     pause
@@ -60,7 +60,7 @@ REM --- 4. Copiar archivos al directorio de distribucion ---
 echo [4/4] Copiando archivos...
 
 REM JAR del backend
-copy "%BACKEND_DIR%\target\playerdatatracking-0.0.1-SNAPSHOT.jar" "%DIST_DIR%\app.jar" >nul
+copy "%BACKEND_DIR%\target\playerdatatracking-0.1.0.jar" "%DIST_DIR%\app.jar" >nul
 
 REM Plantilla de configuracion
 copy "%BACKEND_DIR%\src\main\resources\application.properties.template" "%DIST_DIR%\application.properties.template" >nul
