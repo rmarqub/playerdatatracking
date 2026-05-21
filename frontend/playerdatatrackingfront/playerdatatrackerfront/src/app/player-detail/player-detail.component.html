@@ -1,11 +1,22 @@
 <div class="manual-data-buttons-container">
   <button class="toggle-button btn-delete"> Borrar jugador</button>
   <button class="toggle-button btn-update" (click)="goToUpdate()">Actualizar jugador</button>
-  <button class="toggle-button btn-fbref"> Cargar data fbref </button>
-  <button class="toggle-button btn-apifoot"> Cargar data basica </button>
+  <button class="toggle-button btn-valuation"
+          [disabled]="valuationLoading || !player?.indexID"
+          (click)="calculateMarketValue()">
+    <span *ngIf="!valuationLoading">Calcular valor de mercado</span>
+    <span *ngIf="valuationLoading">Calculando...</span>
+  </button>
 </div>
+
 <div class="basic-info-container">
-  <div class="player-photo-container"><img class="player-photo" [src]="photoSrc" alt="Foto de {{ player?.nombre || 'jugador' }}" (error)="onImgError($event)" loading="lazy"/> </div>
+  <div class="player-photo-container">
+    <img class="player-photo"
+         [src]="photoSrc"
+         alt="Foto de {{ player?.nombre || 'jugador' }}"
+         (error)="onImgError($event)"
+         loading="lazy"/>
+  </div>
   <div *ngIf="player" class="player-detail-container">
     <h2 class="player-name"> {{ player.nombre }}</h2>
     <p><strong>Posición:</strong> {{ player.posicion }}</p>
@@ -18,8 +29,69 @@
     <p><strong>Fecha de Nacimiento:</strong> {{ player.birth }}</p>
     <p><strong>Cualidades:</strong> {{ player.qualities }}</p>
   </div>
-
   <div *ngIf="!player" class="player-detail-container">
     <p>No se ha encontrado la información del jugador.</p>
+  </div>
+</div>
+
+<!-- ─── Sección de valor de mercado ─────────────────────────────────── -->
+<div class="mv-error" *ngIf="valuationError">
+  {{ valuationError }}
+</div>
+
+<div class="mv-card" *ngIf="valuationResult">
+  <!-- Valor principal -->
+  <div class="mv-header">
+    <div class="mv-value-block">
+      <span class="mv-label">Valor de mercado estimado</span>
+      <span class="mv-value">{{ valuationResult.marketValueFmt }}</span>
+      <span class="mv-season" *ngIf="valuationResult.season">Temporada {{ valuationResult.season }}</span>
+    </div>
+    <div class="mv-badges">
+      <span [class]="tierBadgeClass(valuationResult.leagueTier)">
+        {{ TIER_LABELS[valuationResult.leagueTier] || 'Sin tier' }}
+      </span>
+      <span class="mv-pos-badge" *ngIf="valuationResult.position">
+        {{ POSITION_LABELS[valuationResult.position] || valuationResult.position }}
+      </span>
+      <span class="mv-injured-badge" *ngIf="valuationResult.injured">Lesionado −20%</span>
+    </div>
+  </div>
+
+  <!-- Factores del modelo -->
+  <div class="mv-factors">
+    <div class="mv-factor">
+      <span class="mv-factor-label">Rendimiento</span>
+      <div class="mv-bar-track">
+        <div class="mv-bar" [style.width.%]="valuationResult.performanceScore"></div>
+      </div>
+      <span class="mv-factor-val">{{ valuationResult.performanceScore | number:'1.1-1' }} / 100</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Factor edad</span>
+      <div class="mv-bar-track">
+        <div class="mv-bar mv-bar--age" [style.width.%]="valuationResult.ageFactor * 100"></div>
+      </div>
+      <span class="mv-factor-val">× {{ valuationResult.ageFactor | number:'1.2-2' }}</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Factor liga</span>
+      <div class="mv-bar-track">
+        <div class="mv-bar mv-bar--league" [style.width.%]="valuationResult.tierFactor * 100"></div>
+      </div>
+      <span class="mv-factor-val">× {{ valuationResult.tierFactor | number:'1.2-2' }}</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Participación</span>
+      <div class="mv-bar-track">
+        <div class="mv-bar mv-bar--min" [style.width.%]="valuationResult.minutesFactor * 100"></div>
+      </div>
+      <span class="mv-factor-val">× {{ valuationResult.minutesFactor | number:'1.2-2' }}</span>
+    </div>
+  </div>
+
+  <!-- Nota informativa si hay alguna -->
+  <div class="mv-note" *ngIf="valuationResult.note">
+    ℹ {{ valuationResult.note }}
   </div>
 </div>

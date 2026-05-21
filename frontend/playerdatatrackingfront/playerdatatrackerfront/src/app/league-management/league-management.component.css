@@ -1,5 +1,5 @@
 .lm-page {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
@@ -257,4 +257,72 @@
   color: #718096;
   padding: 2rem;
   font-size: 0.9rem;
+}
+
+/* ─── Columnas Tier ──────────────────────────────────────────────────── */
+.lm-th--tier   { width: 160px; }
+.lm-th--factor { width: 90px;  }
+.lm-th--notes  { min-width: 180px; }
+
+.lm-tier-select {
+  background: #1e2533;
+  color: #e2e8f0;
+  border: 1px solid #2d3748;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.lm-tier-select:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+.lm-notes-input {
+  background: #1e2533;
+  color: #e2e8f0;
+  border: 1px solid #2d3748;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.82rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lm-notes-input::placeholder { color: #4a5568; }
+.lm-notes-input:focus { outline: none; border-color: #3182ce; }
+
+/* ─── Tier badges ────────────────────────────────────────────────────── */
+.tier-badge {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tier-0 { background: #2d3748; color: #718096; border: 1px solid #4a5568; }
+.tier-1 { background: #1a365d; color: #63b3ed; border: 1px solid #2b6cb0; }
+.tier-2 { background: #1c4532; color: #68d391; border: 1px solid #276749; }
+.tier-3 { background: #744210; color: #f6ad55; border: 1px solid #c05621; }
+.tier-4 { background: #553c9a; color: #d6bcfa; border: 1px solid #6b46c1; }
+.tier-5 { background: #3b1a1a; color: #fc8181; border: 1px solid #742a2a; }
+
+/* ─── Leyenda de tiers ───────────────────────────────────────────────── */
+.lm-tier-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+}
+
+.legend-label {
+  color: #718096;
+  font-weight: 500;
+  margin-right: 0.25rem;
 }

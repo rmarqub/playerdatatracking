@@ -33,7 +33,7 @@ echo ADVERTENCIA: Esto borrara y recreara la base de datos 'playerdata'.
 echo Presiona Ctrl+C para cancelar o...
 pause
 
-set PGPASSWORD=admin
+set /p PGPASSWORD=Ingresa la contrasena del usuario postgres:
 
 REM Crear la base de datos si no existe
 psql -U postgres -c "SELECT 1 FROM pg_database WHERE datname='playerdata';" | findstr /c:"1 row" >nul 2>&1

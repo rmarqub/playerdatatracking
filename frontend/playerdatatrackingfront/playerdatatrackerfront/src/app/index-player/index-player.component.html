@@ -1,6 +1,11 @@
 <div class="player-data-buttons-container">
   <!--<button class="toggle-button btn-update"> Actualizar jugador</button>-->
-  <button class="toggle-button btn-fbref"> Cargar datos fbref </button>
+  <button class="toggle-button btn-valuation"
+          [disabled]="valuationLoading || !player?.indexId"
+          (click)="calculateMarketValue()">
+    <span *ngIf="!valuationLoading">Calcular valor de mercado</span>
+    <span *ngIf="valuationLoading">Calculando...</span>
+  </button>
   <button class="toggle-button btn-apifoot" (click)="onLoadBasicStats()"> Cargar datos basicos </button>
   <button class="toggle-button btn-percentiles" (click)="onLoadPercentiles()">
     {{ showPercentilePanel ? 'Ocultar percentiles' : 'Ver percentiles' }}
@@ -40,6 +45,51 @@
   <div class="btn-favorite-container">
     <button class="toggle-button btn-favorite" (click)="toggleFavorite()">{{ isFavorite ? '★' : '☆' }}</button>
   </div>
+</div>
+
+<!-- ─── Valor de mercado ──────────────────────────────────────────── -->
+<div class="mv-error" *ngIf="valuationError">{{ valuationError }}</div>
+
+<div class="mv-card" *ngIf="valuationResult">
+  <div class="mv-header">
+    <div class="mv-value-block">
+      <span class="mv-label">Valor de mercado estimado</span>
+      <span class="mv-value">{{ valuationResult.marketValueFmt }}</span>
+      <span class="mv-season" *ngIf="valuationResult.season">Temporada {{ valuationResult.season }}</span>
+    </div>
+    <div class="mv-badges">
+      <span [class]="tierBadgeClass(valuationResult.leagueTier)">
+        {{ TIER_LABELS[valuationResult.leagueTier] || 'Sin tier' }}
+      </span>
+      <span class="mv-pos-badge" *ngIf="valuationResult.position">
+        {{ POSITION_LABELS[valuationResult.position] || valuationResult.position }}
+      </span>
+      <span class="mv-injured-badge" *ngIf="valuationResult.injured">Lesionado −20%</span>
+    </div>
+  </div>
+  <div class="mv-factors">
+    <div class="mv-factor">
+      <span class="mv-factor-label">Rendimiento</span>
+      <div class="mv-bar-track"><div class="mv-bar" [style.width.%]="valuationResult.performanceScore"></div></div>
+      <span class="mv-factor-val">{{ valuationResult.performanceScore | number:'1.1-1' }} / 100</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Factor edad</span>
+      <div class="mv-bar-track"><div class="mv-bar mv-bar--age" [style.width.%]="valuationResult.ageFactor * 100"></div></div>
+      <span class="mv-factor-val">× {{ valuationResult.ageFactor | number:'1.2-2' }}</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Factor liga</span>
+      <div class="mv-bar-track"><div class="mv-bar mv-bar--league" [style.width.%]="valuationResult.tierFactor * 100"></div></div>
+      <span class="mv-factor-val">× {{ valuationResult.tierFactor | number:'1.2-2' }}</span>
+    </div>
+    <div class="mv-factor">
+      <span class="mv-factor-label">Participación</span>
+      <div class="mv-bar-track"><div class="mv-bar mv-bar--min" [style.width.%]="valuationResult.minutesFactor * 100"></div></div>
+      <span class="mv-factor-val">× {{ valuationResult.minutesFactor | number:'1.2-2' }}</span>
+    </div>
+  </div>
+  <div class="mv-note" *ngIf="valuationResult.note">ℹ {{ valuationResult.note }}</div>
 </div>
 
 <!-- ── Percentile panel ────────────────────────────── -->

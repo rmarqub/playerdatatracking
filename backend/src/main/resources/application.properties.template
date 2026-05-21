@@ -26,8 +26,12 @@ spring.servlet.multipart.max-request-size=6MB
 # --- Clave secreta de API (no compartir) ---
 apikeys.secret=TU_CLAVE_SECRETA_AQUI
 
-# --- URL de la API de predicción Python ---
+# --- URLs de las APIs Python ---
 predict.api.url=http://localhost:8001
+valuation.api.url=http://localhost:8002
+
+# --- Directorio de las APIs Python (opcional; se detecta automáticamente si se deja vacío) ---
+# python.api.dir=
 
 # --- Directorios de datos (rutas relativas al JAR) ---
 players.json.directory=src/main/resources/json/apiFotball/players/

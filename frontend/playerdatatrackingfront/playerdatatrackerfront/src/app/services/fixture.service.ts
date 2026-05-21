@@ -68,6 +68,23 @@ export interface TorneoInfo {
   paisName: string | null;
 }
 
+export interface LeagueTierInfo {
+  torneoId: number;
+  torneoName: string;
+  paisId: number | null;
+  paisName: string | null;
+  tier: number;
+  tierFactor: number;
+  notes: string | null;
+}
+
+export interface LeagueTierEntry {
+  torneoId: number;
+  tier: number;
+  tierFactor: number;
+  notes: string | null;
+}
+
 export interface FixtureTeamStats {
   teamId: number;
   shotsOnGoal: number | null;
@@ -721,6 +738,20 @@ export class FixtureService {
 
   ingestFixtureLineup(purge: boolean, season: string): Observable<{ ok: boolean; description: string }> {
     return this.http.post<GenericResponse<any>>(`${this.base}/ingestFixtureLineup`, { purgeBeforeRun: String(purge), season }).pipe(
+      map(r => ({ ok: r.code === 0, description: r.description || '' })),
+      catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
+    );
+  }
+
+  getLeagueTiers(): Observable<LeagueTierInfo[]> {
+    return this.http.post<GenericResponse<LeagueTierInfo>>(`${this.base}/leagueTiers`, {}).pipe(
+      map(r => r.code === 0 ? (r.entityList || []) : []),
+      catchError(() => of([]))
+    );
+  }
+
+  updateLeagueTiers(entries: LeagueTierEntry[]): Observable<{ ok: boolean; description: string }> {
+    return this.http.post<GenericResponse<any>>(`${this.base}/updateLeagueTiers`, { leagueTiers: entries }).pipe(
       map(r => ({ ok: r.code === 0, description: r.description || '' })),
       catchError(() => of({ ok: false, description: 'Error de conexión con el servidor' }))
     );

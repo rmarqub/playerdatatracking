@@ -3,7 +3,7 @@ import { Component, OnInit, OnDestroy, AfterViewChecked, ChangeDetectorRef, Chan
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription, Subject } from 'rxjs';
 import { takeUntil, switchMap } from 'rxjs/operators';
-import { PlayerService } from '../services/player-service.service';
+import { PlayerService, PlayerMarketValue } from '../services/player-service.service';
 import { PlayerStatsService, PlayerPercentile } from '../services/player-stats.service';
 import { PlayerMatchRow } from '../entitites/player-stats';
 import Chart from 'chart.js/auto';
@@ -50,6 +50,19 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
   selectedPercentileLeagueId: number | null = null;
   availablePercentileLeagues: { leagueId: number; leagueName: string }[] = [];
   basicSort: { active: BasicKey | null; dir: 'asc' | 'desc' } = { active: null, dir: 'asc' };
+
+  valuationLoading = false;
+  valuationResult: PlayerMarketValue | null = null;
+  valuationError: string | null = null;
+
+  readonly TIER_LABELS: Record<number, string> = {
+    0: 'Sin tier', 1: 'Tier 1 — Élite', 2: 'Tier 2 — Alto',
+    3: 'Tier 3 — Medio', 4: 'Tier 4 — Bajo', 5: 'Tier 5 — Menor',
+  };
+
+  readonly POSITION_LABELS: Record<string, string> = {
+    G: 'Portero', D: 'Defensa', M: 'Centrocampista', F: 'Delantero',
+  };
   private numericBasicKeys = new Set<BasicKey>([
     'minutes', 'rating', 'goals', 'assists', 'shotsOn', 'shotsTotal',
     'passesKey', 'passesAcc', 'passesTotal', 'dribblesSuc', 'dribblesAtt',
@@ -156,6 +169,38 @@ export class IndexPlayerComponent implements OnInit, OnDestroy, AfterViewChecked
     this.loadBasicStats$.complete();
     this.loadPercentiles$.complete();
     this.radarChart?.destroy();
+  }
+
+  // ── Market value ─────────────────────────────────────────────────
+
+  calculateMarketValue(): void {
+    if (!this.player?.indexId) {
+      this.valuationError = 'Este jugador no tiene indexId asociado.';
+      return;
+    }
+    this.valuationLoading = true;
+    this.valuationResult = null;
+    this.valuationError = null;
+    this.playerService.getPlayerMarketValue(this.player.indexId).subscribe({
+      next: result => {
+        this.valuationLoading = false;
+        if (result) {
+          this.valuationResult = result;
+        } else {
+          this.valuationError = 'No se pudo calcular el valor. Comprueba que la API de valoración está activa.';
+        }
+        this.cdr.markForCheck();
+      },
+      error: () => {
+        this.valuationLoading = false;
+        this.valuationError = 'Error de conexión con la API de valoración.';
+        this.cdr.markForCheck();
+      }
+    });
+  }
+
+  tierBadgeClass(tier: number): string {
+    return `mv-tier-badge tier-${tier}`;
   }
 
   // ── Basic stats ──────────────────────────────────────────────────

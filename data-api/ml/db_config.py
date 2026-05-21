@@ -9,7 +9,11 @@ import os
 
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+    import locale
+    try:
+        load_dotenv(encoding='utf-8')
+    except UnicodeDecodeError:
+        load_dotenv(encoding=locale.getpreferredencoding(False))
 except ImportError:
     pass
 

@@ -2,6 +2,7 @@ package com.playerdatatracking.configuration;
 
 import java.util.List;
 
+import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -58,6 +59,10 @@ public class SecurityConfig {
 
                 // ── Auth y rutas públicas generales ──────────────────────────
                 .requestMatchers("/auth/**", "/public/**").permitAll()
+
+                // ── Recursos estáticos del frontend (Angular embebido en el JAR) ──
+                .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
+                .requestMatchers("/", "/index.html", "/*.js", "/*.css", "/*.ico", "/assets/**").permitAll()
 
                 // ── Todo lo demás requiere autenticación ─────────────────────
                 .anyRequest().authenticated()

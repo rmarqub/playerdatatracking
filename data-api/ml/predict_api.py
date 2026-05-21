@@ -18,6 +18,7 @@ import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Any, Optional
+from urllib.parse import quote, quote_plus
 
 import numpy as np
 import pandas as pd
@@ -121,7 +122,19 @@ class PredictRequest(BaseModel):
 # ---------------------------------------------------------------------------
 
 def _get_conn():
-    return psycopg2.connect(**DB_CONFIG, cursor_factory=RealDictCursor)
+    # URL con percent-encoding en credenciales. lc_messages=C se pasa via
+    # el parámetro "options" (único mecanismo válido en la URI de libpq)
+    # para forzar mensajes de error en ASCII y evitar UnicodeDecodeError
+    # en Windows con PostgreSQL en español (cp1252).
+    cfg = DB_CONFIG
+    options = quote("-c lc_messages=C", safe="")
+    url = (
+        f"postgresql://{quote_plus(str(cfg['user']))}:"
+        f"{quote_plus(str(cfg['password']))}@"
+        f"{cfg['host']}:{cfg['port']}/{cfg['dbname']}"
+        f"?client_encoding=UTF8&options={options}"
+    )
+    return psycopg2.connect(url, cursor_factory=RealDictCursor)
 
 
 def _infer_lookback(features: list[str]) -> int:

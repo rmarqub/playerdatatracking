@@ -25,8 +25,10 @@ import com.playerdatatracking.entities.indexaldata.Transfer;
 import com.playerdatatracking.entities.keys.Keys;
 import com.playerdatatracking.exceptions.db.PlayerDataDBException;
 import com.playerdatatracking.entities.indexaldata.Fixture;
+import com.playerdatatracking.entities.indexaldata.LeagueTier;
 import com.playerdatatracking.repositories.indexaldata.ClubInLeagueRepository;
 import com.playerdatatracking.repositories.indexaldata.ClubRepository;
+import com.playerdatatracking.repositories.indexaldata.LeagueTierRepository;
 import com.playerdatatracking.repositories.indexaldata.ConfigParamsRepository;
 import com.playerdatatracking.repositories.indexaldata.DuppedPlayerRepository;
 import com.playerdatatracking.entities.indexaldata.FixtureEvent;
@@ -48,6 +50,7 @@ import com.playerdatatracking.repositories.indexaldata.TorneoRepository;
 import com.playerdatatracking.repositories.indexaldata.TransferRepository;
 import com.playerdatatracking.repositories.keys.API_FOOTBALL_KEYSRepository;
 import com.playerdatatracking.requests.IndexTeamPair;
+import com.playerdatatracking.requests.LeagueTierEntry;
 import com.playerdatatracking.requests.PlayerMatchRow;
 import com.playerdatatracking.responses.H2HBestPlayer;
 import com.playerdatatracking.responses.H2HComparisonData;
@@ -97,6 +100,8 @@ public class PlayerDataClient {
 	private FixturePlayerStatsRepository fixturePlayerStatsRepository;
 	@Autowired
 	private FixtureLineupRepository fixtureLineupRepository;
+	@Autowired
+	private LeagueTierRepository leagueTierRepository;
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
@@ -1121,4 +1126,48 @@ public class PlayerDataClient {
 
 	@Transactional
 	public PlayerPhotoData getPhotoData(Long id) { return pRepository.findPhotoDataById(id); }
+
+	@Transactional
+	public List<LeagueTier> getAllLeagueTiers() throws PlayerDataDBException {
+		try {
+			return leagueTierRepository.findAll();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public int upsertLeagueTiers(List<LeagueTierEntry> entries) throws PlayerDataDBException {
+		try {
+			int count = 0;
+			for (LeagueTierEntry entry : entries) {
+				if (entry.getTorneoId() == null) continue;
+				java.util.Optional<LeagueTier> existing = leagueTierRepository.findByTorneoId(entry.getTorneoId());
+				LeagueTier lt = existing.orElse(new LeagueTier());
+				lt.setTorneoId(entry.getTorneoId());
+				lt.setTier(entry.getTier() != null ? entry.getTier() : 0);
+				lt.setTierFactor(resolveTierFactor(entry));
+				lt.setNotes(entry.getNotes());
+				lt.setUpdatedAt(new java.sql.Timestamp(System.currentTimeMillis()));
+				leagueTierRepository.save(lt);
+				count++;
+			}
+			return count;
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	private double resolveTierFactor(LeagueTierEntry entry) {
+		if (entry.getTierFactor() != null) return entry.getTierFactor();
+		if (entry.getTier() == null) return 0.40;
+		return switch (entry.getTier()) {
+			case 1  -> 1.00;
+			case 2  -> 0.72;
+			case 3  -> 0.50;
+			case 4  -> 0.33;
+			case 5  -> 0.18;
+			default -> 0.40;
+		};
+	}
 }

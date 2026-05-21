@@ -73,33 +73,165 @@ cursor: not-allowed;
   margin-top: 0.75%;
 }
 
-.btn-delete{
-  background-color: #ed6565;
+.toggle-button.btn-delete    { background-color: #ed6565; }
+.toggle-button.btn-update    { background-color: #7faeff; }
+.toggle-button.btn-valuation { background-color: #9b59b6; }
+
+.toggle-button.btn-delete:hover:enabled    { background-color: #f73b3b; box-shadow: 5px 5px 7px rgba(0,0,0,.5); }
+.toggle-button.btn-update:hover:enabled    { background-color: #4d8bf7; box-shadow: 5px 5px 7px rgba(0,0,0,.5); }
+.toggle-button.btn-valuation:hover:enabled { background-color: #7d3c98; box-shadow: 5px 5px 7px rgba(0,0,0,.5); }
+
+/* ─── Error de valoración ──────────────────────────────────────────── */
+.mv-error {
+  margin: 1%;
+  padding: 0.75rem 1rem;
+  background: #3b1a1a;
+  color: #fc8181;
+  border: 1px solid #742a2a;
+  border-radius: 6px;
+  font-size: 0.875rem;
 }
-.btn-update{
-  background-color: #7faeff;
+
+/* ─── Tarjeta de valor de mercado ───────────────────────────────────── */
+.mv-card {
+  margin: 1%;
+  padding: 1.25rem 1.5rem;
+  background: #1a1f2e;
+  border: 1px solid #2d3748;
+  border-radius: 10px;
 }
-.btn-fbref{
-  background-color: #42a501;
+
+/* Encabezado con valor + badges */
+.mv-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
-.btn-apifoot{
-  background-color: #f3b32b;
+
+.mv-value-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
-.btn-delete:hover:enabled {
-  background-color: #f73b3b; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+
+.mv-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #718096;
 }
-.btn-update:hover:enabled {
-  background-color: #4d8bf7; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+
+.mv-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #68d391;
+  line-height: 1.1;
 }
-.btn-fbref:hover:enabled {
-  background-color: #358500; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+
+.mv-season {
+  font-size: 0.78rem;
+  color: #4a5568;
 }
-.btn-apifoot:hover:enabled {
-  background-color: #c79425; /* Color de fondo al pasar el ratón */
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Sombra más profunda */
+
+.mv-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+/* Tier badges (reutiliza los del league-management) */
+.mv-tier-badge {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.tier-0 { background: #2d3748; color: #718096; border: 1px solid #4a5568; }
+.tier-1 { background: #1a365d; color: #63b3ed; border: 1px solid #2b6cb0; }
+.tier-2 { background: #1c4532; color: #68d391; border: 1px solid #276749; }
+.tier-3 { background: #744210; color: #f6ad55; border: 1px solid #c05621; }
+.tier-4 { background: #553c9a; color: #d6bcfa; border: 1px solid #6b46c1; }
+.tier-5 { background: #3b1a1a; color: #fc8181; border: 1px solid #742a2a; }
+
+.mv-pos-badge {
+  background: #2d3748;
+  color: #a0aec0;
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.mv-injured-badge {
+  background: #742a2a;
+  color: #fc8181;
+  border: 1px solid #9b2c2c;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Factores con barra de progreso */
+.mv-factors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mv-factor {
+  display: grid;
+  grid-template-columns: 110px 1fr 70px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mv-factor-label {
+  font-size: 0.82rem;
+  color: #a0aec0;
+  white-space: nowrap;
+}
+
+.mv-bar-track {
+  background: #2d3748;
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.mv-bar {
+  height: 100%;
+  border-radius: 4px;
+  background: #48bb78;
+  transition: width 0.4s ease;
+}
+
+.mv-bar--age    { background: #63b3ed; }
+.mv-bar--league { background: #f6ad55; }
+.mv-bar--min    { background: #d6bcfa; }
+
+.mv-factor-val {
+  font-size: 0.82rem;
+  color: #e2e8f0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nota informativa */
+.mv-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #f6ad55;
+  background: #2d2010;
+  border: 1px solid #744210;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
 }
 
 

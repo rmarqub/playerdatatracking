@@ -1,4 +1,12 @@
 @echo off
+
+REM --- Auto-relanzar dentro de cmd /k para que la ventana nunca se cierre sola ---
+if not defined _WRAPPED (
+    set _WRAPPED=1
+    cmd /k "%~f0"
+    exit /b
+)
+
 setlocal EnableDelayedExpansion
 title PlayerDataTracking - Iniciando...
 
@@ -34,45 +42,62 @@ if %ERRORLEVEL% neq 0 (
 echo [OK] Python detectado.
 
 REM --- Verificar que el JAR existe ---
-if not exist "app.jar" (
-    echo [ERROR] No se encuentra app.jar en este directorio.
+if not exist "%~dp0app.jar" (
+    echo [ERROR] No se encuentra app.jar en: %~dp0
     pause & exit /b 1
 )
 
 REM --- Verificar application.properties ---
-if not exist "application.properties" (
+if not exist "%~dp0application.properties" (
     echo Creando application.properties desde la plantilla...
-    copy application.properties.template application.properties >nul
+    copy "%~dp0application.properties.template" "%~dp0application.properties" >nul
     echo.
     echo [IMPORTANTE] Edita application.properties con tu contrasena de PostgreSQL
     echo              y vuelve a ejecutar este script.
-    notepad application.properties
+    notepad "%~dp0application.properties"
     pause & exit /b 1
 )
 
 REM --- Instalar dependencias Python si no estan ---
 echo Verificando dependencias Python...
 python -c "import fastapi, uvicorn, psycopg2, lightgbm, dotenv" >nul 2>&1
-if %ERRORLEVEL% neq 0 (
-    echo Instalando dependencias Python (puede tardar unos minutos)...
-    cd data-api\ml
-    pip install -r requirements.txt -q
-    if %ERRORLEVEL% neq 0 (
-        echo [ERROR] Fallo la instalacion de dependencias Python.
-        cd ..\..
-        pause & exit /b 1
-    )
-    cd ..\..
-)
+if not errorlevel 1 goto PY_OK
+echo Instalando dependencias Python (puede tardar unos minutos)...
+pip install -r "%~dp0data-api\ml\requirements.txt"
+if not errorlevel 1 goto PY_OK
+echo [AVISO] Dependencias Python incompletas. Las APIs de prediccion y valoracion no estaran disponibles.
+set PYTHON_OK=0
+goto PY_DONE
+:PY_OK
+set PYTHON_OK=1
 echo [OK] Dependencias Python listas.
+:PY_DONE
 
 REM --- Iniciar la API Python de prediccion ---
+if !PYTHON_OK! equ 0 goto SKIP_PREDICT
 echo Iniciando API de prediccion (Python)...
-start "Predict API" /min cmd /c "cd /d "%~dp0data-api\ml" && python -m uvicorn predict_api:app --host 127.0.0.1 --port 8001"
+pushd "%~dp0data-api\ml"
+start "Predict API" cmd /k python -m uvicorn predict_api:app --host 127.0.0.1 --port 8001
+popd
+goto AFTER_PREDICT
+:SKIP_PREDICT
+echo [AVISO] Saltando inicio de API de prediccion.
+:AFTER_PREDICT
+
+REM --- Iniciar la API Python de valoracion ---
+if !PYTHON_OK! equ 0 goto SKIP_VALUATION
+echo Iniciando API de valoracion (Python)...
+pushd "%~dp0data-api\ml"
+start "Valuation API" cmd /k python -m uvicorn valuation_api:app --host 127.0.0.1 --port 8002
+popd
+goto AFTER_VALUATION
+:SKIP_VALUATION
+echo [AVISO] Saltando inicio de API de valoracion.
+:AFTER_VALUATION
 
 REM --- Iniciar el backend Spring Boot ---
 echo Iniciando backend (Spring Boot)...
-start "Backend PlayerTracker" /min cmd /c "java -jar "%~dp0app.jar" --spring.config.location="%~dp0application.properties""
+start "Backend PlayerTracker" cmd /k java -jar "%~dp0app.jar" --spring.config.location="%~dp0application.properties"
 
 REM --- Esperar hasta 90 segundos a que el backend arranque ---
 echo Esperando a que el backend arranque (puede tardar hasta 90 segundos)...

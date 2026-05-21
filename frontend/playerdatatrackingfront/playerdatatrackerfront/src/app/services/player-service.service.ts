@@ -13,6 +13,26 @@ interface GenericResponse<T> {
   entityList?: T[];
 }
 
+export interface PlayerMarketValue {
+  indexId: number;
+  playerName: string;
+  age: number | null;
+  position: string | null;
+  injured: boolean;
+  teamName: string | null;
+  leagueName: string | null;
+  leagueTier: number;
+  tierFactor: number;
+  performanceScore: number;
+  ageFactor: number;
+  minutesFactor: number;
+  injuryPenalty: number;
+  marketValue: number;
+  marketValueFmt: string;
+  season: string | null;
+  note: string | null;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -63,6 +83,15 @@ export class PlayerService {
         console.error('Error en la llamada GET:', error);
         return of(null);
       })
+    );
+  }
+
+  getPlayerMarketValue(indexId: number): Observable<PlayerMarketValue | null> {
+    return this.http.post<GenericResponse<PlayerMarketValue>>(
+      `${this.base}/playerMarketValue`, { indexId }
+    ).pipe(
+      map(r => r.code === 0 ? (r.entity || null) : null),
+      catchError(() => of(null))
     );
   }
 

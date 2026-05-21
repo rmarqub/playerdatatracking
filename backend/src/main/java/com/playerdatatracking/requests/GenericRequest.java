@@ -39,11 +39,14 @@ public class GenericRequest {
     private String season;
     private ContextualAnalysisRequest contextualAnalysis;
     private String scope;
+    private List<LeagueTierEntry> leagueTiers;
 
     public ContextualAnalysisRequest getContextualAnalysis() { return contextualAnalysis; }
     public void setContextualAnalysis(ContextualAnalysisRequest v) { contextualAnalysis = v; }
     public String getScope() { return scope; }
     public void setScope(String v) { scope = v; }
+    public List<LeagueTierEntry> getLeagueTiers() { return leagueTiers; }
+    public void setLeagueTiers(List<LeagueTierEntry> leagueTiers) { this.leagueTiers = leagueTiers; }
 
     public String getSeason() {
         return season;

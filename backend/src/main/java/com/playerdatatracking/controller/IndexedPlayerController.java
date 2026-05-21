@@ -31,8 +31,10 @@ import com.playerdatatracking.operations.IndelxalData.player.GeneratePlayerPerce
 import com.playerdatatracking.operations.IndelxalData.player.GetBasicStats;
 import com.playerdatatracking.operations.IndelxalData.player.GetIndexedPlayer;
 import com.playerdatatracking.operations.IndelxalData.player.GetPlayerAbsenceDays;
+import com.playerdatatracking.operations.IndelxalData.player.GetPlayerMarketValue;
 import com.playerdatatracking.operations.IndelxalData.player.GetPlayerPercentiles;
 import com.playerdatatracking.operations.IndelxalData.player.UpdatePlayer;
+import com.playerdatatracking.responses.PlayerMarketValue;
 import com.playerdatatracking.responses.PlayerAbsenceDays;
 import com.playerdatatracking.operations.services.SearchIndexatedPlayers;
 import com.playerdatatracking.requests.PlayerMatchRow;
@@ -61,6 +63,8 @@ public class IndexedPlayerController {
     private GeneratePlayerPercentilesFrontend operationGeneratePlayerPercentilesFrontend;
     @Autowired
     private GetPlayerPercentiles operationGetPlayerPercentiles;
+    @Autowired
+    private GetPlayerMarketValue operationGetPlayerMarketValue;
 
     @GetMapping("/search")
     public GenericResponse<ConvertedPlayer> searchPlayers(
@@ -177,6 +181,18 @@ public class IndexedPlayerController {
         GenericResponse<PlayerPercentileDTO> response = new GenericResponse<>();
         try {
             response = operationGetPlayerPercentiles.ejecutar(request.getIndexId(), request.getSeason());
+        } catch (Exception e) {
+            response.setCODE(Methods.exceptionCodeManagement(e));
+            response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());
+        }
+        return response;
+    }
+
+    @PostMapping("/playerMarketValue")
+    public GenericResponse<PlayerMarketValue> getPlayerMarketValue(@RequestBody GenericRequest request) {
+        GenericResponse<PlayerMarketValue> response = new GenericResponse<>();
+        try {
+            response = operationGetPlayerMarketValue.ejecutar(request);
         } catch (Exception e) {
             response.setCODE(Methods.exceptionCodeManagement(e));
             response.setDescription(e.getClass().getSimpleName() + "[]: " + e.getMessage());

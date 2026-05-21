@@ -60,7 +60,9 @@
       "Bash(Select-Object Name, PSIsContainer)",
       "Bash(Format-Table)",
       "PowerShell(Get-ChildItem -Recurse -Path \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\backend\\\\src\" -Directory | Select-Object FullName | ForEach-Object { $_.FullName -replace [regex]::Escape\\(\"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\\\\\"\\), \"\" })",
-      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\" -Depth 2 -Recurse | Where-Object { $_.Extension -eq \".md\" -or $_.Extension -eq \".txt\" } | Select-Object FullName)"
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Rodri\\\\Desktop\\\\playerdatatracking\" -Depth 2 -Recurse | Where-Object { $_.Extension -eq \".md\" -or $_.Extension -eq \".txt\" } | Select-Object FullName)",
+      "Bash(jar tf *)",
+      "PowerShell(Copy-Item *)"
     ]
   }
 }
