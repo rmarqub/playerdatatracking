@@ -1,60 +1,55 @@
 package com.playerdatatracking.responses;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PlayerMarketValue {
 
-    @JsonProperty("index_id")
+    @JsonAlias("index_id")
     private Long indexId;
 
-    @JsonProperty("player_name")
+    @JsonAlias("player_name")
     private String playerName;
 
-    @JsonProperty("age")
     private Integer age;
 
-    @JsonProperty("position")
     private String position;
 
-    @JsonProperty("injured")
     private Boolean injured;
 
-    @JsonProperty("team_name")
+    @JsonAlias("team_name")
     private String teamName;
 
-    @JsonProperty("league_name")
+    @JsonAlias("league_name")
     private String leagueName;
 
-    @JsonProperty("league_tier")
+    @JsonAlias("league_tier")
     private Integer leagueTier;
 
-    @JsonProperty("tier_factor")
+    @JsonAlias("tier_factor")
     private Double tierFactor;
 
-    @JsonProperty("performance_score")
+    @JsonAlias("performance_score")
     private Double performanceScore;
 
-    @JsonProperty("age_factor")
+    @JsonAlias("age_factor")
     private Double ageFactor;
 
-    @JsonProperty("minutes_factor")
+    @JsonAlias("minutes_factor")
     private Double minutesFactor;
 
-    @JsonProperty("injury_penalty")
+    @JsonAlias("injury_penalty")
     private Double injuryPenalty;
 
-    @JsonProperty("market_value")
+    @JsonAlias("market_value")
     private Long marketValue;
 
-    @JsonProperty("market_value_fmt")
+    @JsonAlias("market_value_fmt")
     private String marketValueFmt;
 
-    @JsonProperty("season")
     private String season;
 
-    @JsonProperty("note")
     private String note;
 
     public Long getIndexId() { return indexId; }

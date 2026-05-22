@@ -16,7 +16,6 @@ from __future__ import annotations
 
 from contextlib import asynccontextmanager
 from typing import Optional
-from urllib.parse import quote_plus
 
 import psycopg2
 from fastapi import FastAPI, HTTPException
@@ -132,14 +131,15 @@ class MarketValueResponse(BaseModel):
 
 def _get_conn():
     cfg = DB_CONFIG
-    options = quote_plus("-c lc_messages=C")
-    url = (
-        f"postgresql://{quote_plus(str(cfg['user']))}:"
-        f"{quote_plus(str(cfg['password']))}@"
-        f"{cfg['host']}:{cfg['port']}/{cfg['dbname']}"
-        f"?client_encoding=UTF8&options={options}"
+    return psycopg2.connect(
+        host=cfg["host"],
+        port=cfg["port"],
+        dbname=cfg["dbname"],
+        user=cfg["user"],
+        password=cfg["password"],
+        options="-c lc_messages=C",
+        cursor_factory=RealDictCursor,
     )
-    return psycopg2.connect(url, cursor_factory=RealDictCursor)
 
 
 def _test_db_connection():
@@ -193,9 +193,9 @@ def _fetch_dominant_position(conn, index_id: int) -> Optional[str]:
     return row["position"] if row else None
 
 
-def _fetch_percentiles(conn, player_id: int, index_id: int) -> tuple[Optional[dict], Optional[str]]:
+def _fetch_percentiles(conn, index_id: int) -> tuple[Optional[dict], Optional[str]]:
     """
-    Busca los percentiles más recientes del jugador.
+    Busca los percentiles más recientes del jugador por index_id.
     Prioriza league_id=0 (global) de la temporada más reciente.
     """
     with conn.cursor() as cur:
@@ -203,10 +203,10 @@ def _fetch_percentiles(conn, player_id: int, index_id: int) -> tuple[Optional[di
         cur.execute("""
             SELECT *
             FROM player_percentiles
-            WHERE player_id = %s AND league_id = 0
+            WHERE index_id = %s AND league_id = 0
             ORDER BY season DESC
             LIMIT 1
-        """, (player_id,))
+        """, (index_id,))
         row = cur.fetchone()
         if row:
             return dict(row), str(row["season"])
@@ -215,10 +215,10 @@ def _fetch_percentiles(conn, player_id: int, index_id: int) -> tuple[Optional[di
         cur.execute("""
             SELECT *
             FROM player_percentiles
-            WHERE player_id = %s
+            WHERE index_id = %s
             ORDER BY season DESC, league_id
             LIMIT 1
-        """, (player_id,))
+        """, (index_id,))
         row = cur.fetchone()
         if row:
             return dict(row), str(row["season"])
@@ -388,7 +388,7 @@ def get_player_value(index_id: int):
     try:
         player   = _fetch_player(conn, index_id)
         position = _fetch_dominant_position(conn, index_id)
-        pcts, season = _fetch_percentiles(conn, player["player_id"], index_id)
+        pcts, season = _fetch_percentiles(conn, index_id)
         tier, tier_factor, league_name = _fetch_league_tier(conn, player.get("team_id"))
 
         result = _calculate(player, position, pcts, tier, tier_factor, season)
