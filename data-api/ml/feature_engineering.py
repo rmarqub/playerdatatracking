@@ -98,6 +98,22 @@ def load_player_stats(conn) -> pd.DataFrame:
     return df
 
 
+def load_league_tiers(conn) -> pd.DataFrame:
+    """Carga el tier de cada liga desde la tabla league_tier (torneo_id = fixture.league_id)."""
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT torneo_id AS league_id, tier FROM league_tier WHERE tier > 0")
+            rows = cur.fetchall()
+        if not rows:
+            return pd.DataFrame(columns=["league_id","league_tier"])
+        df = pd.DataFrame([dict(r) for r in rows])
+        df["league_tier"] = pd.to_numeric(df["tier"], errors="coerce")
+        return df[["league_id","league_tier"]]
+    except Exception as e:
+        print(f"  ⚠ No se pudo cargar league_tier: {e}")
+        return pd.DataFrame(columns=["league_id","league_tier"])
+
+
 def build_team_history(fixtures: pd.DataFrame, team_stats: pd.DataFrame) -> pd.DataFrame:
     ts_idx = team_stats.set_index(["fixture_id", "team_id"]).to_dict("index")
 
@@ -266,20 +282,31 @@ ROLL_COLS = [
     "btts", "ou25", "ou15",  # tasa histórica de mercados por equipo
 ]
 
+# Subconjunto de columnas para ventanas de lookback adicionales (last-3 y last-10)
+EXTRA_ROLL_COLS = ["won", "goals_for", "goals_against", "scored", "clean_sheet", "drew"]
+
 EMA_COLS = ["goals_for", "goals_against", "won", "scored", "clean_sheet", "xg_for", "xg_against", "shots_on_goal"]
+
+# Subconjunto de columnas para spans EMA adicionales (span-3 y span-10)
+EXTRA_EMA_COLS = ["goals_for", "goals_against", "won", "scored", "clean_sheet"]
 
 
 def _rolling_mean(series: pd.Series, n: int) -> pd.Series:
     return series.shift(1).rolling(n, min_periods=1).mean()
 
 
-def compute_rolling_features(history: pd.DataFrame, n: int) -> pd.DataFrame:
+def compute_rolling_features(history: pd.DataFrame, n: int,
+                             extra_ns: tuple[int, ...] = (3, 10)) -> pd.DataFrame:
     rolled_parts = []
     for team_id, grp in history.groupby("team_id", sort=False):
         grp = grp.sort_values("match_date")
         part = grp[["fixture_id", "team_id", "venue", "match_date"]].copy()
         for col in ROLL_COLS:
             part[f"roll_{col}_last{n}"] = _rolling_mean(grp[col].reset_index(drop=True), n).values
+        for en in extra_ns:
+            if en != n:
+                for col in EXTRA_ROLL_COLS:
+                    part[f"roll_{col}_last{en}"] = _rolling_mean(grp[col].reset_index(drop=True), en).values
         rolled_parts.append(part)
     return pd.concat(rolled_parts, ignore_index=True)
 
@@ -295,6 +322,61 @@ def compute_rolling_home_away(history: pd.DataFrame, n: int) -> pd.DataFrame:
             ).values
         parts.append(part)
     return pd.concat(parts, ignore_index=True)
+
+
+def compute_prev_season_features(fixtures: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calcula las estadísticas FINALES de la temporada anterior por equipo.
+    Clave para partidos al inicio de temporada donde las features de temporada actual son ruidosas.
+    Sin leakage: usa únicamente la temporada S-1 completa para partidos en temporada S.
+    """
+    records = []
+    for f in fixtures.itertuples(index=False):
+        for team_id, g_for, g_against in [
+            (f.home_team_id, f.goals_home, f.goals_away),
+            (f.away_team_id, f.goals_away, f.goals_home),
+        ]:
+            pts = 3 if g_for > g_against else (1 if g_for == g_against else 0)
+            drew = 1 if g_for == g_against else 0
+            records.append({
+                "fixture_id": f.id, "team_id": team_id, "season": f.season,
+                "pts": pts, "goals_for": g_for, "goals_against": g_against, "drew": drew,
+            })
+
+    df = pd.DataFrame(records)
+    season_stats = df.groupby(["team_id", "season"]).agg(
+        total_pts=("pts", "sum"),
+        total_games=("fixture_id", "count"),
+        total_gf=("goals_for", "sum"),
+        total_ga=("goals_against", "sum"),
+        total_drew=("drew", "sum"),
+    ).reset_index()
+    season_stats["prev_season_ppg"]    = season_stats["total_pts"]  / season_stats["total_games"]
+    season_stats["prev_season_gfpg"]   = season_stats["total_gf"]   / season_stats["total_games"]
+    season_stats["prev_season_gapg"]   = season_stats["total_ga"]   / season_stats["total_games"]
+    season_stats["prev_season_draw_r"] = season_stats["total_drew"] / season_stats["total_games"]
+    season_stats["prev_season_n"]      = season_stats["total_games"]
+    # Shift season by +1 so season S-1 stats appear for fixtures of season S
+    season_stats["season"] = season_stats["season"] + 1
+
+    fixture_meta = fixtures[["id", "home_team_id", "away_team_id", "season"]].rename(columns={"id": "fixture_id"})
+    prev_cols = ["prev_season_ppg", "prev_season_gfpg", "prev_season_gapg",
+                 "prev_season_draw_r", "prev_season_n"]
+    lookup = season_stats[["team_id", "season"] + prev_cols]
+
+    lookup_home = lookup.rename(columns={"team_id": "home_team_id"} |
+                                         {c: f"home_{c}" for c in prev_cols})
+    lookup_away = lookup.rename(columns={"team_id": "away_team_id"} |
+                                         {c: f"away_{c}" for c in prev_cols})
+
+    home_prev = fixture_meta.merge(lookup_home, on=["home_team_id", "season"], how="left")[
+        ["fixture_id"] + [f"home_{c}" for c in prev_cols]
+    ]
+    away_prev = fixture_meta.merge(lookup_away, on=["away_team_id", "season"], how="left")[
+        ["fixture_id"] + [f"away_{c}" for c in prev_cols]
+    ]
+
+    return home_prev.merge(away_prev, on="fixture_id", how="outer")
 
 
 def compute_days_rest(history: pd.DataFrame) -> pd.DataFrame:
@@ -396,7 +478,8 @@ def compute_consistency_features(history: pd.DataFrame, n: int) -> pd.DataFrame:
     return pd.concat(parts, ignore_index=True)
 
 
-def compute_ema_features(history: pd.DataFrame, span: int) -> pd.DataFrame:
+def compute_ema_features(history: pd.DataFrame, span: int,
+                         extra_spans: tuple[int, ...] = (3, 10)) -> pd.DataFrame:
     parts = []
     for team_id, grp in history.groupby("team_id", sort=False):
         grp = grp.sort_values("match_date")
@@ -407,6 +490,14 @@ def compute_ema_features(history: pd.DataFrame, span: int) -> pd.DataFrame:
                 part[f"ema_{col}_span{span}"] = (
                     shifted.ewm(span=span, min_periods=1, adjust=False).mean().values
                 )
+        for es in extra_spans:
+            if es != span:
+                for col in EXTRA_EMA_COLS:
+                    if col in grp.columns:
+                        shifted = grp[col].shift(1)
+                        part[f"ema_{col}_span{es}"] = (
+                            shifted.ewm(span=es, min_periods=1, adjust=False).mean().values
+                        )
         parts.append(part)
     return pd.concat(parts, ignore_index=True)
 
@@ -579,7 +670,7 @@ def compute_player_season_percentiles_temporal(
     ps["rating_float"] = pd.to_numeric(ps["rating"], errors="coerce")
 
     results = []
-    for (league_id, season), lg in ps.groupby(["league_id", "season"]):
+    for league_id, lg in ps.groupby("league_id"):
         lg = lg.sort_values("match_date")
         date_groups = (
             lg[["fixture_id", "match_date"]]
@@ -722,6 +813,8 @@ def assemble_dataset(
     consistency: Optional[pd.DataFrame] = None,
     league_season_draw_rate: Optional[pd.DataFrame] = None,
     team_stats: Optional[pd.DataFrame] = None,
+    prev_season: Optional[pd.DataFrame] = None,
+    league_tiers: Optional[pd.DataFrame] = None,
 ) -> pd.DataFrame:
     base = build_targets(fixtures, team_stats=team_stats)
 
@@ -832,6 +925,9 @@ def assemble_dataset(
 
     if league_season_draw_rate is not None and not league_season_draw_rate.empty:
         df = df.merge(_fid(league_season_draw_rate), on="id", how="left")
+
+    if prev_season is not None and not prev_season.empty:
+        df = df.merge(_fid(prev_season), on="id", how="left")
 
     if lineup_pct is not None and not lineup_pct.empty:
         home_pct = _fid(lineup_pct).rename(columns={"team_id": "home_team_id"})
@@ -973,6 +1069,77 @@ def assemble_dataset(
     for col_h, col_a, name in diff_pairs + player_diff_pairs + ema_diff_pairs + pct_diff_pairs + draw_cons_diff_pairs:
         if col_h in df.columns and col_a in df.columns:
             df[name] = df[col_h] - df[col_a]
+
+    # ---- Diffs para lookbacks extra (last-3 y last-10) ----
+    for en in (3, 10):
+        if en == n:
+            continue
+        for col, out_name in [
+            ("won",           f"diff_wins_last{en}"),
+            ("goals_for",     f"diff_goals_for_last{en}"),
+            ("goals_against", f"diff_goals_against_last{en}"),
+            ("scored",        f"diff_scored_last{en}"),
+            ("clean_sheet",   f"diff_cs_last{en}"),
+            ("drew",          f"diff_drew_last{en}"),
+        ]:
+            ch = f"home_roll_{col}_last{en}"
+            ca = f"away_roll_{col}_last{en}"
+            if ch in df.columns and ca in df.columns:
+                df[out_name] = df[ch] - df[ca]
+
+    # ---- Diffs para EMA extra (span-3 y span-10) ----
+    for es in (3, 10):
+        if es == n:
+            continue
+        for col, out_name in [
+            ("won",         f"diff_ema_won_span{es}"),
+            ("goals_for",   f"diff_ema_goals_for_span{es}"),
+            ("goals_against", f"diff_ema_goals_against_span{es}"),
+        ]:
+            ch = f"home_ema_{col}_span{es}"
+            ca = f"away_ema_{col}_span{es}"
+            if ch in df.columns and ca in df.columns:
+                df[out_name] = df[ch] - df[ca]
+
+    # ---- Tendencia de forma: forma reciente (last-3) vs mediana (last-10) ----
+    for col, out_name in [
+        ("won",       "form_trend_won"),
+        ("goals_for", "form_trend_goals"),
+    ]:
+        h3  = f"home_roll_{col}_last3"
+        a3  = f"away_roll_{col}_last3"
+        h10 = f"home_roll_{col}_last10"
+        a10 = f"away_roll_{col}_last10"
+        if all(c in df.columns for c in [h3, a3, h10, a10]):
+            df[f"home_{out_name}"] = df[h3] - df[h10]
+            df[f"away_{out_name}"] = df[a3] - df[a10]
+            df[out_name]           = df[f"home_{out_name}"] - df[f"away_{out_name}"]
+
+    # ---- Diffs para estadísticas de temporada anterior ----
+    prev_pairs = [
+        ("home_prev_season_ppg",    "away_prev_season_ppg",    "diff_prev_season_ppg"),
+        ("home_prev_season_gfpg",   "away_prev_season_gfpg",   "diff_prev_season_gfpg"),
+        ("home_prev_season_gapg",   "away_prev_season_gapg",   "diff_prev_season_gapg"),
+        ("home_prev_season_draw_r", "away_prev_season_draw_r", "diff_prev_season_draw_r"),
+    ]
+    for col_h, col_a, out in prev_pairs:
+        if col_h in df.columns and col_a in df.columns:
+            df[out] = df[col_h] - df[col_a]
+
+    # ---- prev_season como prior para inicio de temporada ----
+    # Si home_season_games < 5, el prev_season_ppg es más fiable que el actual.
+    if "home_season_games" in df.columns and "home_prev_season_ppg" in df.columns:
+        w = np.minimum(df["home_season_games"] / 10.0, 1.0)
+        df["home_blended_ppg"] = w * df["home_season_ppg"].fillna(0) + (1 - w) * df["home_prev_season_ppg"].fillna(0)
+    if "away_season_games" in df.columns and "away_prev_season_ppg" in df.columns:
+        w = np.minimum(df["away_season_games"] / 10.0, 1.0)
+        df["away_blended_ppg"] = w * df["away_season_ppg"].fillna(0) + (1 - w) * df["away_prev_season_ppg"].fillna(0)
+    if "home_blended_ppg" in df.columns and "away_blended_ppg" in df.columns:
+        df["diff_blended_ppg"] = df["home_blended_ppg"] - df["away_blended_ppg"]
+
+    # ---- League tier (calidad/nivel de la competición) ----
+    if league_tiers is not None and not league_tiers.empty and "league_id" in df.columns:
+        df = df.merge(league_tiers, on="league_id", how="left")
 
     return df
 
@@ -1127,6 +1294,16 @@ def main():
     print("Calculando league base rates...")
     league_rates = compute_league_rates(fixtures, team_stats=team_stats)
 
+    print("Calculando estadísticas de temporada anterior...")
+    prev_season_feats = compute_prev_season_features(fixtures)
+
+    print("Cargando tiers de ligas...")
+    conn2 = get_connection()
+    league_tiers = load_league_tiers(conn2)
+    conn2.close()
+    if not league_tiers.empty:
+        print(f"  → {len(league_tiers)} ligas con tier")
+
     print("Ensamblando dataset...")
     dataset = assemble_dataset(
         fixtures, rolling, rolling_venue, rest, h2h, season_form,
@@ -1135,6 +1312,8 @@ def main():
         consistency=consistency,
         league_season_draw_rate=league_season_draw_rate,
         team_stats=team_stats,
+        prev_season=prev_season_feats,
+        league_tiers=league_tiers,
     )
 
     print_diagnostics(fixtures, dataset, args.lookback, aligned_pct)
