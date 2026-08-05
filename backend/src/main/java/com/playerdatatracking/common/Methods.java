@@ -166,6 +166,7 @@ public class Methods {
 			case Constants.EURO:
 			case Constants.CONFEDERATIONS:
 			case Constants.MUNDIAL:
+			case Constants.EU_NATIONS_LEAGUE:
 			case Constants.ASIAN_GAMES:
 			case Constants.ASIAN_CUP:
 			case Constants.WWORLD_CUP:
@@ -185,7 +186,6 @@ public class Methods {
 			case Constants.EURO_U21:
 			case Constants.MUNDIAL_U20:
 			case Constants.COPA_AMERICA:
-			case Constants.EU_NATIONS_LEAGUE:
 			case Constants.CONCACAF_QF:
 			case Constants.CF_MUNDIAL_QF:
 			case Constants.EU_MUNDIAL_QF:
@@ -237,7 +237,7 @@ public class Methods {
 			case Constants.WAFF_U23:
 			case Constants.OLYMPICS_QF:
 			case Constants.OFC_U19:
-				return Constants.INTERNATIONAL_ID;
+				return Constants.SELECCIONES;
 			default:
 				return Constants.COPA_INT_ID;
 			}

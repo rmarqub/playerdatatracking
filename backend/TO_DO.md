@@ -43,6 +43,7 @@
 - --: Añadir otra API como fuente de datos para añadir variabilidad y robustidad.
 - SONNET: Tabla de guardado de operaciones realizadas (HIST) y sistema de logs.
 - SONNET: Unificar Metodo de CheckGoodCall.
+- VARIABLE MARKET_ACTIVE???
 
 
 # INDEXED PLAYER

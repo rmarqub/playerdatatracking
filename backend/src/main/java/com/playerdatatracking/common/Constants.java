@@ -38,6 +38,7 @@ public class Constants {
 	public static final int LEAGUE_ID = 2;
 	public static final int COPA_INT_ID = 3;
 	public static final int INTERNATIONAL_ID = 4;
+	public static final int SELECCIONES = 5;
 	public static final String COPA = "copa";
 	public static final String COPA_INTERNA = "copaINT";
 	public static final String LIGA = "liga";

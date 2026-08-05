@@ -1,6 +1,7 @@
 package com.playerdatatracking.repositories.indexaldata;
 
 import java.time.LocalDateTime;
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,6 +42,8 @@ public interface PlayerRepository extends JpaRepository<Player, Long>{
 	List<Player> findByTeamId(@Param("teamId") Long teamId);
 
 	Optional<Player> findFirstByIndexIdOrderByIdDesc(Long indexId);
+
+	List<Player> findAllByIndexIdIn(Collection<Long> indexIds);
 	
     @Query(value = """
             SELECT p.index_id AS indexId, p.team AS team

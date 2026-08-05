@@ -46,16 +46,16 @@ public class UpdateClubsData {
     String excludedFile = "leagues.json";
 	private GenericResponse<Club> response = new GenericResponse();
 	private Methods methods;
-	
+
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
 	}
-	
+
 	public void setEnv(Environment env) {
 		this.env = env;
 	}
-	
-	
+
+
 	public GenericResponse<Club> ejecutar(GenericRequest request) throws Exception {
 
 		restClient = new ApiFootballClient();
@@ -85,11 +85,10 @@ public class UpdateClubsData {
 							throw new ApiKeyManagementException("error al intentar usar una key no disponible");
 						}
 					}
-					//keyMethods.storeUsedKey(apiKey);
 				}
 			}
 			if(request.getUpdate()!=null && request.getUpdate().equals("true")) {
-				
+
 				List<String> jsonFiles = new ArrayList<>();
 		        try {
 		            Files.walk(Paths.get(directoryPath))
@@ -100,20 +99,19 @@ public class UpdateClubsData {
 		        } catch (IOException e) {
 		        	throw e;
 		        }
-		        try {
-	            	pdClient.deleteAllCILs();
-			        pdClient.deleteAllClubs();
-		        } catch(Exception e) {
-		        	throw new PlayerDataDBException("No se ha completado correctamente el borrado por lo que no se pueden actualizar la informacion sobre clubes. Error: " + e.getMessage());
-		        }
-		        for (String path : jsonFiles) {
 
+		        // Único borrado seguro: CIL no tiene FKs apuntando a ella.
+		        // Los clubs y torneos NO se borran porque fixture, player y fixture_*_stats
+		        // los referencian sin CASCADE — borrarlos rompería la integridad histórica.
+		        pdClient.deleteAllCILs();
+
+		        for (String path : jsonFiles) {
 		            try {
 			            File file = new File(path);
 				        if (!file.exists())
 				            throw new NotCreatedJsonFileResponse("error al crear un json de respuesta, el archivo no ha sido creado o no se ha guardado correctamente");
-				        
-				        if (file.length() == 0) 
+
+				        if (file.length() == 0)
 				            throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
 				        FileReader fileReader = new FileReader(file);
 				        int ch;
@@ -122,49 +120,70 @@ public class UpdateClubsData {
 			            	throw new NotFilledJsonFileResponse("el archivo de respuesta creado esta vacio");
 			            }
 			            fileReader.close();
-				        
+
 				        ObjectMapper objectMapper = new ObjectMapper();
 				        JsonNode root = objectMapper.readTree(file);
 				        JsonNode parametersNode = root.path("parameters");
 				        JsonNode leagueNode = parametersNode.path("league");
 				        Long leagueID = Long.parseLong(leagueNode.textValue());
+
+				        // Determinar si este torneo es de selecciones para marcar los clubs nuevos
+				        Torneo torneo = pdClient.getTorneoById(leagueID);
+				        boolean esLigaDeSelecciones = torneo != null
+				                && Integer.valueOf(Constants.SELECCIONES).equals(torneo.getTipoTorneo());
+
+				        List<Club> clubsToSave = new ArrayList<>();
+				        List<ClubInLeague> cilsToSave = new ArrayList<>();
+
 				        JsonNode responseNode = root.path("response");
 				        for (JsonNode node : responseNode) {
 					        JsonNode teamNode = node.path("team");
-					        String id = teamNode.path("id").asText();
+					        Long clubId = Long.parseLong(teamNode.path("id").asText());
 					        String nombre = teamNode.path("name").asText();
 					        String codeaf = teamNode.path("code").asText();
 					        String paisName = teamNode.path("country").asText();
 					        paisName = Methods.checkCountryClub(pdClient, paisName, nombre);
-					        	
+
 					        System.out.println(paisName);
-					        
+
 					        Pais pais = pdClient.findCountry(paisName);
-					        Club newClub = new Club();
-					        newClub.setId(Long.parseLong(id));
-					        newClub.setNombre(nombre);
-					        newClub.setCodeaf(codeaf);
-					        newClub.setIdPais(pais.getId());
-					        Club savedClub = new Club();
-					        
-					        if (pdClient.findClub(newClub.getId())==null) {
-					        	 savedClub = pdClient.saveClub(newClub);
+					        Club existingClub = pdClient.findClub(clubId);
+					        Club club;
+
+					        if (existingClub == null) {
+					        	// Club nuevo: asignar esSeleccion según el tipo del torneo en que aparece
+					        	club = new Club();
+					        	club.setId(clubId);
+					        	club.setEsSeleccion(esLigaDeSelecciones);
+					        } else {
+					        	// Club existente: actualizar datos pero preservar esSeleccion ya registrado.
+					        	// Un club existente que no sea selección nunca aparecerá en un torneo de
+					        	// selecciones, así que no es necesario recalcular este flag.
+					        	club = existingClub;
 					        }
-					        
+
+					        club.setNombre(nombre);
+					        club.setCodeaf(codeaf);
+					        club.setIdPais(pais.getId());
+					        clubsToSave.add(club);
+
 					        ClubInLeague cil = new ClubInLeague();
-					        if (savedClub.getId()!=null)
-					        	cil.setClubId(savedClub.getId());
-					        else
-					        	cil.setClubId(newClub.getId());
+					        cil.setClubId(clubId);
 					        cil.setTorneoId(leagueID);
-					        
-					        if(pdClient.findCIL(newClub.getId(), leagueID)==null) {
-					        	pdClient.clubPlaysInLeague(cil);
-					        }
+					        cilsToSave.add(cil);
 				        }
-		    	    } catch (Exception e) {
-		    	    	throw e;
-		    	    }
+
+				        // Guardar en batch: primero clubs (para que existan antes de insertar CILs)
+				        if (!clubsToSave.isEmpty()) {
+				        	pdClient.saveAllClubs(clubsToSave);
+				        }
+				        if (!cilsToSave.isEmpty()) {
+				        	pdClient.saveAllCILs(cilsToSave);
+				        }
+
+    	    	} catch (Exception e) {
+    	    		throw e;
+    	    	}
 		        }
 			}
 			response.setCODE(Constants.CODE_OK);

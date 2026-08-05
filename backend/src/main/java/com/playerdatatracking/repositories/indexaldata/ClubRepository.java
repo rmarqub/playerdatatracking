@@ -12,5 +12,8 @@ import com.playerdatatracking.entities.indexaldata.Player;
 public interface ClubRepository extends JpaRepository<Club, Long> {
 
     List<Club> findByNombreContainingIgnoreCase(String nombre);
+
+    @Query("SELECT c.id FROM Club c WHERE c.esSeleccion = true")
+    List<Long> findIdsByEsSeleccionTrue();
 }
 

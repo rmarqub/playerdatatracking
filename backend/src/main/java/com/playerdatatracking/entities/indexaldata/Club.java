@@ -25,6 +25,9 @@ public class Club {
 	@Column(name = "nombre")
 	private String nombre;
 
+	@Column(name = "es_seleccion")
+	private Boolean esSeleccion;
+
 	public Long getId() {
 		return id;
 	}
@@ -56,6 +59,12 @@ public class Club {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
-	
+
+	public Boolean getEsSeleccion() {
+		return esSeleccion;
+	}
+
+	public void setEsSeleccion(Boolean esSeleccion) {
+		this.esSeleccion = esSeleccion;
+	}
 }

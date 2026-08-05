@@ -506,6 +506,15 @@ public class PlayerDataClient {
 			throw new PlayerDataDBException(e.getMessage());
 		}
 	}
+
+	@Transactional
+	public List<Club> saveAllClubs(List<Club> clubs) throws PlayerDataDBException {
+		try {
+			return clubRepository.saveAll(clubs);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
 	
 	@Transactional
 	public void clubPlaysInLeague(ClubInLeague cil) throws PlayerDataDBException{
@@ -520,6 +529,15 @@ public class PlayerDataClient {
 	public void deleteAllCILs() throws PlayerDataDBException{
 		try {
 			cilRepository.deleteAll();
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public void saveAllCILs(List<ClubInLeague> cils) throws PlayerDataDBException {
+		try {
+			cilRepository.saveAll(cils);
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}
@@ -595,6 +613,24 @@ public class PlayerDataClient {
 	public List<Player> getPlayersByTeamId(Long teamId) throws PlayerDataDBException {
 		try {
 			return pRepository.findByTeamId(teamId);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public List<Player> getPlayersByIndexIds(java.util.Collection<Long> indexIds) throws PlayerDataDBException {
+		try {
+			return pRepository.findAllByIndexIdIn(indexIds);
+		} catch (Exception e) {
+			throw new PlayerDataDBException(e.getMessage());
+		}
+	}
+
+	@Transactional
+	public java.util.Set<Long> getSeleccionIds() throws PlayerDataDBException {
+		try {
+			return new java.util.HashSet<>(clubRepository.findIdsByEsSeleccionTrue());
 		} catch (Exception e) {
 			throw new PlayerDataDBException(e.getMessage());
 		}

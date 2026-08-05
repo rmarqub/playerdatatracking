@@ -96,7 +96,9 @@
       "Bash(python -X utf8 train_model.py --test-seasons 2025 --max-features 100)",
       "Bash(python -X utf8 -c ' *)",
       "Bash(python -X utf8 feature_engineering.py)",
-      "Bash(python -X utf8 train_model.py --test-seasons 2025 --skip-btts)"
+      "Bash(python -X utf8 train_model.py --test-seasons 2025 --skip-btts)",
+      "Bash(grep -E \"\\\\.\\(py|java\\)$\")",
+      "Bash(grep -E \"\\\\.java$\")"
     ]
   }
 }

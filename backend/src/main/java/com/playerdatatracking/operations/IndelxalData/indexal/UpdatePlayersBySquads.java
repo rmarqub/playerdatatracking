@@ -40,6 +40,7 @@ public class UpdatePlayersBySquads {
 	boolean isMarketActive;
 	boolean useDupped;
 	String actualSeason = "";
+	java.util.Set<Long> seleccionIds = new java.util.HashSet<>();
 	
 	public void setEnv(Environment env) {
 		this.env = env;
@@ -58,6 +59,7 @@ public class UpdatePlayersBySquads {
 		actualSeason = pdClient.getParam(Constants.ACTUAL_APF_SEASON).getValue();
 		isMarketActive = Methods.isMarketActive(pdClient);
 		useDupped = Methods.useDupped(pdClient);
+		seleccionIds = pdClient.getSeleccionIds();
 		
 		Path logPath = prepararLog();
         int procesados = 0;
@@ -74,6 +76,11 @@ public class UpdatePlayersBySquads {
             if (teamIds.size() < 2) {
                 continue;
             }
+			// Un jugador en club + selección no es un duplicado real: tiene dos
+			// entradas legítimas. Se omite el par para no eliminar ninguna de ellas.
+			if (teamIds.stream().anyMatch(seleccionIds::contains)) {
+				continue;
+			}
 			if(!isMarketActive && useDupped) {
 				
 				List<DuppedPlayers> duppedList = pdClient.getDuppedPlayerById(indexId);

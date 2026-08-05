@@ -11,8 +11,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -76,6 +78,7 @@ public class UpdatePlayersData {
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	private record ImageResult(byte[] bytes, String contentType) {}
+	private record ParsedFile(Path path, JsonNode root) {}
 
 	public void setPdClient(PlayerDataClient pdClient) {
 		this.pdClient = pdClient;
@@ -153,13 +156,13 @@ public class UpdatePlayersData {
 			if (directories.isEmpty())
 				throw new NotCreatedJsonFileResponse("No hay archivos de jugadores disponibles para realizar la carga de datos");
 
-			// Pre-cargar mapa de nacionalidades una sola vez en lugar de una query por jugador
+			// Pre-cargar mapa de nacionalidades una sola vez
 			Map<String, Integer> countryMap = new HashMap<>();
 			for (Pais p : pdClient.getAllPaises()) {
 				if (p.getName() != null) countryMap.put(p.getName(), p.getId());
 			}
 
-			// Cargar imagen estándar una sola vez en lugar de hacerlo por jugador
+			// Cargar imagen estándar una sola vez
 			byte[] standardImage = null;
 			final String standardCt = "image/jpeg";
 			try (InputStream in = getClass().getResourceAsStream("/images/standard-pic.jpg")) {
@@ -169,6 +172,9 @@ public class UpdatePlayersData {
 				log(logPath, "Error cargando imagen estándar: " + e.getMessage());
 			}
 
+			// Pre-cargar IDs de selecciones una sola vez para todo el proceso
+			Set<Long> seleccionIds = pdClient.getSeleccionIds();
+
 			ExecutorService imagePool = Executors.newFixedThreadPool(8);
 			try {
 				for (Path directory : directories) {
@@ -177,10 +183,10 @@ public class UpdatePlayersData {
 						fileList = files.filter(Files::isRegularFile).collect(Collectors.toList());
 					}
 
-					// Jugadores existentes del equipo cargados en bulk (lazy, al ver el primer teamId válido)
-					Map<Long, Player> existingByIndexId = null;
-					List<Player> toSave = new ArrayList<>();
-					List<CompletableFuture<Void>> imageFutures = new ArrayList<>();
+					// FASE A — parsear todos los JSON del directorio, recopilar teamId e indexIds
+					List<ParsedFile> parsedFiles = new ArrayList<>();
+					Long teamId = null;
+					Set<Long> indexIdsEnDirectorio = new HashSet<>();
 
 					for (Path path : fileList) {
 						String filePath = path.toString();
@@ -202,117 +208,153 @@ public class UpdatePlayersData {
 								continue;
 							}
 
-							String steamId = root.path("parameters").path("team").asText();
-							long teamId = Integer.toUnsignedLong(Integer.parseInt(steamId));
-
-							// Primera vez que vemos un teamId válido: cargamos todos los jugadores existentes del equipo de una sola vez
-							if (existingByIndexId == null) {
-								existingByIndexId = new HashMap<>();
-								for (Player p : pdClient.getPlayersByTeamId(teamId)) {
-									if (p.getIndexId() != null) existingByIndexId.put(p.getIndexId(), p);
-								}
+							if (teamId == null) {
+								String steamId = root.path("parameters").path("team").asText();
+								teamId = Integer.toUnsignedLong(Integer.parseInt(steamId));
 							}
 
-							JsonNode responseNode = root.path("response");
-							for (JsonNode node : responseNode) {
-								String playerName = node.path("player").path("name").asText("desconocido");
-								try {
-									JsonNode playerNode = node.path("player");
-									System.out.println(playerName);
-
-									long indexId = playerNode.path("id").asLong();
-									Player player = existingByIndexId.getOrDefault(indexId, new Player());
-
-									player.setIndexId(indexId);
-									player.setTeam(teamId);
-									player.setFirstname(playerNode.path("firstname").asText());
-									player.setLastname(playerNode.path("lastname").asText());
-									player.setFullname(playerNode.path("name").asText());
-									player.setAge(playerNode.path("age").asInt());
-									player.setInjured(playerNode.path("injured").asBoolean());
-
-									String height = playerNode.path("height").asText();
-									if (height != null && !height.equals("null")) {
-										try {
-											if (height.endsWith("cm")) height = height.substring(0, height.length() - 3);
-											player.setHeight(Integer.parseInt(height.trim()));
-										} catch (NumberFormatException e) {
-											log(logPath, "No se pudo interpretar altura del jugador " + playerName + ": '" + height + "'");
-										}
-									}
-									String weight = playerNode.path("weight").asText();
-									if (weight != null && !weight.equals("null")) {
-										try {
-											if (weight.endsWith("kg")) weight = weight.substring(0, weight.length() - 3);
-											player.setWeight(Integer.parseInt(weight.trim()));
-										} catch (NumberFormatException e) {
-											log(logPath, "No se pudo interpretar peso del jugador " + playerName + ": '" + weight + "'");
-										}
-									}
-
-									// Lookup en el mapa pre-cargado en lugar de una query a la BBDD por jugador
-									String nationality = playerNode.path("nationality").asText();
-									Integer countryId = countryMap.get(nationality);
-									if (countryId != null) player.setNacionalidad(countryId);
-
-									JsonNode birthNode = playerNode.path("birth");
-									String birthString = birthNode.path("date").asText();
-									if (birthString != null && !birthString.equals("null") && !birthString.isBlank()) {
-										try {
-											player.setBirth(LocalDate.parse(birthString, formatter));
-										} catch (Exception e) {
-											log(logPath, "No se pudo interpretar fecha de nacimiento del jugador " + playerName + ": '" + birthString + "'");
-										}
-									}
-									player.setLastUpdated(new Timestamp(System.currentTimeMillis()));
-
-									// Descarga de imagen enviada al pool de hilos para ejecutarse en paralelo
-									String photoUrl = playerNode.path("photo").asText(null);
-									final byte[] fallback = standardImage;
-									CompletableFuture<Void> imgFuture = CompletableFuture.runAsync(() -> {
-										try {
-											byte[] imageBytes = null;
-											String contentType = null;
-											if (photoUrl != null && !photoUrl.isBlank()) {
-												ImageResult img = downloadImageWithType(photoUrl);
-												if (img != null) {
-													imageBytes = img.bytes();
-													contentType = img.contentType();
-												}
-											}
-											if (imageBytes == null || imageBytes.length == 0) {
-												imageBytes = fallback;
-												contentType = standardCt;
-											}
-											if (imageBytes != null && imageBytes.length > 0) {
-												player.setPhoto(imageBytes);
-												player.setPhotoContentType(contentType);
-												player.setPhotoUpdatedAt(LocalDateTime.now());
-											}
-										} catch (Exception e) {
-											log(logPath, "Error procesando foto del jugador " + playerName + ": " + e.getMessage());
-										}
-									}, imagePool);
-									imageFutures.add(imgFuture);
-									toSave.add(player);
-
-								} catch (Exception e) {
-									log(logPath, "ERROR al procesar jugador " + playerName + ": " + e.getMessage());
-									System.err.println("ERROR al procesar jugador " + playerName + ": " + e.getMessage());
-								}
+							for (JsonNode node : root.path("response")) {
+								long indexId = node.path("player").path("id").asLong();
+								if (indexId > 0) indexIdsEnDirectorio.add(indexId);
 							}
+
+							parsedFiles.add(new ParsedFile(path, root));
 						} catch (Exception e) {
 							log(logPath, "ERROR procesando archivo " + filePath + ": " + e.getMessage());
 							System.err.println("Error procesando archivo " + filePath + ": " + e.getMessage());
 						}
 					}
 
-					// Esperar a que terminen todas las descargas de imágenes del directorio antes de guardar
+					if (teamId == null || parsedFiles.isEmpty()) continue;
+
+					boolean esSeleccion = seleccionIds.contains(teamId);
+
+					// FASE B — cargar jugadores existentes (una sola query por directorio)
+					// Para selecciones: búsqueda global por indexId para detectar jugadores
+					// ya registrados como club y evitar sobrescribir su team.
+					// Para clubs: comportamiento original (solo jugadores de este equipo).
+					Map<Long, Player> existingByIndexId = new HashMap<>();
+					if (esSeleccion) {
+						if (!indexIdsEnDirectorio.isEmpty()) {
+							for (Player p : pdClient.getPlayersByIndexIds(indexIdsEnDirectorio)) {
+								if (p.getIndexId() != null) existingByIndexId.put(p.getIndexId(), p);
+							}
+						}
+					} else {
+						for (Player p : pdClient.getPlayersByTeamId(teamId)) {
+							if (p.getIndexId() != null) existingByIndexId.put(p.getIndexId(), p);
+						}
+					}
+
+					// FASE C — procesar jugadores
+					List<Player> toSave = new ArrayList<>();
+					List<CompletableFuture<Void>> imageFutures = new ArrayList<>();
+
+					for (ParsedFile pf : parsedFiles) {
+						JsonNode responseNode = pf.root().path("response");
+						for (JsonNode node : responseNode) {
+							String playerName = node.path("player").path("name").asText("desconocido");
+							try {
+								JsonNode playerNode = node.path("player");
+								System.out.println(playerName);
+
+								long indexId = playerNode.path("id").asLong();
+								Player player = existingByIndexId.getOrDefault(indexId, new Player());
+
+								player.setIndexId(indexId);
+
+								// Regla de prioridad: el club de un jugador tiene prioridad sobre la selección.
+								// Si el JSON actual es de una selección y el jugador ya tiene asignado
+								// un club (no selección), se actualizan sus datos pero no se cambia su team.
+								// En cualquier otro caso (JSON de club, o jugador sin club), se asigna el team.
+								boolean jugadorYaTieneClub = player.getId() != null
+										&& player.getTeam() != null
+										&& !seleccionIds.contains(player.getTeam());
+
+								if (!esSeleccion || !jugadorYaTieneClub) {
+									player.setTeam(teamId);
+								}
+
+								player.setFirstname(playerNode.path("firstname").asText());
+								player.setLastname(playerNode.path("lastname").asText());
+								player.setFullname(playerNode.path("name").asText());
+								player.setAge(playerNode.path("age").asInt());
+								player.setInjured(playerNode.path("injured").asBoolean());
+
+								String height = playerNode.path("height").asText();
+								if (height != null && !height.equals("null")) {
+									try {
+										if (height.endsWith("cm")) height = height.substring(0, height.length() - 3);
+										player.setHeight(Integer.parseInt(height.trim()));
+									} catch (NumberFormatException e) {
+										log(logPath, "No se pudo interpretar altura del jugador " + playerName + ": '" + height + "'");
+									}
+								}
+								String weight = playerNode.path("weight").asText();
+								if (weight != null && !weight.equals("null")) {
+									try {
+										if (weight.endsWith("kg")) weight = weight.substring(0, weight.length() - 3);
+										player.setWeight(Integer.parseInt(weight.trim()));
+									} catch (NumberFormatException e) {
+										log(logPath, "No se pudo interpretar peso del jugador " + playerName + ": '" + weight + "'");
+									}
+								}
+
+								String nationality = playerNode.path("nationality").asText();
+								Integer countryId = countryMap.get(nationality);
+								if (countryId != null) player.setNacionalidad(countryId);
+
+								JsonNode birthNode = playerNode.path("birth");
+								String birthString = birthNode.path("date").asText();
+								if (birthString != null && !birthString.equals("null") && !birthString.isBlank()) {
+									try {
+										player.setBirth(LocalDate.parse(birthString, formatter));
+									} catch (Exception e) {
+										log(logPath, "No se pudo interpretar fecha de nacimiento del jugador " + playerName + ": '" + birthString + "'");
+									}
+								}
+								player.setLastUpdated(new Timestamp(System.currentTimeMillis()));
+
+								String photoUrl = playerNode.path("photo").asText(null);
+								final byte[] fallback = standardImage;
+								CompletableFuture<Void> imgFuture = CompletableFuture.runAsync(() -> {
+									try {
+										byte[] imageBytes = null;
+										String contentType = null;
+										if (photoUrl != null && !photoUrl.isBlank()) {
+											ImageResult img = downloadImageWithType(photoUrl);
+											if (img != null) {
+												imageBytes = img.bytes();
+												contentType = img.contentType();
+											}
+										}
+										if (imageBytes == null || imageBytes.length == 0) {
+											imageBytes = fallback;
+											contentType = standardCt;
+										}
+										if (imageBytes != null && imageBytes.length > 0) {
+											player.setPhoto(imageBytes);
+											player.setPhotoContentType(contentType);
+											player.setPhotoUpdatedAt(LocalDateTime.now());
+										}
+									} catch (Exception e) {
+										log(logPath, "Error procesando foto del jugador " + playerName + ": " + e.getMessage());
+									}
+								}, imagePool);
+								imageFutures.add(imgFuture);
+								toSave.add(player);
+
+							} catch (Exception e) {
+								log(logPath, "ERROR al procesar jugador " + playerName + ": " + e.getMessage());
+								System.err.println("ERROR al procesar jugador " + playerName + ": " + e.getMessage());
+							}
+						}
+					}
+
+					// Esperar descargas de imágenes y guardar en batch
 					if (!imageFutures.isEmpty()) {
 						CompletableFuture.allOf(imageFutures.toArray(new CompletableFuture[0])).join();
 					}
-
-					// Guardar en lote todos los jugadores del equipo (1 operación en lugar de N)
 					if (!toSave.isEmpty()) {
 						try {
 							pdClient.saveAllIndexedPlayers(toSave);
